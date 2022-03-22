@@ -5,15 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // primary => Blue
-        // secondary => yellow
-        // danger => red
-        // lilac => lilac
-        primary: '#2D82FA',
-        secondary: '#FFD232',
-        danger: '#FA503C',
-        lilac:'#180228'
-      }
+        steplix: {
+            blue: '#2D82FA',
+            red: '#FFD232',
+            yellow: '#FA503C',
+            lilac:'#180228'
+          }
+    }
     },
   },
   variants: {
