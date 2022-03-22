@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import Navbar from "@/layouts/Navbar";
 import Footer from "@/layouts/Footer";
+import { LanguageProvider } from "@/common/components/LanguageContext";
 
 const Layout = ({ children }) => {
     return (
         <>
-            <Navbar />
-            {children}
-            <Footer />
+            <LanguageProvider>
+                <Navbar />
+                {children}
+                <Footer />
+            </LanguageProvider>
         </>
     );
 };
