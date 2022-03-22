@@ -6,11 +6,11 @@ module.exports = {
     extend: {
       colors: {
         // primary => Blue
-        // secundary => yellow
+        // secondary => yellow
         // danger => red
         // lilac => lilac
         primary: '#2D82FA',
-        secundary: '#FFD232',
+        secondary: '#FFD232',
         danger: '#FA503C',
         lilac:'#180228'
       }
