@@ -5,17 +5,17 @@ import Navbar from "@/layouts/Navbar";
 import Footer from "@/layouts/Footer";
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            {children}
+            <Footer />
+        </>
+    );
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 };
 
 export default Layout;
