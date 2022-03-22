@@ -1,15 +1,15 @@
 {
-  "name": "steplix-front-end-base",
-  "version": "0.0.1",
-  "description": "Steplix Front End Base",
+  "name": "steplix-website",
+  "version": "2.0.0",
+  "description": "Steplix Website",
   "main": "index.js",
   "private": true,
   "author": "Steplix",
   "license": "ISC",
   "scripts": {
-    "dev": "NODE_ENV=development next -p 65098",
+    "dev": "NODE_ENV=development next",
     "build": "next build",
-    "start": "NODE_ENV=production next start -p ${PORT}",
+    "start": "NODE_ENV=production next start",
     "lint": "eslint .  --ext js,jsx",
     "prepare": "husky install"
   },
