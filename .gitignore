@@ -1,5 +1,6 @@
 # Next
 .next
+out
 
 # Dependency directory
 node_modules
