@@ -5,3 +5,8 @@
 * {
     font-family: 'Sofia-pro';
 }
+
+body {
+    margin: 0;
+    background-color: #180228;
+  }
