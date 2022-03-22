@@ -1,0 +1,32 @@
+{
+  "name": "steplix-front-end-base",
+  "version": "0.0.1",
+  "description": "Steplix Front End Base",
+  "main": "index.js",
+  "private": true,
+  "author": "Steplix",
+  "license": "ISC",
+  "scripts": {
+    "dev": "NODE_ENV=development next -p 65098",
+    "build": "next build",
+    "start": "NODE_ENV=production next start -p ${PORT}",
+    "lint": "eslint .  --ext js,jsx",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "axios": "^0.24.0",
+    "bluebird": "^3.7.2",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.2",
+    "eslint-plugin-react": "^7.26.1",
+    "husky": "^7.0.4",
+    "lodash": "^4.17.21",
+    "next": "12.0.2",
+    "postcss": "^8.3.11",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
