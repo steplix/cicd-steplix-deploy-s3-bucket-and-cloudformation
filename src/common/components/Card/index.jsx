@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
     return (
@@ -11,8 +12,8 @@ const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
             <div>
                 {title && (
                     <p
-                        className={`text-[18px] lg:text-[52px] font-semibold mb-2 ${
-                            colorTitle ? colorTitle : "text-white"
+                        className={`text-[18px] lg:text-[52px] mb-2 ${
+                            colorTitle ? colorTitle : "text-white font-semibold"
                         }`}
                     >
                         {title}
@@ -38,4 +39,15 @@ const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
     );
 };
 
+//
+//PropsTypes
+//
+Card.propTypes = {
+    number: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    seeMore: PropTypes.string,
+    colorLine: PropTypes.string,
+    colorTitle: PropTypes.string,
+    text: PropTypes.string.isRequired,
+};
 export default Card;
