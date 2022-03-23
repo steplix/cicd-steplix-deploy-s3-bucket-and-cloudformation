@@ -14,8 +14,8 @@ const Footer = () => {
 
     return (
         <>
-            <div className="divide-y-4 w-full h-1 bg-gray-400 mt-2.5 mb-16"></div>
-            <div className="text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] desktop:text-xl">
+            <div className="divide-y-4 w-full h-1 bg-gray-400 mb-16"></div>
+            <div className="text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] lg:text-xl">
                 <div className="md:flex">
                     <div className="md:flex">
                         <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">
@@ -83,7 +83,7 @@ const Footer = () => {
                                     <a target="_blank">
                                         <Image
                                             src={logoIram}
-                                            className="mr-10 w-10 h-14 desktop:w-20 desktop:h-28"
+                                            className="mr-10 w-10 h-14 lg:w-20 lg:h-28"
                                             alt="Iram"
                                             objectFit="contain"
                                         />
