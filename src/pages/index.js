@@ -1,4 +1,4 @@
-import StepsTop from "@/common/components/stepsTop";
+import WhatWeDo from "@/modules/WhatWeDo";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="flex items-center justify-center h-screen w-full bg-steplix-lilac">
-                <StepsTop />
+                <WhatWeDo />
             </main>
         </div>
     );
