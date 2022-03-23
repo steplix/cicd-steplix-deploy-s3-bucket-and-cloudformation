@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Sofia-pro';
+    font-family: "Sofia-pro";
+}
+
+body {
+    @apply bg-steplix-lilac;
 }
