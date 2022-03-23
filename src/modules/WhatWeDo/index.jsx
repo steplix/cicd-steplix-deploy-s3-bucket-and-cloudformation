@@ -4,7 +4,7 @@ import React from "react";
 const WhatWeDo = () => {
     return (
         <div>
-            <div className="text-white">
+            <div className="text-white" id="whatWeDo">
                 <h2 className="text-[24px] lg:text-[54px]">
                     Pasos hacia la cima
                 </h2>
@@ -16,13 +16,13 @@ const WhatWeDo = () => {
                     <p className="">¿Cuál es tu punto de partida? </p>
                 </div>
 
-                <div className="space-y-5 lg:space-y-1  lg:grid lg:grid-rows-4 lg:grid-flow-col ">
+                <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
                     <div className="w-[250px] lg:w-[470px] lg:row-start-3 lg:row-span-2">
                         <Card
                             number="03."
                             title="Develop & Developer"
-                            colorTitle="text-steplix-red"
-                            colorLine="bg-steplix-yellow"
+                            colorTitle="font-semibold text-steplix-yellow"
+                            colorLine="bg-steplix-red"
                             seeMore="see More"
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
                         />
@@ -31,7 +31,7 @@ const WhatWeDo = () => {
                         <Card
                             number="03."
                             title="Develop & Developer"
-                            colorTitle="text-steplix-red"
+                            colorTitle="font-semibold text-steplix-red"
                             colorLine="bg-steplix-yellow"
                             seeMore="see More"
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
@@ -41,7 +41,7 @@ const WhatWeDo = () => {
                         <Card
                             number="03."
                             title="Develop & Developer"
-                            colorTitle="text-steplix-red"
+                            colorTitle="font-semibold text-steplix-red"
                             colorLine="bg-steplix-yellow"
                             seeMore="see More"
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
