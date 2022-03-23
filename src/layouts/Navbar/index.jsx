@@ -5,23 +5,23 @@ import LenguageSelector from "@/common/components/LenguageSelector";
 import LanguageContext from "@/common/components/LanguageContext";
 const Navbar = () => {
     const { texts } = useContext(LanguageContext);
+    //todo poner sombreado al navbar y pasar en la constante los textos del footer mas los id de los links de cada item del navbar.
+    //buscar links para direccionar en el footer
     return (
-        <nav className="hidden md:block  ">
+        <nav className="hidden md:block   ">
             <div
                 className="
-          mt-[30px]
+          pt-[30px]
           container-header
           flex
           fixed
           top-0
           desktop:justify-around
           w-full
-          pt-4
           pr-52
         "
             >
-                {/* logo */}
-                <div className="logo-desktop relative w-[250px] h-[62px] ml-[195px] ">
+                <div className="relative w-[250px] h-[62px] ml-[195px] my-auto ">
                     <Image src={logo} alt="logo" layout="fill" />
                 </div>
                 <div className="mx-8">
@@ -30,7 +30,7 @@ const Navbar = () => {
                             {texts.navbar.item1}
                         </a>
                         <a href="#">{texts.navbar.item2}</a>
-                        <a href="#partners">{texts.navbar.item3}</a>
+                        <a href="#">{texts.navbar.item3}</a>
                         <a href="#">{texts.navbar.item4}</a>
                         <a href="#">{texts.navbar.item5}</a>
                     </div>
