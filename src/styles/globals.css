@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 * {
-    font-family: "Sofia-pro";
+    font-family: "Sofia Pro";
 }
 
 body {
     @apply bg-steplix-lilac;
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Sofia Pro"),
+        url("../../public/fonts/SofiaProRegularAz.woff") format("woff");
 }
