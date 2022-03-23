@@ -5,7 +5,7 @@ const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
     return (
         <div className="w-full flex gap-2">
             {number && (
-                <p className="text-white lg:text-[52px] text-[18px] font-semibold ">
+                <p className="text-white lg:text-[52px] text-[18px] font-semibold">
                     {number}
                 </p>
             )}

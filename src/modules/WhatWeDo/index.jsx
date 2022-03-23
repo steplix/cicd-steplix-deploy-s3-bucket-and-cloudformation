@@ -13,7 +13,7 @@ const WhatWeDo = () => {
                         Los comienzos no son todos iguales...en este camino vos
                         elegís,
                     </p>
-                    <p className="">¿Cuál es tu punto de partida? </p>
+                    <p>¿Cuál es tu punto de partida? </p>
                 </div>
 
                 <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
