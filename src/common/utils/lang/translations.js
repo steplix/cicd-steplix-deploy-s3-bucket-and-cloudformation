@@ -9,10 +9,6 @@ const translations = {
             item6: "Contactanos",
         },
         footer: {
-            email: "hello@steplix.com",
-            phone: "+54 (11) 5367-4369",
-            dir: "Costa Rica 4999, Palermo,",
-            province: "Buenos Aires, Argentina.",
             certificateText: "Política de calidad",
         },
     },
@@ -26,10 +22,6 @@ const translations = {
             item6: "Contact Us",
         },
         footer: {
-            email: "hello@steplix.com",
-            phone: "+54 (11) 5367-4369",
-            dir: "Costa Rica 4999, Palermo,",
-            province: "Buenos Aires, Argentina.",
             certificateText: "Quality politics",
         },
     },

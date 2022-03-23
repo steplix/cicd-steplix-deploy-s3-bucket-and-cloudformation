@@ -33,19 +33,17 @@ const Navbar = () => {
             } px-4`}
         >
             <nav
-                className={` transition-height duration-500 ease-in-out ${
+                className={`transition-height duration-500 ease-in-out ${
                     sticky ? "h-28" : "h-20"
                 }`}
             >
-                <div className="pt-[30px] container-header flex  top-0 desktop:justify-around w-full pr-52 ">
-                    <div className="relative w-[250px] h-[62px] ml-[195px] my-auto ">
+                <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-52">
+                    <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
                         <Image src={logo} alt="logo" layout="fill" />
                     </div>
                     <div className="mx-8">
-                        <div className="flex space-x-5 mt-7 text-white text-base w-[800px]  gap-2">
-                            <a className="" href="#about-us">
-                                {texts.navbar.item1}
-                            </a>
+                        <div className="flex space-x-5 mt-7 text-white text-base w-[800px] gap-2">
+                            <a href="#about-us">{texts.navbar.item1}</a>
                             <a href="#">{texts.navbar.item2}</a>
                             <a href="#">{texts.navbar.item3}</a>
                             <a href="#">{texts.navbar.item4}</a>
@@ -55,7 +53,7 @@ const Navbar = () => {
 
                     {/* boton contact us */}
 
-                    <button className=" bg-white text-gray-900 rounded-full h-14 mt-3 my-2 px-10 text-xl mr-7 ">
+                    <button className="bg-white text-gray-900 rounded-full h-14 mt-3 my-2 px-10 text-xl mr-7">
                         {texts.navbar.item6}
                     </button>
                     <div className="h-[35px] w-[35px] mt-7">

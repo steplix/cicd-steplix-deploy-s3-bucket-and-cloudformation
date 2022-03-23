@@ -10,7 +10,7 @@ export default function Home() {
                 <meta name="robots" content="noindex" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="flex items-center justify-center h-screen w-full ">
+            <main className="flex items-center justify-center h-screen w-full">
                 <h1 className="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
                     Steplix Front End Base
                 </h1>
