@@ -14,14 +14,14 @@ const Navbar = () => {
     // Effects
     //
     React.useEffect(() => {
-        function onScroll() {
+        const onScroll = () => {
             const currentPosition = window.pageYOffset;
             setTimeout(() => {
                 setSticky(
                     currentPosition > 52 ? true : !(currentPosition === 0)
                 );
             }, 5);
-        }
+        };
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
