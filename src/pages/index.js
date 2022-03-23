@@ -12,10 +12,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="h-screen w-full bg-steplix-lilac">
-                <div className="flex items-center justify-center mb-20">
+                <div className="flex items-center justify-center my-36">
                     <AboutUs />
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center my-36">
                     <WhatWeDo />
                 </div>
             </main>
