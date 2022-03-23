@@ -3,6 +3,7 @@ import React, { createContext } from "react";
 import translations from "../utils/lang/translations";
 
 const LanguageContext = createContext();
+
 const LanguageProvider = ({ children }) => {
     const router = useRouter();
     const locale = router.locale;
@@ -18,5 +19,5 @@ const LanguageProvider = ({ children }) => {
     );
 };
 
-export { LanguageProvider };
-export default LanguageContext;
+export { LanguageContext };
+export default LanguageProvider;

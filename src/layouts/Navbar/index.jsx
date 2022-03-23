@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import logo from "@/public/assets/logos/logo-navbar.svg";
 import Image from "next/image";
 import LenguageSelector from "@/common/components/LenguageSelector";
-import LanguageContext from "@/common/components/LanguageContext";
+import { LanguageContext } from "@/common/components/LanguageContext";
 const Navbar = () => {
     const { texts } = useContext(LanguageContext);
     //

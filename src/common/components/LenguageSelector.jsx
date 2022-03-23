@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useRouter } from "next/router";
-import LanguageContext from "./LanguageContext";
+import { LanguageContext } from "./LanguageContext";
 import logoEn from "@/public/assets/logos/logo-en.svg";
 import logoEs from "@/public/assets/logos/logo-es.svg";
 import Image from "next/image";

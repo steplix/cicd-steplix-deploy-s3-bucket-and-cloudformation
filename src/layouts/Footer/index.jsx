@@ -6,7 +6,7 @@ import logoIram from "@/public/assets/logos/iram.svg";
 import fb from "@/public/assets/logos/fb.svg";
 import instagram from "@/public/assets/logos/instagram.svg";
 import gmail from "@/public/assets/logos/gmail.svg";
-import LanguageContext from "@/common/components/LanguageContext";
+import { LanguageContext } from "@/common/components/LanguageContext";
 
 const Footer = () => {
     const { texts } = useContext(LanguageContext);
