@@ -4,7 +4,7 @@ import React from "react";
 const AboutUs = () => {
     return (
         <div className="lg:flex mt-[50px]" id="aboutUs">
-            <p className="aboutUs--title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
+            <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
                 steplix
             </p>
             <div className="w-[325px] lg:w-[610px]">
