@@ -17,3 +17,8 @@ body {
     src: local("Sofia Pro"),
         url("../../public/fonts/SofiaProRegularAz.woff") format("woff");
 }
+
+.aboutUs--title-empty {
+    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+    color: transparent;
+}
