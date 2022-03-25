@@ -31,8 +31,8 @@ const WhatWeDo = () => {
                         <Card
                             number="03."
                             title="Develop & Developer"
-                            colorTitle="font-semibold text-steplix-red"
-                            colorLine="bg-steplix-yellow"
+                            colorTitle="font-semibold text-steplix-yellow"
+                            colorLine="bg-steplix-red"
                             seeMore="see More"
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
                         />
@@ -41,8 +41,8 @@ const WhatWeDo = () => {
                         <Card
                             number="03."
                             title="Develop & Developer"
-                            colorTitle="font-semibold text-steplix-red"
-                            colorLine="bg-steplix-yellow"
+                            colorTitle="font-semibold text-steplix-yellow"
+                            colorLine="bg-steplix-red"
                             seeMore="see More"
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
                         />
