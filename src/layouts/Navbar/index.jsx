@@ -28,13 +28,13 @@ const Navbar = () => {
 
     return (
         <div
-            className={`sticky top-0 hidden md:block w-full text-white ${
+            className={`sticky top-0 hidden md:block w-full text-white z-50 ${
                 sticky ? "bg-black bg-opacity-80" : "bg-dark"
-            } px-4`}
+            }`}
         >
             <nav
-                className={`transition-height duration-500 ease-in-out ${
-                    sticky ? "h-28" : "h-20"
+                className={`transition-height duration-500 ease-in-out absolute w-full ${
+                    sticky ? "bg-black bg-opacity-80" : "bg-dark"
                 }`}
             >
                 <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-52">
