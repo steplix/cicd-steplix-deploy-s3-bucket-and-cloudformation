@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Sofia Pro";
 }
@@ -25,17 +29,6 @@ body {
     background-image: url("../../public/assets/images/montaña.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-.button-banner {
-    display: table;
-    color: white;
-    margin-top: 90vh;
-    margin-left: 50%;
-}
-.scroll-banner {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* ------title-empty---- */

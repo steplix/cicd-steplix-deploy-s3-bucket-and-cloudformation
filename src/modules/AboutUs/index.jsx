@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUs = () => {
     return (
-        <div className="lg:flex mt-[50px]" id="aboutUs">
+        <div className="lg:flex mt-[50px]" id="about-us">
             <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
                 steplix
             </p>

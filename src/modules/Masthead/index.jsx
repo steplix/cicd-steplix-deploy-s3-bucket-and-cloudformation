@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import chevronDown from "@/public/assets/icons/chevronDown.svg";
 
 const Masthead = () => {
     return (
@@ -35,10 +37,19 @@ const Masthead = () => {
                         negocio a la cima
                     </p>
                 </div>
-                <div className="button-banner absolute text-white">
-                    <div className="scroll-down">
-                        <a href="#about-us">Bajar</a>
-                    </div>
+                <div className="absolute text-white lg:top-[90vh] top-[44vh]  left-[40%] lg:left-[50%]">
+                    <a href="#about-us">
+                        <div className="border-steplix-yellow h-[44px] w-7 border-[1px] rounded-2xl text-center flex mx-auto mb-2 items-center">
+                            <div className="relative w-[14px] h-[7px] mx-auto">
+                                <Image
+                                    src={chevronDown}
+                                    alt="logo"
+                                    layout="fill"
+                                />
+                            </div>
+                        </div>
+                        <p>Scroll down</p>
+                    </a>
                 </div>
             </div>
         </div>
