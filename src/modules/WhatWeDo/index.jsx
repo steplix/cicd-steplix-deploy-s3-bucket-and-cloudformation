@@ -1,5 +1,6 @@
 import Card from "@/common/components/Card";
 import React from "react";
+import Link from "next/link";
 
 const WhatWeDo = () => {
     return (
@@ -47,6 +48,11 @@ const WhatWeDo = () => {
                             text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
                         />
                     </div>
+                </div>
+                <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
+                    <Link href="/vermas">
+                        <a>Ver mas</a>
+                    </Link>{" "}
                 </div>
             </div>
         </div>

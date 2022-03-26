@@ -30,7 +30,7 @@ const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
                     </p>
                 )}
                 {seeMore && (
-                    <button className="lg:text-2xl text-sm text-steplix-red underline decoration-2 mt-2">
+                    <button className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2">
                         {seeMore}
                     </button>
                 )}
