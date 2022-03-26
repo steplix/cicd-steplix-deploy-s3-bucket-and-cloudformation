@@ -1,12 +1,17 @@
+import ButtonSend from "@/common/components/ButtonSend";
 import React from "react";
 
 const ContactIndex = () => {
     return (
         <div className="text-white">
-            <h2 className="text-[54px]">Contactanos para llevar juntos esa</h2>
-            <p className="text-[64px] title-empty">IDEA HACIA LA CIMA</p>
+            <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
+                Contactanos para llevar juntos esa
+            </h2>
+            <p className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1570px] mb-10">
+                IDEA HACIA LA CIMA
+            </p>
             <div>
-                <form className=" rounded-lg overflow-hidden p-6 lg:p-1">
+                <form className=" rounded-lg overflow-hidden p-6 lg:p-1 space-y-4">
                     <div className="lg:flex">
                         <div className="relative lg:w-[440px]  border-b-2 mb-8 lg:mr-8">
                             <input
@@ -48,7 +53,7 @@ const ContactIndex = () => {
                             />
                         </div>
                     </div>
-                    <div className="relative lg:w-[920px] rounded-md border-2 mb-12">
+                    <div className="relative lg:w-[920px] rounded-md border-2">
                         <textarea
                             name="howCanWeHelpYou"
                             id=""
@@ -56,8 +61,10 @@ const ContactIndex = () => {
                             placeholder="¿How can we help you?"
                             className="mt-5 ml-3 block w-full appearance-none focus:outline-none bg-transparent h-40"
                         ></textarea>
+                        <div className="float-right mt-10">
+                            <ButtonSend />
+                        </div>
                     </div>
-                    <button className="float-right">boton</button>
                 </form>
             </div>
         </div>
