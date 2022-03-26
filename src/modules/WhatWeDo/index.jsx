@@ -5,7 +5,7 @@ import Link from "next/link";
 const WhatWeDo = () => {
     return (
         <div>
-            <div className="text-white" id="whatWeDo">
+            <div className="text-white w-[290px] lg:w-[1300px] " id="whatWeDo">
                 <h2 className="text-[24px] lg:text-[54px]">
                     Pasos hacia la cima
                 </h2>
