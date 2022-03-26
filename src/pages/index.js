@@ -4,7 +4,7 @@ import AboutUs from "@/modules/AboutUs";
 import WhatWeDo from "@/modules/WhatWeDo";
 import Head from "next/head";
 import HappyClients from "@/modules/HappyClients";
-import ContactIndex from "@/modules/ContactIndex";
+import ContactIndex from "@/modules/ContactUs";
 
 export default function Home() {
     return (
