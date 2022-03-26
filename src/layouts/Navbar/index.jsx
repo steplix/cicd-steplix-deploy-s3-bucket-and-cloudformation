@@ -44,17 +44,17 @@ const Navbar = () => {
                     <div className="mx-8">
                         <div className="flex space-x-5 mt-7 text-white text-base w-[800px] gap-2">
                             <a href="#about-us">{texts.navbar.item1}</a>
-                            <a href="#">{texts.navbar.item2}</a>
-                            <a href="#">{texts.navbar.item3}</a>
-                            <a href="#">{texts.navbar.item4}</a>
+                            <a href="#what-we-do">{texts.navbar.item2}</a>
+                            <a href="#Our-culture">{texts.navbar.item3}</a>
+                            <a href="#happy-clients">{texts.navbar.item4}</a>
                             <a href="#">{texts.navbar.item5}</a>
                         </div>
                     </div>
 
                     {/* boton contact us */}
 
-                    <button className="bg-white text-gray-900 rounded-full h-14 mt-3 my-2 px-10 text-xl mr-7">
-                        {texts.navbar.item6}
+                    <button className="bg-white text-gray-900 rounded-full w-[200px] h-14 mt-3 my-2 px-10 text-xl mr-7">
+                        <a href="#contact-us">{texts.navbar.item6}</a>
                     </button>
                     <div className="h-[35px] w-[35px] mt-7">
                         <LenguageSelector />

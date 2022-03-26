@@ -1,40 +1,43 @@
+import React, { useContext } from "react";
+import { LanguageContext } from "@/common/components/LanguageContext";
 import Card from "@/common/components/Card";
-import React from "react";
 
 const OurCulture = () => {
+    const { texts } = useContext(LanguageContext);
+
     return (
-        <div>
+        <div id="Our-culture">
             <div className="text-white mb-28 text-left w-[290px] lg:w-[1200px]">
                 <p className="text-[24px] lg:text-[54px]">
-                    Porque nadie llega solo hasta la cumbre,
+                    {texts.ourCulture.title}
                 </p>
                 <h2 className="title-empty lg:text-[64px] text-[24px]">
-                    SOMOS TU MEJOR ALIADO
+                    {texts.ourCulture.subtitle}
                 </h2>
             </div>
-            <div className="lg:flex lg:gap-28 space-y-7">
-                <div className="lg:w-[370px] w-[250px] mx-auto">
+            <div className="lg:flex lg:gap-28 space-y-7 lg:space-y-0">
+                <div className="lg:w-[450px] w-[250px]mx-auto">
                     <Card
-                        title="Develop & Developer"
+                        title={texts.ourCulture.cardOne.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-blue"
-                        text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                        text={texts.ourCulture.cardOne.description}
                     />
                 </div>
-                <div className="lg:w-[370px] w-[250px]  mx-auto">
+                <div className="lg:w-[450px] w-[250px] mx-auto">
                     <Card
-                        title="Develop & Developer"
+                        title={texts.ourCulture.cardTwo.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-red"
-                        text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                        text={texts.ourCulture.cardTwo.description}
                     />
                 </div>
-                <div className="lg:w-[370px] w-[250px]  mx-auto">
+                <div className="lg:w-[450px] w-[250px] mx-auto">
                     <Card
-                        title="Develop & Developer"
+                        title={texts.ourCulture.cardThree.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-yellow"
-                        text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                        text={texts.ourCulture.cardThree.description}
                     />
                 </div>
             </div>

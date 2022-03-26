@@ -1,7 +1,9 @@
+import React, { useContext } from "react";
+import { LanguageContext } from "@/common/components/LanguageContext";
 import Card from "@/common/components/Card";
-import React from "react";
 
 const AboutUs = () => {
+    const { texts } = useContext(LanguageContext);
     return (
         <div className="lg:flex mt-[50px]" id="about-us">
             <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
@@ -9,13 +11,10 @@ const AboutUs = () => {
             </p>
             <div className="w-[325px] lg:w-[610px]">
                 <Card
-                    title="sobre nosotros"
+                    title={texts.aboutUs.title}
                     colorTitle="font-bold text-white"
-                    seeMore="see More"
-                    text="Somos el aliado digital que co-creará la mejor ruta para escalar
-                esa idea de negocio hasta su pico más alto y te acompañará en
-                cada paso de esta travesía, minimizando el riesgo y ampliﬁcando
-                el impacto, en el tiempo acordado."
+                    seeMore={texts.seeMore}
+                    text={texts.aboutUs.description}
                 />
             </div>
         </div>

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "@/common/components/LanguageContext";
 import Image from "next/image";
 import chevronDown from "@/public/assets/icons/chevronDown.svg";
 
 const Masthead = () => {
+    const { texts } = useContext(LanguageContext);
+
     return (
         <div>
             <div className="banner lg:h-screen h-[450px]" id="masthead">
@@ -19,8 +22,8 @@ const Masthead = () => {
               lg:mb-6
             "
                     >
-                        Sherpas de <br />
-                        negocios digitales
+                        {texts.masthead.titlePartOne} <br />
+                        {texts.masthead.titlePartTwo}
                     </h1>
                     <p
                         className="
@@ -33,8 +36,7 @@ const Masthead = () => {
               lg:w-[775px]
             "
                     >
-                        Estamos aquí para co-crear el camino que llevará a tu
-                        negocio a la cima
+                        {texts.masthead.subtitle}
                     </p>
                 </div>
                 <div className="absolute text-white lg:top-[90vh] top-[44vh]  left-[40%] lg:left-[50%]">
