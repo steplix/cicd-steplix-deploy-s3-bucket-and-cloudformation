@@ -17,19 +17,15 @@ body {
     src: local("Sofia Pro"),
         url("../../public/fonts/SofiaProRegularAz.woff") format("woff");
 }
-
+.container-steplix {
+    @apply flex items-center justify-center my-36;
+}
 /*--------- banner------- */
 .banner {
     background-image: url("../../public/assets/images/montaña.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.title-empty {
-    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
-    color: transparent;
-}
-
 .button-banner {
     display: table;
     color: white;
@@ -40,4 +36,10 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+
+/* ------title-empty---- */
+.title-empty {
+    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+    color: transparent;
 }
