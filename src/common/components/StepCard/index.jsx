@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Card = ({
+const StepCard = ({
     number,
     title,
     seeMore,
@@ -66,7 +66,7 @@ const Card = ({
 //
 //PropsTypes
 //
-Card.propTypes = {
+StepCard.propTypes = {
     number: PropTypes.string,
     title: PropTypes.string.isRequired,
     seeMore: PropTypes.string,
@@ -74,4 +74,4 @@ Card.propTypes = {
     colorTitle: PropTypes.string,
     text: PropTypes.string.isRequired,
 };
-export default Card;
+export default StepCard;

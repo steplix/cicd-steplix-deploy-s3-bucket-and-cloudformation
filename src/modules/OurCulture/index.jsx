@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "@/common/components/LanguageContext";
-import Card from "@/common/components/Card";
+import StepCard from "@/common/components/StepCard";
 
 const OurCulture = () => {
     const { texts } = useContext(LanguageContext);
@@ -17,7 +17,7 @@ const OurCulture = () => {
             </div>
             <div className="lg:flex lg:gap-28 space-y-7 lg:space-y-0">
                 <div className="lg:w-[450px] w-[250px]mx-auto">
-                    <Card
+                    <StepCard
                         title={texts.ourCulture.cardOne.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-blue"
@@ -25,7 +25,7 @@ const OurCulture = () => {
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
-                    <Card
+                    <StepCard
                         title={texts.ourCulture.cardTwo.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-red"
@@ -33,7 +33,7 @@ const OurCulture = () => {
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
-                    <Card
+                    <StepCard
                         title={texts.ourCulture.cardThree.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-yellow"

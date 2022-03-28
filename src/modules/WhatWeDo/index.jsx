@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import Card from "@/common/components/Card";
+import StepCard from "@/common/components/StepCard";
 import { LanguageContext } from "@/common/components/LanguageContext";
 import Link from "next/link";
 import Modal from "@/common/components/Modal";
@@ -41,7 +41,7 @@ const WhatWeDo = () => {
                 setPositionModal={setPositionModal}
                 positionModal={positionModal}
             >
-                <Card
+                <StepCard
                     number={`0${number}.`}
                     title={title}
                     colorTitle="font-semibold text-steplix-yellow"
@@ -63,7 +63,7 @@ const WhatWeDo = () => {
 
                 <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
                     <div className="w-[250px] lg:w-[470px] lg:row-start-3 lg:row-span-2">
-                        <Card
+                        <StepCard
                             number="01."
                             title={texts.whatWeDo.cardOne.title}
                             colorTitle="font-semibold text-steplix-yellow"
@@ -75,7 +75,7 @@ const WhatWeDo = () => {
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-2 lg:row-span-3">
-                        <Card
+                        <StepCard
                             number="02."
                             title={texts.whatWeDo.cardTwo.title}
                             colorTitle="font-semibold text-steplix-yellow"
@@ -87,7 +87,7 @@ const WhatWeDo = () => {
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-1 lg:row-span-4">
-                        <Card
+                        <StepCard
                             number="03."
                             title={texts.whatWeDo.cardThree.title}
                             colorTitle="font-semibold text-steplix-yellow"

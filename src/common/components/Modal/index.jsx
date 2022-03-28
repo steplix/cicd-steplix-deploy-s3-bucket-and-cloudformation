@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import PropTypes from "prop-types";
 import chevronLeft from "@/public/assets/icons/chevronLeft.svg";
 import chevronRight from "@/public/assets/icons/chevronRight.svg";
 
@@ -34,10 +35,10 @@ export default function Modal({
                                 </div>
                                 {/*footer*/}
                                 {positionModal && (
-                                    <div className="flex items-center mt-10 justify-center p-6 rounded-b">
+                                    <div className="flex items-center mt-10 justify-center p-6 ">
                                         {positionModal > 1 && (
                                             <button
-                                                className="relative h-7 w-7 mx-2 rounded-xl font-semibold p-2  flex justify-center items-center shadow-xl"
+                                                className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2  font-semibold p-2  flex justify-center items-center shadow-xl"
                                                 type="button"
                                                 onClick={() =>
                                                     setPositionModal(
@@ -54,7 +55,7 @@ export default function Modal({
                                         )}
                                         {positionModal < 3 && (
                                             <button
-                                                className="btn btn--register btn--darkblue mx-2 rounded-xl font-semibold p-2 h-12 flex justify-center items-center shadow-xl uppercase"
+                                                className="mx-2 rounded-xl font-semibold p-2 h-12 flex justify-center items-center shadow-xl uppercase"
                                                 type="button"
                                                 onClick={() =>
                                                     setPositionModal(
@@ -62,7 +63,7 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <div className="relative h-7 w-7">
+                                                <div className="relative rounded-full bg-steplix-yellow h-14 w-14">
                                                     <Image
                                                         src={chevronRight}
                                                         alt="right chevron"
@@ -89,3 +90,16 @@ export default function Modal({
         </>
     );
 }
+
+//
+//PropsTypes
+//
+Modal.propTypes = {
+    setisModalOpen: PropTypes.bool.isRequired,
+    isModalOpen: PropTypes.bool.isRequired,
+    children: PropTypes.string.isRequired,
+    borderColor: PropTypes.string.isRequired,
+    subDescription: PropTypes.string,
+    setPositionModal: PropTypes.number,
+    positionModal: PropTypes.number,
+};

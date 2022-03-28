@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "@/common/components/LanguageContext";
-import Card from "@/common/components/Card";
+import StepCard from "@/common/components/StepCard";
 
 const AboutUs = () => {
     const { texts } = useContext(LanguageContext);
@@ -10,7 +10,7 @@ const AboutUs = () => {
                 steplix
             </p>
             <div className="w-[325px] lg:w-[610px]">
-                <Card
+                <StepCard
                     title={texts.aboutUs.title}
                     colorTitle="font-bold text-white"
                     seeMore={texts.seeMore}
