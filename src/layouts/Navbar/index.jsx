@@ -3,6 +3,7 @@ import logo from "@/public/assets/logos/logo-navbar.svg";
 import Image from "next/image";
 import LenguageSelector from "@/common/components/LenguageSelector";
 import { LanguageContext } from "@/common/components/LanguageContext";
+import Link from "next/link";
 const Navbar = () => {
     const { texts } = useContext(LanguageContext);
     //
@@ -47,7 +48,9 @@ const Navbar = () => {
                             <a href="#what-we-do">{texts.navbar.item2}</a>
                             <a href="#Our-culture">{texts.navbar.item3}</a>
                             <a href="#happy-clients">{texts.navbar.item4}</a>
-                            <a href="#">{texts.navbar.item5}</a>
+                            <Link href="/jobs">
+                                <a>{texts.navbar.item5}</a>
+                            </Link>
                         </div>
                     </div>
 

@@ -100,8 +100,8 @@ const WhatWeDo = () => {
                     </div>
                 </div>
                 <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
-                    <Link href="/vermas">
-                        <a>Ver mas</a>
+                    <Link href="/process">
+                        <a>{texts.seeMore}</a>
                     </Link>
                 </div>
             </div>
