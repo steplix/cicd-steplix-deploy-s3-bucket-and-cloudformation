@@ -6,8 +6,8 @@ import Modal from "@/common/components/Modal";
 
 const WhatWeDo = () => {
     const { texts } = useContext(LanguageContext);
-    const [positionModal, setPositionModal] = useState();
-    const [isModalOpen, setisModalOpen] = useState([false, positionModal]);
+    const [positionModal, setPositionModal] = useState(1);
+    const [isModalOpen, setisModalOpen] = useState(false);
 
     console.log("positionModal", positionModal);
     console.log(isModalOpen);

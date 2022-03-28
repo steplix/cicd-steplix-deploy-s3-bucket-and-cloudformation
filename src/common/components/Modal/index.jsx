@@ -9,7 +9,7 @@ export default function Modal({
     children,
     borderColor,
     subDescription,
-    setpositionModal,
+    setPositionModal,
     positionModal,
 }) {
     console.log("modal", positionModal);
@@ -21,7 +21,7 @@ export default function Modal({
                         <div className="relative w-[90%] lg:w-[1000px] flex justify-center ">
                             {/*content*/}
                             <div
-                                className={`${borderColor} border-2 min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
+                                className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
                             >
                                 <button
                                     onClick={() => setisModalOpen(false)}
@@ -34,24 +34,23 @@ export default function Modal({
                                     {children}
                                 </div>
                                 {/*footer*/}
-                                {setpositionModal && (
+                                {positionModal && (
                                     <div className="flex items-center mt-10 justify-center p-6 rounded-b">
                                         {positionModal > 1 && (
                                             <button
-                                                className="btn btn--register btn--darkblue mx-2 rounded-xl font-semibold p-2 h-12 flex justify-center items-center shadow-xl"
+                                                className="relative h-7 w-7 mx-2 rounded-xl font-semibold p-2  flex justify-center items-center shadow-xl"
                                                 type="button"
                                                 onClick={() =>
-                                                    setpositionModal(
+                                                    setPositionModal(
                                                         positionModal - 1
                                                     )
                                                 }
                                             >
-                                                <div className="relative h-7 w-7">
-                                                    <Image
-                                                        src={chevronLeft}
-                                                        layout="fill"
-                                                    />
-                                                </div>
+                                                <Image
+                                                    src={chevronLeft}
+                                                    alt="left chevron"
+                                                    layout="fill"
+                                                />
                                             </button>
                                         )}
                                         {positionModal < 3 && (
@@ -59,7 +58,7 @@ export default function Modal({
                                                 className="btn btn--register btn--darkblue mx-2 rounded-xl font-semibold p-2 h-12 flex justify-center items-center shadow-xl uppercase"
                                                 type="button"
                                                 onClick={() =>
-                                                    setpositionModal(
+                                                    setPositionModal(
                                                         positionModal + 1
                                                     )
                                                 }
@@ -67,6 +66,7 @@ export default function Modal({
                                                 <div className="relative h-7 w-7">
                                                     <Image
                                                         src={chevronRight}
+                                                        alt="right chevron"
                                                         layout="fill"
                                                     />
                                                 </div>
