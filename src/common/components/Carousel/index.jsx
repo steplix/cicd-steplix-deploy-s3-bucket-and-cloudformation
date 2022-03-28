@@ -125,7 +125,7 @@ const Carousel = () => {
                                         key={j}
                                     >
                                         <div className="flex justify-end">
-                                            <div className=" relative h-16 w-32 ">
+                                            <div className="relative h-16 w-32 ">
                                                 <Image
                                                     src={element?.image}
                                                     alt={element.alt}
