@@ -1,10 +1,41 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "@/common/components/LanguageContext";
 import ButtonSend from "@/common/components/ButtonSend";
+import axios from "axios";
 
 const ContactUs = () => {
     const { texts } = useContext(LanguageContext);
+    const handleSubmit = async (e) => {
+        const idTemplate = 5;
+        e.preventDefault();
 
+        const res = await axios(
+            "http://notifications.steplix.com:8000/notifications",
+            {
+                type: "POST",
+                data: {
+                    idTemplate,
+                    idChannel: /* email */ 2,
+                    metadata: {
+                        subject:
+                            idTemplate === 5
+                                ? "Contact | Steplix | Web Site"
+                                : "Postulation | Steplix | Web Site",
+                        to: "lsainz@steplix.com",
+                        name: e.target.name.value,
+                        nemailame: e.target.email.value,
+                        company: e.target.company.value,
+                        role: e.target.role.value,
+                        howCanWeHelpYou: e.target.howCanWeHelpYou.value,
+                    },
+                },
+                cache: false,
+                crossDomain: true,
+            }
+        );
+
+        const result = await res.json();
+    };
     return (
         <div className="text-white" id="contact-us">
             <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
@@ -14,7 +45,10 @@ const ContactUs = () => {
                 {texts.contactUs.subtitle}
             </p>
             <div>
-                <form className="rounded-lg overflow-hidden p-6 lg:p-1 space-y-4">
+                <form
+                    className="rounded-lg overflow-hidden p-6 lg:p-1 space-y-4"
+                    onSubmit={(e) => handleSubmit(e)}
+                >
                     <div className="lg:flex justify-center">
                         <div className="relative lg:w-[440px] border-b-2 mb-8 lg:mr-8">
                             <input
@@ -59,7 +93,7 @@ const ContactUs = () => {
                     <div className="relative lg:w-[920px] rounded-md border-2 mx-auto">
                         <textarea
                             name="howCanWeHelpYou"
-                            id=""
+                            id="text-help-you"
                             maxLength={1000}
                             placeholder={texts.contactUs.howCanWeHelpYou}
                             className="mt-5 ml-3 block w-full appearance-none focus:outline-none bg-transparent h-40"

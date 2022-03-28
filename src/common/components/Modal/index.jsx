@@ -12,7 +12,6 @@ export default function Modal({
     setPositionModal,
     positionModal,
 }) {
-    console.log("modal", positionModal);
     return (
         <>
             {isModalOpen && (

@@ -9,8 +9,6 @@ const WhatWeDo = () => {
     const [positionModal, setPositionModal] = useState(1);
     const [isModalOpen, setisModalOpen] = useState(false);
 
-    console.log("positionModal", positionModal);
-    console.log(isModalOpen);
     let subDescription, title, text, borderColor, number;
     if (positionModal === 1) {
         subDescription = texts.modal.modalOne.descriptionTwo;
