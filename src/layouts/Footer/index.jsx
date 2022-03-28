@@ -78,7 +78,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="grid justify-items-center">
-                            <div className=" flex gap-5">
+                            <div className="flex gap-5">
                                 <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iram.pdf">
                                     <a target="_blank">
                                         <Image
