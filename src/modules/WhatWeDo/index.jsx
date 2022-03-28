@@ -1,13 +1,56 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Card from "@/common/components/Card";
 import { LanguageContext } from "@/common/components/LanguageContext";
 import Link from "next/link";
+import Modal from "@/common/components/Modal";
 
 const WhatWeDo = () => {
     const { texts } = useContext(LanguageContext);
+    const [positionModal, setPositionModal] = useState();
+    const [isModalOpen, setisModalOpen] = useState([false, positionModal]);
 
+    console.log("positionModal", positionModal);
+    console.log(isModalOpen);
+    let subDescription, title, text, borderColor, number;
+    if (positionModal === 1) {
+        subDescription = texts.modal.modalOne.descriptionTwo;
+        title = texts.modal.modalOne.title;
+        text = texts.modal.modalOne.descriptionOne;
+        borderColor = "border-steplix-blue";
+        number = 1;
+    }
+    if (positionModal === 2) {
+        subDescription = texts.modal.modalTwo.descriptionTwo;
+        title = texts.modal.modalTwo.title;
+        text = texts.modal.modalTwo.descriptionOne;
+        borderColor = "border-steplix-red";
+        number = 2;
+    }
+    if (positionModal === 3) {
+        subDescription = texts.modal.modalThree.descriptionTwo;
+        title = texts.modal.modalThree.title;
+        text = texts.modal.modalThree.descriptionOne;
+        borderColor = "border-steplix-yellow";
+        number = 3;
+    }
     return (
         <div>
+            <Modal
+                isModalOpen={isModalOpen}
+                setisModalOpen={setisModalOpen}
+                borderColor={borderColor}
+                subDescription={subDescription}
+                setPositionModal={setPositionModal}
+                positionModal={positionModal}
+            >
+                <Card
+                    number={`0${number}.`}
+                    title={title}
+                    colorTitle="font-semibold text-steplix-yellow"
+                    colorLine="bg-steplix-red"
+                    text={text}
+                />
+            </Modal>
             <div
                 className="text-white w-[290px] lg:w-[1300px] "
                 id="what-we-do"
@@ -29,6 +72,8 @@ const WhatWeDo = () => {
                             colorLine="bg-steplix-red"
                             seeMore="see More"
                             text={texts.whatWeDo.cardOne.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-2 lg:row-span-3">
@@ -39,6 +84,8 @@ const WhatWeDo = () => {
                             colorLine="bg-steplix-red"
                             seeMore="see More"
                             text={texts.whatWeDo.cardTwo.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-1 lg:row-span-4">
@@ -49,6 +96,8 @@ const WhatWeDo = () => {
                             colorLine="bg-steplix-red"
                             seeMore="see More"
                             text={texts.whatWeDo.cardThree.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                 </div>

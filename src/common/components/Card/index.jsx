@@ -1,7 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
+const Card = ({
+    number,
+    title,
+    seeMore,
+    colorLine,
+    text,
+    colorTitle,
+    setisModalOpen,
+    seeMoreLink,
+    setPositionModal,
+}) => {
+    const handleClick = () => {
+        setisModalOpen(true);
+        number === "01." && setPositionModal(1);
+        number === "02." && setPositionModal(2);
+        number === "03." && setPositionModal(3);
+    };
     return (
         <div className="w-full flex gap-2">
             {number && (
@@ -29,7 +45,15 @@ const Card = ({ number, title, seeMore, colorLine, text, colorTitle }) => {
                         {text}
                     </p>
                 )}
-                {seeMore && (
+                {seeMore && setisModalOpen && (
+                    <button
+                        onClick={handleClick}
+                        className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2"
+                    >
+                        {seeMore}
+                    </button>
+                )}
+                {seeMore && seeMoreLink && (
                     <button className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2">
                         {seeMore}
                     </button>
