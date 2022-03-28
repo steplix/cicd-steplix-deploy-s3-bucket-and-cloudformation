@@ -55,7 +55,7 @@ const WhatWeDo = () => {
                 <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
                     <Link href="/vermas">
                         <a>Ver mas</a>
-                    </Link>{" "}
+                    </Link>
                 </div>
             </div>
         </div>

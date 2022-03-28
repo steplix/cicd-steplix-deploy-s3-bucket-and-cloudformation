@@ -14,9 +14,9 @@ const ContactUs = () => {
                 {texts.contactUs.subtitle}
             </p>
             <div>
-                <form className=" rounded-lg overflow-hidden p-6 lg:p-1 space-y-4">
+                <form className="rounded-lg overflow-hidden p-6 lg:p-1 space-y-4">
                     <div className="lg:flex justify-center">
-                        <div className="relative lg:w-[440px]  border-b-2 mb-8 lg:mr-8">
+                        <div className="relative lg:w-[440px] border-b-2 mb-8 lg:mr-8">
                             <input
                                 type="text"
                                 maxLength={60}
