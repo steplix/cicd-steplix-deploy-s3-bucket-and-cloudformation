@@ -1,3 +1,4 @@
+import CollageAboutUs from "@/common/components/CollageAboutUs";
 import ContactUs from "@/modules/ContactUs";
 import DigitalSherpas from "@/modules/DigitalSherpas";
 import Philosophy from "@/modules/Philosophy";
@@ -19,7 +20,14 @@ export default function Home() {
             <div className="flex items-center justify-center">
                 <Philosophy />
             </div>
-            <div className="container-steplix">
+            <div className="flex items-center justify-center">
+                <CollageAboutUs lg />
+            </div>
+
+            <div className="flex items-center justify-center">
+                <CollageAboutUs sm />
+            </div>
+            <div className="flex items-center justify-center mt-20 ">
                 <ContactUs />
             </div>
         </div>
