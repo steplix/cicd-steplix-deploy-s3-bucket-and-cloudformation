@@ -1,5 +1,17 @@
 const translations = {
     es: {
+        about_us: {
+            digitalSherpas: {
+                titleOne: "Tu digital",
+                titleTwo: "Sherpas",
+                descriptionOne:
+                    " Somos sherpas digitales especializados en diferentes áreas de los negocios, que cuenta con la mezcla exacta de seniority, experiencia y compromiso.",
+                descriptionTwo:
+                    " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
+                descriptionThree:
+                    "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y los ROI correctos.",
+            },
+        },
         process: {
             HowDoWeDoIt: {
                 title: "¿Cómo lo hacemos?",
@@ -185,6 +197,18 @@ const translations = {
         },
     },
     en: {
+        about_us: {
+            digitalSherpas: {
+                titleOne: "Your digital",
+                titleTwo: "Sherpas",
+                descriptionOne:
+                    "  We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment. ",
+                descriptionTwo:
+                    " We make up an interdisciplinary team that combines the knowledge and views of each member to create an experience that ensures each business idea reaches the top. ",
+                descriptionThree:
+                    "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. ",
+            },
+        },
         process: {
             HowDoWeDoIt: {
                 title: "How do we do it?",
