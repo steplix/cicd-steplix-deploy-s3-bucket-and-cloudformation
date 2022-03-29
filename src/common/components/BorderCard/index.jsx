@@ -4,11 +4,13 @@ const BorderCard = ({ children, lg }) => {
     return (
         <>
             {lg ? (
-                <div className="border-2 border-gray-100 w-full h-full">
+                <div className="lg:border-2 lg:border-gray-100 w-full h-full">
                     {children}
                 </div>
             ) : (
-                <div className=" w-full h-full">{children}</div>
+                <div className="border-2 border-gray-100 w-full h-full">
+                    {children}
+                </div>
             )}
         </>
     );
