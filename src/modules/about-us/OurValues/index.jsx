@@ -6,7 +6,7 @@ const OurValues = () => {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <div className="p-5 lg:w-[1130px] w-[345px] lg:mt-[70px]">
+        <div className="p-5 my-12 lg:w-[1130px] w-[345px] lg:mt-[70px]">
             <div className="">
                 <p className="text-[42px] font-bold ">03.</p>
                 <StepCard colorLine="bg-steplix-blue lg:w-12" />
@@ -18,7 +18,7 @@ const OurValues = () => {
                     />
                 </div>
             </div>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-y-12 lg:gap-x-7 space-y-4 lg:space-y-0 lg:mt-[100px]">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-y-12 lg:gap-x-7 space-y-10 lg:space-y-0 lg:mt-[100px] mt-7">
                 <StepCard
                     title={texts.about_us.ourValues.values.valuetOne.title}
                     textOne={
