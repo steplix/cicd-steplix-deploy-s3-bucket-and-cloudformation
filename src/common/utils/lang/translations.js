@@ -1,6 +1,11 @@
 const translations = {
     es: {
         about_us: {
+            philosophy: {
+                title: "Nuestra filosofía",
+                description:
+                    " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos de la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta.",
+            },
             digitalSherpas: {
                 titleOne: "Tu digital",
                 titleTwo: "Sherpas",
@@ -198,6 +203,11 @@ const translations = {
     },
     en: {
         about_us: {
+            philosophy: {
+                title: "Our philosophy",
+                description:
+                    " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks in the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. Thus, we scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. ",
+            },
             digitalSherpas: {
                 titleOne: "Your digital",
                 titleTwo: "Sherpas",
