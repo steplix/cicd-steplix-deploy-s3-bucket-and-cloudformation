@@ -24,14 +24,14 @@ const StepCard = ({
     return (
         <div className="w-full flex gap-2">
             {number && (
-                <p className="text-white lg:text-[52px] text-[18px] font-semibold">
+                <p className="text-white lg:text-4xl text-xs font-bold">
                     {number}
                 </p>
             )}
             <div>
                 {title && (
                     <p
-                        className={`text-[18px] lg:text-[52px] ${
+                        className={`text-xs lg:text-4xl ${
                             textTwo ? "mb-7" : "mb-2"
                         } ${
                             colorTitle ? colorTitle : "text-white font-semibold"
@@ -47,22 +47,22 @@ const StepCard = ({
                 )}
                 <div className={`gap-y-8 ${textTwo ? "mt-7" : "mt-2"}`}>
                     {textOne && (
-                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                        <p className="lg:text-xl text-sm mt-3 text-white">
                             {textOne}
                         </p>
                     )}
                     {textTwo && (
-                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                        <p className="lg:text-xl text-sm mt-3 text-white">
                             {textTwo}
                         </p>
                     )}
                     {textThree && (
-                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                        <p className="lg:text-xl text-sm mt-3 text-white">
                             {textThree}
                         </p>
                     )}
                     {textFour && (
-                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                        <p className="lg:text-xl text-sm mt-3 text-white">
                             {textFour}
                         </p>
                     )}
