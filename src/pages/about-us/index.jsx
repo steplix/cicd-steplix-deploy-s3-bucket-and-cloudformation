@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
                 <CollageAboutUs sm />
             </div>
-            <div className="flex items-center justify-center mt-20 ">
+            <div className="flex items-center justify-center my-20 ">
                 <ContactUs />
             </div>
         </div>

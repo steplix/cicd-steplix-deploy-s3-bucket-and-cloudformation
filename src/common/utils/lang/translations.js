@@ -1,6 +1,36 @@
 const translations = {
     es: {
         about_us: {
+            ourValues: {
+                title: "Nuestros Valores",
+                values: {
+                    valuetOne: {
+                        title: "Confianza",
+                        description:
+                            "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos.",
+                    },
+                    valuetTwo: {
+                        title: "Respeto Mutuo",
+                        description:
+                            "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente.",
+                    },
+                    valuetThree: {
+                        title: "Éxito",
+                        description:
+                            "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente.",
+                    },
+                    valuetFour: {
+                        title: "Agilidad",
+                        description:
+                            "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos.",
+                    },
+                    valuetFive: {
+                        title: "Conciencia",
+                        description:
+                            "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia.",
+                    },
+                },
+            },
             mission: {
                 title: "Nuestra misión",
                 description:
@@ -213,6 +243,36 @@ const translations = {
     },
     en: {
         about_us: {
+            ourValues: {
+                title: "Our values",
+                values: {
+                    valuetOne: {
+                        title: "Trust",
+                        description:
+                            " It is the faith in the contribution of the other, it is to give certainty that we will fulfill our commitments with others. It is not failing the other or ourselves. ",
+                    },
+                    valuetTwo: {
+                        title: "Mutual respect",
+                        description:
+                            " It is communicating with honesty and empathy, giving the other the opportunity to express their doubts and disagreements, trusting that they always seek to add value. It is to avoid wasting our time, the group, making excuses or talking unnecessarily. ",
+                    },
+                    valuetThree: {
+                        title: "Success",
+                        description:
+                            " It is the satisfaction of our customers. It is obtained by showing attitude, initiative and proactivity, resilience, solving problems and seeking to stand out, both in our solutions and in the teams we make up. It is growing all the time, personally and professionally. ",
+                    },
+                    valuetFour: {
+                        title: "Agility",
+                        description:
+                            " It is adapting to situations, change and challenges, seeking practicality, learning from mistakes and applying continuous improvement. It is avoiding stiffness, being stubborn, or staying still. ",
+                    },
+                    valuetFive: {
+                        title: "Awareness",
+                        description:
+                            " It is the ability to recognize the surrounding reality. It is promoting sustainability, empathy and diversity. It is influencing from our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. It is to avoid discrimination, aggression and malice. ",
+                    },
+                },
+            },
             mission: {
                 title: "Our mission",
                 description:
