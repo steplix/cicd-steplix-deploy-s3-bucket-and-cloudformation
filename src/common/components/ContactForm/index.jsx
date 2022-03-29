@@ -110,7 +110,7 @@ const ContactForm = ({ texts }) => {
 //PropsTypes
 //
 ContactForm.propTypes = {
-    texts: PropTypes.string.isRequired,
+    texts: PropTypes.object.isRequired,
 };
 
 export default ContactForm;

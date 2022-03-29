@@ -95,7 +95,7 @@ StepCard.propTypes = {
     seeMore: PropTypes.string,
     colorLine: PropTypes.string,
     colorTitle: PropTypes.string,
-    textOne: PropTypes.string.isRequired,
+    textOne: PropTypes.string,
     textTwo: PropTypes.string,
     textThree: PropTypes.string,
     textFour: PropTypes.string,
