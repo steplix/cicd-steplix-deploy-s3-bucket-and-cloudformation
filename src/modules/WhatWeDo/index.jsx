@@ -1,52 +1,108 @@
-import Card from "@/common/components/Card";
-import React from "react";
+import React, { useContext, useState } from "react";
+import StepCard from "@/common/components/StepCard";
+import { LanguageContext } from "@/common/components/LanguageContext";
+import Link from "next/link";
+import Modal from "@/common/components/Modal";
 
 const WhatWeDo = () => {
+    const { texts } = useContext(LanguageContext);
+    const [positionModal, setPositionModal] = useState(1);
+    const [isModalOpen, setisModalOpen] = useState(false);
+
+    let subDescription, title, text, borderColor, number;
+    if (positionModal === 1) {
+        subDescription = texts.modal.modalOne.descriptionTwo;
+        title = texts.modal.modalOne.title;
+        text = texts.modal.modalOne.descriptionOne;
+        borderColor = "border-steplix-blue";
+        number = 1;
+    }
+    if (positionModal === 2) {
+        subDescription = texts.modal.modalTwo.descriptionTwo;
+        title = texts.modal.modalTwo.title;
+        text = texts.modal.modalTwo.descriptionOne;
+        borderColor = "border-steplix-red";
+        number = 2;
+    }
+    if (positionModal === 3) {
+        subDescription = texts.modal.modalThree.descriptionTwo;
+        title = texts.modal.modalThree.title;
+        text = texts.modal.modalThree.descriptionOne;
+        borderColor = "border-steplix-yellow";
+        number = 3;
+    }
     return (
         <div>
-            <div className="text-white" id="whatWeDo">
+            <Modal
+                isModalOpen={isModalOpen}
+                setisModalOpen={setisModalOpen}
+                borderColor={borderColor}
+                subDescription={subDescription}
+                setPositionModal={setPositionModal}
+                positionModal={positionModal}
+            >
+                <StepCard
+                    number={`0${number}.`}
+                    title={title}
+                    colorTitle="font-semibold text-steplix-yellow"
+                    colorLine="bg-steplix-red"
+                    text={text}
+                />
+            </Modal>
+            <div
+                className="text-white w-[290px] lg:w-[1300px] "
+                id="what-we-do"
+            >
                 <h2 className="text-[24px] lg:text-[54px]">
-                    Pasos hacia la cima
+                    {texts.whatWeDo.title}
                 </h2>
                 <div className="lg:w-[800px] w-[250px] lg:text-2xl text-xs mb-5 mt-3">
-                    <p className="mb-3">
-                        Los comienzos no son todos iguales...en este camino vos
-                        elegís,
-                    </p>
-                    <p>¿Cuál es tu punto de partida? </p>
+                    <p className="mb-3">{texts.whatWeDo.subtitlePartOne}</p>
+                    <p>{texts.whatWeDo.subtitlePartTwo} </p>
                 </div>
 
                 <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
                     <div className="w-[250px] lg:w-[470px] lg:row-start-3 lg:row-span-2">
-                        <Card
-                            number="03."
-                            title="Develop & Developer"
+                        <StepCard
+                            number="01."
+                            title={texts.whatWeDo.cardOne.title}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                            text={texts.whatWeDo.cardOne.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-2 lg:row-span-3">
-                        <Card
-                            number="03."
-                            title="Develop & Developer"
-                            colorTitle="font-semibold text-steplix-red"
-                            colorLine="bg-steplix-yellow"
+                        <StepCard
+                            number="02."
+                            title={texts.whatWeDo.cardTwo.title}
+                            colorTitle="font-semibold text-steplix-yellow"
+                            colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                            text={texts.whatWeDo.cardTwo.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="w-[250px] lg:w-[470px] lg:row-start-1 lg:row-span-4">
-                        <Card
+                        <StepCard
                             number="03."
-                            title="Develop & Developer"
-                            colorTitle="font-semibold text-steplix-red"
-                            colorLine="bg-steplix-yellow"
+                            title={texts.whatWeDo.cardThree.title}
+                            colorTitle="font-semibold text-steplix-yellow"
+                            colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text="This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
+                            text={texts.whatWeDo.cardThree.description}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
+                </div>
+                <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
+                    <Link href="/process">
+                        <a>{texts.seeMore}</a>
+                    </Link>
                 </div>
             </div>
         </div>
