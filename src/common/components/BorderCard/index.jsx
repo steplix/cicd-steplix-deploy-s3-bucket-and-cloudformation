@@ -15,5 +15,12 @@ const BorderCard = ({ children, lg }) => {
         </>
     );
 };
+//
+//PropsTypes
+//
+BorderCard.propTypes = {
+    children: PropTypes.elementType.isRequired,
+    lg: PropTypes.bool,
+};
 
 export default BorderCard;
