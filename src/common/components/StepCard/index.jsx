@@ -6,7 +6,10 @@ const StepCard = ({
     title,
     seeMore,
     colorLine,
-    text,
+    textOne,
+    textTwo,
+    textThree,
+    textFour,
     colorTitle,
     setisModalOpen,
     seeMoreLink,
@@ -28,7 +31,9 @@ const StepCard = ({
             <div>
                 {title && (
                     <p
-                        className={`text-[18px] lg:text-[52px] mb-2 ${
+                        className={`text-[18px] lg:text-[52px] ${
+                            textTwo ? "mb-7" : "mb-2"
+                        } ${
                             colorTitle ? colorTitle : "text-white font-semibold"
                         }`}
                     >
@@ -40,11 +45,29 @@ const StepCard = ({
                         className={`lg:w-24 lg:h-[10px] h-1 w-12 ${colorLine}`}
                     ></div>
                 )}
-                {text && (
-                    <p className="lg:text-2xl text-sm mt-3 text-white">
-                        {text}
-                    </p>
-                )}
+                <div className={`gap-y-8 ${textTwo ? "mt-7" : "mt-2"}`}>
+                    {textOne && (
+                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                            {textOne}
+                        </p>
+                    )}
+                    {textTwo && (
+                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                            {textTwo}
+                        </p>
+                    )}
+                    {textThree && (
+                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                            {textThree}
+                        </p>
+                    )}
+                    {textFour && (
+                        <p className="lg:text-2xl text-sm mt-3 text-white">
+                            {textFour}
+                        </p>
+                    )}
+                </div>
+
                 {seeMore && setisModalOpen && (
                     <button
                         onClick={handleClick}
@@ -72,6 +95,9 @@ StepCard.propTypes = {
     seeMore: PropTypes.string,
     colorLine: PropTypes.string,
     colorTitle: PropTypes.string,
-    text: PropTypes.string.isRequired,
+    textOne: PropTypes.string.isRequired,
+    textTwo: PropTypes.string,
+    textThree: PropTypes.string,
+    textFour: PropTypes.string,
 };
 export default StepCard;

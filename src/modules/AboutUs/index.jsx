@@ -17,7 +17,7 @@ const AboutUs = () => {
                     title={texts.aboutUs.title}
                     colorTitle="font-bold text-white"
                     seeMore={texts.seeMore}
-                    text={texts.aboutUs.description}
+                    textOne={texts.aboutUs.description}
                 />
             </div>
         </div>
