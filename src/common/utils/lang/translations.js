@@ -1,6 +1,33 @@
 const translations = {
     es: {
         process: {
+            HowDoWeDoIt: {
+                title: "How do we do it?",
+                description:
+                    "In the mountains as in business, there are 4 basic concepts that cannot be missed to ensure reaching the top: spirit, body, mind and good resources. and, At Steplix we know that we can meet any challenge because we have all of them. ",
+                concepts: {
+                    conceptOne: {
+                        title: "Espíritu",
+                        description:
+                            "Las personas son el verdadero motor por eso creamos equipos interdisciplinarios donde conjugamos los conocimientos y las miradas de cada uno para construir la mejor versión de cada producto.",
+                    },
+                    conceptTwo: {
+                        title: "Cuerpo",
+                        description:
+                            "Nos apoyamos en Metodologías Ágiles para una mayor performance del trabajo en sintonía con la evolución del proyecto.",
+                    },
+                    conceptThree: {
+                        title: "Mente",
+                        description:
+                            "Utilizamos Design Thinking como proceso creativo grupal para maximizar la generación de ideas más innovadoras.",
+                    },
+                    conceptFour: {
+                        title: "Recursos",
+                        description:
+                            "Aprovechamos todo el potencial de la tecnología para hacer de cada proyecto una experiencia única, con foco en el usuario.",
+                    },
+                },
+            },
             stepsToTheTop: {
                 title: "Pasos hacia la cima",
                 description:
@@ -159,6 +186,33 @@ const translations = {
     },
     en: {
         process: {
+            HowDoWeDoIt: {
+                title: "How do we do it?",
+                description:
+                    "In the mountains as in business, there are 4 basic concepts that cannot be missed to ensure reaching the top: spirit, body, mind and good resources. and, At Steplix we know that we can meet any challenge because we have all of them. ",
+                concepts: {
+                    conceptOne: {
+                        title: "Spirit",
+                        description:
+                            " People are the real driving force, which is why we create interdisciplinary teams where we combine the knowledge and views of each one to build the best version of each product. ",
+                    },
+                    conceptTwo: {
+                        title: "Body",
+                        description:
+                            " We rely on Agile Methodologies for greater control of work in tune with the evolution of the project. ",
+                    },
+                    conceptThree: {
+                        title: "Mind",
+                        description:
+                            " We use Design Thinking as a group creative process to maximize the generation of the most innovative ideas. ",
+                    },
+                    conceptFour: {
+                        title: "Means",
+                        description:
+                            " We exploit the full potential of technology to make each project a unique experience, with a focus on the user. ",
+                    },
+                },
+            },
             everythingStartsWithAnIdea: {
                 title: "Everything starts with an idea",
                 descriptionOne:

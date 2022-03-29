@@ -1,4 +1,5 @@
 import EverythingStartsWithAnIdea from "@/modules/EverythingStartsWithAnIdea";
+import HoDoWeDoIt from "@/modules/HowDoWEDoIt";
 import StepsToTheTop from "@/modules/StepsToTheTop";
 import Head from "next/head";
 
@@ -16,6 +17,9 @@ export default function Home() {
             </div>
             <div className="container-steplix">
                 <StepsToTheTop />
+            </div>
+            <div className="container-steplix">
+                <HoDoWeDoIt />
             </div>
         </div>
     );
