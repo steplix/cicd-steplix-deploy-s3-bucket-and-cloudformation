@@ -8,6 +8,7 @@ html {
 
 * {
     font-family: "Sofia Pro";
+    color: white;
 }
 
 body {
@@ -29,6 +30,17 @@ body {
     background-image: url("../../public/assets/images/montaña.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/*--------- Process Mountain------- */
+
+@media (min-width: 768px) {
+    .steplix-process {
+        height: 700px;
+        background-image: url("../../public/assets/images/bg-process.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 /* ------title-empty---- */

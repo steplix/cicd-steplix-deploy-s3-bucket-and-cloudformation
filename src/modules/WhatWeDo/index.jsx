@@ -32,7 +32,7 @@ const WhatWeDo = () => {
         number = 3;
     }
     return (
-        <div>
+        <div className="w-[330px] lg:w-[1390px] steplix-process">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
@@ -46,7 +46,7 @@ const WhatWeDo = () => {
                     title={title}
                     colorTitle="font-semibold text-steplix-yellow"
                     colorLine="bg-steplix-red"
-                    text={text}
+                    textOne={text}
                 />
             </Modal>
             <div
@@ -69,7 +69,7 @@ const WhatWeDo = () => {
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text={texts.whatWeDo.cardOne.description}
+                            textOne={texts.whatWeDo.cardOne.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -81,7 +81,7 @@ const WhatWeDo = () => {
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text={texts.whatWeDo.cardTwo.description}
+                            textOne={texts.whatWeDo.cardTwo.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -93,7 +93,7 @@ const WhatWeDo = () => {
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             seeMore="see More"
-                            text={texts.whatWeDo.cardThree.description}
+                            textOne={texts.whatWeDo.cardThree.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />

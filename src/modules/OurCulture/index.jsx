@@ -6,7 +6,7 @@ const OurCulture = () => {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <div id="Our-culture">
+        <div id="Our-culture " className="w-[330px] lg:w-[1390px]">
             <div className="text-white mb-28 text-left w-[290px] lg:w-[1200px]">
                 <p className="text-[24px] lg:text-[54px]">
                     {texts.ourCulture.title}
@@ -21,7 +21,7 @@ const OurCulture = () => {
                         title={texts.ourCulture.cardOne.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-blue"
-                        text={texts.ourCulture.cardOne.description}
+                        textOne={texts.ourCulture.cardOne.description}
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
@@ -29,7 +29,7 @@ const OurCulture = () => {
                         title={texts.ourCulture.cardTwo.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-red"
-                        text={texts.ourCulture.cardTwo.description}
+                        textOne={texts.ourCulture.cardTwo.description}
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
@@ -37,7 +37,7 @@ const OurCulture = () => {
                         title={texts.ourCulture.cardThree.title}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-yellow"
-                        text={texts.ourCulture.cardThree.description}
+                        textOne={texts.ourCulture.cardThree.description}
                     />
                 </div>
             </div>

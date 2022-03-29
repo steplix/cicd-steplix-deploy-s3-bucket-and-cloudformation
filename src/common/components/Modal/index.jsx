@@ -95,11 +95,11 @@ export default function Modal({
 //PropsTypes
 //
 Modal.propTypes = {
-    setisModalOpen: PropTypes.bool.isRequired,
+    setisModalOpen: PropTypes.func.isRequired,
     isModalOpen: PropTypes.bool.isRequired,
-    children: PropTypes.string.isRequired,
+    children: PropTypes.object.isRequired,
     borderColor: PropTypes.string.isRequired,
     subDescription: PropTypes.string,
-    setPositionModal: PropTypes.number,
+    setPositionModal: PropTypes.func,
     positionModal: PropTypes.number,
 };

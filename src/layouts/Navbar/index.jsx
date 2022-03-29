@@ -34,11 +34,11 @@ const Navbar = () => {
             }`}
         >
             <nav
-                className={`transition-height duration-500 ease-in-out absolute w-full ${
+                className={`transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
                     sticky ? "bg-black bg-opacity-80" : "bg-dark"
                 }`}
             >
-                <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-52">
+                <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-5">
                     <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
                         <Image src={logo} alt="logo" layout="fill" />
                     </div>
