@@ -1,4 +1,5 @@
 import EverythingStartsWithAnIdea from "@/modules/EverythingStartsWithAnIdea";
+import StepsToTheTop from "@/modules/StepsToTheTop";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
             </Head>
             <div className="flex items-center justify-center">
                 <EverythingStartsWithAnIdea />
+            </div>
+            <div className="container-steplix">
+                <StepsToTheTop />
             </div>
         </div>
     );

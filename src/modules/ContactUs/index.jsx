@@ -37,7 +37,7 @@ const ContactUs = () => {
         const result = await res.json();
     };
     return (
-        <div className="text-white" id="contact-us">
+        <div className="text-white w-[330px] lg:w-[1390px]" id="contact-us">
             <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
                 {texts.contactUs.title}
             </h2>

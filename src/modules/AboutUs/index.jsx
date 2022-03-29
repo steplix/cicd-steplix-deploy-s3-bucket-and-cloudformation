@@ -5,7 +5,10 @@ import StepCard from "@/common/components/StepCard";
 const AboutUs = () => {
     const { texts } = useContext(LanguageContext);
     return (
-        <div className="lg:flex mt-[50px]" id="about-us">
+        <div
+            className="lg:flex mt-[50px] w-[330px] lg:w-[1390px]"
+            id="about-us"
+        >
             <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
                 steplix
             </p>

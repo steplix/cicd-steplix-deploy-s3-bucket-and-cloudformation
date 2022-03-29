@@ -32,7 +32,7 @@ const WhatWeDo = () => {
         number = 3;
     }
     return (
-        <div>
+        <div className="w-[330px] lg:w-[1390px]">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
