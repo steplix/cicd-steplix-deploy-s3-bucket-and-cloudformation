@@ -2,9 +2,9 @@ const translations = {
     es: {
         process: {
             HowDoWeDoIt: {
-                title: "How do we do it?",
+                title: "¿Cómo lo hacemos?",
                 description:
-                    "In the mountains as in business, there are 4 basic concepts that cannot be missed to ensure reaching the top: spirit, body, mind and good resources. and, At Steplix we know that we can meet any challenge because we have all of them. ",
+                    "En la montaña como en los negocios, hay 4 conceptos básicos que no pueden faltar para asegurar la llegada a la cima: espíritu, cuerpo, mente y buenos recursos. Y, En steplix sabemos que podremos alcanzar cualquier desafío porque contamos con todos ellos.",
                 concepts: {
                     conceptOne: {
                         title: "Espíritu",

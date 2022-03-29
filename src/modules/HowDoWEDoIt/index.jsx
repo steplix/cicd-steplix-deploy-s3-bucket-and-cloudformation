@@ -15,7 +15,7 @@ const HoDoWeDoIt = () => {
                     colorLine="bg-steplix-red"
                 />
             </div>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-y-7 lg:gap-x-4 space-y-4 lg:space-y-0">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-y-12 lg:gap-x-7 space-y-4 lg:space-y-0">
                 <StepCard
                     title={texts.process.HowDoWeDoIt.title}
                     textOne={texts.process.HowDoWeDoIt.description}
