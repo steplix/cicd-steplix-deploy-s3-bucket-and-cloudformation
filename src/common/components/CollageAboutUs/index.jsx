@@ -70,6 +70,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src={cultureOne}
                                 alt="culture"
                                 layout="fill"
+                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
@@ -77,6 +78,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src={cultureTwo}
                                 alt="culture"
                                 layout="fill"
+                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
@@ -84,6 +86,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src={cultureFive}
                                 alt="culture"
                                 layout="fill"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -93,6 +96,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src={cultureThree}
                                 alt="culture"
                                 layout="fill"
+                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[230px] w-[160px]">
@@ -100,12 +104,14 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src={cultureFour}
                                 alt="culture"
                                 layout="fill"
+                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
                             <Image
                                 src={cultureSix}
                                 alt="culture"
+                                objectFit="cover"
                                 layout="fill"
                             />
                         </div>
