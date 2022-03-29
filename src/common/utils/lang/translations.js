@@ -1,6 +1,48 @@
 const translations = {
     es: {
         process: {
+            stepsToTheTop: {
+                title: "Pasos hacia la cima",
+                description:
+                    " Los comienzos no son todos iguales...en este camino vos elegís, ¿Cuál es tu punto de partida?",
+                stepOne: {
+                    title: "Conociendo tu negocio ",
+                    descriptionOne:
+                        " Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
+                    descriptionTwo:
+                        " En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
+                    descriptionThree:
+                        "  Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías.",
+                    descriptionFour:
+                        "  Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla. ",
+                    secondaryDescription:
+                        " ¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?",
+                },
+                stepTwo: {
+                    title: "Diseño de producto ",
+                    descriptionOne:
+                        "  Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
+                    descriptionTwo:
+                        " La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra.  ",
+                    descriptionThree:
+                        "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos.",
+                    descriptionFour: "",
+                    secondaryDescription:
+                        " ¿Sabías que en promedio una persona recibe cerca de 1700 publicidades en un mes, pero solo le presta atención a la mitad?",
+                },
+                stepThree: {
+                    title: "Desarrollo & entrega ",
+                    descriptionOne:
+                        "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
+                    descriptionTwo:
+                        "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
+                    descriptionThree: " ¡Pero esto no termina aquí!",
+                    descriptionFour:
+                        "  En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
+                    secondaryDescription:
+                        "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market ?",
+                },
+            },
             everythingStartsWithAnIdea: {
                 title: "Todo empieza con una idea",
                 descriptionOne:
@@ -127,6 +169,48 @@ const translations = {
                     " In the process of finding the answers, it is important to have a guide, a fellow traveler who shares the challenge and helps define the path. ",
                 descriptionFour:
                     " Steplix is the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you every step of this journey, minimizing the risk and amplifying the impact, in the agreed time. ",
+            },
+            stepsToTheTop: {
+                title: "Steps to the top",
+                description:
+                    " The beginnings are not all the same...on this path you choose, What is your starting point? ",
+                stepOne: {
+                    title: "Understand & scope the digitalization of your business ",
+                    descriptionOne:
+                        " There are many ideas. But we constantly ask ourselves… Is there business? ",
+                    descriptionTwo:
+                        " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and together define the path to take.",
+                    descriptionThree:
+                        "  To make sure we understand the context and all its variables, we put the idea through a series of analyzes, applying different methodologies. ",
+                    descriptionFour:
+                        "  With a minimum investment you can understand if there is an opportunity and how to take advantage of it. ",
+                    secondaryDescription:
+                        "Did you know that 75% of new business ideas fail in their first 3 years? ",
+                },
+                stepTwo: {
+                    title: "Product Design ",
+                    descriptionOne:
+                        "  Once the business model and value proposition have been defined, we prepare to jointly design all the functionalities that the product will have, that idea that originated the business, and take another step towards the top. Product design is very important because it is through the interfaces and user experience that the end customer truly perceives the value of the platform. ",
+                    descriptionTwo:
+                        "  Strategy, creativity and innovation are key in this collaborative stage in which Steplix designs together with the client the most appropriate digital product to enhance the business and create an emotional response in whoever buys it. ",
+                    descriptionThree:
+                        "In this way, we lead the user experience (UX) by improving functionalities and facilitating interaction in an agile and satisfactory way for everyone.  ",
+                    descriptionFour: "",
+                    secondaryDescription:
+                        "Did you know that on average a person receives about 1700 ads in a month, but only pays attention to half of then?",
+                },
+                stepThree: {
+                    title: "Develop & Deliver ",
+                    descriptionOne:
+                        "  Our culture focuses on agile processes and methodologies that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve.  ",
+                    descriptionTwo:
+                        "  With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first firm steps in the market. ",
+                    descriptionThree: " But this does not end here!",
+                    descriptionFour:
+                        "  At this stage, both the product and the business model are constantly evolving. With the commissioning, new skills and functionalities are discovered that restart the co-creation dynamics of the digital solution, and on this path Steplix will also accompany you. ",
+                    secondaryDescription:
+                        " Did you know that most projects fail to estimate costs and time, delaying time to market?",
+                },
             },
         },
         masthead: {
