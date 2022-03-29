@@ -21,7 +21,7 @@ const StepsToTheTop = () => {
                         <StepCard
                             number="01."
                             title={texts.process.stepsToTheTop.stepOne.title}
-                            colorTitle="font-bold text-white"
+                            colorTitle="font-bold text-steplix-yellow"
                             textOne={
                                 texts.process.stepsToTheTop.stepOne
                                     .descriptionOne
@@ -54,9 +54,9 @@ const StepsToTheTop = () => {
                 <div className="flex space-x-[60px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
-                            number="01."
+                            number="02."
                             title={texts.process.stepsToTheTop.stepTwo.title}
-                            colorTitle="font-bold text-white"
+                            colorTitle="font-bold text-steplix-yellow"
                             textOne={
                                 texts.process.stepsToTheTop.stepTwo
                                     .descriptionOne
@@ -89,9 +89,9 @@ const StepsToTheTop = () => {
                 <div className="flex space-x-[60px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
-                            number="01."
+                            number="03."
                             title={texts.process.stepsToTheTop.stepThree.title}
-                            colorTitle="font-bold text-white"
+                            colorTitle="font-bold text-steplix-yellow"
                             textOne={
                                 texts.process.stepsToTheTop.stepThree
                                     .descriptionOne
