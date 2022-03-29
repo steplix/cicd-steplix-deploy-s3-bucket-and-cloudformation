@@ -1,3 +1,4 @@
+import ContactUs from "@/modules/ContactUs";
 import EverythingStartsWithAnIdea from "@/modules/EverythingStartsWithAnIdea";
 import HoDoWeDoIt from "@/modules/HowDoWEDoIt";
 import StepsToTheTop from "@/modules/StepsToTheTop";
@@ -20,6 +21,9 @@ export default function Home() {
             </div>
             <div className="container-steplix">
                 <HoDoWeDoIt />
+            </div>
+            <div className="container-steplix">
+                <ContactUs />
             </div>
         </div>
     );
