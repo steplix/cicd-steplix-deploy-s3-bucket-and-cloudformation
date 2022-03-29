@@ -1,6 +1,16 @@
 const translations = {
     es: {
         about_us: {
+            mission: {
+                title: "Nuestra misión",
+                description:
+                    "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores.",
+            },
+            vision: {
+                title: "Nuestra visión",
+                description:
+                    "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores.",
+            },
             philosophy: {
                 title: "Nuestra filosofía",
                 description:
@@ -203,6 +213,16 @@ const translations = {
     },
     en: {
         about_us: {
+            mission: {
+                title: "Our mission",
+                description:
+                    " Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators. ",
+            },
+            vision: {
+                title: "Our Vision",
+                description:
+                    " Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators. ",
+            },
             philosophy: {
                 title: "Our philosophy",
                 description:
