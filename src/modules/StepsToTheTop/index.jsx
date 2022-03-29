@@ -8,7 +8,7 @@ const StepsToTheTop = () => {
 
     return (
         <div>
-            <div className="w-[900px] mb-[100px]">
+            <div className="w-[325px] lg:w-[900px] mb-[100px]">
                 <StepCard
                     title={texts.process.stepsToTheTop.title}
                     colorTitle="font-bold text-white"
@@ -17,7 +17,7 @@ const StepsToTheTop = () => {
             </div>
             <div className="space-y-20">
                 <div className="flex space-x-[60px]">
-                    <div className="w-[900px] ">
+                    <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
                             title={texts.process.stepsToTheTop.stepOne.title}
@@ -41,7 +41,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="h-[300px] w-[300px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-blue"
                             text={
@@ -52,7 +52,7 @@ const StepsToTheTop = () => {
                     </div>
                 </div>
                 <div className="flex space-x-[60px]">
-                    <div className="w-[900px] ">
+                    <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
                             title={texts.process.stepsToTheTop.stepTwo.title}
@@ -76,7 +76,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="h-[300px] w-[300px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-red"
                             text={
@@ -87,7 +87,7 @@ const StepsToTheTop = () => {
                     </div>
                 </div>
                 <div className="flex space-x-[60px]">
-                    <div className="w-[900px] ">
+                    <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
                             title={texts.process.stepsToTheTop.stepThree.title}
@@ -111,7 +111,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="h-[300px] w-[300px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-yellow"
                             text={

@@ -24,14 +24,14 @@ const StepCard = ({
     return (
         <div className="w-full flex gap-2">
             {number && (
-                <p className="text-white lg:text-4xl text-xs font-bold">
+                <p className="text-white lg:text-4xl text-2xl font-bold">
                     {number}
                 </p>
             )}
             <div>
                 {title && (
                     <p
-                        className={`text-xs lg:text-4xl ${
+                        className={`text-2xl lg:text-4xl ${
                             textTwo ? "mb-7" : "mb-2"
                         } ${
                             colorTitle ? colorTitle : "text-white font-semibold"
