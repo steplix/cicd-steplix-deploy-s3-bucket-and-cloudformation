@@ -1,5 +1,21 @@
 const translations = {
     es: {
+        process: {
+            everythingStartsWithAnIdea: {
+                title: "Todo empieza con una idea",
+                descriptionOne:
+                    "Esa idea que puede surgir en cualquier momento, en cualquier lugar. Que puede ser innovadora, creativa, revolucionaria, desafiante…",
+
+                descriptionTwo:
+                    " Pero de la idea al hecho, hay un mundo de preguntas, de dudas y de decisiones por tomar.",
+
+                descriptionThree:
+                    " En el proceso de encontrar las respuestas, es importante contar con un guía, un compañero de viaje que comparta el reto y ayude a definir el camino.",
+
+                descriptionFour:
+                    "  Steplix, es el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado.",
+            },
+        },
         masthead: {
             titlePartOne: " Sherpas de",
             titlePartTwo: "negocios digitales",
@@ -100,6 +116,19 @@ const translations = {
         },
     },
     en: {
+        process: {
+            everythingStartsWithAnIdea: {
+                title: "Everything starts with an idea",
+                descriptionOne:
+                    " That idea that can arise at any time, anywhere. Which can be innovative, creative, revolutionary, challenging... ",
+                descriptionTwo:
+                    " But from the idea to the fact, there is a world of questions, doubts and decisions to be made. ",
+                descriptionThree:
+                    " In the process of finding the answers, it is important to have a guide, a fellow traveler who shares the challenge and helps define the path. ",
+                descriptionFour:
+                    " Steplix is the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you every step of this journey, minimizing the risk and amplifying the impact, in the agreed time. ",
+            },
+        },
         masthead: {
             titlePartOne: "We are",
             titlePartTwo: "the Digital Sherpas",
