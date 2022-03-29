@@ -1,8 +1,9 @@
 import CollageAboutUs from "@/common/components/CollageAboutUs";
 import ContactUs from "@/modules/ContactUs";
-import DigitalSherpas from "@/modules/DigitalSherpas";
-import MissionVision from "@/modules/MissionVision";
-import Philosophy from "@/modules/Philosophy";
+import DigitalSherpas from "@/modules/about-us/DigitalSherpas";
+import MissionVision from "@/modules/about-us/MissionVision";
+import OurValues from "@/modules/about-us/OurValues";
+import Philosophy from "@/modules/about-us/Philosophy";
 
 import Head from "next/head";
 
@@ -27,7 +28,9 @@ export default function Home() {
             <div className="flex items-center justify-center">
                 <MissionVision />
             </div>
-
+            <div className="flex items-center justify-center">
+                <OurValues />
+            </div>
             <div className="flex items-center justify-center">
                 <CollageAboutUs sm />
             </div>

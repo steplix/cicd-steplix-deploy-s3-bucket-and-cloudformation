@@ -9,7 +9,7 @@ const MissionVision = () => {
     return (
         <div className="lg:flex lg:gap-5 lg:mt-20 mt-10">
             <div className="lg:w-[550px] w-[360px] lg:min-h-[400px]">
-                <BorderCard>
+                <BorderCard lg>
                     <div className="p-5">
                         <p className="text-[42px] font-bold">01.</p>
                         <StepCard colorLine="bg-steplix-blue lg:w-12" />
@@ -25,7 +25,7 @@ const MissionVision = () => {
                 </BorderCard>
             </div>
             <div className="lg:w-[550px] w-[360px] lg:min-h-[400px]">
-                <BorderCard>
+                <BorderCard lg>
                     <div className="p-5">
                         <p className="text-[42px] font-bold">02.</p>
                         <StepCard colorLine="bg-steplix-blue lg:w-12" />
