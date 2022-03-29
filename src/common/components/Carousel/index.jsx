@@ -12,10 +12,17 @@ import smartium from "@/public/assets/logos/clients/smartium.svg";
 
 import _ from "lodash";
 import PropTypes from "prop-types";
-// eslint-disable-next-line no-unused-vars
 const Carousel = () => {
+    //
+    //UseStates
+    //
     const [currentSlide, setCurrentSlide] = React.useState(0);
     const [loaded, setLoaded] = React.useState(false);
+
+    //
+    //Variables
+    //
+    let dotColor = "";
     const arrayClients = [
         {
             image: agrocanje,
@@ -46,6 +53,10 @@ const Carousel = () => {
             alt: "smartium",
         },
     ];
+
+    //
+    //useKeenSlider
+    //
     const [sliderRef, propsRef] = useKeenSlider({
         initial: 0,
         slides: {
@@ -68,8 +79,6 @@ const Carousel = () => {
             setLoaded(true);
         },
     });
-
-    let dotColor = "";
 
     return (
         <>
