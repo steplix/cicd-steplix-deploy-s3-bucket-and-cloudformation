@@ -6,7 +6,7 @@ const AboutUs = () => {
     const { texts } = useContext(LanguageContext);
     return (
         <div
-            className="lg:flex mt-[50px] w-[330px] lg:w-[1390px]"
+            className="lg:flex mt-[50px] lg:w-[1230px] w-[345px]"
             id="about-us"
         >
             <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
