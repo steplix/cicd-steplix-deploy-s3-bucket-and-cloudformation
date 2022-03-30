@@ -1,5 +1,79 @@
 const translations = {
     es: {
+        jobs: {
+            applyButton: "Aplicar",
+            title: "Convierte en",
+            jobOne: {
+                title: "UI/UX Designer Ssr.",
+                country: "Argentina",
+                description:
+                    "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
+                jobDescription: {
+                    title: "REQUIREMENTS",
+                    items: [
+                        "Rapid prototyping.",
+                        "High definition mockups.",
+                        "Presentation of solutions and argumentation.",
+                        "Knowledge of good practices and usability patterns both in mobile as website.",
+                        "Experience in design processes.",
+                        "Experience in user research and user testing.",
+                        "Facilitation of Design Thinking, Design Sprint Workshops, etc.",
+                        "Knowledge of Sketch, Figma or Adobe XD Miro or Mural.",
+                        "Be detailed, independent and proactive.",
+                    ],
+                },
+                requirements: { title: "", items: [] },
+                workModality: {
+                    title: "WORK MODALITY",
+                    items: [
+                        "Full time",
+                        "Hybrid working model",
+                        "Prepaid medicine",
+                        "Free English classes",
+                        "Career plan",
+                        "Excellent work environment",
+                        "Bonuses at the end of the year",
+                        "Flexible schedule",
+                        "Massages in the office",
+                        "Access to games room",
+                        "Refreshments and snacks",
+                    ],
+                },
+            },
+            jobTwo: {
+                title: "ANALISTA FUNCIONAL",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+            jobThree: {
+                title: "GROWTH MARKETING",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+            jobFour: {
+                title: "BACKEND - SSR/SR",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+        },
         about_us: {
             ourValues: {
                 title: "Nuestros Valores",
@@ -223,6 +297,10 @@ const translations = {
             subtitle: "IDEA HACIA LA CIMA",
             name: "Nombre",
             email: "Email",
+            lastname: "Apellido",
+            linkedin: "Link a Linkedin",
+            uploadCv: "Adjuntar CV",
+            weWantToKnowAboutYou: "Queremos saber de vos",
             company: "Empresa",
             role: "Rol",
             howCanWeHelpYou: "¿Cómo te podemos ayudar?",
@@ -242,6 +320,80 @@ const translations = {
         },
     },
     en: {
+        jobs: {
+            applyButton: "Apply",
+            title: "Become a",
+            jobOne: {
+                title: "UI/UX Designer Ssr.",
+                country: "Argentina",
+                description:
+                    "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
+                jobDescription: {
+                    title: "REQUIREMENTS",
+                    items: [
+                        "Rapid prototyping.",
+                        "High definition mockups.",
+                        "Presentation of solutions and argumentation.",
+                        "Knowledge of good practices and usability patterns both in mobile as website.",
+                        "Experience in design processes.",
+                        "Experience in user research and user testing.",
+                        "Facilitation of Design Thinking, Design Sprint Workshops, etc.",
+                        "Knowledge of Sketch, Figma or Adobe XD Miro or Mural.",
+                        "Be detailed, independent and proactive.",
+                    ],
+                },
+                requirements: { title: "", items: [] },
+                workModality: {
+                    title: "WORK MODALITY",
+                    items: [
+                        "Full time",
+                        "Hybrid working model",
+                        "Prepaid medicine",
+                        "Free English classes",
+                        "Career plan",
+                        "Excellent work environment",
+                        "Bonuses at the end of the year",
+                        "Flexible schedule",
+                        "Massages in the office",
+                        "Access to games room",
+                        "Refreshments and snacks",
+                    ],
+                },
+            },
+            jobTwo: {
+                title: "FUNCTIONAL ANALYST",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+            jobThree: {
+                title: "GROWTH MARKETING",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+            jobFour: {
+                title: "BACKEND - SSR/SR",
+                country: "Argentina",
+                description: "",
+                jobDescription: {
+                    title: "",
+                    items: [],
+                },
+                requirements: { title: "", items: [] },
+                workModality: { title: "", items: [] },
+            },
+        },
         about_us: {
             ourValues: {
                 title: "Our values",
@@ -461,6 +613,10 @@ const translations = {
             subtitle: "IDEA TOWARDS THE TOP",
             name: "Name",
             email: "Email",
+            lastname: "Last Name",
+            linkedin: "Link to Linkedin",
+            uploadCv: "Upload CV",
+            weWantToKnowAboutYou: "We want to know about you",
             company: "Company",
             role: "Role",
             howCanWeHelpYou: "How can we Help you?",
