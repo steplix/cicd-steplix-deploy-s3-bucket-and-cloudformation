@@ -17,7 +17,7 @@ export default function Modal({
         <>
             {isModalOpen && (
                 <>
-                    <div className=" h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
+                    <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div className="relative w-[90%] lg:w-[1000px] flex justify-center ">
                             {/*content*/}
                             <div

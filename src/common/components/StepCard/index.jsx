@@ -34,7 +34,9 @@ const StepCard = ({
                         className={`text-2xl lg:text-4xl ${
                             textTwo ? "mb-7" : "mb-2"
                         } ${
-                            colorTitle ? colorTitle : "text-white font-semibold"
+                            colorTitle
+                                ? colorTitle
+                                : "text-white font-extrabold"
                         }`}
                     >
                         {title}

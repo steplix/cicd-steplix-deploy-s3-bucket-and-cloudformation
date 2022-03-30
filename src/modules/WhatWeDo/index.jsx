@@ -32,7 +32,7 @@ const WhatWeDo = () => {
         number = 3;
     }
     return (
-        <div className="w-[330px] lg:w-[1390px] steplix-process">
+        <div className="lg:w-[1230px] w-[345px] steplix-process">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}

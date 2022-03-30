@@ -1,5 +1,62 @@
 const translations = {
     es: {
+        about_us: {
+            ourValues: {
+                title: "Nuestros Valores",
+                values: {
+                    valuetOne: {
+                        title: "Confianza",
+                        description:
+                            "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos.",
+                    },
+                    valuetTwo: {
+                        title: "Respeto Mutuo",
+                        description:
+                            "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente.",
+                    },
+                    valuetThree: {
+                        title: "Éxito",
+                        description:
+                            "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente.",
+                    },
+                    valuetFour: {
+                        title: "Agilidad",
+                        description:
+                            "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos.",
+                    },
+                    valuetFive: {
+                        title: "Conciencia",
+                        description:
+                            "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia.",
+                    },
+                },
+            },
+            mission: {
+                title: "Nuestra misión",
+                description:
+                    "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores.",
+            },
+            vision: {
+                title: "Nuestra visión",
+                description:
+                    "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores.",
+            },
+            philosophy: {
+                title: "Nuestra filosofía",
+                description:
+                    " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos de la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta.",
+            },
+            digitalSherpas: {
+                titleOne: "Tu digital",
+                titleTwo: "Sherpas",
+                descriptionOne:
+                    " Somos sherpas digitales especializados en diferentes áreas de los negocios, que cuenta con la mezcla exacta de seniority, experiencia y compromiso.",
+                descriptionTwo:
+                    " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
+                descriptionThree:
+                    "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y los ROI correctos.",
+            },
+        },
         process: {
             HowDoWeDoIt: {
                 title: "¿Cómo lo hacemos?",
@@ -185,6 +242,63 @@ const translations = {
         },
     },
     en: {
+        about_us: {
+            ourValues: {
+                title: "Our values",
+                values: {
+                    valuetOne: {
+                        title: "Trust",
+                        description:
+                            " It is the faith in the contribution of the other, it is to give certainty that we will fulfill our commitments with others. It is not failing the other or ourselves. ",
+                    },
+                    valuetTwo: {
+                        title: "Mutual respect",
+                        description:
+                            " It is communicating with honesty and empathy, giving the other the opportunity to express their doubts and disagreements, trusting that they always seek to add value. It is to avoid wasting our time, the group, making excuses or talking unnecessarily. ",
+                    },
+                    valuetThree: {
+                        title: "Success",
+                        description:
+                            " It is the satisfaction of our customers. It is obtained by showing attitude, initiative and proactivity, resilience, solving problems and seeking to stand out, both in our solutions and in the teams we make up. It is growing all the time, personally and professionally. ",
+                    },
+                    valuetFour: {
+                        title: "Agility",
+                        description:
+                            " It is adapting to situations, change and challenges, seeking practicality, learning from mistakes and applying continuous improvement. It is avoiding stiffness, being stubborn, or staying still. ",
+                    },
+                    valuetFive: {
+                        title: "Awareness",
+                        description:
+                            " It is the ability to recognize the surrounding reality. It is promoting sustainability, empathy and diversity. It is influencing from our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. It is to avoid discrimination, aggression and malice. ",
+                    },
+                },
+            },
+            mission: {
+                title: "Our mission",
+                description:
+                    " Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators. ",
+            },
+            vision: {
+                title: "Our Vision",
+                description:
+                    " Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators. ",
+            },
+            philosophy: {
+                title: "Our philosophy",
+                description:
+                    " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks in the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. Thus, we scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. ",
+            },
+            digitalSherpas: {
+                titleOne: "Your digital",
+                titleTwo: "Sherpas",
+                descriptionOne:
+                    "  We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment. ",
+                descriptionTwo:
+                    " We make up an interdisciplinary team that combines the knowledge and views of each member to create an experience that ensures each business idea reaches the top. ",
+                descriptionThree:
+                    "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. ",
+            },
+        },
         process: {
             HowDoWeDoIt: {
                 title: "How do we do it?",

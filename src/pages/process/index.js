@@ -1,7 +1,7 @@
 import ContactUs from "@/modules/ContactUs";
-import EverythingStartsWithAnIdea from "@/modules/EverythingStartsWithAnIdea";
-import HoDoWeDoIt from "@/modules/HowDoWEDoIt";
-import StepsToTheTop from "@/modules/StepsToTheTop";
+import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
+import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";
+import StepsToTheTop from "@/modules/process/StepsToTheTop";
 import Head from "next/head";
 
 export default function Home() {
