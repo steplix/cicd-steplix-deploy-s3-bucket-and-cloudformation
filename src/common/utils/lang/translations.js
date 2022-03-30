@@ -3,12 +3,13 @@ const translations = {
         jobs: {
             applyButton: "Aplicar",
             title: "Convierte en",
-            jobOne: {
+            UI_UXDesigner: {
+                url: "UI_UXDesigner",
                 title: "UI/UX Designer Ssr.",
                 country: "Argentina",
                 description:
                     "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
-                jobDescription: {
+                requirements: {
                     title: "REQUIREMENTS",
                     items: [
                         "Rapid prototyping.",
@@ -22,7 +23,7 @@ const translations = {
                         "Be detailed, independent and proactive.",
                     ],
                 },
-                requirements: { title: "", items: [] },
+                responsibilities: { title: "", items: [] },
                 workModality: {
                     title: "WORK MODALITY",
                     items: [
@@ -40,38 +41,194 @@ const translations = {
                     ],
                 },
             },
-            jobTwo: {
+            FUNCTIONALANALYST: {
+                url: "FUNCTIONALANALYST",
                 title: "ANALISTA FUNCIONAL",
                 country: "Argentina",
                 description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                requirements: {
+                    title: "REQUISITOS",
+                    items: [
+                        "Análisis y Definición de Requerimientos Funcionales, No Funcionales y Restricciones.",
+                        "Experiencia en Metodologías ágiles de Desarrollo de Software.",
+                        "Definición de Contratos, APIs y Pruebas.",
+                        "Definición de User Stories y Criterios de Aceptación.",
+                        "Planificación y Control de Proyectos.",
+                        "Análisis de Riesgos.",
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                responsibilities: {
+                    title: "RESPONSABILIDADES",
+                    items: [
+                        "Elaboración de Producto Requirement.",
+
+                        "Creación y comunicación de User Stories.",
+
+                        "Definición y verificación de Criterios de aceptación.",
+
+                        "Gestión de Sesiones de Estimación.",
+
+                        "Sprint Planning.",
+
+                        "Control de Sprint.",
+                    ],
+                },
+                workModality: {
+                    title: "MODALIDAD DE TRABAJO",
+                    items: [
+                        " Full time",
+
+                        "  Modelo de trabajo híbrido o remoto",
+
+                        " Medicina prepaga",
+
+                        " Clases de Inglés gratuita",
+
+                        " Plan de carrera",
+
+                        " Excelente clima laboral",
+
+                        " Bonus a fin de año",
+
+                        "Flexibilidad horaria",
+
+                        " Masajes en la oficina",
+
+                        "     Acceso a sala de juegos",
+
+                        "Refrigerios y snacks",
+                    ],
+                },
             },
-            jobThree: {
+            GROWTHMARKETING: {
+                url: "GROWTHMARKETING",
                 title: "GROWTH MARKETING",
                 country: "Argentina",
-                description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                description:
+                    "En Steplix nos encontramos en la búsqueda de un Growth Marketing Ssr.",
+                requirements: {
+                    title: "DESCRIPCIÓN DEL PUESTO",
+                    items: [
+                        "Encargado de diseñar las automatizaciones.",
+
+                        "Prospectar y generar base de datos.",
+
+                        " Generar todo lo necesario para el account executive (commercial).",
+
+                        "Que transforme los prospectos en leads utilizando herramientas como: Skrapp, Linkedin, MeetAlfred, Hubspot, entre otras.",
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                responsibilities: {
+                    title: "REQUISITOS",
+                    items: [
+                        "  +2 años de experiencia.",
+
+                        "Entre 24 y 34 años.",
+
+                        "Quien ocupe este rol reporta directamente al líder del área comercial.",
+
+                        "   Foco en resultados.",
+                    ],
+                },
+                workModality: {
+                    title: "MODALIDAD DE TRABAJO",
+                    items: [
+                        "Full time",
+
+                        "Modelo de trabajo híbrido o remoto",
+
+                        "Medicina prepaga",
+
+                        "Clases de Inglés gratuita",
+
+                        "Plan de carrera",
+
+                        "Excelente clima laboral",
+
+                        "Bonus a fin de año",
+
+                        "Flexibilidad horaria",
+
+                        "Masajes en la oficina",
+
+                        "Acceso a sala de juegos",
+
+                        "Refrigerios y snacks",
+                    ],
+                },
             },
-            jobFour: {
-                title: "BACKEND - SSR/SR",
+            BACKENDSSR: {
+                url: "BACKENDSSR",
+                title: "Desarrollador de back-end",
                 country: "Argentina",
-                description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                description:
+                    "Encargado del diseño y construcción de Microservicios e Integraciones usando arquitectura cloud y stack NodeJS.",
+                requirements: {
+                    title: "CONOCIMIENTOS",
+                    items: [
+                        "Mínimo 6 años de experiencia en diseño, desarrollo e implementación de software.",
+
+                        "Conocimiento en desarrollo de aplicaciones, interfaces de programación de aplicaciones (API), middleware y base de datos.",
+
+                        "Patrones de Diseño y de Integración",
+
+                        "Conocimientos en Metodologías ágiles de Desarrollo de Software.",
+
+                        "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ.",
+
+                        "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App.",
+
+                        "Es deseable contar con conocimientos y experiencia en Test Driven Development.",
+
+                        "Se requiere un nivel medio o superior de inglés escrito.",
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                responsibilities: {
+                    title: "RESPONSABILIDADES",
+                    items: [
+                        "Participar en eventos de SCRUM.",
+
+                        "Asistir al refinamiento de tareas para las User Stories durante el Sprint de acuerdo al Technical Document.",
+                        "Desarrollo de Microservicios de acuerdo al Technical Document.",
+                        "Complir con las Reglas definidas de estandares de codificación.",
+
+                        "Integración del código con GIT siguiendo las políticas y las buenas prácticas del versionamiento de software..",
+
+                        "Resolución de incidentes y refactoring del código.",
+
+                        "Desarrollo de Test Cases utilizando TDD.",
+
+                        "Aplicar y promover las buenas prácticas de desarrollo de software.",
+
+                        "Trabajar colaborativamente con el resto del equipo para cumplir con los objetivos del proyecto y de la organización.",
+                    ],
+                },
+                workModality: {
+                    title: "MODALIDAD DE TRABAJO",
+                    items: [
+                        "Full time",
+
+                        "Modelo de trabajo híbrido o remoto",
+
+                        "Medicina prepaga",
+
+                        "Clases de Inglés gratuita",
+
+                        "Plan de carrera",
+
+                        "Excelente clima laboral",
+
+                        "Bonus a fin de año",
+
+                        "Flexibilidad horaria",
+
+                        "Masajes en la oficina",
+
+                        "Acceso a sala de juegos",
+
+                        "Refrigerios y snacks",
+                    ],
+                },
             },
         },
         about_us: {
@@ -323,12 +480,13 @@ const translations = {
         jobs: {
             applyButton: "Apply",
             title: "Become a",
-            jobOne: {
+            UI_UXDesigner: {
+                url: "UI_UXDesigner",
                 title: "UI/UX Designer Ssr.",
                 country: "Argentina",
                 description:
                     "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
-                jobDescription: {
+                requirements: {
                     title: "REQUIREMENTS",
                     items: [
                         "Rapid prototyping.",
@@ -342,7 +500,7 @@ const translations = {
                         "Be detailed, independent and proactive.",
                     ],
                 },
-                requirements: { title: "", items: [] },
+                responsibilities: { title: "", items: [] },
                 workModality: {
                     title: "WORK MODALITY",
                     items: [
@@ -360,38 +518,202 @@ const translations = {
                     ],
                 },
             },
-            jobTwo: {
+            FUNCTIONALANALYST: {
+                url: "FUNCTIONALANALYST",
                 title: "FUNCTIONAL ANALYST",
                 country: "Argentina",
-                description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                description:
+                    "We are looking for a Ssr. Functional Analyst with 3/5 years of experience.",
+                requirements: {
+                    title: "REQUISITOS",
+                    items: [
+                        "Analysis and Definition of Functional, Non-Functional Requirements and Restrictions.",
+
+                        "Experience in Agile Software Development Methodologies.",
+
+                        "Definition of Contracts, APIs and Tests.",
+                        "Definition of User Stories and Acceptance Criteria.",
+                        "Project Planning and Control.",
+
+                        "Risk Analysis.",
+                        ,
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                responsibilities: {
+                    title: "RESPONSABILIDADES",
+                    items: [
+                        " Elaboration of Product Requirement.",
+
+                        "Creation and communication of User Stories.",
+
+                        "Definition and verification of acceptance criteria.",
+
+                        "Management of Estimate Sessions.",
+
+                        "Sprint Planning.",
+
+                        "Sprint control.",
+                        ,
+                    ],
+                },
+                workModality: {
+                    title: "MODALIDAD DE TRABAJO",
+                    items: [
+                        " Full time",
+
+                        " Hybrid working model",
+
+                        "Prepaid medicine",
+
+                        "Free English classes",
+
+                        "Career plan",
+
+                        "Excellent work environment",
+
+                        "Bonuses at the end of the year",
+
+                        "Flexible schedule",
+
+                        "Massages in the office",
+
+                        "Access to games room",
+
+                        "Refreshments and snacks",
+                    ],
+                },
             },
-            jobThree: {
+            GROWTHMARKETING: {
+                url: "GROWTHMARKETING",
                 title: "GROWTH MARKETING",
                 country: "Argentina",
-                description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                description:
+                    "At Steplix we are looking for a Growth Marketing Ssr.",
+                responsibilities: {
+                    title: "JOB DESCRIPTION",
+                    items: [
+                        "In charge of designing the automations.",
+
+                        "Prospect and generate database.",
+
+                        "Generate everything necessary for the account executive (commercial).",
+
+                        "Transform prospects into leads using tools such as: Skrapp, Linkedin, MeetAlfred, Hubspot, among others.",
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                requirements: {
+                    title: "REQUIREMENTS",
+                    items: [
+                        " +2 years of experience.",
+
+                        "  Between 24 and 34 years old.",
+
+                        " Whoever occupies this role will report directly to the leader of the commercial area.",
+
+                        "   Focus on results.",
+                    ],
+                },
+                workModality: {
+                    title: "WORK MODALITY",
+                    items: [
+                        "Full time",
+
+                        "Hybrid working model",
+
+                        "Prepaid medicine",
+
+                        "Free English classes",
+
+                        "Career plan",
+
+                        "Excellent work environment",
+
+                        "Bonuses at the end of the year",
+
+                        "Flexible schedule",
+
+                        "Massages in the office",
+
+                        "Access to games room",
+
+                        "Refreshments and snacks",
+                    ],
+                },
             },
-            jobFour: {
+            BACKENDSSR: {
+                url: "BACKENDSSR",
                 title: "BACKEND - SSR/SR",
                 country: "Argentina",
-                description: "",
-                jobDescription: {
-                    title: "",
-                    items: [],
+                description:
+                    "Responsible for the design and construction of Microservices and Integrations using cloud architecture and NodeJS stack.",
+                requirements: {
+                    title: "KNOWLEDGE",
+                    items: [
+                        "Minimum 6 years of experience in software design, development and implementation",
+
+                        "Knowledge in application development, programming interfaces of applications (API), middleware and database",
+
+                        "Design and Integration Patterns",
+
+                        "Knowledge in Agile Software Development Methodologies",
+
+                        "Technological stack: ES6 or higher, NodeJS 12 or higher, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
+
+                        "Knowledge in Principles of Design of Microservices and Twelve-Factor-App",
+
+                        "Knowledge and experience in Test Driven Development is desirable.",
+
+                        "A medium or higher level of written English is required",
+                    ],
                 },
-                requirements: { title: "", items: [] },
-                workModality: { title: "", items: [] },
+                responsibilities: {
+                    title: "RESPONSIBILITIES",
+                    items: [
+                        "Participate in SCRUM events",
+
+                        "Assist in task refinement for User Stories during the Sprint as per to the Technical Document",
+
+                        "Development of Microservices according to the Technical Document",
+
+                        "Comply with the defined Rules of encoding standards",
+
+                        "Integration of the code with GIT following the policies and good practices of the software versioning.",
+
+                        "Incident resolution and code refactoring",
+
+                        "Development of Test Cases using TDD",
+
+                        "Apply and promote good software development practices.",
+
+                        "Work collaboratively with the rest of the team to meet objectives of the project and the organization.",
+                    ],
+                },
+                workModality: {
+                    title: "WORK MODALITY",
+                    items: [
+                        "Full time",
+
+                        "Hybrid working model",
+
+                        " Prepaid medicine",
+
+                        " Free English classes",
+
+                        "Career plan",
+
+                        "Excellent work environment",
+
+                        "Bonuses at the end of the year",
+
+                        "Flexible schedule",
+
+                        "Massages in the office",
+
+                        "Access to games room",
+
+                        "Refreshments and snacks",
+                    ],
+                },
             },
         },
         about_us: {

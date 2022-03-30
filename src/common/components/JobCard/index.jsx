@@ -1,7 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import PropTypes from "prop-types";
 
-const JobCard = ({ title, country, apply }) => {
+const JobCard = ({ title, country, apply, url }) => {
     return (
         <div className="border-2 border-gray-100 w-full h-full flex  font-black">
             <div className="lg:pl-4 pl-2 ">
@@ -14,7 +15,11 @@ const JobCard = ({ title, country, apply }) => {
             </div>
             <div>
                 <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
-                    {apply}
+                    <Link href={`/jobs/${url}`}>
+                        <a target="_blank" className="w-[65px] h-[35px]">
+                            {apply}
+                        </a>
+                    </Link>
                 </button>
             </div>
         </div>
@@ -27,5 +32,6 @@ JobCard.propTypes = {
     title: PropTypes.string,
     country: PropTypes.string,
     apply: PropTypes.string,
+    url: PropTypes.string,
 };
 export default JobCard;
