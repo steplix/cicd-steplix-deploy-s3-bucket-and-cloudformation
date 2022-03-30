@@ -6,7 +6,10 @@ const OurCulture = () => {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <div id="Our-culture " className="lg:w-[1230px] w-[345px]">
+        <div
+            id="Our-culture "
+            className="lg:w-[1230px] w-[345px] mt-16 lg:mt-32"
+        >
             <div className="text-white mb-28 text-left w-[290px] lg:w-[1200px]">
                 <p className="text-[24px] lg:text-[54px]">
                     {texts.ourCulture.title}
