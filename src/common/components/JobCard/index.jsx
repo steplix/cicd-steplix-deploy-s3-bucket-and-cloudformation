@@ -14,13 +14,11 @@ const JobCard = ({ title, country, apply, url }) => {
                 </p>
             </div>
             <div>
-                <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
-                    <Link href={`/jobs/${url}`}>
-                        <a target="_blank" className="w-[65px] h-[35px]">
-                            {apply}
-                        </a>
-                    </Link>
-                </button>
+                <Link href={`/jobs/${url}`}>
+                    <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
+                        {apply}
+                    </button>
+                </Link>
             </div>
         </div>
     );
