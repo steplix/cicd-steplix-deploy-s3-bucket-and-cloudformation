@@ -68,7 +68,7 @@ const WhatWeDo = () => {
                             title={texts.whatWeDo.cardOne.title}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardOne.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
@@ -80,7 +80,7 @@ const WhatWeDo = () => {
                             title={texts.whatWeDo.cardTwo.title}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardTwo.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
@@ -92,7 +92,7 @@ const WhatWeDo = () => {
                             title={texts.whatWeDo.cardThree.title}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardThree.description}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
