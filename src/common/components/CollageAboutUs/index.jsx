@@ -6,6 +6,7 @@ import cultureThree from "@/public/assets/images/culture/culture-03.png";
 import cultureFour from "@/public/assets/images/culture/culture-04.png";
 import cultureFive from "@/public/assets/images/culture/culture-05.png";
 import cultureSix from "@/public/assets/images/culture/culture-06.png";
+
 const CollageAboutUs = ({ sm, lg }) => {
     return (
         <div>
