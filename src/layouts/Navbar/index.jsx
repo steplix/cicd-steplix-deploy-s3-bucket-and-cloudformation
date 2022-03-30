@@ -35,7 +35,7 @@ const Navbar = () => {
         >
             <nav
                 className={`transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
-                    sticky ? "bg-black bg-opacity-80" : "bg-dark"
+                    sticky ? "bg-steplix-lilac bg-opacity-90" : "bg-dark"
                 }`}
             >
                 <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-5">
