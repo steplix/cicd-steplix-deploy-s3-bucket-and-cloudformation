@@ -5,10 +5,3 @@ module.exports = {
         ignoreDuringBuilds: true,
     },
 };
-
-module.exports = {
-    i18n: {
-      locales: ['en', 'es'],
-      defaultLocale: 'es',
-    },
-  }

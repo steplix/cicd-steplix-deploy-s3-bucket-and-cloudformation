@@ -1,16 +1,17 @@
-import React, { useContext } from "react";
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { useTranslation } from "next-export-i18n";
+
 import logoSteplix from "@/public/assets/logos/logo-navbar.svg";
 import logoIqNet from "@/public/assets/logos/iqnet.svg";
 import logoIram from "@/public/assets/logos/iram.svg";
 import fb from "@/public/assets/logos/fb.svg";
 import instagram from "@/public/assets/logos/instagram.svg";
 import gmail from "@/public/assets/logos/gmail.svg";
-import { LanguageContext } from "@/common/components/LanguageContext";
 
 const Footer = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <>
@@ -19,7 +20,7 @@ const Footer = () => {
                 <div className="md:flex">
                     <div className="md:flex">
                         <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">
-                            <Image src={logoSteplix} alt="logo" />
+                            <img src={logoSteplix} alt="logo" />
                         </div>
                         <div className="mb-14 md:mr-16">
                             <div className="mb-5">
@@ -40,7 +41,7 @@ const Footer = () => {
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-3 ">
-                                        <Image
+                                        <img
                                             src={fb}
                                             alt="Facebook"
                                             objectFit="contain"
@@ -53,7 +54,7 @@ const Footer = () => {
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-4 ">
-                                        <Image
+                                        <img
                                             src={instagram}
                                             alt="instagram"
                                             objectFit="contain"
@@ -66,7 +67,7 @@ const Footer = () => {
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-[18px]">
-                                        <Image
+                                        <img
                                             src={gmail}
                                             alt="linkedin"
                                             objectFit="contain"
@@ -81,7 +82,7 @@ const Footer = () => {
                             <div className="flex gap-5">
                                 <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iram.pdf">
                                     <a target="_blank">
-                                        <Image
+                                        <img
                                             src={logoIram}
                                             className="mr-10 w-10 h-14 lg:w-20 lg:h-28"
                                             alt="Iram"
@@ -92,7 +93,7 @@ const Footer = () => {
                                 <div className="relative h-[100px] w-[80px]">
                                     <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iqnet.pdf">
                                         <a target="_blank">
-                                            <Image
+                                            <img
                                                 src={logoIqNet}
                                                 alt="IQNet"
                                                 objectFit="contain"
@@ -106,7 +107,7 @@ const Footer = () => {
                         <div className="mt-6 mb-12">
                             <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/D-02+Quality+Policy.pdf">
                                 <a target="_blank">
-                                    {texts.footer.certificateText}
+                                    {t("footer.certificateText")}
                                 </a>
                             </Link>
                         </div>

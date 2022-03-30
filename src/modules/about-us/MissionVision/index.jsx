@@ -1,9 +1,9 @@
+import React from "react";
+import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
-import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
 
 const MissionVision = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <div className="lg:flex lg:gap-5 lg:mt-20 mt-10">
@@ -15,9 +15,9 @@ const MissionVision = () => {
                         <StepCard colorLine="bg-steplix-blue lg:w-12" />
                         <div className="mt-2">
                             <StepCard
-                                title={texts.about_us.mission.title}
+                                title={t("about_us.mission.title")}
                                 colorTitle="text-steplix-yellow"
-                                textTwo={texts.about_us.mission.description}
+                                textTwo={t("about_us.mission.description")}
                                 colorLine="bg-steplix-red"
                             />
                         </div>
@@ -31,9 +31,9 @@ const MissionVision = () => {
                         <StepCard colorLine="bg-steplix-blue lg:w-12" />
                         <div className="mt-2">
                             <StepCard
-                                title={texts.about_us.vision.title}
+                                title={t("about_us.vision.title")}
                                 colorTitle="text-steplix-yellow"
-                                textTwo={texts.about_us.vision.description}
+                                textTwo={t("about_us.vision.description")}
                                 colorLine="bg-steplix-red"
                             />
                         </div>

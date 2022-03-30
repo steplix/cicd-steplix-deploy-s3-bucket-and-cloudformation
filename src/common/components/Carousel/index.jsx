@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import _ from "lodash";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import Image from "next/image";
+
 import agrocanje from "@/public/assets/logos/clients/agrocanje.svg";
 import sura from "@/public/assets/logos/clients/sura.svg";
 import finket from "@/public/assets/logos/clients/finket.svg";
@@ -10,8 +12,6 @@ import garbarino from "@/public/assets/logos/clients/garbarino.svg";
 import pow from "@/public/assets/logos/clients/pow.svg";
 import smartium from "@/public/assets/logos/clients/smartium.svg";
 
-import _ from "lodash";
-import PropTypes from "prop-types";
 const Carousel = () => {
     //
     //UseStates
@@ -91,7 +91,7 @@ const Carousel = () => {
                                 key={`image-${index}`}
                                 className="keen-slider__slide number-slide relative h-32 w-32 "
                             >
-                                <Image src={element?.image} alt={element.alt} />
+                                <img src={element?.image} alt={element.alt} />
                             </div>
                         ))}
                     </div>
@@ -135,7 +135,7 @@ const Carousel = () => {
                                     >
                                         <div className="flex justify-end">
                                             <div className="relative h-16 w-32 ">
-                                                <Image
+                                                <img
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />

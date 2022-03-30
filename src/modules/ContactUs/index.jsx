@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
+import React from "react";
 import ContactForm from "@/common/components/ContactForm";
 
 const ContactUs = () => {
-    const { texts } = useContext(LanguageContext);
-
-    return <ContactForm texts={texts.contactUs} />;
+    return <ContactForm />;
 };
 
 export default ContactUs;

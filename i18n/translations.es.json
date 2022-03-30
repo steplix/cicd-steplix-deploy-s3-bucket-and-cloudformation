@@ -1,0 +1,192 @@
+{
+    "about_us": {
+        "ourValues": {
+            "title": "Nuestros Valores",
+            "values": {
+                "valuetOne": {
+                    "title": "Confianza",
+                    "description": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos."
+                },
+                "valuetTwo": {
+                    "title": "Respeto Mutuo",
+                    "description": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
+                },
+                "valuetThree": {
+                    "title": "Éxito",
+                    "description": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
+                },
+                "valuetFour": {
+                    "title": "Agilidad",
+                    "description": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
+                },
+                "valuetFive": {
+                    "title": "Conciencia",
+                    "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
+                }
+            }
+        },
+        "mission": {
+            "title": "Nuestra misión",
+            "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
+        },
+        "vision": {
+            "title": "Nuestra visión",
+            "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
+        },
+        "philosophy": {
+            "title": "Nuestra filosofía",
+            "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos de la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
+        },
+        "digitalSherpas": {
+            "titleOne": "Tu digital",
+            "titleTwo": "Sherpas",
+            "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de los negocios, que cuenta con la mezcla exacta de seniority, experiencia y compromiso.",
+            "descriptionTwo": " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
+            "descriptionThree": "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y los ROI correctos."
+        }
+    },
+    "process": {
+        "HowDoWeDoIt": {
+            "title": "¿Cómo lo hacemos?",
+            "description": "En la montaña como en los negocios, hay 4 conceptos básicos que no pueden faltar para asegurar la llegada a la cima: espíritu, cuerpo, mente y buenos recursos. Y, En steplix sabemos que podremos alcanzar cualquier desafío porque contamos con todos ellos.",
+            "concepts": {
+                "conceptOne": {
+                    "title": "Espíritu",
+                    "description": "Las personas son el verdadero motor por eso creamos equipos interdisciplinarios donde conjugamos los conocimientos y las miradas de cada uno para construir la mejor versión de cada producto."
+                },
+                "conceptTwo": {
+                    "title": "Cuerpo",
+                    "description": "Nos apoyamos en Metodologías Ágiles para una mayor performance del trabajo en sintonía con la evolución del proyecto."
+                },
+                "conceptThree": {
+                    "title": "Mente",
+                    "description": "Utilizamos Design Thinking como proceso creativo grupal para maximizar la generación de ideas más innovadoras."
+                },
+                "conceptFour": {
+                    "title": "Recursos",
+                    "description": "Aprovechamos todo el potencial de la tecnología para hacer de cada proyecto una experiencia única, con foco en el usuario."
+                }
+            }
+        },
+        "stepsToTheTop": {
+            "title": "Pasos hacia la cima",
+            "description": " Los comienzos no son todos iguales...en este camino vos elegís, ¿Cuál es tu punto de partida?",
+            "stepOne": {
+                "title": "Conociendo tu negocio ",
+                "descriptionOne": " Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
+                "descriptionTwo": " En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
+                "descriptionThree": "  Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías.",
+                "descriptionFour": "  Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla. ",
+                "secondaryDescription": " ¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
+            },
+            "stepTwo": {
+                "title": "Diseño de producto ",
+                "descriptionOne": "  Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
+                "descriptionTwo": " La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra.  ",
+                "descriptionThree": "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos.",
+                "descriptionFour": "",
+                "secondaryDescription": " ¿Sabías que en promedio una persona recibe cerca de 1700 publicidades en un mes, pero solo le presta atención a la mitad?"
+            },
+            "stepThree": {
+                "title": "Desarrollo & entrega ",
+                "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
+                "descriptionTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
+                "descriptionThree": " ¡Pero esto no termina aquí!",
+                "descriptionFour": "  En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
+                "secondaryDescription": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market ?"
+            }
+        },
+        "everythingStartsWithAnIdea": {
+            "title": "Todo empieza con una idea",
+            "descriptionOne": "Esa idea que puede surgir en cualquier momento, en cualquier lugar. Que puede ser innovadora, creativa, revolucionaria, desafiante…",
+
+            "descriptionTwo": " Pero de la idea al hecho, hay un mundo de preguntas, de dudas y de decisiones por tomar.",
+
+            "descriptionThree": " En el proceso de encontrar las respuestas, es importante contar con un guía, un compañero de viaje que comparta el reto y ayude a definir el camino.",
+
+            "descriptionFour": "  Steplix, es el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
+        }
+    },
+    "masthead": {
+        "titlePartOne": " Sherpas de",
+        "titlePartTwo": "negocios digitales",
+        "subtitle": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima"
+    },
+    "aboutUs": {
+        "title": "Sobre nosotros",
+        "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
+    },
+    "whatWeDo": {
+        "title": "Pasos hacia la cima",
+        "subtitlePartOne": " Los comienzos no son todos iguales...en este camino vos elegís,",
+        "subtitlePartTwo": "¿Cuál es tu punto de partida?",
+        "cardOne": {
+            "title": "Conociendo tu negocio",
+            "description": " Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
+        },
+        "cardTwo": {
+            "title": "Diseño de producto",
+            "description": "La segunda escala se enfoca en el diseño de una primera versión del producto que permitirá someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización, para seguir potenciando la idea."
+        },
+        "cardThree": {
+            "title": "Desarrollo & entrega",
+            "description": "Esta fase consiste en construir y entregar el producto final para dar comienzo de manera oficial al negocio, respetando los tiempos e inversión acordados."
+        }
+    },
+    "ourCulture": {
+        "title": "Porque nadie llega solo hasta la cumbre,",
+        "subtitle": "SOMOS TU MEJOR ALIADO",
+        "cardOne": {
+            "title": "Conocemos el camino",
+            "description": "Somos guías en el ecosistema de los negocios digitales, y sabemos cómo ayudarte a potenciar una idea para convertirla en un modelo de negocio escalable. "
+        },
+        "cardTwo": {
+            "title": "Te acompañamos en este viaje",
+            "description": "Buscamos y co-creamos soluciones innovadoras ajustadas a cada proyecto y armamos un equipo que acompaña de cerca, cada uno de tus pasos, desde la base hasta la cima."
+        },
+        "cardThree": {
+            "title": "Respetamos tus condiciones",
+            "description": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y los ROI correctos."
+        }
+    },
+    "modal": {
+        "modalOne": {
+            "title": " Conociendo tu negocio ",
+            "descriptionOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?  En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender. Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla.",
+            "descriptionTwo": " ¿Sabías que el 75% de las ideas de nuevos negocios fracasan en sus tres primeros años de vida?"
+        },
+        "modalTwo": {
+            "title": "Diseño de producto ",
+            "descriptionOne": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma. La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos.",
+            "descriptionTwo": " ¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja? "
+        },
+        "modalThree": {
+            "title": "Desarrollo & entrega ",
+            "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar. Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado. ¡Pero esto no termina aquí! En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
+            "descriptionTwo": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
+        }
+    },
+    "happyClients": "Clientes felices",
+    "contactUs": {
+        "title": "Contactanos para llevar juntos esa ",
+        "subtitle": "IDEA HACIA LA CIMA",
+        "name": "Nombre",
+        "email": "Email",
+        "company": "Empresa",
+        "role": "Rol",
+        "howCanWeHelpYou": "¿Cómo te podemos ayudar?"
+    },
+    "seeMore": "Ver más",
+    "ButtonSend": "Enviar",
+    "navbar": {
+        "item1": "Sobre nosotros",
+        "item2": "Que hacemos",
+        "item3": "Nuestra cultura",
+        "item4": "Clientes felices",
+        "item5": "Convertite en Steplixer",
+        "item6": "Contactanos"
+    },
+    "footer": {
+        "certificateText": "Política de calidad"
+    }
+}

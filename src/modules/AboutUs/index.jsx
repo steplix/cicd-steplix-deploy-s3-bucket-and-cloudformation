@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
+import React from "react";
+import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
 
 const AboutUs = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
+
     return (
         <div
             className="lg:flex mt-[50px] lg:w-[1230px] w-[345px]"
@@ -14,10 +15,10 @@ const AboutUs = () => {
             </p>
             <div className="w-[325px] lg:w-[610px]">
                 <StepCard
-                    title={texts.aboutUs.title}
+                    title={t("aboutUs.title")}
                     colorTitle="font-bold text-white"
-                    seeMore={texts.seeMore}
-                    textOne={texts.aboutUs.description}
+                    seeMore={t("seeMore")}
+                    textOne={t("aboutUs.description")}
                 />
             </div>
         </div>
