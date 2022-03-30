@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ButtonSend from "@/common/components/ButtonSend";
 import UploadFile from "@/common/components/UploadFile";
 
-const ContactForm = ({ texts, cv }) => {
+const ContactForm = ({ texts, cv, title, subtitle, description }) => {
     const handleSubmit = async (e) => {
         let data;
         data = {
@@ -43,12 +43,27 @@ const ContactForm = ({ texts, cv }) => {
     };
     return (
         <div className="text-white lg:w-[1230px] w-[345px]" id="contact-us">
-            <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
-                {texts.title}
-            </h2>
-            <p className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1570px] mb-10">
-                {texts.subtitle}
-            </p>
+            {title ? (
+                <div>
+                    <div className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
+                        {subtitle}
+                    </div>
+                    <div className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1570px] mb-10">
+                        {title}
+                    </div>
+                    <div className="mb-10">{description}</div>
+                </div>
+            ) : (
+                <div>
+                    {" "}
+                    <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
+                        {texts.title}
+                    </h2>
+                    <p className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1570px] mb-10">
+                        {texts.subtitle}
+                    </p>
+                </div>
+            )}
             <div>
                 <form
                     className="rounded-lg overflow-hidden p-6 lg:p-1 space-y-4"
@@ -123,6 +138,9 @@ const ContactForm = ({ texts, cv }) => {
 //
 ContactForm.propTypes = {
     texts: PropTypes.object.isRequired,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    description: PropTypes.string,
 };
 
 export default ContactForm;

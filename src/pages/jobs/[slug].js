@@ -15,7 +15,11 @@ const Job = () => {
                 <ItemsCard item={texts.jobs[`${nameJob}`]} />
             </div>
             <div className="flex items-center justify-center mb-10">
-                <ContactUs cv />
+                <ContactUs
+                    cv
+                    title={texts.jobs.contactApplyJob.title}
+                    subtitle={texts.jobs.contactApplyJob.subtitle}
+                />
             </div>
         </div>
     );

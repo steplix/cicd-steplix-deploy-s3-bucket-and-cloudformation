@@ -1,6 +1,15 @@
 const translations = {
     es: {
         jobs: {
+            contactJobs: {
+                title: "Dejanos tu CV",
+                description:
+                    "para futuras búsquedas que se adapten a tu perfil",
+            },
+            contactApplyJob: {
+                subtitle: "Si tenés todos estos skills...",
+                title: "¡Postulate!",
+            },
             applyButton: "Aplicar",
             title: "Convierte en",
             UI_UXDesigner: {
@@ -478,6 +487,14 @@ const translations = {
     },
     en: {
         jobs: {
+            contactJobs: {
+                title: "Leave us your CV",
+                description: "for future searches that suit your profile",
+            },
+            contactApplyJob: {
+                subtitle: "If you have all these skills...",
+                title: "Apply!",
+            },
             applyButton: "Apply",
             title: "Become a",
             UI_UXDesigner: {
