@@ -14,8 +14,8 @@ export default function Modal({
         <>
             {isModalOpen && (
                 <>
-                    <div className="h-[700px] w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
-                        <div className="relative right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center ">
+                    <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
+                        <div className="relative lg:h-[500px] h-[800px] right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center ">
                             {/*content*/}
                             <div
                                 className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
