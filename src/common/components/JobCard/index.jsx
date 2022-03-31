@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
+import { useLanguageQuery } from "next-export-i18n";
 
 const JobCard = ({ title, country, apply, url }) => {
+    const [query] = useLanguageQuery();
+
     return (
         <div className="border-2 border-gray-100 w-full h-full flex  font-black">
             <div className="lg:pl-4 pl-2 ">
@@ -14,7 +17,7 @@ const JobCard = ({ title, country, apply, url }) => {
                 </p>
             </div>
             <div>
-                <Link href={`/jobs/${url}`}>
+                <Link href={{ pathname: `jobs/${url}`, query: query }}>
                     <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
                         {apply}
                     </button>

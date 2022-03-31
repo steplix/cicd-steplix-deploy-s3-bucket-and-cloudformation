@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemsCard = ({ item }) => {
+const JobItemCard = ({ item }) => {
     return (
         <div className="pl-5 lg:pl-12 w-[340px] lg:w-[1300px]">
             <div className="mb-20">
@@ -43,4 +43,4 @@ const ItemsCard = ({ item }) => {
     );
 };
 
-export default ItemsCard;
+export default JobItemCard;
