@@ -2,8 +2,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 
-import chevronDown from "@/public/assets/icons/chevronDown.svg";
-
 const Masthead = () => {
     const { t } = useTranslation();
 
@@ -25,7 +23,7 @@ const Masthead = () => {
                         <div className="border-steplix-yellow h-[44px] w-7 border-[1px] rounded-2xl text-center flex mx-auto mb-2 items-center">
                             <div className="relative w-[14px] h-[7px] mx-auto">
                                 <img
-                                    src={chevronDown}
+                                    src="/assets/icons/chevronDown.svg"
                                     alt="logo"
                                     layout="fill"
                                 />

@@ -3,13 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { useTranslation } from "next-export-i18n";
 
-import logoSteplix from "@/public/assets/logos/logo-navbar.svg";
-import logoIqNet from "@/public/assets/logos/iqnet.svg";
-import logoIram from "@/public/assets/logos/iram.svg";
-import fb from "@/public/assets/logos/fb.svg";
-import instagram from "@/public/assets/logos/instagram.svg";
-import gmail from "@/public/assets/logos/gmail.svg";
-
 const Footer = () => {
     const { t } = useTranslation();
 
@@ -20,7 +13,10 @@ const Footer = () => {
                 <div className="md:flex">
                     <div className="md:flex">
                         <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">
-                            <img src={logoSteplix} alt="logo" />
+                            <img
+                                src="/assets/logos/logo-navbar.svg"
+                                alt="logo"
+                            />
                         </div>
                         <div className="mb-14 md:mr-16">
                             <div className="mb-5">
@@ -42,7 +38,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-3 ">
                                         <img
-                                            src={fb}
+                                            src="/assets/logos/fb.svg"
                                             alt="Facebook"
                                             objectFit="contain"
                                         />
@@ -55,7 +51,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-4 ">
                                         <img
-                                            src={instagram}
+                                            src="/assets/logos/instagram.svg"
                                             alt="instagram"
                                             objectFit="contain"
                                         />
@@ -68,7 +64,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto pt-[18px]">
                                         <img
-                                            src={gmail}
+                                            src="/assets/logos/gmail.svg"
                                             alt="linkedin"
                                             objectFit="contain"
                                         />
@@ -83,7 +79,7 @@ const Footer = () => {
                                 <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iram.pdf">
                                     <a target="_blank">
                                         <img
-                                            src={logoIram}
+                                            src="/assets/logos/iram.svg"
                                             className="mr-10 w-10 h-14 lg:w-20 lg:h-28"
                                             alt="Iram"
                                             objectFit="contain"
@@ -94,7 +90,7 @@ const Footer = () => {
                                     <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iqnet.pdf">
                                         <a target="_blank">
                                             <img
-                                                src={logoIqNet}
+                                                src="/assets/logos/iqnet.svg"
                                                 alt="IQNet"
                                                 objectFit="contain"
                                                 layout="fill"

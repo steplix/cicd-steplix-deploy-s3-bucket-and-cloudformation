@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
-import logo from "@/public/assets/logos/logo-navbar.svg";
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -45,7 +44,11 @@ const Navbar = () => {
                     <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
-                                <img src={logo} alt="logo" layout="fill" />
+                                <img
+                                    src="/assets/logos/logo-navbar.svg"
+                                    alt="logo"
+                                    layout="fill"
+                                />
                             </a>
                         </Link>
                     </div>
