@@ -7,7 +7,6 @@ import StepCard from "@/common/components/StepCard";
 const WhatWeDo = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
-
     //
     // State
     //
@@ -74,13 +73,8 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardOne.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-<<<<<<< HEAD
-                            seeMore={texts.seeMore}
-                            textOne={texts.whatWeDo.cardOne.description}
-=======
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardOne.description")}
->>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -91,13 +85,8 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardTwo.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-<<<<<<< HEAD
-                            seeMore={texts.seeMore}
-                            textOne={texts.whatWeDo.cardTwo.description}
-=======
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardTwo.description")}
->>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -108,13 +97,8 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardThree.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-<<<<<<< HEAD
-                            seeMore={texts.seeMore}
-                            textOne={texts.whatWeDo.cardThree.description}
-=======
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardThree.description")}
->>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useTranslation } from "next-export-i18n";
 import ButtonSend from "@/common/components/ButtonSend";
 import UploadFile from "@/common/components/UploadFile";
+import PropTypes from "prop-types";
 
 const ContactForm = ({ texts, cv, title, subtitle, description }) => {
     const { t } = useTranslation();
@@ -91,6 +92,7 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 type="text"
                                 maxLength={60}
                                 name={cv ? "lastname" : "email"}
+                                className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
                                 placeholder={
                                     cv
                                         ? t("contactUs.lastname")
@@ -121,14 +123,14 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 name={cv ? "linkedin" : "role"}
                                 placeholder={
                                     cv
-                                        ? t("contactUs.linedin")
+                                        ? t("contactUs.linkedin")
                                         : t("contactUs.role")
                                 }
                                 className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
                             />
                         </div>
                     </div>
-                    {cv && <UploadFile text={texts.uploadCv} />}
+                    {cv && <UploadFile text={t("uploadCv")} />}
 
                     <div className="relative lg:w-[920px] rounded-md border-2 mx-auto">
                         <textarea
@@ -155,7 +157,7 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
 //PropsTypes
 //
 ContactForm.propTypes = {
-    texts: PropTypes.object.isRequired,
+    texts: PropTypes.object,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     description: PropTypes.string,

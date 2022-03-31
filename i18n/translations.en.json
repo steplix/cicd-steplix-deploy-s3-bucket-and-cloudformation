@@ -1,4 +1,250 @@
 {
+    "jobs": {
+        "contactJobs": {
+            "title": "Leave us your CV",
+            "description": "for future searches that suit your profile"
+        },
+        "contactApplyJob": {
+            "subtitle": "If you have all these skills...",
+            "title": "Apply!"
+        },
+        "applyButton": "Apply",
+        "title": "Become a",
+        "UI_UXDesigner": {
+            "url": "UI_UXDesigner",
+            "title": "UI/UX Designer Ssr.",
+            "country": "Argentina",
+            "description":
+                "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
+            "requirements": {
+                "title": "REQUIREMENTS",
+                "items": [
+                    "Rapid prototyping.",
+                    "High definition mockups.",
+                    "Presentation of solutions and argumentation.",
+                    "Knowledge of good practices and usability patterns both in mobile as website.",
+                    "Experience in design processes.",
+                    "Experience in user research and user testing.",
+                    "Facilitation of Design Thinking, Design Sprint Workshops, etc.",
+                    "Knowledge of Sketch, Figma or Adobe XD Miro or Mural.",
+                    "Be detailed, independent and proactive."
+                ]
+            },
+            "responsibilities": { "title": "", "items": [] },
+            "workModality": {
+                "title": "WORK MODALITY",
+                "items": [
+                    "Full time",
+                    "Hybrid working model",
+                    "Prepaid medicine",
+                    "Free English classes",
+                    "Career plan",
+                    "Excellent work environment",
+                    "Bonuses at the end of the year",
+                    "Flexible schedule",
+                    "Massages in the office",
+                    "Access to games room",
+                    "Refreshments and snacks"
+                ]
+            }
+        },
+        "FUNCTIONALANALYST": {
+            "url": "FUNCTIONALANALYST",
+            "title": "FUNCTIONAL ANALYST",
+            "country": "Argentina",
+            "description":
+                "We are looking for a Ssr. Functional Analyst with 3/5 years of experience.",
+            "requirements": {
+                "title": "REQUISITOS",
+                "items": [
+                    "Analysis and Definition of Functional, Non-Functional Requirements and Restrictions.",
+
+                    "Experience in Agile Software Development Methodologies.",
+
+                    "Definition of Contracts, APIs and Tests.",
+                    "Definition of User Stories and Acceptance Criteria.",
+                    "Project Planning and Control.",
+
+                    "Risk Analysis."
+                    
+                ]
+            },
+            "responsibilities": {
+                "title": "RESPONSABILIDADES",
+                "items": [
+                    " Elaboration of Product Requirement.",
+
+                    "Creation and communication of User Stories.",
+
+                    "Definition and verification of acceptance criteria.",
+
+                    "Management of Estimate Sessions.",
+
+                    "Sprint Planning.",
+
+                    "Sprint control."
+                    
+                ]
+            },
+            "workModality": {
+                "title": "MODALIDAD DE TRABAJO",
+                "items": [
+                    " Full time",
+
+                    " Hybrid working model",
+
+                    "Prepaid medicine",
+
+                    "Free English classes",
+
+                    "Career plan",
+
+                    "Excellent work environment",
+
+                    "Bonuses at the end of the year",
+
+                    "Flexible schedule",
+
+                    "Massages in the office",
+
+                    "Access to games room",
+
+                    "Refreshments and snacks"
+                ]
+            }
+        },
+        "GROWTHMARKETING": {
+            "url": "GROWTHMARKETING",
+            "title": "GROWTH MARKETING",
+            "country": "Argentina",
+            "description":
+                "At Steplix we are looking for a Growth Marketing Ssr.",
+            "responsibilities": {
+                "title": "JOB DESCRIPTION",
+                "items": [
+                    "In charge of designing the automations.",
+
+                    "Prospect and generate database.",
+
+                    "Generate everything necessary for the account executive (commercial).",
+
+                    "Transform prospects into leads using tools such as: Skrapp, Linkedin, MeetAlfred, Hubspot, among others."
+                ]
+            },
+            "requirements": {
+                "title": "REQUIREMENTS",
+                "items": [
+                    " +2 years of experience.",
+
+                    "  Between 24 and 34 years old.",
+
+                    " Whoever occupies this role will report directly to the leader of the commercial area.",
+                    "   Focus on results."
+                ]
+            },
+            "workModality": {
+                "title": "WORK MODALITY",
+                "items": [
+                    "Full time",
+
+                    "Hybrid working model",
+
+                    "Prepaid medicine",
+
+                    "Free English classes",
+
+                    "Career plan",
+
+                    "Excellent work environment",
+
+                    "Bonuses at the end of the year",
+
+                    "Flexible schedule",
+
+                    "Massages in the office",
+
+                    "Access to games room",
+
+                    "Refreshments and snacks"
+                ]
+            }
+        },
+        "BACKENDSSR": {
+            "url": "BACKENDSSR",
+            "title": "BACKEND - SSR/SR",
+            "country": "Argentina",
+            "description":
+                "Responsible for the design and construction of Microservices and Integrations using cloud architecture and NodeJS stack.",
+            "requirements": {
+                "title": "KNOWLEDGE",
+                "items": [
+                    "Minimum 6 years of experience in software design, development and implementation",
+
+                    "Knowledge in application development, programming interfaces of applications (API), middleware and database",
+
+                    "Design and Integration Patterns",
+
+                    "Knowledge in Agile Software Development Methodologies",
+
+                    "Technological stack: ES6 or higher, NodeJS 12 or higher, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
+
+                    "Knowledge in Principles of Design of Microservices and Twelve-Factor-App",
+
+                    "Knowledge and experience in Test Driven Development is desirable.",
+
+                    "A medium or higher level of written English is required"
+                ]
+            },
+            "responsibilities": {
+                "title": "RESPONSIBILITIES",
+                "items": [
+                    "Participate in SCRUM events",
+
+                    "Assist in task refinement for User Stories during the Sprint as per to the Technical Document",
+
+                    "Development of Microservices according to the Technical Document",
+
+                    "Comply with the defined Rules of encoding standards",
+
+                    "Integration of the code with GIT following the policies and good practices of the software versioning.",
+
+                    "Incident resolution and code refactoring",
+
+                    "Development of Test Cases using TDD",
+
+                    "Apply and promote good software development practices.",
+
+                    "Work collaboratively with the rest of the team to meet objectives of the project and the organization."
+                ]
+            },
+            "workModality": {
+                "title": "WORK MODALITY",
+                "items": [
+                    "Full time",
+
+                    "Hybrid working model",
+
+                    " Prepaid medicine",
+
+                    " Free English classes",
+
+                    "Career plan",
+
+                    "Excellent work environment",
+
+                    "Bonuses at the end of the year",
+
+                    "Flexible schedule",
+
+                    "Massages in the office",
+
+                    "Access to games room",
+
+                    "Refreshments and snacks"
+                ]
+            }
+        }
+    },
     "about_us": {
         "ourValues": {
             "title": "Our values",
@@ -169,6 +415,9 @@
         "subtitle": "IDEA TOWARDS THE TOP",
         "name": "Name",
         "email": "Email",
+        "lastname": "Last Name",
+        "linkedin": "Link to Linkedin",
+        "weWantToKnowAboutYou": "We want to know about you",
         "company": "Company",
         "role": "Role",
         "howCanWeHelpYou": "How can we Help you?"

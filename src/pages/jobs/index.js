@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
 import ContactUs from "@/modules/ContactUs";
 import BecomeASteplixer from "@/modules/jobs/BecomeASteplixer";
 import Head from "next/head";
+import { useTranslation } from "next-export-i18n";
 
 export default function Home() {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <div>
@@ -20,8 +20,8 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center mb-10">
                 <ContactUs
-                    title={texts.jobs.contactJobs.title}
-                    description={texts.jobs.contactJobs.description}
+                    title={t("jobs.contactJobs.title")}
+                    description={t("jobs.contactJobs.description")}
                     cv
                 />
             </div>
