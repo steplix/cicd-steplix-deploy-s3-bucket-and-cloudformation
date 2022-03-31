@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
 import chevronLeft from "@/public/assets/icons/chevronLeft.svg";
@@ -46,7 +46,7 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <Image
+                                                <img
                                                     src={chevronLeft}
                                                     alt="left chevron"
                                                     layout="fill"
@@ -64,7 +64,7 @@ export default function Modal({
                                                 }
                                             >
                                                 <div className="relative rounded-full bg-steplix-yellow h-14 w-14">
-                                                    <Image
+                                                    <img
                                                         src={chevronRight}
                                                         alt="right chevron"
                                                         layout="fill"

@@ -1,43 +1,43 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
+import React from "react";
+import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
 
 const OurCulture = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <div id="Our-culture " className="lg:w-[1230px] w-[345px]">
             <div className="text-white mb-28 text-left w-[290px] lg:w-[1200px]">
                 <p className="text-[24px] lg:text-[54px]">
-                    {texts.ourCulture.title}
+                    {t("ourCulture.title")}
                 </p>
                 <h2 className="title-empty lg:text-[64px] text-[24px]">
-                    {texts.ourCulture.subtitle}
+                    {t("ourCulture.subtitle")}
                 </h2>
             </div>
             <div className="lg:flex lg:gap-28 space-y-7 lg:space-y-0">
                 <div className="lg:w-[450px] w-[250px]mx-auto">
                     <StepCard
-                        title={texts.ourCulture.cardOne.title}
+                        title={t("ourCulture.cardOne.title")}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-blue"
-                        textOne={texts.ourCulture.cardOne.description}
+                        textOne={t("ourCulture.cardOne.description")}
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
                     <StepCard
-                        title={texts.ourCulture.cardTwo.title}
+                        title={t("ourCulture.cardTwo.title")}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-red"
-                        textOne={texts.ourCulture.cardTwo.description}
+                        textOne={t("ourCulture.cardTwo.description")}
                     />
                 </div>
                 <div className="lg:w-[450px] w-[250px] mx-auto">
                     <StepCard
-                        title={texts.ourCulture.cardThree.title}
+                        title={t("ourCulture.cardThree.title")}
                         colorTitle="font-semibold text-white"
                         colorLine="bg-steplix-yellow"
-                        textOne={texts.ourCulture.cardThree.description}
+                        textOne={t("ourCulture.cardThree.description")}
                     />
                 </div>
             </div>

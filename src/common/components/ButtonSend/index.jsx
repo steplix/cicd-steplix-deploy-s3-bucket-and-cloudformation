@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "@/common/components/LanguageContext";
+import React from "react";
+import { useTranslation } from "next-export-i18n";
 
 const ButtonSend = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <button
             className="w-[132px] h-[45px] border-2 text-steplix-red border-steplix-red font-semibold"
             type="submit"
         >
-            {texts.ButtonSend}
+            {t("ButtonSend")}
         </button>
     );
 };

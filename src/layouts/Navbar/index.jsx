@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
-import logo from "@/public/assets/logos/logo-navbar.svg";
-import Image from "next/image";
-import LenguageSelector from "@/common/components/LenguageSelector";
-import { LanguageContext } from "@/common/components/LanguageContext";
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import Link from "next/link";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import LanguageSelector from "@/common/components/LanguageSelector";
+import logo from "@/public/assets/logos/logo-navbar.svg";
+
 const Navbar = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+
     //
     // State
     //
@@ -40,27 +43,29 @@ const Navbar = () => {
             >
                 <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-5">
                     <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
-                        <Image src={logo} alt="logo" layout="fill" />
+                        <Link href={{ pathname: "/", query: query }}>
+                            <a>
+                                <img src={logo} alt="logo" layout="fill" />
+                            </a>
+                        </Link>
                     </div>
                     <div className="mx-8">
                         <div className="flex space-x-5 mt-7 text-white text-base w-[800px] gap-2">
-                            <a href="#about-us">{texts.navbar.item1}</a>
-                            <a href="#what-we-do">{texts.navbar.item2}</a>
-                            <a href="#Our-culture">{texts.navbar.item3}</a>
-                            <a href="#happy-clients">{texts.navbar.item4}</a>
-                            <Link href="/jobs">
-                                <a>{texts.navbar.item5}</a>
+                            <a href="#about-us">{t("navbar.item1")}</a>
+                            <a href="#what-we-do">{t("navbar.item2")}</a>
+                            <a href="#Our-culture">{t("navbar.item3")}</a>
+                            <a href="#happy-clients">{t("navbar.item4")}</a>
+                            <Link href={{ pathname: "jobs", query: query }}>
+                                {t("navbar.item5")}
                             </Link>
                         </div>
                     </div>
-
-                    {/* boton contact us */}
-
+                    {/* button contact us */}
                     <button className="bg-white text-gray-900 rounded-full w-[200px] h-14 mt-3 my-2 px-10 text-xl mr-7">
-                        <a href="#contact-us">{texts.navbar.item6}</a>
+                        <a href="#contact-us">{t("navbar.item6")}</a>
                     </button>
-                    <div className="h-[35px] w-[35px] mt-7">
-                        <LenguageSelector />
+                    <div className="mt-7">
+                        <LanguageSelector />
                     </div>
                 </div>
             </nav>
