@@ -36,7 +36,7 @@ const Footer = () => {
                         <Link href="https://www.facebook.com/steplix">
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
-                                    <div className="mx-auto pt-3 ">
+                                    <div className="mx-auto lg:pt-3 pt-2 flex justify-center">
                                         <img
                                             src="/assets/logos/fb.svg"
                                             alt="Facebook"
@@ -49,7 +49,7 @@ const Footer = () => {
                         <Link href="https://www.instagram.com/steplixsoftware">
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
-                                    <div className="mx-auto pt-4 ">
+                                    <div className="mx-auto lg:pt-4 pt-3 flex justify-center">
                                         <img
                                             src="/assets/logos/instagram.svg"
                                             alt="instagram"
@@ -62,11 +62,12 @@ const Footer = () => {
                         <Link href="https://www.linkedin.com/company/steplix">
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
-                                    <div className="mx-auto pt-[18px]">
+                                    <div className="mx-auto lg:pt-2 pt-2  flex justify-center">
                                         <img
-                                            src="/assets/logos/gmail.svg"
+                                            src="/assets/logos/linkedin.png"
                                             alt="linkedin"
                                             objectFit="contain"
+                                            className="w-10"
                                         />
                                     </div>
                                 </div>
@@ -94,6 +95,7 @@ const Footer = () => {
                                                 alt="IQNet"
                                                 objectFit="contain"
                                                 layout="fill"
+                                                className="h-24 w-24"
                                             />
                                         </a>
                                     </Link>

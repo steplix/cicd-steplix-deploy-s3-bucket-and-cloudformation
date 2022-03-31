@@ -7,7 +7,6 @@ import StepCard from "@/common/components/StepCard";
 const WhatWeDo = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
-
     //
     // State
     //
@@ -74,7 +73,7 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardOne.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardOne.description")}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
@@ -86,7 +85,7 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardTwo.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardTwo.description")}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
@@ -98,7 +97,7 @@ const WhatWeDo = () => {
                             title={t("whatWeDo.cardThree.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
-                            seeMore="see More"
+                            seeMore={t("seeMore")}
                             textOne={t("whatWeDo.cardThree.description")}
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}

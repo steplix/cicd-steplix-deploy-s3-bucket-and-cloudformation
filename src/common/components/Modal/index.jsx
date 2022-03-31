@@ -15,7 +15,7 @@ export default function Modal({
             {isModalOpen && (
                 <>
                     <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
-                        <div className="relative w-[90%] lg:w-[1000px] flex justify-center ">
+                        <div className="relative right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center ">
                             {/*content*/}
                             <div
                                 className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
@@ -27,7 +27,7 @@ export default function Modal({
                                     x
                                 </button>
                                 {/*body*/}
-                                <div className="px-5 mt-5 h-[500px]">
+                                <div className="px-1 mt-5 h-[670px]">
                                     {children}
                                 </div>
                                 {/*footer*/}
@@ -75,7 +75,7 @@ export default function Modal({
                         </div>
                         {subDescription && (
                             <div
-                                className={`${borderColor} hidden lg:flex border-2 rounded-full shadow-lg relative top-[345px] right-[170px]  flex-col bg-steplix-lilac/75 w-[350px] h-[350px] text-center justify-center my-auto`}
+                                className={`${borderColor} hidden lg:flex border-2 rounded-full shadow-lg relative top-[345px] left-[20px]  flex-col bg-steplix-lilac/75 w-[350px] h-[350px] text-center justify-center my-auto`}
                             >
                                 {subDescription}
                             </div>

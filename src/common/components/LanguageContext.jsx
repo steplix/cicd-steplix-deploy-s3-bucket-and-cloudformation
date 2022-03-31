@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+/* import { useRouter } from "next/router";
 import React, { createContext } from "react";
 import translations from "../utils/lang/translations";
 import PropTypes from "prop-types";
@@ -36,3 +36,4 @@ LanguageProvider.propTypes = {
 };
 export { LanguageContext };
 export default LanguageProvider;
+ */
