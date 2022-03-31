@@ -1,17 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import _ from "lodash";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import Image from "next/image";
-import agrocanje from "@/public/assets/logos/clients/agrocanje.svg";
-import sura from "@/public/assets/logos/clients/sura.svg";
-import finket from "@/public/assets/logos/clients/finket.svg";
-import c5n from "@/public/assets/logos/clients/c5n.svg";
-import garbarino from "@/public/assets/logos/clients/garbarino.svg";
-import pow from "@/public/assets/logos/clients/pow.svg";
-import smartium from "@/public/assets/logos/clients/smartium.svg";
 
-import _ from "lodash";
-import PropTypes from "prop-types";
 const Carousel = () => {
     //
     //UseStates
@@ -25,31 +17,31 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: agrocanje,
+            image: "/assets/logos/clients/agrocanje.svg",
             alt: "agrocanje",
         },
         {
-            image: sura,
+            image: "/assets/logos/clients/sura.svg",
             alt: "sura",
         },
         {
-            image: finket,
+            image: "/assets/logos/clients/finket.svg",
             alt: "afinket",
         },
         {
-            image: c5n,
+            image: "/assets/logos/clients/c5n.svg",
             alt: "c5n",
         },
         {
-            image: garbarino,
+            image: "/assets/logos/clients/garbarino.svg",
             alt: "garbarino",
         },
         {
-            image: pow,
+            image: "/assets/logos/clients/pow.svg",
             alt: "pow",
         },
         {
-            image: smartium,
+            image: "/assets/logos/clients/smartium.svg",
             alt: "smartium",
         },
     ];
@@ -91,7 +83,7 @@ const Carousel = () => {
                                 key={`image-${index}`}
                                 className="keen-slider__slide number-slide relative h-32 w-32 "
                             >
-                                <Image src={element?.image} alt={element.alt} />
+                                <img src={element?.image} alt={element.alt} />
                             </div>
                         ))}
                     </div>
@@ -135,7 +127,7 @@ const Carousel = () => {
                                     >
                                         <div className="flex justify-end">
                                             <div className="relative h-16 w-32 ">
-                                                <Image
+                                                <img
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />

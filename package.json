@@ -9,6 +9,7 @@
     "scripts": {
         "dev": "NODE_ENV=development next",
         "build": "next build",
+        "release": "next build && next export",
         "start": "NODE_ENV=production next start",
         "lint": "next lint",
         "prepare": "husky install"
@@ -24,6 +25,7 @@
         "keen-slider": "^6.0.2",
         "lodash": "^4.17.21",
         "next": "^12.1.0",
+        "next-export-i18n": "^1.4.3",
         "postcss": "^8.3.11",
         "prop-types": "^15.7.2",
         "react": "17.0.2",

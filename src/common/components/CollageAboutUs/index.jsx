@@ -1,11 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
-import cultureOne from "@/public/assets/images/culture/culture-01.png";
-import cultureTwo from "@/public/assets/images/culture/culture-02.png";
-import cultureThree from "@/public/assets/images/culture/culture-03.png";
-import cultureFour from "@/public/assets/images/culture/culture-04.png";
-import cultureFive from "@/public/assets/images/culture/culture-05.png";
-import cultureSix from "@/public/assets/images/culture/culture-06.png";
 
 const CollageAboutUs = ({ sm, lg }) => {
     return (
@@ -14,15 +8,15 @@ const CollageAboutUs = ({ sm, lg }) => {
                 <div className="hidden lg:flex gap-4 space-x-4 ">
                     <div className="space-y-10">
                         <div className="relative h-[500px] w-[350px]">
-                            <Image
-                                src={cultureOne}
+                            <img
+                                src="/assets/images/culture/culture-01.png"
                                 alt="culture"
                                 layout="fill"
                             />
                         </div>
                         <div className="relative h-[226px] w-[350px]">
-                            <Image
-                                src={cultureTwo}
+                            <img
+                                src="/assets/images/culture/culture-02.png"
                                 alt="culture"
                                 layout="fill"
                             />
@@ -30,15 +24,15 @@ const CollageAboutUs = ({ sm, lg }) => {
                     </div>
                     <div className="space-y-10">
                         <div className="relative h-[226px] w-[350px]">
-                            <Image
-                                src={cultureThree}
+                            <img
+                                src="/assets/images/culture/culture-03.png"
                                 alt="culture"
                                 layout="fill"
                             />
                         </div>
                         <div className="relative h-[500px] w-[350px]">
-                            <Image
-                                src={cultureFour}
+                            <img
+                                src="/assets/images/culture/culture-04.png"
                                 alt="culture"
                                 layout="fill"
                             />
@@ -47,15 +41,15 @@ const CollageAboutUs = ({ sm, lg }) => {
 
                     <div className="space-y-10">
                         <div className="relative h-[500px] w-[350px]">
-                            <Image
-                                src={cultureFive}
+                            <img
+                                src="/assets/images/culture/culture-05.png"
                                 alt="culture"
                                 layout="fill"
                             />
                         </div>
                         <div className="relative h-[226px] w-[350px]">
-                            <Image
-                                src={cultureSix}
+                            <img
+                                src="/assets/images/culture/culture-06.png"
                                 alt="culture"
                                 layout="fill"
                             />
@@ -67,24 +61,24 @@ const CollageAboutUs = ({ sm, lg }) => {
                 <div className="lg:hidden flex gap-4  ">
                     <div className="space-y-5">
                         <div className="relative h-[230px] w-[160px]">
-                            <Image
-                                src={cultureOne}
+                            <img
+                                src="/assets/images/culture/culture-01.png"
                                 alt="culture"
                                 layout="fill"
                                 objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
-                            <Image
-                                src={cultureTwo}
+                            <img
+                                src="/assets/images/culture/culture-02.png"
                                 alt="culture"
                                 layout="fill"
                                 objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
-                            <Image
-                                src={cultureFive}
+                            <img
+                                src="/assets/images/culture/culture-05.png"
                                 alt="culture"
                                 layout="fill"
                                 objectFit="cover"
@@ -93,24 +87,24 @@ const CollageAboutUs = ({ sm, lg }) => {
                     </div>
                     <div className="space-y-5 ">
                         <div className="relative h-[100px] w-[160px]">
-                            <Image
-                                src={cultureThree}
+                            <img
+                                src="/assets/images/culture/culture-03.png"
                                 alt="culture"
                                 layout="fill"
                                 objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[230px] w-[160px]">
-                            <Image
-                                src={cultureFour}
+                            <img
+                                src="/assets/images/culture/culture-04.png"
                                 alt="culture"
                                 layout="fill"
                                 objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
-                            <Image
-                                src={cultureSix}
+                            <img
+                                src="/assets/images/culture/culture-06.png"
                                 alt="culture"
                                 objectFit="cover"
                                 layout="fill"

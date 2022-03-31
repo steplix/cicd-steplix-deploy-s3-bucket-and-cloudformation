@@ -1,9 +1,6 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
-import chevronLeft from "@/public/assets/icons/chevronLeft.svg";
-import chevronRight from "@/public/assets/icons/chevronRight.svg";
-
 export default function Modal({
     setisModalOpen,
     isModalOpen,
@@ -46,8 +43,8 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <Image
-                                                    src={chevronLeft}
+                                                <img
+                                                    src="/assets/icons/chevronLeft.svg"
                                                     alt="left chevron"
                                                     layout="fill"
                                                 />
@@ -64,8 +61,8 @@ export default function Modal({
                                                 }
                                             >
                                                 <div className="relative rounded-full bg-steplix-yellow h-14 w-14">
-                                                    <Image
-                                                        src={chevronRight}
+                                                    <img
+                                                        src="/assets/icons/chevronRight.svg"
                                                         alt="right chevron"
                                                         layout="fill"
                                                     />

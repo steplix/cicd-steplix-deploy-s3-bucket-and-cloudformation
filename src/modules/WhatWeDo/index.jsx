@@ -1,36 +1,42 @@
-import React, { useContext, useState } from "react";
-import StepCard from "@/common/components/StepCard";
-import { LanguageContext } from "@/common/components/LanguageContext";
+import React, { useState } from "react";
 import Link from "next/link";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import Modal from "@/common/components/Modal";
+import StepCard from "@/common/components/StepCard";
 
 const WhatWeDo = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+
+    //
+    // State
+    //
     const [positionModal, setPositionModal] = useState(1);
     const [isModalOpen, setisModalOpen] = useState(false);
 
     let subDescription, title, text, borderColor, number;
     if (positionModal === 1) {
-        subDescription = texts.modal.modalOne.descriptionTwo;
-        title = texts.modal.modalOne.title;
-        text = texts.modal.modalOne.descriptionOne;
+        subDescription = t("modal.modalOne.descriptionTwo");
+        title = t("modal.modalOne.title");
+        text = t("modal.modalOne.descriptionOne");
         borderColor = "border-steplix-blue";
         number = 1;
     }
     if (positionModal === 2) {
-        subDescription = texts.modal.modalTwo.descriptionTwo;
-        title = texts.modal.modalTwo.title;
-        text = texts.modal.modalTwo.descriptionOne;
+        subDescription = t("modal.modalTwo.descriptionTwo");
+        title = t("modal.modalTwo.title");
+        text = t("modal.modalTwo.descriptionOne");
         borderColor = "border-steplix-red";
         number = 2;
     }
     if (positionModal === 3) {
-        subDescription = texts.modal.modalThree.descriptionTwo;
-        title = texts.modal.modalThree.title;
-        text = texts.modal.modalThree.descriptionOne;
+        subDescription = t("modal.modalThree.descriptionTwo");
+        title = t("modal.modalThree.title");
+        text = t("modal.modalThree.descriptionOne");
         borderColor = "border-steplix-yellow";
         number = 3;
     }
+
     return (
         <div className="lg:w-[1230px] w-[345px] steplix-process">
             <Modal
@@ -54,22 +60,27 @@ const WhatWeDo = () => {
                 id="what-we-do"
             >
                 <h2 className="text-[24px] lg:text-[54px]">
-                    {texts.whatWeDo.title}
+                    {t("whatWeDo.title")}
                 </h2>
                 <div className="lg:w-[800px] w-[250px] lg:text-2xl text-xs mb-5 mt-3">
-                    <p className="mb-3">{texts.whatWeDo.subtitlePartOne}</p>
-                    <p>{texts.whatWeDo.subtitlePartTwo} </p>
+                    <p className="mb-3">{t("whatWeDo.subtitlePartOne")}</p>
+                    <p>{t("whatWeDo.subtitlePartTwo")} </p>
                 </div>
 
                 <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
                     <div className="w-[250px] lg:w-[470px] lg:row-start-3 lg:row-span-2">
                         <StepCard
                             number="01."
-                            title={texts.whatWeDo.cardOne.title}
+                            title={t("whatWeDo.cardOne.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
+<<<<<<< HEAD
                             seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardOne.description}
+=======
+                            seeMore="see More"
+                            textOne={t("whatWeDo.cardOne.description")}
+>>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -77,11 +88,16 @@ const WhatWeDo = () => {
                     <div className="w-[250px] lg:w-[470px] lg:row-start-2 lg:row-span-3">
                         <StepCard
                             number="02."
-                            title={texts.whatWeDo.cardTwo.title}
+                            title={t("whatWeDo.cardTwo.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
+<<<<<<< HEAD
                             seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardTwo.description}
+=======
+                            seeMore="see More"
+                            textOne={t("whatWeDo.cardTwo.description")}
+>>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
@@ -89,19 +105,24 @@ const WhatWeDo = () => {
                     <div className="w-[250px] lg:w-[470px] lg:row-start-1 lg:row-span-4">
                         <StepCard
                             number="03."
-                            title={texts.whatWeDo.cardThree.title}
+                            title={t("whatWeDo.cardThree.title")}
                             colorTitle="font-semibold text-steplix-yellow"
                             colorLine="bg-steplix-red"
+<<<<<<< HEAD
                             seeMore={texts.seeMore}
                             textOne={texts.whatWeDo.cardThree.description}
+=======
+                            seeMore="see More"
+                            textOne={t("whatWeDo.cardThree.description")}
+>>>>>>> 5f51623cec97cb6438031548b575623700a9a241
                             setisModalOpen={setisModalOpen}
                             setPositionModal={setPositionModal}
                         />
                     </div>
                 </div>
                 <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
-                    <Link href="/process">
-                        <a>{texts.seeMore}</a>
+                    <Link href={{ pathname: "process", query: query }}>
+                        <a>{t("seeMore")}</a>
                     </Link>
                 </div>
             </div>

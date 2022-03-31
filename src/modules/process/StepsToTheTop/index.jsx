@@ -1,18 +1,18 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
 import StepCardCircular from "@/common/components/StepCardCircular";
-import { LanguageContext } from "@/common/components/LanguageContext";
 
 const StepsToTheTop = () => {
-    const { texts } = useContext(LanguageContext);
+    const { t } = useTranslation();
 
     return (
         <div>
             <div className="w-[325px] lg:w-[900px] mb-[100px]">
                 <StepCard
-                    title={texts.process.stepsToTheTop.title}
+                    title={t("process.stepsToTheTop.title")}
                     colorTitle="font-bold text-white"
-                    textOne={texts.process.stepsToTheTop.description}
+                    textOne={t("process.stepsToTheTop.description")}
                 />
             </div>
             <div className="space-y-20">
@@ -20,34 +20,29 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
-                            title={texts.process.stepsToTheTop.stepOne.title}
+                            title={t("process.stepsToTheTop.stepOne.title")}
                             colorTitle="font-bold text-steplix-yellow"
-                            textOne={
-                                texts.process.stepsToTheTop.stepOne
-                                    .descriptionOne
-                            }
-                            textTwo={
-                                texts.process.stepsToTheTop.stepOne
-                                    .descriptionTwo
-                            }
-                            textThree={
-                                texts.process.stepsToTheTop.stepOne
-                                    .descriptionThree
-                            }
-                            textFour={
-                                texts.process.stepsToTheTop.stepOne
-                                    .descriptionFour
-                            }
+                            textOne={t(
+                                "process.stepsToTheTop.stepOne.descriptionOne"
+                            )}
+                            textTwo={t(
+                                "process.stepsToTheTop.stepOne.descriptionTwo"
+                            )}
+                            textThree={t(
+                                "process.stepsToTheTop.stepOne.descriptionThree"
+                            )}
+                            textFour={t(
+                                "process.stepsToTheTop.stepOne.descriptionFour"
+                            )}
                         />
                     </div>
 
                     <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-blue"
-                            text={
-                                texts.process.stepsToTheTop.stepOne
-                                    .secondaryDescription
-                            }
+                            text={t(
+                                "process.stepsToTheTop.stepOne.secondaryDescription"
+                            )}
                         />
                     </div>
                 </div>
@@ -55,34 +50,29 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="02."
-                            title={texts.process.stepsToTheTop.stepTwo.title}
+                            title={t("process.stepsToTheTop.stepTwo.title")}
                             colorTitle="font-bold text-steplix-yellow"
-                            textOne={
-                                texts.process.stepsToTheTop.stepTwo
-                                    .descriptionOne
-                            }
-                            textTwo={
-                                texts.process.stepsToTheTop.stepTwo
-                                    .descriptionTwo
-                            }
-                            textThree={
-                                texts.process.stepsToTheTop.stepTwo
-                                    .descriptionThree
-                            }
-                            textFour={
-                                texts.process.stepsToTheTop.stepTwo
-                                    .descriptionFour
-                            }
+                            textOne={t(
+                                "process.stepsToTheTop.stepTwo.descriptionOne"
+                            )}
+                            textTwo={t(
+                                "process.stepsToTheTop.stepTwo.descriptionTwo"
+                            )}
+                            textThree={t(
+                                "process.stepsToTheTop.stepTwo.descriptionThree"
+                            )}
+                            textFour={t(
+                                "process.stepsToTheTop.stepTwo.descriptionFour"
+                            )}
                         />
                     </div>
 
                     <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-red"
-                            text={
-                                texts.process.stepsToTheTop.stepTwo
-                                    .secondaryDescription
-                            }
+                            text={t(
+                                "process.stepsToTheTop.stepTwo.secondaryDescription"
+                            )}
                         />
                     </div>
                 </div>
@@ -90,34 +80,29 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="03."
-                            title={texts.process.stepsToTheTop.stepThree.title}
+                            title={t("process.stepsToTheTop.stepThree.title")}
                             colorTitle="font-bold text-steplix-yellow"
-                            textOne={
-                                texts.process.stepsToTheTop.stepThree
-                                    .descriptionOne
-                            }
-                            textTwo={
-                                texts.process.stepsToTheTop.stepThree
-                                    .descriptionTwo
-                            }
-                            textThree={
-                                texts.process.stepsToTheTop.stepThree
-                                    .descriptionThree
-                            }
-                            textFour={
-                                texts.process.stepsToTheTop.stepThree
-                                    .descriptionFour
-                            }
+                            textOne={t(
+                                "process.stepsToTheTop.stepThree.descriptionOne"
+                            )}
+                            textTwo={t(
+                                "process.stepsToTheTop.stepThree.descriptionTwo"
+                            )}
+                            textThree={t(
+                                "process.stepsToTheTop.stepThree.descriptionThree"
+                            )}
+                            textFour={t(
+                                "process.stepsToTheTop.stepThree.descriptionFour"
+                            )}
                         />
                     </div>
 
                     <div className="hidden lg:block h-[300px] w-[300px] my-auto">
                         <StepCardCircular
                             borderColor="border-steplix-yellow"
-                            text={
-                                texts.process.stepsToTheTop.stepThree
-                                    .secondaryDescription
-                            }
+                            text={t(
+                                "process.stepsToTheTop.stepThree.secondaryDescription"
+                            )}
                         />
                     </div>
                 </div>

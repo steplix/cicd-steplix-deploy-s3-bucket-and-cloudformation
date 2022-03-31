@@ -1,10 +1,15 @@
 import React from "react";
 import axios from "axios";
-import PropTypes from "prop-types";
+import { useTranslation } from "next-export-i18n";
 import ButtonSend from "@/common/components/ButtonSend";
 import UploadFile from "@/common/components/UploadFile";
 
 const ContactForm = ({ texts, cv, title, subtitle, description }) => {
+    const { t } = useTranslation();
+
+    //
+    // Handlers
+    //
     const handleSubmit = async (e) => {
         let data;
         data = {
@@ -41,6 +46,7 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
 
         const result = await res.json();
     };
+
     return (
         <div className="text-white lg:w-[1230px] w-[345px]" id="contact-us">
             {title ? (
@@ -57,13 +63,14 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                 <div>
                     {" "}
                     <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1570px]">
-                        {texts.title}
+                        {t("contactUs.title")}
                     </h2>
                     <p className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1570px] mb-10">
-                        {texts.subtitle}
+                        {t("contactUs.subtitle")}
                     </p>
                 </div>
             )}
+
             <div>
                 <form
                     className="rounded-lg overflow-hidden p-6 lg:p-1 space-y-4"
@@ -75,7 +82,7 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 type="text"
                                 maxLength={60}
                                 name="name"
-                                placeholder={texts.name}
+                                placeholder={t("contactUs.name")}
                                 className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
                             />
                         </div>
@@ -84,8 +91,11 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 type="text"
                                 maxLength={60}
                                 name={cv ? "lastname" : "email"}
-                                placeholder={cv ? texts.lastname : texts.email}
-                                className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
+                                placeholder={
+                                    cv
+                                        ? t("contactUs.lastname")
+                                        : t("contactUs.email")
+                                }
                             />
                         </div>
                     </div>
@@ -96,7 +106,11 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 type="text"
                                 maxLength={60}
                                 name={cv ? "email" : "company?"}
-                                placeholder={cv ? texts.email : texts.company}
+                                placeholder={
+                                    cv
+                                        ? t("contactUs.email")
+                                        : t("contactUs.company")
+                                }
                                 className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
                             />
                         </div>
@@ -105,7 +119,11 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                                 type="text"
                                 maxLength={60}
                                 name={cv ? "linkedin" : "role"}
-                                placeholder={cv ? texts.linkedin : texts.role}
+                                placeholder={
+                                    cv
+                                        ? t("contactUs.linedin")
+                                        : t("contactUs.role")
+                                }
                                 className="mb-4 block w-full appearance-none focus:outline-none bg-transparent"
                             />
                         </div>
@@ -119,8 +137,8 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
                             maxLength={1000}
                             placeholder={
                                 cv
-                                    ? texts.weWantToKnowAboutYou
-                                    : texts.howCanWeHelpYou
+                                    ? t("contactUs.weWantToKnowAboutYou")
+                                    : t("contactUs.howCanWeHelpYou")
                             }
                             className="mt-5 ml-3 block w-full appearance-none focus:outline-none bg-transparent h-40"
                         ></textarea>

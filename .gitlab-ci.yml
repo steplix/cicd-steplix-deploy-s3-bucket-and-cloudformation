@@ -1,0 +1,34 @@
+image: steplix/node:0.0.3
+
+stages:
+    - artifact
+    - deploy
+
+artifact:
+    stage: artifact
+    only:
+        - master
+    before_script:
+        - steplix-updater
+        - steplix gitlab setup-git
+        - steplix gitlab setup-amazon
+        - steplix gitlab flag init
+    script:
+        - steplix gitlab artifact
+        - steplix gitlab flag success
+    after_script:
+        - steplix gitlab slack
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    before_script:
+        - steplix-updater
+        - steplix gitlab setup-amazon
+        - steplix gitlab flag init
+    script:
+        - steplix gitlab deploy
+        - steplix gitlab flag success
+    after_script:
+        - steplix gitlab slack
