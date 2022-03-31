@@ -8,11 +8,11 @@ const Job = () => {
     const { t } = useTranslation();
     const router = useRouter();
     let nameJob = router.query.slug;
-
+    console.log(nameJob);
     return (
-        <div className="pt-36 ">
+        <div className="pt-48 ">
             <div className="mb-36 flex items-center justify-center ">
-                <ItemsCard item={t("jobs[`${nameJob}`]")} />
+                <ItemsCard item={t(`jobs.${nameJob}`)} />
             </div>
             <div className="flex items-center justify-center mb-10">
                 <ContactUs

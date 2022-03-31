@@ -5,10 +5,10 @@ import { LanguageSwitcher, useLanguageQuery } from "next-export-i18n";
 const LanguageSelector = () => {
     const [query] = useLanguageQuery();
 
-    console.log(query.lang);
+    console.log(query?.lang);
     return (
         <div className="flex gap-2">
-            {query.lang === "en" ? (
+            {query?.lang === "en" ? (
                 <div className="relative w-[34px] h-[34px]">
                     <LanguageSwitcher lang="es">
                         <img
