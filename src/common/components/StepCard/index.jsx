@@ -93,7 +93,7 @@ const StepCard = ({
 //
 StepCard.propTypes = {
     number: PropTypes.string,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     seeMore: PropTypes.string,
     colorLine: PropTypes.string,
     colorTitle: PropTypes.string,

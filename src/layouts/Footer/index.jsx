@@ -40,7 +40,6 @@ const Footer = () => {
                                         <img
                                             src="/assets/logos/fb.svg"
                                             alt="Facebook"
-                                            objectFit="contain"
                                         />
                                     </div>
                                 </div>
@@ -53,7 +52,6 @@ const Footer = () => {
                                         <img
                                             src="/assets/logos/instagram.svg"
                                             alt="instagram"
-                                            objectFit="contain"
                                         />
                                     </div>
                                 </div>
@@ -66,7 +64,6 @@ const Footer = () => {
                                         <img
                                             src="/assets/logos/linkedin.png"
                                             alt="linkedin"
-                                            objectFit="contain"
                                             className="w-10"
                                         />
                                     </div>
@@ -83,7 +80,6 @@ const Footer = () => {
                                             src="/assets/logos/iram.svg"
                                             className="mr-10 w-10 h-14 lg:w-20 lg:h-28"
                                             alt="Iram"
-                                            objectFit="contain"
                                         />
                                     </a>
                                 </Link>
@@ -93,7 +89,6 @@ const Footer = () => {
                                             <img
                                                 src="/assets/logos/iqnet.svg"
                                                 alt="IQNet"
-                                                objectFit="contain"
                                                 layout="fill"
                                                 className="h-24 w-24"
                                             />

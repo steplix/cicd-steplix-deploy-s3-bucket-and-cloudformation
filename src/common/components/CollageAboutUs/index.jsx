@@ -65,7 +65,6 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src="/assets/images/culture/culture-01.png"
                                 alt="culture"
                                 layout="fill"
-                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
@@ -73,7 +72,6 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src="/assets/images/culture/culture-02.png"
                                 alt="culture"
                                 layout="fill"
-                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
@@ -81,7 +79,6 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src="/assets/images/culture/culture-05.png"
                                 alt="culture"
                                 layout="fill"
-                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -91,7 +88,6 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src="/assets/images/culture/culture-03.png"
                                 alt="culture"
                                 layout="fill"
-                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[230px] w-[160px]">
@@ -99,14 +95,12 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 src="/assets/images/culture/culture-04.png"
                                 alt="culture"
                                 layout="fill"
-                                objectFit="cover"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
                             <img
                                 src="/assets/images/culture/culture-06.png"
                                 alt="culture"
-                                objectFit="cover"
                                 layout="fill"
                             />
                         </div>
