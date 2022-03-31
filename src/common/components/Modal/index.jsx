@@ -14,7 +14,7 @@ export default function Modal({
         <>
             {isModalOpen && (
                 <>
-                    <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
+                    <div className="h-[700px] w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div className="relative right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center ">
                             {/*content*/}
                             <div
@@ -47,12 +47,13 @@ export default function Modal({
                                                     src="/assets/icons/chevronLeft.svg"
                                                     alt="left chevron"
                                                     layout="fill"
+                                                    className="mx-auto h-14"
                                                 />
                                             </button>
                                         )}
                                         {positionModal < 3 && (
                                             <button
-                                                className="mx-2 rounded-xl font-semibold p-2 h-12 flex justify-center items-center shadow-xl uppercase"
+                                                className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2 font-semibold p-2  flex justify-center items-center shadow-xl"
                                                 type="button"
                                                 onClick={() =>
                                                     setPositionModal(
@@ -65,6 +66,7 @@ export default function Modal({
                                                         src="/assets/icons/chevronRight.svg"
                                                         alt="right chevron"
                                                         layout="fill"
+                                                        className="mx-auto mb-2 h-14"
                                                     />
                                                 </div>
                                             </button>
