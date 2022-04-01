@@ -10,8 +10,21 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Steplix</title>
-                <meta name="description" content="Steplix Web Page" />
+                <title>Sherpas Digitales | Steplix</title>
+                <meta
+                    name="description"
+                    content="Somos los Sherpas Digitales y estamos aquí para co-crear el camino que llevará a tu negocio a la cima"
+                />
+                <meta
+                    property="og:title"
+                    content="Sherpas Digitales | Steplix"
+                />
+                <meta
+                    property="og:description"
+                    content="Somos los Sherpas Digitales y estamos aquí para co-crear el camino que llevará a tu negocio a la cima"
+                />
+                <meta property="og:url" content="https://steplix.com/" />
+                <meta property="og:type" content="website" />
                 <meta name="robots" content="noindex" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
