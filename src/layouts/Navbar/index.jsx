@@ -77,7 +77,7 @@ const Navbar = () => {
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-around w-[90%] pr-5">
-                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] md:[180] md:[35px] ml-[195px] my-auto">
+                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] md:[180px] md:[35px] ml-[195px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
