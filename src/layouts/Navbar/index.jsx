@@ -38,49 +38,46 @@ const Navbar = () => {
                 <div className="">
                     <Submenu
                         query={query}
-                        className="absolute"
+                        className=""
                         toggle={toggle}
                         setToggle={setToggle}
                     />
                 </div>
-
-                <div className="container-header flex w-full lg:fixed absolute justify-between z-[10] ">
+                <div className=" pt-[22px] h-[64px] bg-steplix-lilac hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ">
                     {/* <!-- logo mobile --> */}
-                    <div className="ml-5 pt-3">
+                    <div className="ml-5 ">
                         <Link href={{ pathname: "/", query: query }}>
                             <img
                                 src="/assets/logos/steplixMobile.svg"
                                 alt="logo"
-                                className="w-40 h-20"
+                                className="w-24 h-6"
                             />
                         </Link>
                     </div>
                     {/*  <!-- boton menu --> */}
-                    <div className="menu-bar-togle">
-                        <div className="menu-bar pt-6 pr-5">
-                            <button
-                                className={`${toggle && "hidden"} `}
-                                onClick={() => setToggle(!toggle)}
-                            >
-                                <img
-                                    src="/assets/icons/submenu.svg"
-                                    className="h-10 w-10 lg:hidden block"
-                                    alt="submenu"
-                                />
-                            </button>
-                        </div>
+                    <div className="z-50 mr-3">
+                        <button
+                            className={`${toggle && "hidden"} h-6 w-6`}
+                            onClick={() => setToggle(!toggle)}
+                        >
+                            <img
+                                src="/assets/icons/submenu.svg"
+                                className="h-6 w-6 lg:hidden block"
+                                alt="submenu"
+                            />
+                        </button>
                     </div>
                 </div>
             </nav>
-            {/*  */}
+            {/* navbar desktop */}
 
             <nav
                 className={`hidden md:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
                     sticky ? "bg-steplix-lilac bg-opacity-90" : "bg-dark"
                 }`}
             >
-                <div className="pt-[30px] container-header flex top-0 lg:justify-around w-full pr-5">
-                    <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
+                <div className="pt-[30px] flex top-0 lg:justify-around w-[90%] pr-5">
+                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] md:[180] md:[35px] ml-[195px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -91,8 +88,8 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="mx-8">
-                        <div className="flex space-x-5 mt-7 text-white text-base w-[800px] gap-2">
+                    <div className="ml-8">
+                        <div className="flex space-x-5 mt-7 text-white text-base w-[750px] gap-2">
                             <a href="#about-us">{t("navbar.item1")}</a>
                             <a href="#what-we-do">{t("navbar.item2")}</a>
                             <a href="#our-culture">{t("navbar.item3")}</a>

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
 const Submenu = ({ toggle, setToggle, query }) => {
@@ -19,25 +19,26 @@ const Submenu = ({ toggle, setToggle, query }) => {
                     toggle ? "submenu--toggle" : ""
                 }`}
             >
-                <div className="flex items-start gap-x-40 mt-4  mb-[60px]">
+                <div className="flex items-start gap-x-52 mt-5 mb-[60px]">
                     <button onClick={() => setToggle(!toggle)}>
-                        <img
-                            src="/assets/logos/submenuCompleto.svg"
-                            className="h-[35px] w-]142px] lg:hidden block"
-                            alt="submenu"
-                        />
+                        <Link href={{ pathname: "/", query: query }}>
+                            <img
+                                src="/assets/logos/submenuCompleto.svg"
+                                className="h-[35px] w-]142px] lg:hidden block"
+                                alt="submenu"
+                            />
+                        </Link>
                     </button>
 
                     <button className="" onClick={() => setToggle(!toggle)}>
                         <img
                             src="/assets/icons/escape.svg"
                             className="h-3 w-3 lg:hidden block"
-                            alt="submenu"
+                            alt="escape"
                         />{" "}
                     </button>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px]">
-                    <div className="hover:bg-steplix-red absolute w-[5px] h-[48px]" />
+                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-blue">
                     <div className="py-3 pl-6 ">
                         <Link href="#about-us">
                             <a onClick={() => handleClickToggle()} href="#">
@@ -46,8 +47,7 @@ const Submenu = ({ toggle, setToggle, query }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px]">
-                    <div className="hover:bg-steplix-red absolute w-[5px] h-[48px]" />
+                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
                     <div className="py-3 pl-6 ">
                         <Link href="#what-we-do">
                             <a onClick={() => handleClickToggle()} href="#">
@@ -56,8 +56,7 @@ const Submenu = ({ toggle, setToggle, query }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px]">
-                    <div className="hover:bg-steplix-red absolute w-[5px] h-[48px]" />
+                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-yellow">
                     <div className="py-3 pl-6 ">
                         <Link href="#Our-culture">
                             <a onClick={() => handleClickToggle()} href="#">
@@ -66,8 +65,8 @@ const Submenu = ({ toggle, setToggle, query }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px]">
-                    <div className="hover:bg-steplix-red absolute w-[5px] h-[48px]" />
+                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-blue">
+                    <div className="hover:bg-steplix-red  w-[5px] h-[48px]" />
                     <div className="py-3 pl-6 ">
                         <Link href="#happy-clients">
                             <a
@@ -79,8 +78,7 @@ const Submenu = ({ toggle, setToggle, query }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px]">
-                    <div className="hover:bg-steplix-red absolute w-[5px] h-[48px]" />
+                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
                     <div className="py-3 pl-6 ">
                         <Link href={{ pathname: "jobs", query: query }}>
                             <a onClick={() => handleClickToggle()} href="#">
@@ -99,7 +97,7 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 </div>
                 <div className="flex gap-x-4 item-center text-left w-[94%] ml-7 ">
                     <LanguageSelector />
-                    <p>
+                    <p className="my-auto">
                         {query?.lang === "es"
                             ? "English version"
                             : "Version en Español"}
