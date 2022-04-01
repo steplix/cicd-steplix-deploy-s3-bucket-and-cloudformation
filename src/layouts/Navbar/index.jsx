@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
+import Submenu from "@/common/components/Submenu";
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -12,6 +13,7 @@ const Navbar = () => {
     // State
     //
     const [sticky, setSticky] = React.useState(false);
+    const [toggle, setToggle] = React.useState(false);
 
     //
     // Effects
@@ -30,18 +32,52 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div
-            className={`sticky top-0 hidden md:block w-full text-white z-50 ${
-                sticky ? "bg-black bg-opacity-80" : "bg-dark"
-            }`}
-        >
+        <div className="sticky top-0 w-full text-white z-50">
+            {/*  */}
+            <nav className="block sm:hidden">
+                <div className="">
+                    <Submenu
+                        query={query}
+                        className=""
+                        toggle={toggle}
+                        setToggle={setToggle}
+                    />
+                </div>
+                <div className="pt-[22px] h-[64px] bg-steplix-lilac hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ">
+                    {/* <!-- logo mobile --> */}
+                    <div className="ml-5 ">
+                        <Link href={{ pathname: "/", query: query }}>
+                            <img
+                                src="/assets/logos/steplixMobile.svg"
+                                alt="logo"
+                                className="w-24 h-6"
+                            />
+                        </Link>
+                    </div>
+                    {/*  <!-- boton menu --> */}
+                    <div className="z-50 mr-3">
+                        <button
+                            className={`${toggle && "hidden"} h-6 w-6`}
+                            onClick={() => setToggle(!toggle)}
+                        >
+                            <img
+                                src="/assets/icons/submenu.svg"
+                                className="h-6 w-6 lg:hidden block"
+                                alt="submenu"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            {/* navbar desktop */}
+
             <nav
-                className={`transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
+                className={`hidden md:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
                     sticky ? "bg-steplix-lilac bg-opacity-90" : "bg-dark"
                 }`}
             >
-                <div className="pt-[30px] container-header flex top-0 desktop:justify-around w-full pr-5">
-                    <div className="relative w-[250px] h-[62px] ml-[195px] my-auto">
+                <div className="pt-[30px] flex top-0 lg:justify-around w-[90%] pr-5">
+                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] md:[180px] md:[35px] ml-[195px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -52,11 +88,11 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="mx-8">
-                        <div className="flex space-x-5 mt-7 text-white text-base w-[800px] gap-2">
+                    <div className="ml-8">
+                        <div className="flex space-x-5 mt-7 text-white text-base w-[750px] gap-2">
                             <a href="#about-us">{t("navbar.item1")}</a>
                             <a href="#what-we-do">{t("navbar.item2")}</a>
-                            <a href="#Our-culture">{t("navbar.item3")}</a>
+                            <a href="#our-culture">{t("navbar.item3")}</a>
                             <a href="#happy-clients">{t("navbar.item4")}</a>
                             <Link href={{ pathname: "/jobs", query: query }}>
                                 {t("navbar.item5")}

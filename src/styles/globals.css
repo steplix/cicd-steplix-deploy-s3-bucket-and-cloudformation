@@ -85,3 +85,30 @@ body {
 }
 
 /* CAROUSEL END */
+
+/* SUBMENU & NAVBAR START */
+.nav-link::after {
+    @apply bg-[color:var(--green-color)];
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s linear;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.submenu {
+    @apply flex flex-col space-y-2 fixed inset-0 w-full h-screen items-center opacity-0 lg:hidden z-40 text-white;
+    clip-path: circle(30px at 93% 8%);
+    transition: all 800ms ease-out;
+}
+.submenu--toggle {
+    clip-path: circle(100%);
+    
+    @apply opacity-100 bg-steplix-lilac;
+}
+
+/* SUBMENU & NAVBAR END */
