@@ -13,7 +13,7 @@ export default function Home() {
                 <title>Steplix</title>
                 <meta name="description" content="Steplix Web Page" />
                 <meta name="robots" content="noindex" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <Masthead />
             <div className="container-steplix">
