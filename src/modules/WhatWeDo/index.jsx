@@ -13,25 +13,43 @@ const WhatWeDo = () => {
     const [positionModal, setPositionModal] = useState(1);
     const [isModalOpen, setisModalOpen] = useState(false);
 
-    let subDescription, title, text, borderColor, number;
+    let subDescription,
+        title,
+        text,
+        textOne,
+        textTwo,
+        textThree,
+        textFour,
+        borderColor,
+        number;
     if (positionModal === 1) {
         subDescription = t("modal.modalOne.descriptionTwo");
         title = t("modal.modalOne.title");
-        text = t("modal.modalOne.descriptionOne");
+        textOne = t("modal.modalOne.descriptionOne.textOne");
+        textTwo = t("modal.modalOne.descriptionOne.textTwo");
+        textThree = t("modal.modalOne.descriptionOne.textThree");
+        textFour = t("modal.modalOne.descriptionOne.textFour");
+
         borderColor = "border-steplix-blue";
         number = 1;
     }
     if (positionModal === 2) {
         subDescription = t("modal.modalTwo.descriptionTwo");
         title = t("modal.modalTwo.title");
-        text = t("modal.modalTwo.descriptionOne");
+        textOne = t("modal.modalTwo.descriptionOne.textOne");
+        textTwo = t("modal.modalTwo.descriptionOne.textTwo");
+        textThree = t("modal.modalTwo.descriptionOne.textThree");
+        textFour = t("modal.modalTwo.descriptionOne.textFour");
         borderColor = "border-steplix-red";
         number = 2;
     }
     if (positionModal === 3) {
         subDescription = t("modal.modalThree.descriptionTwo");
         title = t("modal.modalThree.title");
-        text = t("modal.modalThree.descriptionOne");
+        textOne = t("modal.modalTwo.descriptionOne.textOne");
+        textTwo = t("modal.modalTwo.descriptionOne.textTwo");
+        textThree = t("modal.modalTwo.descriptionOne.textThree");
+        textFour = t("modal.modalTwo.descriptionOne.textFour");
         borderColor = "border-steplix-yellow";
         number = 3;
     }
@@ -51,7 +69,10 @@ const WhatWeDo = () => {
                     title={title}
                     colorTitle="font-semibold text-steplix-yellow"
                     colorLine="bg-steplix-red"
-                    textOne={text}
+                    textOne={textOne}
+                    textTwo={textTwo}
+                    textThree={textThree}
+                    textFour={textFour}
                 />
             </Modal>
             <div

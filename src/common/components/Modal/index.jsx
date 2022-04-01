@@ -40,7 +40,7 @@ export default function Modal({
                     <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div
                             ref={ref}
-                            className="wrapper relative lg:h-[500px] h-[800px] right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center "
+                            className="wrapper relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[97%] lg:w-[1000px] flex justify-center "
                         >
                             {/*content*/}
                             <div
