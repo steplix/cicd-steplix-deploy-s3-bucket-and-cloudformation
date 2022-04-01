@@ -37,10 +37,10 @@ export default function Modal({
         <>
             {isModalOpen && (
                 <>
-                    <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
+                    <div className="h-full w-full flex justify-center items-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div
                             ref={ref}
-                            className="wrapper relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[97%] lg:w-[1000px] flex justify-center "
+                            className="wrapper bottom-36 relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[97%] lg:w-[1000px] flex justify-center "
                         >
                             {/*content*/}
                             <div
@@ -103,7 +103,7 @@ export default function Modal({
                         </div>
                         {subDescription && (
                             <div
-                                className={`${borderColor} hidden lg:flex border-2 rounded-full shadow-lg relative top-[345px] left-[20px]  flex-col bg-steplix-lilac/75 w-[350px] h-[350px] text-center justify-center my-auto`}
+                                className={`${borderColor} hidden lg:flex border-2 rounded-full shadow-lg relative top-[295px] left-[40px]  flex-col bg-steplix-lilac/75 w-[350px] h-[350px] text-center justify-center my-auto`}
                             >
                                 {subDescription}
                             </div>
