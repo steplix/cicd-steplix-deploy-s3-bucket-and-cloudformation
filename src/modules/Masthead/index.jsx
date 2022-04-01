@@ -18,7 +18,7 @@ const Masthead = () => {
                         {t("masthead.subtitle")}
                     </p>
                 </div>
-                <div className="absolute text-white lg:top-[90vh] top-[44vh]  left-[40%] lg:left-[50%]">
+                <div className="absolute text-white lg:top-[90vh] top-[350px]  left-[40%] lg:left-[50%]">
                     <a href="#about-us">
                         <div className="border-steplix-yellow h-[44px] w-7 border-[1px] rounded-2xl text-center flex mx-auto mb-2 items-center">
                             <div className="relative w-[14px] h-[7px] mx-auto">

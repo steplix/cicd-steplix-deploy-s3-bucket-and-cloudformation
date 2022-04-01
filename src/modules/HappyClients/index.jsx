@@ -5,7 +5,10 @@ import Carousel from "@/common/components/Carousel";
 const HappyClients = () => {
     const { t } = useTranslation();
     return (
-        <section className="w-[335px] lg:w-[1230px] text-left" id="clients">
+        <section
+            id="happy-clients"
+            className="w-[335px] lg:w-[1230px] text-left"
+        >
             <h2 className="text-[24px] lg:text-[54px] text-white mb-10">
                 {t("happyClients")}
             </h2>
