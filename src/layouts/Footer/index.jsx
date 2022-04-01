@@ -89,7 +89,6 @@ const Footer = () => {
                                             <img
                                                 src="/assets/logos/iqnet.svg"
                                                 alt="IQNet"
-                                                layout="fill"
                                                 className="h-24 w-24"
                                             />
                                         </a>

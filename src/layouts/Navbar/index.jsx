@@ -33,8 +33,7 @@ const Navbar = () => {
 
     return (
         <div className="sticky top-0 w-full text-white z-50">
-            {/*  */}
-            <nav className="block sm:hidden">
+            <nav className="block lg:hidden">
                 <div className="">
                     <Submenu
                         query={query}
@@ -43,7 +42,11 @@ const Navbar = () => {
                         setToggle={setToggle}
                     />
                 </div>
-                <div className="pt-[22px] h-[64px] bg-steplix-lilac hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ">
+                <div
+                    className={`pt-[22px] h-[64px] transition-height duration-500 ease-in-out hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ${
+                        sticky ? "bg-steplix-lilac" : "bg-dark"
+                    }`}
+                >
                     {/* <!-- logo mobile --> */}
                     <div className="ml-5 ">
                         <Link href={{ pathname: "/", query: query }}>
@@ -62,7 +65,7 @@ const Navbar = () => {
                         >
                             <img
                                 src="/assets/icons/submenu.svg"
-                                className="h-6 w-6 lg:hidden block"
+                                className="h-6 w-6 xl:hidden block"
                                 alt="submenu"
                             />
                         </button>
@@ -72,8 +75,8 @@ const Navbar = () => {
             {/* navbar desktop */}
 
             <nav
-                className={`hidden md:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
-                    sticky ? "bg-steplix-lilac bg-opacity-90" : "bg-dark"
+                className={`hidden lg:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
+                    sticky ? "bg-steplix-lilac" : "bg-dark"
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-around w-[90%] pr-5">
