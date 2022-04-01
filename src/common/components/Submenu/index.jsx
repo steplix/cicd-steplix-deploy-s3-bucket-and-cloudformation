@@ -99,8 +99,8 @@ const Submenu = ({ toggle, setToggle, query }) => {
                     <LanguageSelector />
                     <p className="my-auto">
                         {query?.lang === "es"
-                            ? "English version"
-                            : "Version en Español"}
+                            ? "English versión"
+                            : "Versión en español"}
                     </p>
                 </div>
             </div>

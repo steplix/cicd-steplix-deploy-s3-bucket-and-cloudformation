@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import PropTypes from "prop-types";
 export default function Modal({
     setisModalOpen,
@@ -10,12 +11,37 @@ export default function Modal({
     setPositionModal,
     positionModal,
 }) {
+    //
+    //constant
+    //
+    const ref = useRef();
+
+    //
+    //UseEffect
+    //
+    useEffect(() => {
+        const checkIfClickedOutside = (e) => {
+            if (isModalOpen && ref.current && !ref.current.contains(e.target)) {
+                setisModalOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", checkIfClickedOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", checkIfClickedOutside);
+        };
+    }, [isModalOpen, setisModalOpen]);
+
     return (
         <>
             {isModalOpen && (
                 <>
                     <div className="h-full w-full items-center flex justify-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
-                        <div className="relative lg:h-[500px] h-[800px] right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center ">
+                        <div
+                            ref={ref}
+                            className="wrapper relative lg:h-[500px] h-[800px] right-[5%] 2xl:left-[11%] sm:left-[7%] w-[90%] lg:w-[1000px] flex justify-center "
+                        >
                             {/*content*/}
                             <div
                                 className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
@@ -83,6 +109,7 @@ export default function Modal({
                             </div>
                         )}
                     </div>
+
                     <div className="opacity-50 fixed inset-0 z-[9999] bg-black" />
                 </>
             )}
