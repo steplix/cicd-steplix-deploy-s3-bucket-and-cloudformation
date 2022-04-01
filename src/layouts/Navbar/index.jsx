@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full text-white z-50">
             {/*  */}
-            <nav className=" block sm:hidden">
+            <nav className="block sm:hidden">
                 <div className="">
                     <Submenu
                         query={query}
@@ -43,7 +43,7 @@ const Navbar = () => {
                         setToggle={setToggle}
                     />
                 </div>
-                <div className=" pt-[22px] h-[64px] bg-steplix-lilac hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ">
+                <div className="pt-[22px] h-[64px] bg-steplix-lilac hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ">
                     {/* <!-- logo mobile --> */}
                     <div className="ml-5 ">
                         <Link href={{ pathname: "/", query: query }}>
