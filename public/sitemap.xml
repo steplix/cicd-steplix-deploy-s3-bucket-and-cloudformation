@@ -1,0 +1,20 @@
+<xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>http://steplixweb.s3-website-sa-east-1.amazonaws.com</loc>
+            <lastmod>2022-04-01</lastmod>
+        </url>
+        <url>
+            <loc>http://steplixweb.s3-website-sa-east-1.amazonaws.com/process</loc>
+            <lastmod>2022-04-01</lastmod>
+        </url>
+        <url>
+            <loc>http://steplixweb.s3-website-sa-east-1.amazonaws.com/jobs</loc>
+            <lastmod>2022-04-01</lastmod>
+        </url>
+        <url>
+            <loc>http://steplixweb.s3-website-sa-east-1.amazonaws.com/about-us</loc>
+            <lastmod>2022-04-01</lastmod>
+        </url>
+      </urlset>
+</xml>
