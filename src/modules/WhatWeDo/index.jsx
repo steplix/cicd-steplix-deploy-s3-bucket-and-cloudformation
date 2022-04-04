@@ -79,7 +79,7 @@ const WhatWeDo = () => {
                 className="text-white w-[290px] lg:w-[1300px] "
                 id="what-we-do"
             >
-                <h2 className="text-[24px] lg:text-[54px]">
+                <h2 className="text-2xl lg:text-4xl font-black">
                     {t("whatWeDo.title")}
                 </h2>
                 <div className="lg:w-[800px] w-[250px] lg:text-2xl text-xs mb-5 mt-3">

@@ -1,6 +1,7 @@
 import ContactUs from "@/modules/ContactUs";
 import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
 import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";
+import ScrumFramework from "@/modules/process/ScrumFramework";
 import StepsToTheTop from "@/modules/process/StepsToTheTop";
 import Head from "next/head";
 
@@ -21,6 +22,9 @@ export default function Home() {
             </div>
             <div className="container-steplix">
                 <HoDoWeDoIt />
+            </div>{" "}
+            <div className="container-steplix">
+                <ScrumFramework />
             </div>
             <div className="container-steplix">
                 <ContactUs />

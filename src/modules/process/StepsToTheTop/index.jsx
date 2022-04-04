@@ -8,7 +8,7 @@ const StepsToTheTop = () => {
 
     return (
         <div>
-            <div className="w-[325px] lg:w-[900px] mb-[100px]">
+            <div className="w-[340px] lg:w-[1300px] mb-[100px]">
                 <StepCard
                     title={t("process.stepsToTheTop.title")}
                     colorTitle="font-bold text-white"

@@ -286,6 +286,7 @@
         }
     },
     "process": {
+        "scrumFramework":{"titleOne":" ¿Sabías que trabajamos bajo el ", "titleTwo":"Marco Scrum?"},
         "HowDoWeDoIt": {
             "title": "¿Cómo lo hacemos?",
             "description": "En la montaña como en los negocios, hay 4 conceptos básicos que no pueden faltar para asegurar la llegada a la cima: espíritu, cuerpo, mente y buenos recursos. Y, En steplix sabemos que podremos alcanzar cualquier desafío porque contamos con todos ellos.",

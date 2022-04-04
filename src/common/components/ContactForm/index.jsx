@@ -52,10 +52,10 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
         <div className="text-white lg:w-[1230px] w-[345px]" id="contact-us">
             {title ? (
                 <div>
-                    <div className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1230px]">
+                    <div className="text-2xl lg:text-4xl font-black w-[270px] lg:w-[1230px]">
                         {subtitle}
                     </div>
-                    <div className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1230px] mb-10">
+                    <div className="text-2xl lg:text-4xl mt-4 font-black title-empty w-[230px] lg:w-[1230px] mb-10">
                         {title}
                     </div>
                     <div className="mb-10">{description}</div>
@@ -63,10 +63,10 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
             ) : (
                 <div>
                     {" "}
-                    <h2 className="lg:text-[54px] text-[24px] w-[270px] lg:w-[1230px]">
+                    <h2 className="text-2xl lg:text-4xl font-black w-[270px] lg:w-[1230px]">
                         {t("contactUs.title")}
                     </h2>
-                    <p className="lg:text-[64px] text-[37px] title-empty w-[230px] lg:w-[1230px] mb-10">
+                    <p className="text-2xl lg:text-4xl font-black mt-4 title-empty w-[230px] lg:w-[1230px] mb-10">
                         {t("contactUs.subtitle")}
                     </p>
                 </div>
