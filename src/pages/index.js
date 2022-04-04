@@ -5,10 +5,11 @@ import WhatWeDo from "@/modules/WhatWeDo";
 import Head from "next/head";
 import HappyClients from "@/modules/HappyClients";
 import ContactIndex from "@/modules/ContactUs";
+import Flags from "@/common/components/Flags";
 
 export default function Home() {
     return (
-        <div>
+        <main className="relative">
             <Head>
                 <title>Sherpas Digitales | Steplix</title>
                 <meta
@@ -25,25 +26,30 @@ export default function Home() {
                 />
                 <meta property="og:url" content="https://steplix.com/" />
                 <meta property="og:type" content="website" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
                 <meta name="robots" content="noindex" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <Masthead />
-            <div className="container-steplix">
+            <section className="container-steplix">
                 <AboutUs />
-            </div>
-            <div className="container-steplix">
+            </section>
+            <section className="container-steplix">
                 <WhatWeDo />
-            </div>
-            <div className="container-steplix">
+            </section>
+            <section className="container-steplix">
                 <OurCulture />
-            </div>
-            <div className="container-steplix">
+            </section>
+            <section className="container-steplix">
                 <HappyClients />
-            </div>
-            <div className="container-steplix">
+            </section>
+            <section className="container-steplix">
                 <ContactIndex />
-            </div>
-        </div>
+            </section>
+            <Flags />
+        </main>
     );
 }
