@@ -22,58 +22,39 @@ const StepCard = ({
         number === "03." && setPositionModal(3);
     };
     return (
-        <div className="w-full flex gap-2">
+        <div className={`w-[330px] lg:w-[350px] ${number ? "flex gap-2" : ""}`}>
             {number && (
-                <p className="text-white lg:text-4xl text-2xl font-bold">
+                <p className="text-white lg:text-3xl text-2xl font-black">
                     {number}
                 </p>
             )}
             <div>
                 {title && (
-                    <p
-                        className={`text-2xl lg:text-4xl ${
-                            textTwo ? "mb-7" : "mb-2"
-                        } ${
-                            colorTitle
-                                ? colorTitle
-                                : "text-white font-extrabold"
+                    <h4
+                        className={`lg:text-3xl text-2xl font-black ${
+                            colorTitle ? colorTitle : "text-white"
                         }`}
                     >
                         {title}
-                    </p>
+                    </h4>
                 )}
                 {colorLine && (
                     <div
-                        className={`lg:w-24 lg:h-[10px] h-1 w-12 ${colorLine}`}
-                    ></div>
+                        className={`lg:w-24 lg:h-[5px] h-1 w-12 my-4 ${colorLine}`}
+                    />
                 )}
-                <div className={`gap-y-8 ${textTwo ? "mt-7" : "mt-2"}`}>
-                    {textOne && (
-                        <p className="lg:text-xl text-sm mt-3 text-white">
-                            {textOne}
-                        </p>
-                    )}
-                    {textTwo && (
-                        <p className="lg:text-xl text-sm mt-3 text-white">
-                            {textTwo}
-                        </p>
-                    )}
-                    {textThree && (
-                        <p className="lg:text-xl text-sm mt-3 text-white">
-                            {textThree}
-                        </p>
-                    )}
-                    {textFour && (
-                        <p className="lg:text-xl text-sm mt-3 text-white">
-                            {textFour}
-                        </p>
-                    )}
+
+                <div className="text-sm lg:text-base text-white font-light">
+                    {textOne && <p>{textOne}</p>}
+                    {textTwo && <p>{textTwo}</p>}
+                    {textThree && <p>{textThree}</p>}
+                    {textFour && <p>{textFour}</p>}
                 </div>
 
                 {seeMore && setisModalOpen && (
                     <button
                         onClick={handleClick}
-                        className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2"
+                        className="text-base text-steplix-yellow underline decoration-2 mt-5"
                     >
                         {seeMore}
                     </button>

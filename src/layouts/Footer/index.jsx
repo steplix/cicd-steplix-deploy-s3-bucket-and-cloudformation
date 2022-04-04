@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <>
             <div className="divide-y-4 w-full h-1 bg-gray-400 mb-16"></div>
-            <div className="text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] lg:text-xl">
+            <div className="section-steplix text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] lg:text-xl">
                 <div className="md:flex">
                     <div className="md:flex">
                         <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">

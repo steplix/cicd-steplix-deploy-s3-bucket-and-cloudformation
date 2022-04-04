@@ -50,11 +50,13 @@ const Navbar = () => {
                     {/* <!-- logo mobile --> */}
                     <div className="ml-5 ">
                         <Link href={{ pathname: "/", query: query }}>
-                            <img
-                                src="/assets/logos/steplixMobile.svg"
-                                alt="logo"
-                                className="w-24 h-6"
-                            />
+                            <a>
+                                <img
+                                    src="/assets/logos/steplixMobile.svg"
+                                    alt="logo"
+                                    className="w-24 h-6"
+                                />
+                            </a>
                         </Link>
                     </div>
                     {/*  <!-- boton menu --> */}
@@ -73,7 +75,6 @@ const Navbar = () => {
                 </div>
             </nav>
             {/* navbar desktop */}
-
             <nav
                 className={`hidden lg:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
                     sticky ? "bg-steplix-lilac" : "bg-dark"

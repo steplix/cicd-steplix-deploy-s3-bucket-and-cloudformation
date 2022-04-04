@@ -6,43 +6,37 @@ const OurCulture = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="section-steplix mt-16 lg:mt-32" id="culture">
+        <div className="section-steplix" id="culture">
             <div
                 id="our-culture"
-                className="text-white mb-28 text-left w-[290px] lg:w-[1200px]"
+                className="text-white mb-10 lg:mb-28 text-left"
             >
-                <p className="text-[24px] lg:text-[54px]">
+                <h2 className="text-[30px] font-semibold mb-2">
                     {t("ourCulture.title")}
-                </p>
-                <h2 className="title-empty lg:text-[64px] text-[24px]">
-                    {t("ourCulture.subtitle")}
                 </h2>
+                <p className="title-empty text-4xl font-black">
+                    {t("ourCulture.subtitle")}
+                </p>
             </div>
-            <div className="lg:flex lg:gap-28 space-y-7 lg:space-y-0">
-                <div className="lg:w-[450px] w-[250px]mx-auto">
-                    <StepCard
-                        title={t("ourCulture.cardOne.title")}
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-steplix-blue"
-                        textOne={t("ourCulture.cardOne.description")}
-                    />
-                </div>
-                <div className="lg:w-[450px] w-[250px] mx-auto">
-                    <StepCard
-                        title={t("ourCulture.cardTwo.title")}
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-steplix-red"
-                        textOne={t("ourCulture.cardTwo.description")}
-                    />
-                </div>
-                <div className="lg:w-[450px] w-[250px] mx-auto">
-                    <StepCard
-                        title={t("ourCulture.cardThree.title")}
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-steplix-yellow"
-                        textOne={t("ourCulture.cardThree.description")}
-                    />
-                </div>
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-27">
+                <StepCard
+                    title={t("ourCulture.cardOne.title")}
+                    colorTitle="font-semibold text-white"
+                    colorLine="bg-steplix-blue"
+                    textOne={t("ourCulture.cardOne.description")}
+                />
+                <StepCard
+                    title={t("ourCulture.cardTwo.title")}
+                    colorTitle="font-semibold text-white"
+                    colorLine="bg-steplix-red"
+                    textOne={t("ourCulture.cardTwo.description")}
+                />
+                <StepCard
+                    title={t("ourCulture.cardThree.title")}
+                    colorTitle="font-semibold text-white"
+                    colorLine="bg-steplix-yellow"
+                    textOne={t("ourCulture.cardThree.description")}
+                />
             </div>
         </div>
     );

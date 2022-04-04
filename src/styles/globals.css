@@ -25,11 +25,11 @@ body {
 
 /*--------- Landing sections ------- */
 .container-steplix {
-    @apply pt-24 pb-9;
+    @apply pt-16 pb-9 lg:pt-24 lg:pb-9;
 }
 
 .section-steplix {
-    @apply mx-auto lg:w-full w-80;
+    @apply lg:w-full w-80 mx-auto;
     max-width: 1140px;
 }
 

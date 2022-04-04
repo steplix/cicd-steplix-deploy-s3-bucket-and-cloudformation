@@ -55,7 +55,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <div className="section-steplix steplix-process" id="process">
+        <div className="section-steplix" id="process">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
@@ -75,58 +75,54 @@ const WhatWeDo = () => {
                     textFour={textFour}
                 />
             </Modal>
-            <div className="text-white" id="what-we-do">
-                <h2 className="text-[24px] lg:text-[54px]">
-                    {t("whatWeDo.title")}
-                </h2>
-                <div className="lg:w-[800px] w-[250px] lg:text-2xl text-xs mb-5 mt-3">
-                    <p className="mb-3">{t("whatWeDo.subtitlePartOne")}</p>
-                    <p>{t("whatWeDo.subtitlePartTwo")} </p>
+            <h2 className="text-[30px] font-semibold">{t("whatWeDo.title")}</h2>
+            <div className="text-sm font-light flex flex-col lg:mb-0 mb-12">
+                <p>{`${t("whatWeDo.subtitlePartOne")} ${t(
+                    "whatWeDo.subtitlePartTwo"
+                )}`}</p>
+            </div>
+            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
+                <div className="lg:col-start-3">
+                    <StepCard
+                        number="01."
+                        title={t("whatWeDo.cardOne.title")}
+                        colorTitle="text-steplix-yellow"
+                        colorLine="bg-steplix-red"
+                        seeMore={t("seeMore")}
+                        textOne={t("whatWeDo.cardOne.description")}
+                        setisModalOpen={setisModalOpen}
+                        setPositionModal={setPositionModal}
+                    />
                 </div>
-
-                <div className="space-y-5 lg:space-y-1 lg:grid lg:grid-rows-4 lg:grid-flow-col">
-                    <div className="w-[250px] lg:w-[470px] lg:row-start-3 lg:row-span-2">
-                        <StepCard
-                            number="01."
-                            title={t("whatWeDo.cardOne.title")}
-                            colorTitle="font-semibold text-steplix-yellow"
-                            colorLine="bg-steplix-red"
-                            seeMore={t("seeMore")}
-                            textOne={t("whatWeDo.cardOne.description")}
-                            setisModalOpen={setisModalOpen}
-                            setPositionModal={setPositionModal}
-                        />
-                    </div>
-                    <div className="w-[250px] lg:w-[470px] lg:row-start-2 lg:row-span-3">
-                        <StepCard
-                            number="02."
-                            title={t("whatWeDo.cardTwo.title")}
-                            colorTitle="font-semibold text-steplix-yellow"
-                            colorLine="bg-steplix-red"
-                            seeMore={t("seeMore")}
-                            textOne={t("whatWeDo.cardTwo.description")}
-                            setisModalOpen={setisModalOpen}
-                            setPositionModal={setPositionModal}
-                        />
-                    </div>
-                    <div className="w-[250px] lg:w-[470px] lg:row-start-1 lg:row-span-4">
-                        <StepCard
-                            number="03."
-                            title={t("whatWeDo.cardThree.title")}
-                            colorTitle="font-semibold text-steplix-yellow"
-                            colorLine="bg-steplix-red"
-                            seeMore={t("seeMore")}
-                            textOne={t("whatWeDo.cardThree.description")}
-                            setisModalOpen={setisModalOpen}
-                            setPositionModal={setPositionModal}
-                        />
-                    </div>
+                <div className="lg:col-start-2">
+                    <StepCard
+                        number="02."
+                        title={t("whatWeDo.cardTwo.title")}
+                        colorTitle="text-steplix-yellow"
+                        colorLine="bg-steplix-red"
+                        seeMore={t("seeMore")}
+                        textOne={t("whatWeDo.cardTwo.description")}
+                        setisModalOpen={setisModalOpen}
+                        setPositionModal={setPositionModal}
+                    />
                 </div>
-                <div className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
-                    <Link href={{ pathname: "/process", query: query }}>
-                        <a>{t("seeMore")}</a>
-                    </Link>
+                <div className="lg:col-start-1">
+                    <StepCard
+                        number="03."
+                        title={t("whatWeDo.cardThree.title")}
+                        colorTitle="text-steplix-yellow"
+                        colorLine="bg-steplix-red"
+                        seeMore={t("seeMore")}
+                        textOne={t("whatWeDo.cardThree.description")}
+                        setisModalOpen={setisModalOpen}
+                        setPositionModal={setPositionModal}
+                    />
                 </div>
+            </div>
+            <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
+                <Link href={{ pathname: "/process", query: query }}>
+                    <a>{t("seeMore")}</a>
+                </Link>
             </div>
         </div>
     );
