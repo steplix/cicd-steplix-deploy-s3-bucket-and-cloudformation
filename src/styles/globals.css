@@ -22,9 +22,17 @@ body {
     src: local("Sofia Pro"),
         url("../../public/fonts/SofiaProRegularAz.woff") format("woff");
 }
+
+/*--------- Landing sections ------- */
 .container-steplix {
-    @apply flex items-center justify-center my-36;
+    @apply pt-24 pb-9;
 }
+
+.section-steplix {
+    @apply mx-auto lg:w-full w-80;
+    max-width: 1140px;
+}
+
 /*--------- banner------- */
 .banner {
     background-image: url("../../public/assets/images/montaña.jpg");
@@ -89,7 +97,7 @@ body {
 /* SUBMENU & NAVBAR START */
 .nav-link::after {
     @apply bg-[color:var(--green-color)];
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 1px;
@@ -107,7 +115,7 @@ body {
 }
 .submenu--toggle {
     clip-path: circle(100%);
-    
+
     @apply opacity-100 bg-steplix-lilac;
 }
 

@@ -6,7 +6,7 @@ const OurCulture = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="lg:w-[1230px] w-[345px] mt-16 lg:mt-32">
+        <div className="section-steplix mt-16 lg:mt-32" id="culture">
             <div
                 id="our-culture"
                 className="text-white mb-28 text-left w-[290px] lg:w-[1200px]"

@@ -6,10 +6,7 @@ const AboutUs = () => {
     const { t } = useTranslation();
 
     return (
-        <div
-            className="lg:flex mt-[50px] lg:w-[1230px] w-[345px]"
-            id="about-us"
-        >
+        <div className="section-steplix lg:flex mt-[50px]" id="about-us">
             <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
                 steplix
             </p>

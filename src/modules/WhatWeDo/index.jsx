@@ -55,7 +55,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <div className="lg:w-[1230px] w-[345px] steplix-process">
+        <div className="section-steplix steplix-process" id="process">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
@@ -75,10 +75,7 @@ const WhatWeDo = () => {
                     textFour={textFour}
                 />
             </Modal>
-            <div
-                className="text-white w-[290px] lg:w-[1300px] "
-                id="what-we-do"
-            >
+            <div className="text-white" id="what-we-do">
                 <h2 className="text-[24px] lg:text-[54px]">
                     {t("whatWeDo.title")}
                 </h2>
