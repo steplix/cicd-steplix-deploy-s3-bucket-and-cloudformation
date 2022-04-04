@@ -76,9 +76,7 @@ const WhatWeDo = () => {
                 />
             </Modal>
             <div className="text-white" id="what-we-do">
-                <h2 className="text-[24px] lg:text-[54px]">
-                    {t("whatWeDo.title")}
-                </h2>
+                <h2 className="text-2xl lg:text-4xl">{t("whatWeDo.title")}</h2>
                 <div className="lg:w-[800px] w-[250px] lg:text-2xl text-xs mb-5 mt-3">
                     <p className="mb-3">{t("whatWeDo.subtitlePartOne")}</p>
                     <p>{t("whatWeDo.subtitlePartTwo")} </p>

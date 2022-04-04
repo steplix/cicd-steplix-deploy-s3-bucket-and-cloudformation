@@ -48,7 +48,7 @@ export default function Modal({
                             >
                                 <button
                                     onClick={() => setisModalOpen(false)}
-                                    className="absolute top-1 lg: right-4 lg:mt-3 font-bold text-sm lg:text-2xl text-white bg-steplix-red h-5 w-5 lg:h-10 lg:w-10 rounded-full"
+                                    className="absolute top-1 lg: right-4 lg:mt-3 font-black text-sm lg:text-2xl text-white bg-steplix-red h-5 w-5 lg:h-10 lg:w-10 rounded-full"
                                 >
                                     x
                                 </button>
