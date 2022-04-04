@@ -78,7 +78,7 @@ const Footer = () => {
                                     <a target="_blank">
                                         <img
                                             src="/assets/logos/iram.svg"
-                                            className="mr-10 w-10 h-14 lg:w-20 lg:h-28"
+                                            className="mr-10 w-[55px] h-[80px] lg:w-20 lg:h-28"
                                             alt="Iram"
                                         />
                                     </a>
@@ -87,9 +87,9 @@ const Footer = () => {
                                     <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iqnet.pdf">
                                         <a target="_blank">
                                             <img
-                                                src="/assets/logos/iqnet.svg"
+                                                src="/assets/logos/iQNet.svg"
                                                 alt="IQNet"
-                                                className="h-24 w-24"
+                                                className="lg:h-24 lg:w-24 h-[70px] w-[70px]"
                                             />
                                         </a>
                                     </Link>
