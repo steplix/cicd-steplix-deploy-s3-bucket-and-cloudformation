@@ -22,7 +22,11 @@ const StepCard = ({
         number === "03." && setPositionModal(3);
     };
     return (
-        <div className={`w-[330px] lg:w-[350px] ${number ? "flex gap-2" : ""}`}>
+        <div
+            className={`${textTwo ? "w-full" : "w-[330px] lg:w-[350px]"} ${
+                number ? "flex gap-2" : ""
+            }`}
+        >
             {number && (
                 <p className="text-white lg:text-3xl text-2xl font-black">
                     {number}

@@ -64,16 +64,18 @@ const WhatWeDo = () => {
                 setPositionModal={setPositionModal}
                 positionModal={positionModal}
             >
-                <StepCard
-                    number={`0${number}.`}
-                    title={title}
-                    colorTitle="font-semibold text-steplix-yellow"
-                    colorLine="bg-steplix-red"
-                    textOne={textOne}
-                    textTwo={textTwo}
-                    textThree={textThree}
-                    textFour={textFour}
-                />
+                <div className="px-6 py-4">
+                    <StepCard
+                        number={`0${number}.`}
+                        title={title}
+                        colorTitle="font-semibold text-steplix-yellow"
+                        colorLine="bg-steplix-red"
+                        textOne={textOne}
+                        textTwo={textTwo}
+                        textThree={textThree}
+                        textFour={textFour}
+                    />
+                </div>
             </Modal>
             <h2 className="text-[30px] font-semibold">{t("whatWeDo.title")}</h2>
             <div className="text-sm font-light flex flex-col lg:mb-0 mb-12">
@@ -119,7 +121,7 @@ const WhatWeDo = () => {
                     />
                 </div>
             </div>
-            <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-16">
+            <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-40">
                 <Link href={{ pathname: "/process", query: query }}>
                     <a>{t("seeMore")}</a>
                 </Link>
