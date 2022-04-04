@@ -14,7 +14,7 @@ export default function Home() {
                 <title>Steplix</title>
                 <meta name="description" content="Steplix Web Page" />
                 <meta name="robots" content="noindex" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <div className="flex items-center justify-center">
                 <DigitalSherpas />

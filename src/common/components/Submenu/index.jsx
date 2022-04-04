@@ -58,7 +58,7 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 </div>
                 <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-yellow">
                     <div className="py-3 pl-6 ">
-                        <Link href="#Our-culture">
+                        <Link href="#our-culture">
                             <a onClick={() => handleClickToggle()} href="#">
                                 {t("navbar.item3")}
                             </a>
@@ -99,8 +99,8 @@ const Submenu = ({ toggle, setToggle, query }) => {
                     <LanguageSelector />
                     <p className="my-auto">
                         {query?.lang === "es"
-                            ? "English version"
-                            : "Version en Español"}
+                            ? "English versión"
+                            : "Versión en español"}
                     </p>
                 </div>
             </div>

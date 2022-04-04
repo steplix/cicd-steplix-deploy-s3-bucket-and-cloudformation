@@ -26,7 +26,7 @@ export default function Home() {
                 <meta property="og:url" content="https://steplix.com/" />
                 <meta property="og:type" content="website" />
                 <meta name="robots" content="noindex" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <Masthead />
             <div className="container-steplix">
