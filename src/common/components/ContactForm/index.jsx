@@ -49,7 +49,7 @@ const ContactForm = ({ texts, cv, title, subtitle, description }) => {
     };
 
     return (
-        <div className="text-white lg:w-[1230px] w-[345px]" id="contact-us">
+        <div className="section-steplix text-white" id="contact-us">
             {title ? (
                 <div>
                     <div className="text-2xl lg:text-4xl font-black w-[270px] lg:w-[1230px]">

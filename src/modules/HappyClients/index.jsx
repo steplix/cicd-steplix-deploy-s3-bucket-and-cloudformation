@@ -5,15 +5,12 @@ import Carousel from "@/common/components/Carousel";
 const HappyClients = () => {
     const { t } = useTranslation();
     return (
-        <section
-            id="happy-clients"
-            className="w-[335px] lg:w-[1230px] text-left"
-        >
+        <div className="section-steplix text-left" id="happy-clients">
             <h2 className="text-2xl lg:text-4xl text-white mb-10">
                 {t("happyClients")}
             </h2>
             <Carousel />
-        </section>
+        </div>
     );
 };
 
