@@ -6,7 +6,7 @@ const HappyClients = () => {
     const { t } = useTranslation();
     return (
         <div className="section-steplix text-left" id="happy-clients">
-            <h2 className="text-2xl lg:text-4xl text-white mb-10">
+            <h2 className="text-2xl lg:text-4xl font-black text-white mb-10">
                 {t("happyClients")}
             </h2>
             <Carousel />
