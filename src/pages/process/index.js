@@ -14,16 +14,16 @@ export default function Home() {
                 <meta name="robots" content="noindex" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center section-steplix">
                 <EverythingStartsWithAnIdea />
             </div>
-            <div className="container-steplix">
+            <div className="container-steplix section-steplix">
                 <StepsToTheTop />
             </div>
-            <div className="container-steplix">
+            <div className="container-steplix section-steplix">
                 <HoDoWeDoIt />
             </div>{" "}
-            <div className="container-steplix">
+            <div className="container-steplix section-steplix">
                 <ScrumFramework />
             </div>
             <div className="container-steplix">

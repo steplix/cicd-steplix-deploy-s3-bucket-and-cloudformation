@@ -19,7 +19,7 @@ const OurCulture = () => {
                 </h2>
             </div>
             <div className="lg:flex lg:gap-28 space-y-7 lg:space-y-0">
-                <div className="lg:w-[450px] w-[250px]mx-auto">
+                <div className="lg:w-[450px] w-[250px] mx-auto">
                     <StepCard
                         title={t("ourCulture.cardOne.title")}
                         colorTitle="font-semibold text-white"
