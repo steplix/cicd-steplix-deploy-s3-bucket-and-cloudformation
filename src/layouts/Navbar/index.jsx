@@ -50,6 +50,8 @@ const Navbar = () => {
             <nav className="block lg:hidden">
                 <div className="">
                     <Submenu
+                        router={router}
+                        scrollY={scrollY}
                         query={query}
                         className=""
                         toggle={toggle}

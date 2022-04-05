@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
-const Submenu = ({ toggle, setToggle, query }) => {
+const Submenu = ({ toggle, setToggle, query, scrollY, router }) => {
     const { t } = useTranslation();
     //
     //functions
@@ -41,7 +41,18 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-blue">
                     <div className="py-3 pl-6 ">
                         <Link href="#about-us">
-                            <a onClick={() => handleClickToggle()} href="#">
+                            <a
+                                className={
+                                    (router.pathname === "/" &&
+                                        scrollY > 400 &&
+                                        scrollY < 818) ||
+                                    router.pathname === "/about-us"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                onClick={() => handleClickToggle()}
+                                href="#"
+                            >
                                 {t("navbar.item1")}
                             </a>
                         </Link>
@@ -50,7 +61,18 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
                     <div className="py-3 pl-6 ">
                         <Link href="#what-we-do">
-                            <a onClick={() => handleClickToggle()} href="#">
+                            <a
+                                className={
+                                    (router.pathname === "/" &&
+                                        scrollY > 818 &&
+                                        scrollY < 1750) ||
+                                    router.pathname === "/process"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                onClick={() => handleClickToggle()}
+                                href="#"
+                            >
                                 {t("navbar.item2")}
                             </a>
                         </Link>
@@ -59,7 +81,17 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-yellow">
                     <div className="py-3 pl-6 ">
                         <Link href="#our-culture">
-                            <a onClick={() => handleClickToggle()} href="#">
+                            <a
+                                className={
+                                    router.pathname === "/" &&
+                                    scrollY > 1750 &&
+                                    scrollY < 2625
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                onClick={() => handleClickToggle()}
+                                href="#"
+                            >
                                 {t("navbar.item3")}
                             </a>
                         </Link>
@@ -70,6 +102,13 @@ const Submenu = ({ toggle, setToggle, query }) => {
                     <div className="py-3 pl-6 ">
                         <Link href="#happy-clients">
                             <a
+                                className={
+                                    router.pathname === "/" &&
+                                    scrollY > 2625 &&
+                                    scrollY < 2900
+                                        ? "nav--active"
+                                        : ""
+                                }
                                 onClick={() => handleClickToggle()}
                                 href="#happy-clients"
                             >
@@ -81,7 +120,15 @@ const Submenu = ({ toggle, setToggle, query }) => {
                 <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
                     <div className="py-3 pl-6 ">
                         <Link href={{ pathname: "jobs", query: query }}>
-                            <a onClick={() => handleClickToggle()} href="#">
+                            <a
+                                className={
+                                    router.pathname === "/jobs"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                onClick={() => handleClickToggle()}
+                                href="#"
+                            >
                                 {t("navbar.item5")}
                             </a>
                         </Link>
@@ -112,6 +159,8 @@ Submenu.propTypes = {
     toggle: PropTypes.bool.isRequired,
     query: PropTypes.object,
     setToggle: PropTypes.func.isRequired,
+    scrollY: PropTypes.number.isRequired,
+    router: PropTypes.object.isRequired,
 };
 
 export default Submenu;
