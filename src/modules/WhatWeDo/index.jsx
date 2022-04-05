@@ -86,12 +86,12 @@ const WhatWeDo = () => {
             <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
                 <div className="lg:col-start-3">
                     <StepCard
-                        number="01."
-                        title={t("whatWeDo.cardOne.title")}
+                        number="03."
+                        title={t("whatWeDo.cardThree.title")}
                         colorTitle="text-steplix-yellow"
                         colorLine="bg-steplix-red"
                         seeMore={t("seeMore")}
-                        textOne={t("whatWeDo.cardOne.description")}
+                        textOne={t("whatWeDo.cardThree.description")}
                         setisModalOpen={setisModalOpen}
                         setPositionModal={setPositionModal}
                     />
@@ -110,12 +110,12 @@ const WhatWeDo = () => {
                 </div>
                 <div className="lg:col-start-1">
                     <StepCard
-                        number="03."
-                        title={t("whatWeDo.cardThree.title")}
+                        number="01."
+                        title={t("whatWeDo.cardOne.title")}
                         colorTitle="text-steplix-yellow"
                         colorLine="bg-steplix-red"
                         seeMore={t("seeMore")}
-                        textOne={t("whatWeDo.cardThree.description")}
+                        textOne={t("whatWeDo.cardOne.description")}
                         setisModalOpen={setisModalOpen}
                         setPositionModal={setPositionModal}
                     />

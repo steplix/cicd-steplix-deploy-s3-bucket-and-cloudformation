@@ -365,7 +365,7 @@
         "subtitlePartOne": " The beginnings are not all the same...on this path you choose,  ",
         "subtitlePartTwo": " What is your starting point? ",
         "cardOne": {
-            "title": "Understand & scope the digitalization of your business",
+            "title": "Business Discovery",
             "description": " As guides in the digital business ecosystem, we know that the first step is focused on understanding the opportunity and working together to find a way to add value to that business idea."
         },
         "cardTwo": {
@@ -395,7 +395,7 @@
     },
     "modal": {
         "modalOne": {
-            "title": " Understand & scope the digitalization of your business ",
+            "title": " Business Discovery ",
             "descriptionOne": {
                 "textOne":" There are many ideas.But we constantly ask ourselves...Is there business? ",
                 "textTwo":" In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and toegether define the path to take.",
