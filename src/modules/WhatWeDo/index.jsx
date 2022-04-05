@@ -55,7 +55,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <div className="section-steplix" id="process">
+        <div className="section-steplix" id="what-we-do">
             <Modal
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
