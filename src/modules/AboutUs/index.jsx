@@ -1,8 +1,7 @@
 import React from "react";
-import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
 import Link from "next/link";
-import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
 const AboutUs = () => {
     const { t } = useTranslation();
@@ -21,9 +20,13 @@ const AboutUs = () => {
                     textOne={t("aboutUs.description")}
                 />
                 <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2  text-left mt-16">
-                    <Link href={{ pathname: "/about-us", query: query }}>
-                        <a>{t("seeMore")}</a>
-                    </Link>
+                    <a
+                        href={`/about-us${
+                            query?.lang ? `?lang=${query?.lang}` : ""
+                        }`}
+                    >
+                        {t("seeMore")}
+                    </a>
                 </div>
             </div>
         </div>
