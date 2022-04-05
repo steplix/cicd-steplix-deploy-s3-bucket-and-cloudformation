@@ -39,6 +39,8 @@ body {
     background-image: url("../../public/assets/images/montaña.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 /*--------- Process Mountain------- */
@@ -118,6 +120,10 @@ body {
     clip-path: circle(100%);
 
     @apply opacity-100 bg-steplix-lilac;
+}
+
+.nav--active{
+    @apply text-steplix-yellow
 }
 
 /* SUBMENU & NAVBAR END */

@@ -313,7 +313,7 @@
             "title": "Pasos hacia la cima",
             "description": " Los comienzos no son todos iguales...en este camino vos elegís, ¿Cuál es tu punto de partida?",
             "stepOne": {
-                "title": "Conociendo tu negocio ",
+                "title": "Descubrimiento de negocio",
                 "descriptionOne": " Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
                 "descriptionTwo": " En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
                 "descriptionThree": "  Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías.",
@@ -329,7 +329,7 @@
                 "secondaryDescription": " ¿Sabías que en promedio una persona recibe cerca de 1700 publicidades en un mes, pero solo le presta atención a la mitad?"
             },
             "stepThree": {
-                "title": "Desarrollo & entrega ",
+                "title": "Desarrollo y entrega ",
                 "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
                 "descriptionTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
                 "descriptionThree": " ¡Pero esto no termina aquí!",
@@ -362,7 +362,7 @@
         "subtitlePartOne": " Los comienzos no son todos iguales...en este camino vos elegís,",
         "subtitlePartTwo": "¿Cuál es tu punto de partida?",
         "cardOne": {
-            "title": "Conociendo tu negocio",
+            "title": "Descubrimiento de negocio",
             "description": " Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
         },
         "cardTwo": {
@@ -370,7 +370,7 @@
             "description": "La segunda escala se enfoca en el diseño de una primera versión del producto que permitirá someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización, para seguir potenciando la idea."
         },
         "cardThree": {
-            "title": "Desarrollo & entrega",
+            "title": "Desarrollo y entrega",
             "description": "Esta fase consiste en construir y entregar el producto final para dar comienzo de manera oficial al negocio, respetando los tiempos e inversión acordados."
         }
     },
@@ -392,7 +392,7 @@
     },
     "modal": {
         "modalOne": {
-            "title": " Conociendo tu negocio ",
+            "title": " Descubrimiento de negocio",
             "descriptionOne": {
                 "textOne":"Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
                 "textTwo":"En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
@@ -412,7 +412,7 @@
             "descriptionTwo": " ¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja? "
         },
         "modalThree": {
-            "title": "Desarrollo & entrega ",
+            "title": "Desarrollo y entrega ",
             "descriptionOne": {
                 "textOne":"Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
                 "textTwo":"Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",

@@ -81,9 +81,13 @@ const Carousel = () => {
                         {arrayClients.map((element, index) => (
                             <div
                                 key={`image-${index}`}
-                                className="keen-slider__slide number-slide relative h-32 w-32 "
+                                className="keen-slider__slide number-slide"
                             >
-                                <img src={element?.image} alt={element.alt} />
+                                <img
+                                    className="lg:h-32 lg:w-32 h-28 w-28"
+                                    src={element?.image}
+                                    alt={element.alt}
+                                />
                             </div>
                         ))}
                     </div>

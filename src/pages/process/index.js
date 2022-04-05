@@ -1,3 +1,4 @@
+import Flags from "@/common/components/Flags";
 import ContactUs from "@/modules/ContactUs";
 import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
 import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";
@@ -7,7 +8,7 @@ import Head from "next/head";
 
 export default function Home() {
     return (
-        <div>
+        <div className="relative">
             <Head>
                 <title>Steplix</title>
                 <meta name="description" content="Steplix Web Page" />
@@ -29,6 +30,7 @@ export default function Home() {
             <div className="container-steplix">
                 <ContactUs />
             </div>
+            <Flags />
         </div>
     );
 }
