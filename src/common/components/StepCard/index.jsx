@@ -23,7 +23,7 @@ const StepCard = ({
     };
     return (
         <div
-            className={`${textTwo ? "w-full" : "w-[330px] lg:w-[350px]"} ${
+            className={`${textTwo ? "w-full" : "w-[330px] lg:w-full"} ${
                 number ? "flex gap-2" : ""
             }`}
         >

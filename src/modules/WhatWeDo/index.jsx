@@ -83,8 +83,8 @@ const WhatWeDo = () => {
                     "whatWeDo.subtitlePartTwo"
                 )}`}</p>
             </div>
-            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
-                <div className="lg:col-start-3">
+            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7 ">
+                <div className="lg:col-start-3 w-[350px]">
                     <StepCard
                         number="03."
                         title={t("whatWeDo.cardThree.title")}
