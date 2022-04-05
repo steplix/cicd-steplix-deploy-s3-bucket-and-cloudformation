@@ -122,4 +122,8 @@ body {
     @apply opacity-100 bg-steplix-lilac;
 }
 
+.nav--active{
+    @apply text-steplix-yellow
+}
+
 /* SUBMENU & NAVBAR END */

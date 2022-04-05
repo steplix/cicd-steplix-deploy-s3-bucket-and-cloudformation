@@ -4,20 +4,34 @@ import Link from "next/link";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
+    const router = useRouter();
 
     //
     // State
     //
     const [sticky, setSticky] = React.useState(false);
     const [toggle, setToggle] = React.useState(false);
+    const [scrollY, setScrollY] = React.useState(0);
 
     //
     // Effects
     //
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     React.useEffect(() => {
         const onScroll = () => {
             const currentPosition = window.pageYOffset;
@@ -94,12 +108,66 @@ const Navbar = () => {
                     </div>
                     <div className="ml-8">
                         <div className="flex space-x-5 mt-7 text-white text-base w-[750px] gap-2">
-                            <a href="#about-us">{t("navbar.item1")}</a>
-                            <a href="#what-we-do">{t("navbar.item2")}</a>
-                            <a href="#our-culture">{t("navbar.item3")}</a>
-                            <a href="#happy-clients">{t("navbar.item4")}</a>
+                            <a
+                                className={
+                                    (router.pathname === "/" &&
+                                        scrollY > 1000 &&
+                                        scrollY < 1500) ||
+                                    router.pathname === "/about-us"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                href="#about-us"
+                            >
+                                {t("navbar.item1")}
+                            </a>
+                            <a
+                                className={
+                                    (router.pathname === "/" &&
+                                        scrollY > 1500 &&
+                                        scrollY < 2500) ||
+                                    router.pathname === "/process"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                href="#what-we-do"
+                            >
+                                {t("navbar.item2")}
+                            </a>
+                            <a
+                                className={
+                                    router.pathname === "/" &&
+                                    scrollY > 2500 &&
+                                    scrollY < 3000
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                href="#our-culture"
+                            >
+                                {t("navbar.item3")}
+                            </a>
+                            <a
+                                className={
+                                    router.pathname === "/" &&
+                                    scrollY > 3000 &&
+                                    scrollY < 3500
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                href="#happy-clients"
+                            >
+                                {t("navbar.item4")}
+                            </a>
                             <Link href={{ pathname: "/jobs", query: query }}>
-                                {t("navbar.item5")}
+                                <a
+                                    className={
+                                        router.pathname === "/jobs"
+                                            ? "nav--active"
+                                            : ""
+                                    }
+                                >
+                                    {t("navbar.item5")}
+                                </a>
                             </Link>
                         </div>
                     </div>
