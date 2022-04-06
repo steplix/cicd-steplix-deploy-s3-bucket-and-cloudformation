@@ -1,6 +1,12 @@
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
     trailingSlash: true,
-    exportPathMap: async function (defaultPathMap) {
+    exportPathMap: async function (
+        defaultPathMap,
+        { dev, dir, outDir, distDir, buildId }
+    ) {
         return {
             "/": { page: "/" },
             "/about-us": { page: "/about-us" },
@@ -9,3 +15,5 @@ module.exports = {
         };
     },
 };
+
+export default nextConfig;
