@@ -68,7 +68,7 @@ const Navbar = () => {
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
-                                    src="/assets/logos/steplixMobile.svg"
+                                    src="/assets/img/steplixMobile.svg"
                                     alt="logo"
                                     className="w-24 h-6"
                                 />
@@ -82,7 +82,7 @@ const Navbar = () => {
                             onClick={() => setToggle(!toggle)}
                         >
                             <img
-                                src="/assets/icons/submenu.svg"
+                                src="/assets/img/submenu.svg"
                                 className="h-6 w-6 xl:hidden block"
                                 alt="submenu"
                             />
@@ -101,7 +101,7 @@ const Navbar = () => {
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
-                                    src="/assets/logos/logo-navbar.svg"
+                                    src="/assets/img/logo-navbar.svg"
                                     alt="logo"
                                     layout="fill"
                                 />
