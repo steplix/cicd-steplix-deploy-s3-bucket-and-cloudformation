@@ -35,9 +35,6 @@ export default function AboutUs() {
             <div className="flex items-center justify-center">
                 <CollageAboutUs sm />
             </div>
-            <div className="flex items-center justify-center py-20 ">
-                <ContactUs />
-            </div>
             <Flags />
         </div>
     );

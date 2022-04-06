@@ -27,9 +27,6 @@ export default function Process() {
             <div className="container-steplix section-steplix">
                 <ScrumFramework />
             </div>
-            <div className="container-steplix">
-                <ContactUs />
-            </div>
             <Flags />
         </div>
     );
