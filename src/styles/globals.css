@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 160px
+    scroll-padding-top: 160px;
 }
 
 * {
@@ -21,7 +21,8 @@ body {
     font-style: normal;
     font-weight: 400;
     src: local("Sofia Pro"),
-        url("../../public/fonts/SofiaProRegularAz.woff") format("woff");
+        url("../../public/assets/fonts/Sofia\ Pro\ Regular\ Az.woff")
+            format("woff");
 }
 
 /*--------- Landing sections ------- */
@@ -36,11 +37,10 @@ body {
 
 /*--------- banner------- */
 .banner {
-    background-image: url("../../public/assets/images/montaña.jpg");
+    background-image: url("../../public/assets/img/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 /*--------- Process Mountain------- */
@@ -48,7 +48,7 @@ body {
 @media (min-width: 768px) {
     .steplix-process {
         height: 850px;
-        background-image: url("../../public/assets/images/bg-process.svg");
+        background-image: url("../../public/assets/img/bg-process.svg");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -125,8 +125,8 @@ body {
     @apply opacity-100 bg-steplix-lilac;
 }
 
-.nav--active{
-    @apply text-steplix-yellow
+.nav--active {
+    @apply text-steplix-yellow;
 }
 
 /* SUBMENU & NAVBAR END */

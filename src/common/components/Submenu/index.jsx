@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
@@ -22,17 +23,19 @@ const Submenu = ({ toggle, setToggle, query, scrollY, router }) => {
                 <div className="flex items-start gap-x-52 mt-5 mb-[60px]">
                     <button onClick={() => setToggle(!toggle)}>
                         <Link href={{ pathname: "/", query: query }}>
-                            <img
-                                src="/assets/logos/submenuCompleto.svg"
-                                className="h-[35px] w-]142px] lg:hidden block"
-                                alt="submenu"
-                            />
+                            <a>
+                                <img
+                                    src="/assets/img/submenuCompleto.svg"
+                                    className="h-[35px] w-]142px] lg:hidden block"
+                                    alt="submenu"
+                                />
+                            </a>
                         </Link>
                     </button>
 
                     <button className="" onClick={() => setToggle(!toggle)}>
                         <img
-                            src="/assets/icons/escape.svg"
+                            src="/assets/img/escape.svg"
                             className="h-3 w-3 lg:hidden block"
                             alt="escape"
                         />{" "}

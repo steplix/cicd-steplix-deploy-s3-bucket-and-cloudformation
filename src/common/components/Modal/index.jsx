@@ -70,7 +70,7 @@ export default function Modal({
                                                 }
                                             >
                                                 <img
-                                                    src="/assets/icons/chevronLeft.svg"
+                                                    src="/assets/img/chevronLeft.svg"
                                                     alt="left chevron"
                                                     layout="fill"
                                                     className="mx-auto h-14"
@@ -89,7 +89,7 @@ export default function Modal({
                                             >
                                                 <div className="relative rounded-full bg-steplix-yellow h-14 w-14">
                                                     <img
-                                                        src="/assets/icons/chevronRight.svg"
+                                                        src="/assets/img/chevronRight.svg"
                                                         alt="right chevron"
                                                         layout="fill"
                                                         className="mx-auto mb-2 h-14"

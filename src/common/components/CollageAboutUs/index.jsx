@@ -9,13 +9,13 @@ const CollageAboutUs = ({ sm, lg }) => {
                     <div className="space-y-10">
                         <div className="relative h-[500px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-01.png"
+                                src="/assets/img/culture/culture-01.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[226px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-02.png"
+                                src="/assets/img/culture/culture-02.png"
                                 alt="culture"
                             />
                         </div>
@@ -23,13 +23,13 @@ const CollageAboutUs = ({ sm, lg }) => {
                     <div className="space-y-10">
                         <div className="relative h-[226px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-03.png"
+                                src="/assets/img/culture/culture-03.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[500px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-04.png"
+                                src="/assets/img/culture/culture-04.png"
                                 alt="culture"
                             />
                         </div>
@@ -38,13 +38,13 @@ const CollageAboutUs = ({ sm, lg }) => {
                     <div className="space-y-10">
                         <div className="relative h-[500px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-05.png"
+                                src="/assets/img/culture/culture-05.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[226px] w-[350px]">
                             <img
-                                src="/assets/images/culture/culture-06.png"
+                                src="/assets/img/culture/culture-06.png"
                                 alt="culture"
                             />
                         </div>
@@ -56,19 +56,19 @@ const CollageAboutUs = ({ sm, lg }) => {
                     <div className="space-y-5">
                         <div className="relative h-[230px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-01.png"
+                                src="/assets/img/culture/culture-01.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-02.png"
+                                src="/assets/img/culture/culture-02.png"
                                 alt="culture"
                             />
                         </div>
                         <div className=" h-[100px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-05-sm.png"
+                                src="/assets/img/culture/culture-05-sm.png"
                                 alt="culture"
                             />
                         </div>
@@ -76,19 +76,19 @@ const CollageAboutUs = ({ sm, lg }) => {
                     <div className="space-y-5 ">
                         <div className="relative h-[100px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-03.png"
+                                src="/assets/img/culture/culture-03.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[230px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-04.png"
+                                src="/assets/img/culture/culture-04.png"
                                 alt="culture"
                             />
                         </div>
                         <div className="relative h-[100px] w-[160px]">
                             <img
-                                src="/assets/images/culture/culture-06.png"
+                                src="/assets/img/culture/culture-06.png"
                                 alt="culture"
                             />
                         </div>

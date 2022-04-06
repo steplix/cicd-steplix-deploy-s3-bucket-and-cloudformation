@@ -11,7 +11,7 @@ const LanguageSelector = () => {
                 <div className="relative w-[34px] h-[34px]">
                     <LanguageSwitcher lang="es">
                         <img
-                            src="/assets/logos/logo-es.svg"
+                            src="/assets/img/logo-es.svg"
                             alt="logo"
                             layout="fill"
                         />
@@ -21,7 +21,7 @@ const LanguageSelector = () => {
                 <div className="relative w-[34px] h-[34px]">
                     <LanguageSwitcher lang="en">
                         <img
-                            src="/assets/logos/logo-en.svg"
+                            src="/assets/img/logo-en.svg"
                             alt="logo"
                             layout="fill"
                         />
