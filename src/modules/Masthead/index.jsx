@@ -8,19 +8,21 @@ const Masthead = () => {
     return (
         <div>
             <div className="banner lg:h-screen h-[450px]" id="masthead">
-                <div className="absolute z-0 ml-4 lg:ml-44 mt-40 lg:mt-96">
-                    <h1 className="text-white font-semibold text-2xl md:text-5xl lg:text-8xl mb-4 md:mb-8 lg:mb-6">
-                        {t("masthead.titlePartOne")}{" "}
-                        <span className="title-empty font-Blend">
-                            {" "}
-                            {t("masthead.emptyTitlePartOne")}
-                        </span>
-                        <br />
-                        {t("masthead.titlePartTwo")}
-                    </h1>
-                    <p className="text-white text-xs md:text-sm lg:text-3xl w-[325px] md:w-80 lg:w-lgTexto lg:w-[775px]">
-                        {t("masthead.subtitle")}
-                    </p>
+                <div className="absolute z-0 mt-40 w-full flex justify-center">
+                    <div className="w-[1140px]">
+                        <h1 className="text-white font-semibold text-2xl md:text-5xl lg:text-8xl mb-4 md:mb-8 lg:mb-6">
+                            {t("masthead.titlePartOne")}{" "}
+                            <span className="title-empty font-black">
+                                {" "}
+                                {t("masthead.emptyTitlePartOne")}
+                            </span>
+                            <br />
+                            {t("masthead.titlePartTwo")}
+                        </h1>
+                        <p className="text-white text-xs md:text-sm lg:text-3xl w-[325px] md:w-80 lg:w-lgTexto lg:w-[775px]">
+                            {t("masthead.subtitle")}
+                        </p>
+                    </div>
                 </div>
                 <div className="absolute text-white lg:top-[90vh] top-[350px]  left-[40%] lg:left-[50%]">
                     <a href="#about-us">

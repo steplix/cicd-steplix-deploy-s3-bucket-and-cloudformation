@@ -37,7 +37,10 @@ export default function Home() {
                 <meta property="og:url" content="https://steplix.com/" />
                 <meta property="og:type" content="website" />
             </Head>
-            <Masthead />
+            <section className="container-steplix">
+                <Masthead />
+            </section>
+
             <section className="container-steplix">
                 <AboutUs />
             </section>
