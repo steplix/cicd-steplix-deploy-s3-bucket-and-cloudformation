@@ -85,7 +85,7 @@ const Navbar = () => {
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-between section-steplix pr-5">
-                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] [180px] [35px] my-auto">
+                    <div className="relative lg:w-[160px] lg:h-[40px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -137,7 +137,7 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             {/* button contact us */}
-                            <button className="bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7">
+                            <button className="bg-white text-gray-900 hover:bg-steplix-yellow rounded-full w-[200px] h-14 text-xl mr-7">
                                 <a href="#contact-us">{t("navbar.item6")}</a>
                             </button>
                             <div className="">
