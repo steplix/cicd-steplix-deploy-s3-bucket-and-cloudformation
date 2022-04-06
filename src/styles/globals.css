@@ -27,7 +27,7 @@ body {
 
 /*--------- Landing sections ------- */
 .container-steplix {
-    @apply pt-16 pb-9 lg:pt-24 lg:pb-9;
+    @apply pt-16 pb-9 lg:pt-24;
 }
 
 .section-steplix {
@@ -47,7 +47,7 @@ body {
 
 @media (min-width: 768px) {
     .steplix-process {
-        height: 850px;
+        height: 700px;
         background-image: url("../../public/assets/img/bg-process.svg");
         background-repeat: no-repeat;
         background-size: contain;

@@ -84,8 +84,8 @@ const WhatWeDo = () => {
                 <p>{t("whatWeDo.subtitlePartOne")}</p>
                 <p>{t("whatWeDo.subtitlePartTwo")}</p>
             </div>
-            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7 ">
-                <div className="lg:col-start-3 w-[350px] row-span-3 lg:relative">
+            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
+                <div className="lg:col-start-3 w-[350px] row-span-2 lg:relative ">
                     <StepCard
                         number="03."
                         title={t("whatWeDo.cardThree.title")}
@@ -101,7 +101,7 @@ const WhatWeDo = () => {
                         <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
                     </div>
                 </div>
-                <div className="lg:col-start-2 row-span-3  lg:relative">
+                <div className="lg:col-start-2 row-span-2  lg:relative">
                     <StepCard
                         number="02."
                         title={t("whatWeDo.cardTwo.title")}
@@ -117,7 +117,7 @@ const WhatWeDo = () => {
                         <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
                     </div>
                 </div>
-                <div className="lg:col-start-1 row-span-2  lg:relative">
+                <div className="lg:col-start-1 row-span-1 lg:relative">
                     <StepCard
                         number="01."
                         title={t("whatWeDo.cardOne.title")}
