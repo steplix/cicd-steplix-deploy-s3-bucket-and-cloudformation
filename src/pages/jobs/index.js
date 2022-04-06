@@ -5,7 +5,7 @@ import Head from "next/head";
 import { useTranslation } from "next-export-i18n";
 import Flags from "@/common/components/Flags";
 
-export default function Home() {
+export default function Jobs() {
     const { t } = useTranslation();
 
     return (

@@ -6,7 +6,7 @@ import ScrumFramework from "@/modules/process/ScrumFramework";
 import StepsToTheTop from "@/modules/process/StepsToTheTop";
 import Head from "next/head";
 
-export default function Home() {
+export default function Process() {
     return (
         <div className="relative">
             <Head>
