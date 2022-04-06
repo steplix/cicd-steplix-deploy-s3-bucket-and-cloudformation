@@ -50,9 +50,6 @@ export default function Home() {
             <section className="container-steplix">
                 <HappyClients />
             </section>
-            <section className="container-steplix">
-                <ContactIndex />
-            </section>
             <Flags />
         </main>
     );

@@ -13,13 +13,6 @@ const Job = () => {
             <div className="mb-36 flex items-center justify-center ">
                 <JobItemCard item={t(`jobs.${nameJob}`)} />
             </div>
-            <div className="flex items-center justify-center mb-10">
-                <ContactUs
-                    cv
-                    title={t("jobs.contactApplyJob.title")}
-                    subtitle={t("jobs.contactApplyJob.subtitle")}
-                />
-            </div>
         </div>
     );
 };

@@ -1,14 +1,5 @@
 {
     "jobs": {
-        "contactJobs": {
-            "title": "Dejanos tu CV",
-            "description":
-                "para futuras búsquedas que se adapten a tu perfil"
-        },
-        "contactApplyJob": {
-            "subtitle": "Si tenés todos estos skills...",
-            "title": "¡Postulate!"
-        },
         "applyButton": "Aplicar",
         "title": "Convierte en",
         "UI_UXDesigner": {
@@ -427,18 +418,6 @@
         }
     },
     "happyClients": "Clientes felices",
-    "contactUs": {
-        "title": "Contactanos para llevar juntos esa ",
-        "subtitle": "IDEA HACIA LA CIMA",
-        "name": "Nombre",
-        "lastname": "Apellido",
-        "linkedin": "Link a Linkedin",
-        "weWantToKnowAboutYou": "Queremos saber de vos",
-        "email": "Email",
-        "company": "Empresa",
-        "role": "Rol",
-        "howCanWeHelpYou": "¿Cómo te podemos ayudar?"
-    },
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {

@@ -1,13 +1,5 @@
 {
     "jobs": {
-        "contactJobs": {
-            "title": "Leave us your CV",
-            "description": "for future searches that suit your profile"
-        },
-        "contactApplyJob": {
-            "subtitle": "If you have all these skills...",
-            "title": "Apply!"
-        },
         "applyButton": "Apply",
         "title": "Become a",
         "UI_UXDesigner": {
@@ -432,18 +424,6 @@
         }
     },
     "happyClients": "Happy Clients",
-    "contactUs": {
-        "title": "Contact us to bring together that",
-        "subtitle": "IDEA TOWARDS THE TOP",
-        "name": "Name",
-        "email": "Email",
-        "lastname": "Last Name",
-        "linkedin": "Link to Linkedin",
-        "weWantToKnowAboutYou": "We want to know about you",
-        "company": "Company",
-        "role": "Role",
-        "howCanWeHelpYou": "How can we Help you?"
-    },
     "seeMore": "See more",
     "ButtonSend": "Send",
     "navbar": {

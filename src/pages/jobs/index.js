@@ -19,13 +19,6 @@ export default function Home() {
             <section className="container-steplix section-steplix">
                 <BecomeASteplixer />
             </section>
-            <section className="container-steplix">
-                <ContactUs
-                    title={t("jobs.contactJobs.title")}
-                    description={t("jobs.contactJobs.description")}
-                    cv
-                />
-            </section>
             <Flags />
         </div>
     );
