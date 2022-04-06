@@ -134,11 +134,6 @@ const WhatWeDo = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-40">
-                <Link href={{ pathname: "/process", query: query }}>
-                    <a>{t("seeMore")}</a>
-                </Link>
-            </div>
         </div>
     );
 };

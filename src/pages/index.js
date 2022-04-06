@@ -44,10 +44,10 @@ export default function Home() {
             <section className="container-steplix">
                 <AboutUs />
             </section>
-            <section className="container-steplix">
+            <section className="pt-16 lg:pt-24">
                 <WhatWeDo />
             </section>
-            <section className="container-steplix">
+            <section className=" pb-9 lg:pb-9">
                 <OurCulture />
             </section>
             <section className="container-steplix">
