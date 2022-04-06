@@ -7,9 +7,9 @@ const Masthead = () => {
 
     return (
         <div>
-            <div className="banner lg:h-screen h-[450px]" id="masthead">
-                <div className="absolute z-0 mt-40 w-full flex justify-center">
-                    <div className="w-[1140px]">
+            <div className="banner lg:h-screen flex h-[450px]" id="masthead">
+                <div className="absolute z-0 lg:top-[40vh] top-[15vh] w-full flex justify-center">
+                    <div className="lg:w-[1140px]">
                         <h1 className="text-white font-semibold text-2xl md:text-5xl lg:text-8xl mb-4 md:mb-8 lg:mb-6">
                             {t("masthead.titlePartOne")}{" "}
                             <span className="title-empty font-black">
