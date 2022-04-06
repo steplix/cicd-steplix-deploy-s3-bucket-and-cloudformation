@@ -341,8 +341,9 @@
         }
     },
     "masthead": {
-        "titlePartOne": " Sherpas de",
-        "titlePartTwo": "negocios digitales",
+        "titlePartOne": "Somos",
+        "emptyTitlePartOne": "Sherpas",
+        "titlePartTwo": "Digitales",
         "subtitle": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima"
     },
     "aboutUs": {

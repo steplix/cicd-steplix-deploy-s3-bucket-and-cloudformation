@@ -10,7 +10,11 @@ const Masthead = () => {
             <div className="banner lg:h-screen h-[450px]" id="masthead">
                 <div className="absolute z-0 ml-4 lg:ml-44 mt-40 lg:mt-96">
                     <h1 className="text-white font-semibold text-2xl md:text-5xl lg:text-8xl mb-4 md:mb-8 lg:mb-6">
-                        {t("masthead.titlePartOne")}
+                        {t("masthead.titlePartOne")}{" "}
+                        <span className="title-empty font-Blend">
+                            {" "}
+                            {t("masthead.emptyTitlePartOne")}
+                        </span>
                         <br />
                         {t("masthead.titlePartTwo")}
                     </h1>
