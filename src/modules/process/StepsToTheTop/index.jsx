@@ -13,6 +13,7 @@ const StepsToTheTop = () => {
                     title={t("process.stepsToTheTop.title")}
                     colorTitle="font-bold text-white"
                     textOne={t("process.stepsToTheTop.description")}
+                    textTwo={t("process.stepsToTheTop.descriptionTwo")}
                 />
             </div>
             <div className="space-y-20">

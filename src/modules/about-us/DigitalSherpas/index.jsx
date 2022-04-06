@@ -9,10 +9,10 @@ const DigitalSherpas = () => {
         <div className="pt-44 lg:w-[1230px] w-[345px]">
             <div className="text-5xl font-black">
                 <h1>
-                    <spam className="title-empty">
+                    <span className="title-empty">
                         {" "}
                         {t("about_us.digitalSherpas.titleOne")}{" "}
-                    </spam>{" "}
+                    </span>{" "}
                     {t("about_us.digitalSherpas.titleTwo")}
                 </h1>
             </div>

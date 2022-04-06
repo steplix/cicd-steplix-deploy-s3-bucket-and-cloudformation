@@ -15,7 +15,6 @@ const WhatWeDo = () => {
 
     let subDescription,
         title,
-        text,
         textOne,
         textTwo,
         textThree,
@@ -77,11 +76,13 @@ const WhatWeDo = () => {
                     />
                 </div>
             </Modal>
-            <h2 className="text-[30px] font-semibold">{t("whatWeDo.title")}</h2>
+            <h2 className="text-[30px] font-semibold">
+                {t("whatWeDo.title")}{" "}
+                <span className="title-empty">{t("whatWeDo.emptyTitle")}</span>
+            </h2>
             <div className="text-sm font-light flex flex-col lg:mb-0 mb-12">
-                <p>{`${t("whatWeDo.subtitlePartOne")} ${t(
-                    "whatWeDo.subtitlePartTwo"
-                )}`}</p>
+                <p>{t("whatWeDo.subtitlePartOne")}</p>
+                <p>{t("whatWeDo.subtitlePartTwo")}</p>
             </div>
             <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7 ">
                 <div className="lg:col-start-3 w-[350px]">
