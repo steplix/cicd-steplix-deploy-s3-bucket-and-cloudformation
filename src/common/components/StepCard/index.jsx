@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const StepCard = ({
     number,
     title,
+    emptyTitle,
     seeMore,
     colorLine,
     textOne,
@@ -35,11 +36,16 @@ const StepCard = ({
             <div>
                 {title && (
                     <h4
-                        className={`lg:text-3xl text-2xl font-black ${
+                        className={`lg:text-3xl text-2xl font-black  ${
                             colorTitle ? colorTitle : "text-white"
                         }`}
                     >
                         {title}
+                        {emptyTitle && (
+                            <span className="lg:text-3xl text-2xl font-black title-empty">
+                                {emptyTitle}
+                            </span>
+                        )}
                     </h4>
                 )}
                 {colorLine && (
@@ -48,7 +54,7 @@ const StepCard = ({
                     />
                 )}
 
-                <div className="text-sm lg:text-base text-white font-light">
+                <div className="text-sm lg:text-base space-y-2 text-white font-light">
                     {textOne && <p>{textOne}</p>}
                     {textTwo && <p>{textTwo}</p>}
                     {textThree && <p>{textThree}</p>}
@@ -79,6 +85,7 @@ const StepCard = ({
 StepCard.propTypes = {
     number: PropTypes.string,
     title: PropTypes.string,
+    emptytitle: PropTypes.string,
     seeMore: PropTypes.string,
     colorLine: PropTypes.string,
     colorTitle: PropTypes.string,

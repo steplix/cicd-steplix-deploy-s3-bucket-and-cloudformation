@@ -15,7 +15,6 @@ const WhatWeDo = () => {
 
     let subDescription,
         title,
-        text,
         textOne,
         textTwo,
         textThree,
@@ -77,14 +76,16 @@ const WhatWeDo = () => {
                     />
                 </div>
             </Modal>
-            <h2 className="text-[30px] font-semibold">{t("whatWeDo.title")}</h2>
+            <h2 className="text-[30px] font-semibold">
+                {t("whatWeDo.title")}{" "}
+                <span className="title-empty">{t("whatWeDo.emptyTitle")}</span>
+            </h2>
             <div className="text-sm font-light flex flex-col lg:mb-0 mb-12">
-                <p>{`${t("whatWeDo.subtitlePartOne")} ${t(
-                    "whatWeDo.subtitlePartTwo"
-                )}`}</p>
+                <p>{t("whatWeDo.subtitlePartOne")}</p>
+                <p>{t("whatWeDo.subtitlePartTwo")}</p>
             </div>
-            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7 ">
-                <div className="lg:col-start-3 w-[350px]">
+            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
+                <div className="lg:col-start-3 w-[350px] row-span-2 lg:relative ">
                     <StepCard
                         number="03."
                         title={t("whatWeDo.cardThree.title")}
@@ -94,9 +95,13 @@ const WhatWeDo = () => {
                         textOne={t("whatWeDo.cardThree.description")}
                         setisModalOpen={setisModalOpen}
                         setPositionModal={setPositionModal}
-                    />
+                    />{" "}
+                    <div className="lg:absolute lg:top-[10px] right-[360px]">
+                        <div className="lg:bg-white lg:h-[1px] lg:w-24 lg:relative lg:top-[6px]" />
+                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
+                    </div>
                 </div>
-                <div className="lg:col-start-2">
+                <div className="lg:col-start-2 row-span-2  lg:relative">
                     <StepCard
                         number="02."
                         title={t("whatWeDo.cardTwo.title")}
@@ -107,8 +112,12 @@ const WhatWeDo = () => {
                         setisModalOpen={setisModalOpen}
                         setPositionModal={setPositionModal}
                     />
+                    <div className="lg:absolute lg:top-[10px] lg:left-[327px]">
+                        <div className="lg:bg-white lg:h-[1px] lg:w-7 lg:relative lg:top-[6px]" />{" "}
+                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                    </div>
                 </div>
-                <div className="lg:col-start-1">
+                <div className="lg:col-start-1 row-span-1 lg:relative">
                     <StepCard
                         number="01."
                         title={t("whatWeDo.cardOne.title")}
@@ -119,12 +128,11 @@ const WhatWeDo = () => {
                         setisModalOpen={setisModalOpen}
                         setPositionModal={setPositionModal}
                     />
+                    <div className="lg:absolute lg:top-[124px] lg:left-96">
+                        <div className="lg:bg-white lg:h-[1px] lg:w-16 lg:relative lg:top-[6px]" />{" "}
+                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                    </div>
                 </div>
-            </div>
-            <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2 hidden lg:block text-center mt-40">
-                <Link href={{ pathname: "/process", query: query }}>
-                    <a>{t("seeMore")}</a>
-                </Link>
             </div>
         </div>
     );

@@ -1,14 +1,5 @@
 {
     "jobs": {
-        "contactJobs": {
-            "title": "Dejanos tu CV",
-            "description":
-                "para futuras búsquedas que se adapten a tu perfil"
-        },
-        "contactApplyJob": {
-            "subtitle": "Si tenés todos estos skills...",
-            "title": "¡Postulate!"
-        },
         "applyButton": "Aplicar",
         "title": "Convierte en",
         "UI_UXDesigner": {
@@ -311,7 +302,8 @@
         },
         "stepsToTheTop": {
             "title": "Pasos hacia la cima",
-            "description": " Los comienzos no son todos iguales...en este camino vos elegís, ¿Cuál es tu punto de partida?",
+            "description": " Los comienzos no son todos iguales...en este camino vos elegís,",
+            "descriptionTwo": "¿Cuál es tu punto de partida?",
             "stepOne": {
                 "title": "Descubrimiento de negocio",
                 "descriptionOne": " Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
@@ -349,16 +341,19 @@
         }
     },
     "masthead": {
-        "titlePartOne": " Sherpas de",
-        "titlePartTwo": "negocios digitales",
+        "titlePartOne": "Somos",
+        "emptyTitlePartOne": "Sherpas",
+        "titlePartTwo": "Digitales",
         "subtitle": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima"
     },
     "aboutUs": {
-        "title": "Sobre nosotros",
+        "title": "Sobre ",
+        "emptyTitle": "nosotros",
         "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
     },
     "whatWeDo": {
-        "title": "Pasos hacia la cima",
+        "title": "Pasos hacia la ",
+        "emptyTitle": " cima",
         "subtitlePartOne": " Los comienzos no son todos iguales...en este camino vos elegís,",
         "subtitlePartTwo": "¿Cuál es tu punto de partida?",
         "cardOne": {
@@ -375,8 +370,9 @@
         }
     },
     "ourCulture": {
-        "title": "Porque nadie llega solo hasta la cumbre,",
-        "subtitle": "SOMOS TU MEJOR ALIADO",
+        "title": "Porque nadie llega solo hasta la cumbre...",
+        "subtitle": "Somos tu mejor",
+        "emptySubtitle": " ALIADO",
         "cardOne": {
             "title": "Conocemos el camino",
             "description": "Somos guías en el ecosistema de los negocios digitales, y sabemos cómo ayudarte a potenciar una idea para convertirla en un modelo de negocio escalable. "
@@ -423,18 +419,6 @@
         }
     },
     "happyClients": "Clientes felices",
-    "contactUs": {
-        "title": "Contactanos para llevar juntos esa ",
-        "subtitle": "IDEA HACIA LA CIMA",
-        "name": "Nombre",
-        "lastname": "Apellido",
-        "linkedin": "Link a Linkedin",
-        "weWantToKnowAboutYou": "Queremos saber de vos",
-        "email": "Email",
-        "company": "Empresa",
-        "role": "Rol",
-        "howCanWeHelpYou": "¿Cómo te podemos ayudar?"
-    },
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {

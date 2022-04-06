@@ -1,13 +1,5 @@
 {
     "jobs": {
-        "contactJobs": {
-            "title": "Leave us your CV",
-            "description": "for future searches that suit your profile"
-        },
-        "contactApplyJob": {
-            "subtitle": "If you have all these skills...",
-            "title": "Apply!"
-        },
         "applyButton": "Apply",
         "title": "Become a",
         "UI_UXDesigner": {
@@ -324,7 +316,8 @@
         },
         "stepsToTheTop": {
             "title": "Steps to the top",
-            "description": " The beginnings are not all the same...on this path you choose, What is your starting point? ",
+            "description": " The beginnings are not all the same...on this path you choose,",
+            "descriptionTwo": "  What is your starting point? ",
             "stepOne": {
                 "title": "Understand & scope the digitalization of your business ",
                 "descriptionOne": " There are many ideas. But we constantly ask ourselves… Is there business? ",
@@ -353,15 +346,20 @@
     },
     "masthead": {
         "titlePartOne": "We are",
-        "titlePartTwo": "the Digital Sherpas",
+        "emptyTitlePartOne": "Digital",
+        "titlePartTwo": "Sherpas",
         "subtitle": " We are here to co-create the path that will take your business to the top "
     },
     "aboutUs": {
-        "title": "About Us",
+        "title": "About ",
+        "emptyTitle": " Us",
+
+        
         "description": "We are the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you in every step of the joruney, minimizing the risk and amplifying the impact, in the agreed time. "
     },
     "whatWeDo": {
-        "title": "Steps to the top",
+        "title": "Steps to the ",
+        "emptyTitle": "top",
         "subtitlePartOne": " The beginnings are not all the same...on this path you choose,  ",
         "subtitlePartTwo": " What is your starting point? ",
         "cardOne": {
@@ -379,7 +377,8 @@
     },
     "ourCulture": {
         "title": "Because nobody reaches the summit alone,",
-        "subtitle": "WE ARE YOUR BEST PARTNER",
+        "subtitle": "We are your best",
+        "emptySubtitle": " PARTNER",
         "cardOne": {
             "title": "We know the way",
             "description": "We are guides in the digital business ecosystem, and we know how to help you promote and idea to turn it into a scalable business model. "
@@ -426,18 +425,6 @@
         }
     },
     "happyClients": "Happy Clients",
-    "contactUs": {
-        "title": "Contact us to bring together that",
-        "subtitle": "IDEA TOWARDS THE TOP",
-        "name": "Name",
-        "email": "Email",
-        "lastname": "Last Name",
-        "linkedin": "Link to Linkedin",
-        "weWantToKnowAboutYou": "We want to know about you",
-        "company": "Company",
-        "role": "Role",
-        "howCanWeHelpYou": "How can we Help you?"
-    },
     "seeMore": "See more",
     "ButtonSend": "Send",
     "navbar": {

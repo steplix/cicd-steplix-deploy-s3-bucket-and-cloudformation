@@ -6,7 +6,7 @@ const OurCulture = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="section-steplix" id="culture">
+        <div className="section-steplix pt-0" id="culture">
             <div
                 id="our-culture"
                 className="text-white mb-10 lg:mb-28 text-left"
@@ -14,8 +14,11 @@ const OurCulture = () => {
                 <h2 className="text-[30px] font-semibold mb-2">
                     {t("ourCulture.title")}
                 </h2>
-                <p className="title-empty text-4xl font-black">
+                <p className=" text-4xl font-black">
                     {t("ourCulture.subtitle")}
+                    <span className="title-empty-yellow">
+                        {t("ourCulture.emptySubtitle")}
+                    </span>
                 </p>
             </div>
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-27">

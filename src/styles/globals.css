@@ -27,7 +27,7 @@ body {
 
 /*--------- Landing sections ------- */
 .container-steplix {
-    @apply pt-16 pb-9 lg:pt-24 lg:pb-9;
+    @apply pt-16 pb-9 lg:pt-24;
 }
 
 .section-steplix {
@@ -57,6 +57,10 @@ body {
 /* ------title-empty---- */
 .title-empty {
     -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+    color: transparent;
+}
+.title-empty-yellow {
+    -webkit-text-stroke: 1.3px #FFDA00;
     color: transparent;
 }
 /* CAROUSEL START */
@@ -99,7 +103,6 @@ body {
 
 /* SUBMENU & NAVBAR START */
 .nav-link::after {
-    @apply bg-[color:var(--green-color)];
     content: "";
     display: block;
     width: 0;
