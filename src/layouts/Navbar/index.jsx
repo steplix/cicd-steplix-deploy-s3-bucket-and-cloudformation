@@ -16,21 +16,10 @@ const Navbar = () => {
     //
     const [sticky, setSticky] = React.useState(false);
     const [toggle, setToggle] = React.useState(false);
-    const [scrollY, setScrollY] = React.useState(0);
 
     //
     // Effects
     //
-    React.useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-        };
-        handleScroll();
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
 
     React.useEffect(() => {
         const onScroll = () => {
@@ -51,7 +40,6 @@ const Navbar = () => {
                 <div className="">
                     <Submenu
                         router={router}
-                        scrollY={scrollY}
                         query={query}
                         className=""
                         toggle={toggle}
@@ -96,8 +84,8 @@ const Navbar = () => {
                     sticky ? "bg-steplix-lilac" : "bg-dark"
                 }`}
             >
-                <div className="pt-[30px] flex top-0 lg:justify-around w-[90%] pr-5">
-                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] md:[180px] md:[35px] ml-[195px] my-auto">
+                <div className="pt-[30px] flex top-0 lg:justify-between section-steplix pr-5">
+                    <div className="relative 2xl:w-[250px] 2xl:h-[62px] [180px] [35px] my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -108,58 +96,35 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="ml-8">
-                        <div className="flex space-x-5 mt-7 text-white text-base w-[750px] gap-2">
-                            <a
-                                className={
-                                    (router.pathname === "/" &&
-                                        scrollY > 1000 &&
-                                        scrollY < 1500) ||
-                                    router.pathname === "/about-us"
-                                        ? "nav--active"
-                                        : ""
-                                }
-                                href="#about-us"
+                    <div className=" ">
+                        <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
+                            <Link
+                                href={{ pathname: "/about-us", query: query }}
                             >
-                                {t("navbar.item1")}
-                            </a>
-                            <a
-                                className={
-                                    (router.pathname === "/" &&
-                                        scrollY > 1500 &&
-                                        scrollY < 2500) ||
-                                    router.pathname === "/process"
-                                        ? "nav--active"
-                                        : ""
-                                }
-                                href="#what-we-do"
-                            >
-                                {t("navbar.item2")}
-                            </a>
-                            <a
-                                className={
-                                    router.pathname === "/" &&
-                                    scrollY > 2500 &&
-                                    scrollY < 3000
-                                        ? "nav--active"
-                                        : ""
-                                }
-                                href="#our-culture"
-                            >
-                                {t("navbar.item3")}
-                            </a>
-                            <a
-                                className={
-                                    router.pathname === "/" &&
-                                    scrollY > 3000 &&
-                                    scrollY < 3500
-                                        ? "nav--active"
-                                        : ""
-                                }
-                                href="#happy-clients"
-                            >
-                                {t("navbar.item4")}
-                            </a>
+                                <a
+                                    className={
+                                        router.pathname === "/about-us"
+                                            ? "nav--active"
+                                            : ""
+                                    }
+                                    href="#about-us"
+                                >
+                                    {t("navbar.item1")}
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/process", query: query }}>
+                                <a
+                                    className={
+                                        router.pathname === "/process"
+                                            ? "nav--active"
+                                            : ""
+                                    }
+                                    href="#what-we-do"
+                                >
+                                    {t("navbar.item2")}
+                                </a>
+                            </Link>
+
                             <Link href={{ pathname: "/jobs", query: query }}>
                                 <a
                                     className={
@@ -171,14 +136,14 @@ const Navbar = () => {
                                     {t("navbar.item5")}
                                 </a>
                             </Link>
+                            {/* button contact us */}
+                            <button className="bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7">
+                                <a href="#contact-us">{t("navbar.item6")}</a>
+                            </button>
+                            <div className="">
+                                <LanguageSelector />
+                            </div>
                         </div>
-                    </div>
-                    {/* button contact us */}
-                    <button className="bg-white text-gray-900 rounded-full w-[200px] h-14 mt-3 my-2 px-10 text-xl mr-7">
-                        <a href="#contact-us">{t("navbar.item6")}</a>
-                    </button>
-                    <div className="mt-7">
-                        <LanguageSelector />
                     </div>
                 </div>
             </nav>
