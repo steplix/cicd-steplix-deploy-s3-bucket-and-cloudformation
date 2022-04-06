@@ -137,8 +137,21 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             {/* button contact us */}
-                            <button className="bg-white text-gray-900 hover:bg-steplix-yellow rounded-full w-[200px] h-14 text-xl mr-7">
-                                <a href="#contact-us">{t("navbar.item6")}</a>
+                            <button
+                                className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7 ${
+                                    router.pathname === "/contact"
+                                        ? "bg-steplix-yellow"
+                                        : ""
+                                }`}
+                            >
+                                <Link
+                                    href={{
+                                        pathname: "/contact",
+                                        query: query,
+                                    }}
+                                >
+                                    <a href="">{t("navbar.item6")}</a>
+                                </Link>
                             </button>
                             <div className="">
                                 <LanguageSelector />

@@ -95,9 +95,17 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 <div className="flex item-center text-left w-[94%]  ">
                     <button
                         onClick={() => handleClickToggle()}
-                        className="bg-white mb-9 text-gray-900 rounded-full w-[110px] h-9 mt-3 my-2 ml-4 text-xs"
+                        className={`bg-white mb-9 text-gray-900 rounded-full w-[110px] h-9 mt-3 my-2 ml-4 text-xs
+                        ${
+                            router.pathname === "/contact"
+                                ? "bg-steplix-yellow"
+                                : ""
+                        }
+                        `}
                     >
-                        <a href="#contact-us">{t("navbar.item6")}</a>
+                        <Link href={{ pathname: "contact", query: query }}>
+                            <a href="#contact-us">{t("navbar.item6")}</a>
+                        </Link>
                     </button>
                 </div>
                 <div className="flex gap-x-4 item-center text-left w-[94%] ml-7 ">
