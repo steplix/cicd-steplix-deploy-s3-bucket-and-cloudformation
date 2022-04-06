@@ -20,13 +20,9 @@ const AboutUs = () => {
                     textOne={t("aboutUs.description")}
                 />
                 <div className="lg:text-base text-sm text-steplix-yellow underline decoration-2  text-left mt-16">
-                    <a
-                        href={`/about-us${
-                            query?.lang ? `?lang=${query?.lang}` : ""
-                        }`}
-                    >
-                        {t("seeMore")}
-                    </a>
+                    <Link href={{ pathname: "/about-us", query: query }}>
+                        <a>{t("seeMore")}</a>
+                    </Link>
                 </div>
             </div>
         </div>
