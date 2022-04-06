@@ -17,31 +17,31 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: "/assets/logos/clients/agrocanje.svg",
+            image: "/assets/img/clients/client-agrocanje.svg",
             alt: "agrocanje",
         },
         {
-            image: "/assets/logos/clients/sura.svg",
+            image: "/assets/img/clients/client-sura.svg",
             alt: "sura",
         },
         {
-            image: "/assets/logos/clients/finket.svg",
+            image: "/assets/img/clients/client-finket.svg",
             alt: "afinket",
         },
         {
-            image: "/assets/logos/clients/c5n.svg",
+            image: "/assets/img/clients/client-c5n.svg",
             alt: "c5n",
         },
         {
-            image: "/assets/logos/clients/garbarino.svg",
+            image: "/assets/img/clients/client-garbarino.svg",
             alt: "garbarino",
         },
         {
-            image: "/assets/logos/clients/pow.svg",
+            image: "/assets/img/clients/client-pow.svg",
             alt: "pow",
         },
         {
-            image: "/assets/logos/clients/smartium.svg",
+            image: "/assets/img/clients/client-smartium.svg",
             alt: "smartium",
         },
     ];

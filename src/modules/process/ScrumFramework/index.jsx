@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 
@@ -16,7 +17,7 @@ const ScrumFramework = () => {
             </div>
             <div className="mt-[100px]">
                 <img
-                    src="/assets/images/process/ScrumFrameworkEs.svg"
+                    src="/assets/img/ScrumFrameworkEs.svg"
                     alt="Scrum Framework"
                 />
             </div>

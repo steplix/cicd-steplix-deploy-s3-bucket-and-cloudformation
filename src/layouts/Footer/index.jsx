@@ -13,10 +13,7 @@ const Footer = () => {
                 <div className="md:flex">
                     <div className="md:flex">
                         <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">
-                            <img
-                                src="/assets/logos/logo-navbar.svg"
-                                alt="logo"
-                            />
+                            <img src="/assets/img/logo-navbar.svg" alt="logo" />
                         </div>
                         <div className="mb-14 md:mr-16">
                             <div className="mb-5">
@@ -38,7 +35,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto lg:pt-3 pt-2 flex justify-center">
                                         <img
-                                            src="/assets/logos/fb.svg"
+                                            src="/assets/img/fb.svg"
                                             alt="Facebook"
                                         />
                                     </div>
@@ -50,7 +47,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto lg:pt-4 pt-3 flex justify-center">
                                         <img
-                                            src="/assets/logos/instagram.svg"
+                                            src="/assets/img/instagram.svg"
                                             alt="instagram"
                                         />
                                     </div>
@@ -62,7 +59,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto lg:pt-2 pt-2  flex justify-center">
                                         <img
-                                            src="/assets/logos/linkedin.png"
+                                            src="/assets/img/linkedin.png"
                                             alt="linkedin"
                                             className="w-10"
                                         />
@@ -77,7 +74,7 @@ const Footer = () => {
                                 <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iram.pdf">
                                     <a target="_blank">
                                         <img
-                                            src="/assets/logos/iram.svg"
+                                            src="/assets/img/iram.svg"
                                             className="mr-10 w-[55px] h-[80px] lg:w-20 lg:h-28"
                                             alt="Iram"
                                         />
@@ -87,7 +84,7 @@ const Footer = () => {
                                     <Link href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/A+G+CAPITAL+S.A.+-+STEPLIX+iqnet.pdf">
                                         <a target="_blank">
                                             <img
-                                                src="/assets/logos/iQNet.svg"
+                                                src="/assets/img/iQNet.svg"
                                                 alt="IQNet"
                                                 className="lg:h-24 lg:w-24 h-[70px] w-[70px]"
                                             />
