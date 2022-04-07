@@ -36,11 +36,21 @@ body {
 }
 
 /*--------- banner------- */
+@media (min-width: 768px) {
+
 .banner {
     background-image: url("../../public/assets/img/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+}
+
+.banner {
+    background-image: url("../../public/assets/img/bg-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*--------- Process Mountain------- */
@@ -134,3 +144,17 @@ body {
 }
 
 /* SUBMENU & NAVBAR END */
+
+/* START JOBS */
+@media (min-width: 768px) {
+    .bg--job {
+        height: 1000px;
+        background-image: url("../../public/assets/img/bg-job.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+
+    }
+}
+/*END JOBS */
+

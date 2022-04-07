@@ -2,6 +2,8 @@
     "jobs": {
         "applyButton": "Apply",
         "title": "Become a",
+        "titleEmpty": "Steplix",
+
         "UI_UXDesigner": {
             "url": "UI_UXDesigner",
             "title": "UI/UX Designer Ssr.",

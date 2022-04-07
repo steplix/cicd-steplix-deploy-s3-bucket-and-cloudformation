@@ -1,7 +1,8 @@
 {
     "jobs": {
-        "applyButton": "Aplicar",
-        "title": "Convierte en",
+        "applyButton": "Postulate",
+        "title": "Conocé nuestras",
+        "titleEmpty": "búsquedas",
         "UI_UXDesigner": {
             "url": "UI_UXDesigner",
             "title": "UI/UX Designer Ssr.",
