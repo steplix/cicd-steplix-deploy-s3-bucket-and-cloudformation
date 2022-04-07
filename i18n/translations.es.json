@@ -128,7 +128,8 @@
     },
     "about_us": {
         "ourValues": {
-            "title": "Nuestros Valores",
+            "titleOne": "Nuestros",
+            "titleTwo": "Valores",
             "values": {
                 "valuetOne": {
                     "title": "Confianza",
@@ -161,11 +162,12 @@
             "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
         },
         "philosophy": {
-            "title": "Nuestra filosofía",
+            "titleOne": "Nuestra",
+            "titleTwo": "filosofía",
             "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos de la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
         },
         "digitalSherpas": {
-            "titleOne": "Tu digital",
+            "titleOne": "Tu Digital Business",
             "titleTwo": "Sherpas",
             "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de los negocios, que cuenta con la mezcla exacta de seniority, experiencia y compromiso.",
             "descriptionTwo": " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
@@ -173,7 +175,10 @@
         }
     },
     "process": {
-        "scrumFramework":{"titleOne":" ¿Sabías que trabajamos bajo el ", "titleTwo":"Marco Scrum?"},
+        "scrumFramework": {
+            "titleOne": " ¿Sabías que trabajamos bajo el ",
+            "titleTwo": "Marco Scrum?"
+        },
         "HowDoWeDoIt": {
             "title": "¿Cómo lo hacemos?",
             "description": "En la montaña como en los negocios, hay 4 conceptos básicos que no pueden faltar para asegurar la llegada a la cima: espíritu, cuerpo, mente y buenos recursos. Y, En steplix sabemos que podremos alcanzar cualquier desafío porque contamos con todos ellos.",
@@ -286,30 +291,30 @@
         "modalOne": {
             "title": " Descubrimiento de negocio",
             "descriptionOne": {
-                "textOne":"Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
-                "textTwo":"En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
-                "textThree":"Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. ",
-                 "textFour":"Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla."
+                "textOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
+                "textTwo": "En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
+                "textThree": "Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. ",
+                "textFour": "Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla."
             },
             "descriptionTwo": " ¿Sabías que el 75% de las ideas de nuevos negocios fracasan en sus tres primeros años de vida?"
         },
         "modalTwo": {
             "title": "Diseño de producto ",
             "descriptionOne": {
-                "textOne":"Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
-                "textTwo":"La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. ",
-                "textThree":"De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos. ",
-                 "textFour":""
-            }, 
+                "textOne": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
+                "textTwo": "La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. ",
+                "textThree": "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos. ",
+                "textFour": ""
+            },
             "descriptionTwo": " ¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja? "
         },
         "modalThree": {
             "title": "Desarrollo y entrega ",
             "descriptionOne": {
-                "textOne":"Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
-                "textTwo":"Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
-                "textThree":"¡Pero esto no termina aquí! ",
-                 "textFour":"En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará."
+                "textOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
+                "textTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
+                "textThree": "¡Pero esto no termina aquí! ",
+                "textFour": "En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará."
             },
             "descriptionTwo": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
         }

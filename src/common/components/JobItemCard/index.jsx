@@ -6,7 +6,6 @@ import { useTranslation } from "next-export-i18n";
 const JobItemCard = ({ item }) => {
     const [query] = useLanguageQuery();
     const { t } = useTranslation();
-    console.log(item);
     return (
         <div className="my-20 ">
             <div className="mb-20">
@@ -26,10 +25,10 @@ const JobItemCard = ({ item }) => {
                 <p className="lg:text-xl text-base">{item?.description}</p>
             </div>
             <div>
-                <p>{item?.values.title}</p>
+                <p>{item?.values?.title}</p>
 
-                <p>{item?.values.textOne}</p>
-                <p>{item?.values.textTwo}</p>
+                <p>{item?.values?.textOne}</p>
+                <p>{item?.values?.textTwo}</p>
             </div>
             <div>
                 <p className="text-2xl font-black my-10 ">

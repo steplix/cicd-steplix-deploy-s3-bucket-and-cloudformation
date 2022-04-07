@@ -3,7 +3,7 @@ import React from "react";
 
 const CollageAboutUs = ({ sm, lg }) => {
     return (
-        <div>
+        <div className="section-steplix flex justify-center">
             {lg && (
                 <div className="hidden lg:flex gap-4 space-x-4">
                     <div className="space-y-10">
@@ -52,7 +52,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                 </div>
             )}
             {sm && (
-                <div className="lg:hidden flex gap-4 mb-16">
+                <div className="lg:hidden flex gap-4">
                     <div className="space-y-5">
                         <div className="relative h-[230px] w-[160px]">
                             <img

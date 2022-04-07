@@ -25,14 +25,82 @@ body {
             format("woff");
 }
 
-/*--------- Landing sections ------- */
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Sofia Pro"),
+        url("../../public/assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Sofia Pro"),
+        url("../../public/assets/fonts/Sofia\ Pro\ Bold\ Az.woff")
+            format("woff");
+}
+
+/*--------- headings ------- */
+.h2-steplix {
+    @apply font-semibold xl:font-black;
+}
+
+.h2-steplix--filled {
+    color: white;
+}
+
+.h2-steplix--outlined {
+    color: transparent;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+}
+
+@media (min-width: 320px) {
+    .h2-steplix {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .h2-steplix {
+        font-size: 64px;
+    }
+}
+
+/*--------- paragraphs ------- */
+.p-steplix {
+    @apply text-base xl:text-2xl leading-5 xl:leading-8 font-normal;
+}
+
+/*--------- container landing sections ------- */
 .container-steplix {
     @apply pt-16 pb-9 lg:pt-24;
 }
 
+/*--------- max-width sections ------- */
 .section-steplix {
-    @apply lg:w-full w-80 mx-auto;
-    max-width: 1140px;
+    @apply w-80 xl:w-full mx-auto;
+}
+
+@media (min-width: 320px) {
+    .section-steplix {
+        @apply max-w-xs;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-steplix {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .section-steplix {
+        max-width: 1480px;
+    }
 }
 
 /*--------- banner------- */
@@ -70,7 +138,7 @@ body {
     color: transparent;
 }
 .title-empty-yellow {
-    -webkit-text-stroke: 1.3px #FFDA00;
+    -webkit-text-stroke: 1.3px #ffda00;
     color: transparent;
 }
 /* CAROUSEL START */
@@ -135,7 +203,7 @@ body {
     @apply opacity-100 bg-steplix-lilac;
 }
 
-.submenu--item{
+.submenu--item {
     @apply hover:bg-steplix-purple hover:font-bold flex  text-left w-[94%] h-[48px] hover:border-l-4;
 }
 
