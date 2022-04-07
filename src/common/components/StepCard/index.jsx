@@ -35,31 +35,31 @@ const StepCard = ({
             )}
             <div>
                 {title && (
-                    <h4
-                        className={`lg:text-3xl text-2xl font-black  ${
+                    <h2
+                        className={`h2-steplix font-black  ${
                             colorTitle ? colorTitle : "text-white"
                         }`}
                     >
                         {title}
                         {emptyTitle && (
-                            <span className="lg:text-3xl text-2xl font-black title-empty">
+                            <span className="h2-steplix h2-steplix--outlined">
                                 {emptyTitle}
                             </span>
                         )}
-                    </h4>
+                    </h2>
                 )}
                 {colorLine && (
                     <div
-                        className={`lg:w-24 lg:h-[5px] h-1 w-12 my-4 ${colorLine}`}
+                        className={`h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
                     />
                 )}
 
-                <div className="text-sm lg:text-base space-y-2 text-white font-light">
-                    {textOne && <p>{textOne}</p>}
-                    {textTwo && <p>{textTwo}</p>}
-                    {textThree && <p>{textThree}</p>}
-                    {textFour && <p>{textFour}</p>}
-                </div>
+                <>
+                    {textOne && <p className="p-steplix">{textOne}</p>}
+                    {textTwo && <p className="p-steplix">{textTwo}</p>}
+                    {textThree && <p className="p-steplix">{textThree}</p>}
+                    {textFour && <p className="p-steplix">{textFour}</p>}
+                </>
 
                 {seeMore && setisModalOpen && (
                     <button

@@ -6,19 +6,16 @@ const OurValues = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="p-5 my-12 lg:w-[1130px] w-[345px] lg:mt-[70px]">
-            <div className="">
-                <p className="text-[42px] font-bold ">03.</p>
-                <StepCard colorLine="bg-steplix-blue lg:w-12" />
-                <div className="mt-2">
-                    <StepCard
-                        title={t("about_us.ourValues.title")}
-                        colorTitle="text-steplix-yellow"
-                        colorLine="bg-steplix-red"
-                    />
-                </div>
-            </div>
-            <div className="lg:grid lg:grid-cols-3 lg:gap-y-12 lg:gap-x-7 space-y-10 lg:space-y-0 lg:mt-[100px] mt-7">
+        <div className="section-steplix">
+            <h2 className="mb-6 xl:mb-14">
+                <span className="h2-steplix h2-steplix--filled">
+                    {t("about_us.ourValues.titleOne")}{" "}
+                </span>
+                <span className="h2-steplix h2-steplix--outlined">
+                    {t("about_us.ourValues.titleTwo")}
+                </span>
+            </h2>
+            <div className="grid grid-cols-1 xl:grid-cols-3 xl:gap-x-7 gap-y-10 xl:gap-y-24">
                 <StepCard
                     title={t("about_us.ourValues.values.valuetOne.title")}
                     textOne={t(

@@ -6,22 +6,21 @@ const DigitalSherpas = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="pt-44 lg:w-[1230px] w-[345px]">
-            <div className="text-5xl font-black">
-                <h1>
-                    <span className="title-empty">
-                        {" "}
-                        {t("about_us.digitalSherpas.titleOne")}{" "}
-                    </span>{" "}
+        <div className="section-steplix">
+            <h2 className="mb-6 xl:mb-14">
+                <span className="h2-steplix h2-steplix--filled">
+                    {t("about_us.digitalSherpas.titleOne")}{" "}
+                </span>
+                <span className="h2-steplix h2-steplix--outlined">
                     {t("about_us.digitalSherpas.titleTwo")}
-                </h1>
-            </div>
-            <div>
-                <StepCard
-                    textOne={t("about_us.digitalSherpas.descriptionOne")}
-                    textTwo={t("about_us.digitalSherpas.descriptionTwo")}
-                    textThree={t("about_us.digitalSherpas.descriptionThree")}
-                />
+                </span>
+            </h2>
+            <div className="p-steplix">
+                <p>{t("about_us.digitalSherpas.descriptionOne")}</p>
+                <br />
+                <p>{t("about_us.digitalSherpas.descriptionTwo")}</p>
+                <br />
+                <p>{t("about_us.digitalSherpas.descriptionThree")}</p>
             </div>
         </div>
     );

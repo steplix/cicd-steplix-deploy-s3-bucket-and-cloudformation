@@ -14,6 +14,9 @@ module.exports = {
                 },
             },
         },
+        boxShadow: {
+            steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
+        },
     },
     variants: {
         extend: {},

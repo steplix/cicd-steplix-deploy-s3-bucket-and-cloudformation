@@ -6,8 +6,7 @@
             "url": "UI_UXDesigner",
             "title": "UI/UX Designer Ssr.",
             "country": "Argentina",
-            "description":
-                "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
+            "description": "We are looking for a Ssr. UI/UX Designer with 3/5 years of experience and a great knowledge in UX and UI design.",
             "requirements": {
                 "title": "REQUIREMENTS",
                 "items": [
@@ -44,8 +43,7 @@
             "url": "FUNCTIONALANALYST",
             "title": "FUNCTIONAL ANALYST",
             "country": "Argentina",
-            "description":
-                "We are looking for a Ssr. Functional Analyst with 3/5 years of experience.",
+            "description": "We are looking for a Ssr. Functional Analyst with 3/5 years of experience.",
             "requirements": {
                 "title": "REQUISITOS",
                 "items": [
@@ -58,7 +56,6 @@
                     "Project Planning and Control.",
 
                     "Risk Analysis."
-                    
                 ]
             },
             "responsibilities": {
@@ -75,7 +72,6 @@
                     "Sprint Planning.",
 
                     "Sprint control."
-                    
                 ]
             },
             "workModality": {
@@ -109,8 +105,7 @@
             "url": "GROWTHMARKETING",
             "title": "GROWTH MARKETING",
             "country": "Argentina",
-            "description":
-                "At Steplix we are looking for a Growth Marketing Ssr.",
+            "description": "At Steplix we are looking for a Growth Marketing Ssr.",
             "responsibilities": {
                 "title": "JOB DESCRIPTION",
                 "items": [
@@ -165,8 +160,7 @@
             "url": "BACKENDSSR",
             "title": "BACKEND - SSR/SR",
             "country": "Argentina",
-            "description":
-                "Responsible for the design and construction of Microservices and Integrations using cloud architecture and NodeJS stack.",
+            "description": "Responsible for the design and construction of Microservices and Integrations using cloud architecture and NodeJS stack.",
             "requirements": {
                 "title": "KNOWLEDGE",
                 "items": [
@@ -239,7 +233,8 @@
     },
     "about_us": {
         "ourValues": {
-            "title": "Our values",
+            "titleOne": "Our",
+            "titleTwo": "values",
             "values": {
                 "valuetOne": {
                     "title": "Trust",
@@ -272,11 +267,12 @@
             "description": " Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators. "
         },
         "philosophy": {
-            "title": "Our philosophy",
+            "titleOne": "Our",
+            "titleTwo": "philosophy",
             "description": " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks in the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. Thus, we scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. "
         },
         "digitalSherpas": {
-            "titleOne": "Your digital",
+            "titleOne": "Your Digital Business",
             "titleTwo": "Sherpas",
             "descriptionOne": "  We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment. ",
             "descriptionTwo": " We make up an interdisciplinary team that combines the knowledge and views of each member to create an experience that ensures each business idea reaches the top. ",
@@ -284,7 +280,10 @@
         }
     },
     "process": {
-        "scrumFramework":{"titleOne":"Did you know that we work under the ", "titleTwo":"Scrum Framework?"},
+        "scrumFramework": {
+            "titleOne": "Did you know that we work under the ",
+            "titleTwo": "Scrum Framework?"
+        },
         "HowDoWeDoIt": {
             "title": "How do we do it?",
             "description": "In the mountains as in business, there are 4 basic concepts that cannot be missed to ensure reaching the top: spirit, body, mind and good resources. and, At Steplix we know that we can meet any challenge because we have all of them. ",
@@ -354,7 +353,6 @@
         "title": "About ",
         "emptyTitle": " Us",
 
-        
         "description": "We are the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you in every step of the joruney, minimizing the risk and amplifying the impact, in the agreed time. "
     },
     "whatWeDo": {
@@ -396,31 +394,31 @@
         "modalOne": {
             "title": " Business Discovery ",
             "descriptionOne": {
-                "textOne":" There are many ideas.But we constantly ask ourselves...Is there business? ",
-                "textTwo":" In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and toegether define the path to take.",
-                "textThree":"To make sure we undestand the context and all its variables, we put the idea through a series of analyzes, applying different methodologies. ",
-                 "textFour":" With a minimum invesment you can understand if there is and opportunity and how to take advantage of it. "
-            }, 
+                "textOne": " There are many ideas.But we constantly ask ourselves...Is there business? ",
+                "textTwo": " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and toegether define the path to take.",
+                "textThree": "To make sure we undestand the context and all its variables, we put the idea through a series of analyzes, applying different methodologies. ",
+                "textFour": " With a minimum invesment you can understand if there is and opportunity and how to take advantage of it. "
+            },
             "descriptionTwo": "Did you know that 75% of new business ideas fail in their first 3 years?"
         },
         "modalTwo": {
             "title": "Product Design",
             "descriptionOne": {
-                "textOne":" Once the business model and value proposition have been defined, we prepare to jointly design all the functionalities that the product will have, that idea that originated the business, and take another step towards the top. Product design is very important because it is through the interfaces and user experience that the end customer truly perceives the value of the platform. ",
-                "textTwo":" Strategy, creativity and innovation are key in this collaborative stage in which Steplix designs together with the client the most appropriate digital product to enhance the business and create an emotional response in whoever buys it. ",
-                "textThree":" In this way, we lead the user experience (UX) by improving functionalities and facilitating interaction in an agile and satisfactory way for everyone. ",
-                 "textFour":""
-            }, 
+                "textOne": " Once the business model and value proposition have been defined, we prepare to jointly design all the functionalities that the product will have, that idea that originated the business, and take another step towards the top. Product design is very important because it is through the interfaces and user experience that the end customer truly perceives the value of the platform. ",
+                "textTwo": " Strategy, creativity and innovation are key in this collaborative stage in which Steplix designs together with the client the most appropriate digital product to enhance the business and create an emotional response in whoever buys it. ",
+                "textThree": " In this way, we lead the user experience (UX) by improving functionalities and facilitating interaction in an agile and satisfactory way for everyone. ",
+                "textFour": ""
+            },
             "descriptionTwo": "Did you know that on average a person receives about 1700 ads in a month, but only pays attention to half of then? "
         },
         "modalThree": {
             "title": "Develop & Deliver  ",
             "descriptionOne": {
-                "textOne":" Our culture focuses on agile processes and methodologies that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve. ",
-                "textTwo":" With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first firm steps in the market. ",
-                "textThree":"But this does not end here!",
-                 "textFour":" At this stage, both the product and the business model are constantly evolving. With the commissioning, new skills and functionalities are discovered that restart the co-creation dynamics of the digital solution, and on this path Steplix will also accompany you. "
-            },             
+                "textOne": " Our culture focuses on agile processes and methodologies that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve. ",
+                "textTwo": " With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first firm steps in the market. ",
+                "textThree": "But this does not end here!",
+                "textFour": " At this stage, both the product and the business model are constantly evolving. With the commissioning, new skills and functionalities are discovered that restart the co-creation dynamics of the digital solution, and on this path Steplix will also accompany you. "
+            },
             "descriptionTwo": "Did you know that most projects fail to estimate costs and time, delaying time to market?"
         }
     },
