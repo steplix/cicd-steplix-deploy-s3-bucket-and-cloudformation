@@ -8,7 +8,7 @@ import Philosophy from "@/modules/about-us/Philosophy";
 import Head from "next/head";
 import Flags from "@/common/components/Flags";
 
-export default function Home() {
+export default function AboutUs() {
     return (
         <div className="relative">
             <Head>
