@@ -15,6 +15,7 @@ const StepCard = ({
     setisModalOpen,
     seeMoreLink,
     setPositionModal,
+    icon,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -34,20 +35,33 @@ const StepCard = ({
                 </p>
             )}
             <div>
-                {title && (
-                    <h2
-                        className={`h2-steplix font-black  ${
-                            colorTitle ? colorTitle : "text-white"
-                        }`}
-                    >
-                        {title}
-                        {emptyTitle && (
-                            <span className="h2-steplix h2-steplix--outlined">
-                                {emptyTitle}
-                            </span>
-                        )}
-                    </h2>
-                )}
+                <div className="flex">
+                    {title && (
+                        <h2
+                            className={`h2-steplix font-black  ${
+                                colorTitle ? colorTitle : "text-white"
+                            }`}
+                        >
+                            {title}
+                            {emptyTitle && (
+                                <span className="h2-steplix h2-steplix--outlined">
+                                    {emptyTitle}
+                                </span>
+                            )}
+                        </h2>
+                    )}
+                    {icon && (
+                        <div className="flex">
+                            {" "}
+                            <img
+                                src={icon}
+                                alt="values"
+                                className="ml-10 my-auto  h-14 w-[120px]"
+                            />
+                        </div>
+                    )}
+                </div>
+
                 {colorLine && (
                     <div
                         className={`h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
@@ -93,5 +107,6 @@ StepCard.propTypes = {
     textTwo: PropTypes.string,
     textThree: PropTypes.string,
     textFour: PropTypes.string,
+    icon: PropTypes.string,
 };
 export default StepCard;

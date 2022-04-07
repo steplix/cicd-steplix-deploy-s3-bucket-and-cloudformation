@@ -87,36 +87,41 @@ const JobItemCard = ({ item }) => {
                     </span>
                 </h2>
                 <div>
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-27">
+                    <div className="grid grid-cols-3 lg:flex-row gap-10 lg:gap-27">
                         <StepCard
                             title={t("jobs.valuesSteplix.valueOne.title")}
                             colorTitle="font-semibold text-white"
                             colorLine="bg-steplix-blue"
                             textOne={t("jobs.valuesSteplix.valueOne.text")}
+                            icon={"/assets/img/trust.svg"}
                         />
                         <StepCard
                             title={t("jobs.valuesSteplix.valueTwo.title")}
                             colorTitle="font-semibold text-white"
                             colorLine="bg-steplix-red"
                             textOne={t("jobs.valuesSteplix.valueTwo.text")}
+                            icon={"/assets/img/respect.svg"}
                         />
                         <StepCard
                             title={t("jobs.valuesSteplix.valueThree.title")}
                             colorTitle="font-semibold text-white"
                             colorLine="bg-steplix-yellow"
                             textOne={t("jobs.valuesSteplix.valueThree.text")}
+                            icon={"/assets/img/success.svg"}
                         />{" "}
                         <StepCard
                             title={t("jobs.valuesSteplix.valueFour.title")}
                             colorTitle="font-semibold text-white"
                             colorLine="bg-steplix-red"
                             textOne={t("jobs.valuesSteplix.valueFour.text")}
+                            icon={"/assets/img/agil.svg"}
                         />
                         <StepCard
                             title={t("jobs.valuesSteplix.valueFive.title")}
                             colorTitle="font-semibold text-white"
-                            colorLine="bg-steplix-yellow"
                             textOne={t("jobs.valuesSteplix.valueFive.text")}
+                            colorLine="bg-steplix-blue"
+                            icon={"/assets/img/conscience.svg"}
                         />
                     </div>
                 </div>
