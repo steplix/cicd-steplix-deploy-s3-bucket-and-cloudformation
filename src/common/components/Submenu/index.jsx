@@ -16,7 +16,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
     return (
         <>
             <div
-                className={`submenu bg-steplix-lilac ${
+                className={`submenu bg-steplix-lilac font-medium ${
                     toggle ? "submenu--toggle" : ""
                 }`}
             >
@@ -41,7 +41,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         />{" "}
                     </button>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-blue">
+                <div className="submenu--item item-center hover:border-steplix-blue">
                     <div className="py-3 pl-6 ">
                         <Link href="about-us">
                             <a
@@ -58,7 +58,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
+                <div className="submenu--item item-center hover:border-steplix-red">
                     <div className="py-3 pl-6 ">
                         <Link href="process">
                             <a
@@ -75,7 +75,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="hover:bg-steplix-purple flex item-center text-left w-[94%] h-[48px] hover:border-l-4 hover:border-steplix-red">
+                <div className="submenu--item item-center hover:border-steplix-yellow">
                     <div className="py-3 pl-6 ">
                         <Link href={{ pathname: "jobs", query: query }}>
                             <a

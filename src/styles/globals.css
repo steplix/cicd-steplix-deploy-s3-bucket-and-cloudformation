@@ -125,8 +125,12 @@ body {
     @apply opacity-100 bg-steplix-lilac;
 }
 
+.submenu--item{
+    @apply hover:bg-steplix-purple hover:font-bold flex  text-left w-[94%] h-[48px] hover:border-l-4;
+}
+
 .nav--active {
-    @apply text-steplix-yellow;
+    @apply text-steplix-yellow font-bold;
 }
 
 /* SUBMENU & NAVBAR END */

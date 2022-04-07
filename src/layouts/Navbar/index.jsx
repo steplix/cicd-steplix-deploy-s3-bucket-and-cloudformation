@@ -102,11 +102,11 @@ const Navbar = () => {
                                 href={{ pathname: "/about-us", query: query }}
                             >
                                 <a
-                                    className={
+                                    className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/about-us"
-                                            ? "nav--active"
+                                            ? "nav--active opacity-100"
                                             : ""
-                                    }
+                                    }`}
                                     href="#about-us"
                                 >
                                     {t("navbar.item1")}
@@ -114,11 +114,11 @@ const Navbar = () => {
                             </Link>
                             <Link href={{ pathname: "/process", query: query }}>
                                 <a
-                                    className={
+                                    className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/process"
-                                            ? "nav--active"
+                                            ? "nav--active opacity-100"
                                             : ""
-                                    }
+                                    }`}
                                     href="#what-we-do"
                                 >
                                     {t("navbar.item2")}
@@ -127,11 +127,11 @@ const Navbar = () => {
 
                             <Link href={{ pathname: "/jobs", query: query }}>
                                 <a
-                                    className={
+                                    className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/jobs"
-                                            ? "nav--active"
+                                            ? "nav--active opacity-100"
                                             : ""
-                                    }
+                                    }`}
                                 >
                                     {t("navbar.item5")}
                                 </a>
