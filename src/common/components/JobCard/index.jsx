@@ -18,9 +18,11 @@ const JobCard = ({ title, country, apply, url }) => {
             </div>
             <div>
                 <Link href={{ pathname: `jobs/${url}`, query: query }}>
-                    <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
-                        {apply}
-                    </button>
+                    <a>
+                        <button className="bg-steplix-red w-[65px] h-[35px] mt-16 ">
+                            {apply}
+                        </button>
+                    </a>
                 </Link>
             </div>
         </div>
