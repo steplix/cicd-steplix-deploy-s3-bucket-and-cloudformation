@@ -3,6 +3,7 @@
         "applyButton": "Postulate",
         "title": "Conocé nuestras",
         "titleEmpty": "búsquedas",
+        "textCV":"Si sabes que podes ser un gran Steplixer... ¡envianos tu cv!",
         "UI_UXDesigner": {
             "url": "UI_UXDesigner",
             "title": "UX/UI DESIGNER",
@@ -66,6 +67,7 @@
                 ]
             },
             "Benefits":{
+                "title":"Beneficios",
                 "textOne":"💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
                 "textTwo":"💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
                 "textThree":" ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
@@ -117,6 +119,7 @@
                 ]
             },
             "Benefits":{
+                "title":"Beneficios",
                 "textOne":"💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
                 "textTwo":"💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
                 "textThree":" ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
@@ -124,6 +127,30 @@
                 "textFive":" 🤓 Clases de inglés + Plan de carrera ",
                 "textSix":"🏥 Medicina prepaga primer nivel"
             }
+        },
+        "valuesSteplix":{
+            "title":"Valores",
+            "titleEmpty":"Steplix ",
+            "valueOne":{
+                "title":"Confianza",
+                "text":"Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos. "
+            },
+            "valueTwo":{
+                "title":"Respeto Mutuo",
+                "text":"Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
+            },
+            "valueThree":{
+                "title":"Éxito",
+                "text":"Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
+            },
+            "valueFour":{
+                "title":"Agilidad",
+                "text":"Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
+            },
+            "valueFive":{
+                "title":"Conciencia",
+                "text":"Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia"
+            }          
         }
     },
     "about_us": {
