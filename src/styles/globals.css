@@ -146,15 +146,22 @@ body {
 /* SUBMENU & NAVBAR END */
 
 /* START JOBS */
-@media (min-width: 768px) {
-    .bg--job {
+    .bg--jobs {
         height: 1000px;
-        background-image: url("../../public/assets/img/bg-job.svg");
+        background-image: url("../../public/assets/img/bg-jobs.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom right;
 
     }
-}
+
+    .bg--job {
+        background-image: url("../../public/assets/img/bg-job.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 10%;
+
+    }
+
 /*END JOBS */
 

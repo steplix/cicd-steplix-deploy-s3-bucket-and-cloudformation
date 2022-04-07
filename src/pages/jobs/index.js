@@ -16,8 +16,8 @@ export default function Jobs() {
                 <meta name="robots" content="noindex" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <section className="bg--job">
-                <div className="container-steplix  section-steplix">
+            <section className="bg--jobs">
+                <div className="container-steplix section-steplix">
                     <BecomeASteplixer />
                 </div>
             </section>
