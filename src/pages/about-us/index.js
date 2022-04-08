@@ -14,6 +14,7 @@ export default function AboutUs() {
     return (
         <>
             <Head>
+                {/* HTML Meta Tags */}
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -59,6 +60,7 @@ export default function AboutUs() {
                     soluciones digitales,
                     Digital Business Ecosystem"
                 />
+                {/* Facebook Meta Tags */}
                 <meta
                     property="og:title"
                     content={t("metaTags.aboutUs.title")}
@@ -80,6 +82,25 @@ export default function AboutUs() {
                 <meta property="og:image:width" content="800" />
                 <meta property="og:image:height" content="200" />
                 <meta property="og:image:alt" content="Steplix Logo" />
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="steplix.com" />
+                <meta
+                    property="twitter:url"
+                    content="https://steplix.com/about-us/"
+                />
+                <meta
+                    name="twitter:title"
+                    content={t("metaTags.aboutUs.title")}
+                />
+                <meta
+                    name="twitter:description"
+                    content={t("metaTags.aboutUs.description")}
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://steplix.com/assets/img/logo.png"
+                />
             </Head>
             <div className="flex flex-col gap-10 xl:gap-20 relative pt-32 xl:pt-44 pb-12 xl:pb-40">
                 <DigitalSherpas />

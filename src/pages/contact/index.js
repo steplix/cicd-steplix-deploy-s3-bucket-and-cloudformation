@@ -7,6 +7,7 @@ export default function Contact() {
     return (
         <>
             <Head>
+                {/* HTML Meta Tags */}
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -52,6 +53,7 @@ export default function Contact() {
                     soluciones digitales,
                     Digital Business Ecosystem"
                 />
+                {/* Facebook Meta Tags */}
                 <meta
                     property="og:title"
                     content={t("metaTags.contact.title")}
@@ -73,6 +75,25 @@ export default function Contact() {
                 <meta property="og:image:width" content="800" />
                 <meta property="og:image:height" content="200" />
                 <meta property="og:image:alt" content="Steplix Logo" />
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="steplix.com" />
+                <meta
+                    property="twitter:url"
+                    content="https://steplix.com/contact/"
+                />
+                <meta
+                    name="twitter:title"
+                    content={t("metaTags.contact.title")}
+                />
+                <meta
+                    name="twitter:description"
+                    content={t("metaTags.contact.description")}
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://steplix.com/assets/img/logo.png"
+                />
             </Head>
             <div className="relative">
                 <div className="flex items-center justify-center">contacto</div>

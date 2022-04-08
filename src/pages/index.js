@@ -12,6 +12,7 @@ export default function Home() {
     return (
         <>
             <Head>
+                {/* HTML Meta Tags */}
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -57,6 +58,7 @@ export default function Home() {
                     soluciones digitales,
                     Digital Business Ecosystem"
                 />
+                {/* Facebook Meta Tags */}
                 <meta property="og:title" content={t("metaTags.home.title")} />
                 <meta
                     property="og:description"
@@ -72,6 +74,19 @@ export default function Home() {
                 <meta property="og:image:width" content="800" />
                 <meta property="og:image:height" content="200" />
                 <meta property="og:image:alt" content="Steplix Logo" />
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="steplix.com" />
+                <meta property="twitter:url" content="https://steplix.com/" />
+                <meta name="twitter:title" content={t("metaTags.home.title")} />
+                <meta
+                    name="twitter:description"
+                    content={t("metaTags.home.description")}
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://steplix.com/assets/img/logo.png"
+                />
             </Head>
             <main className="relative">
                 <Masthead />
