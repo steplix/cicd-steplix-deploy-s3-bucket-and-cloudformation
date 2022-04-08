@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ButtonApply from "../ButtonApply";
 import { useLanguageQuery } from "next-export-i18n";
