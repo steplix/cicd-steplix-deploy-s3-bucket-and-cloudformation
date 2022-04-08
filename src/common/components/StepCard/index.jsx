@@ -38,7 +38,7 @@ const StepCard = ({
                 <div className="flex">
                     {title && (
                         <h2
-                            className={`h2-steplix font-black  ${
+                            className={`text-[50px] font-black  ${
                                 colorTitle ? colorTitle : "text-white"
                             }`}
                         >
@@ -51,7 +51,7 @@ const StepCard = ({
                         </h2>
                     )}
                     {icon && (
-                        <div className="flex">
+                        <div className="flex h-14 w-[120px]">
                             {" "}
                             <img
                                 src={icon}

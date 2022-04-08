@@ -74,7 +74,7 @@ const JobItemCard = ({ item }) => {
                 <p className="xl:text-[32px] font-bold">{t("jobs.textCV")}</p>
             </div>
             <div className="flex justify-center text-center">
-                <div>
+                <div className="space-y-3">
                     <ButtonApply
                         apply={t("jobs.applyButton")}
                         url="rrhh@steplix.com"
@@ -84,12 +84,26 @@ const JobItemCard = ({ item }) => {
                     <p>rrhh@ steplix.com</p>
                 </div>
             </div>
-            <div>josefina salimei rrhh</div>
+            <div className="mt-[70px] mb-[170px] w-[662px] h-[167px] flex items-center border-2 border-steplix-red rounded-2xl">
+                <div className="h-[100px] w-[100px] xl:ml-[70px]">
+                    <img src="/assets/img/rrhh.svg" alt="rrhh" />
+                </div>
+                <div className="w-[5px] h-[80px] bg-steplix-red mx-[30px]" />
+                <div className="space-y-2">
+                    {" "}
+                    <p className="font-bold text-[32px]">Josefina Salimei</p>
+                    <p className="p-steplix">RR.HH</p>
+                </div>
+
+                <div className="w-[33px] h-[23px] xl:ml-[100px]">
+                    <img src="/assets/img/email.svg" alt="email" />
+                </div>
+            </div>
             {/* section values steplix */}
             <div>
-                <h2>
+                <h2 className="h2-steplix font-black mb-[85px]">
                     {t("jobs.valuesSteplix.title")}
-                    <span className="title--empty">
+                    <span className="title-empty">
                         {t("jobs.valuesSteplix.titleEmpty")}
                     </span>
                 </h2>
