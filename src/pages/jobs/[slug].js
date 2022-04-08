@@ -90,8 +90,8 @@ const Job = () => {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="pt-48 ">
-                <div className="mb-36 flex items-center justify-center ">
+            <div className="bg--job">
+                <div className="container-steplix section-steplix">
                     <JobItemCard item={t(`jobs.${nameJob}`)} />
                 </div>
             </div>

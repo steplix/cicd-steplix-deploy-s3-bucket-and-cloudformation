@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -17,6 +18,7 @@ const StepCard = ({
     setisModalOpen,
     seeMoreLink,
     setPositionModal,
+    icon,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -36,20 +38,33 @@ const StepCard = ({
                 </p>
             )}
             <div>
-                {title && (
-                    <h2
-                        className={`h2-steplix ${sizeTitle ? sizeTitle : ""} ${
-                            colorTitle ? colorTitle : "text-white"
-                        }`}
-                    >
-                        {title}
-                        {emptyTitle && (
-                            <span className="h2-steplix h2-steplix--outlined">
-                                {emptyTitle}
-                            </span>
-                        )}
-                    </h2>
-                )}
+                <div className="flex">
+                    {title && (
+                        <h2
+                            className={`h2-steplix ${
+                                sizeTitle ? sizeTitle : ""
+                            } ${colorTitle ? colorTitle : "text-white"}`}
+                        >
+                            {title}
+                            {emptyTitle && (
+                                <span className="h2-steplix h2-steplix--outlined">
+                                    {emptyTitle}
+                                </span>
+                            )}
+                        </h2>
+                    )}
+                    {icon && (
+                        <div className="flex h-14 w-[120px]">
+                            {" "}
+                            <img
+                                src={icon}
+                                alt="values"
+                                className="xl:ml-10 ml-3 my-auto xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
+                            />
+                        </div>
+                    )}
+                </div>
+
                 {colorLine && (
                     <div
                         className={`h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
@@ -105,5 +120,7 @@ StepCard.propTypes = {
     textTwo: PropTypes.string,
     textThree: PropTypes.string,
     textFour: PropTypes.string,
+    icon: PropTypes.string,
+    sizeTitle: PropTypes.string,
 };
 export default StepCard;

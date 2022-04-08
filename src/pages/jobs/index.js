@@ -89,12 +89,12 @@ export default function Jobs() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="relative">
-                <section className="container-steplix section-steplix">
+            <section className="bg--jobs relative">
+                <div className="container-steplix section-steplix flex justify-center">
                     <BecomeASteplixer />
-                </section>
-                <Flags />
-            </div>
+                </div>
+            </section>
+            <Flags />
         </>
     );
 }
