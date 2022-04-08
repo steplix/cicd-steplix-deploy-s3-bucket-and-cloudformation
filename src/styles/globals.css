@@ -299,3 +299,26 @@ body {
 
 /*END JOBS */
 
+
+/* START Contact */
+@media (min-width: 768px) {
+    .bg--contact {
+        height: 1000px;
+        background-image: url("../../public/assets/img/bg-jobs.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% right;
+
+    }
+}
+    .bg--contact {
+        height: 1000px;
+        background-image: url("../../public/assets/img/bg-jobs.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 10px 400px;
+    }
+
+ 
+/*END contact */
+
