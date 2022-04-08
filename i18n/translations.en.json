@@ -435,5 +435,27 @@
     },
     "footer": {
         "certificateText": "Quality politics"
+    },
+    "metaTags": {
+        "home": {
+            "title": "Digital Sherpas | Steplix Software 🧗",
+            "description": "We are here to co-create the path that will take your business to the top 🆙"
+        },
+        "aboutUs": {
+            "title": "About us | Digital Sherpas | Steplix Software 🧗",
+            "description": "We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment."
+        },
+        "process": {
+            "title": "Process | Digital Sherpas | Steplix Software 🧗",
+            "description": "1⃣ Understand & scope the digitalization of your business |  2⃣ Product Design | 3⃣ Develop & Deliver"
+        },
+        "contact": {
+            "title": "Contact us | Digital Sherpas | Steplix Software 🧗",
+            "description": "Contact us to take together your project from the bottom to the top 🗻"
+        },
+        "jobs": {
+            "title": "Become a Steplixer | Digital Sherpas | Steplix Software 🧗",
+            "description": "Take a look at job offers at Steplix."
+        }
     }
 }

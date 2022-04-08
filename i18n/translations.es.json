@@ -433,5 +433,27 @@
     },
     "footer": {
         "certificateText": "Política de calidad"
+    },
+    "metaTags": {
+        "home": {
+            "title": "Sherpas Digitales | Steplix Software 🧗",
+            "description": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima 🆙"
+        },
+        "aboutUs": {
+            "title": "Sobre nosotros | Sherpas Digitales | Steplix Software 🧗",
+            "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía."
+        },
+        "process": {
+            "title": "Qué hacemos | Sherpas Digitales | Steplix Software 🧗",
+            "description": "¿Cuál es tu punto de partida? 1⃣ Conociendo tu negocio | 2⃣ Diseño de producto | 3⃣ Desarrollo y entrega"
+        },
+        "contact": {
+            "title": "Contáctanos | Sherpas Digitales | Steplix Software 🧗",
+            "description": "Contáctanos para llevar juntos esa idea hacia la cima 🗻"
+        },
+        "jobs": {
+            "title": "Convertite en Steplixer | Sherpas Digitales | Steplix Software 🧗",
+            "description": "Chequea las ofertas de trabajo en Steplix."
+        }
     }
 }

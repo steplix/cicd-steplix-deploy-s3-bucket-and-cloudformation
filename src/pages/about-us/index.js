@@ -1,12 +1,15 @@
 import Head from "next/head";
 import { useTranslation } from "next-export-i18n";
+import {
+    DigitalSherpas,
+    MissionVision,
+    OurValues,
+    Philosophy,
+} from "@/modules/about-us";
+import CollageAboutUs from "@/common/components/CollageAboutUs";
 import Flags from "@/common/components/Flags";
-import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
-import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";
-import ScrumFramework from "@/modules/process/ScrumFramework";
-import StepsToTheTop from "@/modules/process/StepsToTheTop";
 
-export default function Process() {
+export default function AboutUs() {
     const { t } = useTranslation();
     return (
         <>
@@ -17,10 +20,10 @@ export default function Process() {
                 />
                 <meta name="robots" content="index, follow" />
                 <link rel="icon" href="/favicon.png" />
-                <title>{t("metaTags.process.title")}</title>
+                <title>{t("metaTags.aboutUs.title")}</title>
                 <meta
                     name="description"
-                    content={t("metaTags.process.description")}
+                    content={t("metaTags.aboutUs.description")}
                 />
                 <meta
                     name="keywords"
@@ -58,15 +61,15 @@ export default function Process() {
                 />
                 <meta
                     property="og:title"
-                    content={t("metaTags.process.title")}
+                    content={t("metaTags.aboutUs.title")}
                 />
                 <meta
                     property="og:description"
-                    content={t("metaTags.process.description")}
+                    content={t("metaTags.aboutUs.description")}
                 />
                 <meta
                     property="og:url"
-                    content="https://steplix.com/process/"
+                    content="https://steplix.com/about-us/"
                 />
                 <meta property="og:type" content="website" />
                 <meta
@@ -78,19 +81,12 @@ export default function Process() {
                 <meta property="og:image:height" content="200" />
                 <meta property="og:image:alt" content="Steplix Logo" />
             </Head>
-            <div className="relative">
-                <div className="flex items-center section-steplix">
-                    <EverythingStartsWithAnIdea />
-                </div>
-                <div className="container-steplix section-steplix">
-                    <StepsToTheTop />
-                </div>
-                <div className="container-steplix section-steplix">
-                    <HoDoWeDoIt />
-                </div>{" "}
-                <div className="container-steplix section-steplix">
-                    <ScrumFramework />
-                </div>
+            <div className="flex flex-col gap-10 xl:gap-20 relative pt-32 xl:pt-44 pb-12 xl:pb-40">
+                <DigitalSherpas />
+                <Philosophy />
+                <MissionVision />
+                <OurValues />
+                <CollageAboutUs sm />
                 <Flags />
             </div>
         </>
