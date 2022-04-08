@@ -9,13 +9,13 @@ const JobItemCard = ({ item }) => {
     const { t } = useTranslation();
     return (
         <div className="my-20 ">
-            <div className="mb-20">
-                <h1 className="lg:text-[100px] text-lg mb-4 font-black">
+            <div className="mb-[190px]">
+                <h1 className="lg:text-[100px] text-lg text-center font-black">
                     {item?.title}{" "}
                     <span className="title-empty"> {item?.titleEmpty} </span>
                 </h1>
             </div>
-            <div className="mx-auto flex justify-center">
+            <div className="mx-auto mb-[110px] flex justify-center">
                 <ButtonApply
                     apply={t("jobs.applyButton")}
                     url="rrhh@steplix.com"
@@ -23,59 +23,66 @@ const JobItemCard = ({ item }) => {
                 />
             </div>
             <div>
-                <p className="lg:text-xl text-base">{item?.description}</p>
+                <p className="p-steplix">{item?.description}</p>
             </div>
             <div>
-                <p>{item?.values?.title}</p>
-                <p>{item?.values?.textOne}</p>
-                <p>{item?.values?.textTwo}</p>
+                <p className="xl:text-[32px] font-bold mt-[60px] mb-7">
+                    {item?.values?.title}
+                </p>
+                <p className="p-steplix">{item?.values?.textOne}</p>
+                <p className="p-steplix">{item?.values?.textTwo}</p>
             </div>
 
             <div>
-                <p className="text-2xl font-black mb-10 ">
+                <p className="xl:text-[32px] font-bold mt-[70px] mb-7">
                     {item?.requirements?.title}
                 </p>
-                <ul className="list-disc mb-14">
+                <ul className="list-disc mb-[70px] p-steplix">
                     {item?.requirements?.items.map((element, index) => (
                         <li key={index}>{element}</li>
                     ))}
                 </ul>
             </div>
             <div>
-                <p className="text-2xl font-black my-10 ">
+                <p className="xl:text-[32px] font-bold mt-[70px] mb-7">
                     {item?.responsibilities?.title}
                 </p>
-                <p className="text-2xl font-black my-10 ">
+                <p className="p-steplix mt-10">
                     {item?.responsibilities?.subtitle}
                 </p>
-                <ul className="list-disc mb-14">
+                <ul className="list-disc mb-[70px] p-steplix">
                     {item?.responsibilities?.items.map((element, index) => (
                         <li key={index}>{element}</li>
                     ))}
                 </ul>
             </div>
-            <div>
-                <p>{item?.Benefits?.title}</p>
-                <p>{item?.Benefits?.textOne}</p>
-                <p>{item?.Benefits?.textTwo}</p>
-                <p>{item?.Benefits?.textThree}</p>
-                <p>{item?.Benefits?.textFour}</p>
-                <p>{item?.Benefits?.textFive}</p>
-                <p>{item?.Benefits?.textSix}</p>
+            <div className="">
+                <p className="xl:text-[32px] font-bold mt-[70px] mb-7">
+                    {item?.Benefits?.title}
+                </p>
+                <div className="p-steplix space-y-6">
+                    <p className="">{item?.Benefits?.textOne}</p>
+                    <p className="">{item?.Benefits?.textTwo}</p>
+                    <p className="">{item?.Benefits?.textThree}</p>
+                    <p className="">{item?.Benefits?.textFour}</p>
+                    <p className="">{item?.Benefits?.textFive}</p>
+                    <p className="">{item?.Benefits?.textSix}</p>
+                </div>
             </div>
             {/* section apply */}
-            <div>
-                <p>{item?.textCV}</p>
-                textCV
+            <div className="my-24">
+                <p className="xl:text-[32px] font-bold">{t("jobs.textCV")}</p>
             </div>
-            <div>
-                <ButtonApply
-                    apply={t("jobs.applyButton")}
-                    url="rrhh@steplix.com"
-                    query={query}
-                />
-                <p>ó</p>
-                <p>rrhh@ steplix.com</p>
+            <div className="flex justify-center text-center">
+                <div>
+                    <ButtonApply
+                        apply={t("jobs.applyButton")}
+                        url="rrhh@steplix.com"
+                        query={query}
+                    />
+                    <p>ó</p>
+                    <p>rrhh@ steplix.com</p>
+                </div>
             </div>
             <div>josefina salimei rrhh</div>
             {/* section values steplix */}
