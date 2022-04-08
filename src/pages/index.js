@@ -1,15 +1,14 @@
+import Head from "next/head";
 import Masthead from "@/modules/Masthead";
 import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";
 import WhatWeDo from "@/modules/WhatWeDo";
-import Head from "next/head";
 import HappyClients from "@/modules/HappyClients";
-import ContactIndex from "@/modules/ContactUs";
 import Flags from "@/common/components/Flags";
 
 export default function Home() {
     return (
-        <main className="relative">
+        <>
             <Head>
                 <meta
                     name="viewport"
@@ -37,23 +36,22 @@ export default function Home() {
                 <meta property="og:url" content="https://steplix.com/" />
                 <meta property="og:type" content="website" />
             </Head>
-            <section className="container-steplix">
+            <main className="relative">
                 <Masthead />
-            </section>
-
-            <section className="container-steplix">
-                <AboutUs />
-            </section>
-            <section className="container-steplix">
-                <WhatWeDo />
-            </section>
-            <section className=" container-steplix">
-                <OurCulture />
-            </section>
-            <section className="container-steplix">
-                <HappyClients />
-            </section>
-            <Flags />
-        </main>
+                <section className="container-steplix">
+                    <AboutUs />
+                </section>
+                <section className="container-steplix xl:pb-64">
+                    <WhatWeDo />
+                </section>
+                <section className="container-steplix">
+                    <OurCulture />
+                </section>
+                <section className="container-steplix xl:pb-64">
+                    <HappyClients />
+                </section>
+                <Flags />
+            </main>
+        </>
     );
 }
