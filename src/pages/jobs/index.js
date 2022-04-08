@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import ContactUs from "@/modules/ContactUs";
 import BecomeASteplixer from "@/modules/jobs/BecomeASteplixer";
 import Head from "next/head";
 import { useTranslation } from "next-export-i18n";
@@ -17,7 +16,7 @@ export default function Jobs() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <section className="bg--jobs">
-                <div className="container-steplix section-steplix">
+                <div className="container-steplix section-steplix flex justify-center">
                     <BecomeASteplixer />
                 </div>
             </section>

@@ -59,7 +59,7 @@ const StepCard = ({
                             <img
                                 src={icon}
                                 alt="values"
-                                className="ml-10 my-auto  h-14 w-[120px]"
+                                className="xl:ml-10 ml-3 my-auto xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
                             />
                         </div>
                     )}
