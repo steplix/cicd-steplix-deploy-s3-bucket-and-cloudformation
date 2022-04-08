@@ -5,7 +5,7 @@ import JobCard from "@/common/components/JobCard";
 const BecomeASteplixer = () => {
     const { t } = useTranslation();
     return (
-        <div className="pt-44 xl:mb-20 mb-8">
+        <div className="xl:pt-44 xl:mb-20 my-2">
             <h1 className="h2-steplix font-black">
                 {t("jobs.title")}{" "}
                 <span className="title-empty"> {t("jobs.titleEmpty")}</span>
