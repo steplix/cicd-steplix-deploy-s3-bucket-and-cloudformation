@@ -71,8 +71,8 @@ export default function Home() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
                 <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content="800" />
-                <meta property="og:image:height" content="200" />
+                <meta property="og:image:width" content="200" />
+                <meta property="og:image:height" content="54" />
                 <meta property="og:image:alt" content="Steplix Logo" />
                 {/* Twitter Meta Tags */}
                 <meta name="twitter:card" content="summary_large_image" />
