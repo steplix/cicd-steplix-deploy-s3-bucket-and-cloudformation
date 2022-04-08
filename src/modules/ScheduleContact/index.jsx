@@ -50,9 +50,12 @@ const ScheduleContact = () => {
                 <p className="xl:text-[40px] mt-[30px] xl:mt-[50px] mb-[80px] xl:mb-[220px]">
                     {t("contact.brochureText")}
                     <span className="text-steplix-yellow decoration-solid underline">
-                        <button className="text-steplix-yellow decoration-solid underline">
+                        <a
+                            href="assets/files/brochure.pdf"
+                            download="brochure-steplix"
+                        >
                             {t("contact.brochure")}
-                        </button>
+                        </a>
                     </span>
                 </p>
             </div>
