@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 import ContactCard from "@/common/components/ContactCard";
