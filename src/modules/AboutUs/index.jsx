@@ -1,6 +1,4 @@
 import React from "react";
-import StepCard from "@/common/components/StepCard";
-import Link from "next/link";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
 const AboutUs = () => {
@@ -8,18 +6,20 @@ const AboutUs = () => {
     const [query] = useLanguageQuery();
 
     return (
-        <div className="section-steplix lg:flex mt-[50px]" id="about-us">
-            <p className="title-empty lg:text-[176px] text-5xl font-extrabold lg:mr-[130px] mb-[50px] text-center">
+        <div className="section-steplix xl:flex xl:gap-28" id="about-us">
+            <div className="hidden xl:block steplix--outlined xl:text-[176px] font-black tracking-widest">
                 Steplix
-            </p>
-            <div className="w-[325px] lg:w-[610px]">
-                <StepCard
-                    title={t("aboutUs.title")}
-                    emptyTitle={t("aboutUs.emptyTitle")}
-                    colorTitle="font-bold text-white"
-                    seeMore={t("seeMore")}
-                    textOne={t("aboutUs.description")}
-                />
+            </div>
+            <div className="xl:w-[600px]">
+                <h3 className="mb-3.5 xl:mb-2.5">
+                    <span className="h3-steplix h3-steplix--filled">
+                        {t("aboutUs.title")}{" "}
+                    </span>
+                    <span className="h3-steplix h3-steplix--outlined">
+                        {t("aboutUs.emptyTitle")}
+                    </span>
+                </h3>
+                <p className="p-steplix">{t("aboutUs.description")}</p>
             </div>
         </div>
     );

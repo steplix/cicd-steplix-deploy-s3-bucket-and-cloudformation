@@ -4,10 +4,12 @@ import PropTypes from "prop-types";
 const StepCard = ({
     number,
     title,
+    sizeTitle,
     emptyTitle,
     seeMore,
     colorLine,
     textOne,
+    widthTextOne,
     textTwo,
     textThree,
     textFour,
@@ -16,7 +18,6 @@ const StepCard = ({
     seeMoreLink,
     setPositionModal,
     icon,
-    sizeTitle,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -31,7 +32,7 @@ const StepCard = ({
             }`}
         >
             {number && (
-                <p className="text-white lg:text-3xl text-2xl font-black">
+                <p className="number-steplix number-steplix--outlined">
                     {number}
                 </p>
             )}
@@ -39,11 +40,9 @@ const StepCard = ({
                 <div className="flex">
                     {title && (
                         <h2
-                            className={`${
-                                sizeTitle ? sizeTitle : "h2-steplix"
-                            } font-black  ${
-                                colorTitle ? colorTitle : "text-white"
-                            }`}
+                            className={`h2-steplix ${
+                                sizeTitle ? sizeTitle : ""
+                            } ${colorTitle ? colorTitle : "text-white"}`}
                         >
                             {title}
                             {emptyTitle && (
@@ -72,7 +71,15 @@ const StepCard = ({
                 )}
 
                 <>
-                    {textOne && <p className="p-steplix">{textOne}</p>}
+                    {textOne && (
+                        <p
+                            className={`p-steplix ${
+                                widthTextOne ? widthTextOne : ""
+                            }`}
+                        >
+                            {textOne}
+                        </p>
+                    )}
                     {textTwo && <p className="p-steplix">{textTwo}</p>}
                     {textThree && <p className="p-steplix">{textThree}</p>}
                     {textFour && <p className="p-steplix">{textFour}</p>}
@@ -102,11 +109,13 @@ const StepCard = ({
 StepCard.propTypes = {
     number: PropTypes.string,
     title: PropTypes.string,
+    sizeTitle: PropTypes.string,
     emptytitle: PropTypes.string,
     seeMore: PropTypes.string,
     colorLine: PropTypes.string,
     colorTitle: PropTypes.string,
     textOne: PropTypes.string,
+    widthTextOne: PropTypes.string,
     textTwo: PropTypes.string,
     textThree: PropTypes.string,
     textFour: PropTypes.string,

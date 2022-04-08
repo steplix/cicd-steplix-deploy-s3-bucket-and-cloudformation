@@ -1,13 +1,16 @@
-import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
-import JobItemCard from "@/common/components/JobItemCard";
+import {
+    DigitalSherpas,
+    MissionVision,
+    OurValues,
+    Philosophy,
+} from "@/modules/about-us";
+import CollageAboutUs from "@/common/components/CollageAboutUs";
+import Flags from "@/common/components/Flags";
 
-const Job = () => {
+export default function AboutUs() {
     const { t } = useTranslation();
-    const router = useRouter();
-    let nameJob = router.query.slug;
     return (
         <>
             <Head>
@@ -18,10 +21,10 @@ const Job = () => {
                 />
                 <meta name="robots" content="index, follow" />
                 <link rel="icon" href="/favicon.png" />
-                <title>{t("metaTags.jobs.title")}</title>
+                <title>{t("metaTags.aboutUs.title")}</title>
                 <meta
                     name="description"
-                    content={t("metaTags.jobs.description")}
+                    content={t("metaTags.aboutUs.description")}
                 />
                 <meta
                     name="keywords"
@@ -58,12 +61,18 @@ const Job = () => {
                     Digital Business Ecosystem"
                 />
                 {/* Facebook Meta Tags */}
-                <meta property="og:title" content={t("metaTags.jobs.title")} />
+                <meta
+                    property="og:title"
+                    content={t("metaTags.aboutUs.title")}
+                />
                 <meta
                     property="og:description"
-                    content={t("metaTags.jobs.description")}
+                    content={t("metaTags.aboutUs.description")}
                 />
-                <meta property="og:url" content="https://steplix.com/jobs/" />
+                <meta
+                    property="og:url"
+                    content="https://steplix.com/about-us/"
+                />
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:image"
@@ -78,25 +87,29 @@ const Job = () => {
                 <meta property="twitter:domain" content="steplix.com" />
                 <meta
                     property="twitter:url"
-                    content="https://steplix.com/jobs/"
+                    content="https://steplix.com/about-us/"
                 />
-                <meta name="twitter:title" content={t("metaTags.jobs.title")} />
+                <meta
+                    name="twitter:title"
+                    content={t("metaTags.aboutUs.title")}
+                />
                 <meta
                     name="twitter:description"
-                    content={t("metaTags.jobs.description")}
+                    content={t("metaTags.aboutUs.description")}
                 />
                 <meta
                     name="twitter:image"
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="pt-48 ">
-                <div className="mb-36 flex items-center justify-center ">
-                    <JobItemCard item={t(`jobs.${nameJob}`)} />
-                </div>
+            <div className="flex flex-col gap-10 xl:gap-20 relative pt-32 xl:pt-44 pb-12 xl:pb-40">
+                <DigitalSherpas />
+                <Philosophy />
+                <MissionVision />
+                <OurValues />
+                <CollageAboutUs sm />
+                <Flags />
             </div>
         </>
     );
-};
-
-export default Job;
+}
