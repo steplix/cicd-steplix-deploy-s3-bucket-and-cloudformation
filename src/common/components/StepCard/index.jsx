@@ -16,6 +16,7 @@ const StepCard = ({
     seeMoreLink,
     setPositionModal,
     icon,
+    sizeTitle,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -38,7 +39,9 @@ const StepCard = ({
                 <div className="flex">
                     {title && (
                         <h2
-                            className={`text-[50px] font-black  ${
+                            className={`${
+                                sizeTitle ? sizeTitle : "h2-steplix"
+                            } font-black  ${
                                 colorTitle ? colorTitle : "text-white"
                             }`}
                         >
@@ -108,5 +111,6 @@ StepCard.propTypes = {
     textThree: PropTypes.string,
     textFour: PropTypes.string,
     icon: PropTypes.string,
+    sizeTitle: PropTypes.string,
 };
 export default StepCard;
