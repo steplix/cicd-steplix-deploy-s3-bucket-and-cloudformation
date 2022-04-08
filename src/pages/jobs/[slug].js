@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 import JobItemCard from "@/common/components/JobItemCard";
+import Flags from "@/common/components/Flags";
 
 const Job = () => {
     const { t } = useTranslation();
@@ -90,10 +91,13 @@ const Job = () => {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="bg--job">
-                <div className="container-steplix section-steplix">
-                    <JobItemCard item={t(`jobs.${nameJob}`)} />
+            <div className="relative">
+                <div className="bg--job">
+                    <div className="container-steplix section-steplix">
+                        <JobItemCard item={t(`jobs.${nameJob}`)} />
+                    </div>
                 </div>
+                <Flags />
             </div>
         </>
     );
