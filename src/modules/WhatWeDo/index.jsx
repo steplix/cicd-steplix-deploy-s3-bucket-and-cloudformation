@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Link from "next/link";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 import Modal from "@/common/components/Modal";
 import StepCard from "@/common/components/StepCard";
 
 const WhatWeDo = () => {
     const { t } = useTranslation();
-    const [query] = useLanguageQuery();
+
     //
     // State
     //
@@ -21,6 +20,7 @@ const WhatWeDo = () => {
         textFour,
         borderColor,
         number;
+
     if (positionModal === 1) {
         subDescription = t("modal.modalOne.descriptionTwo");
         title = t("modal.modalOne.title");
@@ -76,26 +76,40 @@ const WhatWeDo = () => {
                     />
                 </div>
             </Modal>
-            <h2 className="text-[30px] font-semibold">
-                {t("whatWeDo.title")}{" "}
-                <span className="title-empty">{t("whatWeDo.emptyTitle")}</span>
-            </h2>
-            <div className="text-sm font-light flex flex-col lg:mb-0 mb-12">
-                <p>{t("whatWeDo.subtitlePartOne")}</p>
-                <p>{t("whatWeDo.subtitlePartTwo")}</p>
+            <h3 className="mb-3.5 xl:mb-2.5">
+                <span className="h3-steplix h3-steplix--filled">
+                    {t("whatWeDo.title")}{" "}
+                </span>
+                <span className="h3-steplix h3-steplix--outlined">
+                    {t("whatWeDo.emptyTitle")}
+                </span>
+            </h3>
+            <div className="flex flex-col mb-12 xl:mb-36">
+                <p className="p-steplix">{t("whatWeDo.subtitlePartOne")}</p>
+                <p className="p-steplix">{t("whatWeDo.subtitlePartTwo")}</p>
             </div>
-            <div className="steplix-process grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-7">
-                <div className="lg:col-start-3 w-[350px] row-span-2 lg:relative ">
-                    <StepCard
-                        number="03."
-                        title={t("whatWeDo.cardThree.title")}
-                        colorTitle="text-steplix-yellow"
-                        colorLine="bg-steplix-red"
-                        seeMore={t("seeMore")}
-                        textOne={t("whatWeDo.cardThree.description")}
-                        setisModalOpen={setisModalOpen}
-                        setPositionModal={setPositionModal}
-                    />{" "}
+            <div className="steplix-process grid grid-cols-1 lg:grid-cols-3 gap-12 xl:gap-0">
+                <div className="w-[350px] row-span-2 xl:relative xl:col-start-3">
+                    <div className="hidden xl:block">
+                        <StepCard
+                            number="03."
+                            title={t("whatWeDo.cardThree.title")}
+                            sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
+                            colorTitle="text-steplix-yellow"
+                            colorLine="bg-steplix-red"
+                            textOne={t("whatWeDo.cardThree.description")}
+                        />
+                    </div>
+                    <div className="block xl:hidden">
+                        <StepCard
+                            number="01."
+                            title={t("whatWeDo.cardOne.title")}
+                            sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
+                            colorTitle="text-steplix-yellow"
+                            colorLine="bg-steplix-red"
+                            textOne={t("whatWeDo.cardOne.description")}
+                        />
+                    </div>
                     <div className="lg:absolute lg:top-[10px] right-[360px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-24 lg:relative lg:top-[6px]" />
                         <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
@@ -105,12 +119,10 @@ const WhatWeDo = () => {
                     <StepCard
                         number="02."
                         title={t("whatWeDo.cardTwo.title")}
+                        sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
                         colorTitle="text-steplix-yellow"
                         colorLine="bg-steplix-red"
-                        seeMore={t("seeMore")}
                         textOne={t("whatWeDo.cardTwo.description")}
-                        setisModalOpen={setisModalOpen}
-                        setPositionModal={setPositionModal}
                     />
                     <div className="lg:absolute lg:top-[10px] lg:left-[327px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-7 lg:relative lg:top-[6px]" />{" "}
@@ -118,16 +130,26 @@ const WhatWeDo = () => {
                     </div>
                 </div>
                 <div className="lg:col-start-1 row-span-1 lg:relative">
-                    <StepCard
-                        number="01."
-                        title={t("whatWeDo.cardOne.title")}
-                        colorTitle="text-steplix-yellow"
-                        colorLine="bg-steplix-red"
-                        seeMore={t("seeMore")}
-                        textOne={t("whatWeDo.cardOne.description")}
-                        setisModalOpen={setisModalOpen}
-                        setPositionModal={setPositionModal}
-                    />
+                    <div className="block xl:hidden">
+                        <StepCard
+                            number="03."
+                            title={t("whatWeDo.cardThree.title")}
+                            sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
+                            colorTitle="text-steplix-yellow"
+                            colorLine="bg-steplix-red"
+                            textOne={t("whatWeDo.cardThree.description")}
+                        />
+                    </div>
+                    <div className="hidden xl:block">
+                        <StepCard
+                            number="01."
+                            title={t("whatWeDo.cardOne.title")}
+                            sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
+                            colorTitle="text-steplix-yellow"
+                            colorLine="bg-steplix-red"
+                            textOne={t("whatWeDo.cardOne.description")}
+                        />
+                    </div>
                     <div className="lg:absolute lg:top-[124px] lg:left-96">
                         <div className="lg:bg-white lg:h-[1px] lg:w-16 lg:relative lg:top-[6px]" />{" "}
                         <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
