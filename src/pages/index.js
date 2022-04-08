@@ -93,7 +93,7 @@ export default function Home() {
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
-                            "@type": "Software Factory",
+                            "@type": "LocalBusiness",
                             image: [
                                 "https://steplix.com/assets/img/logo.png",
                                 "https://example.com/assets/img/culture/culture-01.png",
