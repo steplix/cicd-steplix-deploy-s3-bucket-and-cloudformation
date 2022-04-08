@@ -87,6 +87,64 @@ export default function Home() {
                     name="twitter:image"
                     content="https://steplix.com/assets/img/logo.png"
                 />
+                {/* Structured Data */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Software Factory",
+                            image: [
+                                "https://steplix.com/assets/img/logo.png",
+                                "https://example.com/assets/img/culture/culture-01.png",
+                                "https://example.com/assets/img/culture/culture-02.png",
+                                "https://example.com/assets/img/culture/culture-03.png",
+                            ],
+                            name: "Steplix Software",
+                            address: {
+                                "@type": "PostalAddress",
+                                streetAddress: "Costa Rica 4999",
+                                addressLocality: "Buenos Aires",
+                                addressRegion: "BA",
+                                postalCode: "1414",
+                                addressCountry: "AR",
+                            },
+                            review: {
+                                "@type": "Review",
+                                reviewRating: {
+                                    "@type": "Rating",
+                                    ratingValue: "4",
+                                    bestRating: "5",
+                                },
+                                author: {
+                                    "@type": "Person",
+                                    name: "Mariano Wegier",
+                                },
+                            },
+                            geo: {
+                                "@type": "GeoCoordinates",
+                                latitude: -34.586106539777504,
+                                longitude: -58.429850625945534,
+                            },
+                            url: "https://steplix.com/",
+                            telephone: "+5491144177969",
+                            openingHoursSpecification: [
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    dayOfWeek: [
+                                        "Monday",
+                                        "Tuesday",
+                                        "Wednesday",
+                                        "Thursday",
+                                        "Friday",
+                                    ],
+                                    opens: "09:00",
+                                    closes: "18:00",
+                                },
+                            ],
+                        }),
+                    }}
+                />
             </Head>
             <main className="relative">
                 <Masthead />
