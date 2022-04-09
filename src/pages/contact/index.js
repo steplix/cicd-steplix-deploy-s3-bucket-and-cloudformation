@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useTranslation } from "next-export-i18n";
 import Flags from "@/common/components/Flags";
+import ScheduleContact from "@/modules/ScheduleContact";
 
 export default function Contact() {
     const { t } = useTranslation();
@@ -95,8 +96,13 @@ export default function Contact() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="relative">
-                <div className="flex items-center justify-center">contacto</div>
+            <div className="relative xl:pb-[400px] pb-[200px]">
+                <div className="bg--contact">
+                    <section className="container-steplix section-steplix">
+                        <ScheduleContact />
+                    </section>
+                </div>
+
                 <Flags />
             </div>
         </>

@@ -1,5 +1,14 @@
-{
+{ "contact":{
+    "title":"Queremos escuchar tus ",
+    "titleEmpty":"ideas ",
+    "subtitle":"Agenda una llamada con nuestros comerciales.",
+    "brochureText":"Descargá nuestro ",
+    "brochure":"brochure",
+    "ourOfficeTitle":"Nuestra",
+    "ourOfficeTitleEmpty":"oficina"                
+},
     "jobs": {
+        
         "applyButton": "Postulate",
         "title": "Conocé nuestras",
         "titleEmpty": "búsquedas",
