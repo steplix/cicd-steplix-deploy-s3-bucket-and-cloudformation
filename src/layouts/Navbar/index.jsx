@@ -16,7 +16,6 @@ const Navbar = () => {
     //
     const [sticky, setSticky] = React.useState(false);
     const [toggle, setToggle] = React.useState(false);
-    console.log(toggle);
 
     //
     // Effects
