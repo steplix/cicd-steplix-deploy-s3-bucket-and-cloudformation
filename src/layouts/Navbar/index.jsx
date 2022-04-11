@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
@@ -10,17 +11,16 @@ const Navbar = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
     const router = useRouter();
-
     //
     // State
     //
     const [sticky, setSticky] = React.useState(false);
     const [toggle, setToggle] = React.useState(false);
+    console.log(toggle);
 
     //
     // Effects
     //
-
     React.useEffect(() => {
         const onScroll = () => {
             const currentPosition = window.pageYOffset;
@@ -33,6 +33,14 @@ const Navbar = () => {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
+
+    React.useEffect(() => {
+        if (toggle) {
+            disableBodyScroll(document);
+        } else {
+            enableBodyScroll(document);
+        }
+    }, [toggle]);
 
     return (
         <div className="sticky top-0 w-full text-white z-50">
@@ -52,7 +60,7 @@ const Navbar = () => {
                     }`}
                 >
                     {/* <!-- logo mobile --> */}
-                    <div className="ml-5 ">
+                    <div className="ml-5 items-center justify-center flex h-[33px]">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -66,13 +74,23 @@ const Navbar = () => {
                     {/*  <!-- boton menu --> */}
                     <div className="z-50 mr-3">
                         <button
-                            className={`${toggle && "hidden"} h-6 w-6`}
+                            className="w-[33px] h-[33px] flex flex-col items-center justify-center z-50 lg:hidden "
                             onClick={() => setToggle(!toggle)}
                         >
-                            <img
-                                src="/assets/img/submenu.svg"
-                                className="h-6 w-6 xl:hidden block"
-                                alt="submenu"
+                            <span
+                                className={`line ${
+                                    toggle ? "line--toggle" : ""
+                                }`}
+                            />
+                            <span
+                                className={`line ${
+                                    toggle ? "line--toggle" : ""
+                                }`}
+                            />
+                            <span
+                                className={`line ${
+                                    toggle ? "line--toggle" : ""
+                                }`}
                             />
                         </button>
                     </div>
