@@ -66,7 +66,8 @@ const WhatWeDo = () => {
                 <div className="px-6 py-4">
                     <StepCard
                         number={`0${number}.`}
-                        numberStyles="xl:mt-4"
+                        sizeTitle="h3-steplix"
+                        numberStyles="xl:mt-1"
                         title={title}
                         colorTitle="font-semibold text-steplix-yellow"
                         colorLine="bg-steplix-red"
@@ -74,6 +75,7 @@ const WhatWeDo = () => {
                         textTwo={textTwo}
                         textThree={textThree}
                         textFour={textFour}
+                        sizeText="text-[20px]"
                     />
                 </div>
             </Modal>

@@ -21,6 +21,7 @@ const StepCard = ({
     seeMoreLink,
     setPositionModal,
     icon,
+    sizeText,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -78,16 +79,28 @@ const StepCard = ({
                 <div className={widthTexts}>
                     {textOne && (
                         <p
-                            className={`p-steplix ${
+                            className={`${sizeText ? sizeText : "p-steplix"} ${
                                 widthTextOne ? widthTextOne : ""
                             }`}
                         >
                             {textOne}
                         </p>
                     )}
-                    {textTwo && <p className="p-steplix">{textTwo}</p>}
-                    {textThree && <p className="p-steplix">{textThree}</p>}
-                    {textFour && <p className="p-steplix">{textFour}</p>}
+                    {textTwo && (
+                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
+                            {textTwo}
+                        </p>
+                    )}
+                    {textThree && (
+                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
+                            {textThree}
+                        </p>
+                    )}
+                    {textFour && (
+                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
+                            {textFour}
+                        </p>
+                    )}
                 </div>
 
                 {seeMore && setisModalOpen && (
