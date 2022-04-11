@@ -7,7 +7,7 @@ const HoDoWeDoIt = () => {
 
     return (
         <div className="w-[340px] lg:w-[1300px] space-y-[70px]">
-            <div className="">
+            <div>
                 <StepCard
                     title={t("process.HowDoWeDoIt.title")}
                     textTwo={t("process.HowDoWeDoIt.description")}

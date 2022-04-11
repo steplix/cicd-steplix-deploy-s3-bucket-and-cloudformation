@@ -44,11 +44,10 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full text-white z-50">
             <nav className="block lg:hidden">
-                <div className="">
+                <div>
                     <Submenu
                         router={router}
                         query={query}
-                        className=""
                         toggle={toggle}
                         setToggle={setToggle}
                     />
@@ -113,7 +112,7 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className=" ">
+                    <div>
                         <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
                             <Link
                                 href={{ pathname: "/about-us", query: query }}
@@ -170,7 +169,7 @@ const Navbar = () => {
                                     <a href="">{t("navbar.item6")}</a>
                                 </Link>
                             </button>
-                            <div className="">
+                            <div>
                                 <LanguageSelector />
                             </div>
                         </div>
