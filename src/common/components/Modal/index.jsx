@@ -40,7 +40,7 @@ export default function Modal({
                     <div className="h-full w-full flex justify-center items-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div
                             ref={ref}
-                            className="wrapper lg:bottom-36 relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[97%] lg:w-[1000px] flex justify-center "
+                            className="wrapper lg:bottom-36 relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[99%] lg:w-[1000px] flex justify-center "
                         >
                             {/*content*/}
                             <div
@@ -58,7 +58,7 @@ export default function Modal({
                                 </div>
                                 {/*footer*/}
                                 {positionModal && (
-                                    <div className="flex items-center mt-10 justify-center p-6 ">
+                                    <div className="flex items-center lg:mt-10 justify-center p-6 ">
                                         {positionModal > 1 && (
                                             <button
                                                 className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2  font-semibold p-2  flex justify-center items-center shadow-xl"

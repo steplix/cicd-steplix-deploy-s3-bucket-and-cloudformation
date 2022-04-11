@@ -63,10 +63,9 @@ const WhatWeDo = () => {
                 setPositionModal={setPositionModal}
                 positionModal={positionModal}
             >
-                <div className="px-6 py-4">
+                <div className="lg:px-6 lg:py-4 py-2">
                     <StepCard
                         number={`0${number}.`}
-                        sizeTitle="h3-steplix"
                         numberStyles="xl:mt-1"
                         title={title}
                         colorTitle="font-semibold text-steplix-yellow"
@@ -75,7 +74,8 @@ const WhatWeDo = () => {
                         textTwo={textTwo}
                         textThree={textThree}
                         textFour={textFour}
-                        sizeText="text-[20px]"
+                        sizeTitle="text-[22px] lg:text-[50px]"
+                        sizeText="text-[16px] lg:text-[20px]"
                     />
                 </div>
             </Modal>
