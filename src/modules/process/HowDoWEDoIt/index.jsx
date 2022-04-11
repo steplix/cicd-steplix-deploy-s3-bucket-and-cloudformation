@@ -17,26 +17,34 @@ const HoDoWeDoIt = () => {
             </div>
             <div className="lg:grid lg:grid-cols-3 lg:gap-y-12 lg:gap-x-7 space-y-4 lg:space-y-0">
                 <StepCard
-                    title={t("process.HowDoWeDoIt.title")}
-                    textOne={t("process.HowDoWeDoIt.description")}
+                    title={t("process.HowDoWeDoIt.concepts.conceptOne.title")}
+                    textOne={t(
+                        "process.HowDoWeDoIt.concepts.conceptOne.description"
+                    )}
                     colorTitle="font-semibold text-steplix-white"
                     colorLine="bg-steplix-blue"
                 />
                 <StepCard
-                    title={t("process.HowDoWeDoIt.title")}
-                    textOne={t("process.HowDoWeDoIt.description")}
+                    title={t("process.HowDoWeDoIt.concepts.conceptTwo.title")}
+                    textOne={t(
+                        "process.HowDoWeDoIt.concepts.conceptTwo.description"
+                    )}
                     colorTitle="font-semibold text-steplix-white"
                     colorLine="bg-steplix-red"
                 />
                 <StepCard
-                    title={t("process.HowDoWeDoIt.title")}
-                    textOne={t("process.HowDoWeDoIt.description")}
+                    title={t("process.HowDoWeDoIt.concepts.conceptThree.title")}
+                    textOne={t(
+                        "process.HowDoWeDoIt.concepts.conceptThree.description"
+                    )}
                     colorTitle="font-semibold text-steplix-white"
                     colorLine="bg-steplix-yellow"
                 />
                 <StepCard
-                    title={t("process.HowDoWeDoIt.title")}
-                    textOne={t("process.HowDoWeDoIt.description")}
+                    title={t("process.HowDoWeDoIt.concepts.conceptFour.title")}
+                    textOne={t(
+                        "process.HowDoWeDoIt.concepts.conceptFour.description"
+                    )}
                     colorTitle="font-semibold text-steplix-white"
                     colorLine="bg-steplix-red"
                 />
