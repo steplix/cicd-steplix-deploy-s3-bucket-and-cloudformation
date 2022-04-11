@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const StepCard = ({
     number,
+    numberStyles,
     title,
     sizeTitle,
     emptyTitle,
@@ -33,7 +34,9 @@ const StepCard = ({
             }`}
         >
             {number && (
-                <p className="number-steplix number-steplix--outlined">
+                <p
+                    className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
+                >
                     {number}
                 </p>
             )}
@@ -122,5 +125,6 @@ StepCard.propTypes = {
     textFour: PropTypes.string,
     icon: PropTypes.string,
     sizeTitle: PropTypes.string,
+    numberStyles: PropTypes.string,
 };
 export default StepCard;
