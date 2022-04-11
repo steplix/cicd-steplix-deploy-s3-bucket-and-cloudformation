@@ -1,4 +1,9 @@
-{ "contact":{
+{  
+    "404":{
+    "subtitle":"Creemos que alguien escondió esta sección! Volvé al home para seguir navegando.",
+    "button":"Volver al home"
+},
+    "contact":{
     "title":"Queremos escuchar tus ",
     "titleEmpty":"ideas ",
     "subtitle":"Agenda una llamada con nuestros comerciales.",
