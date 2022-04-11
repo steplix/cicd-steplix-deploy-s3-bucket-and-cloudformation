@@ -250,7 +250,7 @@ body {
 }
 
 .submenu {
-    @apply flex flex-col space-y-2 fixed inset-0 w-full h-screen items-center opacity-0 lg:hidden z-40 text-white;
+    @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 lg:hidden z-40 text-white;
     clip-path: circle(30px at 93% 8%);
     transition: all 800ms ease-out;
 }
