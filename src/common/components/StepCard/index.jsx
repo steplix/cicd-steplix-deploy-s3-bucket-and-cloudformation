@@ -11,6 +11,7 @@ const StepCard = ({
     seeMore,
     colorLine,
     textOne,
+    widthTexts,
     widthTextOne,
     textTwo,
     textThree,
@@ -74,7 +75,7 @@ const StepCard = ({
                     />
                 )}
 
-                <>
+                <div className={widthTexts}>
                     {textOne && (
                         <p
                             className={`p-steplix ${
@@ -87,7 +88,7 @@ const StepCard = ({
                     {textTwo && <p className="p-steplix">{textTwo}</p>}
                     {textThree && <p className="p-steplix">{textThree}</p>}
                     {textFour && <p className="p-steplix">{textFour}</p>}
-                </>
+                </div>
 
                 {seeMore && setisModalOpen && (
                     <button

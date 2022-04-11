@@ -55,6 +55,7 @@ const StepsToTheTop = () => {
                             numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepTwo.title")}
                             colorTitle="font-bold text-steplix-yellow"
+                            widthTexts="w-[265px] xl:w-[790px]"
                             textOne={t(
                                 "process.stepsToTheTop.stepTwo.descriptionOne"
                             )}
@@ -63,9 +64,6 @@ const StepsToTheTop = () => {
                             )}
                             textThree={t(
                                 "process.stepsToTheTop.stepTwo.descriptionThree"
-                            )}
-                            textFour={t(
-                                "process.stepsToTheTop.stepTwo.descriptionFour"
                             )}
                         />
                     </div>
