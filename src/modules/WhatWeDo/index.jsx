@@ -118,7 +118,7 @@ const WhatWeDo = () => {
                     </div>
                     <div className="lg:absolute lg:top-[10px] right-[360px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-24 2xl:w-[118px] lg:relative lg:top-[6px]" />
-                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
+                        <div className="lg:h-3 lg:w-3 shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
                     </div>
                 </div>
                 <div className="lg:col-start-2 row-span-2  lg:relative">
@@ -135,7 +135,7 @@ const WhatWeDo = () => {
                     />
                     <div className="lg:absolute lg:top-[10px] 2xl:top-[45px] lg:left-[327px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-7 2xl:w-32 lg:relative lg:top-[6px]" />{" "}
-                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                        <div className="lg:h-3 lg:w-3 shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
                     </div>
                 </div>
                 <div className="lg:col-start-1 row-span-1 lg:relative">
@@ -164,7 +164,7 @@ const WhatWeDo = () => {
                     </div>
                     <div className="lg:absolute lg:top-[70px] lg:left-[360px] 2xl:left-[440px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-16 lg:relative lg:top-[6px]" />{" "}
-                        <div className="lg:h-3 lg:w-3 lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                        <div className="lg:h-3 lg:w-3 shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
                     </div>
                 </div>
             </div>
