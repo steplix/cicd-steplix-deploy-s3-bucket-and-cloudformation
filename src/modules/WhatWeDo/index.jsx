@@ -66,6 +66,7 @@ const WhatWeDo = () => {
                 <div className="px-6 py-4">
                     <StepCard
                         number={`0${number}.`}
+                        numberStyles="xl:mt-4"
                         title={title}
                         colorTitle="font-semibold text-steplix-yellow"
                         colorLine="bg-steplix-red"
@@ -98,6 +99,9 @@ const WhatWeDo = () => {
                             colorTitle="text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             textOne={t("whatWeDo.cardThree.description")}
+                            seeMore={t("seeMore")}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="block xl:hidden">
@@ -123,6 +127,9 @@ const WhatWeDo = () => {
                         colorTitle="text-steplix-yellow"
                         colorLine="bg-steplix-red"
                         textOne={t("whatWeDo.cardTwo.description")}
+                        seeMore={t("seeMore")}
+                        setisModalOpen={setisModalOpen}
+                        setPositionModal={setPositionModal}
                     />
                     <div className="lg:absolute lg:top-[10px] 2xl:top-[45px] lg:left-[327px]">
                         <div className="lg:bg-white lg:h-[1px] lg:w-7 2xl:w-32 lg:relative lg:top-[6px]" />{" "}
@@ -148,6 +155,9 @@ const WhatWeDo = () => {
                             colorTitle="text-steplix-yellow"
                             colorLine="bg-steplix-red"
                             textOne={t("whatWeDo.cardOne.description")}
+                            seeMore={t("seeMore")}
+                            setisModalOpen={setisModalOpen}
+                            setPositionModal={setPositionModal}
                         />
                     </div>
                     <div className="lg:absolute lg:top-[70px] lg:left-[360px] 2xl:left-[440px]">
