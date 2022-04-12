@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 
 const StepCard = ({
     number,
+    numberStyles,
     title,
     sizeTitle,
     emptyTitle,
     seeMore,
     colorLine,
     textOne,
+    widthTexts,
     widthTextOne,
     textTwo,
     textThree,
@@ -19,6 +21,7 @@ const StepCard = ({
     seeMoreLink,
     setPositionModal,
     icon,
+    sizeText,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -33,7 +36,9 @@ const StepCard = ({
             }`}
         >
             {number && (
-                <p className="number-steplix number-steplix--outlined">
+                <p
+                    className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
+                >
                     {number}
                 </p>
             )}
@@ -71,20 +76,26 @@ const StepCard = ({
                     />
                 )}
 
-                <>
+                <div className={widthTexts}>
                     {textOne && (
                         <p
-                            className={`p-steplix ${
+                            className={`${sizeText || "p-steplix"} ${
                                 widthTextOne ? widthTextOne : ""
                             }`}
                         >
                             {textOne}
                         </p>
                     )}
-                    {textTwo && <p className="p-steplix">{textTwo}</p>}
-                    {textThree && <p className="p-steplix">{textThree}</p>}
-                    {textFour && <p className="p-steplix">{textFour}</p>}
-                </>
+                    {textTwo && (
+                        <p className={sizeText || "p-steplix"}>{textTwo}</p>
+                    )}
+                    {textThree && (
+                        <p className={sizeText || "p-steplix"}>{textThree}</p>
+                    )}
+                    {textFour && (
+                        <p className={sizeText || "p-steplix"}>{textFour}</p>
+                    )}
+                </div>
 
                 {seeMore && setisModalOpen && (
                     <button
@@ -122,5 +133,6 @@ StepCard.propTypes = {
     textFour: PropTypes.string,
     icon: PropTypes.string,
     sizeTitle: PropTypes.string,
+    numberStyles: PropTypes.string,
 };
 export default StepCard;

@@ -66,7 +66,7 @@ const CollageAboutUs = ({ sm, lg }) => {
                                 alt="culture"
                             />
                         </div>
-                        <div className=" h-[100px] w-[160px]">
+                        <div className="h-[100px] w-[160px]">
                             <img
                                 src="/assets/img/culture/culture-05-sm.png"
                                 alt="culture"

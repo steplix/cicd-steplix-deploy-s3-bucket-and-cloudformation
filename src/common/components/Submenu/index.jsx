@@ -20,25 +20,20 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     toggle ? "submenu--toggle" : ""
                 }`}
             >
-                <div className="flex items-start gap-x-52 mt-5 mb-[60px]">
-                    <button onClick={() => setToggle(!toggle)}>
+                <div className="flex w-full mt-5 mb-[60px] px-4">
+                    <button
+                        className="w-[142px]"
+                        onClick={() => setToggle(!toggle)}
+                    >
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
                                     src="/assets/img/submenuCompleto.svg"
-                                    className="h-[35px] w-]142px] lg:hidden block"
+                                    className="h-[35px] w-[142px] lg:hidden block"
                                     alt="submenu"
                                 />
                             </a>
                         </Link>
-                    </button>
-
-                    <button className="" onClick={() => setToggle(!toggle)}>
-                        <img
-                            src="/assets/img/escape.svg"
-                            className="h-3 w-3 lg:hidden block"
-                            alt="escape"
-                        />{" "}
                     </button>
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-blue">
