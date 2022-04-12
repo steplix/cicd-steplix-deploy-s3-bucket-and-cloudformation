@@ -1,4 +1,8 @@
 {
+    "404":{
+        "subtitle":"We think someone hid this section! Go back to home to continue browsing.",
+        "button":"back to home"
+    },
     "contact":{
         "title":"Queremos escuchar tus ",
         "titleEmpty":"ideas ",
