@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
@@ -10,7 +11,6 @@ const Navbar = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
     const router = useRouter();
-
     //
     // State
     //
@@ -20,7 +20,6 @@ const Navbar = () => {
     //
     // Effects
     //
-
     React.useEffect(() => {
         const onScroll = () => {
             const currentPosition = window.pageYOffset;
@@ -34,14 +33,17 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    React.useEffect(() => {
+        toggle ? disableBodyScroll(document) : enableBodyScroll(document);
+    }, [toggle]);
+
     return (
         <div className="sticky top-0 w-full text-white z-50">
             <nav className="block lg:hidden">
-                <div className="">
+                <div>
                     <Submenu
                         router={router}
                         query={query}
-                        className=""
                         toggle={toggle}
                         setToggle={setToggle}
                     />
@@ -52,7 +54,7 @@ const Navbar = () => {
                     }`}
                 >
                     {/* <!-- logo mobile --> */}
-                    <div className="ml-5 ">
+                    <div className="ml-5 items-center justify-center flex h-[33px]">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
@@ -66,13 +68,17 @@ const Navbar = () => {
                     {/*  <!-- boton menu --> */}
                     <div className="z-50 mr-3">
                         <button
-                            className={`${toggle && "hidden"} h-6 w-6`}
+                            className="w-[33px] h-[33px] flex flex-col items-center justify-center z-50 lg:hidden "
                             onClick={() => setToggle(!toggle)}
                         >
-                            <img
-                                src="/assets/img/submenu.svg"
-                                className="h-6 w-6 xl:hidden block"
-                                alt="submenu"
+                            <span
+                                className={`line ${toggle && "line--toggle"}`}
+                            />
+                            <span
+                                className={`line ${toggle && "line--toggle"}`}
+                            />
+                            <span
+                                className={`line ${toggle && "line--toggle"}`}
                             />
                         </button>
                     </div>
@@ -96,7 +102,7 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className=" ">
+                    <div>
                         <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
                             <Link
                                 href={{ pathname: "/about-us", query: query }}
@@ -153,7 +159,7 @@ const Navbar = () => {
                                     <a href="">{t("navbar.item6")}</a>
                                 </Link>
                             </button>
-                            <div className="">
+                            <div>
                                 <LanguageSelector />
                             </div>
                         </div>

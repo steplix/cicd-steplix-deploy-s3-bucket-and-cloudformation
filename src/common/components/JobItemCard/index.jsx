@@ -10,7 +10,7 @@ const JobItemCard = ({ item }) => {
     const [query] = useLanguageQuery();
     const { t } = useTranslation();
     return (
-        <div className="">
+        <div>
             <div className="xl:my-[190px] my-[62px] w-[340px] xl:w-full ">
                 <h1 className="xl:lg:text-[100px] text-4xl xl:text-center font-black">
                     {item?.title}{" "}
@@ -58,17 +58,17 @@ const JobItemCard = ({ item }) => {
                     ))}
                 </ul>
             </div>
-            <div className="">
+            <div>
                 <p className="xl:text-[32px] text-[22px] font-bold mt-[70px]  xl:mb-7">
                     {item?.Benefits?.title}
                 </p>
                 <div className="p-steplix space-y-6">
-                    <p className="">{item?.Benefits?.textOne}</p>
-                    <p className="">{item?.Benefits?.textTwo}</p>
-                    <p className="">{item?.Benefits?.textThree}</p>
-                    <p className="">{item?.Benefits?.textFour}</p>
-                    <p className="">{item?.Benefits?.textFive}</p>
-                    <p className="">{item?.Benefits?.textSix}</p>
+                    <p>{item?.Benefits?.textOne}</p>
+                    <p>{item?.Benefits?.textTwo}</p>
+                    <p>{item?.Benefits?.textThree}</p>
+                    <p>{item?.Benefits?.textFour}</p>
+                    <p>{item?.Benefits?.textFive}</p>
+                    <p>{item?.Benefits?.textSix}</p>
                 </div>
             </div>
             {/* section apply */}

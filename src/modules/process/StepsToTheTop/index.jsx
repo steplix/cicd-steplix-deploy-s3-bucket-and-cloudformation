@@ -21,6 +21,7 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
+                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepOne.title")}
                             colorTitle="font-bold text-steplix-yellow"
                             textOne={t(
@@ -51,8 +52,10 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="02."
+                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepTwo.title")}
                             colorTitle="font-bold text-steplix-yellow"
+                            widthTexts="w-[265px] xl:w-[790px]"
                             textOne={t(
                                 "process.stepsToTheTop.stepTwo.descriptionOne"
                             )}
@@ -61,9 +64,6 @@ const StepsToTheTop = () => {
                             )}
                             textThree={t(
                                 "process.stepsToTheTop.stepTwo.descriptionThree"
-                            )}
-                            textFour={t(
-                                "process.stepsToTheTop.stepTwo.descriptionFour"
                             )}
                         />
                     </div>
@@ -81,6 +81,7 @@ const StepsToTheTop = () => {
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="03."
+                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepThree.title")}
                             colorTitle="font-bold text-steplix-yellow"
                             textOne={t(

@@ -250,7 +250,7 @@ body {
 }
 
 .submenu {
-    @apply flex flex-col space-y-2 fixed inset-0 w-full h-screen items-center opacity-0 lg:hidden z-40 text-white;
+    @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 lg:hidden z-40 text-white;
     clip-path: circle(30px at 93% 8%);
     transition: all 800ms ease-out;
 }
@@ -266,6 +266,23 @@ body {
 
 .nav--active {
     @apply text-steplix-yellow font-bold;
+}
+
+.line {
+    @apply w-[20px] h-[2px] bg-white m-[2px];
+    transition: all 300ms ease-out;
+}
+
+.line--toggle:nth-child(1) {
+    transform: rotate(-45deg);
+    margin: 0;
+}
+.line--toggle:nth-child(3) {
+    opacity: 0;
+}
+.line--toggle:nth-child(2) {
+    transform: rotateZ(45deg);
+    margin: -2px;
 }
 
 /* SUBMENU & NAVBAR END */
@@ -322,3 +339,6 @@ body {
  
 /*END contact */
 
+.shadow--gray{
+    box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
