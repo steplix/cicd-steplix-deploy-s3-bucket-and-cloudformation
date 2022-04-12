@@ -79,7 +79,7 @@ const StepCard = ({
                 <div className={widthTexts}>
                     {textOne && (
                         <p
-                            className={`${sizeText ? sizeText : "p-steplix"} ${
+                            className={`${sizeText || "p-steplix"} ${
                                 widthTextOne ? widthTextOne : ""
                             }`}
                         >
@@ -87,19 +87,13 @@ const StepCard = ({
                         </p>
                     )}
                     {textTwo && (
-                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
-                            {textTwo}
-                        </p>
+                        <p className={sizeText || "p-steplix"}>{textTwo}</p>
                     )}
                     {textThree && (
-                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
-                            {textThree}
-                        </p>
+                        <p className={sizeText || "p-steplix"}>{textThree}</p>
                     )}
                     {textFour && (
-                        <p className={`${sizeText ? sizeText : "p-steplix"}`}>
-                            {textFour}
-                        </p>
+                        <p className={sizeText || "p-steplix"}>{textFour}</p>
                     )}
                 </div>
 

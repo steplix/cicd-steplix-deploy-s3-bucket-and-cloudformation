@@ -34,11 +34,7 @@ const Navbar = () => {
     }, []);
 
     React.useEffect(() => {
-        if (toggle) {
-            disableBodyScroll(document);
-        } else {
-            enableBodyScroll(document);
-        }
+        toggle ? disableBodyScroll(document) : enableBodyScroll(document);
     }, [toggle]);
 
     return (
@@ -76,19 +72,13 @@ const Navbar = () => {
                             onClick={() => setToggle(!toggle)}
                         >
                             <span
-                                className={`line ${
-                                    toggle ? "line--toggle" : ""
-                                }`}
+                                className={`line ${toggle && "line--toggle"}`}
                             />
                             <span
-                                className={`line ${
-                                    toggle ? "line--toggle" : ""
-                                }`}
+                                className={`line ${toggle && "line--toggle"}`}
                             />
                             <span
-                                className={`line ${
-                                    toggle ? "line--toggle" : ""
-                                }`}
+                                className={`line ${toggle && "line--toggle"}`}
                             />
                         </button>
                     </div>
