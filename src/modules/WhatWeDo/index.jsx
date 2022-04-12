@@ -19,6 +19,9 @@ const WhatWeDo = () => {
         textThree,
         textFour,
         borderColor,
+        bgColor,
+        textColor,
+        bgLine,
         number;
 
     if (positionModal === 1) {
@@ -28,7 +31,9 @@ const WhatWeDo = () => {
         textTwo = t("modal.modalOne.descriptionOne.textTwo");
         textThree = t("modal.modalOne.descriptionOne.textThree");
         textFour = t("modal.modalOne.descriptionOne.textFour");
-
+        bgColor = "bg-steplix-blue";
+        bgLine = "bg-steplix-yellow";
+        textColor = "text-white";
         borderColor = "border-steplix-blue";
         number = 1;
     }
@@ -39,16 +44,22 @@ const WhatWeDo = () => {
         textTwo = t("modal.modalTwo.descriptionOne.textTwo");
         textThree = t("modal.modalTwo.descriptionOne.textThree");
         textFour = t("modal.modalTwo.descriptionOne.textFour");
+        textColor = "text-white";
+        bgLine = "bg-steplix-yellow";
+        bgColor = "bg-steplix-red";
         borderColor = "border-steplix-red";
         number = 2;
     }
     if (positionModal === 3) {
         subDescription = t("modal.modalThree.descriptionTwo");
         title = t("modal.modalThree.title");
-        textOne = t("modal.modalTwo.descriptionOne.textOne");
-        textTwo = t("modal.modalTwo.descriptionOne.textTwo");
-        textThree = t("modal.modalTwo.descriptionOne.textThree");
-        textFour = t("modal.modalTwo.descriptionOne.textFour");
+        textOne = t("modal.modalThree.descriptionOne.textOne");
+        textTwo = t("modal.modalThree.descriptionOne.textTwo");
+        textThree = t("modal.modalThree.descriptionOne.textThree");
+        textFour = t("modal.modalThree.descriptionOne.textFour");
+        bgLine = "bg-steplix-blue";
+        textColor = "text-black";
+        bgColor = "bg-steplix-yellow";
         borderColor = "border-steplix-yellow";
         number = 3;
     }
@@ -59,6 +70,9 @@ const WhatWeDo = () => {
                 isModalOpen={isModalOpen}
                 setisModalOpen={setisModalOpen}
                 borderColor={borderColor}
+                bgColor={bgColor}
+                bgLine={bgLine}
+                textColor={textColor}
                 subDescription={subDescription}
                 setPositionModal={setPositionModal}
                 positionModal={positionModal}
