@@ -7,8 +7,8 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <div className="divide-y-4 w-full h-1 bg-gray-400 mb-16"></div>
+        <div className="bg-[#0D0D0D]">
+            <div className="w-full h-1 mb-20"></div>
             <div className="section-steplix text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] lg:text-xl">
                 <div className="md:flex">
                     <div className="md:flex">
@@ -24,18 +24,16 @@ const Footer = () => {
                             <p className="mb-5">+54 (11) 5367-4369</p>
                             <p className="mb-5">Costa Rica 4999, Palermo, </p>
 
-                            <p className="w-18 wrap md:block hidden">
-                                Buenos Aires, Argentina.
-                            </p>
+                            <p className="w-18">Buenos Aires, Argentina.</p>
                         </div>
                     </div>
-                    <div className="mb-10 md:ml-10 gap-5 flex md:mr-[180px]">
+                    <div className="mb-10 md:ml-10 gap-5 flex items-center md:mr-[180px]">
                         <Link href="https://www.facebook.com/steplix">
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto lg:pt-3 pt-2 flex justify-center">
                                         <img
-                                            src="/assets/img/fb.svg"
+                                            src="/assets/img/facebookFooter.svg"
                                             alt="Facebook"
                                         />
                                     </div>
@@ -47,7 +45,7 @@ const Footer = () => {
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
                                     <div className="mx-auto lg:pt-4 pt-3 flex justify-center">
                                         <img
-                                            src="/assets/img/instagram.svg"
+                                            src="/assets/img/instagramFooter.svg"
                                             alt="instagram"
                                         />
                                     </div>
@@ -57,9 +55,9 @@ const Footer = () => {
                         <Link href="https://www.linkedin.com/company/steplix">
                             <a target="_blank">
                                 <div className="rounded-full h-[60px] w-[60px] md:h-[71px] md:w-[71px] text-center bg-white ">
-                                    <div className="mx-auto lg:pt-2 pt-2  flex justify-center">
+                                    <div className="mx-auto lg:pt-3 pt-2  flex justify-center">
                                         <img
-                                            src="/assets/img/linkedin.png"
+                                            src="/assets/img/linkedinFooter.svg"
                                             alt="linkedin"
                                             className="w-10"
                                         />
@@ -103,7 +101,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
