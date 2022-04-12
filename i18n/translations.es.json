@@ -244,7 +244,7 @@
         },
         "stepsToTheTop": {
             "title": "Pasos hacia la cima",
-            "description": " Los comienzos no son todos iguales...en este camino vos elegís,",
+            "description": " Los comienzos no son todos iguales... En este camino vos elegís,",
             "descriptionTwo": "¿Cuál es tu punto de partida?",
             "stepOne": {
                 "title": "Descubrimiento de negocio",
@@ -296,7 +296,7 @@
     "whatWeDo": {
         "title": "Pasos hacia la ",
         "emptyTitle": " cima",
-        "subtitlePartOne": " Los comienzos no son todos iguales...en este camino vos elegís.",
+        "subtitlePartOne": " Los comienzos no son todos iguales... En este camino vos elegís.",
         "subtitlePartTwo": "¿Cuál es tu punto de partida?",
         "cardOne": {
             "title": "Descubrimiento de negocio",
