@@ -4,13 +4,13 @@
         "button":"back to home"
     },
     "contact":{
-        "title":"Queremos escuchar tus ",
+        "title":"We want to hear from you ",
         "titleEmpty":"ideas ",
-        "subtitle":"Agenda una llamada con nuestros comerciales.",
-        "brochureText":"Descargá nuestro ",
+        "subtitle":"Schedule a call with our sales representatives.",
+        "brochureText":"Download our ",
         "brochure":"brochure",
-        "ourOfficeTitle":"Nuestra",
-        "ourOfficeTitleEmpty":"oficina"                
+        "ourOfficeTitle":"Our",
+        "ourOfficeTitleEmpty":"office"                
     },
     "jobs": {
         "applyButton": "Apply",
