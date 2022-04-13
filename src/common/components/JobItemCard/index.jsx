@@ -84,7 +84,7 @@ const JobItemCard = ({ item }) => {
                         email="rrhh@steplix.com"
                         query={query}
                     />
-                    <p>ó</p>
+                    <p>{t("jobs.or")}</p>
                     <p>rrhh@steplix.com</p>
                 </div>
             </div>
@@ -98,7 +98,7 @@ const JobItemCard = ({ item }) => {
                     <p className="font-bold xl:text-[32px] text-[22px]">
                         Josefina Salimei
                     </p>
-                    <p className="p-steplix">RR.HH</p>
+                    <p className="p-steplix">{t("jobs.hr")}</p>
                 </div>
 
                 <div className="xl:w-[33px] w-[16px] xl:h-[23px] h-[13px] xl:ml-[100px] ml-[30px]">

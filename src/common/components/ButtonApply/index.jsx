@@ -7,7 +7,7 @@ const ButtonApply = ({ url, query, apply, email }) => {
             {url && (
                 <Link href={{ pathname: `/jobs/${url}`, query: query }}>
                     <a>
-                        <button className="bg-steplix-red w-[85px] h-[40px] rounded-[5px] mt-16">
+                        <button className="bg-steplix-red w-[90px] h-[40px] rounded-[5px] mt-16">
                             {apply}
                         </button>
                     </a>
@@ -16,7 +16,7 @@ const ButtonApply = ({ url, query, apply, email }) => {
             {email && (
                 <Link href="mailto:rrhh@steplix.com">
                     <a>
-                        <button className="bg-steplix-red w-[85px] h-[40px] rounded-[5px] mt-16">
+                        <button className="bg-steplix-red w-[90px] h-[40px] rounded-[5px] mt-16">
                             {apply}
                         </button>
                     </a>

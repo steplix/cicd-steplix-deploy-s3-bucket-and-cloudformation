@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 import PropTypes from "prop-types";
+import ModalCard from "../ModalCard";
 export default function Modal({
     setisModalOpen,
     isModalOpen,
@@ -10,6 +11,9 @@ export default function Modal({
     subDescription,
     setPositionModal,
     positionModal,
+    bgColor,
+    textColor,
+    bgLine,
 }) {
     //
     //constant
@@ -44,7 +48,7 @@ export default function Modal({
                         >
                             {/*content*/}
                             <div
-                                className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
+                                className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/95 outline-none focus:outline-none px-3`}
                             >
                                 <button
                                     onClick={() => setisModalOpen(false)}
@@ -69,12 +73,14 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <img
-                                                    src="/assets/img/chevronLeft.svg"
-                                                    alt="left chevron"
-                                                    layout="fill"
-                                                    className="mx-auto h-14"
-                                                />
+                                                <div className="flex items-center mt-1 mr-2 rounded-full bg-steplix-yellow h-[7px] w-[14px]">
+                                                    <img
+                                                        src="/assets/img/chevronLeft.svg"
+                                                        alt="left chevron"
+                                                        layout="fill"
+                                                        className="mx-auto h-14"
+                                                    />
+                                                </div>
                                             </button>
                                         )}
                                         {positionModal < 3 && (
@@ -87,7 +93,7 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <div className="relative rounded-full bg-steplix-yellow h-14 w-14">
+                                                <div className="flex items-center mt-2 ml-2 rounded-full bg-steplix-yellow h-[7px] w-[14px]">
                                                     <img
                                                         src="/assets/img/chevronRight.svg"
                                                         alt="right chevron"
@@ -102,15 +108,18 @@ export default function Modal({
                             </div>
                         </div>
                         {subDescription && (
-                            <div
-                                className={`${borderColor} hidden lg:flex border-2 rounded-full shadow-lg relative top-[295px] left-[40px]  flex-col bg-steplix-lilac/75 w-[350px] h-[350px] text-center justify-center my-auto`}
-                            >
-                                {subDescription}
+                            <div className="h-[194px] w-[360px] hidden lg:flex">
+                                <ModalCard
+                                    textColor={textColor}
+                                    subDescription={subDescription}
+                                    bgColor={bgColor}
+                                    bgLine={bgLine}
+                                />
                             </div>
                         )}
                     </div>
 
-                    <div className="opacity-50 fixed inset-0 z-[9999] bg-black" />
+                    <div className="opacity-0 fixed inset-0 z-[9999] bg-black" />
                 </>
             )}
         </>
