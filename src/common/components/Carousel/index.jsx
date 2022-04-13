@@ -20,15 +20,6 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: "/assets/img/clients/client-sura.svg",
-            alt: "sura",
-            name: "Juan Ramallo",
-            title: t("happyClients.clientSura.title"),
-            companyName: "Seguros SURA",
-            borderColor: "border-steplix-yellow",
-            text: t("happyClients.clientSura.text"),
-        },
-        {
             image: "/assets/img/clients/client-finket.svg",
             alt: "CTECH",
             name: "Lucas Bianchi",
@@ -36,6 +27,15 @@ const Carousel = () => {
             companyName: "CTECH",
             borderColor: "border-steplix-red",
             text: t("happyClients.clientFinket.text"),
+        },
+        {
+            image: "/assets/img/clients/client-sura.svg",
+            alt: "sura",
+            name: "Juan Ramallo",
+            title: t("happyClients.clientSura.title"),
+            companyName: "Seguros SURA",
+            borderColor: "border-steplix-yellow",
+            text: t("happyClients.clientSura.text"),
         },
     ];
 
@@ -76,8 +76,10 @@ const Carousel = () => {
                                 key={`image-${index}`}
                                 className="keen-slider__slide number-slide"
                             >
-                                <div>
-                                    <div className="">
+                                <div
+                                    className={`${element?.borderColor} border-2 rounded-3xl min-h-[460px] w-[340px] p-3`}
+                                >
+                                    <div className="flex">
                                         <div>
                                             <img
                                                 className="lg:h-32 lg:w-32 h-28 w-28"
@@ -85,17 +87,19 @@ const Carousel = () => {
                                                 alt={element.alt}
                                             />
                                         </div>
-                                        <div>
-                                            <p>{element?.name}</p>
-                                            <p>
+                                        <div className="place-self-center ml-6">
+                                            <p className="text-2xl font-bold">
+                                                {element?.name}
+                                            </p>
+                                            <p className="text-base w-[150px] mt-1">
                                                 {element?.title}{" "}
-                                                <span>
+                                                <span className="text-steplix-yellow">
                                                     {element?.companyName}
                                                 </span>
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="bg-steplix-red h-1 w-5" />
+                                    <div className="bg-steplix-red text-base h-1 w-[70px] mb-7" />
                                     <div>{element?.text}</div>
                                 </div>
                             </div>

@@ -366,13 +366,13 @@
     "happyClients":{
         "title":"Lo que opinan nuestros ",
         "titleEmpty":"clientes",
-        "clientSura":{
-            "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“",
-            "title": "CEO y fundador"
-        },
         "clientFinket":{
+            "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“",
+            "title": "CEO & Founder"
+        },
+        "clientSura":{
             "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas.”",
-            "title": "Gerente de Línea de Negocios y Segmento Corporativo"
+            "title": "Business Line Manager and Corporate Segment"
         }
         
     } ,

@@ -356,13 +356,13 @@
         }
     },
     "happyClients":{
-        "title":"What our clients ",
-        "titleEmpty":"think",
-        "clientSura":{
+        "title":"What our customers ",
+        "titleEmpty":"say",
+        "clientFinket":{
             "text": "“Our experience with Steplix has been very positive from the beginning. They have distinguished themselves at all times for their capacity for work, commitment, creativity when presenting proposals and their dedication. They have an outstanding work team, where human quality is their great value. Undoubtedly a key partner to take into account when undertaking projects that require simple solutions to highly complex challenges”",
             "title": "CEO & Founder"
         },
-        "clientFinket":{
+        "clientSura":{
             "text": "“I highlight the assistance and professionalism of the Steplix team. Always ready, proactive and eager to deliver a first quality product. They didn’t just do what we asked for, they also added an “extra mile” to always offer better proposals”",
             "title": "Business Line Manager and Corporate Segment"
         }
