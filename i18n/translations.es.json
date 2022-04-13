@@ -1,5 +1,4 @@
 {  
-    "or":"ó",
     "404":{
     "subtitle":"Creemos que alguien escondió esta sección! Volvé al home para seguir navegando.",
     "button":"Volver al home"
@@ -11,21 +10,24 @@
     "brochureText":"Descargá nuestro ",
     "brochure":"brochure",
     "ourOfficeTitle":"Nuestra",
-    "ourOfficeTitleEmpty":"oficina"                
+    "ourOfficeTitleEmpty":"oficina",
+    "salesRepresentative":"Comercial"
+
 },
     "jobs": {
-        
-        "applyButton": "Postulate",
+        "applyButton": "Postularme",
         "title": "Conocé nuestras",
         "titleEmpty": "búsquedas",
-        "textCV":"Si sabes que podes ser un gran Steplixer... ¡envianos tu cv!",
+        "textCV":"Si sabes que podes ser un gran Steplixer... ¡Envianos tu cv!",
+        "or":"ó",
+        "hr":"RRHH",
         "UI_UXDesigner": {
             "url": "UI_UXDesigner",
             "title": "UX/UI DESIGNER",
             "titleEmpty": "SR",
             "country": "Argentina",
             "description":
-                "En Steplix estamos buscando un crack en UI/UX Design, con 3/5 años de experiencia y un gran conocimiento en diseño, con ganas de sumarse a un equipo diverso y multidisciplinario que disfruta los desafíos y el trabajo en equipo. ",
+                "En Steplix estamos buscando un crack en UX/UI Design, con 3/5 años de experiencia y un gran conocimiento en diseño, con ganas de sumarse a un equipo diverso y multidisciplinario que disfruta los desafíos y el trabajo en equipo. ",
                 "values": {
                     "title":"¿Qué significa ser un Steplixer UX/UI Designer? ",
                     "textOne":"Compartir los siguientes valores: confianza, respeto, adaptación, éxito, conciencia, y agilidad. ",
@@ -41,7 +43,7 @@
                     
                     "Definir y describir quiénes son sus usuarios y cuáles son sus necesidades",
                     
-                    "Detectar puntos de dolor (pain points) dentro del customer journey con el fin de encontrar oportunidades",
+                    "Detectar pain points dentro del customer journey con el fin de encontrar oportunidades",
                     
                     "Definir qué funcionalidades debe tener el producto para otorgar valor a sus potenciales usuarios y poder salir al mercado lo antes posible",
                     
@@ -109,7 +111,7 @@
                     "Participar en eventos de SCRUM",
                     "Asistir al refinamiento de tareas para las User Stories durante el Sprint de acuerdo al Technical Document",
                     "Desarrollo de Microservicios de acuerdo al Technical Document",
-                    "Complir con las Reglas definidas de estandares de codificación",
+                    "Cumplir con las reglas definidas de estandares de codificación",
                     "Integración del código con GIT siguiendo las políticas y las buenas prácticas del versionamiento de software",
                     "Resolución de incidentes y refactoring del código",
                     "Desarrollo utilizando TDD",
@@ -123,12 +125,12 @@
                 "items": [
                     
                         "Mínimo 6 años de experiencia en diseño, desarrollo  e implementación de software",
-                        "Conocimiento en desarrollo de aplicaciones, interfaces de programación de aplicaciones (API), middleware y base de datos",
+                        "Conocimiento en desarrollo de aplicaciones, API, middleware y base de datos",
                         "Patrones de Diseño y de Integración",
                         "Conocimientos en Metodologías Ágiles de Desarrollo de Software",
                         "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
                         "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App",
-                        "Es deseable contar con conocimientos y experiencia en Test Driven Development",
+                        "Es deseable contar con conocimientos y experiencia en TDD",
                         "Se requiere un nivel medio o superior de inglés escrito"
                     
                 ]
