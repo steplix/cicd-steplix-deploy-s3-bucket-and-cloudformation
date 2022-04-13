@@ -3,8 +3,11 @@ import React from "react";
 import _ from "lodash";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { useTranslation } from "next-export-i18n";
 
 const Carousel = () => {
+    const { t } = useTranslation();
+
     //
     //UseStates
     //
@@ -17,32 +20,22 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: "/assets/img/clients/client-agrocanje.svg",
-            alt: "agrocanje",
+            image: "/assets/img/clients/client-finket.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-steplix-red",
+            text: t("happyClients.clientFinket.text"),
         },
         {
             image: "/assets/img/clients/client-sura.svg",
             alt: "sura",
-        },
-        {
-            image: "/assets/img/clients/client-finket.svg",
-            alt: "afinket",
-        },
-        {
-            image: "/assets/img/clients/client-c5n.svg",
-            alt: "c5n",
-        },
-        {
-            image: "/assets/img/clients/client-garbarino.svg",
-            alt: "garbarino",
-        },
-        {
-            image: "/assets/img/clients/client-pow.svg",
-            alt: "pow",
-        },
-        {
-            image: "/assets/img/clients/client-smartium.svg",
-            alt: "smartium",
+            name: "Juan Ramallo",
+            title: t("happyClients.clientSura.title"),
+            companyName: "Seguros SURA",
+            borderColor: "border-steplix-yellow",
+            text: t("happyClients.clientSura.text"),
         },
     ];
 
@@ -83,11 +76,32 @@ const Carousel = () => {
                                 key={`image-${index}`}
                                 className="keen-slider__slide number-slide"
                             >
-                                <img
-                                    className="lg:h-32 lg:w-32 h-28 w-28"
-                                    src={element?.image}
-                                    alt={element.alt}
-                                />
+                                <div
+                                    className={`${element?.borderColor} border-2 rounded-3xl min-h-[460px] w-[340px] p-3`}
+                                >
+                                    <div className="flex">
+                                        <div>
+                                            <img
+                                                className="lg:h-32 lg:w-32 h-28 w-28"
+                                                src={element?.image}
+                                                alt={element.alt}
+                                            />
+                                        </div>
+                                        <div className="place-self-center ml-6">
+                                            <p className="text-2xl font-bold">
+                                                {element?.name}
+                                            </p>
+                                            <p className="text-base w-[150px] mt-1">
+                                                {element?.title}{" "}
+                                                <span className="text-steplix-yellow">
+                                                    {element?.companyName}
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="bg-steplix-red text-base h-1 w-[70px] mb-7" />
+                                    <div>{element?.text}</div>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -126,15 +140,41 @@ const Carousel = () => {
                             >
                                 {subimages.map((element, j) => (
                                     <div
-                                        className="flex flex-col justify-between w-[230px] h-[130px] px-5 pt-9 pb-5 md:w-[175px] "
+                                        className={`${element?.borderColor} border-2 rounded-3xl h-[390px] w-[450px] mb-8`}
                                         key={j}
                                     >
-                                        <div className="flex justify-end">
-                                            <div className="relative h-16 w-32 ">
-                                                <img
-                                                    src={element?.image}
-                                                    alt={element.alt}
-                                                />
+                                        <div className="flex justify-end px-7">
+                                            <div className="relative h-[390px] w-[450px] ">
+                                                <div>
+                                                    <div className="flex">
+                                                        <div>
+                                                            <img
+                                                                className="lg:h-32 lg:w-32 h-28 w-28"
+                                                                src={
+                                                                    element?.image
+                                                                }
+                                                                alt={
+                                                                    element.alt
+                                                                }
+                                                            />
+                                                        </div>
+                                                        <div className="place-self-center ml-6">
+                                                            <p className="p-steplix font-bold">
+                                                                {element?.name}
+                                                            </p>
+                                                            <p className="text-xs w-[200px] mt-1">
+                                                                {element?.title}{" "}
+                                                                <span className="text-steplix-yellow">
+                                                                    {
+                                                                        element?.companyName
+                                                                    }
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bg-steplix-red h-1 w-[70px] mb-7" />
+                                                    <div>{element?.text}</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
