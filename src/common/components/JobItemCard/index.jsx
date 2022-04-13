@@ -84,7 +84,7 @@ const JobItemCard = ({ item }) => {
                         email="rrhh@steplix.com"
                         query={query}
                     />
-                    <p>ó</p>
+                    <p>{t("or")}</p>
                     <p>rrhh@steplix.com</p>
                 </div>
             </div>

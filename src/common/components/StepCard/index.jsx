@@ -22,6 +22,7 @@ const StepCard = ({
     setPositionModal,
     icon,
     sizeText,
+    modal,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -35,7 +36,7 @@ const StepCard = ({
                 number ? "flex gap-2" : ""
             }`}
         >
-            {number && (
+            {number && !modal && (
                 <p
                     className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
                 >
@@ -44,7 +45,31 @@ const StepCard = ({
             )}
             <div>
                 <div className="flex">
-                    {title && (
+                    {number && modal && (
+                        <p
+                            className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix mr-2`}
+                        >
+                            {number}
+                        </p>
+                    )}
+                    {title && modal && (
+                        <h2
+                            className={`h2-steplix ${
+                                sizeTitle ? sizeTitle : ""
+                            } ${colorTitle ? colorTitle : "text-white"}`}
+                        >
+                            {title}
+                            {emptyTitle && (
+                                <span className="h2-steplix h2-steplix--outlined">
+                                    {emptyTitle}
+                                </span>
+                            )}
+                        </h2>
+                    )}
+                </div>
+
+                <div className="flex">
+                    {title && !modal && (
                         <h2
                             className={`h2-steplix ${
                                 sizeTitle ? sizeTitle : ""
@@ -72,7 +97,9 @@ const StepCard = ({
 
                 {colorLine && (
                     <div
-                        className={`h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
+                        className={`${
+                            modal && "ml-16 xl:ml-[125px]"
+                        } h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
                     />
                 )}
 

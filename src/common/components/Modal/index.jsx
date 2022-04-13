@@ -48,7 +48,7 @@ export default function Modal({
                         >
                             {/*content*/}
                             <div
-                                className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/75 outline-none focus:outline-none px-3`}
+                                className={`${borderColor} border-2 min-h-[90%] lg:min-h-[700px] ml-12 w-[370px] lg:w-[1000px] rounded-2xl shadow-lg relative flex flex-col bg-steplix-lilac/95 outline-none focus:outline-none px-3`}
                             >
                                 <button
                                     onClick={() => setisModalOpen(false)}
@@ -119,7 +119,7 @@ export default function Modal({
                         )}
                     </div>
 
-                    <div className="opacity-50 fixed inset-0 z-[9999] bg-black" />
+                    <div className="opacity-0 fixed inset-0 z-[9999] bg-black" />
                 </>
             )}
         </>

@@ -23,8 +23,8 @@ const ScheduleContact = () => {
                 <div>
                     <ContactCard
                         img="assets/img/kevin.svg"
-                        alt="Comercial"
-                        job="Comercial"
+                        alt={t("contact.salesRepresentative")}
+                        job={t("contact.salesRepresentative")}
                         name="Kevin Halbinger"
                         borderColor="border-steplix-blue"
                         bgColor="bg-steplix-blue"
@@ -36,8 +36,8 @@ const ScheduleContact = () => {
                 <div>
                     <ContactCard
                         img="assets/img/marcelo.svg"
-                        alt="Comercial"
-                        job="Comercial"
+                        alt={t("contact.salesRepresentative")}
+                        job={t("contact.salesRepresentative")}
                         name="Marcelo Zalegas"
                         borderColor="border-steplix-yellow"
                         bgColor="bg-steplix-yellow"
