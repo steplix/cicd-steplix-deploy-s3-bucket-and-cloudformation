@@ -140,7 +140,7 @@ const Carousel = () => {
                             >
                                 {subimages.map((element, j) => (
                                     <div
-                                        className={`${element?.borderColor} border-2 rounded-3xl h-[390px] w-[450px]`}
+                                        className={`${element?.borderColor} border-2 rounded-3xl h-[390px] w-[450px] mb-8`}
                                         key={j}
                                     >
                                         <div className="flex justify-end px-7">
