@@ -76,7 +76,7 @@ const ScheduleContact = () => {
                         <p>
                             Costa rica 4999, Palermo, Buenos Aires. Argentina.
                         </p>
-                        <p>hello@steplix. com</p>
+                        <p>hello@steplix.com</p>
                         <p>+54 (11) 5367-4369</p>
                     </div>
                 </div>
