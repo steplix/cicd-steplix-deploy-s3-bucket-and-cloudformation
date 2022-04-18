@@ -105,7 +105,10 @@ const Navbar = () => {
                     <div>
                         <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
                             <Link
-                                href={{ pathname: "/about-us", query: query }}
+                                href={{
+                                    pathname: "/about-us.html",
+                                    query: query,
+                                }}
                             >
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
@@ -113,7 +116,6 @@ const Navbar = () => {
                                             ? "nav--active opacity-100"
                                             : ""
                                     }`}
-                                    href="#about-us"
                                 >
                                     {t("navbar.item1")}
                                 </a>
