@@ -50,7 +50,7 @@ const Navbar = () => {
                 </div>
                 <div
                     className={`pt-[22px] h-[64px] transition-height duration-500 ease-in-out hover:bg-steplix-purple flex w-full lg:fixed absolute justify-between ${
-                        sticky ? "bg-steplix-lilac" : "bg-dark"
+                        sticky ? "bg-[#0D0D0D]" : "bg-dark"
                     }`}
                 >
                     {/* <!-- logo mobile --> */}
@@ -87,7 +87,7 @@ const Navbar = () => {
             {/* navbar desktop */}
             <nav
                 className={`hidden lg:block transition-height duration-500 ease-in-out absolute w-full h-[120px] ${
-                    sticky ? "bg-steplix-lilac" : "bg-dark"
+                    sticky ? "bg-[#0D0D0D]" : "bg-dark"
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-between section-steplix pr-5">
