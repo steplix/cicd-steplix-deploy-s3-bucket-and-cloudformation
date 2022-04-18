@@ -247,7 +247,8 @@
             "descriptionFour": " Steplix is the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you every step of this journey, minimizing the risk and amplifying the impact, in the agreed time. "
         },
         "stepsToTheTop": {
-            "title": "Steps to the top",
+            "title": "Steps to the ",
+            "titleEmpty": "top",
             "description": " The beginnings are not all the same... On this path you choose,",
             "descriptionTwo": "  What is your starting point? ",
             "stepOne": {

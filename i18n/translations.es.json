@@ -246,7 +246,9 @@
             }
         },
         "stepsToTheTop": {
-            "title": "Pasos hacia la cima",
+            "title": "Pasos hacia la ",
+            "titleEmpty": "cima",
+
             "description": " Los comienzos no son todos iguales... En este camino vos elegís,",
             "descriptionTwo": "¿Cuál es tu punto de partida?",
             "stepOne": {

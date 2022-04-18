@@ -12,6 +12,7 @@ const StepsToTheTop = () => {
             <div className="w-[340px] lg:w-[1300px] mb-[100px]">
                 <StepCard
                     title={t("process.stepsToTheTop.title")}
+                    emptyTitle={t("process.stepsToTheTop.titleEmpty")}
                     colorTitle="font-bold text-white"
                     textOne={t("process.stepsToTheTop.description")}
                     textTwo={t("process.stepsToTheTop.descriptionTwo")}
