@@ -35,7 +35,7 @@ const ScheduleContact = () => {
                 </div>
                 <div>
                     <ContactCard
-                        img="assets/img/marcelo.svg"
+                        img="assets/img/marcelo.webp"
                         alt={t("contact.salesRepresentative")}
                         job={t("contact.salesRepresentative")}
                         name="Marcelo Zalegas"
