@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
 import StepCardCircular from "@/common/components/StepCardCircular";
+import ProcessCard from "@/common/components/ProcessCard";
 
 const StepsToTheTop = () => {
     const { t } = useTranslation();
@@ -11,13 +12,14 @@ const StepsToTheTop = () => {
             <div className="w-[340px] lg:w-[1300px] mb-[100px]">
                 <StepCard
                     title={t("process.stepsToTheTop.title")}
+                    emptyTitle={t("process.stepsToTheTop.titleEmpty")}
                     colorTitle="font-bold text-white"
                     textOne={t("process.stepsToTheTop.description")}
                     textTwo={t("process.stepsToTheTop.descriptionTwo")}
                 />
             </div>
             <div className="space-y-20">
-                <div className="flex space-x-[60px]">
+                <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="01."
@@ -39,16 +41,18 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
-                        <StepCardCircular
-                            borderColor="border-steplix-blue"
-                            text={t(
+                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                        <ProcessCard
+                            subDescription={t(
                                 "process.stepsToTheTop.stepOne.secondaryDescription"
                             )}
-                        />
+                            textColor="text-white"
+                            bgColor="bg-steplix-blue"
+                            bgLine="bg-steplix-yellow"
+                        />{" "}
                     </div>
                 </div>
-                <div className="flex space-x-[60px]">
+                <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="02."
@@ -68,16 +72,18 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
-                        <StepCardCircular
-                            borderColor="border-steplix-red"
-                            text={t(
+                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                        <ProcessCard
+                            subDescription={t(
                                 "process.stepsToTheTop.stepTwo.secondaryDescription"
                             )}
+                            textColor="text-white"
+                            bgColor="bg-steplix-red"
+                            bgLine="bg-steplix-yellow"
                         />
                     </div>
                 </div>
-                <div className="flex space-x-[60px]">
+                <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
                             number="03."
@@ -99,10 +105,12 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[300px] my-auto">
-                        <StepCardCircular
-                            borderColor="border-steplix-yellow"
-                            text={t(
+                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                        <ProcessCard
+                            textColor="text-white"
+                            bgColor="bg-steplix-yellow"
+                            bgLine="bg-steplix-blue"
+                            subDescription={t(
                                 "process.stepsToTheTop.stepThree.secondaryDescription"
                             )}
                         />

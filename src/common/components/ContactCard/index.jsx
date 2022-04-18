@@ -18,7 +18,7 @@ const ContactCard = ({
             className={`${borderColor} xl:w-[662px] w-[332px] xl:h-[167px] h-[84px] flex items-center border-2 rounded-2xl`}
         >
             <div className="xl:h-[100px] h-[50px] w-[50px] xl:w-[100px] xl:ml-[70px] ml-[10px]">
-                <img src={img} alt={alt} />
+                <img src={img} alt={alt} className="rounded-full" />
             </div>
             <div
                 className={`${bgColor} xl:w-[5px] w-[2px] xl:h-[80px] h-[40px] xl:mx-[30px] mx-[12px]`}

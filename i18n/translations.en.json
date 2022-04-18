@@ -210,7 +210,36 @@
     "process": {
         "scrumFramework": {
             "titleOne": "Did you know that we work under the ",
-            "titleTwo": "Scrum Framework?"
+            "titleTwo": "Scrum Framework?",
+            "paragraphOne":{
+            "textOne":"At Steplix we use the Scrum framework, which is based on carrying out an iterative/incremental development that allows us to deliver value from the beginning of the project and throughout the construction of the product, guaranteeing adjustments in design and development at opportune moments of the cycle. of life. We have formed a multidisciplinary team, called the",
+            "goldenWordOne": " Scrum Team",
+             "textTwo":  ", which will be accompanied by a servant leader in the role of", 
+            "goldenWordTwo":" Scrum Master",
+            "textThree": ". All collaborators have the necessary technical knowledge. It should be noted that the participation of the client is key and necessary, through a representative that he himself designates under the role of", 
+            "goldenWordThree":" Product Owner",
+            "textFour":" to ensure fluid and adequate communication of the requirements."
+            
+        },
+           
+        "paragraphTwo":{
+            "textOne":"The Scrum framework is made up of a series of events/meetings that take place at strategic times, during 2-week cycles (",
+            "goldenWordOne":"Sprints",
+            "textTwo":") where work is done based on certain requirements selected from the main surveyed/prioritized list (",
+            "goldenWordTwo":" Product Backlog",
+            "textThree":"), which It derives from a planning meeting that gives rise to the list of requirements that are going to be built during those two weeks (",
+            "goldenWordThree":"Sprint Backlog",
+            "textFour":") and are developed guaranteeing a functional deliverable (",
+            "goldenWordFour":"Product Increment",
+            "textFive":")  at the end of each Sprint. Every two weeks, that is, at the end of each iteration, the product increment is presented, tested and discussed with the client for evaluation in a meeting held by the team together with the Product Owner. The team meets daily to maintain alignment with the goal of the current Sprint and at the end of the iteration the, Scrum Team holds a retrospective meeting to assess how they have been working and apply continuous improvement to their development processes and practices."
+
+        },     
+        "subtitle":"This type of framework allows us:",
+            "items":[
+                "Manage the expectations of our clients based on tangible results, which are available from the beginning of the project.",
+                "Improve time to market." ,
+                "Flexibility and adaptation to customer needs, changes in the market, etc.",
+                "Systematic management of the Return on Investment." ]
         },
         "HowDoWeDoIt": {
             "title": "How do we do it?",
@@ -242,7 +271,8 @@
             "descriptionFour": " Steplix is the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you every step of this journey, minimizing the risk and amplifying the impact, in the agreed time. "
         },
         "stepsToTheTop": {
-            "title": "Steps to the top",
+            "title": "Steps to the ",
+            "titleEmpty": "top",
             "description": " The beginnings are not all the same... On this path you choose,",
             "descriptionTwo": "  What is your starting point? ",
             "stepOne": {
