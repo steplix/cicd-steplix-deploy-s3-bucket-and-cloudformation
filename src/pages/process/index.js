@@ -110,7 +110,7 @@ export default function Process() {
                     <HoDoWeDoIt />
                 </div>{" "}
                 <div className="container-steplix section-steplix">
-                    <ScrumFramework />
+                    <ScrumFramework data={t("process.scrumFramework")} />
                 </div>
                 <Flags />
             </div>

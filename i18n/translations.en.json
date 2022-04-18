@@ -231,12 +231,12 @@
             "textOne":"The Scrum framework is made up of a series of events/meetings that take place at strategic times, during 2-week cycles (",
             "goldenWordOne":"Sprints",
             "textTwo":") where work is done based on certain requirements selected from the main surveyed/prioritized list (",
-            "goldenWordTwo":" Product Backlog.",
-            "textThree":" ), which It derives from a planning meeting that gives rise to the list of requirements that are going to be built during those two weeks ( ",
+            "goldenWordTwo":" Product Backlog",
+            "textThree":"), which It derives from a planning meeting that gives rise to the list of requirements that are going to be built during those two weeks (",
             "goldenWordThree":"Sprint Backlog",
-            "textFour":" ) and are developed guaranteeing a functional deliverable (",
+            "textFour":") and are developed guaranteeing a functional deliverable (",
             "goldenWordFour":"Product Increment",
-            "textFive":" )  at the end of each Sprint. Every two weeks, that is, at the end of each iteration, the product increment is presented, tested and discussed with the client for evaluation in a meeting held by the team together with the Product Owner. The team meets daily to maintain alignment with the goal of the current Sprint and at the end of the iteration the, Scrum Team holds a retrospective meeting to assess how they have been working and apply continuous improvement to their development processes and practices."
+            "textFive":")  at the end of each Sprint. Every two weeks, that is, at the end of each iteration, the product increment is presented, tested and discussed with the client for evaluation in a meeting held by the team together with the Product Owner. The team meets daily to maintain alignment with the goal of the current Sprint and at the end of the iteration the, Scrum Team holds a retrospective meeting to assess how they have been working and apply continuous improvement to their development processes and practices."
 
         },     
         "subtitle":"This type of framework allows us:",

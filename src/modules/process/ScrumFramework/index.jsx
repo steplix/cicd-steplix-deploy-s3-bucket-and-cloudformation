@@ -2,9 +2,9 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 
-const ScrumFramework = () => {
+const ScrumFramework = ({ data }) => {
     const { t } = useTranslation();
-    const goldenWords = ["Sprints, Incremento del producto"];
+
     return (
         <div className="w-[340px] lg:w-[1400px] text-2xl lg:text-4xl font-black lg:block hidden">
             <div>
@@ -68,11 +68,9 @@ const ScrumFramework = () => {
                 <div>
                     <p>{t("process.scrumFramework.subtitle")}</p>
                     <ul className="list-disc mb-[70px] p-steplix ml-8">
-                        {t("process.scrumFramework.items")?.map(
-                            (element, index) => (
-                                <li key={index}>{element}</li>
-                            )
-                        )}
+                        {data.items?.map((element, index) => (
+                            <li key={index}>{element}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

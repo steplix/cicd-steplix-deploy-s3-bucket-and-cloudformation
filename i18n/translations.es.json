@@ -236,12 +236,12 @@
                 "textOne":"El marco Scrum se compone de una serie de eventos/reuniones que se realizan en momentos estratégicos, durante ciclos de 2 semanas (",
                 "goldenWordOne":"Sprints",
                 "textTwo":") en donde se trabaja en base a ciertos requisitos seleccionados de la lista principal relevada/priorizada (",
-                "goldenWordTwo":" Product Backlog.",
+                "goldenWordTwo":"Product Backlog",
                 "textThree":" ), que deriva de una reunión de planificación que da origen a la lista de requisitos que se van a construir durante esas dos semanas ( ",
                 "goldenWordThree":"Sprint Backlog",
-                "textFour":" ) y se desarrollan garantizando un entregable funcional (",
+                "textFour":") y se desarrollan garantizando un entregable funcional (",
                 "goldenWordFour":"Incremento del producto",
-                "textFive":" ) al final de cada Sprint .  Cada dos semanas, es decir, al final de cada iteración el incremento del producto es presentado, probado y discutido con el cliente para su evaluación en una reunión que lleva adelante el equipo junto con el Product Owner. Diariamente el equipo se reúne, para mantener la alineación hacia el objetivo del Sprint en curso y al final de la iteración el Scrum Team realiza una reunión de retrospectiva para evaluar la forma como vienen trabajando y aplicar mejora continua de sus procesos y prácticas de desarrollo."
+                "textFive":") al final de cada Sprint .  Cada dos semanas, es decir, al final de cada iteración el incremento del producto es presentado, probado y discutido con el cliente para su evaluación en una reunión que lleva adelante el equipo junto con el Product Owner. Diariamente el equipo se reúne, para mantener la alineación hacia el objetivo del Sprint en curso y al final de la iteración el Scrum Team realiza una reunión de retrospectiva para evaluar la forma como vienen trabajando y aplicar mejora continua de sus procesos y prácticas de desarrollo."
 
             },
             "subtitle":"Este tipo de marco nos permite:",
