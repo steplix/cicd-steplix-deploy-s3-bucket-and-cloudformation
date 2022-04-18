@@ -1,7 +1,6 @@
 import React from "react";
 
 const ModalCard = ({ subDescription, bgColor, textColor, bgLine }) => {
-    console.log(textColor);
     return (
         <div
             className={`${bgColor} ${textColor} flex p-steplix rounded-2xl flex-col w-full h-full text-center justify-center my-auto`}
