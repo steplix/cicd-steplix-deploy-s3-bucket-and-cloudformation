@@ -8,7 +8,7 @@ import Flags from "@/common/components/Flags";
 const Job = () => {
     const { t } = useTranslation();
     const router = useRouter();
-    let nameJob = router.query.slug;
+    let nameJob = router.query.slug?.replace(".html", "");
     return (
         <>
             <Head>
