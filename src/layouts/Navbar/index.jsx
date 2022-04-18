@@ -120,20 +120,25 @@ const Navbar = () => {
                                     {t("navbar.item1")}
                                 </a>
                             </Link>
-                            <Link href={{ pathname: "/process", query: query }}>
+                            <Link
+                                href={{
+                                    pathname: "/process.html",
+                                    query: query,
+                                }}
+                            >
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/process"
                                             ? "nav--active opacity-100"
                                             : ""
                                     }`}
-                                    href="#what-we-do"
                                 >
                                     {t("navbar.item2")}
                                 </a>
                             </Link>
-
-                            <Link href={{ pathname: "/jobs", query: query }}>
+                            <Link
+                                href={{ pathname: "/jobs.html", query: query }}
+                            >
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/jobs"
@@ -154,11 +159,11 @@ const Navbar = () => {
                             >
                                 <Link
                                     href={{
-                                        pathname: "/contact",
+                                        pathname: "/contact.html",
                                         query: query,
                                     }}
                                 >
-                                    <a href="">{t("navbar.item6")}</a>
+                                    <a>{t("navbar.item6")}</a>
                                 </Link>
                             </button>
                             <div>

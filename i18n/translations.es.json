@@ -1,38 +1,36 @@
-{  
-    "404":{
-    "subtitle":"Creemos que alguien escondió esta sección! Volvé al home para seguir navegando.",
-    "button":"Volver al home"
-},
-    "contact":{
-    "title":"Queremos escuchar tus ",
-    "titleEmpty":"ideas ",
-    "subtitle":"Agenda una llamada con nuestros comerciales.",
-    "brochureText":"Descargá nuestro ",
-    "brochure":"brochure",
-    "ourOfficeTitle":"Nuestra",
-    "ourOfficeTitleEmpty":"oficina",
-    "salesRepresentative":"Comercial"
-
-},
+{
+    "404": {
+        "subtitle": "Creemos que alguien escondió esta sección! Volvé al home para seguir navegando.",
+        "button": "Volver al home"
+    },
+    "contact": {
+        "title": "Queremos escuchar tus ",
+        "titleEmpty": "ideas ",
+        "subtitle": "Agenda una llamada con nuestros comerciales.",
+        "brochureText": "Descargá nuestro ",
+        "brochure": "brochure",
+        "ourOfficeTitle": "Nuestra",
+        "ourOfficeTitleEmpty": "oficina",
+        "salesRepresentative": "Comercial"
+    },
     "jobs": {
         "applyButton": "Postularme",
         "title": "Conocé nuestras",
         "titleEmpty": "búsquedas",
-        "textCV":"Si sabes que podes ser un gran Steplixer... ¡Envianos tu cv!",
-        "or":"ó",
-        "hr":"RRHH",
+        "textCV": "Si sabes que podes ser un gran Steplixer... ¡Envianos tu cv!",
+        "or": "ó",
+        "hr": "RRHH",
         "UI_UXDesigner": {
-            "url": "UI_UXDesigner",
+            "url": "UI_UXDesigner.html",
             "title": "UX/UI DESIGNER",
             "titleEmpty": "SR",
             "country": "Argentina",
-            "description":
-                "En Steplix estamos buscando un crack en UX/UI Design, con 3/5 años de experiencia y un gran conocimiento en diseño, con ganas de sumarse a un equipo diverso y multidisciplinario que disfruta los desafíos y el trabajo en equipo. ",
-                "values": {
-                    "title":"¿Qué significa ser un Steplixer UX/UI Designer? ",
-                    "textOne":"Compartir los siguientes valores: confianza, respeto, adaptación, éxito, conciencia, y agilidad. ",
-                   "textTwo":  "Y también que presente soluciones a través del diseño, por eso es importante que tengas muy buen criterio estético y seas super exigente con este aspecto."
-                },
+            "description": "En Steplix estamos buscando un crack en UX/UI Design, con 3/5 años de experiencia y un gran conocimiento en diseño, con ganas de sumarse a un equipo diverso y multidisciplinario que disfruta los desafíos y el trabajo en equipo. ",
+            "values": {
+                "title": "¿Qué significa ser un Steplixer UX/UI Designer? ",
+                "textOne": "Compartir los siguientes valores: confianza, respeto, adaptación, éxito, conciencia, y agilidad. ",
+                "textTwo": "Y también que presente soluciones a través del diseño, por eso es importante que tengas muy buen criterio estético y seas super exigente con este aspecto."
+            },
             "requirements": {
                 "title": "¿Cuáles van a ser tus tareas?",
                 "subtitle": "",
@@ -40,19 +38,19 @@
                     "Llevar adelante procesos de discovery y research con la compañía de tu líder, con el fin de ayudar a los clientes y al equipo asignado al proyecto",
 
                     "Entender y definir los objetivos del negocio de nuestros clientes",
-                    
+
                     "Definir y describir quiénes son sus usuarios y cuáles son sus necesidades",
-                    
+
                     "Detectar pain points dentro del customer journey con el fin de encontrar oportunidades",
-                    
+
                     "Definir qué funcionalidades debe tener el producto para otorgar valor a sus potenciales usuarios y poder salir al mercado lo antes posible",
-                    
+
                     "Organizar los flujos de información dentro del producto para que la misma sea accesible de forma intuitiva",
-                    
+
                     "Lograr una experiencia de usuario que cumpla con los objetivos del negocio, amigable y de alta calidad en conjunto con el equipo",
-                    
+
                     "Involucrarte en el problema de negocio que el cliente quiere resolver y con el mercado en el que opera con el fin de interpretar las necesidades del mismo y poder así, diseñar un producto digital que resuelva un problema real, sea fácil de usar y haga la diferencia desde lo estético",
-                    
+
                     "Vas a tener que trabajar codo a codo con todo el team de Steplixers asignado al proyecto en el que estés, con el fin de que el diseño cumpla con los requerimientos funcionales del producto, y que el equipo de desarrollo pueda implementarlo en tiempo y forma"
                 ]
             },
@@ -61,52 +59,50 @@
                 "subtitle": "Es necesario que tengas experiencia y conocimientos en:",
                 "items": [
                     "Creación rápida de prototipos",
-                    
+
                     "Maquetas de alta definición",
-                    
+
                     "Presentación de soluciones y argumentación",
-                    
+
                     "Conocimiento de buenas prácticas y patrones de diseño tanto en móvil como web",
                     "Experiencia en procesos de diseño",
-                    
+
                     "Experiencia en investigación de usuarios y pruebas de usuarios",
-                    
+
                     "Facilitación de Design Thinking, Design Sprint, Lean Canvas, etc",
-                    
+
                     "Conocimientos Figma o Sketch",
-                    
+
                     "Conocimientos en Miro o Mural",
-                    
+
                     "Ser detallista, independiente y proactivo",
-                    
+
                     "Metodologías ágiles - marco Scrum"
-                    
                 ]
             },
-            "Benefits":{
-                "title":"Beneficios",
-                "textOne":"💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
-                "textTwo":"💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
-                "textThree":" ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
-                "textFour":"Flexiblidad: trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok.",
-                "textFive":" 🤓 Clases de inglés + Plan de carrera. ",
-                "textSix":"🏥 Medicina prepaga de primer nivel."
+            "Benefits": {
+                "title": "Beneficios",
+                "textOne": "💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
+                "textTwo": "💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
+                "textThree": " ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
+                "textFour": "Flexiblidad: trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok.",
+                "textFive": " 🤓 Clases de inglés + Plan de carrera. ",
+                "textSix": "🏥 Medicina prepaga de primer nivel."
             }
         },
         "BACKENDSSR": {
-            "url": "BACKENDSSR",
+            "url": "BACKENDSSR.html",
             "title": "BACK-END DEVELOPER",
             "titleEmpty": "SR",
             "country": "Argentina",
-            "description":
-            "En Steplix estamos buscando un Backend nivel experto con un gran conocimiento en el diseño y construcción de Microservicios e Integraciones usando arquitectura cloud y stack NodeJS. Que tenga ganas de sumarse a un equipo diverso y multidisciplinario que disfrute los nuevos desafíos y el trabajo en equipo.",
+            "description": "En Steplix estamos buscando un Backend nivel experto con un gran conocimiento en el diseño y construcción de Microservicios e Integraciones usando arquitectura cloud y stack NodeJS. Que tenga ganas de sumarse a un equipo diverso y multidisciplinario que disfrute los nuevos desafíos y el trabajo en equipo.",
             "values": {
-                "title":"¿Qué significa ser un Steplixer Backend?",
-                "textOne":"Compartir los siguientes valores: confianza, respeto, adaptación, éxito, conciencia, y agilidad.",
-               "textTwo": "Tener ganas de crecer y aprovechar la oportunidad de poner su granito de arena para seguir construyendo Steplix."
-            },  
+                "title": "¿Qué significa ser un Steplixer Backend?",
+                "textOne": "Compartir los siguientes valores: confianza, respeto, adaptación, éxito, conciencia, y agilidad.",
+                "textTwo": "Tener ganas de crecer y aprovechar la oportunidad de poner su granito de arena para seguir construyendo Steplix."
+            },
             "requirements": {
-                "title":" ¿Cuáles van a ser tus tareas?",
+                "title": " ¿Cuáles van a ser tus tareas?",
                 "items": [
                     "Participar en eventos de SCRUM",
                     "Asistir al refinamiento de tareas para las User Stories durante el Sprint de acuerdo al Technical Document",
@@ -121,53 +117,51 @@
             },
             "responsibilities": {
                 "title": "¿Qué esperamos de vos?",
-                
+
                 "items": [
-                    
-                        "Mínimo 6 años de experiencia en diseño, desarrollo  e implementación de software",
-                        "Conocimiento en desarrollo de aplicaciones, API, middleware y base de datos",
-                        "Patrones de Diseño y de Integración",
-                        "Conocimientos en Metodologías Ágiles de Desarrollo de Software",
-                        "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
-                        "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App",
-                        "Es deseable contar con conocimientos y experiencia en TDD",
-                        "Se requiere un nivel medio o superior de inglés escrito"
-                    
+                    "Mínimo 6 años de experiencia en diseño, desarrollo  e implementación de software",
+                    "Conocimiento en desarrollo de aplicaciones, API, middleware y base de datos",
+                    "Patrones de Diseño y de Integración",
+                    "Conocimientos en Metodologías Ágiles de Desarrollo de Software",
+                    "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
+                    "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App",
+                    "Es deseable contar con conocimientos y experiencia en TDD",
+                    "Se requiere un nivel medio o superior de inglés escrito"
                 ]
             },
-            "Benefits":{
-                "title":"Beneficios",
-                "textOne":"💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
-                "textTwo":"💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
-                "textThree":" ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
-                "textFour":"Flexiblidad: trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok.",
-                "textFive":" 🤓 Clases de inglés + Plan de carrera. ",
-                "textSix":"🏥 Medicina prepaga de primer nivel."
+            "Benefits": {
+                "title": "Beneficios",
+                "textOne": "💻 Trabajo híbrido: la ofi queda en Palermo y es todo lo que está bien. Pensada para que el momento presencial sea productivo y lo más confortable posible: masajista, osteopata, acceso a refrigerios y snaks, parrilladas en el almuerzo, sala de juegos.",
+                "textTwo": "💸 Ajustes por inflación 3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos.",
+                "textThree": " ‍🏝️ 3 semanas de vacaciones: 2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas.",
+                "textFour": "Flexiblidad: trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok.",
+                "textFive": " 🤓 Clases de inglés + Plan de carrera. ",
+                "textSix": "🏥 Medicina prepaga de primer nivel."
             }
         },
-        "valuesSteplix":{
-            "title":"Valores ",
-            "titleEmpty":"Steplix ",
-            "valueOne":{
-                "title":"Confianza",
-                "text":"Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos. "
+        "valuesSteplix": {
+            "title": "Valores ",
+            "titleEmpty": "Steplix ",
+            "valueOne": {
+                "title": "Confianza",
+                "text": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos. "
             },
-            "valueTwo":{
-                "title":"Respeto Mutuo",
-                "text":"Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
+            "valueTwo": {
+                "title": "Respeto Mutuo",
+                "text": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
             },
-            "valueThree":{
-                "title":"Éxito",
-                "text":"Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
+            "valueThree": {
+                "title": "Éxito",
+                "text": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
             },
-            "valueFour":{
-                "title":"Agilidad",
-                "text":"Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
+            "valueFour": {
+                "title": "Agilidad",
+                "text": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
             },
-            "valueFive":{
-                "title":"Conciencia",
-                "text":"Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
-            }          
+            "valueFive": {
+                "title": "Conciencia",
+                "text": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
+            }
         }
     },
     "about_us": {
@@ -363,19 +357,18 @@
             "descriptionTwo": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
         }
     },
-    "happyClients":{
-        "title":"Lo que opinan nuestros ",
-        "titleEmpty":"clientes",
-        "clientFinket":{
+    "happyClients": {
+        "title": "Lo que opinan nuestros ",
+        "titleEmpty": "clientes",
+        "clientFinket": {
             "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“",
             "title": "CEO & Founder"
         },
-        "clientSura":{
+        "clientSura": {
             "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas.”",
             "title": "Business Line Manager and Corporate Segment"
         }
-        
-    } ,
+    },
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {
