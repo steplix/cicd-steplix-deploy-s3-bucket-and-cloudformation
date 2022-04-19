@@ -48,7 +48,7 @@ const ScheduleContact = () => {
                 </div>
             </div>
             <div>
-                <p className="xl:text-[40px] mt-[30px] xl:mt-[50px] mb-[80px] xl:mb-[220px]">
+                <p className="p-steplix mt-[30px] xl:mt-[50px] mb-[80px] xl:mb-[220px]">
                     {t("contact.brochureText")}
                     <span className="text-steplix-yellow decoration-solid underline">
                         <a
