@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
 import { useTranslation } from "next-export-i18n";
 import ContactCard from "@/common/components/ContactCard";
 
@@ -81,7 +82,11 @@ const ScheduleContact = () => {
                     </div>
                 </div>
                 <div className="xl:w-[715px] w-[333px] h-[186px] xl:h-[400px] hidden xl:block">
-                    <img src="assets/img/map.svg" alt="map" />
+                    <Link href="https://g.page/steplix?share">
+                        <a target="_blank">
+                            <img src="assets/img/map.svg" alt="map" />
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
