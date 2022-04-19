@@ -106,12 +106,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </Link>
                 </div>
                 <div className="flex gap-x-4 item-center text-left w-[94%] ml-7 ">
-                    <LanguageSelector />
-                    <p className="my-auto">
-                        {query?.lang === "es"
-                            ? "English version"
-                            : "Versión en español"}
-                    </p>
+                    <LanguageSelector sm />
                 </div>
             </div>
         </>
