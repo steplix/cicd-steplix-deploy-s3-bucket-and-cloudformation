@@ -37,7 +37,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </button>
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-blue">
-                    <div className="py-3 pl-6 ">
+                    <div className="py-3 pl-6">
                         <Link href="about-us">
                             <a
                                 className={
@@ -54,7 +54,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </div>
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-red">
-                    <div className="py-3 pl-6 ">
+                    <div className="py-3 pl-6">
                         <Link href="process">
                             <a
                                 className={
@@ -71,7 +71,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </div>
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-yellow">
-                    <div className="py-3 pl-6 ">
+                    <div className="py-3 pl-6">
                         <Link href={{ pathname: "jobs", query: query }}>
                             <a
                                 className={
@@ -87,7 +87,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex item-center text-left w-[94%]  ">
+                <div className="flex item-center text-left w-[94%]">
                     <Link href={{ pathname: "contact", query: query }}>
                         <a href="#contact-us">
                             <button
@@ -105,7 +105,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </a>
                     </Link>
                 </div>
-                <div className="flex gap-x-4 item-center text-left w-[94%] ml-7 ">
+                <div className="flex gap-x-4 item-center text-left w-[94%] ml-7">
                     <LanguageSelector />
                     <p className="my-auto">
                         {query?.lang === "es"
