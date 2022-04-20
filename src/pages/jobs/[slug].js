@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 import JobItemCard from "@/common/components/JobItemCard";
 import Flags from "@/common/components/Flags";
+import { ActiveSearches } from "@/common/utils/ActiveSearches";
 
 const Job = () => {
     const { t } = useTranslation();
@@ -104,3 +105,18 @@ const Job = () => {
 };
 
 export default Job;
+
+export const getStaticPaths = async () => {
+    return {
+        paths: ActiveSearches(),
+        fallback: false,
+    };
+};
+
+export async function getStaticProps(context) {
+    return {
+        props: {
+            params: context.params,
+        },
+    };
+}
