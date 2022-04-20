@@ -39,7 +39,7 @@ const JobItemCard = ({ item }) => {
                 <p className="xl:text-[32px] text-[22px] font-bold mt-[70px] mb-7">
                     {item?.requirements?.title}
                 </p>
-                <ul className="list-disc mb-[70px] p-steplix">
+                <ul className="list-disc mb-[70px] p-steplix lg:ml-9 ml-5">
                     {item?.requirements?.items.map((element, index) => (
                         <li key={index}>{element}</li>
                     ))}
@@ -52,7 +52,7 @@ const JobItemCard = ({ item }) => {
                 <p className="p-steplix mt-10">
                     {item?.responsibilities?.subtitle}
                 </p>
-                <ul className="list-disc mb-[70px] p-steplix">
+                <ul className="list-disc mb-[70px] p-steplix lg:ml-9 ml-5">
                     {item?.responsibilities?.items.map((element, index) => (
                         <li key={index}>{element}</li>
                     ))}
