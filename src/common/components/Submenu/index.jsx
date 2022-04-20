@@ -38,7 +38,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-blue">
                     <div className="py-3 pl-6">
-                        <Link href="about-us">
+                        <Link
+                            href={{ pathname: "about-us.html", query: query }}
+                        >
                             <a
                                 className={
                                     router.pathname === "/about-us"
@@ -55,7 +57,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-red">
                     <div className="py-3 pl-6">
-                        <Link href="process">
+                        <Link href={{ pathname: "process.html", query: query }}>
                             <a
                                 className={
                                     router.pathname === "/process"
@@ -72,7 +74,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-yellow">
                     <div className="py-3 pl-6">
-                        <Link href={{ pathname: "jobs", query: query }}>
+                        <Link href={{ pathname: "jobs.html", query: query }}>
                             <a
                                 className={
                                     router.pathname === "/jobs"
@@ -88,7 +90,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </div>
                 </div>
                 <div className="flex item-center text-left w-[94%]">
-                    <Link href={{ pathname: "contact", query: query }}>
+                    <Link href={{ pathname: "contact.html", query: query }}>
                         <a href="#contact-us">
                             <button
                                 onClick={() => handleClickToggle()}
