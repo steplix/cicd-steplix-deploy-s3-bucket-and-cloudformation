@@ -44,7 +44,7 @@ export default function Modal({
                     <div className="h-full w-full flex justify-center items-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div
                             ref={ref}
-                            className="wrapper lg:bottom-36 relative lg:h-[500px] max-h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[99%] lg:w-[1000px] flex justify-center"
+                            className="wrapper flex justify-center relative max-h-[800px] lg:h-[500px] lg:w-[1000px] right-[6%] sm:left-[7%] 2xl:left-[11%] lg:bottom-36 w-[99%]"
                         >
                             {/*content*/}
                             <div
