@@ -107,7 +107,7 @@ const StepsToTheTop = () => {
 
                     <div className="hidden lg:block h-[300px] w-[360px] my-auto">
                         <ProcessCard
-                            textColor="text-white"
+                            textColor="text-black"
                             bgColor="bg-steplix-yellow"
                             bgLine="bg-steplix-blue"
                             subDescription={t(

@@ -54,7 +54,7 @@ const StepCard = ({
                     )}
                     {title && modal && (
                         <h2
-                            className={`h2-steplix ${
+                            className={`h2-steplix w-[130px] md:w-full ${
                                 sizeTitle ? sizeTitle : ""
                             } ${colorTitle ? colorTitle : "text-white"}`}
                         >

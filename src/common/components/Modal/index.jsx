@@ -44,7 +44,7 @@ export default function Modal({
                     <div className="h-full w-full flex justify-center items-center fixed inset-0 z-[99999] outline-none focus:outline-none text-white">
                         <div
                             ref={ref}
-                            className="wrapper lg:bottom-36 relative lg:h-[500px] h-[800px] right-[6%] 2xl:left-[11%] sm:left-[7%] w-[99%] lg:w-[1000px] flex justify-center "
+                            className="wrapper flex justify-center relative max-h-[800px] lg:h-[500px] lg:w-[1000px] right-[6%] sm:left-[7%] 2xl:left-[11%] lg:bottom-36 w-[99%]"
                         >
                             {/*content*/}
                             <div
@@ -57,15 +57,15 @@ export default function Modal({
                                     x
                                 </button>
                                 {/*body*/}
-                                <div className="px-1 mt-5 h-[670px]">
+                                <div className="px-1 mt-5 mb-2 max-h-[670px] lg:h-[670px]">
                                     {children}
                                 </div>
                                 {/*footer*/}
                                 {positionModal && (
-                                    <div className="flex items-center lg:mt-10 justify-center p-6 ">
+                                    <div className="flex items-center lg:mt-10 justify-center p-6">
                                         {positionModal > 1 && (
                                             <button
-                                                className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2  font-semibold p-2  flex justify-center items-center shadow-xl"
+                                                className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2 font-semibold p-2 flex justify-center items-center shadow-xl"
                                                 type="button"
                                                 onClick={() =>
                                                     setPositionModal(
@@ -73,7 +73,7 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <div className="flex items-center mt-1 mr-2 rounded-full bg-steplix-yellow h-[7px] w-[14px]">
+                                                <div className="flex items-center mt-1 mr-1 rounded-full bg-steplix-yellow h-[5px] w-[10px]">
                                                     <img
                                                         src="/assets/img/chevronLeft.svg"
                                                         alt="left chevron"
@@ -93,7 +93,7 @@ export default function Modal({
                                                     )
                                                 }
                                             >
-                                                <div className="flex items-center mt-2 ml-2 rounded-full bg-steplix-yellow h-[7px] w-[14px]">
+                                                <div className="flex items-center mt-2 ml-1 rounded-full bg-steplix-yellow h-[5px] w-[10px]">
                                                     <img
                                                         src="/assets/img/chevronRight.svg"
                                                         alt="right chevron"
