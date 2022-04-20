@@ -20,7 +20,7 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: "/assets/img/clients/client-finket.svg",
+            image: "/assets/img/clients/client-finket-v2.svg",
             alt: "CTECH",
             name: "Lucas Bianchi",
             title: t("happyClients.clientFinket.title"),
@@ -183,7 +183,7 @@ const Carousel = () => {
                         ))}
                     </div>
                 </div>
-                {loaded && propsRef.current && (
+                {/* {loaded && propsRef.current && (
                     <div className="dots 2xl:py-5 xl:py-5 lg:py-16 md:py-5 py-6">
                         {[
                             ...Array(
@@ -203,7 +203,7 @@ const Carousel = () => {
                             );
                         })}
                     </div>
-                )}
+                )} */}
             </div>
         </>
     );

@@ -15,7 +15,7 @@ const ScrumFramework = ({ data }) => {
                     </span>
                 </h2>
             </div>
-            <div className="w-[1087px] mt-10 mb-14">
+            <div className="w-[1407px] mt-10 mb-14">
                 <p className="p-steplix">
                     {t("process.scrumFramework.paragraphOne.textOne")}
                     <span className="text-steplix-yellow">
