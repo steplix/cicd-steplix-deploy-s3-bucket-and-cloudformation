@@ -20,7 +20,7 @@ const Carousel = () => {
     let dotColor = "";
     const arrayClients = [
         {
-            image: "/assets/img/clients/client-finket.svg",
+            image: "/assets/img/clients/client-finket-v2.svg",
             alt: "CTECH",
             name: "Lucas Bianchi",
             title: t("happyClients.clientFinket.title"),
