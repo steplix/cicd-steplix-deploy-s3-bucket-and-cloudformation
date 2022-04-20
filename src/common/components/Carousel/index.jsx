@@ -183,7 +183,7 @@ const Carousel = () => {
                         ))}
                     </div>
                 </div>
-                {loaded && propsRef.current && (
+                {/* {loaded && propsRef.current && (
                     <div className="dots 2xl:py-5 xl:py-5 lg:py-16 md:py-5 py-6">
                         {[
                             ...Array(
@@ -203,7 +203,7 @@ const Carousel = () => {
                             );
                         })}
                     </div>
-                )}
+                )} */}
             </div>
         </>
     );
