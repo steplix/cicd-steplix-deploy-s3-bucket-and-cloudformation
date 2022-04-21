@@ -58,9 +58,9 @@ const Navbar = () => {
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
-                                    src="/assets/img/steplixMobile.svg"
+                                    src="/assets/img/logo-navbar.svg"
                                     alt="logo"
-                                    className="w-24 h-6"
+                                    className="w-[101px] h-6"
                                 />
                             </a>
                         </Link>
