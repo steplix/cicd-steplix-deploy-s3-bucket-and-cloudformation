@@ -7,12 +7,14 @@ import LanguageSelector from "../LanguageSelector";
 
 const Submenu = ({ toggle, setToggle, query, router }) => {
     const { t } = useTranslation();
+
     //
-    //functions
+    // Functions
     //
     function handleClickToggle() {
         setToggle((prevToggle) => !prevToggle);
     }
+
     return (
         <>
             <div
@@ -38,9 +40,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-blue">
                     <div className="py-3 pl-6">
-                        <Link
-                            href={{ pathname: "about-us.html", query: query }}
-                        >
+                        <Link href={{ pathname: "/about-us", query: query }}>
                             <a
                                 className={
                                     router.pathname === "/about-us"
@@ -48,7 +48,6 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                                         : ""
                                 }
                                 onClick={() => handleClickToggle()}
-                                href="#"
                             >
                                 {t("navbar.item1")}
                             </a>
@@ -57,7 +56,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-red">
                     <div className="py-3 pl-6">
-                        <Link href={{ pathname: "process.html", query: query }}>
+                        <Link href={{ pathname: "/process", query: query }}>
                             <a
                                 className={
                                     router.pathname === "/process"
@@ -65,7 +64,6 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                                         : ""
                                 }
                                 onClick={() => handleClickToggle()}
-                                href="#"
                             >
                                 {t("navbar.item2")}
                             </a>
@@ -74,7 +72,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                 </div>
                 <div className="submenu--item item-center hover:border-steplix-yellow">
                     <div className="py-3 pl-6">
-                        <Link href={{ pathname: "jobs.html", query: query }}>
+                        <Link href={{ pathname: "/jobs", query: query }}>
                             <a
                                 className={
                                     router.pathname === "/jobs"
@@ -82,7 +80,6 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                                         : ""
                                 }
                                 onClick={() => handleClickToggle()}
-                                href="#"
                             >
                                 {t("navbar.item5")}
                             </a>
@@ -90,8 +87,8 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                     </div>
                 </div>
                 <div className="flex item-center text-left w-[94%]">
-                    <Link href={{ pathname: "contact.html", query: query }}>
-                        <a href="#contact-us">
+                    <Link href={{ pathname: "/contact", query: query }}>
+                        <a>
                             <button
                                 onClick={() => handleClickToggle()}
                                 className={`bg-white mb-9 text-gray-900 rounded-full w-[110px] h-9 mt-3 my-2 ml-4 text-xs
@@ -115,6 +112,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
     );
 };
 
+//
+// Proptypes
+//
 Submenu.propTypes = {
     toggle: PropTypes.bool.isRequired,
     query: PropTypes.object,

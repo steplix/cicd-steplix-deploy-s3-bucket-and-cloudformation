@@ -106,7 +106,7 @@ const Navbar = () => {
                         <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
                             <Link
                                 href={{
-                                    pathname: "/about-us.html",
+                                    pathname: "/about-us",
                                     query: query,
                                 }}
                             >
@@ -122,7 +122,7 @@ const Navbar = () => {
                             </Link>
                             <Link
                                 href={{
-                                    pathname: "/process.html",
+                                    pathname: "/process",
                                     query: query,
                                 }}
                             >
@@ -136,9 +136,7 @@ const Navbar = () => {
                                     {t("navbar.item2")}
                                 </a>
                             </Link>
-                            <Link
-                                href={{ pathname: "/jobs.html", query: query }}
-                            >
+                            <Link href={{ pathname: "/jobs", query: query }}>
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/jobs"
@@ -159,7 +157,7 @@ const Navbar = () => {
                             >
                                 <Link
                                     href={{
-                                        pathname: "/contact.html",
+                                        pathname: "/contact",
                                         query: query,
                                     }}
                                 >

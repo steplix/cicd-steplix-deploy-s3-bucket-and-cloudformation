@@ -21,7 +21,7 @@
         "or": "ó",
         "hr": "RRHH",
         "UI_UXDesigner": {
-            "url": "UI_UXDesigner.html",
+            "url": "UI_UXDesigner",
             "title": "UX/UI DESIGNER",
             "titleEmpty": "SR",
             "country": "Argentina",
@@ -91,7 +91,7 @@
             }
         },
         "BACKENDSSR": {
-            "url": "BACKENDSSR.html",
+            "url": "BACKENDSSR",
             "title": "BACK-END DEVELOPER",
             "titleEmpty": "SR",
             "country": "Argentina",
@@ -216,34 +216,33 @@
         "scrumFramework": {
             "titleOne": " ¿Sabías que trabajamos bajo el ",
             "titleTwo": "Marco Scrum?",
-            "paragraphOne":{
-                "textOne":"En Steplix utilizamos el marco de trabajo Scrum, que se basa en realizar un desarrollo iterativo/incremental que nos permite entregar valor desde el inicio del proyecto y a todo lo largo de la construcción del producto, garantizando ajustes en diseño y desarrollo en momentos oportunos del ciclo de vida. Conformamos un equipo multidisciplinario, denominado",
-                "goldenWordOne":" Scrum Team",
-                "textTwo":" que estará acompañado por un líder servicial bajo el rol de ",
-                "goldenWordTwo":" Scrum Master.",
-                "textThree":" Todos los colaboradores cuentan con los conocimientos técnicos necesarios. Cabe destacar, que es clave y necesaria la participación del cliente, a través de un representante que él mismo designe denominado bajo el rol de ",
-                "goldenWordThree":"Product Owner",
-                "textFour":" para asegurar una comunicación fluida y adecuada de los requisitos."
-
+            "paragraphOne": {
+                "textOne": "En Steplix utilizamos el marco de trabajo Scrum, que se basa en realizar un desarrollo iterativo/incremental que nos permite entregar valor desde el inicio del proyecto y a todo lo largo de la construcción del producto, garantizando ajustes en diseño y desarrollo en momentos oportunos del ciclo de vida. Conformamos un equipo multidisciplinario, denominado",
+                "goldenWordOne": " Scrum Team",
+                "textTwo": " que estará acompañado por un líder servicial bajo el rol de ",
+                "goldenWordTwo": " Scrum Master.",
+                "textThree": " Todos los colaboradores cuentan con los conocimientos técnicos necesarios. Cabe destacar, que es clave y necesaria la participación del cliente, a través de un representante que él mismo designe denominado bajo el rol de ",
+                "goldenWordThree": "Product Owner",
+                "textFour": " para asegurar una comunicación fluida y adecuada de los requisitos."
             },
-            "paragraphTwo":{
-                "textOne":"El marco Scrum se compone de una serie de eventos/reuniones que se realizan en momentos estratégicos, durante ciclos de 2 semanas (",
-                "goldenWordOne":"Sprints",
-                "textTwo":") en donde se trabaja en base a ciertos requisitos seleccionados de la lista principal relevada/priorizada (",
-                "goldenWordTwo":"Product Backlog",
-                "textThree":" ), que deriva de una reunión de planificación que da origen a la lista de requisitos que se van a construir durante esas dos semanas ( ",
-                "goldenWordThree":"Sprint Backlog",
-                "textFour":") y se desarrollan garantizando un entregable funcional (",
-                "goldenWordFour":"Incremento del producto",
-                "textFive":") al final de cada Sprint .  Cada dos semanas, es decir, al final de cada iteración el incremento del producto es presentado, probado y discutido con el cliente para su evaluación en una reunión que lleva adelante el equipo junto con el Product Owner. Diariamente el equipo se reúne, para mantener la alineación hacia el objetivo del Sprint en curso y al final de la iteración el Scrum Team realiza una reunión de retrospectiva para evaluar la forma como vienen trabajando y aplicar mejora continua de sus procesos y prácticas de desarrollo."
-
+            "paragraphTwo": {
+                "textOne": "El marco Scrum se compone de una serie de eventos/reuniones que se realizan en momentos estratégicos, durante ciclos de 2 semanas (",
+                "goldenWordOne": "Sprints",
+                "textTwo": ") en donde se trabaja en base a ciertos requisitos seleccionados de la lista principal relevada/priorizada (",
+                "goldenWordTwo": "Product Backlog",
+                "textThree": " ), que deriva de una reunión de planificación que da origen a la lista de requisitos que se van a construir durante esas dos semanas ( ",
+                "goldenWordThree": "Sprint Backlog",
+                "textFour": ") y se desarrollan garantizando un entregable funcional (",
+                "goldenWordFour": "Incremento del producto",
+                "textFive": ") al final de cada Sprint .  Cada dos semanas, es decir, al final de cada iteración el incremento del producto es presentado, probado y discutido con el cliente para su evaluación en una reunión que lleva adelante el equipo junto con el Product Owner. Diariamente el equipo se reúne, para mantener la alineación hacia el objetivo del Sprint en curso y al final de la iteración el Scrum Team realiza una reunión de retrospectiva para evaluar la forma como vienen trabajando y aplicar mejora continua de sus procesos y prácticas de desarrollo."
             },
-            "subtitle":"Este tipo de marco nos permite:",
-            "items":[
+            "subtitle": "Este tipo de marco nos permite:",
+            "items": [
                 "Gestionar las expectativas de nuestros clientes basados en resultados tangibles, que se tienen desde el inicio del proyecto.",
-                "Mejorar el time to market." ,
+                "Mejorar el time to market.",
                 "Flexibilidad y adaptación respecto a las necesidades del cliente, cambios en el mercado, etc. ",
-                "Gestión sistemática del Retorno de Inversión." ]
+                "Gestión sistemática del Retorno de Inversión."
+            ]
         },
         "HowDoWeDoIt": {
             "title": "¿Cómo lo hacemos?",

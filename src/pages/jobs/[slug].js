@@ -9,7 +9,7 @@ import { ActiveSearches } from "@/common/utils/ActiveSearches";
 const Job = () => {
     const { t } = useTranslation();
     const router = useRouter();
-    let nameJob = router.query.slug?.replace(".html", "");
+    let nameJob = router.query.slug;
     return (
         <>
             <Head>
