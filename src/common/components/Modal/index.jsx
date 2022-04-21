@@ -52,9 +52,14 @@ export default function Modal({
                             >
                                 <button
                                     onClick={() => setisModalOpen(false)}
-                                    className="absolute top-1 lg: right-4 lg:mt-3 font-black text-sm lg:text-2xl text-white bg-steplix-red h-5 w-5 lg:h-10 lg:w-10 rounded-full"
+                                    className="absolute top-4 lg: right-4 xl:right-6 lg:mt-3 font-black text-sm lg:text-2xl text-white h-5 w-5 lg:h-10 lg:w-10"
                                 >
-                                    x
+                                    <img
+                                        src="/assets/img/escape.svg"
+                                        alt="left chevron"
+                                        layout="fill"
+                                        className="mx-auto h-3 w-3"
+                                    />
                                 </button>
                                 {/*body*/}
                                 <div className="px-1 mt-5 mb-2 max-h-[670px] lg:h-[670px]">
