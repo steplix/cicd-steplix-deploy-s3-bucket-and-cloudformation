@@ -62,7 +62,7 @@ export default function Modal({
                                 </div>
                                 {/*footer*/}
                                 {positionModal && (
-                                    <div className="flex items-center lg:mt-10 justify-center p-6">
+                                    <div className="flex items-center lg:mt-10 justify-center pb-6">
                                         {positionModal > 1 && (
                                             <button
                                                 className="relative rounded-full bg-steplix-yellow h-14 w-14 mx-2 font-semibold p-2 flex justify-center items-center shadow-xl"

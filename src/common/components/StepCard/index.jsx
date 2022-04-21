@@ -22,7 +22,7 @@ const StepCard = ({
     setPositionModal,
     icon,
     sizeText,
-    modal,
+    textLeft,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -36,7 +36,7 @@ const StepCard = ({
                 number ? "flex gap-2" : ""
             }`}
         >
-            {number && !modal && (
+            {number && !textLeft && (
                 <p
                     className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
                 >
@@ -45,14 +45,14 @@ const StepCard = ({
             )}
             <div>
                 <div className="flex">
-                    {number && modal && (
+                    {number && textLeft && (
                         <p
                             className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix mr-2`}
                         >
                             {number}
                         </p>
                     )}
-                    {title && modal && (
+                    {title && textLeft && (
                         <h2
                             className={`h2-steplix w-[130px] md:w-full ${
                                 sizeTitle ? sizeTitle : ""
@@ -69,7 +69,7 @@ const StepCard = ({
                 </div>
 
                 <div className="flex">
-                    {title && !modal && (
+                    {title && !textLeft && (
                         <h2
                             className={`h2-steplix ${
                                 sizeTitle ? sizeTitle : ""
@@ -98,7 +98,7 @@ const StepCard = ({
                 {colorLine && (
                     <div
                         className={`${
-                            modal && "ml-16 xl:ml-[125px]"
+                            textLeft && "ml-16 xl:ml-[125px]"
                         } h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
                     />
                 )}
@@ -106,18 +106,22 @@ const StepCard = ({
                 <div className={widthTexts}>
                     {textOne && (
                         <p
-                            className={`${sizeText || "p-steplix"} ${
-                                widthTextOne ? widthTextOne : ""
-                            }`}
+                            className={`${
+                                sizeText || "p-steplix"
+                            } pb-3 xl:pb-6 ${widthTextOne ? widthTextOne : ""}`}
                         >
                             {textOne}
                         </p>
                     )}
                     {textTwo && (
-                        <p className={sizeText || "p-steplix"}>{textTwo}</p>
+                        <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                            {textTwo}
+                        </p>
                     )}
                     {textThree && (
-                        <p className={sizeText || "p-steplix"}>{textThree}</p>
+                        <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                            {textThree}
+                        </p>
                     )}
                     {textFour && (
                         <p className={sizeText || "p-steplix"}>{textFour}</p>
