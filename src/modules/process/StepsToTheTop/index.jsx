@@ -22,10 +22,13 @@ const StepsToTheTop = () => {
                 <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
+                            colorLine="bg-steplix-red"
+                            textLeft
                             number="01."
                             numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepOne.title")}
                             colorTitle="font-bold text-steplix-yellow"
+                            sizeTitle="text-[22px] lg:text-[50px] xl:pt-4"
                             textOne={t(
                                 "process.stepsToTheTop.stepOne.descriptionOne"
                             )}
@@ -41,7 +44,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[370px] my-auto">
                         <ProcessCard
                             subDescription={t(
                                 "process.stepsToTheTop.stepOne.secondaryDescription"
@@ -55,11 +58,14 @@ const StepsToTheTop = () => {
                 <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
+                            colorLine="bg-steplix-red"
+                            textLeft
+                            sizeTitle="text-[22px] lg:text-[50px] xl:pt-4"
                             number="02."
                             numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepTwo.title")}
                             colorTitle="font-bold text-steplix-yellow"
-                            widthTexts="w-[265px] xl:w-[790px]"
+                            widthTexts="w-[320px] xl:w-[790px]"
                             textOne={t(
                                 "process.stepsToTheTop.stepTwo.descriptionOne"
                             )}
@@ -72,7 +78,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[370px] my-auto">
                         <ProcessCard
                             subDescription={t(
                                 "process.stepsToTheTop.stepTwo.secondaryDescription"
@@ -86,6 +92,9 @@ const StepsToTheTop = () => {
                 <div className="flex space-x-[100px]">
                     <div className="w-[325px] lg:w-[900px] ">
                         <StepCard
+                            colorLine="bg-steplix-red"
+                            textLeft
+                            sizeTitle="text-[22px] lg:text-[50px] xl:pt-4"
                             number="03."
                             numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepThree.title")}
@@ -105,7 +114,7 @@ const StepsToTheTop = () => {
                         />
                     </div>
 
-                    <div className="hidden lg:block h-[300px] w-[360px] my-auto">
+                    <div className="hidden lg:block h-[300px] w-[370px] my-auto">
                         <ProcessCard
                             textColor="text-black"
                             bgColor="bg-steplix-yellow"

@@ -71,7 +71,11 @@ const ScheduleContact = () => {
                         </span>{" "}
                     </h2>
                     <div className="xl:w-[715px] w-[333px] h-[186px] mb-8 xl:h-[400px] xl:hidden ">
-                        <img src="assets/img/map.svg" alt="map" />
+                        <Link href="https://g.page/steplix?share">
+                            <a target="_blank">
+                                <img src="assets/img/map.svg" alt="map" />
+                            </a>
+                        </Link>{" "}
                     </div>
                     <div className="xl:text-2xl text-base xl:space-y-7 space-y-4">
                         <p>
