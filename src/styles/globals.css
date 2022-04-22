@@ -17,6 +17,7 @@ body {
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 400;
@@ -26,6 +27,7 @@ body {
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 500;
@@ -35,6 +37,7 @@ body {
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 600;
@@ -44,6 +47,7 @@ body {
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 700;
@@ -53,6 +57,7 @@ body {
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 900;
@@ -164,7 +169,7 @@ body {
 @media (min-width: 768px) {
 
 .banner {
-    background-image: url("../../public/assets/img/bg-header.png");
+    background-image: url("../../public/assets/img/bg-header.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -173,7 +178,7 @@ body {
 }
 
 .banner {
-    background-image: url("../../public/assets/img/bg-header.png");
+    background-image: url("../../public/assets/img/bg-header.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }

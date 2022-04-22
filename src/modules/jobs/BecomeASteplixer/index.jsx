@@ -10,8 +10,8 @@ const BecomeASteplixer = () => {
                 {t("jobs.title")}{" "}
                 <span className="title-empty"> {t("jobs.titleEmpty")}</span>
             </h1>
-            <div className="mt-14 xl:grid xl:grid-cols-2 xl:gap-y-12 xl:gap-x-7 space-y-10 xl:space-y-0 xl:w-[960px] ">
-                <div className="w-[333px] h-[169px] xl:w-[460px] xl:h-[140px]">
+            <div className="mt-14 xl:grid xl:grid-cols-2 xl:gap-y-12 xl:gap-x-16 space-y-10 xl:space-y-0 xl:w-[960px] ">
+                <div className="w-[333px] h-[169px] xl:w-[490px] xl:h-[140px]">
                     <JobCard
                         title={t("jobs.UI_UXDesigner.title")}
                         country={t("jobs.UI_UXDesigner.country")}
@@ -19,7 +19,7 @@ const BecomeASteplixer = () => {
                         url={t("jobs.UI_UXDesigner.url")}
                     />
                 </div>
-                <div className="w-[333px] h-[169px] xl:w-[460px] xl:h-[140px]">
+                <div className="w-[333px] h-[169px] xl:w-[490px] xl:h-[140px]">
                     <JobCard
                         title={t("jobs.BACKENDSSR.title")}
                         country={t("jobs.BACKENDSSR.country")}
