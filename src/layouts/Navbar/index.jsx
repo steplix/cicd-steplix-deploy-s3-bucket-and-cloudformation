@@ -91,13 +91,13 @@ const Navbar = () => {
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-between section-steplix pr-5">
-                    <div className="relative lg:w-[160px] lg:h-[40px] my-auto">
+                    <div className="my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
                                     src="/assets/img/logo-navbar.svg"
                                     alt="logo"
-                                    layout="fill"
+                                    className="w-[160px] h-[40px]"
                                 />
                             </a>
                         </Link>

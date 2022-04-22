@@ -12,8 +12,12 @@ const Footer = () => {
             <div className="section-steplix text-white grid justify-items-center text-center md:text-left text-sm md:text-[19px] lg:text-xl">
                 <div className="md:flex">
                     <div className="md:flex">
-                        <div className="md:h-[70px] md:w-[280px] w-40 h-4 mb-16 mx-auto md:mr-20">
-                            <img src="/assets/img/logo-navbar.svg" alt="logo" />
+                        <div className="mb-16 mx-auto md:mr-20">
+                            <img
+                                src="/assets/img/logo-navbar.svg"
+                                alt="logo"
+                                className="w-40 h-4 md:h-[70px] md:w-[280px]"
+                            />
                         </div>
                         <div className="mb-14 md:mr-16">
                             <div className="mb-5">
@@ -35,6 +39,7 @@ const Footer = () => {
                                         <img
                                             src="/assets/img/facebookFooter.svg"
                                             alt="Facebook"
+                                            className="w-5 h-10"
                                         />
                                     </div>
                                 </div>
@@ -47,6 +52,7 @@ const Footer = () => {
                                         <img
                                             src="/assets/img/instagramFooter.svg"
                                             alt="instagram"
+                                            className="w-10 h-10"
                                         />
                                     </div>
                                 </div>
@@ -59,7 +65,7 @@ const Footer = () => {
                                         <img
                                             src="/assets/img/linkedinFooter.svg"
                                             alt="linkedin"
-                                            className="w-10"
+                                            className="w-10 h-10"
                                         />
                                     </div>
                                 </div>
