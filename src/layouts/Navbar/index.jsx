@@ -157,7 +157,7 @@ const Navbar = () => {
                             >
                                 <a>
                                     <button
-                                        className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7 ${
+                                        className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl ${
                                             router.pathname === "/contact"
                                                 ? "bg-steplix-yellow"
                                                 : ""
