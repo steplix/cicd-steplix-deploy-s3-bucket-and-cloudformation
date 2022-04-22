@@ -148,22 +148,25 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             {/* button contact us */}
-                            <button
-                                className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7 ${
-                                    router.pathname === "/contact"
-                                        ? "bg-steplix-yellow"
-                                        : ""
-                                }`}
+
+                            <Link
+                                href={{
+                                    pathname: "/contact",
+                                    query: query,
+                                }}
                             >
-                                <Link
-                                    href={{
-                                        pathname: "/contact",
-                                        query: query,
-                                    }}
-                                >
-                                    <a>{t("navbar.item6")}</a>
-                                </Link>
-                            </button>
+                                <a>
+                                    <button
+                                        className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7 ${
+                                            router.pathname === "/contact"
+                                                ? "bg-steplix-yellow"
+                                                : ""
+                                        }`}
+                                    >
+                                        {t("navbar.item6")}
+                                    </button>
+                                </a>
+                            </Link>
                             <div>
                                 <LanguageSelector />
                             </div>
