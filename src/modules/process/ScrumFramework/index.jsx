@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
 const ScrumFramework = ({ data }) => {
     const { t } = useTranslation();
+    const [query] = useLanguageQuery();
 
     return (
         <div className="w-[340px] lg:w-[1400px] text-2xl lg:text-4xl font-black lg:block hidden">
@@ -35,10 +36,19 @@ const ScrumFramework = ({ data }) => {
                 </p>
             </div>
             <div className="mt-[100px]">
-                <img
-                    src="/assets/img/ScrumFrameworkEs.svg"
-                    alt="Scrum Framework"
-                />
+                {query?.lang === "es" ? (
+                    <img
+                        src="/assets/img/ScrumFrameworkEs.svg"
+                        alt="Scrum Framework"
+                        className="w-[1400px] h-[978px]"
+                    />
+                ) : (
+                    <img
+                        src="/assets/img/ScrumFrameworkEn.svg"
+                        alt="Scrum Framework"
+                        className="w-[1400px] h-[978px]"
+                    />
+                )}
             </div>
             <div className="w-[1407px] p-steplix space-y-8 mt-14 mb-14">
                 <p className="p-steplix">
