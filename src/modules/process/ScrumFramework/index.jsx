@@ -3,8 +3,19 @@ import React from "react";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
 const ScrumFramework = ({ data }) => {
+    //
+    //VARIABLES
+    //
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
+    let imageScrum = "/assets/img/ScrumFrameworkEs.svg";
+
+    //
+    //FUNCTION
+    //
+    query?.lang === "es"
+        ? (imageScrum = "/assets/img/ScrumFrameworkEs.svg")
+        : (imageScrum = "/assets/img/ScrumFrameworkEn.svg");
 
     return (
         <div className="w-[340px] lg:w-[1400px] text-2xl lg:text-4xl font-black lg:block hidden">
@@ -36,19 +47,11 @@ const ScrumFramework = ({ data }) => {
                 </p>
             </div>
             <div className="mt-[100px]">
-                {query?.lang === "es" ? (
-                    <img
-                        src="/assets/img/ScrumFrameworkEs.svg"
-                        alt="Scrum Framework"
-                        className="w-[1400px] h-[978px]"
-                    />
-                ) : (
-                    <img
-                        src="/assets/img/ScrumFrameworkEn.svg"
-                        alt="Scrum Framework"
-                        className="w-[1400px] h-[978px]"
-                    />
-                )}
+                <img
+                    src={imageScrum}
+                    alt="Scrum Framework"
+                    className="w-[1400px] h-[978px]"
+                />
             </div>
             <div className="w-[1407px] p-steplix space-y-8 mt-14 mb-14">
                 <p className="p-steplix">
