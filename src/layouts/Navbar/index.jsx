@@ -58,9 +58,9 @@ const Navbar = () => {
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
-                                    src="/assets/img/steplixMobile.svg"
+                                    src="/assets/img/logo-navbar.svg"
                                     alt="logo"
-                                    className="w-24 h-6"
+                                    className="w-[101px] h-6"
                                 />
                             </a>
                         </Link>
@@ -91,13 +91,13 @@ const Navbar = () => {
                 }`}
             >
                 <div className="pt-[30px] flex top-0 lg:justify-between section-steplix pr-5">
-                    <div className="relative lg:w-[160px] lg:h-[40px] my-auto">
+                    <div className="my-auto">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
                                     src="/assets/img/logo-navbar.svg"
                                     alt="logo"
-                                    layout="fill"
+                                    className="w-[160px] h-[40px]"
                                 />
                             </a>
                         </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
                         <div className="flex justify-end items-center space-x-5 text-white text-base w-[750px] gap-2">
                             <Link
                                 href={{
-                                    pathname: "/about-us.html",
+                                    pathname: "/about-us",
                                     query: query,
                                 }}
                             >
@@ -122,7 +122,7 @@ const Navbar = () => {
                             </Link>
                             <Link
                                 href={{
-                                    pathname: "/process.html",
+                                    pathname: "/process",
                                     query: query,
                                 }}
                             >
@@ -136,9 +136,7 @@ const Navbar = () => {
                                     {t("navbar.item2")}
                                 </a>
                             </Link>
-                            <Link
-                                href={{ pathname: "/jobs.html", query: query }}
-                            >
+                            <Link href={{ pathname: "/jobs", query: query }}>
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
                                         router.pathname === "/jobs"
@@ -150,22 +148,25 @@ const Navbar = () => {
                                 </a>
                             </Link>
                             {/* button contact us */}
-                            <button
-                                className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl mr-7 ${
-                                    router.pathname === "/contact"
-                                        ? "bg-steplix-yellow"
-                                        : ""
-                                }`}
+
+                            <Link
+                                href={{
+                                    pathname: "/contact",
+                                    query: query,
+                                }}
                             >
-                                <Link
-                                    href={{
-                                        pathname: "/contact.html",
-                                        query: query,
-                                    }}
-                                >
-                                    <a>{t("navbar.item6")}</a>
-                                </Link>
-                            </button>
+                                <a>
+                                    <button
+                                        className={`bg-white text-gray-900 rounded-full w-[200px] h-14 text-xl ${
+                                            router.pathname === "/contact"
+                                                ? "bg-steplix-yellow"
+                                                : ""
+                                        }`}
+                                    >
+                                        {t("navbar.item6")}
+                                    </button>
+                                </a>
+                            </Link>
                             <div>
                                 <LanguageSelector />
                             </div>

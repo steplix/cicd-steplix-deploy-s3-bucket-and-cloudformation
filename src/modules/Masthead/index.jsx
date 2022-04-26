@@ -25,11 +25,11 @@ const Masthead = () => {
             <div className="hidden xl:flex xl:justify-center xl:m-48">
                 <a href="#about-us">
                     <div className="border-steplix-yellow h-[44px] w-7 border-[1px] rounded-2xl text-center flex mx-auto mb-2 items-center">
-                        <div className="relative w-[14px] h-[7px] mx-auto">
+                        <div className="mx-auto">
                             <img
                                 src="/assets/img/chevronDown.svg"
                                 alt="logo"
-                                layout="fill"
+                                className="w-[14px] h-[7px]"
                             />
                         </div>
                     </div>

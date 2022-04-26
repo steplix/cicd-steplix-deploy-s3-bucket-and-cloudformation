@@ -79,7 +79,7 @@ const WhatWeDo = () => {
             >
                 <div className="lg:px-6 lg:py-4 py-2">
                     <StepCard
-                        modal
+                        textLeft
                         number={`0${number}.`}
                         numberStyles="xl:mt-1"
                         title={title}

@@ -11,11 +11,11 @@ const LanguageSelector = ({ sm }) => {
             {query?.lang === "en" ? (
                 <LanguageSwitcher lang="es">
                     <div className="flex">
-                        <div className="relative w-[34px] h-[34px]">
+                        <div className="w-[34px] h-[34px]">
                             <img
                                 src="/assets/img/logo-es.svg"
                                 alt="logo"
-                                layout="fill"
+                                className="w-[34px] h-[34px]"
                             />
                         </div>
                         {sm && (
@@ -26,11 +26,11 @@ const LanguageSelector = ({ sm }) => {
             ) : (
                 <LanguageSwitcher lang="en">
                     <div className="flex">
-                        <div className="relative w-[34px] h-[34px]">
+                        <div className="w-[34px] h-[34px]">
                             <img
                                 src="/assets/img/logo-en.svg"
                                 alt="logo"
-                                layout="fill"
+                                className="w-[34px] h-[34px]"
                             />
                         </div>
                         {sm && <p className="my-auto ml-3">English version</p>}

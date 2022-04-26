@@ -12,7 +12,7 @@ const HoDoWeDoIt = () => {
                     title={t("process.HowDoWeDoIt.title")}
                     textTwo={t("process.HowDoWeDoIt.description")}
                     colorTitle="font-semibold "
-                    colorLine="bg-steplix-red"
+                    colorLine="2xl:bg-steplix-red"
                 />
             </div>
             <div className="lg:grid lg:grid-cols-4 lg:gap-y-12 lg:gap-x-12 space-y-4 lg:space-y-0">
