@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "@/common/lib/i18n";
 
 const ScrumFramework = ({ data }) => {
     //

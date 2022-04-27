@@ -1,15 +1,16 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import JobItemCard from "@/common/components/JobItemCard";
 import Flags from "@/common/components/Flags";
 import { ActiveSearches } from "@/common/utils/ActiveSearches";
 
-const Job = () => {
+const Job = ({ params }) => {
     const { t } = useTranslation();
     const router = useRouter();
     let nameJob = router.query.slug;
+
     return (
         <>
             <Head>

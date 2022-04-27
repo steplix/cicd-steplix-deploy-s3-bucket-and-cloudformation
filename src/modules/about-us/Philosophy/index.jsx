@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import CollageAboutUs from "@/common/components/CollageAboutUs";
 
 const Philosophy = () => {

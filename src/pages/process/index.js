@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import Flags from "@/common/components/Flags";
 import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
 import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";

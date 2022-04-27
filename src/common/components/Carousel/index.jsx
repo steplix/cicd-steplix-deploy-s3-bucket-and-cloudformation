@@ -3,7 +3,7 @@ import React from "react";
 import _ from "lodash";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 
 const Carousel = () => {
     const { t } = useTranslation();

@@ -1,9 +1,10 @@
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import JobCard from "@/common/components/JobCard";
 
 const BecomeASteplixer = () => {
     const { t } = useTranslation();
+        
     return (
         <div className="xl:pt-44 xl:mb-20 my-2">
             <h1 className="h2-steplix font-black">
@@ -16,7 +17,7 @@ const BecomeASteplixer = () => {
                         title={t("jobs.UI_UXDesigner.title")}
                         country={t("jobs.UI_UXDesigner.country")}
                         apply={t("jobs.applyButton")}
-                        url={t("jobs.UI_UXDesigner.url")}
+                        url={'UI_UXDesigner'}
                     />
                 </div>
                 <div className="w-[333px] h-[169px] xl:w-[490px] xl:h-[140px]">
@@ -24,7 +25,7 @@ const BecomeASteplixer = () => {
                         title={t("jobs.BACKENDSSR.title")}
                         country={t("jobs.BACKENDSSR.country")}
                         apply={t("jobs.applyButton")}
-                        url={t("jobs.BACKENDSSR.url")}
+                        url={'BACKENDSSR'}
                     />
                 </div>
             </div>

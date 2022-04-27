@@ -1,15 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
-import { LanguageSwitcher, useLanguageQuery } from "next-export-i18n";
+import { useRouter } from "next/router";
+import { LanguageSwitcher, useLanguageQuery } from "@/common/lib/i18n";
 
 const LanguageSelector = ({ sm }) => {
     const [query] = useLanguageQuery();
+    const { query: { slug } } = useRouter();
 
     return (
         <div className="flex gap-2">
             {query?.lang === "en" ? (
-                <LanguageSwitcher lang="es">
+                <LanguageSwitcher lang="es" slug={slug}>
                     <div className="flex">
                         <div className="w-[34px] h-[34px]">
                             <img
@@ -24,7 +26,7 @@ const LanguageSelector = ({ sm }) => {
                     </div>
                 </LanguageSwitcher>
             ) : (
-                <LanguageSwitcher lang="en">
+                <LanguageSwitcher lang="en" slug={slug}>
                     <div className="flex">
                         <div className="w-[34px] h-[34px]">
                             <img

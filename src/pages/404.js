@@ -2,7 +2,7 @@
 import React from "react";
 import Flags from "@/common/components/Flags";
 import Link from "next/link";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "@/common/lib/i18n";
 
 const Custom404 = () => {
     const { t } = useTranslation();
