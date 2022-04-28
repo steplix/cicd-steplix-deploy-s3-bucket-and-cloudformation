@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 import StepCard from "@/common/components/StepCard";
-import StepCardCircular from "@/common/components/StepCardCircular";
 import ProcessCard from "@/common/components/ProcessCard";
 
 const StepsToTheTop = () => {
