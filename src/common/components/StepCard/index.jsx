@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
 
 const StepCard = ({
     number,
@@ -31,118 +32,124 @@ const StepCard = ({
         number === "03." && setPositionModal(3);
     };
     return (
-        <div
-            className={`${textTwo ? "w-full" : "w-[330px] lg:w-full"} ${
-                number ? "flex gap-2" : ""
-            }`}
-        >
-            {number && !textLeft && (
-                <p
-                    className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
-                >
-                    {number}
-                </p>
-            )}
-            <div>
-                <div className="flex">
-                    {number && textLeft && (
-                        <p
-                            className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix mr-2`}
-                        >
-                            {number}
-                        </p>
-                    )}
-                    {title && textLeft && (
-                        <h2
-                            className={`h2-steplix w-[130px] md:w-full ${
-                                sizeTitle ? sizeTitle : ""
-                            } ${colorTitle ? colorTitle : "text-white"}`}
-                        >
-                            {title}
-                            {emptyTitle && (
-                                <span className="h2-steplix h2-steplix--outlined">
-                                    {emptyTitle}
-                                </span>
-                            )}
-                        </h2>
-                    )}
-                </div>
-
-                <div className="flex">
-                    {title && !textLeft && (
-                        <h2
-                            className={`h2-steplix ${
-                                sizeTitle ? sizeTitle : ""
-                            } ${colorTitle ? colorTitle : "text-white"}`}
-                        >
-                            {title}
-                            {emptyTitle && (
-                                <span className="h2-steplix h2-steplix--outlined">
-                                    {emptyTitle}
-                                </span>
-                            )}
-                        </h2>
-                    )}
-                    {icon && (
-                        <div className="flex h-14 w-[120px]">
-                            {" "}
-                            <img
-                                src={icon}
-                                alt="values"
-                                className="xl:ml-10 ml-3 my-auto xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
-                            />
-                        </div>
-                    )}
-                </div>
-
-                {colorLine && (
-                    <div
-                        className={`${
-                            textLeft && "ml-16 xl:ml-[125px]"
-                        } h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
-                    />
-                )}
-
-                <div className={widthTexts}>
-                    {textOne && (
-                        <p
-                            className={`${
-                                sizeText || "p-steplix"
-                            } pb-3 xl:pb-6 ${widthTextOne ? widthTextOne : ""}`}
-                        >
-                            {textOne}
-                        </p>
-                    )}
-                    {textTwo && (
-                        <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
-                            {textTwo}
-                        </p>
-                    )}
-                    {textThree && (
-                        <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
-                            {textThree}
-                        </p>
-                    )}
-                    {textFour && (
-                        <p className={sizeText || "p-steplix"}>{textFour}</p>
-                    )}
-                </div>
-
-                {seeMore && setisModalOpen && (
-                    <button
-                        onClick={handleClick}
-                        className="text-base text-steplix-yellow underline decoration-2 mt-5"
+        <Fade cascade>
+            <div
+                className={`${textTwo ? "w-full" : "w-[330px] lg:w-full"} ${
+                    number ? "flex gap-2" : ""
+                }`}
+            >
+                {number && !textLeft && (
+                    <p
+                        className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
                     >
-                        {seeMore}
-                    </button>
+                        {number}
+                    </p>
                 )}
-                {seeMore && seeMoreLink && (
-                    <button className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2">
-                        {seeMore}
-                    </button>
-                )}
+                <div>
+                    <div className="flex">
+                        {number && textLeft && (
+                            <p
+                                className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix mr-2`}
+                            >
+                                {number}
+                            </p>
+                        )}
+                        {title && textLeft && (
+                            <h2
+                                className={`h2-steplix w-[130px] md:w-full ${
+                                    sizeTitle ? sizeTitle : ""
+                                } ${colorTitle ? colorTitle : "text-white"}`}
+                            >
+                                {title}
+                                {emptyTitle && (
+                                    <span className="h2-steplix h2-steplix--outlined">
+                                        {emptyTitle}
+                                    </span>
+                                )}
+                            </h2>
+                        )}
+                    </div>
+
+                    <div className="flex">
+                        {title && !textLeft && (
+                            <h2
+                                className={`h2-steplix ${
+                                    sizeTitle ? sizeTitle : ""
+                                } ${colorTitle ? colorTitle : "text-white"}`}
+                            >
+                                {title}
+                                {emptyTitle && (
+                                    <span className="h2-steplix h2-steplix--outlined">
+                                        {emptyTitle}
+                                    </span>
+                                )}
+                            </h2>
+                        )}
+                        {icon && (
+                            <div className="flex h-14 w-[120px]">
+                                {" "}
+                                <img
+                                    src={icon}
+                                    alt="values"
+                                    className="xl:ml-10 ml-3 my-auto xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
+                                />
+                            </div>
+                        )}
+                    </div>
+
+                    {colorLine && (
+                        <div
+                            className={`${
+                                textLeft && "ml-16 xl:ml-[125px]"
+                            } h-1 w-12 xl:w-28 xl:h-2 my-4 xl:my-10 ${colorLine}`}
+                        />
+                    )}
+
+                    <div className={widthTexts}>
+                        {textOne && (
+                            <p
+                                className={`${
+                                    sizeText || "p-steplix"
+                                } pb-3 xl:pb-6 ${
+                                    widthTextOne ? widthTextOne : ""
+                                }`}
+                            >
+                                {textOne}
+                            </p>
+                        )}
+                        {textTwo && (
+                            <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                                {textTwo}
+                            </p>
+                        )}
+                        {textThree && (
+                            <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                                {textThree}
+                            </p>
+                        )}
+                        {textFour && (
+                            <p className={sizeText || "p-steplix"}>
+                                {textFour}
+                            </p>
+                        )}
+                    </div>
+
+                    {seeMore && setisModalOpen && (
+                        <button
+                            onClick={handleClick}
+                            className="text-base text-steplix-yellow underline decoration-2 mt-5"
+                        >
+                            {seeMore}
+                        </button>
+                    )}
+                    {seeMore && seeMoreLink && (
+                        <button className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2">
+                            {seeMore}
+                        </button>
+                    )}
+                </div>
             </div>
-        </div>
+        </Fade>
     );
 };
 
