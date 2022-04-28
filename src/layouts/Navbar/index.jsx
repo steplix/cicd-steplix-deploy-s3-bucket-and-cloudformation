@@ -11,6 +11,7 @@ const Navbar = () => {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
     const router = useRouter();
+
     //
     // State
     //
@@ -139,7 +140,9 @@ const Navbar = () => {
                             <Link href={{ pathname: "/jobs", query: query }}>
                                 <a
                                     className={`hover:opacity-100 opacity-50 ${
-                                        router.pathname === "/jobs"
+                                        router.pathname === "/jobs" ||
+                                        router.pathname.substring(1, 5) ===
+                                            "jobs"
                                             ? "nav--active opacity-100"
                                             : ""
                                     }`}
