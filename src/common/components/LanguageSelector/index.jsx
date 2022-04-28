@@ -2,7 +2,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
-import { LanguageSwitcher, useLanguageQuery } from "@/common/lib/i18n";
+import { useLanguageQuery } from 'next-export-i18n';
+import { LanguageSwitcher } from "@/common/lib/i18n";
 
 const LanguageSelector = ({ sm }) => {
     const [query] = useLanguageQuery();

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useTranslation } from "@/common/lib/i18n";
+import { useTranslation } from "next-export-i18n";
 import Masthead from "@/modules/Masthead";
 import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";

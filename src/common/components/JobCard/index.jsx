@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
-import { useLanguageQuery } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
 import ButtonApply from "../ButtonApply";
 
 const JobCard = ({ title, country, apply, url }) => {

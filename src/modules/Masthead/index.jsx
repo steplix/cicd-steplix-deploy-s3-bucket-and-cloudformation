@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { useTranslation } from "@/common/lib/i18n";
+import { useTranslation } from "next-export-i18n";
 
 const Masthead = () => {
     const { t } = useTranslation();

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation, useLanguageQuery } from "@/common/lib/i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 
 const Navbar = () => {

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import { useTranslation } from "@/common/lib/i18n";
+import { useTranslation } from "next-export-i18n";
 import ContactCard from "@/common/components/ContactCard";
 
 const ScheduleContact = () => {
