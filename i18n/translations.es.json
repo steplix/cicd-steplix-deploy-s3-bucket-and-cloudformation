@@ -451,6 +451,10 @@
         "jobs": {
             "title": "Convertite en Steplixer | Sherpas Digitales | Steplix Software 🧗",
             "description": "Chequea las ofertas de trabajo en Steplix."
+        },
+        "stack": {
+            "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
+            "description": "Stack tecnológico de Steplix 🗻"
         }
     }
 }

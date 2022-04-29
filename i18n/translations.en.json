@@ -444,6 +444,10 @@
         "jobs": {
             "title": "Become a Steplixer | Digital Sherpas | Steplix Software 🧗",
             "description": "Take a look at job offers at Steplix."
+        },
+        "stack": {
+            "title": "Technologies | Digital Sherpas | Steplix Software 🧗",
+            "description": "Steplix Technology Stack 🗻"
         }
     }
 }
