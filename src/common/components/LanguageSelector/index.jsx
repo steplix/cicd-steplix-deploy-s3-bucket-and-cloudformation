@@ -22,7 +22,9 @@ const LanguageSelector = ({ sm }) => {
                             />
                         </div>
                         {sm && (
-                            <p className="my-auto ml-3">Versión en español</p>
+                            <p className="text-xs md:text-base my-auto ml-3">
+                                Versión en español
+                            </p>
                         )}
                     </div>
                 </LanguageSwitcher>
@@ -36,7 +38,11 @@ const LanguageSelector = ({ sm }) => {
                                 className="w-[34px] h-[34px]"
                             />
                         </div>
-                        {sm && <p className="my-auto ml-3">English version</p>}
+                        {sm && (
+                            <p className="text-xs md:text-base my-auto ml-3">
+                                English version
+                            </p>
+                        )}
                     </div>
                 </LanguageSwitcher>
             )}
