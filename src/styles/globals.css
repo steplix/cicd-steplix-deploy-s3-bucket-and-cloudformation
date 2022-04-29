@@ -61,6 +61,32 @@ body {
     @apply font-sofia text-white bg-purple;
 }
 
+/*--------- container ------- */
+.container {
+    width: 100%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
 /*--------- container landing sections ------- */
 .container-steplix {
     @apply pt-16 xl:pb-9 xl:pt-24;
