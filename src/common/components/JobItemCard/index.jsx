@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ButtonApply from "../ButtonApply";
-import { useLanguageQuery } from "next-export-i18n";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import StepCard from "../StepCard";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";

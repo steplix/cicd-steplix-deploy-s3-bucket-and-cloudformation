@@ -6,10 +6,11 @@ import JobItemCard from "@/common/components/JobItemCard";
 import Flags from "@/common/components/Flags";
 import { ActiveSearches } from "@/common/utils/ActiveSearches";
 
-const Job = () => {
+const Job = ({ params }) => {
     const { t } = useTranslation();
     const router = useRouter();
     let nameJob = router.query.slug;
+
     return (
         <>
             <Head>

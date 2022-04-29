@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
     const { t } = useTranslation();
-    const [query] = useLanguageQuery();
+    let [ query ] = useLanguageQuery();
+    query = { lang: query?.lang }
     const router = useRouter();
 
     //
@@ -21,6 +22,7 @@ const Navbar = () => {
     //
     // Effects
     //
+
     React.useEffect(() => {
         const onScroll = () => {
             const currentPosition = window.pageYOffset;

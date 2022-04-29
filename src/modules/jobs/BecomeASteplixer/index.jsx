@@ -5,6 +5,7 @@ import Fade from "react-reveal/Fade";
 
 const BecomeASteplixer = () => {
     const { t } = useTranslation();
+        
     return (
         <div className="xl:pt-44 xl:mb-20 my-2">
             <Fade>
