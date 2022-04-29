@@ -24,6 +24,7 @@ const StepCard = ({
     icon,
     sizeText,
     textLeft,
+    iconStyles,
 }) => {
     const handleClick = () => {
         setisModalOpen(true);
@@ -86,12 +87,19 @@ const StepCard = ({
                             </h2>
                         )}
                         {icon && (
-                            <div className="flex h-14 w-[120px]">
+                            <div
+                                className={`flex h-14 w-[120px] ${
+                                    !iconStyles && "pl-3 xl:pl-10"
+                                }`}
+                            >
                                 {" "}
                                 <img
                                     src={icon}
                                     alt="values"
-                                    className="xl:ml-10 ml-3 my-auto xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
+                                    className={`my-auto ${
+                                        iconStyles ||
+                                        "xl:h-14 xl:w-[120px] w-[66px] h-[30px]"
+                                    }`}
                                 />
                             </div>
                         )}
@@ -172,5 +180,6 @@ StepCard.propTypes = {
     icon: PropTypes.string,
     sizeTitle: PropTypes.string,
     numberStyles: PropTypes.string,
+    iconStyles: PropTypes.string,
 };
 export default StepCard;
