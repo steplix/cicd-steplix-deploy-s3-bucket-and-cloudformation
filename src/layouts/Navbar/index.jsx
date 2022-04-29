@@ -52,18 +52,18 @@ const Navbar = () => {
                     />
                 </div>
                 <div
-                    className={`pt-[22px] h-[64px] transition-height duration-500 ease-in-out hover:bg-purple flex w-full xl:fixed absolute justify-between ${
+                    className={`flex absolute justify-between items-center w-full h-[65px] transition-height duration-500 ease-in-out hover:bg-purple ${
                         sticky ? "bg-black" : "bg-dark"
                     }`}
                 >
                     {/* logo mobile */}
-                    <div className="ml-5 items-center justify-center flex h-[33px]">
+                    <div className="ml-5 items-center justify-center flex">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
                                 <img
                                     src="/assets/img/logo-navbar.svg"
                                     alt="logo"
-                                    className="w-[101px] h-6"
+                                    className="w-[101px] h-6 md:w-40 md:h-10 lg:w-44 lg:h-12"
                                 />
                             </a>
                         </Link>
