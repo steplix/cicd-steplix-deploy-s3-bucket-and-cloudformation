@@ -154,9 +154,9 @@ export default function Home() {
                 <section className="container-steplix xl:pb-64">
                     <WhatWeDo />
                 </section>
-                <section className="container-steplix">
+                {/* <section className="container-steplix">
                     <OurCulture />
-                </section>
+                </section> */}
                 <section className="container-steplix xl:pb-64">
                     <HappyClients />
                 </section>

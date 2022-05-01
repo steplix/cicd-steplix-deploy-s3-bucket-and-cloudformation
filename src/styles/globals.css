@@ -61,6 +61,12 @@ body {
     @apply font-sofia text-white bg-purple;
 }
 
+.text--outlined {
+    color: transparent;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+}
+
 /*--------- container ------- */
 .container {
     width: 100%;
@@ -84,6 +90,22 @@ body {
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
+    }
+}
+
+/*--------- banner------- */
+.banner {
+    background-image: url("../../public/assets/img/bg-header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        background-image: url("../../public/assets/img/bg-header.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
@@ -112,22 +134,6 @@ body {
 @media (min-width: 1536px) {
     .section-steplix {
         max-width: 1480px;
-    }
-}
-
-/*--------- banner------- */
-.banner {
-    background-image: url("../../public/assets/img/bg-header.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-@media (min-width: 768px) {
-    .banner {
-        background-image: url("../../public/assets/img/bg-header.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 
