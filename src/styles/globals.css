@@ -67,6 +67,10 @@ body {
     -webkit-text-stroke: 1.3px rgb(255, 255, 255);
 }
 
+.paragraph {
+    @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl;
+}
+
 /*--------- container ------- */
 .container {
     width: 100%;
@@ -109,37 +113,8 @@ body {
     }
 }
 
-/*--------- container landing sections ------- */
-.container-steplix {
-    @apply pt-16 xl:pb-9 xl:pt-24;
-}
-
-/*--------- max-width sections ------- */
-.section-steplix {
-    @apply w-80 xl:w-full mx-auto;
-}
-
-@media (min-width: 320px) {
-    .section-steplix {
-        @apply max-w-xs;
-    }
-}
-
-@media (min-width: 1280px) {
-    .section-steplix {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1536px) {
-    .section-steplix {
-        max-width: 1480px;
-    }
-}
-
 /*--------- Process Mountain------- */
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .steplix-process {
         height: 700px;
         background-image: url("../../public/assets/img/bg-process.svg");

@@ -19,7 +19,7 @@ const AboutUs = () => {
                                 {t("aboutUs.emptyTitle")}
                             </span>
                         </h2>
-                        <p className="text-base leading-tight md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl xl:max-w-[531px] 2xl:max-w-[614px]">
+                        <p className="paragraph xl:max-w-[531px] 2xl:max-w-[614px]">
                             {t("aboutUs.description")}
                         </p>
                     </div>
