@@ -10,14 +10,14 @@ const ScheduleContact = () => {
     return (
         <div>
             <Fade cascade>
-                <div className="h2-steplix">
-                    <h1 className="mb-8 mt-16">
+                <div>
+                    <h1 className="mb-8 mt-16 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                         {t("contact.title")}{" "}
-                        <span className="title-empty">
+                        <span className="text--outlined">
                             {t("contact.titleEmpty")}
                         </span>
                     </h1>
-                    <p className="xl:text-[40px] text-[22px] mb-10 font-normal">
+                    <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] mb-10 font-normal">
                         {" "}
                         {t("contact.subtitle")}
                     </p>
@@ -29,8 +29,8 @@ const ScheduleContact = () => {
                             alt={t("contact.salesRepresentative")}
                             job={t("contact.salesRepresentative")}
                             name="Kevin Halbinger"
-                            borderColor="border-steplix-blue"
-                            bgColor="bg-steplix-blue"
+                            borderColor="border-blue"
+                            bgColor="bg-blue"
                             icon="assets/img/almanac.svg"
                             iconAlt="almanac"
                             linkCalendary="https://meetings.hubspot.com/kevin-halbinger"
@@ -42,8 +42,8 @@ const ScheduleContact = () => {
                             alt={t("contact.salesRepresentative")}
                             job={t("contact.salesRepresentative")}
                             name="Marcelo Zalegas"
-                            borderColor="border-steplix-yellow"
-                            bgColor="bg-steplix-yellow"
+                            borderColor="border-yellow"
+                            bgColor="bg-yellow"
                             icon="assets/img/almanac.svg"
                             iconAlt="almanac"
                             linkCalendary="https://meetings.hubspot.com/marcelo-leonardo"
@@ -51,9 +51,9 @@ const ScheduleContact = () => {
                     </div>
                 </div>
                 <div>
-                    <p className="paragraph mt-[30px] xl:mt-[50px] mb-[80px] xl:mb-[220px]">
+                    <p className="paragraph mt-[30px] xl:mt-[50px] mb-[80px] xl:mb-[150px]">
                         {t("contact.brochureText")}
-                        <span className="text-steplix-yellow decoration-solid underline">
+                        <span className="text-yellow decoration-solid underline">
                             <a
                                 href="assets/files/brochure.pdf"
                                 download="brochure-steplix"
@@ -66,20 +66,20 @@ const ScheduleContact = () => {
                 {/* address */}
                 <div className="xl:flex xl:mb-[250px] xl:space-x-32 order-last">
                     <div>
-                        <h2 className="h3-steplix mb-7">
+                        <h2 className="mb-7 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                             {t("contact.ourOfficeTitle")}{" "}
-                            <span className="title-empty">
+                            <span className="text--outlined">
                                 {t("contact.ourOfficeTitleEmpty")}{" "}
                             </span>{" "}
                         </h2>
-                        <div className="xl:w-[715px] w-[333px] h-[186px] mb-8 xl:h-[400px] xl:hidden ">
+                        <div className="w-[333px] md:w-full xl:w-[715px] h-[186px] mb-8 xl:h-[400px]">
                             <Link href="https://g.page/steplix?share">
                                 <a target="_blank">
                                     <img src="assets/img/map.svg" alt="map" />
                                 </a>
                             </Link>{" "}
                         </div>
-                        <div className="xl:text-2xl text-base xl:space-y-7 space-y-4">
+                        <div className="xl:text-2xl text-base xl:space-y-7 space-y-4 md:mt-[230px] xl:mt-0">
                             <p>
                                 Costa rica 4999, Palermo, Buenos Aires.
                                 Argentina.
@@ -87,13 +87,6 @@ const ScheduleContact = () => {
                             <p>hello@steplix.com</p>
                             <p>+54 (11) 5367-4369</p>
                         </div>
-                    </div>
-                    <div className="xl:w-[715px] w-[333px] h-[186px] xl:h-[400px] hidden xl:block">
-                        <Link href="https://g.page/steplix?share">
-                            <a target="_blank">
-                                <img src="assets/img/map.svg" alt="map" />
-                            </a>
-                        </Link>
                     </div>
                 </div>
             </Fade>
