@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 const JobItemCard = ({ item }) => {
     const [query] = useLanguageQuery();
     const { t } = useTranslation();
-    console.log(query);
+
     return (
         <div>
             <Fade cascade>
