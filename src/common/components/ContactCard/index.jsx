@@ -25,7 +25,7 @@ const ContactCard = ({
             />
             <div className="xl:space-y-2">
                 <p className="font-bold xl:text-[32px] text-[22px]">{name}</p>
-                <p className="p-steplix">{job}</p>
+                <p className="paragraph">{job}</p>
             </div>
 
             <div className="xl:w-[33px] w-[16px] xl:h-[23px] h-[13px] xl:ml-[100px] ml-[30px]">

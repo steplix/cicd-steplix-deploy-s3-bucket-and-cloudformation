@@ -30,7 +30,7 @@ const ScrumFramework = ({ data }) => {
                     </h2>
                 </div>
                 <div className="w-[1407px] mt-10 mb-14">
-                    <p className="p-steplix">
+                    <p className="paragraph">
                         {t("process.scrumFramework.paragraphOne.textOne")}
                         <span className="text-steplix-yellow">
                             {t(
@@ -59,8 +59,8 @@ const ScrumFramework = ({ data }) => {
                         className="w-[1400px] h-[978px]"
                     />
                 </div>
-                <div className="w-[1407px] p-steplix space-y-8 mt-14 mb-14">
-                    <p className="p-steplix">
+                <div className="w-[1407px] paragraph space-y-8 mt-14 mb-14">
+                    <p className="paragraph">
                         {t("process.scrumFramework.paragraphTwo.textOne")}
                         <span className="text-steplix-yellow">
                             {t(
@@ -89,7 +89,7 @@ const ScrumFramework = ({ data }) => {
                     </p>
                     <div>
                         <p>{t("process.scrumFramework.subtitle")}</p>
-                        <ul className="list-disc mb-[70px] p-steplix ml-8">
+                        <ul className="list-disc mb-[70px] paragraph ml-8">
                             {data.items?.map((element, index) => (
                                 <li key={index}>{element}</li>
                             ))}

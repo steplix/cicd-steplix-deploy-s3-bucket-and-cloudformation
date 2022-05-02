@@ -30,21 +30,21 @@ const JobItemCard = ({ item }) => {
                     />
                 </div>
                 <div>
-                    <p className="p-steplix">{item?.description}</p>
+                    <p className="paragraph">{item?.description}</p>
                 </div>
                 <div>
                     <p className="xl:text-[32px] text-[22px] font-bold xl:mt-[60px] mt-[50px] mb-7">
                         {item?.values?.title}
                     </p>
-                    <p className="p-steplix">{item?.values?.textOne}</p>
-                    <p className="p-steplix">{item?.values?.textTwo}</p>
+                    <p className="paragraph">{item?.values?.textOne}</p>
+                    <p className="paragraph">{item?.values?.textTwo}</p>
                 </div>
 
                 <div>
                     <p className="xl:text-[32px] text-[22px] font-bold mt-[70px] mb-7">
                         {item?.requirements?.title}
                     </p>
-                    <ul className="list-disc mb-[70px] p-steplix ml-5 lg:ml-9">
+                    <ul className="list-disc mb-[70px] paragraph ml-5 lg:ml-9">
                         {item?.requirements?.items.map((element, index) => (
                             <li key={index}>{element}</li>
                         ))}
@@ -54,10 +54,10 @@ const JobItemCard = ({ item }) => {
                     <p className="xl:text-[32px] text-[22px] font-bold mt-[70px] mb-7">
                         {item?.responsibilities?.title}
                     </p>
-                    <p className="p-steplix mt-10">
+                    <p className="paragraph mt-10">
                         {item?.responsibilities?.subtitle}
                     </p>
-                    <ul className="list-disc mb-[70px] p-steplix ml-5 lg:ml-9">
+                    <ul className="list-disc mb-[70px] paragraph ml-5 lg:ml-9">
                         {item?.responsibilities?.items.map((element, index) => (
                             <li key={index}>{element}</li>
                         ))}
@@ -67,7 +67,7 @@ const JobItemCard = ({ item }) => {
                     <p className="xl:text-[32px] text-[22px] font-bold mt-[70px]  xl:mb-7">
                         {item?.Benefits?.title}
                     </p>
-                    <div className="p-steplix space-y-6">
+                    <div className="paragraph space-y-6">
                         <p>{item?.Benefits?.textOne}</p>
                         <p>{item?.Benefits?.textTwo}</p>
                         <p>{item?.Benefits?.textThree}</p>
@@ -103,7 +103,7 @@ const JobItemCard = ({ item }) => {
                         <p className="font-bold xl:text-[32px] text-[22px]">
                             Josefina Salimei
                         </p>
-                        <p className="p-steplix">{t("jobs.hr")}</p>
+                        <p className="paragraph">{t("jobs.hr")}</p>
                     </div>
 
                     <div className="xl:w-[33px] w-[16px] xl:h-[23px] h-[13px] xl:ml-[100px] ml-[30px]">
