@@ -1,26 +1,28 @@
 import React from "react";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 import Fade from "react-reveal/Fade";
 
 const AboutUs = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="section-steplix xl:flex xl:gap-28" id="about-us">
+        <div className="container px-5 xl:px-0" id="about-us">
             <Fade cascade>
-                <div className="hidden xl:block steplix--outlined xl:text-[176px] font-black tracking-widest">
-                    Steplix
-                </div>
-                <div className="xl:w-[600px]">
-                    <h2 className="mb-3.5 xl:mb-2.5">
-                        <span className="h3-steplix h3-steplix--filled">
-                            {t("aboutUs.title")}{" "}
-                        </span>
-                        <span className="h3-steplix h3-steplix--outlined">
-                            {t("aboutUs.emptyTitle")}
-                        </span>
-                    </h2>
-                    <p className="p-steplix">{t("aboutUs.description")}</p>
+                <div className="flex justify-between items-center">
+                    <div className="hidden xl:block text--outlined font-black xl:text-15xl 2xl:text-17xl">
+                        Steplix
+                    </div>
+                    <div className="xl:w-[600px]">
+                        <h2 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                            <span>{t("aboutUs.title")} </span>
+                            <span className="text--outlined">
+                                {t("aboutUs.emptyTitle")}
+                            </span>
+                        </h2>
+                        <p className="text-base leading-tight md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl xl:max-w-[531px] 2xl:max-w-[614px]">
+                            {t("aboutUs.description")}
+                        </p>
+                    </div>
                 </div>
             </Fade>
         </div>
