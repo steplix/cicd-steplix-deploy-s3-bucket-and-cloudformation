@@ -91,9 +91,7 @@ export default function Jobs() {
             </Head>
             <div className="relative">
                 <section className="bg--jobs relative">
-                    <div className="container-steplix section-steplix flex justify-center">
-                        <BecomeASteplixer />
-                    </div>
+                    <BecomeASteplixer />
                 </section>
                 <Flags />
             </div>

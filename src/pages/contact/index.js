@@ -97,8 +97,8 @@ export default function Contact() {
                 />
             </Head>
             <div className="relative xl:pb-[400px] pb-[200px]">
-                <div className="bg--contact">
-                    <section className="container-steplix section-steplix">
+                <div className="bg--contact flex">
+                    <section className="container px-5 xl:px-0">
                         <ScheduleContact />
                     </section>
                 </div>

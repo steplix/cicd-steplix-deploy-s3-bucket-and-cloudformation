@@ -8,12 +8,12 @@ const JobCard = ({ title, country, apply, url }) => {
     const [query] = useLanguageQuery();
 
     return (
-        <div className="rounded-2xl border-2 border-gray-100 w-full h-full flex z-20 shadow-2xl shadow-white font-black">
-            <div className="xl:pl-4 pl-2 ">
-                <p className="xl:text-xl text-lg xl:mt-7 mt-4 xl:w-[340px] w-[200px]">
+        <div className="rounded-2xl border-2 border-gray-100 w-full h-full flex justify-between px-6 z-20 shadow-2xl shadow-white font-black">
+            <div>
+                <p className="font-semibold text-xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl xl:mt-7 mt-4 w-full">
                     {title}
                 </p>
-                <p className="text-base mt-4 xl:w-[150px] w-[200px]">
+                <p className="font-normal text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl mt-4 w-full">
                     {country}
                 </p>
             </div>

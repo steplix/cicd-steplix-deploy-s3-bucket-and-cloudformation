@@ -6,19 +6,21 @@ const EverythingStartsWithAnIdea = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="pt-44 lg:w-[1330px] w-[345px]">
-            <StepCard
-                title={t("process.everythingStartsWithAnIdea.title")}
-                colorTitle="font-bold text-white"
-                textOne={t("process.everythingStartsWithAnIdea.descriptionOne")}
-                textTwo={t("process.everythingStartsWithAnIdea.descriptionTwo")}
-                textThree={t(
-                    "process.everythingStartsWithAnIdea.descriptionThree"
-                )}
-                textFour={t(
-                    "process.everythingStartsWithAnIdea.descriptionFour"
-                )}
-            />
+        <div className="container px-5 xl:px-0 pt-36">
+            <h4 className="mb-5 font-semibold text-2xl md:text-3xl lg:text-5xl">
+                {t("process.everythingStartsWithAnIdea.title")}
+            </h4>
+            <div className="paragraph xl:max-w-[728px]">
+                <p>{t("process.everythingStartsWithAnIdea.descriptionOne")}</p>{" "}
+                <br />
+                <p>{t("process.everythingStartsWithAnIdea.descriptionTwo")}</p>
+                <br />
+                <p>
+                    {t("process.everythingStartsWithAnIdea.descriptionThree")}
+                </p>{" "}
+                <br />
+                <p>{t("process.everythingStartsWithAnIdea.descriptionFour")}</p>
+            </div>
         </div>
     );
 };

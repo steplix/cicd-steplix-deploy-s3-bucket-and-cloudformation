@@ -146,20 +146,12 @@ export default function Home() {
                     }}
                 />
             </Head>
-            <main className="relative">
+            <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative">
                 <Masthead />
-                <section className="container-steplix">
-                    <AboutUs />
-                </section>
-                <section className="container-steplix xl:pb-64">
-                    <WhatWeDo />
-                </section>
-                <section className="container-steplix">
-                    <OurCulture />
-                </section>
-                <section className="container-steplix xl:pb-64">
-                    <HappyClients />
-                </section>
+                <AboutUs />
+                <WhatWeDo />
+                <OurCulture />
+                <HappyClients />
                 <Flags />
             </main>
         </>
