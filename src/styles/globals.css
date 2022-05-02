@@ -229,7 +229,7 @@ body {
         background-image: url("../../public/assets/img/bg-jobs.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: bottom right;
+        background-position: center right;
     }
 }
 
