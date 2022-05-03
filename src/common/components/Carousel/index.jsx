@@ -26,7 +26,7 @@ const Carousel = () => {
             name: "Lucas Bianchi",
             title: t("happyClients.clientFinket.title"),
             companyName: "CTECH",
-            borderColor: "border-steplix-red",
+            borderColor: "border-red",
             text: t("happyClients.clientFinket.text"),
         },
         {
@@ -35,7 +35,7 @@ const Carousel = () => {
             name: "Juan Ramallo",
             title: t("happyClients.clientSura.title"),
             companyName: "Seguros SURA",
-            borderColor: "border-steplix-yellow",
+            borderColor: "border-yellow",
             text: t("happyClients.clientSura.text"),
         },
     ];
@@ -69,8 +69,8 @@ const Carousel = () => {
     return (
         <>
             <Fade cascade>
-                {/* show when it is mobile */}
-                <div className="block sm:hidden">
+                {/* show when it is mobile and tablet */}
+                <div className="block xl:hidden">
                     <div className="navigation-wrapper">
                         <div ref={sliderRefMobile} className="keen-slider">
                             {arrayClients.map((element, index) => (
@@ -79,29 +79,29 @@ const Carousel = () => {
                                     className="keen-slider__slide number-slide"
                                 >
                                     <div
-                                        className={`${element?.borderColor} border-2 rounded-3xl min-h-[460px] w-[340px] p-3`}
+                                        className={`${element?.borderColor} border-2 rounded-3xl min-h-[430px] md:min-h-[290px] w-full p-3`}
                                     >
                                         <div className="flex">
                                             <div>
                                                 <img
-                                                    className="lg:h-32 lg:w-32 h-28 w-28"
+                                                    className="h-4 w-16 md:h-6 md:w-24 lg:h-9 lg:w-32"
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />
                                             </div>
                                             <div className="place-self-center ml-6">
-                                                <p className="text-2xl font-bold">
+                                                <p className="text-3xl lg:text-5xl font-semibold">
                                                     {element?.name}
                                                 </p>
-                                                <p className="text-base w-[150px] mt-1">
+                                                <p className="text-base md:text-xl lg:text-3xl">
                                                     {element?.title}{" "}
-                                                    <span className="text-steplix-yellow">
+                                                    <span className="text-yellow">
                                                         {element?.companyName}
                                                     </span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div className="bg-steplix-red text-base h-1 w-[70px] mb-7" />
+                                        <div className="bg-red text-base md:text-xl lg:text-3xl h-1 w-[70px] mb-7" />
                                         <div>{element?.text}</div>
                                     </div>
                                 </div>
@@ -135,27 +135,27 @@ const Carousel = () => {
                         </div>
                     )}
                 </div>
-                {/* show when it is tablet or bigger */}
-                <div className="hidden sm:block text-white">
+                {/* show when it is desktop or bigger */}
+                <div className="hidden xl:block text-white">
                     <div className="navigation-wrapper">
                         <div ref={sliderRef} className="keen-slider flex">
                             {_.chunk(arrayClients, 4).map((subimages, i) => (
                                 <div
                                     key={`subimage-${i}`}
-                                    className="keen-slider__slide number-slide gap-12 "
+                                    className="keen-slider__slide number-slide gap-5"
                                 >
                                     {subimages.map((element, j) => (
                                         <div
-                                            className={`${element?.borderColor} border-2 rounded-3xl h-[390px] w-[450px] mb-8`}
+                                            className={`${element?.borderColor} border-2 rounded-3xl xl:h-[520px] xl:w-[450px] 2xl:h-[580px] 2xl:w-[520px] mb-8`}
                                             key={j}
                                         >
-                                            <div className="flex justify-end px-7">
-                                                <div className="relative h-[390px] w-[450px] ">
+                                            <div className="flex justify-end p-7">
+                                                <div className="relative h-[560px] w-[450px] ">
                                                     <div>
                                                         <div className="flex">
                                                             <div>
                                                                 <img
-                                                                    className="lg:h-32 lg:w-32 h-28 w-28"
+                                                                    className="xl:h-8 xl:w-24"
                                                                     src={
                                                                         element?.image
                                                                     }
@@ -165,16 +165,16 @@ const Carousel = () => {
                                                                 />
                                                             </div>
                                                             <div className="place-self-center ml-6">
-                                                                <p className="p-steplix font-bold">
+                                                                <p className="xl:text-3xl font-bold">
                                                                     {
                                                                         element?.name
                                                                     }
                                                                 </p>
-                                                                <p className="text-xs w-[200px] mt-1">
+                                                                <p className="xl:text-xl">
                                                                     {
                                                                         element?.title
                                                                     }{" "}
-                                                                    <span className="text-steplix-yellow">
+                                                                    <span className="text-yellow">
                                                                         {
                                                                             element?.companyName
                                                                         }
@@ -182,8 +182,8 @@ const Carousel = () => {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <div className="bg-steplix-red h-1 w-[70px] mb-7" />
-                                                        <div>
+                                                        <div className="bg-red h-1 w-[70px] mb-7" />
+                                                        <div className="xl:text-xl 2xl:text-3xl">
                                                             {element?.text}
                                                         </div>
                                                     </div>

@@ -17,7 +17,7 @@ const Custom404 = () => {
                             Error<span className="title-empty"> 404</span>
                         </h1>
                         <div className="mx-auto lg:mx-0 w-[327px] lg:w-[500px]">
-                            <p className="p-steplix lg:leading-10 leading-6">
+                            <p className="paragraph lg:leading-10 leading-6">
                                 {t("404.subtitle")}
                             </p>
                         </div>
@@ -26,7 +26,7 @@ const Custom404 = () => {
                     <div className="hidden lg:block lg:ml-8">
                         <Link href={{ pathname: "/", query: query }}>
                             <a>
-                                <button className="lg:w-[194px] lg:h-[53px] lg:mt-12 bg-steplix-blue rounded-lg p-steplix">
+                                <button className="lg:w-[194px] lg:h-[53px] lg:mt-12 bg-steplix-blue rounded-lg paragraph">
                                     {t("404.button")}
                                 </button>{" "}
                             </a>
@@ -40,7 +40,7 @@ const Custom404 = () => {
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
                             {" "}
-                            <button className="w-[138px] h-[39px] bg-steplix-blue rounded-lg p-steplix">
+                            <button className="w-[138px] h-[39px] bg-steplix-blue rounded-lg paragraph">
                                 {t("404.button")}
                             </button>{" "}
                         </a>

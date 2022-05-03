@@ -92,10 +92,8 @@ const Job = ({ params }) => {
                 />
             </Head>
             <div className="relative">
-                <div className="bg--job">
-                    <div className="container-steplix section-steplix">
-                        <JobItemCard item={t(`jobs.${slug}`)} />
-                    </div>
+                <div className="bg--job flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20">
+                    <JobItemCard item={t(`jobs.${slug}`)} />
                 </div>
                 <Flags />
             </div>

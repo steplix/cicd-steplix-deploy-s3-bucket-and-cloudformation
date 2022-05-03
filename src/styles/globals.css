@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 160px;
-}
-
-* {
-    font-family: "Sofia Pro";
-    color: white;
-}
-
-body {
-    @apply bg-steplix-lilac;
-}
-
 @font-face {
     font-display: swap;
     font-family: "Sofia Pro";
@@ -66,126 +52,73 @@ body {
             format("woff");
 }
 
-/*--------- headings and other texts ------- */
-.number-steplix {
-    @apply text-4xl xl:text-5xl font-bold;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 160px;
 }
 
-.h1-steplix,
-.h2-steplix,
-.h3-steplix,
-.h4-steplix {
-    @apply font-semibold xl:font-black;
+body {
+    @apply font-sofia text-white bg-purple;
 }
 
-.h1-steplix--filled,
-.h2-steplix--filled,
-.h3-steplix--filled,
-.h4-steplix--filled {
-    color: white;
-}
-
-.steplix--outlined,
-.number-steplix--outlined,
-.h1-steplix--outlined,
-.h2-steplix--outlined,
-.h3-steplix--outlined,
-.h4-steplix--outlined {
+.text--outlined {
     color: transparent;
     letter-spacing: 0.1em;
     -webkit-text-stroke: 1.3px rgb(255, 255, 255);
 }
 
-.h4-steplix--outlined-yellow {
-    color: transparent;
-    letter-spacing: 0.1em;
+.text--outlined.text-yellow {
     -webkit-text-stroke: 1.3px rgb(255, 218, 0);
 }
 
-@media (min-width: 320px) {
-    .h1-steplix {
-        font-size: 36px;
-    }
+.paragraph {
+    @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl;
+}
 
-    .h2-steplix,
-    .h3-steplix {
-        font-size: 30px;
-    }
+/*--------- container ------- */
+.container {
+    width: 100%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .h4-steplix {
-        font-size: 22px;
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
     }
 }
 
-@media (min-width: 1280px) {
-    .h1-steplix {
-        font-size: 128px;
-    }
-
-    .h2-steplix,
-    .h4-steplix {
-        font-size: 64px;
-    }
-
-    .h3-steplix {
-        font-size: 54px;
-    }
-}
-
-/*--------- paragraphs ------- */
-.p-steplix {
-    @apply text-base xl:text-2xl leading-5 xl:leading-8 font-normal;
-}
-
-/*--------- container landing sections ------- */
-.container-steplix {
-    @apply pt-16 xl:pb-9 xl:pt-24;
-}
-
-/*--------- max-width sections ------- */
-.section-steplix {
-    @apply w-80 xl:w-full mx-auto;
-}
-
-@media (min-width: 320px) {
-    .section-steplix {
-        @apply max-w-xs;
-    }
-}
-
-@media (min-width: 1280px) {
-    .section-steplix {
+@media (min-width: 1200px) {
+    .container {
         max-width: 1140px;
     }
 }
 
-@media (min-width: 1536px) {
-    .section-steplix {
-        max-width: 1480px;
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
     }
 }
 
 /*--------- banner------- */
-@media (min-width: 768px) {
-
 .banner {
     background-image: url("../../public/assets/img/bg-header.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-}
-
-.banner {
-    background-image: url("../../public/assets/img/bg-header.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+@media (min-width: 1200px) {
+    .banner {
+        background-image: url("../../public/assets/img/bg-header.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 /*--------- Process Mountain------- */
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .steplix-process {
         height: 700px;
         background-image: url("../../public/assets/img/bg-process.svg");
@@ -194,15 +127,6 @@ body {
     }
 }
 
-/* ------title-empty---- */
-.title-empty {
-    -webkit-text-stroke: 1.3px rgb(255, 255, 255);
-    color: transparent;
-}
-.title-empty-yellow {
-    -webkit-text-stroke: 1.3px #ffda00;
-    color: transparent;
-}
 /* CAROUSEL START */
 .number-slide {
     display: flex;
@@ -236,9 +160,8 @@ body {
 }
 
 .dot.active {
-    @apply bg-steplix-blue;
+    @apply bg-blue;
 }
-
 /* CAROUSEL END */
 
 /* SUBMENU & NAVBAR START */
@@ -255,22 +178,22 @@ body {
 }
 
 .submenu {
-    @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 lg:hidden z-40 text-white;
+    @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 xl:hidden z-40 text-white;
     clip-path: circle(30px at 93% 8%);
     transition: all 800ms ease-out;
 }
 .submenu--toggle {
     clip-path: circle(100%);
 
-    @apply opacity-100 bg-steplix-lilac;
+    @apply opacity-100 bg-purple;
 }
 
 .submenu--item {
-    @apply hover:bg-steplix-purple hover:font-bold flex  text-left w-[94%] h-[48px] hover:border-l-4;
+    @apply w-full h-12 hover:bg-purple-light hover:font-bold hover:border-l-4;
 }
 
 .nav--active {
-    @apply text-steplix-yellow font-bold;
+    @apply text-yellow font-bold;
 }
 
 .line {
@@ -289,40 +212,44 @@ body {
     transform: rotateZ(45deg);
     margin: -2px;
 }
-
 /* SUBMENU & NAVBAR END */
 
 /* START JOBS */
+.bg--jobs {
+    height: 1000px;
+    background-image: url("../../public/assets/img/bg-jobs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10px 400px;
+}
+
 @media (min-width: 768px) {
     .bg--jobs {
         height: 1000px;
         background-image: url("../../public/assets/img/bg-jobs.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: bottom right;
-
+        background-position: center right;
     }
 }
-    .bg--jobs {
-        height: 1000px;
-        background-image: url("../../public/assets/img/bg-jobs.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 10px 400px;
-    }
 
-    .bg--job {
-        background-image: url("../../public/assets/img/bg-job.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 10px 100px;
-
-    }
-
+.bg--job {
+    background-image: url("../../public/assets/img/bg-job.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10px 100px;
+}
 /*END JOBS */
 
-
 /* START Contact */
+.bg--contact {
+    height: 1000px;
+    background-image: url("../../public/assets/img/bg-jobs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10px 400px;
+}
+
 @media (min-width: 768px) {
     .bg--contact {
         height: 1000px;
@@ -330,20 +257,10 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% right;
-
     }
 }
-    .bg--contact {
-        height: 1000px;
-        background-image: url("../../public/assets/img/bg-jobs.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 10px 400px;
-    }
-
- 
 /*END contact */
 
-.shadow--gray{
+.shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
 }

@@ -7,11 +7,11 @@ const HappyClients = () => {
     const { t } = useTranslation();
     return (
         <Fade cascade>
-            <div className="section-steplix text-left " id="happy-clients">
-                <h3 className="mb-3.5 xl:mb-[75px] h3-steplix h3-steplix--filled">
+            <div className="container px-5 xl:px-0" id="happy-clients">
+                <h3 className="mb-3.5 lg:mb-[75px] font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                     {" "}
                     {t("happyClients.title")}
-                    <span className="title-empty">
+                    <span className="text--outlined">
                         {t("happyClients.titleEmpty")}
                     </span>
                 </h3>

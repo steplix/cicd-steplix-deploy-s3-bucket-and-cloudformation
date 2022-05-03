@@ -32,10 +32,10 @@ const WhatWeDo = () => {
         textTwo = t("modal.modalOne.descriptionOne.textTwo");
         textThree = t("modal.modalOne.descriptionOne.textThree");
         textFour = t("modal.modalOne.descriptionOne.textFour");
-        bgColor = "bg-steplix-blue";
-        bgLine = "bg-steplix-yellow";
+        bgColor = "bg-blue";
+        bgLine = "bg-yellow";
         textColor = "text-white";
-        borderColor = "border-steplix-blue";
+        borderColor = "border-blue";
         number = 1;
     }
     if (positionModal === 2) {
@@ -46,9 +46,9 @@ const WhatWeDo = () => {
         textThree = t("modal.modalTwo.descriptionOne.textThree");
         textFour = t("modal.modalTwo.descriptionOne.textFour");
         textColor = "text-white";
-        bgLine = "bg-steplix-yellow";
-        bgColor = "bg-steplix-red";
-        borderColor = "border-steplix-red";
+        bgLine = "bg-yellow";
+        bgColor = "bg-red";
+        borderColor = "border-red";
         number = 2;
     }
     if (positionModal === 3) {
@@ -58,15 +58,15 @@ const WhatWeDo = () => {
         textTwo = t("modal.modalThree.descriptionOne.textTwo");
         textThree = t("modal.modalThree.descriptionOne.textThree");
         textFour = t("modal.modalThree.descriptionOne.textFour");
-        bgLine = "bg-steplix-blue";
+        bgLine = "bg-blue";
         textColor = "text-black";
-        bgColor = "bg-steplix-yellow";
-        borderColor = "border-steplix-yellow";
+        bgColor = "bg-yellow";
+        borderColor = "border-yellow";
         number = 3;
     }
 
     return (
-        <div className="section-steplix" id="what-we-do">
+        <div className="container px-5 xl:px-0" id="what-we-do">
             <Fade cascade>
                 <Modal
                     isModalOpen={isModalOpen}
@@ -79,115 +79,100 @@ const WhatWeDo = () => {
                     setPositionModal={setPositionModal}
                     positionModal={positionModal}
                 >
-                    <div className="lg:px-6 lg:py-4 py-2">
+                    <div className="xl:px-6 xl:py-4 py-2">
                         <StepCard
                             textLeft
                             number={`0${number}.`}
                             numberStyles="xl:mt-1"
                             title={title}
-                            colorTitle="font-semibold text-steplix-yellow"
-                            colorLine="bg-steplix-red"
+                            colorTitle="font-semibold text-yellow"
+                            colorLine="bg-red"
                             textOne={textOne}
                             textTwo={textTwo}
                             textThree={textThree}
                             textFour={textFour}
-                            sizeTitle="text-[22px] lg:text-[50px]"
-                            sizeText="text-[16px] lg:text-[20px]"
+                            sizeTitle="text-[22px] xl:text-[50px]"
+                            sizeText="text-[16px] xl:text-[20px]"
                         />
                     </div>
                 </Modal>
-                <h3 className="mb-3.5 xl:mb-2.5">
-                    <span className="h3-steplix h3-steplix--filled">
-                        {t("whatWeDo.title")}{" "}
-                    </span>
-                    <span className="h3-steplix h3-steplix--outlined">
+
+                <h3 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                    <span>{t("whatWeDo.title")} </span>
+                    <span className="text--outlined">
                         {t("whatWeDo.emptyTitle")}
                     </span>
                 </h3>
-                <div className="flex flex-col mb-12 xl:mb-36">
-                    <p className="p-steplix">{t("whatWeDo.subtitlePartOne")}</p>
-                    <p className="p-steplix">{t("whatWeDo.subtitlePartTwo")}</p>
+                <div className="flex flex-col mb-12 xl:mb-36 paragraph">
+                    <p>{t("whatWeDo.subtitlePartOne")}</p>
+                    <br />
+                    <p>{t("whatWeDo.subtitlePartTwo")}</p>
                 </div>
-                <div className="steplix-process grid grid-cols-1 lg:grid-cols-3 gap-12 xl:gap-0">
-                    <div className="w-[350px] row-span-2 xl:relative xl:col-start-3">
+                <div className="steplix-process grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-0">
+                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] row-span-2 xl:relative xl:col-start-3">
                         <div className="hidden xl:block">
                             <StepCard
                                 number="03."
                                 title={t("whatWeDo.cardThree.title")}
-                                sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
-                                colorTitle="text-steplix-yellow"
-                                colorLine="bg-steplix-red"
+                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
+                                colorTitle="text-yellow"
+                                colorLine="bg-red"
                                 textOne={t("whatWeDo.cardThree.description")}
-                                seeMore={t("seeMore")}
-                                setisModalOpen={setisModalOpen}
-                                setPositionModal={setPositionModal}
                             />
                         </div>
                         <div className="block xl:hidden">
                             <StepCard
                                 number="01."
                                 title={t("whatWeDo.cardOne.title")}
-                                sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
-                                colorTitle="text-steplix-yellow"
-                                colorLine="bg-steplix-red"
+                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
+                                colorTitle="text-yellow"
+                                colorLine="bg-red"
                                 textOne={t("whatWeDo.cardOne.description")}
-                                seeMore={t("seeMore")}
-                                setisModalOpen={setisModalOpen}
-                                setPositionModal={setPositionModal}
                             />
                         </div>
-                        <div className="lg:absolute lg:top-[10px] right-[360px]">
-                            <div className="lg:bg-white lg:h-[1px] lg:w-24 2xl:w-[118px] lg:relative lg:top-[6px]" />
-                            <div className="lg:h-3 lg:w-3 lg:shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:left-0" />
+                        <div className="xl:absolute xl:top-[10px] right-[330px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-24 2xl:w-[118px] xl:relative xl:top-[6px]" />
+                            <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:left-0" />
                         </div>
                     </div>
-                    <div className="lg:col-start-2 row-span-2  lg:relative">
+                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] xl:col-start-2 row-span-2  xl:relative">
                         <StepCard
                             number="02."
                             title={t("whatWeDo.cardTwo.title")}
-                            sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
-                            colorTitle="text-steplix-yellow"
-                            colorLine="bg-steplix-red"
+                            sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
+                            colorTitle="text-yellow"
+                            colorLine="bg-red"
                             textOne={t("whatWeDo.cardTwo.description")}
-                            seeMore={t("seeMore")}
-                            setisModalOpen={setisModalOpen}
-                            setPositionModal={setPositionModal}
                         />
-                        <div className="lg:absolute lg:top-[20px] 2xl:top-[45px] lg:left-[347px] 2xl:left-[340px]">
-                            <div className="lg:bg-white lg:h-[1px] lg:w-7 2xl:w-32 lg:relative lg:top-[6px]" />{" "}
-                            <div className="lg:h-3 lg:w-3 lg:shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                        <div className="xl:absolute xl:top-[20px] 2xl:top-[45px] xl:left-[325px] 2xl:left-[280px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-7 2xl:w-32 xl:relative xl:top-[6px]" />{" "}
+                            <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
                         </div>
                     </div>
-                    <div className="lg:col-start-1 row-span-1 lg:relative">
+                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] xl:col-start-1 row-span-1 xl:relative">
                         <div className="block xl:hidden">
                             <StepCard
                                 number="03."
                                 title={t("whatWeDo.cardThree.title")}
-                                sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
-                                colorTitle="text-steplix-yellow"
-                                colorLine="bg-steplix-red"
+                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
+                                colorTitle="text-yellow"
+                                colorLine="bg-red"
                                 textOne={t("whatWeDo.cardThree.description")}
-                                seeMore={t("seeMore")}
-                                setisModalOpen={setisModalOpen}
-                                setPositionModal={setPositionModal}
                             />
                         </div>
                         <div className="hidden xl:block">
                             <StepCard
                                 number="01."
                                 title={t("whatWeDo.cardOne.title")}
-                                sizeTitle="text-xl xl:text-5xl font-semibold xl:font-normal w-40 xl:w-80"
-                                colorTitle="text-steplix-yellow"
-                                colorLine="bg-steplix-red"
+                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
+                                colorTitle="text-yellow"
+                                colorLine="bg-red"
                                 textOne={t("whatWeDo.cardOne.description")}
-                                seeMore={t("seeMore")}
-                                setisModalOpen={setisModalOpen}
-                                setPositionModal={setPositionModal}
                             />
                         </div>
-                        <div className="lg:absolute lg:top-[70px] lg:left-[360px] 2xl:left-[440px]">
-                            <div className="lg:bg-white lg:h-[1px] lg:w-16 lg:relative lg:top-[6px]" />{" "}
-                            <div className="lg:h-3 lg:w-3 lg:shadow--gray lg:bg-white lg:rounded-full lg:absolute lg:right-0" />
+                        <div className="xl:absolute xl:top-[70px] 2xl:top-[115px] xl:left-[360px] 2xl:left-[440px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-16 xl:relative xl:top-[6px]" />{" "}
+                            <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
                         </div>
                     </div>
                 </div>

@@ -11,12 +11,12 @@ const JobItemCard = ({ item }) => {
     const { t } = useTranslation();
 
     return (
-        <div>
+        <div className="container px-5 xl:px-0 xl:max-w-[960px] 2xl:max-w-[1140px]">
             <Fade cascade>
-                <div className="xl:my-[190px] my-[62px] w-[340px] xl:w-full ">
-                    <h1 className="xl:lg:text-[100px] text-4xl xl:text-center font-black">
+                <div className="mt-[140px] xl:mt-[190px]">
+                    <h1 className="text-center font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                         {item?.title}{" "}
-                        <span className="title-empty">
+                        <span className="text--outlined">
                             {" "}
                             {item?.titleEmpty}{" "}
                         </span>
@@ -30,44 +30,44 @@ const JobItemCard = ({ item }) => {
                     />
                 </div>
                 <div>
-                    <p className="p-steplix">{item?.description}</p>
+                    <p className="paragraph">{item?.description}</p>
                 </div>
                 <div>
-                    <p className="xl:text-[32px] text-[22px] font-bold xl:mt-[60px] mt-[50px] mb-7">
+                    <p className="text-2xl xl:text-[32px] font-bold xl:mt-[60px] mt-[50px] mb-7">
                         {item?.values?.title}
                     </p>
-                    <p className="p-steplix">{item?.values?.textOne}</p>
-                    <p className="p-steplix">{item?.values?.textTwo}</p>
+                    <p className="paragraph">{item?.values?.textOne}</p>
+                    <p className="paragraph">{item?.values?.textTwo}</p>
                 </div>
 
                 <div>
-                    <p className="xl:text-[32px] text-[22px] font-bold mt-[70px] mb-7">
+                    <p className="text-2xl xl:text-[32px] font-bold mt-[70px] mb-7">
                         {item?.requirements?.title}
                     </p>
-                    <ul className="list-disc mb-[70px] p-steplix ml-5 lg:ml-9">
+                    <ul className="list-disc mb-[70px] paragraph ml-5 lg:ml-9">
                         {item?.requirements?.items.map((element, index) => (
                             <li key={index}>{element}</li>
                         ))}
                     </ul>
                 </div>
                 <div>
-                    <p className="xl:text-[32px] text-[22px] font-bold mt-[70px] mb-7">
+                    <p className="text-2xl xl:text-[32px] font-bold mt-[70px] mb-7">
                         {item?.responsibilities?.title}
                     </p>
-                    <p className="p-steplix mt-10">
+                    <p className="paragraph mt-10">
                         {item?.responsibilities?.subtitle}
                     </p>
-                    <ul className="list-disc mb-[70px] p-steplix ml-5 lg:ml-9">
+                    <ul className="list-disc mb-[70px] paragraph ml-5 lg:ml-9">
                         {item?.responsibilities?.items.map((element, index) => (
                             <li key={index}>{element}</li>
                         ))}
                     </ul>
                 </div>
                 <div>
-                    <p className="xl:text-[32px] text-[22px] font-bold mt-[70px]  xl:mb-7">
+                    <p className="text-2xl xl:text-[32px] font-bold mt-[70px]  xl:mb-7">
                         {item?.Benefits?.title}
                     </p>
-                    <div className="p-steplix space-y-6">
+                    <div className="paragraph space-y-6">
                         <p>{item?.Benefits?.textOne}</p>
                         <p>{item?.Benefits?.textTwo}</p>
                         <p>{item?.Benefits?.textThree}</p>
@@ -78,7 +78,7 @@ const JobItemCard = ({ item }) => {
                 </div>
                 {/* section apply */}
                 <div className="my-24">
-                    <p className="xl:text-[32px] text-[22px] font-bold">
+                    <p className="text-2xl xl:text-[32px] font-bold">
                         {t("jobs.textCV")}
                     </p>
                 </div>
@@ -93,17 +93,17 @@ const JobItemCard = ({ item }) => {
                         <p>rrhh@steplix.com</p>
                     </div>
                 </div>
-                <div className="xl:mt-[70px] mt-[60px] xl:mb-[170px] mb-[70px] xl:w-[662px] w-[332px] xl:h-[167px] h-[84px] flex items-center border-2 border-steplix-red rounded-2xl">
+                <div className="xl:mt-[70px] mt-[60px] xl:mb-[170px] mb-[70px] xl:w-[662px] w-[332px] xl:h-[167px] h-[84px] flex items-center border-2 border-red rounded-2xl">
                     <div className="xl:h-[100px] h-[50px] w-[50px] xl:w-[100px] xl:ml-[70px] ml-[10px]">
                         <img src="/assets/img/rrhh.svg" alt="rrhh" />
                     </div>
-                    <div className="xl:w-[5px] w-[2px] xl:h-[80px] h-[40px] bg-steplix-red xl:mx-[30px] mx-[12px]" />
+                    <div className="xl:w-[5px] w-[2px] xl:h-[80px] h-[40px] bg-red xl:mx-[30px] mx-[12px]" />
                     <div className="xl:space-y-2">
                         {" "}
                         <p className="font-bold xl:text-[32px] text-[22px]">
                             Josefina Salimei
                         </p>
-                        <p className="p-steplix">{t("jobs.hr")}</p>
+                        <p className="paragraph">{t("jobs.hr")}</p>
                     </div>
 
                     <div className="xl:w-[33px] w-[16px] xl:h-[23px] h-[13px] xl:ml-[100px] ml-[30px]">
@@ -115,10 +115,10 @@ const JobItemCard = ({ item }) => {
                     </div>
                 </div>
                 {/* section values steplix */}
-                <div>
-                    <h2 className="h2-steplix font-black mb-[40px] xl:mb-[85px]">
+                <div className="pb-20">
+                    <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl mb-[40px] xl:mb-[85px]">
                         {t("jobs.valuesSteplix.title")}
-                        <span className="title-empty">
+                        <span className="text--outlined">
                             {t("jobs.valuesSteplix.titleEmpty")}
                         </span>
                     </h2>
@@ -127,43 +127,43 @@ const JobItemCard = ({ item }) => {
                             <StepCard
                                 title={t("jobs.valuesSteplix.valueOne.title")}
                                 colorTitle="font-semibold text-white"
-                                colorLine="bg-steplix-blue"
+                                colorLine="bg-blue"
                                 textOne={t("jobs.valuesSteplix.valueOne.text")}
                                 icon={"/assets/img/trust.svg"}
-                                sizeTitle={"text-[22px] xl:text-[50px]"}
+                                sizeTitle={"text-2xl md:text-3xl lg:text-5xl"}
                             />
                             <StepCard
                                 title={t("jobs.valuesSteplix.valueTwo.title")}
                                 colorTitle="font-semibold text-white"
-                                colorLine="bg-steplix-red"
+                                colorLine="bg-red"
                                 textOne={t("jobs.valuesSteplix.valueTwo.text")}
                                 icon={"/assets/img/respect.svg"}
-                                sizeTitle={"text-[22px] xl:text-[50px]"}
+                                sizeTitle={"text-2xl md:text-3xl lg:text-5xl"}
                             />
                             <StepCard
                                 title={t("jobs.valuesSteplix.valueThree.title")}
                                 colorTitle="font-semibold text-white"
-                                colorLine="bg-steplix-yellow"
+                                colorLine="bg-yellow"
                                 textOne={t(
                                     "jobs.valuesSteplix.valueThree.text"
                                 )}
-                                sizeTitle={"text-[22px] xl:text-[50px]"}
+                                sizeTitle={"text-2xl md:text-3xl lg:text-5xl"}
                                 icon={"/assets/img/success.svg"}
                             />{" "}
                             <StepCard
                                 title={t("jobs.valuesSteplix.valueFour.title")}
                                 colorTitle="font-semibold text-white"
-                                colorLine="bg-steplix-red"
+                                colorLine="bg-red"
                                 textOne={t("jobs.valuesSteplix.valueFour.text")}
-                                sizeTitle={"text-[22px] xl:text-[50px]"}
+                                sizeTitle={"text-2xl md:text-3xl lg:text-5xl"}
                                 icon={"/assets/img/agil.svg"}
                             />
                             <StepCard
                                 title={t("jobs.valuesSteplix.valueFive.title")}
                                 colorTitle="font-semibold text-white"
                                 textOne={t("jobs.valuesSteplix.valueFive.text")}
-                                colorLine="bg-steplix-blue"
-                                sizeTitle={"text-[22px] xl:text-[50px]"}
+                                colorLine="bg-blue"
+                                sizeTitle={"text-2xl md:text-3xl lg:text-5xl"}
                                 icon={"/assets/img/conscience.svg"}
                             />
                         </div>
