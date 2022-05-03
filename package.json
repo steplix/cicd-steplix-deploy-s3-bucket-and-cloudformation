@@ -9,8 +9,9 @@
     "scripts": {
         "dev": "NODE_ENV=development next",
         "build": "next build",
-        "release": "next build && next export && serve ./out",
+        "release": "next build && next export",
         "start": "NODE_ENV=production next start",
+        "static": "next build && next export && serve ./out",
         "lint": "next lint",
         "prepare": "husky install"
     },
