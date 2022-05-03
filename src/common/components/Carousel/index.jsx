@@ -6,6 +6,19 @@ import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-export-i18n";
 import Fade from "react-reveal/Fade";
 
+/* const ResizePlugin = (slider) => {
+    const observer = new ResizeObserver(function () {
+        slider.update();
+    });
+
+    slider.on("created", () => {
+        observer.observe(slider.container);
+    });
+    slider.on("destroyed", () => {
+        observer.unobserve(slider.container);
+    });
+}; */
+
 const Carousel = () => {
     const { t } = useTranslation();
 
@@ -38,23 +51,132 @@ const Carousel = () => {
             borderColor: "border-yellow",
             text: t("happyClients.clientSura.text"),
         },
+        {
+            image: "/assets/img/clients/client-finket-v2.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-red",
+            text: t("happyClients.clientFinket.text"),
+        },
+        {
+            image: "/assets/img/clients/client-finket-v2.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-red",
+            text: t("happyClients.clientFinket.text"),
+        },
+        {
+            image: "/assets/img/clients/client-sura.svg",
+            alt: "sura",
+            name: "Juan Ramallo",
+            title: t("happyClients.clientSura.title"),
+            companyName: "Seguros SURA",
+            borderColor: "border-yellow",
+            text: t("happyClients.clientSura.text"),
+        },
+        {
+            image: "/assets/img/clients/client-finket-v2.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-red",
+            text: t("happyClients.clientFinket.text"),
+        },
+        {
+            image: "/assets/img/clients/client-finket-v2.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-red",
+            text: t("happyClients.clientFinket.text"),
+        },
+        {
+            image: "/assets/img/clients/client-sura.svg",
+            alt: "sura",
+            name: "Juan Ramallo",
+            title: t("happyClients.clientSura.title"),
+            companyName: "Seguros SURA",
+            borderColor: "border-yellow",
+            text: t("happyClients.clientSura.text"),
+        },
+        {
+            image: "/assets/img/clients/client-finket-v2.svg",
+            alt: "CTECH",
+            name: "Lucas Bianchi",
+            title: t("happyClients.clientFinket.title"),
+            companyName: "CTECH",
+            borderColor: "border-red",
+            text: t("happyClients.clientFinket.text"),
+        },
     ];
 
     //
     //useKeenSlider
     //
-    const [sliderRef, propsRef] = useKeenSlider({
-        initial: 0,
-        slides: {
-            spacing: 50,
+
+    const [sliderRef, propsRef] = useKeenSlider(
+        {
+            initial: 0,
+            slides: {
+                spacing: 50,
+            },
+            slideChanged(slider) {
+                setCurrentSlide(slider.track.details.rel);
+            },
+            created() {
+                setLoaded(true);
+            },
+        }
+        /*  {
+            initial: 0,
+            slides: {
+                perView: 2,
+            },
         },
-        slideChanged(slider) {
-            setCurrentSlide(slider.track.details.rel);
+        [ResizePlugin]
+ */
+        //auto-scroll
+        /* {
+            loop: true,
         },
-        created() {
-            setLoaded(true);
-        },
-    });
+        [
+            (slider) => {
+                let timeout;
+                let mouseOver = false;
+                function clearNextTimeout() {
+                    clearTimeout(timeout);
+                }
+                function nextTimeout() {
+                    clearTimeout(timeout);
+                    if (mouseOver) return;
+                    timeout = setTimeout(() => {
+                        slider.next();
+                    }, 2000);
+                }
+                slider.on("created", () => {
+                    slider.container.addEventListener("mouseover", () => {
+                        mouseOver = true;
+                        clearNextTimeout();
+                    });
+                    slider.container.addEventListener("mouseout", () => {
+                        mouseOver = false;
+                        nextTimeout();
+                    });
+                    nextTimeout();
+                });
+                slider.on("dragStarted", clearNextTimeout);
+                slider.on("animationEnded", nextTimeout);
+                slider.on("updated", nextTimeout);
+            },
+        ] */
+        //
+    );
 
     const [sliderRefMobile, propsRefMobile] = useKeenSlider({
         initial: 0,
@@ -65,6 +187,8 @@ const Carousel = () => {
             setLoaded(true);
         },
     });
+
+    //useKeenSlider auto-scroll
 
     return (
         <>
@@ -139,10 +263,10 @@ const Carousel = () => {
                 <div className="hidden xl:block text-white">
                     <div className="navigation-wrapper">
                         <div ref={sliderRef} className="keen-slider flex">
-                            {_.chunk(arrayClients, 4).map((subimages, i) => (
+                            {_.chunk(arrayClients, 2).map((subimages, i) => (
                                 <div
                                     key={`subimage-${i}`}
-                                    className="keen-slider__slide number-slide gap-5"
+                                    className="keen-slider__slide number-slide gap-12"
                                 >
                                     {subimages.map((element, j) => (
                                         <div
@@ -195,27 +319,29 @@ const Carousel = () => {
                             ))}
                         </div>
                     </div>
-                    {/* {loaded && propsRef.current && (
-                    <div className="dots 2xl:py-5 xl:py-5 lg:py-16 md:py-5 py-6">
-                        {[
-                            ...Array(
-                                propsRef.current.track.details.slides.length
-                            ).keys(),
-                        ].map((idx) => {
-                            return (
-                                <button
-                                    key={idx}
-                                    onClick={() => {
-                                        propsRef.current?.moveToIdx(idx);
-                                    }}
-                                    className={`dot ${
-                                        currentSlide === idx ? " active" : ""
-                                    }  lg:w-5 lg:h-5 w-4 h-4 ${dotColor}`}
-                                />
-                            );
-                        })}
-                    </div>
-                )} */}
+                    {loaded && propsRef.current && (
+                        <div className="dots 2xl:py-5 xl:py-5 lg:py-16 md:py-5 py-6">
+                            {[
+                                ...Array(
+                                    propsRef.current.track.details.slides.length
+                                ).keys(),
+                            ].map((idx) => {
+                                return (
+                                    <button
+                                        key={idx}
+                                        onClick={() => {
+                                            propsRef.current?.moveToIdx(idx);
+                                        }}
+                                        className={`dot ${
+                                            currentSlide === idx
+                                                ? " active"
+                                                : ""
+                                        }  lg:w-5 lg:h-5 w-4 h-4 ${dotColor}`}
+                                    />
+                                );
+                            })}
+                        </div>
+                    )}
                 </div>
             </Fade>
         </>
