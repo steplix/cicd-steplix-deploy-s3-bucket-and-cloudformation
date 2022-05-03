@@ -19,32 +19,32 @@ const ScrumFramework = ({ data }) => {
         : (imageScrum = "/assets/img/ScrumFrameworkEn.svg");
 
     return (
-        <div className="w-[340px] lg:w-[1400px] text-2xl lg:text-4xl font-black lg:block hidden">
+        <div className="container text-2xl xl:text-4xl font-black xl:block hidden">
             <Fade cascade>
-                <div>
-                    <h2 className="h2-steplix leading-tight">
+                <div className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                    <h2>
                         {t("process.scrumFramework.titleOne")}
-                        <span className="title-empty">
+                        <span className="text--outlined">
                             {t("process.scrumFramework.titleTwo")}
                         </span>
                     </h2>
                 </div>
-                <div className="w-[1407px] mt-10 mb-14">
-                    <p className="p-steplix">
+                <div className="mt-10">
+                    <p className="paragraph font-normal xl:max-w-[1070px] 2xl:max-w-[1400px]">
                         {t("process.scrumFramework.paragraphOne.textOne")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphOne.goldenWordOne"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphOne.textTwo")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphOne.goldenWordTwo"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphOne.textThree")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphOne.goldenWordThree"
                             )}
@@ -56,40 +56,40 @@ const ScrumFramework = ({ data }) => {
                     <img
                         src={imageScrum}
                         alt="Scrum Framework"
-                        className="w-[1400px] h-[978px]"
+                        className="xl:w-[1070px] xl:h-auto 2xl:w-[1400px] 2xl:h-auto"
                     />
                 </div>
-                <div className="w-[1407px] p-steplix space-y-8 mt-14 mb-14">
-                    <p className="p-steplix">
+                <div className="paragraph xl:max-w-[1070px] 2xl:max-w-[1400px] space-y-8 mt-14 pb-14">
+                    <p className="paragraph font-normal">
                         {t("process.scrumFramework.paragraphTwo.textOne")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphTwo.goldenWordOne"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphTwo.textTwo")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphTwo.goldenWordTwo"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphTwo.textThree")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphTwo.goldenWordThree"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphTwo.textFour")}
-                        <span className="text-steplix-yellow">
+                        <span className="text-yellow">
                             {t(
                                 "process.scrumFramework.paragraphTwo.goldenWordFour"
                             )}
                         </span>
                         {t("process.scrumFramework.paragraphTwo.textFive")}
                     </p>
-                    <div>
+                    <div className="paragraph font-normal">
                         <p>{t("process.scrumFramework.subtitle")}</p>
-                        <ul className="list-disc mb-[70px] p-steplix ml-8">
+                        <ul className="list-disc mb-[70px] ml-8">
                             {data.items?.map((element, index) => (
                                 <li key={index}>{element}</li>
                             ))}

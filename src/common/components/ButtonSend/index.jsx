@@ -6,7 +6,7 @@ const ButtonSend = () => {
 
     return (
         <button
-            className="w-[132px] h-[45px] border-2 text-steplix-red border-steplix-red font-semibold"
+            className="w-[132px] h-[45px] border-2 text-red border-red font-semibold"
             type="submit"
         >
             {t("ButtonSend")}

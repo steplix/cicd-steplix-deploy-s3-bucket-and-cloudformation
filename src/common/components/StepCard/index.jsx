@@ -35,13 +35,13 @@ const StepCard = ({
     return (
         <Fade cascade>
             <div
-                className={`${textTwo ? "w-full" : "w-[330px] lg:w-full"} ${
-                    number ? "flex gap-2" : ""
-                }`}
+                className={`${
+                    textTwo ? "w-full" : "w-[330px] md:w-full xl:w-[300px]"
+                } ${number ? "flex gap-2" : ""}`}
             >
                 {number && !textLeft && (
                     <p
-                        className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix`}
+                        className={`${numberStyles} font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl`}
                     >
                         {number}
                     </p>
@@ -50,20 +50,20 @@ const StepCard = ({
                     <div className="flex">
                         {number && textLeft && (
                             <p
-                                className={`${numberStyles} number-steplix number-steplix--outlined h2-steplix mr-2`}
+                                className={`${numberStyles} mr-2 font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl`}
                             >
                                 {number}
                             </p>
                         )}
                         {title && textLeft && (
                             <h2
-                                className={`h2-steplix w-[130px] md:w-full ${
+                                className={`w-[130px] md:w-full ${
                                     sizeTitle ? sizeTitle : ""
                                 } ${colorTitle ? colorTitle : "text-white"}`}
                             >
                                 {title}
                                 {emptyTitle && (
-                                    <span className="h2-steplix h2-steplix--outlined">
+                                    <span className="text--outlined">
                                         {emptyTitle}
                                     </span>
                                 )}
@@ -74,13 +74,13 @@ const StepCard = ({
                     <div className="flex">
                         {title && !textLeft && (
                             <h2
-                                className={`h2-steplix ${
-                                    sizeTitle ? sizeTitle : ""
-                                } ${colorTitle ? colorTitle : "text-white"}`}
+                                className={`${sizeTitle ? sizeTitle : ""} ${
+                                    colorTitle ? colorTitle : "text-white"
+                                }`}
                             >
                                 {title}
                                 {emptyTitle && (
-                                    <span className="h2-steplix h2-steplix--outlined">
+                                    <span className="text--outlined">
                                         {emptyTitle}
                                     </span>
                                 )}
@@ -113,11 +113,11 @@ const StepCard = ({
                         />
                     )}
 
-                    <div className={widthTexts}>
+                    <div className={`${widthTexts} xl:w-[250px] 2xl:w-[330px]`}>
                         {textOne && (
                             <p
                                 className={`${
-                                    sizeText || "p-steplix"
+                                    sizeText || "paragraph"
                                 } pb-3 xl:pb-6 ${
                                     widthTextOne ? widthTextOne : ""
                                 }`}
@@ -126,17 +126,17 @@ const StepCard = ({
                             </p>
                         )}
                         {textTwo && (
-                            <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                            <p className={sizeText || "paragraph pb-3 xl:pb-6"}>
                                 {textTwo}
                             </p>
                         )}
                         {textThree && (
-                            <p className={sizeText || "p-steplix pb-3 xl:pb-6"}>
+                            <p className={sizeText || "paragraph pb-3 xl:pb-6"}>
                                 {textThree}
                             </p>
                         )}
                         {textFour && (
-                            <p className={sizeText || "p-steplix"}>
+                            <p className={sizeText || "paragraph"}>
                                 {textFour}
                             </p>
                         )}
@@ -145,13 +145,13 @@ const StepCard = ({
                     {seeMore && setisModalOpen && (
                         <button
                             onClick={handleClick}
-                            className="text-base text-steplix-yellow underline decoration-2 mt-5"
+                            className="text-base text-yellow underline decoration-2 mt-5"
                         >
                             {seeMore}
                         </button>
                     )}
                     {seeMore && seeMoreLink && (
-                        <button className="lg:text-2xl text-sm text-steplix-yellow underline decoration-2 mt-2">
+                        <button className="lg:text-2xl text-sm text-yellow underline decoration-2 mt-2">
                             {seeMore}
                         </button>
                     )}
@@ -162,7 +162,7 @@ const StepCard = ({
 };
 
 //
-//PropsTypes
+// PropTypes
 //
 StepCard.propTypes = {
     number: PropTypes.string,
@@ -182,4 +182,5 @@ StepCard.propTypes = {
     numberStyles: PropTypes.string,
     iconStyles: PropTypes.string,
 };
+
 export default StepCard;

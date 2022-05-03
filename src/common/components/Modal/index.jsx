@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef } from "react";
-
 import PropTypes from "prop-types";
 import ModalCard from "../ModalCard";
 export default function Modal({
@@ -132,7 +131,7 @@ export default function Modal({
 }
 
 //
-//PropsTypes
+// PropsTypes
 //
 Modal.propTypes = {
     setisModalOpen: PropTypes.func.isRequired,

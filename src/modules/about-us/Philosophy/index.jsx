@@ -7,24 +7,23 @@ const Philosophy = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="section-steplix">
+        <div className="container px-5 xl:px-0 xl:pr-24">
             <Fade cascade>
                 <div className="mb-0 xl:mb-14">
-                    <h2 className="mb-6 xl:mb-14">
-                        <span className="h2-steplix h2-steplix--filled">
-                            {t("about_us.philosophy.titleOne")}{" "}
-                        </span>
-                        <span className="h2-steplix h2-steplix--outlined">
+                    <h2 className="mb-6 xl:mb-14 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                        <span>{t("about_us.philosophy.titleOne")} </span>
+                        <span className="text--outlined">
                             {t("about_us.philosophy.titleTwo")}
                         </span>
                     </h2>
-                    <p className="p-steplix">
+                    <p className="paragraph">
                         {t("about_us.philosophy.description")}
                     </p>
                 </div>
             </Fade>
-
-            <CollageAboutUs lg />
+            <div className="hidden xl:flex">
+                <CollageAboutUs />
+            </div>
         </div>
     );
 };

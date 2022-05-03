@@ -99,19 +99,11 @@ export default function Process() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="relative">
-                <div className="flex items-center section-steplix">
-                    <EverythingStartsWithAnIdea />
-                </div>
-                <div className="container-steplix section-steplix">
-                    <StepsToTheTop />
-                </div>
-                <div className="container-steplix section-steplix">
-                    <HoDoWeDoIt />
-                </div>{" "}
-                <div className="container-steplix section-steplix">
-                    <ScrumFramework data={t("process.scrumFramework")} />
-                </div>
+            <div className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative">
+                <EverythingStartsWithAnIdea />
+                <StepsToTheTop />
+                <HoDoWeDoIt />
+                <ScrumFramework data={t("process.scrumFramework")} />
                 <Flags />
             </div>
         </>
