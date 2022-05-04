@@ -7,20 +7,22 @@
         "sectionOne":{
             "title":"Nuestras ",
             "titleEmpty":"tecnologías",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum ullamcorper varius arcu tempor in. Orci quam ipsum non vitae odio ut aliquet arcu. Ac risus dolor, lectus semper. Nunc malesuada sapien nec quis. Eget morbi consectetur arcu eget. Scelerisque ultrices varius tincidunt lacus amet tincidunt. Lorem sagittis, nibh quam enim phasellus consequat. Pharetra dolor adipiscing nunc quis sagittis, tincidunt amet morbi nulla. Sed nibh habitant dolor, vel purus. Nibh neque, elementum mauris a mauris. Dui velit elementum blandit sem ut turpis mattis ac eu. Est magna id nunc porttitor lobortis sapien. Posuere pulvinar nisl sed ac, ullamcorper purus et aenean."
+            "description": "En Steplix trabajamos con las mejores tecnologías disponibles en el mercado para hacer realidad los productos de nuestros clientes.  Conocelas acá "
         },
         "sectionTwo":{
             "title":"Otras ",
             "titleEmpty":"tecnologías"
         },
         "cards":{
-            "cardOne":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardTwo":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardThree":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardFour":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardFive":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardSix":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque.",
-            "cardSeven":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor venenatis consectetur tellus tellus amet, suscipit viverra lobortis hendrerit. A viverra in turpis aliquet ipsum tortor egestas vulputate. In in sit elit eu et turpis augue. Tincidunt sed mollis in lobortis. Dignissim blandit iaculis sed quisque."
+            "react":"Elegimos la libreria React de Javascript para el desarrollo Front-End de single page apps y PWAs ya que se encuentra enfocada en el uso de componentes y nos permite acortar los tiempos de desarrollo.",
+            "git":"Utilizamos Git como herramienta de versionado de código, aplicando la metodología Feature-Branch y Gitlab como gestor de repositorio.",
+            "docker":"Trabajamos con Docker una opción de código abierto que nos brinda las ventajas de Alta portabilidad, Alta performance, Agilidad, Aislamiento de errorres y Escalabilidad.",
+            "next":"Next. js es un marco de trabajo que permite a los desarrolladores crear aplicaciones web de alto rendimiento a través de la renderización del lado del servidor.",
+            "flutter":"Utilizamos Flutter para aplicaciones híbridas ya que es un SDK de código abierto creado por Google, que nos permite desarrollar interfaces Android, iOS y nos permite una personalización completa gracias a la arquitectura en capas.",
+            "aws":"Amazon AWS aumenta la independencia del equipo de desarrollo y permite implementar un esquema de Infraestructura Just In Time, en el cual solo se aprovisionan recursos a medida que son requeridos por el proyecto.",
+            "figma":"Elegimos Figma como herramienta para diseñar interfaces ya que nos da la posibilidad de crear wireframes, interfaces y prototipos avanzados. Unos de sus mayores beneficios es que se encuentra basado en Web lo que nos permite almacenar el trabajo en una nube y poder acceder al mismo desde cualquier dispositivo.",
+            "kotlin":"Desarrollamos aplicaciones Android nativas con Kotlin creando un código más conciso y expresivo. Además, mantiene una compatibilidad completa con las tecnologías basadas en Java.",
+            "node":"Trabajamos con NodeJS, un intérprete de Javascript basado en el motor de Chrome y que permite realizar el 100% de las tareas requeridas de Back- End. El framework elegido es ExpressJS, un framework minimalista y flexible pero robusto y ampliamente probado dentro de la industria del desarrollo web."
         }
     },
     "contact": {
