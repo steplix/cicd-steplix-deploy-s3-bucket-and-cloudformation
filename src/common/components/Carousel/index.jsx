@@ -151,7 +151,7 @@ const Carousel = () => {
                                         <div className="flex">
                                             <div>
                                                 <img
-                                                    className="h-4 w-16 md:h-6 md:w-24 lg:h-9 lg:w-32"
+                                                    className="h-6 w-20 md:h-6 md:w-24 lg:h-9 lg:w-32"
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />
