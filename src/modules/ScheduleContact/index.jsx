@@ -79,14 +79,25 @@ const ScheduleContact = () => {
                                 </a>
                             </Link>{" "}
                         </div>
-                        <div className="xl:text-2xl text-base xl:space-y-7 space-y-4 md:mt-[230px] xl:mt-0">
-                            <p>
-                                Costa rica 4999, Palermo, Buenos Aires.
-                                Argentina.
-                            </p>
-                            <p>hello@steplix.com</p>
-                            <p>+54 (11) 5367-4369</p>
-                        </div>
+                        <address>
+                            <div className="xl:text-2xl text-base xl:space-y-7 space-y-4 md:mt-[230px] xl:mt-0">
+                                <p>
+                                    Costa rica 4999, Palermo, Buenos Aires.
+                                    Argentina.
+                                </p>
+                                <p>
+                                    <a href="mailto:hello@steplix.com">
+                                        hello@steplix.com
+                                    </a>
+                                </p>
+
+                                <p>
+                                    <a href="tel:+54 (11) 5367-4369">
+                                        +54 (11) 5367-4369
+                                    </a>
+                                </p>
+                            </div>
+                        </address>
                     </div>
                 </div>
             </Fade>
