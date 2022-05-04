@@ -83,6 +83,18 @@ body {
     margin-right: auto;
 }
 
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -241,25 +253,26 @@ body {
 }
 /*END JOBS */
 
-/* START Contact */
+/* START CONTACT */
 .bg--contact {
-    height: 1000px;
     background-image: url("../../public/assets/img/bg-jobs.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 10px 400px;
+    background-position: 0% 40%;
 }
 
 @media (min-width: 768px) {
     .bg--contact {
-        height: 1000px;
-        background-image: url("../../public/assets/img/bg-jobs.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50% right;
+        background-position: 0% 30%;
     }
 }
-/*END contact */
+
+@media (min-width: 1200px) {
+    .bg--contact {
+        background-position: 0% 80%;
+    }
+}
+/*END CONTACT */
 
 .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);

@@ -96,13 +96,10 @@ export default function Contact() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="relative xl:pb-[400px] pb-[200px]">
-                <div className="bg--contact flex">
-                    <section className="container px-5 xl:px-0">
-                        <ScheduleContact />
-                    </section>
-                </div>
-
+            <div className="relative bg--contact">
+                <section className="container px-5 md:px-0 pt-32 md:pt-28 lg:pt-24 xl:pt-64 2xl:pt-52 pb-10 md:pb-24 xl:pb-20 2xl:pb-40">
+                    <ScheduleContact />
+                </section>
                 <Flags />
             </div>
         </>
