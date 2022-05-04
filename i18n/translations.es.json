@@ -427,7 +427,8 @@
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {
-        "item1": "Sobre nosotros",
+        "item0": "Sobre nosotros",
+        "item1": "Tecnologías",
         "item2": "Que hacemos",
         "item3": "Nuestra cultura",
         "item4": "Clientes felices",

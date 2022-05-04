@@ -49,6 +49,22 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                                 }
                                 onClick={() => handleClickToggle()}
                             >
+                                {t("navbar.item0")}
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+                <div className="submenu--item hover:border-red">
+                    <div className="text-xs md:text-base py-4 px-3.5">
+                        <Link href={{ pathname: "/stack", query: query }}>
+                            <a
+                                className={
+                                    router.pathname === "/stack"
+                                        ? "nav--active"
+                                        : ""
+                                }
+                                onClick={() => handleClickToggle()}
+                            >
                                 {t("navbar.item1")}
                             </a>
                         </Link>

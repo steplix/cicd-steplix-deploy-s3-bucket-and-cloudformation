@@ -420,7 +420,8 @@
     "seeMore": "See more",
     "ButtonSend": "Send",
     "navbar": {
-        "item1": "About Us",
+        "item0": "About Us",
+        "item1": "Technologies",
         "item2": "What we do",
         "item3": "Our Culture",
         "item4": "Happy Clients",
