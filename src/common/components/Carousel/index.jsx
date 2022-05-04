@@ -6,6 +6,19 @@ import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "next-export-i18n";
 import Fade from "react-reveal/Fade";
 
+const ResizePlugin = (slider) => {
+    const observer = new ResizeObserver(function () {
+        slider.update();
+    });
+
+    slider.on("created", () => {
+        observer.observe(slider.container);
+    });
+    slider.on("destroyed", () => {
+        observer.unobserve(slider.container);
+    });
+};
+
 const Carousel = () => {
     const { t } = useTranslation();
 
@@ -18,15 +31,45 @@ const Carousel = () => {
     //
     //Variables
     //
+    const AUTO_SCROLL = [
+        (slider) => {
+            let timeout;
+            let mouseOver = false;
+            function clearNextTimeout() {
+                clearTimeout(timeout);
+            }
+            function nextTimeout() {
+                clearTimeout(timeout);
+                if (mouseOver) return;
+                timeout = setTimeout(() => {
+                    slider.next();
+                }, 2000);
+            }
+            slider.on("created", () => {
+                slider.container.addEventListener("mouseover", () => {
+                    mouseOver = true;
+                    clearNextTimeout();
+                });
+                slider.container.addEventListener("mouseout", () => {
+                    mouseOver = false;
+                    nextTimeout();
+                });
+                nextTimeout();
+            });
+            slider.on("dragStarted", clearNextTimeout);
+            slider.on("animationEnded", nextTimeout);
+            slider.on("updated", nextTimeout);
+        },
+    ];
     let dotColor = "";
-    const arrayClients = [
+    const ARRAY_CLIENTS = [
         {
             image: "/assets/img/clients/client-finket-v2.svg",
             alt: "CTECH",
             name: "Lucas Bianchi",
             title: t("happyClients.clientFinket.title"),
             companyName: "CTECH",
-            borderColor: "border-red",
+            borderColor: "border-yellow",
             text: t("happyClients.clientFinket.text"),
         },
         {
@@ -35,36 +78,60 @@ const Carousel = () => {
             name: "Juan Ramallo",
             title: t("happyClients.clientSura.title"),
             companyName: "Seguros SURA",
-            borderColor: "border-yellow",
+            borderColor: "border-red",
             text: t("happyClients.clientSura.text"),
+        },
+        {
+            image: "/assets/img/clients/sinoar-logo.webp",
+            alt: "SinoAr",
+            name: "Ramón Uranga",
+            title: t("happyClients.clientSinoar.title"),
+            companyName: "SinoAr",
+            borderColor: "border-blue",
+            text: t("happyClients.clientSinoar.text"),
         },
     ];
 
     //
     //useKeenSlider
     //
-    const [sliderRef, propsRef] = useKeenSlider({
-        initial: 0,
-        slides: {
-            spacing: 50,
-        },
-        slideChanged(slider) {
-            setCurrentSlide(slider.track.details.rel);
-        },
-        created() {
-            setLoaded(true);
-        },
-    });
 
-    const [sliderRefMobile, propsRefMobile] = useKeenSlider({
-        initial: 0,
-        slideChanged(slider) {
-            setCurrentSlide(slider.track.details.rel);
+    const [sliderRef, propsRef] = useKeenSlider(
+        //scroll one at a time, and dots
+        {
+            loop: true,
+            initial: 0,
+            slides: {
+                perView: 2,
+                spacing: 0,
+            },
+            slideChanged(slider) {
+                setCurrentSlide(slider.track.details.rel);
+            },
+            created() {
+                setLoaded(true);
+            },
         },
-        created() {
-            setLoaded(true);
+        //auto-scroll
+        AUTO_SCROLL,
+        [ResizePlugin]
+        //
+    );
+
+    const [sliderRefMobile, propsRefMobile] = useKeenSlider(
+        {
+            initial: 0,
+            loop: true,
+            slideChanged(slider) {
+                setCurrentSlide(slider.track.details.rel);
+            },
+            created() {
+                setLoaded(true);
+            },
         },
-    });
+        //auto-scroll
+        AUTO_SCROLL
+    );
 
     return (
         <>
@@ -73,7 +140,7 @@ const Carousel = () => {
                 <div className="block xl:hidden">
                     <div className="navigation-wrapper">
                         <div ref={sliderRefMobile} className="keen-slider">
-                            {arrayClients.map((element, index) => (
+                            {ARRAY_CLIENTS.map((element, index) => (
                                 <div
                                     key={`image-${index}`}
                                     className="keen-slider__slide number-slide"
@@ -84,7 +151,7 @@ const Carousel = () => {
                                         <div className="flex">
                                             <div>
                                                 <img
-                                                    className="h-4 w-16 md:h-6 md:w-24 lg:h-9 lg:w-32"
+                                                    className="h-6 w-20 md:h-6 md:w-24 lg:h-9 lg:w-32"
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />
@@ -108,41 +175,15 @@ const Carousel = () => {
                             ))}
                         </div>
                     </div>
-                    {loaded && propsRefMobile.current && (
-                        <div className="dots 2xl:py-20 xl:py-24 lg:py-16 md:py-12 py-6">
-                            {[
-                                ...Array(
-                                    propsRefMobile.current.track.details.slides
-                                        .length
-                                ).keys(),
-                            ].map((idx) => {
-                                return (
-                                    <button
-                                        key={idx}
-                                        onClick={() => {
-                                            propsRefMobile.current?.moveToIdx(
-                                                idx
-                                            );
-                                        }}
-                                        className={`dot ${
-                                            currentSlide === idx
-                                                ? " active"
-                                                : ""
-                                        } 2xl:w-8 2xl:h-8 xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-4 h-4 ${dotColor}`}
-                                    />
-                                );
-                            })}
-                        </div>
-                    )}
                 </div>
                 {/* show when it is desktop or bigger */}
                 <div className="hidden xl:block text-white">
                     <div className="navigation-wrapper">
                         <div ref={sliderRef} className="keen-slider flex">
-                            {_.chunk(arrayClients, 4).map((subimages, i) => (
+                            {_.chunk(ARRAY_CLIENTS, 1).map((subimages, i) => (
                                 <div
                                     key={`subimage-${i}`}
-                                    className="keen-slider__slide number-slide gap-5"
+                                    className="keen-slider__slide number-slide gap-12"
                                 >
                                     {subimages.map((element, j) => (
                                         <div
@@ -195,27 +236,6 @@ const Carousel = () => {
                             ))}
                         </div>
                     </div>
-                    {/* {loaded && propsRef.current && (
-                    <div className="dots 2xl:py-5 xl:py-5 lg:py-16 md:py-5 py-6">
-                        {[
-                            ...Array(
-                                propsRef.current.track.details.slides.length
-                            ).keys(),
-                        ].map((idx) => {
-                            return (
-                                <button
-                                    key={idx}
-                                    onClick={() => {
-                                        propsRef.current?.moveToIdx(idx);
-                                    }}
-                                    className={`dot ${
-                                        currentSlide === idx ? " active" : ""
-                                    }  lg:w-5 lg:h-5 w-4 h-4 ${dotColor}`}
-                                />
-                            );
-                        })}
-                    </div>
-                )} */}
                 </div>
             </Fade>
         </>
