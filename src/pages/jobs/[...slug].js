@@ -1,15 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import JobItemCard from "@/common/components/JobItemCard";
 import Flags from "@/common/components/Flags";
 import { ActiveSearches } from "@/common/utils/ActiveSearches";
 
 const Job = ({ params }) => {
-    const { t } = useTranslation();
-    const router = useRouter();
-    let nameJob = router.query.slug;
+    const [ slug, lang ] = params.slug;
+    const { t } = useTranslation(lang);
 
     return (
         <>
@@ -31,7 +29,7 @@ const Job = ({ params }) => {
                     content="steplix,
                     sherpas digitales,
                     developers,
-                    developemnt,
+                    development,
                     software microstrategy,
                     software factory,
                     software factory usa,
@@ -95,7 +93,7 @@ const Job = ({ params }) => {
             </Head>
             <div className="relative">
                 <div className="bg--job flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20">
-                    <JobItemCard item={t(`jobs.${nameJob}`)} />
+                    <JobItemCard item={t(`jobs.${slug}`)} />
                 </div>
                 <Flags />
             </div>

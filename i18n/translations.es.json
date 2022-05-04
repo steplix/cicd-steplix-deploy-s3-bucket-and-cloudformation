@@ -41,7 +41,7 @@
         "or": "ó",
         "hr": "RRHH",
         "UI_UXDesigner": {
-            "url": "UI_UXDesigner",
+            "url": "UI_UXDesigner/es",
             "title": "UX/UI DESIGNER",
             "titleEmpty": "SR",
             "country": "Argentina",
@@ -111,7 +111,7 @@
             }
         },
         "BACKENDSSR": {
-            "url": "BACKENDSSR",
+            "url": "BACKENDSSR/es",
             "title": "BACK-END DEVELOPER",
             "titleEmpty": "SR",
             "country": "Argentina",
@@ -416,6 +416,10 @@
         "clientSura": {
             "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas”.",
             "title": "Business Line Manager and Corporate Segment"
+        }, 
+         "clientSinoar": {
+            "text": "“Steplix respondió a nuestro requerimiento de definición de la plataforma digital para un nuevo negocio con agilidad, creatividad y dedicación. El equipo multidisciplinario que ejecutó el proyecto incluyó expertos en agroindustria y en transformación digital, con resultados excelentes en un plazo exiguo de 4 semanas“. ",
+            "title": "Director de Proyecto"
         }
     },
     "seeMore": "Ver más",

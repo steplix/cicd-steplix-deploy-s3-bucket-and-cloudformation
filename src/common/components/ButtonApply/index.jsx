@@ -2,15 +2,13 @@ import React from "react";
 import Link from "next/link";
 
 const ButtonApply = ({ url, query, apply, email }) => {
+
+    const slug = url?.split('/');
+
     return (
         <div>
             {url && (
-                <Link
-                    href={{
-                        pathname: "/jobs/[slug]",
-                        query: { slug: url, ...query },
-                    }}
-                >
+                <Link href={{ pathname: `/jobs/[...slug]`, query: { slug, ...query } }}>
                     <a>
                         <button className="bg-red w-[110px] h-[49px] rounded-[5px] mt-16">
                             {apply}

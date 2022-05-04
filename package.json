@@ -11,6 +11,7 @@
         "build": "next build",
         "release": "next build && next export",
         "start": "NODE_ENV=production next start",
+        "static": "next build && next export && serve ./out",
         "lint": "next lint",
         "prepare": "husky install"
     },
@@ -36,6 +37,7 @@
         "tailwindcss": "^2.2.19"
     },
     "devDependencies": {
-        "eslint-config-prettier": "^8.5.0"
+        "eslint-config-prettier": "^8.5.0",
+        "serve": "^13.0.2"
     }
 }
