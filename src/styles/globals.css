@@ -274,6 +274,19 @@ body {
 }
 /*END CONTACT */
 
+/* START Stack */
+@media (min-width: 1280px) {
+    .bg--stack {
+        
+        background-image: url("../../public/assets/img/bg-jobs.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 10px 700px;
+    }
+}
+ 
+/*END contact */
+
 .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
 }

@@ -3,6 +3,28 @@
         "subtitle": "¡Creemos que alguien escondió esta sección! Volvé al home para seguir navegando.",
         "button": "Volver al home"
     },
+    "stack":{
+        "sectionOne":{
+            "title":"Nuestras ",
+            "titleEmpty":"tecnologías",
+            "description": "En Steplix trabajamos con las mejores tecnologías disponibles en el mercado para hacer realidad los productos de nuestros clientes.  Conocelas acá "
+        },
+        "sectionTwo":{
+            "title":"Otras ",
+            "titleEmpty":"tecnologías"
+        },
+        "cards":{
+            "react":"Elegimos la libreria React de Javascript para el desarrollo Front-End de single page apps y PWAs ya que se encuentra enfocada en el uso de componentes y nos permite acortar los tiempos de desarrollo.",
+            "git":"Utilizamos Git como herramienta de versionado de código, aplicando la metodología Feature-Branch y Gitlab como gestor de repositorio.",
+            "docker":"Trabajamos con Docker una opción de código abierto que nos brinda las ventajas de Alta portabilidad, Alta performance, Agilidad, Aislamiento de errorres y Escalabilidad.",
+            "next":"Next. js es un marco de trabajo que permite a los desarrolladores crear aplicaciones web de alto rendimiento a través de la renderización del lado del servidor.",
+            "flutter":"Utilizamos Flutter para aplicaciones híbridas ya que es un SDK de código abierto creado por Google, que nos permite desarrollar interfaces Android, iOS y nos permite una personalización completa gracias a la arquitectura en capas.",
+            "aws":"Amazon AWS aumenta la independencia del equipo de desarrollo y permite implementar un esquema de Infraestructura Just In Time, en el cual solo se aprovisionan recursos a medida que son requeridos por el proyecto.",
+            "figma":"Elegimos Figma como herramienta para diseñar interfaces ya que nos da la posibilidad de crear wireframes, interfaces y prototipos avanzados. Unos de sus mayores beneficios es que se encuentra basado en Web lo que nos permite almacenar el trabajo en una nube y poder acceder al mismo desde cualquier dispositivo.",
+            "kotlin":"Desarrollamos aplicaciones Android nativas con Kotlin creando un código más conciso y expresivo. Además, mantiene una compatibilidad completa con las tecnologías basadas en Java.",
+            "node":"Trabajamos con NodeJS, un intérprete de Javascript basado en el motor de Chrome y que permite realizar el 100% de las tareas requeridas de Back- End. El framework elegido es ExpressJS, un framework minimalista y flexible pero robusto y ampliamente probado dentro de la industria del desarrollo web."
+        }
+    },
     "contact": {
         "title": "Queremos escuchar tus ",
         "titleEmpty": "ideas ",
@@ -35,49 +57,49 @@
                 "title": "¿Cuáles van a ser tus tareas?",
                 "subtitle": "",
                 "items": [
-                    "Llevar adelante procesos de discovery y research con la compañía de tu líder, con el fin de ayudar a los clientes y al equipo asignado al proyecto",
+                    "Llevar adelante procesos de discovery y research con la compañía de tu líder, con el fin de ayudar a los clientes y al equipo asignado al proyecto.",
 
-                    "Entender y definir los objetivos del negocio de nuestros clientes",
+                    "Entender y definir los objetivos del negocio de nuestros clientes.",
 
-                    "Definir y describir quiénes son sus usuarios y cuáles son sus necesidades",
+                    "Definir y describir quiénes son sus usuarios y cuáles son sus necesidades.",
 
-                    "Detectar pain points dentro del customer journey con el fin de encontrar oportunidades",
+                    "Detectar pain points dentro del customer journey con el fin de encontrar oportunidades.",
 
-                    "Definir qué funcionalidades debe tener el producto para otorgar valor a sus potenciales usuarios y poder salir al mercado lo antes posible",
+                    "Definir qué funcionalidades debe tener el producto para otorgar valor a sus potenciales usuarios y poder salir al mercado lo antes posible.",
 
-                    "Organizar los flujos de información dentro del producto para que la misma sea accesible de forma intuitiva",
+                    "Organizar los flujos de información dentro del producto para que la misma sea accesible de forma intuitiva.",
 
-                    "Lograr una experiencia de usuario que cumpla con los objetivos del negocio, amigable y de alta calidad en conjunto con el equipo",
+                    "Lograr una experiencia de usuario que cumpla con los objetivos del negocio, amigable y de alta calidad en conjunto con el equipo.",
 
-                    "Involucrarte en el problema de negocio que el cliente quiere resolver y con el mercado en el que opera con el fin de interpretar las necesidades del mismo y poder así, diseñar un producto digital que resuelva un problema real, sea fácil de usar y haga la diferencia desde lo estético",
+                    "Involucrarte en el problema de negocio que el cliente quiere resolver y con el mercado en el que opera con el fin de interpretar las necesidades del mismo y poder así, diseñar un producto digital que resuelva un problema real, sea fácil de usar y haga la diferencia desde lo estético.",
 
-                    "Vas a tener que trabajar codo a codo con todo el team de Steplixers asignado al proyecto en el que estés, con el fin de que el diseño cumpla con los requerimientos funcionales del producto, y que el equipo de desarrollo pueda implementarlo en tiempo y forma"
+                    "Vas a tener que trabajar codo a codo con todo el team de Steplixers asignado al proyecto en el que estés, con el fin de que el diseño cumpla con los requerimientos funcionales del producto, y que el equipo de desarrollo pueda implementarlo en tiempo y forma."
                 ]
             },
             "responsibilities": {
                 "title": "¿Qué esperamos de vos?",
                 "subtitle": "Es necesario que tengas experiencia y conocimientos en:",
                 "items": [
-                    "Creación rápida de prototipos",
+                    "Creación rápida de prototipos.",
 
-                    "Maquetas de alta definición",
+                    "Maquetas de alta definición.",
 
-                    "Presentación de soluciones y argumentación",
+                    "Presentación de soluciones y argumentación.",
 
-                    "Conocimiento de buenas prácticas y patrones de diseño tanto en móvil como web",
-                    "Experiencia en procesos de diseño",
+                    "Conocimiento de buenas prácticas y patrones de diseño tanto en móvil como web.",
+                    "Experiencia en procesos de diseño.",
 
-                    "Experiencia en investigación de usuarios y pruebas de usuarios",
+                    "Experiencia en investigación de usuarios y pruebas de usuarios.",
 
-                    "Facilitación de Design Thinking, Design Sprint, Lean Canvas, etc",
+                    "Facilitación de Design Thinking, Design Sprint, Lean Canvas, etc.",
 
-                    "Conocimientos Figma o Sketch",
+                    "Conocimientos Figma o Sketch.",
 
-                    "Conocimientos en Miro o Mural",
+                    "Conocimientos en Miro o Mural.",
 
-                    "Ser detallista, independiente y proactivo",
+                    "Ser detallista, independiente y proactivo.",
 
-                    "Metodologías ágiles - marco Scrum"
+                    "Metodologías ágiles - marco Scrum."
                 ]
             },
             "Benefits": {
@@ -104,29 +126,29 @@
             "requirements": {
                 "title": " ¿Cuáles van a ser tus tareas?",
                 "items": [
-                    "Participar en eventos de SCRUM",
-                    "Asistir al refinamiento de tareas para las User Stories durante el Sprint de acuerdo al Technical Document",
-                    "Desarrollo de Microservicios de acuerdo al Technical Document",
-                    "Cumplir con las reglas definidas de estandares de codificación",
-                    "Integración del código con GIT siguiendo las políticas y las buenas prácticas del versionamiento de software",
-                    "Resolución de incidentes y refactoring del código",
-                    "Desarrollo utilizando TDD",
-                    "Aplicar y promover las buenas prácticas de desarrollo de software",
-                    "Trabajar colaborativamente con el resto del equipo para cumplir con los objetivos del proyecto y de la organización"
+                    "Participar en eventos de SCRUM.",
+                    "Asistir al refinamiento de tareas para las User Stories durante el Sprint de acuerdo al Technical Document.",
+                    "Desarrollo de Microservicios de acuerdo al Technical Document.",
+                    "Cumplir con las reglas definidas de estandares de codificación.",
+                    "Integración del código con GIT siguiendo las políticas y las buenas prácticas del versionamiento de software.",
+                    "Resolución de incidentes y refactoring del código.",
+                    "Desarrollo utilizando TDD.",
+                    "Aplicar y promover las buenas prácticas de desarrollo de software.",
+                    "Trabajar colaborativamente con el resto del equipo para cumplir con los objetivos del proyecto y de la organización."
                 ]
             },
             "responsibilities": {
                 "title": "¿Qué esperamos de vos?",
 
                 "items": [
-                    "Mínimo 6 años de experiencia en diseño, desarrollo  e implementación de software",
-                    "Conocimiento en desarrollo de aplicaciones, API, middleware y base de datos",
-                    "Patrones de Diseño y de Integración",
-                    "Conocimientos en Metodologías Ágiles de Desarrollo de Software",
-                    "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
-                    "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App",
-                    "Es deseable contar con conocimientos y experiencia en TDD",
-                    "Se requiere un nivel medio o superior de inglés escrito"
+                    "Mínimo 6 años de experiencia en diseño, desarrollo  e implementación de software.",
+                    "Conocimiento en desarrollo de aplicaciones, API, middleware y base de datos.",
+                    "Patrones de Diseño y de Integración.",
+                    "Conocimientos en Metodologías Ágiles de Desarrollo de Software.",
+                    "Stack tecnológico: ES6 o superior, NodeJS 12 o superior, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ.",
+                    "Se valoraran conocimientos en Principios de Diseño de Microservicios y Twelve-Factor-App.",
+                    "Es deseable contar con conocimientos y experiencia en TDD.",
+                    "Se requiere un nivel medio o superior de inglés escrito."
                 ]
             },
             "Benefits": {
@@ -294,7 +316,7 @@
                 "descriptionTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
                 "descriptionThree": " ¡Pero esto no termina aquí!",
                 "descriptionFour": "  En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
-                "secondaryDescription": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market ?"
+                "secondaryDescription": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
             }
         },
         "everythingStartsWithAnIdea": {
@@ -405,7 +427,8 @@
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {
-        "item1": "Sobre nosotros",
+        "item0": "Sobre nosotros",
+        "item1": "Tecnologías",
         "item2": "Que hacemos",
         "item3": "Nuestra cultura",
         "item4": "Clientes felices",
@@ -435,6 +458,10 @@
         "jobs": {
             "title": "Convertite en Steplixer | Sherpas Digitales | Steplix Software 🧗",
             "description": "Chequea las ofertas de trabajo en Steplix."
+        },
+        "stack": {
+            "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
+            "description": "Stack tecnológico de Steplix 🗻"
         }
     }
 }

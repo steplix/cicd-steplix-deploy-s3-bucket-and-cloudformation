@@ -3,6 +3,28 @@
         "subtitle": "We think someone hid this section! Go back to home to continue browsing.",
         "button": "back to home"
     },
+    "stack":{
+        "sectionOne":{
+            "title":"Our ",
+            "titleEmpty":"technologies",
+            "description": "At Steplix we work with the best technologies available on the market to make our customers' products a reality. meet them here"
+        },
+        "sectionTwo":{
+            "title":"Other",
+            "titleEmpty":"technologies"
+        },
+        "cards":{
+            "react":"We chose the React Javascript library for the Front-End development of single page apps and PWAs since it is focused on the use of components and allows us to shorten development times.",
+            "git":"We use Git as a code versioning tool, applying the Feature-Branch methodology and Gitlab as a repository manager.",
+            "docker":"We work with Docker, an open source option that gives us the advantages of High portability, High performance, Agility, Error isolation and Scalability.",
+            "next":"Next. js is a framework that enables developers to build high-performance web applications through server-side rendering.",
+            "flutter":"We use Flutter for hybrid applications as it is an open source SDK created by Google, which allows us to develop Android, iOS interfaces and allows full customization thanks to the layered architecture.",
+            "aws":"Amazon AWS increases the independence of the development team and allows the implementation of a Just In Time Infrastructure scheme, in which resources are only provisioned as they are required by the project.",
+            "figma":"We chose Figma as a tool to design interfaces as it gives us the possibility to create advanced wireframes, interfaces and prototypes. One of its greatest benefits is that it is web-based, which allows us to store the work in a cloud and be able to access it from any device.",
+            "kotlin":"We develop native Android applications with Kotlin creating a more concise and expressive code. In addition, it maintains full compatibility with Java-based technologies.",
+            "node":"We work with NodeJS, a Javascript interpreter based on the Chrome engine that allows us to perform 100% of the Back-End tasks required. The chosen framework is ExpressJS, a minimalist and flexible yet robust and widely tested framework within the web development industry."
+        }
+    },
     "contact": {
         "title": "We want to hear your ",
         "titleEmpty": "ideas ",
@@ -35,45 +57,45 @@
                 "title": "What are your tasks going to be?",
                 "subtitle": "",
                 "items": [
-                    "Carry out discovery and research processes with your leader's company, in order to help clients and the team assigned to the project",
+                    "Carry out discovery and research processes with your leader's company, in order to help clients and the team assigned to the project.",
 
-                    "Understand and define the business objectives of our clients",
+                    "Understand and define the business objectives of our clients.",
 
-                    "Define and describe who your users are and what their needs are",
+                    "Define and describe who your users are and what their needs are.",
 
-                    "Detect pain points within the customer journey in order to find opportunities",
+                    "Detect pain points within the customer journey in order to find opportunities.",
 
-                    "Define what functionalities the product must have to provide value to its potential users and be able to go to market as soon as possible",
+                    "Define what functionalities the product must have to provide value to its potential users and be able to go to market as soon as possible.",
 
-                    "Organize the information flows within the product so that it is intuitively accessible",
+                    "Organize the information flows within the product so that it is intuitively accessible.",
 
-                    "Achieve a user experience that meets business objectives, friendly and high quality in conjunction with the team",
+                    "Achieve a user experience that meets business objectives, friendly and high quality in conjunction with the team.",
 
-                    "Get involved in the business problem that the client wants to solve and with the market in which it operates in order to interpret its needs and thus be able to design a digital product that solves a real problem, is easy to use and makes a difference from the aesthetic",
+                    "Get involved in the business problem that the client wants to solve and with the market in which it operates in order to interpret its needs and thus be able to design a digital product that solves a real problem, is easy to use and makes a difference from the aesthetic.",
 
-                    "You will have to work side by side with the entire Steplixers team assigned to the project you are working on, so that the design meets the functional requirements of the product, and that the development team can implement it in a timely manner"
+                    "You will have to work side by side with the entire Steplixers team assigned to the project you are working on, so that the design meets the functional requirements of the product, and that the development team can implement it in a timely manner."
                 ]
             },
             "responsibilities": {
                 "title": "What do we expect from you?",
                 "subtitle": "You need to have experience and knowledge in:",
                 "items": [
-                    "Rapid prototyping",
+                    "Rapid prototyping.",
 
-                    "High definition mockups",
+                    "High definition mockups.",
 
-                    "Presentation of solutions and argumentation",
+                    "Presentation of solutions and argumentation.",
 
-                    "Knowledge of good practices and usability patterns both in mobile as website",
+                    "Knowledge of good practices and usability patterns both in mobile as website.",
 
-                    "Experience in design processes",
+                    "Experience in design processes.",
 
-                    "Experience in user research and user testing",
+                    "Experience in user research and user testing.",
 
-                    "Facilitation of Design Thinking, Design Sprint Workshops, etc",
+                    "Facilitation of Design Thinking, Design Sprint Workshops, etc.",
 
-                    "Knowledge of Sketch, Figma or Adobe XD Miro or Mural",
-                    "Be detailed, independent and proactive"
+                    "Knowledge of Sketch, Figma or Adobe XD Miro or Mural.",
+                    "Be detailed, independent and proactive."
                 ]
             },
             "Benefits": {
@@ -82,7 +104,7 @@
                 "textTwo": "💸 Adjustments for inflation 3 times a year, including instances of performance evaluation where recognition is contemplated.",
                 "textThree": " ‍🏝️ 3 weeks of vacation: 2 for you to take whenever you want and one at the end of the year during the holidays that all Steplixers take 1 week to rest and recharge batteries.",
                 "textFour": "Flexibility: we work by objectives. As long as you organize yourself and meet your goals, everything is ok.",
-                "textFive": " 🤓 Career plan. ",
+                "textFive": " 🤓 Career plan.",
                 "textSix": "🏥 First level medical insurance."
             }
         },
@@ -100,28 +122,28 @@
             "requirements": {
                 "title": " What are your tasks going to be?",
                 "items": [
-                    "Participate in SCRUM events",
-                    "Assist the refinement of tasks for the User Stories during the Sprint according to the Technical Document",
-                    "Development of Microservices according to the Technical Document",
-                    "Comply with the defined Rules of coding standards",
-                    "Integration of the code with GIT following the policies and good practices of software versioning",
-                    "Incident resolution and code refactoring",
-                    "Development using TDD",
-                    "Apply and promote good software development practices",
-                    "Work collaboratively with the rest of the team to meet the objectives of the project and the organization"
+                    "Participate in SCRUM events.",
+                    "Assist the refinement of tasks for the User Stories during the Sprint according to the Technical Document.",
+                    "Development of Microservices according to the Technical Document.",
+                    "Comply with the defined Rules of coding standards.",
+                    "Integration of the code with GIT following the policies and good practices of software versioning.",
+                    "Incident resolution and code refactoring.",
+                    "Development using TDD.",
+                    "Apply and promote good software development practices.",
+                    "Work collaboratively with the rest of the team to meet the objectives of the project and the organization."
                 ]
             },
             "responsibilities": {
                 "title": "What do we expect from you?",
 
                 "items": [
-                    "Minimum 6 years of experience in software design, development and implementation",
-                    "Knowledge in application development, API, middleware and database",
-                    "Design and Integration Patterns",
-                    "Knowledge in Agile Software Development Methodologies",
-                    "Technological stack: ES6 or higher, NodeJS 12 or higher, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ",
-                    "Knowledge in Principles of Design of Microservices and Twelve-Factor-App",
-                    "Knowledge and experience in Test Driven Development is desirable"
+                    "Minimum 6 years of experience in software design, development and implementation.",
+                    "Knowledge in application development, API, middleware and database.",
+                    "Design and Integration Patterns.",
+                    "Knowledge in Agile Software Development Methodologies.",
+                    "Technological stack: ES6 or higher, NodeJS 12 or higher, Express JS, Swagger, REST, Docker, JSON/XML/YAML, GIT, MySQL, Redis, AWS, Kafka/SQS/RabbitMQ.",
+                    "Knowledge in Principles of Design of Microservices and Twelve-Factor-App.",
+                    "Knowledge and experience in Test Driven Development is desirable."
                 ]
             },
             "Benefits": {
@@ -391,14 +413,15 @@
             "title": "Business Line Manager and Corporate Segment"
         },
         "clientSinoar": {
-            "text": "Steplix responded to our requirement to define the digital platform for a new business with agility, creativity and dedication. The multidisciplinary team that executed the project includes experts in agribusiness and digital transformation, with excellent results in a short period of 4 weeks“. ",
+            "text": "“Steplix responded to our requirement to define the digital platform for a new business with agility, creativity and dedication. The multidisciplinary team that executed the project includes experts in agribusiness and digital transformation, with excellent results in a short period of 4 weeks“. ",
             "title": "Project Manager"
         }
     },
     "seeMore": "See more",
     "ButtonSend": "Send",
     "navbar": {
-        "item1": "About Us",
+        "item0": "About Us",
+        "item1": "Technologies",
         "item2": "What we do",
         "item3": "Our Culture",
         "item4": "Happy Clients",
@@ -428,6 +451,10 @@
         "jobs": {
             "title": "Become a Steplixer | Digital Sherpas | Steplix Software 🧗",
             "description": "Take a look at job offers at Steplix."
+        },
+        "stack": {
+            "title": "Technologies | Digital Sherpas | Steplix Software 🧗",
+            "description": "Steplix Technology Stack 🗻"
         }
     }
 }
