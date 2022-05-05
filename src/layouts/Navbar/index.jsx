@@ -94,7 +94,7 @@ const Navbar = () => {
                     sticky ? "bg-black" : "bg-dark"
                 }`}
             >
-                <div className="container pr-40 flex top-0 justify-between items-center">
+                <div className="container pr-28 2xl:pr-40 flex top-0 justify-between items-center">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
@@ -116,6 +116,22 @@ const Navbar = () => {
                             <a
                                 className={`hover:opacity-100 opacity-50 ${
                                     router.pathname === "/about-us"
+                                        ? "nav--active opacity-100"
+                                        : ""
+                                }`}
+                            >
+                                {t("navbar.item0")}
+                            </a>
+                        </Link>
+                        <Link
+                            href={{
+                                pathname: "/stack",
+                                query: query,
+                            }}
+                        >
+                            <a
+                                className={`hover:opacity-100 opacity-50 ${
+                                    router.pathname === "/stack"
                                         ? "nav--active opacity-100"
                                         : ""
                                 }`}
