@@ -143,7 +143,7 @@ const Carousel = () => {
                             {ARRAY_CLIENTS.map((element, index) => (
                                 <div
                                     key={`image-${index}`}
-                                    className="keen-slider__slide number-slide"
+                                    className="keen-slider__slide number-slide px-2"
                                 >
                                     <div
                                         className={`${element?.borderColor} border-2 rounded-3xl min-h-[430px] md:min-h-[290px] w-full p-3`}
@@ -151,7 +151,7 @@ const Carousel = () => {
                                         <div className="flex">
                                             <div>
                                                 <img
-                                                    className="h-6 w-20 md:h-6 md:w-24 lg:h-9 lg:w-32"
+                                                    className="h-6 w-20 md:h-6 md:w-24 lg:h-9 lg:w-32 mt-1"
                                                     src={element?.image}
                                                     alt={element.alt}
                                                 />
