@@ -6,7 +6,7 @@ const HoDoWeDoIt = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 pb-6 md:pb-16 xl:px-0 space-y-6">
+        <section className="container px-5 pb-6 md:pb-16 md:px-0 space-y-6">
             <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                 {t("process.HowDoWeDoIt.title")}
             </h2>
@@ -52,7 +52,7 @@ const HoDoWeDoIt = () => {
                     widthTextOne="xl:w-[197px] 2xl:w-[239px]"
                 />
             </div>
-        </div>
+        </section>
     );
 };
 

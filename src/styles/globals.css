@@ -274,18 +274,49 @@ body {
 }
 /*END CONTACT */
 
-/* START Stack */
+/* START STACK */
 @media (min-width: 1280px) {
     .bg--stack {
-        
         background-image: url("../../public/assets/img/bg-jobs.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 10px 700px;
     }
 }
- 
-/*END contact */
+/*END STACK */
+
+/* START PROCESS */
+.bg--process {
+    background-image: url("../../public/assets/img/bg-jobs.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 75% 170%;
+}
+
+@media (min-width: 768px) {
+    .bg--process {
+        background-position: 55% 110%;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg--process {
+        background-position: 75% 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bg--process {
+        background-position: 16% 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .bg--process {
+        background-position: 90% 100%;
+    }
+}
+/*END PROCESS */
 
 .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);

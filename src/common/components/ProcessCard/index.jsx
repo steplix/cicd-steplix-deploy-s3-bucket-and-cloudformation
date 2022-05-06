@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 const ModalCard = ({ subDescription, bgColor, textColor, bgLine }) => {
     return (
         <Fade cascade>
-            <div
+            <aside
                 className={`${bgColor} ${textColor} flex paragraph rounded-2xl flex-col w-full h-full text-center justify-center my-auto`}
             >
                 <div
@@ -15,7 +15,7 @@ const ModalCard = ({ subDescription, bgColor, textColor, bgLine }) => {
                 >
                     {subDescription}
                 </div>
-            </div>
+            </aside>
         </Fade>
     );
 };

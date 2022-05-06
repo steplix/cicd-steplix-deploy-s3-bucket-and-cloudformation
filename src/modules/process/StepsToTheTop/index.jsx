@@ -7,21 +7,21 @@ const StepsToTheTop = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 xl:px-0">
-            <div className="mb-[50px]">
-                <h3 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+        <section className="container px-5 md:px-0 flex flex-col space-y-12">
+            <div className="flex flex-col">
+                <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                     <span>{t("process.stepsToTheTop.title")} </span>
                     <span className="text--outlined">
                         {t("process.stepsToTheTop.titleEmpty")}
                     </span>
-                </h3>
-                <div className="flex flex-col mb-12 xl:mb-36 paragraph">
+                </h2>
+                <div className="flex flex-col paragraph">
                     <p>{t("process.stepsToTheTop.description")}</p>
                     <br />
                     <p>{t("process.stepsToTheTop.descriptionTwo")}</p>
                 </div>
             </div>
-            <div className="space-y-20">
+            <div className="flex flex-col space-y-20">
                 <div className="flex xl:space-x-16 2xl:space-x-24">
                     <div className="xl:w-[637px] 2xl:w-[762px]">
                         <StepCard
@@ -131,7 +131,7 @@ const StepsToTheTop = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
