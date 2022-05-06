@@ -7,7 +7,7 @@
         "sectionOne":{
             "title":"Our ",
             "titleEmpty":"technologies",
-            "description": "At Steplix we work with the best technologies available on the market to make our customers' products a reality. meet them here"
+            "description": "At Steplix we work with the best technologies available on the market to make our customers' products a reality. Meet them here"
         },
         "sectionTwo":{
             "title":"Other",
@@ -219,7 +219,7 @@
         "philosophy": {
             "titleOne": "Our",
             "titleTwo": "philosophy",
-            "description": " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks in the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. Thus, we scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. "
+            "description": " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks. In the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. We scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. "
         },
         "digitalSherpas": {
             "titleOne": "Your Digital Business",
@@ -234,11 +234,11 @@
             "titleOne": "Did you know that we work under the ",
             "titleTwo": "Scrum Framework?",
             "paragraphOne": {
-                "textOne": "At Steplix we use the Scrum framework, which is based on carrying out an iterative/incremental development that allows us to deliver value from the beginning of the project and throughout the construction of the product, guaranteeing adjustments in design and development at opportune moments of the cycle. of life. We have formed a multidisciplinary team, called the",
+                "textOne": "At Steplix we use the Scrum framework, which is based on iterative/incremental development that allows us to deliver value from the beginning of the project and all along the construction of the product, guaranteeing adjustments in design and development at opportune moments of the life cycle. We form a multidisciplinary team, called",
                 "goldenWordOne": " Scrum Team",
-                "textTwo": ", which will be accompanied by a servant leader in the role of",
+                "textTwo": ", that will be supported by a servant leader under the role of",
                 "goldenWordTwo": " Scrum Master",
-                "textThree": ". All collaborators have the necessary technical knowledge. It should be noted that the participation of the client is key and necessary, through a representative that he himself designates under the role of",
+                "textThree": ". All collaborators have the necessary technical knowledge. It should be noted that the participation of the client is key and necessary, through a representative that he designates under the role of",
                 "goldenWordThree": " Product Owner",
                 "textFour": " to ensure fluid and adequate communication of the requirements."
             },
@@ -248,11 +248,11 @@
                 "goldenWordOne": "Sprints",
                 "textTwo": ") where work is done based on certain requirements selected from the main surveyed/prioritized list (",
                 "goldenWordTwo": " Product Backlog",
-                "textThree": "), which It derives from a planning meeting that gives rise to the list of requirements that are going to be built during those two weeks (",
+                "textThree": "), which results from a planning meeting that gives origin to the list of requirements to be built during those two weeks (",
                 "goldenWordThree": "Sprint Backlog",
                 "textFour": ") and are developed guaranteeing a functional deliverable (",
                 "goldenWordFour": "Product Increment",
-                "textFive": ")  at the end of each Sprint. Every two weeks, that is, at the end of each iteration, the product increment is presented, tested and discussed with the client for evaluation in a meeting held by the team together with the Product Owner. The team meets daily to maintain alignment with the goal of the current Sprint and at the end of the iteration the, Scrum Team holds a retrospective meeting to assess how they have been working and apply continuous improvement to their development processes and practices."
+                "textFive": ")  at the end of each Sprint. Every two weeks, at the end of each iteration, the product increment is presented, tested and discussed with the customer for evaluation in a meeting held by the team together with the Product Owner. The team meets daily to maintain alignment with the goal of the current Sprint and at the end of the iteration the Scrum Team holds a retrospective meeting to assess how they have been working and apply continuous improvement to their development processes and practices."
             },
             "subtitle": "This type of framework allows us:",
             "items": [
@@ -272,7 +272,7 @@
                 },
                 "conceptTwo": {
                     "title": "Body",
-                    "description": " We rely on Agile Methodologies for greater control of work in tune with the evolution of the project. "
+                    "description": " We rely on Agile Methodologies for a higher performance of the work in syntony with the evolution of the project."
                 },
                 "conceptThree": {
                     "title": "Mind",
@@ -299,14 +299,14 @@
             "stepOne": {
                 "title": "Understand & scope the digitalization of your business ",
                 "descriptionOne": " There are many ideas. But we constantly ask ourselves… Is there business? ",
-                "descriptionTwo": " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and together define the path to take.",
+                "descriptionTwo": " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and possible blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and together define the path to take.",
                 "descriptionThree": "  To make sure we understand the context and all its variables, we put the idea through a series of analyzes, applying different methodologies. ",
                 "descriptionFour": "  With a minimum investment you can understand if there is an opportunity and how to take advantage of it. ",
                 "secondaryDescription": "Did you know that 75% of new business ideas fail in their first 3 years? "
             },
             "stepTwo": {
                 "title": "Product Design ",
-                "descriptionOne": "  Once the business model and value proposition have been defined, we prepare to jointly design all the functionalities that the product will have, that idea that originated the business, and take another step towards the top. Product design is very important because it is through the interfaces and user experience that the end customer truly perceives the value of the platform. ",
+                "descriptionOne": " Once the business model and the value proposition have been defined, we set out to design together all the functionalities that the product will have, that idea that originated the business and take a step closer to the top. Product design is very important because it is through the interfaces and user experience that the final customer truly perceives the value of the platform. ",
                 "descriptionTwo": "  Strategy, creativity and innovation are key in this collaborative stage in which Steplix designs together with the client the most appropriate digital product to enhance the business and create an emotional response in whoever buys it. ",
                 "descriptionThree": "In this way, we lead the user experience (UX) by improving functionalities and facilitating interaction in an agile and satisfactory way for everyone.  ",
                 "descriptionFour": "",
@@ -315,9 +315,9 @@
             "stepThree": {
                 "title": "Develop & Deliver ",
                 "descriptionOne": "  Our culture focuses on agile processes and methodologies that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve.  ",
-                "descriptionTwo": "  With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first firm steps in the market. ",
+                "descriptionTwo": "  With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first solid steps in the market.",
                 "descriptionThree": " But this does not end here!",
-                "descriptionFour": "  At this stage, both the product and the business model are constantly evolving. With the commissioning, new skills and functionalities are discovered that restart the co-creation dynamics of the digital solution, and on this path Steplix will also accompany you. ",
+                "descriptionFour": "  At this stage, the product and the business model are constantly evolving. With the implementation, you discover new skills and functionalities that restart the dynamics of co-creation of the digital solution, and Steplix will also be with you on this journey.",
                 "secondaryDescription": " Did you know that most projects fail to estimate costs and time, delaying time to market?"
             }
         }
@@ -340,12 +340,12 @@
         "subtitlePartOne": " The beginnings are not all the same... On this path you choose.  ",
         "subtitlePartTwo": " What is your starting point? ",
         "cardOne": {
-            "title": "Business Discovery",
+            "title": "Understand & Scope",
             "description": " As guides in the digital business ecosystem, we know that the first step is focused on understanding the opportunity and working together to find a way to add value to that business idea."
         },
         "cardTwo": {
             "title": "Product Design",
-            "description": " The second scale focuses on the design of a first version of the product that will allow the business model to be tested, relieving the effor and detecting optimization opportunities, to continue promoting the idea. "
+            "description": " The second scale focuses on the design of a first version of the product that will allow the business model to be tested, relieving the effor and detecting optimization opportunities to continue promoting the idea. "
         },
         "cardThree": {
             "title": "Develop & Deliver",
@@ -353,7 +353,7 @@
         }
     },
     "ourCulture": {
-        "title": "Because nobody reaches the summit alone,",
+        "title": "Because nobody reaches the peak alone,",
         "subtitle": "We are your best",
         "emptySubtitle": " PARTNER",
         "cardOne": {
@@ -361,8 +361,8 @@
             "description": "We are guides in the digital business ecosystem, and we know how to help you promote and idea to turn it into a scalable business model. "
         },
         "cardTwo": {
-            "title": "We accompany you on this journey",
-            "description": "We seek and co-create innovate sokutions tailored to each project and assemble a team that closely accompanies each of its steps from the bottom to the top. "
+            "title": "We walk with you on this journey",
+            "description": "We seek and co-create innovative solutions tailored to each project and put together a team that closely supports each of your steps, from the base to the top."
         },
         "cardThree": {
             "title": "We respect your conditions",
@@ -371,10 +371,10 @@
     },
     "modal": {
         "modalOne": {
-            "title": " Business Discovery ",
+            "title": " Understand & Scope ",
             "descriptionOne": {
                 "textOne": " There are many ideas.But we constantly ask ourselves...Is there business? ",
-                "textTwo": " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and potential blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and toegether define the path to take.",
+                "textTwo": " In this stage we dedicate ourselves to discovering together the opportunity of the project, minimizing the risk of failure. The Steplix team will ask the right questions to detect all technical and business dependencies and possible blockers with the customer to identify the potential of this idea in the market. Through workshops between the client and a multidisciplinary team, we refine the business models and toegether define the path to take.",
                 "textThree": "To make sure we undestand the context and all its variables, we put the idea through a series of analyzes, applying different methodologies. ",
                 "textFour": " With a minimum invesment you can understand if there is and opportunity and how to take advantage of it. "
             },
@@ -383,7 +383,7 @@
         "modalTwo": {
             "title": "Product Design",
             "descriptionOne": {
-                "textOne": " Once the business model and value proposition have been defined, we prepare to jointly design all the functionalities that the product will have, that idea that originated the business, and take another step towards the top. Product design is very important because it is through the interfaces and user experience that the end customer truly perceives the value of the platform. ",
+                "textOne": " Once the business model and the value proposition have been defined, we set out to design together all the functionalities that the product will have, that idea that originated the business and take a step closer to the top. Product design is very important because it is through the interfaces and user experience that the final customer truly perceives the value of the platform. ",
                 "textTwo": " Strategy, creativity and innovation are key in this collaborative stage in which Steplix designs together with the client the most appropriate digital product to enhance the business and create an emotional response in whoever buys it. ",
                 "textThree": " In this way, we lead the user experience (UX) by improving functionalities and facilitating interaction in an agile and satisfactory way for everyone. ",
                 "textFour": " "
@@ -394,9 +394,9 @@
             "title": "Develop & Deliver  ",
             "descriptionOne": {
                 "textOne": " Our culture focuses on agile processes and methodologies that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve. ",
-                "textTwo": " With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first firm steps in the market. ",
+                "textTwo": " With all the road traveled and the information collected, the team advances in the construction of the digital product, which once ready, will take its first solid steps in the market.",
                 "textThree": "But this does not end here!",
-                "textFour": " At this stage, both the product and the business model are constantly evolving. With the commissioning, new skills and functionalities are discovered that restart the co-creation dynamics of the digital solution, and on this path Steplix will also accompany you. "
+                "textFour": " At this stage, the product and the business model are constantly evolving. With the implementation, you discover new skills and functionalities that restart the dynamics of co-creation of the digital solution, and Steplix will also be with you on this journey."
             },
             "descriptionTwo": "Did you know that most projects fail to estimate costs and time, delaying time to market?"
         }
