@@ -23,126 +23,14 @@ const Stack = () => {
                     name="description"
                     content={t("metaTags.stack.description")}
                 />
-                <meta
-                    name="keywords"
-                    content="
-                    steplix,
-                    sherpas digitales,
-                    developers,
-                    developemnt,
-                    software microstrategy,
-                    software factory,
-                    software factory usa,
-                    software business analytics,
-                    software full stack,
-                    empresas de software factory,
-                    software agile,
-                    software developer,
-                    software company,
-                    desarrollo de software,
-                    Design Thinking,
-                    Marco Scrum,
-                    Metodologías ágiles,
-                    Lean,
-                    Agile,
-                    Product Design,
-                    Develop and Deliver,
-                    Digitalization of your business,
-                    business digitalization,
-                    Transformación digital,
-                    Digital transformation,
-                    Product building,
-                    Software project,
-                    Digitalization project,
-                    Proyecto digital,
-                    soluciones digitales,
-                    Digital Business Ecosystem,
-                    HTML,
-                    CSS,
-                    SASS,
-                    JS,
-                    JavaScript,
-                    JQuery,
-                    AngularJs,
-                    Angular,
-                    ReactJs,
-                    NextJs,
-                    Bootstrap,
-                    Material,
-                    Foundation,
-                    Tailwind,
-                    NodeJs,
-                    PHP,
-                    Java,
-                    Python,
-                    Ruby,
-                    C,
-                    C++,
-                    GO,
-                    ASP.NET,
-                    Express,
-                    Ember,
-                    Laravel,
-                    Symfony,
-                    CakePHP,
-                    Django,
-                    Spring,
-                    Struts,
-                    Ruby on rails,
-                    My SQL,
-                    Mariadb,
-                    SQL,
-                    Sqlite,
-                    DynamoDB,
-                    PostgreSQL,
-                    DB2,
-                    HSQLDB,
-                    redis,
-                    mongoDB,
-                    ElastiCache,
-                    elasticSearch,
-                    Cordova,
-                    Ionic,
-                    Flutter,
-                    Kotlin,
-                    Java,
-                    Objective-c,
-                    Swift,
-                    git,
-                    svn,
-                    Gitlab,
-                    Github,
-                    Bitbucket,
-                    Vagrant,
-                    Docker,
-                    Kubernetes,
-                    Linux,
-                    Windows,
-                    AWS,
-                    Azure,
-                    Firebase,
-                    WordPress,
-                    ghost,
-                    Drupal,
-                    Mathematica,
-                    MATLAB,
-                    LaTex,
-                    Assembler
-                    "
-                />
+                <meta name="keywords" content={t("metaTags.stack.keywords")} />
                 {/* Facebook Meta Tags */}
-                <meta
-                    property="og:title"
-                    content={t("metaTags.process.title")}
-                />
+                <meta property="og:title" content={t("metaTags.stack.title")} />
                 <meta
                     property="og:description"
-                    content={t("metaTags.process.description")}
+                    content={t("metaTags.stack.description")}
                 />
-                <meta
-                    property="og:url"
-                    content="https://steplix.com/process/"
-                />
+                <meta property="og:url" content="https://steplix.com/stack/" />
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:image"
@@ -157,15 +45,15 @@ const Stack = () => {
                 <meta property="twitter:domain" content="steplix.com" />
                 <meta
                     property="twitter:url"
-                    content="https://steplix.com/process/"
+                    content="https://steplix.com/stack/"
                 />
                 <meta
                     name="twitter:title"
-                    content={t("metaTags.process.title")}
+                    content={t("metaTags.stack.title")}
                 />
                 <meta
                     name="twitter:description"
-                    content={t("metaTags.process.description")}
+                    content={t("metaTags.stack.description")}
                 />
                 <meta
                     name="twitter:image"

@@ -441,26 +441,32 @@
     "metaTags": {
         "home": {
             "title": "Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"Fábrica de software, Microestrategia de software, Sherpas digitales, Socio digital, Negocios escalables, software business analytics, software full stack, empresas de software factory, software agile, desarrollo de software, software company, Design Thinking, Marco Scrum, Metodologías ágiles, Product Design, Develop and Deliver, Digitalización de negocio, Transformación digital, construcción de productos, Proyecto de software, Proyecto digital, soluciones digitales, Ecosistema digital para negocios, software factory, Digital Sherpas, Digital Partner",
             "description": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima 🆙"
         },
         "aboutUs": {
             "title": "Sobre nosotros | Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"sherpas digitales, especializados, experiencia , compromiso, equipo interdisciplinario, conocimientos, experiencia, idea de negocio, mantra, creatividad, diseño, innovación , generar valor, modelos de negocios, inversión, ROI, filosofía, desafíos de negocio, guiar, elevar, escalamos, creatividad, estrategia, innovación, tecnología, misión, soluciones innovadoras, Desarrollar, productividad, visión, soluciones de excelencia, precio competitivo, mejora continua, Valores, Confianza, Respeto Mutuo, Éxito, Agilidad, Conciencia",
             "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía."
         },
         "process": {
             "title": "Qué hacemos | Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"idea, innovadora, creativa, revolucionaria, desafiante, decisiones, aliado digital, escalar, idea de negocio, minimizando el riesgo, ampliﬁcando el impacto, tiempo acordado, Descubrimiento de negocio, Comprensión y alcance, oportunidad, potencial, talleres, equipo multidisciplinario, modelos de negocio, mínimo de inversión, Diseño de producto, modelo de negocio, propuesta de valor, producto, experiencia de usuario, UX, Desarrollo y entrega, procesos, metodologías ágiles, incremental, producto digital, solución digital, funcionalidades, Espíritu, Cuerpo, Mente, Recursos, Marco Scrum, iterativo, incremental, desarrollo, entregar valor, equipo multidisciplinario, Scrum Team, Scrum Master, Product Owner, Sprints, Product Backlog, Sprint Backlog, Incremento del producto",
             "description": "¿Cuál es tu punto de partida? 1⃣ Conociendo tu negocio | 2⃣ Diseño de producto | 3⃣ Desarrollo y entrega"
         },
         "contact": {
             "title": "Contáctanos | Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"ideas, Agendá, comerciales, Descargá, Brochure, oficina, Argentina",
             "description": "Contáctanos para llevar juntos esa idea hacia la cima 🗻"
         },
         "jobs": {
             "title": "Convertite en Steplixer | Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"Convertite en Steplixer, Steplixer",
             "description": "Chequea las ofertas de trabajo en Steplix."
         },
         "stack": {
             "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
+            "keywords":"Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
             "description": "Stack tecnológico de Steplix 🗻"
         }
     }
