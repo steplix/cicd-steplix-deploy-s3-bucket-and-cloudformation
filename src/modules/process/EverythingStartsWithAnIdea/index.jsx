@@ -6,22 +6,34 @@ const EverythingStartsWithAnIdea = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 xl:px-0 pt-36">
-            <h4 className="mb-5 font-semibold text-2xl md:text-3xl lg:text-5xl">
-                {t("process.everythingStartsWithAnIdea.title")}
-            </h4>
-            <div className="paragraph xl:max-w-[728px]">
-                <p>{t("process.everythingStartsWithAnIdea.descriptionOne")}</p>{" "}
-                <br />
-                <p>{t("process.everythingStartsWithAnIdea.descriptionTwo")}</p>
-                <br />
-                <p>
-                    {t("process.everythingStartsWithAnIdea.descriptionThree")}
-                </p>{" "}
-                <br />
-                <p>{t("process.everythingStartsWithAnIdea.descriptionFour")}</p>
+        <section className="bg--process">
+            <div className="container px-5 md:px-0 pt-36 md:pt-28 lg:pt-24 xl:pt-64 2xl:pt-52">
+                <h3 className="mb-5 font-semibold leading-tight text-2xl md:text-3xl lg:text-5xl">
+                    {t("process.everythingStartsWithAnIdea.title")}
+                </h3>
+                <div className="paragraph xl:max-w-[728px] 2xl:max-w-full">
+                    <p>
+                        {t("process.everythingStartsWithAnIdea.descriptionOne")}
+                    </p>{" "}
+                    <br />
+                    <p>
+                        {t("process.everythingStartsWithAnIdea.descriptionTwo")}
+                    </p>
+                    <br />
+                    <p>
+                        {t(
+                            "process.everythingStartsWithAnIdea.descriptionThree"
+                        )}
+                    </p>{" "}
+                    <br />
+                    <p>
+                        {t(
+                            "process.everythingStartsWithAnIdea.descriptionFour"
+                        )}
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
