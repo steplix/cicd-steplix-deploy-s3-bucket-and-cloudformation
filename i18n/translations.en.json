@@ -434,26 +434,32 @@
     "metaTags": {
         "home": {
             "title": "Digital Sherpas | Steplix Software 🧗",
+            "keywords":"software factory, software microstrategy, software factory usa, Digital Sherpas, Digital Partner, Scalable business model, software business analytics, software full stack, software agile, software developer, software company,Design Thinking, Scrum, Agile, Lean, Product Design, Develop and Deliver, Digitalization of your business, business digitalization, Digital transformation, Product building, Software project, Digitalization project, Digital solution, Digital Business Ecosystem",
             "description": "We are here to co-create the path that will take your business to the top 🆙"
         },
         "aboutUs": {
             "title": "About us | Digital Sherpas | Steplix Software 🧗",
+            "keywords":"Digital Business Sherpas, interdisciplinary team, knowledge, xperience, usiness idea, creativity, esign, nnovation, enerate value, business models, investment, OI, hilosophy, ully committed, business challenges, guide, levate, cale, reativity, trategy, nnovation, ur mission, Develop, nnovative solutions, improve, roductivity, ompanies, ur Vision, solutions, n time, competitive price, continuous improvement, Our values, Trust, utual respect, Success, gility, wareness",
             "description": "We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment."
         },
         "process": {
             "title": "Process | Digital Sherpas | Steplix Software 🧗",
+            "keywords":"idea, innovative, creative, revolutionary, challenging, decisions, digital partner, scale, business idea, minimizing risk, amplifying the impact, agreed time, Understand & scope, discovering, opportunity, potential, workshops, multidisciplinary team, methodologies, minimum investment, Product Design, business model, functionalities, product, user experience, UX, functionalities, agile, interaction, Develop, Deliver, methodologies, incremental, digital product, business model, Spirit, Body, Mind, Means, Scrum, Framework, iterative, development, multidisciplinary team, Scrum Team, Scrum Master, technical knowledge, Product Owner, Sprints, Product Backlog, Sprint Backlog, Product Increment",
             "description": "1⃣ Understand & scope the digitalization of your business |  2⃣ Product Design | 3⃣ Develop & Deliver"
         },
         "contact": {
             "title": "Contact us | Digital Sherpas | Steplix Software 🧗",
+            "keywords":"ideas, Schedule, Download, Brochure, Sales Representative, office, Argentina",
             "description": "Contact us to take together your project from the bottom to the top 🗻"
         },
         "jobs": {
             "title": "Become a Steplixer | Digital Sherpas | Steplix Software 🧗",
+            "keywords":"Become a Steplix, Steplixer",
             "description": "Take a look at job offers at Steplix."
         },
         "stack": {
             "title": "Technologies | Digital Sherpas | Steplix Software 🧗",
+            "keywords":"Technology Stack, React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, portability, performance, Agility, Error isolation, Scalability, Next.js, Next. js, Framework, developers, High-Performance, server-side rendering, Flutter, hybrid applications, open source SDK, Android Interface, Ios Interface, layered architecture, Amazon, AWS, Just In Time Infrastructure,  Figma, Wireframes, Interfaces, prototypes, web-based, Cloud Access,  Kotlin, Java-Based Technologies,  Node, NodeJs, Node Js, Back-end tasks, Framework, ExpressJS, Express JS",
             "description": "Steplix Technology Stack 🗻"
         }
     }

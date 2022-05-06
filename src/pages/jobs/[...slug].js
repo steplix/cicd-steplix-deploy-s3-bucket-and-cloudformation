@@ -6,7 +6,7 @@ import Flags from "@/common/components/Flags";
 import { ActiveSearches } from "@/common/utils/ActiveSearches";
 
 const Job = ({ params }) => {
-    const [ slug, lang ] = params.slug;
+    const [slug, lang] = params.slug;
     const { t } = useTranslation(lang);
 
     return (
@@ -24,40 +24,7 @@ const Job = ({ params }) => {
                     name="description"
                     content={t("metaTags.jobs.description")}
                 />
-                <meta
-                    name="keywords"
-                    content="steplix,
-                    sherpas digitales,
-                    developers,
-                    development,
-                    software microstrategy,
-                    software factory,
-                    software factory usa,
-                    software business analytics,
-                    software full stack,
-                    empresas de software factory,
-                    software agile,
-                    software developer,
-                    software company,
-                    desarrollo de software,
-                    Design Thinking,
-                    Marco Scrum,
-                    Metodologías ágiles,
-                    Lean,
-                    Agile,
-                    Product Design,
-                    Develop and Deliver,
-                    Digitalization of your business,
-                    business digitalization,
-                    Transformación digital,
-                    Digital transformation,
-                    Product building,
-                    Software project,
-                    Digitalization project,
-                    Proyecto digital,
-                    soluciones digitales,
-                    Digital Business Ecosystem"
-                />
+                <meta name="keywords" content={t("metaTags.jobs.keywords")} />
                 {/* Facebook Meta Tags */}
                 <meta property="og:title" content={t("metaTags.jobs.title")} />
                 <meta
