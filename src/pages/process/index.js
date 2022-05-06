@@ -25,37 +25,7 @@ export default function Process() {
                 />
                 <meta
                     name="keywords"
-                    content="steplix,
-                    sherpas digitales,
-                    developers,
-                    developemnt,
-                    software microstrategy,
-                    software factory,
-                    software factory usa,
-                    software business analytics,
-                    software full stack,
-                    empresas de software factory,
-                    software agile,
-                    software developer,
-                    software company,
-                    desarrollo de software,
-                    Design Thinking,
-                    Marco Scrum,
-                    Metodologías ágiles,
-                    Lean,
-                    Agile,
-                    Product Design,
-                    Develop and Deliver,
-                    Digitalization of your business,
-                    business digitalization,
-                    Transformación digital,
-                    Digital transformation,
-                    Product building,
-                    Software project,
-                    Digitalization project,
-                    Proyecto digital,
-                    soluciones digitales,
-                    Digital Business Ecosystem"
+                    content={t("metaTags.process.keywords")}
                 />
                 {/* Facebook Meta Tags */}
                 <meta
