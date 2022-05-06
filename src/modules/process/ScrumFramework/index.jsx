@@ -19,7 +19,7 @@ const ScrumFramework = ({ data }) => {
         : (imageScrum = "/assets/img/ScrumFrameworkEn.svg");
 
     return (
-        <div className="container text-2xl xl:text-4xl font-black xl:block hidden">
+        <section className="container text-2xl xl:text-4xl font-black xl:block hidden">
             <Fade cascade>
                 <div className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                     <h2>
@@ -97,7 +97,7 @@ const ScrumFramework = ({ data }) => {
                     </div>
                 </div>
             </Fade>
-        </div>
+        </section>
     );
 };
 
