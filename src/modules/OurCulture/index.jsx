@@ -8,7 +8,7 @@ const OurCulture = () => {
 
     return (
         <Fade cascade>
-            <div className="container px-5 xl:px-0" id="culture">
+            <div className="container px-5 md:px-0" id="culture">
                 <div
                     id="our-culture"
                     className="mb-10 2xl:mb-28 xl:mt-14 2xl:mt-24 text-left"

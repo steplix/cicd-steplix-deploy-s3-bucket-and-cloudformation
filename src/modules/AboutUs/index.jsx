@@ -6,7 +6,7 @@ const AboutUs = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 xl:px-0" id="about-us">
+        <div className="container px-5 md:px-0" id="about-us">
             <Fade cascade>
                 <div className="flex justify-between items-center">
                     <div className="hidden xl:block text--outlined font-black xl:text-15xl 2xl:text-17xl">

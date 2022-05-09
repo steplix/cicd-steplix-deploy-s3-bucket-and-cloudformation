@@ -61,8 +61,8 @@ const Stack = () => {
                 />
             </Head>
             <div className="relative">
-                <div className="bg--stack ">
-                    <section className="container px-5 xl:px-0 xl:pr-24">
+                <div className="bg--stack">
+                    <section className="container px-5 md:px-0 xl:pr-24">
                         <Fade cascade>
                             <div className="pt-[128px] mb-8 2xl:mb-12 ">
                                 <h1 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl w-5 md:w-full 2xl:mt-16 mb-6 2xl:mb-8">

@@ -66,7 +66,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <div className="container px-5 xl:px-0" id="what-we-do">
+        <div className="container px-5 md:px-0" id="what-we-do">
             <Fade cascade>
                 <Modal
                     isModalOpen={isModalOpen}
