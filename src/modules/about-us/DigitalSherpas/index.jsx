@@ -7,7 +7,7 @@ const DigitalSherpas = () => {
 
     return (
         <Fade cascade>
-            <div className="container px-5 xl:px-0 xl:pr-24">
+            <div className="container px-5 md:px-0 xl:pr-24">
                 <h2 className="mb-6 xl:mb-14 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                     <span>{t("about_us.digitalSherpas.titleOne")} </span>
                     <span className="text--outlined">

@@ -11,7 +11,7 @@ const JobItemCard = ({ item }) => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 xl:px-0 xl:max-w-[960px] 2xl:max-w-[1140px]">
+        <div className="container px-5 md:px-0 xl:max-w-[960px] 2xl:max-w-[1140px]">
             <Fade cascade>
                 <div className="mt-[140px] xl:mt-[190px]">
                     <h1 className="text-center font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
