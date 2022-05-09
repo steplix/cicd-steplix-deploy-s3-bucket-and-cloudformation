@@ -14,13 +14,13 @@
             "titleEmpty":"tecnologías"
         },
         "cards":{
-            "react":"Elegimos la libreria React de Javascript para el desarrollo Front-End de single page apps y PWAs ya que se encuentra enfocada en el uso de componentes y nos permite acortar los tiempos de desarrollo.",
+            "react":"Elegimos la librería React de Javascript para el desarrollo Front-End de single page apps y PWAs ya que se encuentra enfocada en el uso de componentes y nos permite acortar los tiempos de desarrollo.",
             "git":"Utilizamos Git como herramienta de versionado de código, aplicando la metodología Feature-Branch y Gitlab como gestor de repositorio.",
             "docker":"Trabajamos con Docker una opción de código abierto que nos brinda las ventajas de Alta portabilidad, Alta performance, Agilidad, Aislamiento de errorres y Escalabilidad.",
             "next":"Next. js es un marco de trabajo que permite a los desarrolladores crear aplicaciones web de alto rendimiento a través de la renderización del lado del servidor.",
             "flutter":"Utilizamos Flutter para aplicaciones híbridas ya que es un SDK de código abierto creado por Google, que nos permite desarrollar interfaces Android, iOS y nos permite una personalización completa gracias a la arquitectura en capas.",
             "aws":"Amazon AWS aumenta la independencia del equipo de desarrollo y permite implementar un esquema de Infraestructura Just In Time, en el cual solo se aprovisionan recursos a medida que son requeridos por el proyecto.",
-            "figma":"Elegimos Figma como herramienta para diseñar interfaces ya que nos da la posibilidad de crear wireframes, interfaces y prototipos avanzados. Unos de sus mayores beneficios es que se encuentra basado en Web lo que nos permite almacenar el trabajo en una nube y poder acceder al mismo desde cualquier dispositivo.",
+            "figma":"Elegimos Figma como herramienta para diseñar interfaces ya que nos da la posibilidad de crear wireframes, interfaces y prototipos avanzados. Uno de sus mayores beneficios es que se encuentra basado en Web lo que nos permite almacenar el trabajo en una nube y poder acceder al mismo desde cualquier dispositivo.",
             "kotlin":"Desarrollamos aplicaciones Android nativas con Kotlin creando un código más conciso y expresivo. Además, mantiene una compatibilidad completa con las tecnologías basadas en Java.",
             "node":"Trabajamos con NodeJS, un intérprete de Javascript basado en el motor de Chrome y que permite realizar el 100% de las tareas requeridas de Back- End. El framework elegido es ExpressJS, un framework minimalista y flexible pero robusto y ampliamente probado dentro de la industria del desarrollo web."
         }
@@ -224,14 +224,14 @@
         "philosophy": {
             "titleOne": "Nuestra",
             "titleTwo": "filosofía",
-            "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos de la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
+            "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
         },
         "digitalSherpas": {
-            "titleOne": "Tu Digital Business",
-            "titleTwo": "Sherpas",
-            "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de los negocios, que cuenta con la mezcla exacta de seniority, experiencia y compromiso.",
+            "titleOne": "Sherpas",
+            "titleTwo": "Digitales",
+            "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de negocios, contamos con la mezcla exacta de seniority, experiencia y compromiso.",
             "descriptionTwo": " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
-            "descriptionThree": "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y los ROI correctos."
+            "descriptionThree": "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y el ROI correctos."
         }
     },
     "process": {
@@ -365,7 +365,7 @@
         "emptySubtitle": " ALIADO",
         "cardOne": {
             "title": "Conocemos el camino",
-            "description": "Somos guías en el ecosistema de los negocios digitales, y sabemos cómo ayudarte a potenciar una idea para convertirla en un modelo de negocio escalable. "
+            "description": "Somos guías en el ecosistema de los negocios digitales y sabemos cómo ayudarte a potenciar una idea para convertirla en un modelo de negocio escalable. "
         },
         "cardTwo": {
             "title": "Te acompañamos en este viaje",
@@ -373,7 +373,7 @@
         },
         "cardThree": {
             "title": "Respetamos tus condiciones",
-            "description": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y los ROI correctos."
+            "description": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correctos."
         }
     },
     "modal": {
@@ -429,7 +429,7 @@
     "navbar": {
         "item0": "Sobre nosotros",
         "item1": "Tecnologías",
-        "item2": "Que hacemos",
+        "item2": "Qué hacemos",
         "item3": "Nuestra cultura",
         "item4": "Clientes felices",
         "item5": "Convertite en Steplixer",

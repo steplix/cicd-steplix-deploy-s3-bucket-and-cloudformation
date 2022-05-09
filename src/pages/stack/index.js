@@ -198,13 +198,13 @@ const Stack = () => {
                                 C# • GO • ASP.NET • Express • Ember • Laravel •
                                 Symfony • CakePHP • Django • Spring • Struts •
                                 Ruby on Rails • MySQL • Mariadb • SQL • Sqlite •
-                                DynamoDB • PostgreSQL • DB2 • HSQLDB • redis •
-                                mongoDB • ElastiCache • elasticSearch • Cordova
-                                • Ionic • Flutter • Kotlin • Java • Objective-C
-                                • Swift • git • svn • Gitlab • Github •
-                                Bitbucket • Vagrant • Docker • Kubernetes •
-                                Linux • Windows • AWS • Azure • Firebase •
-                                WordPress • ghost • Drupal
+                                DynamoDB • PostgreSQL • DB2 • HSQLDB • Redis •
+                                MongoDB • ElastiCache • Elasticsearch • Cordova
+                                • Ionic • Flutter • Kotlin • Objective-C • Swift
+                                • Git • SVN • Gitlab • Github • Bitbucket •
+                                Vagrant • Docker • Kubernetes • Linux • Windows
+                                • AWS • Azure • Firebase • WordPress • Ghost •
+                                Drupal
                             </p>
                         </section>
                     </Fade>
