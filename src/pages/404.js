@@ -11,7 +11,7 @@ const Custom404 = () => {
     return (
         <div className="relative h-screen w-full">
             <div className="lg:py-[220px] pt-[110px] flex lg:justify-center flex-col lg:items-center lg:flex-row-reverse">
-                <div className="w-full lg:w-[700px]">
+                <div className="w-full lg:w-[550px] xl:w-[700px]">
                     <div className="lg:ml-8">
                         <div className="flex lg:block ">
                             <div className="mx-auto flex">
