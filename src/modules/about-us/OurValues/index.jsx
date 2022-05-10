@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
-import StepCard from "@/common/components/StepCard";
+import FeatureCard from "@/common/components/FeatureCard";
 import Fade from "react-reveal/Fade";
 
 const OurValues = () => {
@@ -17,65 +17,55 @@ const OurValues = () => {
                 </h2>
                 <Fade cascade>
                     <div className="grid grid-cols-1 xl:grid-cols-3 xl:gap-x-7 gap-y-10 xl:gap-y-24">
-                        <StepCard
+                        <FeatureCard
                             title={t(
                                 "about_us.ourValues.values.valuetOne.title"
                             )}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                            textOne={t(
+                            description={t(
                                 "about_us.ourValues.values.valuetOne.description"
                             )}
-                            colorTitle="font-semibold text-white"
-                            colorLine="bg-blue"
-                            widthTextOne="xl:w-[320px] 2xl:w-[372px]"
+                            divideColor="blue"
+                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
-                        <StepCard
+                        <FeatureCard
                             title={t(
                                 "about_us.ourValues.values.valuetTwo.title"
                             )}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                            textOne={t(
+                            description={t(
                                 "about_us.ourValues.values.valuetTwo.description"
                             )}
-                            colorTitle="font-semibold text-white"
-                            colorLine="bg-red"
-                            widthTextOne="xl:w-[320px] 2xl:w-[372px]"
+                            divideColor="red"
+                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
-                        <StepCard
+                        <FeatureCard
                             title={t(
                                 "about_us.ourValues.values.valuetThree.title"
                             )}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                            textOne={t(
+                            description={t(
                                 "about_us.ourValues.values.valuetThree.description"
                             )}
-                            colorTitle="font-semibold text-white"
-                            colorLine="bg-yellow"
-                            widthTextOne="xl:w-[320px] 2xl:w-[372px]"
+                            divideColor="yellow"
+                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
-                        <StepCard
+                        <FeatureCard
                             title={t(
                                 "about_us.ourValues.values.valuetFour.title"
                             )}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                            textOne={t(
+                            description={t(
                                 "about_us.ourValues.values.valuetFour.description"
                             )}
-                            colorTitle="font-semibold text-white"
-                            colorLine="bg-red"
-                            widthTextOne="xl:w-[320px] 2xl:w-[372px]"
-                        />{" "}
-                        <StepCard
+                            divideColor="red"
+                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                        />
+                        <FeatureCard
                             title={t(
                                 "about_us.ourValues.values.valuetFive.title"
                             )}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                            textOne={t(
+                            description={t(
                                 "about_us.ourValues.values.valuetFive.description"
                             )}
-                            colorTitle="font-semibold text-white"
-                            colorLine="bg-blue"
-                            widthTextOne="xl:w-[320px] 2xl:w-[372px]"
+                            divideColor="blue"
+                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                     </div>
                 </Fade>

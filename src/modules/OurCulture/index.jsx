@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
-import StepCard from "@/common/components/StepCard";
+import FeatureCard from "@/common/components/FeatureCard";
 import Fade from "react-reveal/Fade";
 
 const OurCulture = () => {
@@ -23,30 +23,27 @@ const OurCulture = () => {
                         </span>
                     </h2>
                 </div>
-                <div className="flex flex-col xl:flex-row gap-y-10 xl:gap-y-0 xl:gap-x-24">
-                    <StepCard
+                <div className="flex flex-col xl:flex-row space-y-10 xl:space-y-0 xl:space-x-20 2xl:space-x-16">
+                    <FeatureCard
                         title={t("ourCulture.cardOne.title")}
-                        sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl font-semibold xl:font-bold"
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-blue"
-                        textOne={t("ourCulture.cardOne.description")}
-                        widthTextOne="xl:w-72 2xl:w-96"
+                        description={t("ourCulture.cardOne.description")}
+                        divideColor="blue"
+                        widthTitle="xl:w-[196px] 2xl:w-[261px]"
+                        widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />
-                    <StepCard
+                    <FeatureCard
                         title={t("ourCulture.cardTwo.title")}
-                        sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl font-semibold xl:font-bold"
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-red"
-                        textOne={t("ourCulture.cardTwo.description")}
-                        widthTextOne="xl:w-72 2xl:w-96"
+                        description={t("ourCulture.cardTwo.description")}
+                        divideColor="red"
+                        widthTitle="xl:w-[196px] 2xl:w-[261px]"
+                        widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />
-                    <StepCard
+                    <FeatureCard
                         title={t("ourCulture.cardThree.title")}
-                        sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl font-semibold xl:font-bold"
-                        colorTitle="font-semibold text-white"
-                        colorLine="bg-yellow"
-                        textOne={t("ourCulture.cardThree.description")}
-                        widthTextOne="xl:w-72 2xl:w-96"
+                        description={t("ourCulture.cardThree.description")}
+                        divideColor="yellow"
+                        widthTitle="xl:w-[196px] 2xl:w-[261px]"
+                        widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />
                 </div>
             </div>
