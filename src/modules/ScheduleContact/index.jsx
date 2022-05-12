@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import { useTranslation } from "next-export-i18n";
+import { useLanguageQuery, useTranslation } from "next-export-i18n";
 import ContactCard from "@/common/components/ContactCard";
 import Fade from "react-reveal/Fade";
 
@@ -25,7 +25,14 @@ const Address = () => {
 };
 
 const ScheduleContact = () => {
+    let [query] = useLanguageQuery();
     const { t } = useTranslation();
+
+    let brochureLang = "assets/files/brochure_ES.pdf";
+    query?.lang === "en"
+        ? (brochureLang = "assets/files/brochure_EN.pdf")
+        : (brochureLang = "assets/files/brochure_ES.pdf");
+
     return (
         <div className="flex flex-col space-y-14 md:space-y-20 lg:space-y-12 xl:space-y-28 2xl:space-y-40">
             <Fade cascade>
@@ -70,7 +77,7 @@ const ScheduleContact = () => {
                             {t("contact.brochureText")}
                             <span className="text-yellow underline">
                                 <a
-                                    href="assets/files/brochure.pdf"
+                                    href={brochureLang}
                                     download="brochure-steplix"
                                 >
                                     {t("contact.brochure")}
