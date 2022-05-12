@@ -1,102 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "next-export-i18n";
-import Modal from "@/common/components/Modal";
-import StepCard from "@/common/components/StepCard";
 import Fade from "react-reveal/Fade";
+import NumberedFeatureCard from "@/common/components/NumberedFeatureCard";
 
 const WhatWeDo = () => {
     const { t } = useTranslation();
 
-    //
-    // State
-    //
-    const [positionModal, setPositionModal] = useState(1);
-    const [isModalOpen, setisModalOpen] = useState(false);
-
-    let subDescription,
-        title,
-        textOne,
-        textTwo,
-        textThree,
-        textFour,
-        borderColor,
-        bgColor,
-        textColor,
-        bgLine,
-        number;
-
-    if (positionModal === 1) {
-        subDescription = t("modal.modalOne.descriptionTwo");
-        title = t("modal.modalOne.title");
-        textOne = t("modal.modalOne.descriptionOne.textOne");
-        textTwo = t("modal.modalOne.descriptionOne.textTwo");
-        textThree = t("modal.modalOne.descriptionOne.textThree");
-        textFour = t("modal.modalOne.descriptionOne.textFour");
-        bgColor = "bg-blue";
-        bgLine = "bg-yellow";
-        textColor = "text-white";
-        borderColor = "border-blue";
-        number = 1;
-    }
-    if (positionModal === 2) {
-        subDescription = t("modal.modalTwo.descriptionTwo");
-        title = t("modal.modalTwo.title");
-        textOne = t("modal.modalTwo.descriptionOne.textOne");
-        textTwo = t("modal.modalTwo.descriptionOne.textTwo");
-        textThree = t("modal.modalTwo.descriptionOne.textThree");
-        textFour = t("modal.modalTwo.descriptionOne.textFour");
-        textColor = "text-white";
-        bgLine = "bg-yellow";
-        bgColor = "bg-red";
-        borderColor = "border-red";
-        number = 2;
-    }
-    if (positionModal === 3) {
-        subDescription = t("modal.modalThree.descriptionTwo");
-        title = t("modal.modalThree.title");
-        textOne = t("modal.modalThree.descriptionOne.textOne");
-        textTwo = t("modal.modalThree.descriptionOne.textTwo");
-        textThree = t("modal.modalThree.descriptionOne.textThree");
-        textFour = t("modal.modalThree.descriptionOne.textFour");
-        bgLine = "bg-blue";
-        textColor = "text-black";
-        bgColor = "bg-yellow";
-        borderColor = "border-yellow";
-        number = 3;
-    }
-
     return (
-        <div className="container px-5 md:px-0" id="what-we-do">
-            <Fade cascade>
-                <Modal
-                    isModalOpen={isModalOpen}
-                    setisModalOpen={setisModalOpen}
-                    borderColor={borderColor}
-                    bgColor={bgColor}
-                    bgLine={bgLine}
-                    textColor={textColor}
-                    subDescription={subDescription}
-                    setPositionModal={setPositionModal}
-                    positionModal={positionModal}
-                >
-                    <div className="xl:px-6 xl:py-4 py-2">
-                        <StepCard
-                            textLeft
-                            number={`0${number}.`}
-                            numberStyles="xl:mt-1"
-                            title={title}
-                            colorTitle="font-semibold text-yellow"
-                            colorLine="bg-red"
-                            textOne={textOne}
-                            textTwo={textTwo}
-                            textThree={textThree}
-                            textFour={textFour}
-                            sizeTitle="text-[22px] xl:text-[50px]"
-                            sizeText="text-[16px] xl:text-[20px]"
-                        />
-                    </div>
-                </Modal>
-
+        <Fade cascade>
+            <div className="container px-5 md:px-0" id="what-we-do">
                 <h3 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                     <span>{t("whatWeDo.title")} </span>
                     <span className="text--outlined">
@@ -108,76 +20,94 @@ const WhatWeDo = () => {
                     <br />
                     <p>{t("whatWeDo.subtitlePartTwo")}</p>
                 </div>
-                <div className="steplix-process grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-0">
-                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] row-span-2 xl:relative xl:col-start-3">
+            </div>
+            <div className="steplix-process">
+                <div
+                    className="container px-5 md:px-0 grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-0 2xl:gap-x-32"
+                    id="steps"
+                >
+                    <div className="w-full md:w-[575px] lg:w-[942px] xl:w-[320px] 2xl:w-[370px] row-span-2 xl:relative xl:col-start-3">
                         <div className="hidden xl:block">
-                            <StepCard
+                            <NumberedFeatureCard
                                 number="03."
                                 title={t("whatWeDo.cardThree.title")}
-                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
-                                colorTitle="text-yellow"
-                                colorLine="bg-red"
-                                textOne={t("whatWeDo.cardThree.description")}
+                                description={t(
+                                    "whatWeDo.cardThree.description"
+                                )}
+                                divideColor="red"
+                                widthTitle="w-[153px] 2xl:w-[184px]"
                             />
                         </div>
                         <div className="block xl:hidden">
-                            <StepCard
+                            <NumberedFeatureCard
                                 number="01."
                                 title={t("whatWeDo.cardOne.title")}
-                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
-                                colorTitle="text-yellow"
-                                colorLine="bg-red"
-                                textOne={t("whatWeDo.cardOne.description")}
+                                description={t("whatWeDo.cardOne.description")}
+                                divideColor="red"
+                                widthTitle="w-[200px]"
+                                isAlignedContent
                             />
                         </div>
-                        <div className="xl:absolute xl:top-[10px] right-[330px]">
-                            <div className="xl:bg-white xl:h-[1px] xl:w-24 2xl:w-[118px] xl:relative xl:top-[6px]" />
+                        <div className="xl:absolute xl:top-[10px] xl:right-[350px] 2xl:right-[430px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-16 2xl:w-[118px] xl:relative xl:top-[6px]" />
                             <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:left-0" />
                         </div>
                     </div>
-                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] xl:col-start-2 row-span-2  xl:relative">
-                        <StepCard
-                            number="02."
-                            title={t("whatWeDo.cardTwo.title")}
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
-                            colorTitle="text-yellow"
-                            colorLine="bg-red"
-                            textOne={t("whatWeDo.cardTwo.description")}
-                        />
-                        <div className="xl:absolute xl:top-[20px] 2xl:top-[45px] xl:left-[325px] 2xl:left-[280px]">
-                            <div className="xl:bg-white xl:h-[1px] xl:w-7 2xl:w-32 xl:relative xl:top-[6px]" />{" "}
-                            <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
-                        </div>
-                    </div>
-                    <div className="w-[350px] md:w-[551px] lg:w-[823px] xl:w-[320px] xl:col-start-1 row-span-1 xl:relative">
+                    <div className="w-full md:w-[575px] lg:w-[942px] xl:w-[320px] xl:col-start-2 row-span-2  xl:relative">
                         <div className="block xl:hidden">
-                            <StepCard
-                                number="03."
-                                title={t("whatWeDo.cardThree.title")}
-                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
-                                colorTitle="text-yellow"
-                                colorLine="bg-red"
-                                textOne={t("whatWeDo.cardThree.description")}
+                            <NumberedFeatureCard
+                                number="02."
+                                title={t("whatWeDo.cardTwo.title")}
+                                description={t("whatWeDo.cardTwo.description")}
+                                divideColor="red"
+                                widthTitle="w-[172px]"
+                                isAlignedContent
                             />
                         </div>
                         <div className="hidden xl:block">
-                            <StepCard
-                                number="01."
-                                title={t("whatWeDo.cardOne.title")}
-                                sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold xl:font-normal w-40 lg:w-64"
-                                colorTitle="text-yellow"
-                                colorLine="bg-red"
-                                textOne={t("whatWeDo.cardOne.description")}
+                            <NumberedFeatureCard
+                                number="02."
+                                title={t("whatWeDo.cardTwo.title")}
+                                description={t("whatWeDo.cardTwo.description")}
+                                divideColor="red"
+                                widthTitle="w-[172px]"
                             />
                         </div>
-                        <div className="xl:absolute xl:top-[70px] 2xl:top-[115px] xl:left-[360px] 2xl:left-[440px]">
+                        <div className="xl:absolute xl:top-[186px] 2xl:top-[130px] xl:left-[350px] 2xl:left-[330px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-28 2xl:w-20 xl:relative xl:top-[6px]" />{" "}
+                            <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
+                        </div>
+                    </div>
+                    <div className="w-full md:w-[575px] lg:w-[942px] xl:w-[320px] xl:col-start-1 row-span-1 xl:relative">
+                        <div className="block xl:hidden">
+                            <NumberedFeatureCard
+                                number="03."
+                                title={t("whatWeDo.cardThree.title")}
+                                description={t(
+                                    "whatWeDo.cardThree.description"
+                                )}
+                                divideColor="red"
+                                widthTitle="w-[153px]"
+                                isAlignedContent
+                            />
+                        </div>
+                        <div className="hidden xl:block">
+                            <NumberedFeatureCard
+                                number="01."
+                                title={t("whatWeDo.cardOne.title")}
+                                description={t("whatWeDo.cardOne.description")}
+                                divideColor="red"
+                                widthTitle="w-[200px]"
+                            />
+                        </div>
+                        <div className="xl:absolute xl:top-[255px] 2xl:top-[330px] xl:left-[328px] 2xl:left-[370px]">
                             <div className="xl:bg-white xl:h-[1px] xl:w-16 xl:relative xl:top-[6px]" />{" "}
                             <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
                         </div>
                     </div>
                 </div>
-            </Fade>
-        </div>
+            </div>
+        </Fade>
     );
 };
 
