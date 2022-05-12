@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
+import FeatureCard from "@/common/components/FeatureCard";
 import StepCard from "@/common/components/StepCard";
 
 const HoDoWeDoIt = () => {
@@ -10,46 +11,38 @@ const HoDoWeDoIt = () => {
             <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
                 {t("process.HowDoWeDoIt.title")}
             </h2>
-            <div className="xl:grid xl:grid-cols-4 xl:gap-y-12 xl:gap-x-12 space-y-4 xl:space-y-0">
-                <StepCard
+            <div className="flex flex-col xl:flex-row space-y-8 lg:space-y-10 xl:space-y-0 xl:space-x-16 2xl:space-x-20">
+                <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptOne.title")}
-                    sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                    textOne={t(
+                    description={t(
                         "process.HowDoWeDoIt.concepts.conceptOne.description"
                     )}
-                    colorTitle="font-semibold text-white"
-                    colorLine="bg-blue"
-                    widthTextOne="xl:w-[197px] 2xl:w-[239px]"
+                    divideColor="blue"
+                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
-                <StepCard
+                <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptTwo.title")}
-                    sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                    textOne={t(
+                    description={t(
                         "process.HowDoWeDoIt.concepts.conceptTwo.description"
                     )}
-                    colorTitle="font-semibold text-white"
-                    colorLine="bg-red"
-                    widthTextOne="xl:w-[197px] 2xl:w-[239px]"
+                    divideColor="red"
+                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
-                <StepCard
+                <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptThree.title")}
-                    sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                    textOne={t(
+                    description={t(
                         "process.HowDoWeDoIt.concepts.conceptThree.description"
                     )}
-                    colorTitle="font-semibold text-white"
-                    colorLine="bg-yellow"
-                    widthTextOne="xl:w-[197px] 2xl:w-[239px]"
+                    divideColor="yellow"
+                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
-                <StepCard
+                <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptFour.title")}
-                    sizeTitle="text-2xl md:text-3xl lg:text-5xl xl:text-3xl"
-                    textOne={t(
+                    description={t(
                         "process.HowDoWeDoIt.concepts.conceptFour.description"
                     )}
-                    colorTitle="font-semibold text-white"
-                    colorLine="bg-red"
-                    widthTextOne="xl:w-[197px] 2xl:w-[239px]"
+                    divideColor="red"
+                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
             </div>
         </section>

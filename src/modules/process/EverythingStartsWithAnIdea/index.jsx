@@ -1,13 +1,12 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
-import StepCard from "@/common/components/StepCard";
 
 const EverythingStartsWithAnIdea = () => {
     const { t } = useTranslation();
 
     return (
         <section className="bg--process">
-            <div className="container px-5 md:px-0 pt-36 md:pt-28 lg:pt-24 xl:pt-64 2xl:pt-52">
+            <div className="container px-5 md:px-0 pt-32 xl:pt-44">
                 <h3 className="mb-5 font-semibold leading-tight text-2xl md:text-3xl lg:text-5xl">
                     {t("process.everythingStartsWithAnIdea.title")}
                 </h3>

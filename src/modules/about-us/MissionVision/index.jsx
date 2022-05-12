@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
-import StepCard from "@/common/components/StepCard";
+import FeatureCard from "@/common/components/FeatureCard";
 import ShadowCard from "@/common/components/ShadowCard";
 import Fade from "react-reveal/Fade";
 
@@ -12,25 +12,21 @@ const MissionVision = () => {
             <Fade cascade>
                 <ShadowCard>
                     <div className="2xl:pt-3">
-                        <StepCard
+                        <FeatureCard
                             title={t("about_us.mission.title")}
-                            sizeTitle="font-medium text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl"
-                            colorTitle="text-yellow"
-                            textTwo={t("about_us.mission.description")}
-                            colorLine="bg-blue"
-                            widthTexts="xl:w-[408px] 2xl:w-[488px]"
+                            description={t("about_us.mission.description")}
+                            divideColor="blue"
+                            isMainTitle
                         />
                     </div>
                 </ShadowCard>
                 <ShadowCard>
                     <div className="2xl:pt-3">
-                        <StepCard
+                        <FeatureCard
                             title={t("about_us.vision.title")}
-                            sizeTitle="font-medium text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl"
-                            colorTitle="text-yellow"
-                            textTwo={t("about_us.vision.description")}
-                            colorLine="bg-red"
-                            widthTexts="xl:w-[408px] 2xl:w-[488px]"
+                            description={t("about_us.vision.description")}
+                            divideColor="red"
+                            isMainTitle
                         />
                     </div>
                 </ShadowCard>

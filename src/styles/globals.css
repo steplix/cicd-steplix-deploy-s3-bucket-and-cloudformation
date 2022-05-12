@@ -136,6 +136,17 @@ body {
         background-image: url("../../public/assets/img/bg-process.svg");
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: 63% 0%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .steplix-process {
+        height: 800px;
+        background-image: url("../../public/assets/img/bg-process.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 0%;
     }
 }
 

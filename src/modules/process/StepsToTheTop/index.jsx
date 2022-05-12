@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
-import StepCard from "@/common/components/StepCard";
+import NumberedFeatureCard from "@/common/components/NumberedFeatureCard";
 import ProcessCard from "@/common/components/ProcessCard";
 
 const StepsToTheTop = () => {
@@ -24,27 +24,15 @@ const StepsToTheTop = () => {
             <div className="flex flex-col space-y-20">
                 <div className="flex xl:space-x-16 2xl:space-x-24">
                     <div className="xl:w-[637px] 2xl:w-[762px]">
-                        <StepCard
-                            colorLine="bg-red"
-                            textLeft
+                        <NumberedFeatureCard
                             number="01."
-                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepOne.title")}
-                            colorTitle="font-bold text-yellow"
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold w-40 lg:w-64 xl:pt-4"
-                            textOne={t(
-                                "process.stepsToTheTop.stepOne.descriptionOne"
+                            description={t(
+                                "process.stepsToTheTop.stepOne.description"
                             )}
-                            textTwo={t(
-                                "process.stepsToTheTop.stepOne.descriptionTwo"
-                            )}
-                            textThree={t(
-                                "process.stepsToTheTop.stepOne.descriptionThree"
-                            )}
-                            textFour={t(
-                                "process.stepsToTheTop.stepOne.descriptionFour"
-                            )}
-                            widthTexts="xl:w-[637px] 2xl:w-[762px]"
+                            divideColor="red"
+                            widthTitle="w-[200px]"
+                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />
                     </div>
 
@@ -61,24 +49,15 @@ const StepsToTheTop = () => {
                 </div>
                 <div className="flex xl:space-x-16 2xl:space-x-24">
                     <div className="xl:w-[637px] 2xl:w-[762px]">
-                        <StepCard
-                            colorLine="bg-red"
-                            textLeft
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold w-40 lg:w-64 xl:pt-4"
+                        <NumberedFeatureCard
                             number="02."
-                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepTwo.title")}
-                            colorTitle="font-bold text-yellow"
-                            widthTexts="xl:w-[637px] 2xl:w-[762px]"
-                            textOne={t(
-                                "process.stepsToTheTop.stepTwo.descriptionOne"
+                            description={t(
+                                "process.stepsToTheTop.stepTwo.description"
                             )}
-                            textTwo={t(
-                                "process.stepsToTheTop.stepTwo.descriptionTwo"
-                            )}
-                            textThree={t(
-                                "process.stepsToTheTop.stepTwo.descriptionThree"
-                            )}
+                            divideColor="red"
+                            widthTitle="w-[152px]"
+                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />
                     </div>
 
@@ -95,27 +74,15 @@ const StepsToTheTop = () => {
                 </div>
                 <div className="flex xl:space-x-16 2xl:space-x-24">
                     <div className="xl:w-[637px] 2xl:w-[762px]">
-                        <StepCard
-                            colorLine="bg-red"
-                            textLeft
-                            sizeTitle="text-2xl md:text-3xl lg:text-5xl font-semibold w-40 lg:w-64 xl:pt-4"
+                        <NumberedFeatureCard
                             number="03."
-                            numberStyles="xl:mt-4"
                             title={t("process.stepsToTheTop.stepThree.title")}
-                            colorTitle="font-bold text-yellow"
-                            textOne={t(
-                                "process.stepsToTheTop.stepThree.descriptionOne"
+                            description={t(
+                                "process.stepsToTheTop.stepThree.description"
                             )}
-                            textTwo={t(
-                                "process.stepsToTheTop.stepThree.descriptionTwo"
-                            )}
-                            textThree={t(
-                                "process.stepsToTheTop.stepThree.descriptionThree"
-                            )}
-                            textFour={t(
-                                "process.stepsToTheTop.stepThree.descriptionFour"
-                            )}
-                            widthTexts="xl:w-[637px] 2xl:w-[762px]"
+                            divideColor="red"
+                            widthTitle="w-[153px]"
+                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />
                     </div>
 
