@@ -6,10 +6,7 @@ const Masthead = () => {
     const { t } = useTranslation();
 
     return (
-        <div
-            className="banner h-96 md:h-[432px] lg:h-[578px] xl:h-[722px] 2xl:h-[864px]"
-            id="masthead"
-        >
+        <div className="banner h-[100hv]" id="masthead">
             <div className="container h-full px-5 md:px-0 flex flex-col justify-center">
                 <h1 className="text-6xl md:text-9xl lg:text-12xl xl:text-11xl 2xl:text-12xl font-semibold xl:mt-48">
                     <span>{t("masthead.titlePartOne")}</span>{" "}

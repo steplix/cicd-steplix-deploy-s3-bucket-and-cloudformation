@@ -27,21 +27,21 @@ const OurCulture = () => {
                     <FeatureCard
                         title={t("ourCulture.cardOne.title")}
                         description={t("ourCulture.cardOne.description")}
-                        divideColor="blue"
+                        divideColor="bg-blue"
                         widthTitle="xl:w-[196px] 2xl:w-[261px]"
                         widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />
                     <FeatureCard
                         title={t("ourCulture.cardTwo.title")}
                         description={t("ourCulture.cardTwo.description")}
-                        divideColor="red"
+                        divideColor="bg-red"
                         widthTitle="xl:w-[196px] 2xl:w-[261px]"
                         widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />
                     <FeatureCard
                         title={t("ourCulture.cardThree.title")}
                         description={t("ourCulture.cardThree.description")}
-                        divideColor="yellow"
+                        divideColor="bg-yellow"
                         widthTitle="xl:w-[196px] 2xl:w-[261px]"
                         widthDescription="xl:w-[305px] 2xl:w-[365px]"
                     />

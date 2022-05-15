@@ -30,7 +30,7 @@ const StepsToTheTop = () => {
                             description={t(
                                 "process.stepsToTheTop.stepOne.description"
                             )}
-                            divideColor="red"
+                            divideColor="bg-red"
                             widthTitle="w-[200px]"
                             widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />
@@ -55,7 +55,7 @@ const StepsToTheTop = () => {
                             description={t(
                                 "process.stepsToTheTop.stepTwo.description"
                             )}
-                            divideColor="red"
+                            divideColor="bg-red"
                             widthTitle="w-[152px]"
                             widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />
@@ -80,7 +80,7 @@ const StepsToTheTop = () => {
                             description={t(
                                 "process.stepsToTheTop.stepThree.description"
                             )}
-                            divideColor="red"
+                            divideColor="bg-red"
                             widthTitle="w-[153px]"
                             widthDescription="xl:w-[637px] 2xl:w-[762px]"
                         />

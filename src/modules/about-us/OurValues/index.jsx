@@ -24,7 +24,7 @@ const OurValues = () => {
                             description={t(
                                 "about_us.ourValues.values.valuetOne.description"
                             )}
-                            divideColor="blue"
+                            divideColor="bg-blue"
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                         <FeatureCard
@@ -34,7 +34,7 @@ const OurValues = () => {
                             description={t(
                                 "about_us.ourValues.values.valuetTwo.description"
                             )}
-                            divideColor="red"
+                            divideColor="bg-red"
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                         <FeatureCard
@@ -44,7 +44,7 @@ const OurValues = () => {
                             description={t(
                                 "about_us.ourValues.values.valuetThree.description"
                             )}
-                            divideColor="yellow"
+                            divideColor="bg-yellow"
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                         <FeatureCard
@@ -54,7 +54,7 @@ const OurValues = () => {
                             description={t(
                                 "about_us.ourValues.values.valuetFour.description"
                             )}
-                            divideColor="red"
+                            divideColor="bg-red"
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                         <FeatureCard
@@ -64,7 +64,7 @@ const OurValues = () => {
                             description={t(
                                 "about_us.ourValues.values.valuetFive.description"
                             )}
-                            divideColor="blue"
+                            divideColor="bg-blue"
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
                         />
                     </div>

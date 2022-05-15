@@ -13,22 +13,6 @@ const FeatureCard = ({
     altRightImage,
     sizeRightImage,
 }) => {
-    let divideClass = "";
-    switch (divideColor) {
-        case "red":
-            divideClass = "bg-red";
-            break;
-        case "blue":
-            divideClass = "bg-blue";
-            break;
-        case "yellow":
-            divideClass = "bg-yellow";
-            break;
-
-        default:
-            divideClass = "bg-red";
-            break;
-    }
     return (
         <article className="flex flex-col">
             <div className="flex space-x-4 md:space-x-6">
@@ -47,7 +31,7 @@ const FeatureCard = ({
                         </h4>
                     )}
                     <div
-                        className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideClass}`}
+                        className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideColor}`}
                     />
                 </div>
                 <div className={sizeRightImage}>
@@ -75,7 +59,7 @@ const FeatureCard = ({
 FeatureCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    divideColor: PropTypes.oneOf(["red", "blue", "yellow"]).isRequired,
+    divideColor: PropTypes.oneOf(["bg-red", "bg-blue", "bg-yellow"]).isRequired,
     isMainTitle: PropTypes.bool,
     widthTitle: PropTypes.string,
     widthDescription: PropTypes.string,
