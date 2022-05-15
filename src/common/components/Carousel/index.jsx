@@ -153,7 +153,7 @@ const Carousel = () => {
                                         witnessCompany={element?.companyName}
                                         testimonial={element?.text}
                                         cardBorderColor={element?.borderColor}
-                                        divideColor="red"
+                                        divideColor="bg-red"
                                     />
                                 </div>
                             ))}
@@ -183,7 +183,7 @@ const Carousel = () => {
                                                 cardBorderColor={
                                                     element?.borderColor
                                                 }
-                                                divideColor="red"
+                                                divideColor="bg-red"
                                             />
                                         </div>
                                     ))}
@@ -228,8 +228,8 @@ function Arrow(props) {
             onClick={props.onClick}
             className={`h-8 w-8 absolute top-[50%] fill-[#fff] ${
                 props.left
-                    ? "left-10 lg:left-16 xl:left-1 2xl:left-1"
-                    : "right-10 lg:right-16 xl:right-1 2xl:right-1"
+                    ? "left-10 lg:left-16 xl:left-1"
+                    : "right-10 lg:right-16 xl:right-1"
             }`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

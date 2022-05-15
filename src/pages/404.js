@@ -15,14 +15,14 @@ const Custom404 = () => {
                     <div className="lg:ml-8">
                         <div className="flex lg:block ">
                             <div className="mx-auto flex">
-                                <div className="w-[5px] h-10 md:w-[5px] md:h-14 lg:w-[5px] lg:h-16 2xl:w-[6px] bg-yellow mr-2 md:mr-4 rounded-[80px]" />
+                                <div className="w-[5px] h-10 md:w-[5px] md:h-14 lg:w-[5px] lg:h-16 bg-yellow mr-2 md:mr-4 rounded-[80px]" />
                                 <h1 className="mb-8  lg:mx-0 font-black text-center lg:text-left text-4xl md:text-8xl lg:text-9xl">
                                     Error
                                     <span className="text--outlined"> 404</span>
                                 </h1>
                             </div>
                         </div>
-                        <div className="mx-auto lg:mx-0 w-[327px] lg:w-[450px] 2xl:w-[690px]">
+                        <div className="mx-auto lg:mx-0 w-[327px] lg:w-[450px]">
                             <p className="paragraph lg:leading-10 leading-6">
                                 {t("404.subtitle")}
                             </p>

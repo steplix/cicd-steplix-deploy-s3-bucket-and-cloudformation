@@ -21,7 +21,7 @@ const ScrumFramework = ({ data }) => {
     return (
         <section className="container text-2xl xl:text-4xl font-black xl:block hidden">
             <Fade cascade>
-                <div className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                <div className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                     <h2>
                         {t("process.scrumFramework.titleOne")}
                         <span className="text--outlined">
@@ -30,7 +30,7 @@ const ScrumFramework = ({ data }) => {
                     </h2>
                 </div>
                 <div className="mt-10">
-                    <p className="paragraph font-normal xl:max-w-[1070px] 2xl:max-w-[1400px]">
+                    <p className="paragraph font-normal xl:max-w-[1070px]">
                         {t("process.scrumFramework.paragraphOne.textOne")}
                         <span className="text-yellow">
                             {t(
@@ -56,10 +56,10 @@ const ScrumFramework = ({ data }) => {
                     <img
                         src={imageScrum}
                         alt="Scrum Framework"
-                        className="xl:w-[1070px] xl:h-auto 2xl:w-[1400px] 2xl:h-auto"
+                        className="xl:w-[1070px] xl:h-auto"
                     />
                 </div>
-                <div className="paragraph xl:max-w-[1070px] 2xl:max-w-[1400px] space-y-8 mt-14 pb-14">
+                <div className="paragraph xl:max-w-[1070px] space-y-8 mt-14 pb-14">
                     <p className="paragraph font-normal">
                         {t("process.scrumFramework.paragraphTwo.textOne")}
                         <span className="text-yellow">

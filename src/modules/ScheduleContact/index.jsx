@@ -8,8 +8,8 @@ import Fade from "react-reveal/Fade";
 const Address = () => {
     return (
         <address className="not-italic">
-            <div className="text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight space-y-4">
-                <p className="md:w-[330px] lg:w-[460px] 2xl:w-[409px]">
+            <div className="text-base md:text-xl lg:text-3xl xl:text-xl leading-tight space-y-4">
+                <p className="md:w-[330px] lg:w-[460px]">
                     Costa rica 4999, Palermo, Buenos Aires. Argentina.
                 </p>
                 <p>
@@ -34,17 +34,17 @@ const ScheduleContact = () => {
         : (brochureLang = "assets/files/brochure_ES.pdf");
 
     return (
-        <div className="flex flex-col space-y-14 md:space-y-20 lg:space-y-12 xl:space-y-28 2xl:space-y-40">
+        <div className="flex flex-col space-y-14 md:space-y-20 lg:space-y-12 xl:space-y-28">
             <Fade cascade>
                 <section className="flex flex-col space-y-7">
-                    <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                    <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                         {t("contact.title")}{" "}
                         <span className="text--outlined">
                             {t("contact.titleEmpty")}
                         </span>
                     </h2>
                     <div className="flex flex-col space-y-7">
-                        <p className="text-2xl md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight xl:mb-24">
+                        <p className="text-2xl md:text-xl lg:text-3xl xl:text-xl leading-tight xl:mb-24">
                             {t("contact.subtitle")}
                         </p>
                         <div className="flex flex-col xl:flex-row space-y-7 xl:space-y-0 xl:space-x-36">
@@ -73,7 +73,7 @@ const ScheduleContact = () => {
                         </div>
                     </div>
                     <div>
-                        <p className="text-2xl md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight">
+                        <p className="text-2xl md:text-xl lg:text-3xl xl:text-xl leading-tight">
                             {t("contact.brochureText")}
                             <span className="text-yellow underline">
                                 <a
@@ -88,9 +88,9 @@ const ScheduleContact = () => {
                 </section>
             </Fade>
             <Fade cascade>
-                <section className="flex flex-col xl:flex-row space-y-7 xl:space-y-0 xl:items-center 2xl:space-x-24">
+                <section className="flex flex-col xl:flex-row space-y-7 xl:space-y-0 xl:items-center">
                     <div className="flex flex-col space-y-7">
-                        <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                        <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                             {t("contact.ourOfficeTitle")}{" "}
                             <span className="text--outlined">
                                 {t("contact.ourOfficeTitleEmpty")}{" "}
@@ -100,7 +100,7 @@ const ScheduleContact = () => {
                             <Address />
                         </div>
                     </div>
-                    <div className="w-full xl:w-[523px] xl:h-[293px] 2xl:w-[625px] 2xl:h-[350px]">
+                    <div className="w-full xl:w-[523px] xl:h-[293px]">
                         <Link href="https://g.page/steplix?share">
                             <a target="_blank">
                                 <img src="assets/img/map.svg" alt="map" />

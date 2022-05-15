@@ -7,17 +7,17 @@ const HoDoWeDoIt = () => {
 
     return (
         <section className="container px-5 pb-6 md:pb-16 md:px-0 space-y-6">
-            <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+            <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                 {t("process.HowDoWeDoIt.title")}
             </h2>
-            <div className="flex flex-col xl:flex-row space-y-8 lg:space-y-10 xl:space-y-0 xl:space-x-16 2xl:space-x-20">
+            <div className="flex flex-col xl:flex-row space-y-8 lg:space-y-10 xl:space-y-0 xl:space-x-16">
                 <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptOne.title")}
                     description={t(
                         "process.HowDoWeDoIt.concepts.conceptOne.description"
                     )}
                     divideColor="bg-blue"
-                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
+                    widthDescription="xl:w-[197px]"
                 />
                 <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptTwo.title")}
@@ -25,7 +25,7 @@ const HoDoWeDoIt = () => {
                         "process.HowDoWeDoIt.concepts.conceptTwo.description"
                     )}
                     divideColor="bg-red"
-                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
+                    widthDescription="xl:w-[197px]"
                 />
                 <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptThree.title")}
@@ -33,7 +33,7 @@ const HoDoWeDoIt = () => {
                         "process.HowDoWeDoIt.concepts.conceptThree.description"
                     )}
                     divideColor="bg-yellow"
-                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
+                    widthDescription="xl:w-[197px]"
                 />
                 <FeatureCard
                     title={t("process.HowDoWeDoIt.concepts.conceptFour.title")}
@@ -41,7 +41,7 @@ const HoDoWeDoIt = () => {
                         "process.HowDoWeDoIt.concepts.conceptFour.description"
                     )}
                     divideColor="bg-red"
-                    widthDescription="xl:w-[197px] 2xl:w-[239px]"
+                    widthDescription="xl:w-[197px]"
                 />
             </div>
         </section>

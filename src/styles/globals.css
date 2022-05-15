@@ -76,7 +76,7 @@ body {
 }
 
 .paragraph {
-    @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl;
+    @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl;
 }
 
 /*--------- container ------- */
@@ -108,12 +108,6 @@ body {
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
     }
 }
 

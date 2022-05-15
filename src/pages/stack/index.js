@@ -62,116 +62,98 @@ const Stack = () => {
             </Head>
             <div className="relative">
                 <div className="bg--stack flex flex-col space-y-20">
-                    <section className="container px-5 md:px-0 xl:pr-24">
+                    <section className="container px-5 md:px-0 pt-28 xl:pr-24">
                         <Fade cascade>
-                            <div className="pt-[128px] mb-8 2xl:mb-12 ">
-                                <h1 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl w-5 md:w-full 2xl:mt-16 mb-6 2xl:mb-8">
+                            <div className="mb-8">
+                                <h1 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl w-5 md:w-full mb-6">
                                     {t("stack.sectionOne.title")}
                                     <span className="text--outlined">
                                         {t("stack.sectionOne.titleEmpty")}
                                     </span>
                                 </h1>
-                                <p className="paragraph md:w-[735px] lg:w-[931px] xl:w-[1000px] 2xl:w-[1160px]">
+                                <p className="paragraph md:w-[735px] lg:w-[931px] xl:w-[1000px]">
                                     {t("stack.sectionOne.description")} 👇
                                 </p>
                             </div>
                         </Fade>
                         <Fade cascade>
                             <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 md:gap-y-12 xl:gap-y-10 xl:gap-x-12">
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/react.svg"
-                                        imageAlt="react"
-                                        imageSize="w-[136px] h-[46px] xl:w-[131px] xl:h-[44px] 2xl:w-[136px] 2xl:h-[46px]"
-                                        description={t("stack.cards.react")}
-                                        divideColor="bg-yellow"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/git.svg"
-                                        imageAlt="git"
-                                        imageSize="w-[102px] h-[42px] xl:w-[98px] xl:h-[41px] 2xl:w-[102px] 2xl:h-[61px]"
-                                        description={t("stack.cards.git")}
-                                        divideColor="bg-red"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/docker.svg"
-                                        imageAlt="docker"
-                                        imageSize="w-[174px] h-[44px] xl:w-[167px] xl:h-[42px] 2xl:w-[174px] 2xl:h-[44px]"
-                                        description={t("stack.cards.docker")}
-                                        divideColor="bg-blue"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/next.svg"
-                                        imageAlt="next"
-                                        imageSize="w-[100px] h-[60px] md:w-[110px] md:h-[66px] xl:w-[98px] xl:h-[59px] 2xl:w-[94px] 2xl:h-[58px]"
-                                        description={t("stack.cards.next")}
-                                        divideColor="bg-yellow"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/flutter.svg"
-                                        imageAlt="flutter"
-                                        imageSize="w-[146px] h-[42px] xl:w-[130px] xl:h-[37px] 2xl:w-[146px] 2xl:h-[42px]"
-                                        description={t("stack.cards.flutter")}
-                                        divideColor="bg-red"
-                                    />
-                                </div>
-                                <div className="xl:w-[320px] 2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/aws.svg"
-                                        imageAlt="aws"
-                                        imageSize="w-[83px] h-[49px] xl:w-[74px] xl:h-[44px] 2xl:w-[66px] 2xl:h-[42px]"
-                                        description={t("stack.cards.aws")}
-                                        divideColor="bg-blue"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/figma.svg"
-                                        imageAlt="figma"
-                                        imageSize="w-[45px] h-[67px] xl:w-[39px] xl:h-[59px] 2xl:w-[45px] 2xl:h-[67px]"
-                                        description={t("stack.cards.figma")}
-                                        divideColor="bg-yellow"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/kotlin.svg"
-                                        imageAlt="kotlin"
-                                        imageSize="w-[153px] h-[34px] 2xl:w-[153px] 2xl:h-[34px]"
-                                        description={t("stack.cards.kotlin")}
-                                        divideColor="bg-red"
-                                    />
-                                </div>
-                                <div className="2xl:w-[362px]">
-                                    <ImageFeatureCard
-                                        image="/assets/img/stack/node.svg"
-                                        imageAlt="node"
-                                        imageSize="w-[94px] h-[58px] xl:w-[99px] xl:h-[61px] 2xl:w-[94px] 2xl:h-[58px]"
-                                        description={t("stack.cards.node")}
-                                        divideColor="bg-blue"
-                                    />
-                                </div>
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/react.svg"
+                                    imageAlt="react"
+                                    imageSize="w-[136px] h-[46px] xl:w-[131px] xl:h-[44px]"
+                                    description={t("stack.cards.react")}
+                                    divideColor="bg-yellow"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/git.svg"
+                                    imageAlt="git"
+                                    imageSize="w-[102px] h-[42px] xl:w-[98px] xl:h-[41px]"
+                                    description={t("stack.cards.git")}
+                                    divideColor="bg-red"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/docker.svg"
+                                    imageAlt="docker"
+                                    imageSize="w-[174px] h-[44px] xl:w-[167px] xl:h-[42px]"
+                                    description={t("stack.cards.docker")}
+                                    divideColor="bg-blue"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/next.svg"
+                                    imageAlt="next"
+                                    imageSize="w-[100px] h-[60px] md:w-[110px] md:h-[66px] xl:w-[98px] xl:h-[59px]"
+                                    description={t("stack.cards.next")}
+                                    divideColor="bg-yellow"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/flutter.svg"
+                                    imageAlt="flutter"
+                                    imageSize="w-[146px] h-[42px] xl:w-[130px] xl:h-[37px]"
+                                    description={t("stack.cards.flutter")}
+                                    divideColor="bg-red"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/aws.svg"
+                                    imageAlt="aws"
+                                    imageSize="w-[83px] h-[49px] xl:w-[74px] xl:h-[44px]"
+                                    description={t("stack.cards.aws")}
+                                    divideColor="bg-blue"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/figma.svg"
+                                    imageAlt="figma"
+                                    imageSize="w-[45px] h-[67px] xl:w-[39px] xl:h-[59px]"
+                                    description={t("stack.cards.figma")}
+                                    divideColor="bg-yellow"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/kotlin.svg"
+                                    imageAlt="kotlin"
+                                    imageSize="w-[153px] h-[34px]"
+                                    description={t("stack.cards.kotlin")}
+                                    divideColor="bg-red"
+                                />
+                                <ImageFeatureCard
+                                    image="/assets/img/stack/node.svg"
+                                    imageAlt="node"
+                                    imageSize="w-[94px] h-[58px] xl:w-[99px] xl:h-[61px]"
+                                    description={t("stack.cards.node")}
+                                    divideColor="bg-blue"
+                                />
                             </div>
                         </Fade>
                     </section>
                     <Fade cascade>
-                        <section className="container px-5 md:px-0 xl:pr-24 pb-[53px] md:pb-[106px] lg:pb-[196px] xl:pb-[142px] 2xl:pb-[150px]">
+                        <section className="container px-5 md:px-0 xl:pr-24 pb-[53px] md:pb-[106px] lg:pb-[196px] xl:pb-[142px]">
                             <div className="flex flex-col items-center space-y-4">
-                                <h2 className="text-center md:text-left font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl mb-6 md:mb-8 lg:mb-10 xl:mb-8 2xl:mb-10 w-[190px] md:w-full">
+                                <h2 className="text-center md:text-left font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 xl:mb-8 w-[190px] md:w-full">
                                     {t("stack.sectionTwo.title")}
                                     <span className="text--outlined">
                                         {t("stack.sectionTwo.titleEmpty")}
                                     </span>
                                 </h2>
-                                <p className="paragraph text-center md:w-[735px] lg:w-[931px] xl:w-[1000px] 2xl:w-[1160px]">
+                                <p className="paragraph text-center md:w-[735px] lg:w-[931px] xl:w-[1000px]">
                                     HTML • CSS • SASS • Typescript • JQuery •
                                     Angular Js • Angular • ReactJs • NextJs •
                                     Bootstrap • Material • Foundation • Tailwind

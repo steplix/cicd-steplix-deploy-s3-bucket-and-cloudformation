@@ -9,7 +9,7 @@ const Masthead = () => {
         <header className="masthead masthead-full">
             <div className="container h-full px-5 md:px-0">
                 <div className="flex flex-col justify-center h-full">
-                    <h1 className="text-6xl md:text-9xl lg:text-12xl xl:text-11xl 2xl:text-12xl font-semibold">
+                    <h1 className="text-6xl md:text-9xl lg:text-12xl xl:text-11xl font-semibold">
                         <span>{t("masthead.titlePartOne")}</span>{" "}
                         <span className="text--outlined">
                             {" "}
@@ -18,7 +18,7 @@ const Masthead = () => {
                         <br />
                         <span>{t("masthead.titlePartTwo")}</span>
                     </h1>
-                    <h2 className="text-base md:text-lg lg:text-3xl xl:text-2xl 2xl:text-3xl leading-tight font-normal max-w-[290px] md:max-w-[407px] lg:max-w-[485px] xl:max-w-[523px]">
+                    <h2 className="text-base md:text-lg lg:text-3xl xl:text-2xl leading-tight font-normal max-w-[290px] md:max-w-[407px] lg:max-w-[485px] xl:max-w-[523px]">
                         {t("masthead.subtitle")}
                     </h2>
                 </div>

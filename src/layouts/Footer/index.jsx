@@ -14,7 +14,7 @@ const Footer = () => {
                     <img
                         src="/assets/img/logo-navbar.svg"
                         alt="logo"
-                        className="w-40 h-10 md:w-56 md:h-14 lg:w-72 lg:h-16 xl:w-48 xl:h-12 2xl:w-56 2xl:h-14"
+                        className="w-40 h-10 md:w-56 md:h-14 lg:w-72 lg:h-16 xl:w-48 xl:h-12"
                     />
                 </div>
                 <div className="flex flex-col items-center xl:items-start space-y-9 xl:space-y-6">

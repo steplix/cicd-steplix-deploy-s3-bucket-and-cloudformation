@@ -69,7 +69,7 @@ export default function Process() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative">
+            <div className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 relative">
                 <EverythingStartsWithAnIdea />
                 <StepsToTheTop />
                 <HoDoWeDoIt />

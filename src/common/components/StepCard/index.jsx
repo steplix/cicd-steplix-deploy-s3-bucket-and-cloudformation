@@ -41,7 +41,7 @@ const StepCard = ({
             >
                 {number && !textLeft && (
                     <p
-                        className={`${numberStyles} font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl`}
+                        className={`${numberStyles} font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl`}
                     >
                         {number}
                     </p>
@@ -50,7 +50,7 @@ const StepCard = ({
                     <div className="flex">
                         {number && textLeft && (
                             <p
-                                className={`${numberStyles} mr-2 font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl`}
+                                className={`${numberStyles} mr-2 font-bold text--outlined text-7xl md:text-10xl lg:text-13xl xl:text-10xl`}
                             >
                                 {number}
                             </p>
@@ -113,7 +113,7 @@ const StepCard = ({
                         />
                     )}
 
-                    <div className={`${widthTexts} xl:w-[250px] 2xl:w-[330px]`}>
+                    <div className={`${widthTexts} xl:w-[250px]`}>
                         {textOne && (
                             <p
                                 className={`${
