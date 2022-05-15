@@ -15,7 +15,7 @@ const MissionVision = () => {
                         <FeatureCard
                             title={t("about_us.mission.title")}
                             description={t("about_us.mission.description")}
-                            divideColor="blue"
+                            divideColor="bg-blue"
                             isMainTitle
                         />
                     </div>
@@ -25,7 +25,7 @@ const MissionVision = () => {
                         <FeatureCard
                             title={t("about_us.vision.title")}
                             description={t("about_us.vision.description")}
-                            divideColor="red"
+                            divideColor="bg-red"
                             isMainTitle
                         />
                     </div>

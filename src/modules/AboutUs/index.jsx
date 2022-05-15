@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div className="container px-5 md:px-0" id="about-us">
             <Fade cascade>
                 <div className="flex justify-between items-center">
-                    <div className="hidden xl:block text--outlined font-black xl:text-15xl 2xl:text-17xl">
+                    <div className="hidden xl:block text--outlined text--steplix font-black xl:text-15xl 2xl:text-17xl">
                         Steplix
                     </div>
                     <div className="xl:w-[600px]">

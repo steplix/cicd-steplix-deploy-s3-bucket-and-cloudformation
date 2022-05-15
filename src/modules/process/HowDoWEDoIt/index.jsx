@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 import FeatureCard from "@/common/components/FeatureCard";
-import StepCard from "@/common/components/StepCard";
 
 const HoDoWeDoIt = () => {
     const { t } = useTranslation();
@@ -17,7 +16,7 @@ const HoDoWeDoIt = () => {
                     description={t(
                         "process.HowDoWeDoIt.concepts.conceptOne.description"
                     )}
-                    divideColor="blue"
+                    divideColor="bg-blue"
                     widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
                 <FeatureCard
@@ -25,7 +24,7 @@ const HoDoWeDoIt = () => {
                     description={t(
                         "process.HowDoWeDoIt.concepts.conceptTwo.description"
                     )}
-                    divideColor="red"
+                    divideColor="bg-red"
                     widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
                 <FeatureCard
@@ -33,7 +32,7 @@ const HoDoWeDoIt = () => {
                     description={t(
                         "process.HowDoWeDoIt.concepts.conceptThree.description"
                     )}
-                    divideColor="yellow"
+                    divideColor="bg-yellow"
                     widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
                 <FeatureCard
@@ -41,7 +40,7 @@ const HoDoWeDoIt = () => {
                     description={t(
                         "process.HowDoWeDoIt.concepts.conceptFour.description"
                     )}
-                    divideColor="red"
+                    divideColor="bg-red"
                     widthDescription="xl:w-[197px] 2xl:w-[239px]"
                 />
             </div>

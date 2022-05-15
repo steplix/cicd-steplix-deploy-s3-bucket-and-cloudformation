@@ -139,7 +139,7 @@ const JobItemCard = ({ item }) => {
                             title={t("jobs.valuesSteplix.valueOne.title")}
                             description={t("jobs.valuesSteplix.valueOne.text")}
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
-                            divideColor="blue"
+                            divideColor="bg-blue"
                             rightImage="/assets/img/trust.svg"
                             sizeRightImage="w-[66px] h-[30px] md:w-[84px] md:h-[38px] lg:w-[102px] lg:h-[46px] xl:w-[84px] xl:h-[38px] 2xl:w-[102px] 2xl:h-[46px]"
                         />
@@ -147,7 +147,7 @@ const JobItemCard = ({ item }) => {
                             title={t("jobs.valuesSteplix.valueTwo.title")}
                             description={t("jobs.valuesSteplix.valueTwo.text")}
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
-                            divideColor="red"
+                            divideColor="bg-red"
                             rightImage="/assets/img/respect.svg"
                             sizeRightImage="w-[50px] h-[40px] md:w-[59px] md:h-[48px] lg:w-[73px] lg:h-[59px] xl:w-[59px] xl:h-[48px] 2xl:w-[73px] 2xl:h-[59px]"
                         />
@@ -157,7 +157,7 @@ const JobItemCard = ({ item }) => {
                                 "jobs.valuesSteplix.valueThree.text"
                             )}
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
-                            divideColor="yellow"
+                            divideColor="bg-yellow"
                             rightImage="/assets/img/success.svg"
                             sizeRightImage="w-[44px] h-[50px] md:w-[54px] md:h-[61px] lg:w-[71px] lg:h-[80px] xl:w-[54px] xl:h-[61px] 2xl:w-[71px] 2xl:h-[80px]"
                         />
@@ -165,7 +165,7 @@ const JobItemCard = ({ item }) => {
                             title={t("jobs.valuesSteplix.valueFour.title")}
                             description={t("jobs.valuesSteplix.valueFour.text")}
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
-                            divideColor="red"
+                            divideColor="bg-red"
                             rightImage="/assets/img/agil.svg"
                             sizeRightImage="w-[43px] h-[30px] md:w-[62px] md:h-[43px] lg:w-[81px] lg:h-[56px] xl:w-[62px] xl:h-[43px] 2xl:w-[81px] 2xl:h-[56px]"
                         />
@@ -173,7 +173,7 @@ const JobItemCard = ({ item }) => {
                             title={t("jobs.valuesSteplix.valueFive.title")}
                             description={t("jobs.valuesSteplix.valueFive.text")}
                             widthDescription="xl:w-[305px] 2xl:w-[365px]"
-                            divideColor="blue"
+                            divideColor="bg-blue"
                             rightImage="/assets/img/conscience.svg"
                             sizeRightImage="w-[36px] h-[40px] md:w-[53px] md:h-[58px] 2xl:w-[62px] 2xl:h-[68px]"
                         />

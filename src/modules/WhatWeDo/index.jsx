@@ -34,7 +34,7 @@ const WhatWeDo = () => {
                                 description={t(
                                     "whatWeDo.cardThree.description"
                                 )}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[153px] 2xl:w-[184px]"
                             />
                         </div>
@@ -43,7 +43,7 @@ const WhatWeDo = () => {
                                 number="01."
                                 title={t("whatWeDo.cardOne.title")}
                                 description={t("whatWeDo.cardOne.description")}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[200px]"
                                 isAlignedContent
                             />
@@ -59,7 +59,7 @@ const WhatWeDo = () => {
                                 number="02."
                                 title={t("whatWeDo.cardTwo.title")}
                                 description={t("whatWeDo.cardTwo.description")}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[172px]"
                                 isAlignedContent
                             />
@@ -69,7 +69,7 @@ const WhatWeDo = () => {
                                 number="02."
                                 title={t("whatWeDo.cardTwo.title")}
                                 description={t("whatWeDo.cardTwo.description")}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[172px]"
                             />
                         </div>
@@ -86,7 +86,7 @@ const WhatWeDo = () => {
                                 description={t(
                                     "whatWeDo.cardThree.description"
                                 )}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[153px]"
                                 isAlignedContent
                             />
@@ -96,7 +96,7 @@ const WhatWeDo = () => {
                                 number="01."
                                 title={t("whatWeDo.cardOne.title")}
                                 description={t("whatWeDo.cardOne.description")}
-                                divideColor="red"
+                                divideColor="bg-red"
                                 widthTitle="w-[200px]"
                             />
                         </div>

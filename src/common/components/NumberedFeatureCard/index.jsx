@@ -80,28 +80,12 @@ const NumberedFeatureCard = ({
     widthDescription,
     isAlignedContent,
 }) => {
-    let divideClass = "";
-    switch (divideColor) {
-        case "red":
-            divideClass = "bg-red";
-            break;
-        case "blue":
-            divideClass = "bg-blue";
-            break;
-        case "yellow":
-            divideClass = "bg-yellow";
-            break;
-
-        default:
-            divideClass = "bg-red";
-            break;
-    }
     return isAlignedContent ? (
         <AlignedFeature
             number={number}
             title={title}
             description={description}
-            divideClass={divideClass}
+            divideClass={divideColor}
             widthTitle={widthTitle}
             widthDescription={widthDescription}
         />
@@ -110,7 +94,7 @@ const NumberedFeatureCard = ({
             number={number}
             title={title}
             description={description}
-            divideClass={divideClass}
+            divideClass={divideColor}
             widthTitle={widthTitle}
             widthDescription={widthDescription}
         />
@@ -124,7 +108,7 @@ NumberedFeatureCard.propTypes = {
     number: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    divideColor: PropTypes.oneOf(["red", "blue", "yellow"]).isRequired,
+    divideColor: PropTypes.oneOf(["bg-red", "bg-blue", "bg-yellow"]).isRequired,
     widthTitle: PropTypes.string,
     widthDescription: PropTypes.string,
     isAlignedContent: PropTypes.bool,
