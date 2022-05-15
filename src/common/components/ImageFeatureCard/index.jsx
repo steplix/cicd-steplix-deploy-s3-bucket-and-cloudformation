@@ -10,7 +10,7 @@ const ImageFeatureCard = ({
     divideColor,
 }) => {
     return (
-        <article className="flex flex-col space-y-6 2xl:space-y-12">
+        <article className="flex flex-col space-y-6">
             <div className="flex flex-col justify-between min-h-[75px]">
                 <img className={imageSize} src={image} alt={imageAlt} />
                 <div

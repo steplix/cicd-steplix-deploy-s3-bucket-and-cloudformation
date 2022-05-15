@@ -11,24 +11,20 @@ const MissionVision = () => {
         <div className="container px-5 md:px-0 xl:pr-24 grid grid-cols-1 xl:grid-cols-2 gap-y-9 xl:gap-x-9 xl:gap-y-0">
             <Fade cascade>
                 <ShadowCard>
-                    <div className="2xl:pt-3">
-                        <FeatureCard
-                            title={t("about_us.mission.title")}
-                            description={t("about_us.mission.description")}
-                            divideColor="bg-blue"
-                            isMainTitle
-                        />
-                    </div>
+                    <FeatureCard
+                        title={t("about_us.mission.title")}
+                        description={t("about_us.mission.description")}
+                        divideColor="bg-blue"
+                        isMainTitle
+                    />
                 </ShadowCard>
                 <ShadowCard>
-                    <div className="2xl:pt-3">
-                        <FeatureCard
-                            title={t("about_us.vision.title")}
-                            description={t("about_us.vision.description")}
-                            divideColor="bg-red"
-                            isMainTitle
-                        />
-                    </div>
+                    <FeatureCard
+                        title={t("about_us.vision.title")}
+                        description={t("about_us.vision.description")}
+                        divideColor="bg-red"
+                        isMainTitle
+                    />
                 </ShadowCard>
             </Fade>
         </div>

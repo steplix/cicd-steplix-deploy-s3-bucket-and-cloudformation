@@ -12,27 +12,11 @@ const TestimonialCard = ({
     cardBorderColor,
     divideColor,
 }) => {
-    let divideClass = "";
-    switch (divideColor) {
-        case "red":
-            divideClass = "bg-red";
-            break;
-        case "blue":
-            divideClass = "bg-blue";
-            break;
-        case "yellow":
-            divideClass = "bg-yellow";
-            break;
-
-        default:
-            divideClass = "bg-red";
-            break;
-    }
     return (
         <article
-            className={`${cardBorderColor} border-2 rounded-3xl min-h-[400px] md:min-h-[370px] lg:min-h-[420px] xl:min-h-[500px] 2xl:min-h-[550px] w-full xl:w-[464px] 2xl:w-[520px] px-4 lg:px-7 xl:px-6 2xl:px-7 pt-8 lg:pt-12 xl:pt-7 2xl:pt-8`}
+            className={`${cardBorderColor} border-2 rounded-3xl min-h-[400px] md:min-h-[370px] lg:min-h-[420px] xl:min-h-[500px] w-full xl:w-[464px] px-4 lg:px-7 xl:px-6 pt-8 lg:pt-12 xl:pt-7`}
         >
-            <div className="flex flex-col space-y-6 md:space-y-14 2xl:space-y-12">
+            <div className="flex flex-col space-y-6 md:space-y-14">
                 <div className="flex space-x-8 md:space-x-6 xl:space-x-4">
                     <div className="flex flex-col space-y-6 xl:space-y-4">
                         <img
@@ -41,7 +25,7 @@ const TestimonialCard = ({
                             alt={imageAlt}
                         />
                         <div
-                            className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideClass}`}
+                            className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideColor}`}
                         />
                     </div>
                     <div className="flex flex-col">
@@ -56,7 +40,7 @@ const TestimonialCard = ({
                         </p>
                     </div>
                 </div>
-                <p className="text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight">
+                <p className="text-base md:text-xl lg:text-3xl xl:text-xl leading-tight">
                     {testimonial}
                 </p>
             </div>
@@ -75,7 +59,7 @@ TestimonialCard.propTypes = {
     witnessCompany: PropTypes.string.isRequired,
     testimonial: PropTypes.string.isRequired,
     cardBorderColor: PropTypes.string.isRequired,
-    divideColor: PropTypes.oneOf(["red", "blue", "yellow"]).isRequired,
+    divideColor: PropTypes.oneOf(["bg-red", "bg-blue", "bg-yellow"]).isRequired,
 };
 
 export default TestimonialCard;

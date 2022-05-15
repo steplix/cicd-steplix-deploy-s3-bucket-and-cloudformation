@@ -94,14 +94,14 @@ const Navbar = () => {
                     sticky ? "bg-black" : "bg-dark"
                 }`}
             >
-                <div className="container pr-28 2xl:pr-40 flex top-0 justify-between items-center">
+                <div className="container pr-28 flex top-0 justify-between items-center">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
                             <img
                                 src="/assets/img/logo-navbar.svg"
                                 alt="logo"
-                                className="w-[120px] h-[30px] 2xl:w-[160px] 2xl:h-[40px]"
+                                className="w-[120px] h-[30px]"
                             />
                         </a>
                     </Link>

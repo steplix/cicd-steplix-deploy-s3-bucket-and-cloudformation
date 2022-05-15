@@ -11,12 +11,12 @@ const Feature = ({
 }) => (
     <article className="flex flex-col">
         <div className="flex space-x-4 md:space-x-6 xl:space-x-4">
-            <p className="font-bold text--outlined !tracking-normal text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl">
+            <p className="font-bold text--outlined !tracking-normal text-7xl md:text-10xl lg:text-13xl xl:text-10xl">
                 {number}
             </p>
             <div className="flex flex-col">
                 <h4
-                    className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl text-yellow font-semibold ${
+                    className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl text-yellow font-semibold ${
                         widthTitle ? widthTitle : ""
                     }`}
                 >
@@ -28,7 +28,7 @@ const Feature = ({
             </div>
         </div>
         <p
-            className={`text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight ${
+            className={`text-base md:text-xl lg:text-3xl xl:text-xl leading-tight ${
                 widthDescription ? widthDescription : ""
             } whitespace-pre-line`}
         >
@@ -46,12 +46,12 @@ const AlignedFeature = ({
     widthDescription,
 }) => (
     <article className="flex space-x-2.5 md:space-x-6 xl:space-x-4">
-        <p className="font-bold text--outlined !tracking-normal text-7xl md:text-10xl lg:text-13xl xl:text-10xl 2xl:text-13xl">
+        <p className="font-bold text--outlined !tracking-normal text-7xl md:text-10xl lg:text-13xl xl:text-10xl">
             {number}
         </p>
         <div className="flex flex-col">
             <h4
-                className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl text-yellow font-semibold ${
+                className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl text-yellow font-semibold ${
                     widthTitle ? widthTitle : ""
                 }`}
             >
@@ -61,7 +61,7 @@ const AlignedFeature = ({
                 className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideClass}`}
             />
             <p
-                className={`text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight ${
+                className={`text-base md:text-xl lg:text-3xl xl:text-xl leading-tight ${
                     widthDescription ? widthDescription : ""
                 }`}
             >

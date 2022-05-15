@@ -67,7 +67,7 @@ export default function Contact() {
                 />
             </Head>
             <div className="relative bg--contact">
-                <section className="container px-5 md:px-0 pt-32 md:pt-28 lg:pt-24 xl:pt-64 2xl:pt-52 pb-10 md:pb-24 xl:pb-20 2xl:pb-40">
+                <section className="container px-5 md:px-0 pt-28 pb-10 md:pb-24 xl:pb-20">
                     <ScheduleContact />
                 </section>
                 <Flags />

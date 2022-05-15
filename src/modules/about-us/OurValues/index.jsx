@@ -9,7 +9,7 @@ const OurValues = () => {
     return (
         <div className="container px-5 md:px-0 xl:pr-24">
             <Fade cascade>
-                <h2 className="mb-6 xl:mb-14 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                <h2 className="mb-6 xl:mb-14 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                     <span>{t("about_us.ourValues.titleOne")} </span>
                     <span className="text--outlined">
                         {t("about_us.ourValues.titleTwo")}
@@ -25,7 +25,7 @@ const OurValues = () => {
                                 "about_us.ourValues.values.valuetOne.description"
                             )}
                             divideColor="bg-blue"
-                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                            widthDescription="xl:w-[305px]"
                         />
                         <FeatureCard
                             title={t(
@@ -35,7 +35,7 @@ const OurValues = () => {
                                 "about_us.ourValues.values.valuetTwo.description"
                             )}
                             divideColor="bg-red"
-                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                            widthDescription="xl:w-[305px]"
                         />
                         <FeatureCard
                             title={t(
@@ -45,7 +45,7 @@ const OurValues = () => {
                                 "about_us.ourValues.values.valuetThree.description"
                             )}
                             divideColor="bg-yellow"
-                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                            widthDescription="xl:w-[305px]"
                         />
                         <FeatureCard
                             title={t(
@@ -55,7 +55,7 @@ const OurValues = () => {
                                 "about_us.ourValues.values.valuetFour.description"
                             )}
                             divideColor="bg-red"
-                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                            widthDescription="xl:w-[305px]"
                         />
                         <FeatureCard
                             title={t(
@@ -65,7 +65,7 @@ const OurValues = () => {
                                 "about_us.ourValues.values.valuetFive.description"
                             )}
                             divideColor="bg-blue"
-                            widthDescription="xl:w-[305px] 2xl:w-[365px]"
+                            widthDescription="xl:w-[305px]"
                         />
                     </div>
                 </Fade>

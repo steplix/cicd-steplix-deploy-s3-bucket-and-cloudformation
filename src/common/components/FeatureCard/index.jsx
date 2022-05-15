@@ -18,12 +18,12 @@ const FeatureCard = ({
             <div className="flex space-x-4 md:space-x-6">
                 <div className="flex flex-col">
                     {isMainTitle ? (
-                        <h2 className="text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl text-yellow font-semibold">
+                        <h2 className="text-4xl md:text-8xl lg:text-9xl xl:text-8xl text-yellow font-semibold">
                             {title}
                         </h2>
                     ) : (
                         <h4
-                            className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl font-semibold ${
+                            className={`text-2xl md:text-3xl lg:text-5xl xl:text-3xl font-semibold ${
                                 widthTitle ? widthTitle : ""
                             }`}
                         >
@@ -34,16 +34,18 @@ const FeatureCard = ({
                         className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideColor}`}
                     />
                 </div>
-                <div className={sizeRightImage}>
-                    <img
-                        src={rightImage}
-                        alt={altRightImage}
-                        className={sizeRightImage}
-                    />
-                </div>
+                {rightImage && (
+                    <div className={sizeRightImage}>
+                        <img
+                            src={rightImage}
+                            alt={altRightImage}
+                            className={sizeRightImage}
+                        />
+                    </div>
+                )}
             </div>
             <p
-                className={`text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl leading-tight ${
+                className={`text-base md:text-xl lg:text-3xl xl:text-xl leading-tight ${
                     widthDescription ? widthDescription : ""
                 }`}
             >

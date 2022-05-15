@@ -11,7 +11,7 @@ const ModalCard = ({ subDescription, bgColor, textColor, bgLine }) => {
                     className={`${bgLine} h-[164px] absolute w-2 ml-3 rounded`}
                 />
                 <div
-                    className={`${textColor} paragraph  w-[250px] 2xl:w-[300px] text-center pl-8 2xl:pl-10`}
+                    className={`${textColor} paragraph  w-[250px] text-center pl-8`}
                 >
                     {subDescription}
                 </div>

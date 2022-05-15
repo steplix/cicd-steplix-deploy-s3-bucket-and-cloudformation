@@ -113,7 +113,7 @@ export default function Home() {
                     }}
                 />
             </Head>
-            <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative">
+            <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 relative">
                 {/* Masthead Section */}
                 <Masthead />
 

@@ -9,7 +9,7 @@ const StepsToTheTop = () => {
     return (
         <section className="container px-5 md:px-0 flex flex-col space-y-12">
             <div className="flex flex-col">
-                <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                <h2 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                     <span>{t("process.stepsToTheTop.title")} </span>
                     <span className="text--outlined">
                         {t("process.stepsToTheTop.titleEmpty")}
@@ -22,8 +22,8 @@ const StepsToTheTop = () => {
                 </div>
             </div>
             <div className="flex flex-col space-y-20">
-                <div className="flex xl:space-x-16 2xl:space-x-24">
-                    <div className="xl:w-[637px] 2xl:w-[762px]">
+                <div className="flex xl:space-x-16">
+                    <div className="xl:w-[637px]">
                         <NumberedFeatureCard
                             number="01."
                             title={t("process.stepsToTheTop.stepOne.title")}
@@ -32,11 +32,11 @@ const StepsToTheTop = () => {
                             )}
                             divideColor="bg-red"
                             widthTitle="w-[200px]"
-                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
+                            widthDescription="xl:w-[637px]"
                         />
                     </div>
 
-                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] 2xl:h-[275px] 2xl:w-[330px] my-auto">
+                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] my-auto">
                         <ProcessCard
                             subDescription={t(
                                 "process.stepsToTheTop.stepOne.secondaryDescription"
@@ -47,8 +47,8 @@ const StepsToTheTop = () => {
                         />{" "}
                     </div>
                 </div>
-                <div className="flex xl:space-x-16 2xl:space-x-24">
-                    <div className="xl:w-[637px] 2xl:w-[762px]">
+                <div className="flex xl:space-x-16">
+                    <div className="xl:w-[637px]">
                         <NumberedFeatureCard
                             number="02."
                             title={t("process.stepsToTheTop.stepTwo.title")}
@@ -57,11 +57,11 @@ const StepsToTheTop = () => {
                             )}
                             divideColor="bg-red"
                             widthTitle="w-[152px]"
-                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
+                            widthDescription="xl:w-[637px]"
                         />
                     </div>
 
-                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] 2xl:h-[275px] 2xl:w-[330px] my-auto">
+                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] my-auto">
                         <ProcessCard
                             subDescription={t(
                                 "process.stepsToTheTop.stepTwo.secondaryDescription"
@@ -72,8 +72,8 @@ const StepsToTheTop = () => {
                         />
                     </div>
                 </div>
-                <div className="flex xl:space-x-16 2xl:space-x-24">
-                    <div className="xl:w-[637px] 2xl:w-[762px]">
+                <div className="flex xl:space-x-16">
+                    <div className="xl:w-[637px]">
                         <NumberedFeatureCard
                             number="03."
                             title={t("process.stepsToTheTop.stepThree.title")}
@@ -82,11 +82,11 @@ const StepsToTheTop = () => {
                             )}
                             divideColor="bg-red"
                             widthTitle="w-[153px]"
-                            widthDescription="xl:w-[637px] 2xl:w-[762px]"
+                            widthDescription="xl:w-[637px]"
                         />
                     </div>
 
-                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] 2xl:h-[275px] 2xl:w-[330px]  my-auto">
+                    <div className="hidden xl:block xl:h-[195px] xl:w-[295px] my-auto">
                         <ProcessCard
                             textColor="text-black"
                             bgColor="bg-yellow"

@@ -72,7 +72,7 @@ export default function AboutUs() {
                     content="https://steplix.com/assets/img/logo.png"
                 />
             </Head>
-            <div className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative pt-32 xl:pt-44 pb-12 xl:pb-40">
+            <div className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 relative pt-28 pb-12 xl:pb-40">
                 <DigitalSherpas />
                 <Philosophy />
                 <MissionVision />

@@ -9,7 +9,7 @@ const WhatWeDo = () => {
     return (
         <Fade cascade>
             <div className="container px-5 md:px-0" id="what-we-do">
-                <h3 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-9xl">
+                <h3 className="mb-3.5 xl:mb-2.5 font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                     <span>{t("whatWeDo.title")} </span>
                     <span className="text--outlined">
                         {t("whatWeDo.emptyTitle")}
@@ -23,10 +23,10 @@ const WhatWeDo = () => {
             </div>
             <div className="steplix-process">
                 <div
-                    className="container px-5 md:px-0 grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-0 2xl:gap-x-32"
+                    className="container h-full px-5 md:px-0 grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-0"
                     id="steps"
                 >
-                    <div className="w-full md:w-[575px] lg:w-[942px] xl:w-[320px] 2xl:w-[370px] row-span-2 xl:relative xl:col-start-3">
+                    <div className="w-full md:w-[575px] lg:w-[942px] xl:w-[320px] row-span-2 xl:relative xl:col-start-3">
                         <div className="hidden xl:block">
                             <NumberedFeatureCard
                                 number="03."
@@ -35,7 +35,7 @@ const WhatWeDo = () => {
                                     "whatWeDo.cardThree.description"
                                 )}
                                 divideColor="bg-red"
-                                widthTitle="w-[153px] 2xl:w-[184px]"
+                                widthTitle="w-[153px]"
                             />
                         </div>
                         <div className="block xl:hidden">
@@ -48,8 +48,8 @@ const WhatWeDo = () => {
                                 isAlignedContent
                             />
                         </div>
-                        <div className="xl:absolute xl:top-[10px] xl:right-[350px] 2xl:right-[430px]">
-                            <div className="xl:bg-white xl:h-[1px] xl:w-16 2xl:w-[118px] xl:relative xl:top-[6px]" />
+                        <div className="xl:absolute xl:top-[10px] xl:right-[330px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-16 xl:relative xl:top-[6px]" />
                             <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:left-0" />
                         </div>
                     </div>
@@ -73,8 +73,8 @@ const WhatWeDo = () => {
                                 widthTitle="w-[172px]"
                             />
                         </div>
-                        <div className="xl:absolute xl:top-[186px] 2xl:top-[130px] xl:left-[350px] 2xl:left-[330px]">
-                            <div className="xl:bg-white xl:h-[1px] xl:w-28 2xl:w-20 xl:relative xl:top-[6px]" />{" "}
+                        <div className="xl:absolute xl:top-[130px] xl:left-[365px]">
+                            <div className="xl:bg-white xl:h-[1px] xl:w-28 xl:relative xl:top-[6px]" />{" "}
                             <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const WhatWeDo = () => {
                                 widthTitle="w-[200px]"
                             />
                         </div>
-                        <div className="xl:absolute xl:top-[255px] 2xl:top-[330px] xl:left-[328px] 2xl:left-[370px]">
+                        <div className="xl:absolute xl:top-[200px] xl:left-[328px]">
                             <div className="xl:bg-white xl:h-[1px] xl:w-16 xl:relative xl:top-[6px]" />{" "}
                             <div className="xl:h-3 xl:w-3 xl:shadow--gray xl:bg-white xl:rounded-full xl:absolute xl:right-0" />
                         </div>

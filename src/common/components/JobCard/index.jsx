@@ -12,10 +12,10 @@ const JobCard = ({ title, country, apply, url }) => {
         <ShadowCard>
             <article className="flex justify-between">
                 <div className="flex flex-col">
-                    <p className="font-semibold text-xl md:text-3xl lg:text-5xl xl:text-3xl 2xl:text-5xl w-full">
+                    <p className="font-semibold text-xl md:text-3xl lg:text-5xl xl:text-3xl w-full">
                         {title}
                     </p>
-                    <p className="font-normal text-base md:text-xl lg:text-3xl xl:text-xl 2xl:text-3xl w-full">
+                    <p className="font-normal text-base md:text-xl lg:text-3xl xl:text-xl w-full">
                         {country}
                     </p>
                 </div>
