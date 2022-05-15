@@ -114,11 +114,22 @@ export default function Home() {
                 />
             </Head>
             <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 2xl:space-y-20 relative">
+                {/* Masthead Section */}
                 <Masthead />
+
+                {/* About Us Section */}
                 <AboutUs />
+
+                {/* What We Do Section */}
                 <WhatWeDo />
+
+                {/* Our Culture Section */}
                 <OurCulture />
+
+                {/* Happy Clients Section */}
                 <HappyClients />
+
+                {/* Steplix Flags */}
                 <Flags />
             </main>
         </>

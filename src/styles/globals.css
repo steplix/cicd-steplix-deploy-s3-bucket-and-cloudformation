@@ -117,20 +117,71 @@ body {
     }
 }
 
-/*--------- banner------- */
-.banner {
+/*------- Masthead Section ------- */
+.masthead {
+    position: relative;
     background-image: url("../../public/assets/img/bg-header.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 @media (min-width: 1200px) {
-    .banner {
+    .masthead {
+        position: relative;
         background-image: url("../../public/assets/img/bg-header.webp");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
     }
+}
+
+.masthead-full {
+    padding: 10rem 0;
+}
+
+@media (min-width: 1200px) {
+    .masthead-full {
+        padding: 0;
+        height: 100vh;
+        min-height: 35rem;
+    }
+}
+
+.masthead-scroll {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.masthead .masthead-scroll .masthead-scroll-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 3.725rem;
+    width: 2.5rem;
+    line-height: 3.125rem;
+    border-radius: 100% / 75%;
+    border: 1px;
+    border-style: solid;
+    border-color: #ffda00;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    color: #f32735;
+}
+
+.masthead .masthead-scroll .masthead-scroll-btn:hover {
+    transform: translateY(-0.25rem);
+    border-color: rgba(255, 218, 0, 0.5);
+    color: rgba(243, 39, 53, 0.5);
+}
+
+.masthead .masthead-scroll .masthead-scroll-btn:active {
+    transform: none;
 }
 
 /*--------- Process Mountain------- */
