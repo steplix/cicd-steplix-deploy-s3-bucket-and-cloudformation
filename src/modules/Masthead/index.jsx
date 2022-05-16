@@ -9,7 +9,7 @@ const Masthead = () => {
         <header className="masthead masthead-full">
             <div className="container h-full px-5 md:px-0">
                 <div className="flex flex-col justify-center h-full">
-                    <h1 className="text-6xl md:text-9xl lg:text-12xl xl:text-11xl font-semibold">
+                    <h1 className="text-6xl md:text-9xl lg:text-12xl xl:text-11xl font-black">
                         <span>{t("masthead.titlePartOne")}</span>{" "}
                         <span className="text--outlined">
                             {" "}

@@ -3,7 +3,7 @@ import React from "react";
 import ButtonApply from "../ButtonApply";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import FeatureCard from "@/common/components/FeatureCard";
-import Link from "next/link";
+import ContactCard from "@/common/components/ContactCard";
 import Fade from "react-reveal/Fade";
 
 const JobItemCard = ({ item }) => {
@@ -11,7 +11,7 @@ const JobItemCard = ({ item }) => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 md:px-0">
+        <div className="container px-5 md:px-0 xl:pr-8">
             <Fade cascade>
                 {/* section job description */}
                 <section>
@@ -100,29 +100,18 @@ const JobItemCard = ({ item }) => {
                             <p>rrhh@steplix.com</p>
                         </div>
                     </div>
-                    <div className="xl:mt-[70px] mt-[60px] xl:mb-[170px] mb-[70px] xl:w-[662px] w-[332px] xl:h-[167px] h-[84px] flex items-center border-2 border-red rounded-2xl">
-                        <div className="xl:h-[100px] h-[50px] w-[50px] xl:w-[100px] xl:ml-[70px] ml-[10px]">
-                            <img src="/assets/img/rrhh.svg" alt="rrhh" />
-                        </div>
-                        <div className="xl:w-[5px] w-[2px] xl:h-[80px] h-[40px] bg-red xl:mx-[30px] mx-[12px]" />
-                        <div className="xl:space-y-2">
-                            {" "}
-                            <p className="font-bold xl:text-[32px] text-[22px]">
-                                Josefina Salimei
-                            </p>
-                            <p className="paragraph">{t("jobs.hr")}</p>
-                        </div>
-
-                        <div className="xl:w-[33px] w-[16px] xl:h-[23px] h-[13px] xl:ml-[100px] ml-[30px]">
-                            <Link href="mailto:rrhh@steplix.com">
-                                <a>
-                                    <img
-                                        src="/assets/img/email.svg"
-                                        alt="email"
-                                    />
-                                </a>
-                            </Link>
-                        </div>
+                    <div className="mt-[60px] xl:mt-[70px] mb-[70px] xl:mb-[170px]">
+                        <ContactCard
+                            img="/assets/img/rrhh.svg"
+                            alt="rh"
+                            job="RH"
+                            name="Josefina Salimei"
+                            borderColor="border-red"
+                            bgColor="bg-red"
+                            icon="/assets/img/email.svg"
+                            iconAlt="email"
+                            linkCalendary="mailto:rrhh@steplix.com"
+                        />
                     </div>
                 </section>
 
