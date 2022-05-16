@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scroll-padding-top: 160px;
 }
 
 body {
     @apply font-sofia text-white bg-purple;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @font-face {
