@@ -104,7 +104,7 @@ const JobItemCard = ({ item }) => {
                         <ContactCard
                             img="/assets/img/rrhh.svg"
                             alt="rh"
-                            job="RH"
+                            job={t("jobs.hr")}
                             name="Josefina Salimei"
                             borderColor="border-red"
                             bgColor="bg-red"
