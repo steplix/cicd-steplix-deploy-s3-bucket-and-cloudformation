@@ -350,7 +350,7 @@
         "subtitlePartOne": " Los comienzos no son todos iguales... En este camino vos elegís.",
         "subtitlePartTwo": "¿Cuál es tu punto de partida?",
         "cardOne": {
-            "title": "Descubrimiento de negocio",
+            "title": "Conociendo tu negocio",
             "description": " Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
         },
         "cardTwo": {
@@ -381,7 +381,7 @@
     },
     "modal": {
         "modalOne": {
-            "title": " Descubrimiento de negocio",
+            "title": "Conociendo tu negocio",
             "descriptionOne": {
                 "textOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
                 "textTwo": "En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
