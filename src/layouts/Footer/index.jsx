@@ -23,7 +23,9 @@ const Footer = () => {
                             hello@steplix.com
                         </a>
                     </Link>
-                    <p className="text-sm md:text-xl">+54 (11) 5367-4369</p>
+                    <p className="text-sm md:text-xl">
+                        <a href="tel:+541150105103">+54 (11) 5010-5103</a>
+                    </p>
                     <div className="flex flex-col items-center xl:items-start">
                         <p className="flex text-sm md:text-xl lg:text-3xl xl:text-lg">
                             Costa Rica 4999,

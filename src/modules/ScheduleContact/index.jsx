@@ -17,7 +17,7 @@ const Address = () => {
                 </p>
 
                 <p>
-                    <a href="tel:+54 (11) 5367-4369">+54 (11) 5367-4369</a>
+                    <a href="tel:+541150105103">+54 (11) 5010-5103</a>
                 </p>
             </div>
         </address>
@@ -47,7 +47,7 @@ const ScheduleContact = () => {
                         <p className="text-2xl md:text-xl lg:text-3xl xl:text-xl leading-tight xl:mb-24">
                             {t("contact.subtitle")}
                         </p>
-                        <div className="flex flex-col xl:flex-row space-y-7 xl:space-y-0 xl:space-x-36">
+                        <div className="flex flex-col flex-wrap xl:flex-row gap-y-7 xl:gap-x-36">
                             <ContactCard
                                 img="assets/img/kevin.svg"
                                 alt={t("contact.salesRepresentative")}
@@ -69,6 +69,17 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/marcelo-leonardo"
+                            />
+                            <ContactCard
+                                img="assets/img/enrique.webp"
+                                alt={t("contact.salesRepresentative")}
+                                job={t("contact.salesRepresentative")}
+                                name="Enrique Serrani"
+                                borderColor="border-red"
+                                bgColor="bg-red"
+                                icon="assets/img/almanac.svg"
+                                iconAlt="almanac"
+                                linkCalendary="https://meetings.hubspot.com/enrique-serrani"
                             />
                         </div>
                     </div>
