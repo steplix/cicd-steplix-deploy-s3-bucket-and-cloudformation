@@ -91,6 +91,15 @@ const Carousel = () => {
             borderColor: "border-blue",
             text: t("happyClients.clientSinoar.text"),
         },
+        {
+            image: "/assets/img/clients/client-pow.svg",
+            alt: "Pow.",
+            name: "Guido Ginesi",
+            title: t("happyClients.clientPow.title"),
+            companyName: "Pow.",
+            borderColor: "border-yellow",
+            text: t("happyClients.clientPow.text"),
+        },
     ];
 
     //

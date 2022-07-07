@@ -36,7 +36,7 @@ module.exports = {
             "17xl": ["100px"],
         },
         fontFamily: {
-            sofia: "Sofia Pro",
+            sofia: "sofia-pro",
         },
         boxShadow: {
             steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
