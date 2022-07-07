@@ -12,46 +12,6 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-@font-face {
-    font-family: "Sofia Pro";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Sofia Pro"),
-        url("../../public/assets/fonts/SofiaProRegularAz.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sofia Pro";
-    font-style: normal;
-    font-weight: 500;
-    src: local("Sofia Pro"),
-        url("../../public/assets/fonts/SofiaProMediumAz.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sofia Pro";
-    font-style: normal;
-    font-weight: 600;
-    src: local("Sofia Pro"),
-        url("../../public/assets/fonts/SofiaProSemiBoldAz.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sofia Pro";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Sofia Pro"),
-        url("../../public/assets/fonts/SofiaProBoldAz.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sofia Pro";
-    font-style: normal;
-    font-weight: 900;
-    src: local("Sofia Pro"),
-        url("../../public/assets/fonts/SofiaProBlackAz.woff") format("woff");
-}
-
 .text--outlined {
     color: transparent;
     letter-spacing: 0.1em;
