@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useTranslation } from "next-export-i18n";
+import { useEffect } from "react";
 import Masthead from "@/modules/Masthead";
 import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";
@@ -9,6 +10,7 @@ import Flags from "@/common/components/Flags";
 
 export default function Home() {
     const { t } = useTranslation();
+
     return (
         <>
             <Head>
