@@ -12,13 +12,14 @@ function MyApp({ Component, pageProps }) {
 
             <Script id="google-analytics" strategy="lazyOnload">
                 {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-KSEN00ZW49', {
-                    page_path: window.location.pathname,
-                });
-                    `}
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-KSEN00ZW49', {
+                        page_path: window.location.pathname,
+                    });
+                    gtag('config', 'AW-10880705347');
+                `}
             </Script>
 
             <Script id="linkedin-tag" strategy="lazyOnload">
@@ -41,7 +42,12 @@ function MyApp({ Component, pageProps }) {
                     s.parentNode.insertBefore(b, s);})(window.lintrk);
                 `}
             </Script>
-
+      
+            <Script id='adWords' strategy="lazyOnload">
+                {`
+                   gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
+                `}
+            </Script>
             <Layout>
                 <Component {...pageProps} />
             </Layout>
