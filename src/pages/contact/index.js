@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Script from "next/script";
-import Image from "next/image";
 import { useTranslation } from "next-export-i18n";
 import Flags from "@/common/components/Flags";
 import ScheduleContact from "@/modules/ScheduleContact";
@@ -94,7 +94,7 @@ export default function Contact() {
                     s.parentNode.insertBefore(b, s);})(window.lintrk);
                 `}
             </Script>
-            <Image height="1" width="1" style={{display: 'none'}} alt="" src="https://px.ads.linkedin.com/collect/?pid=4555345&fmt=gif" />
+            <img height="1" width="1" style={{display: 'none'}} alt="" src="https://px.ads.linkedin.com/collect/?pid=4555345&fmt=gif" />
         </>
     );
 }
