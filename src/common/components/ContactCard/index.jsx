@@ -13,6 +13,7 @@ const ContactCard = ({
     borderColor,
     bgColor,
     linkCalendary,
+    handleLinkedInTag
 }) => {
     return (
         <div
@@ -31,7 +32,7 @@ const ContactCard = ({
                 </div>
             </div>
             <div className="w-5 h-5 md:w-6 md:h-6 lg:w-9 lg:h-9 xl:w-6 xl:h-6">
-                <Link href={linkCalendary}>
+                <Link href={linkCalendary} onClick={handleLinkedInTag}>
                     <a target="_blank">
                         <img src={icon} alt={iconAlt} />
                     </a>

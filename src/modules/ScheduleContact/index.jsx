@@ -28,6 +28,8 @@ const ScheduleContact = () => {
     let [query] = useLanguageQuery();
     const { t } = useTranslation();
 
+    const handleLinkedInTag = () => window.lintrk('track', { conversion_id: 9492433 });
+
     let brochureLang = "assets/files/brochure_ES.pdf";
     query?.lang === "en"
         ? (brochureLang = "assets/files/brochure_EN.pdf")
@@ -58,6 +60,7 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/kevin-halbinger"
+                                handleLinkedInTag={handleLinkedInTag}
                             />
                             <ContactCard
                                 img="assets/img/marcelo.webp"
@@ -69,6 +72,7 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/marcelo-leonardo"
+                                handleLinkedInTag={handleLinkedInTag}
                             />
                             <ContactCard
                                 img="assets/img/enrique.webp"
@@ -80,6 +84,7 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/enrique-serrani"
+                                handleLinkedInTag={handleLinkedInTag}
                             />
                         </div>
                     </div>
