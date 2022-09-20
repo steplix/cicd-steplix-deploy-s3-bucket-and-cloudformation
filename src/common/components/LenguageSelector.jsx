@@ -25,7 +25,6 @@ const LenguageSelector = () => {
                         <img
                             src="/assets/logos/logo-en.svg"
                             alt="logo"
-                            layout="fill"
                         />
                     </button>
                 </div>
@@ -35,7 +34,6 @@ const LenguageSelector = () => {
                         <img
                             src="/assets/logos/logo-es.svg"
                             alt="logo"
-                            layout="fill"
                         />
                     </button>
                 </div>

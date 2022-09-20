@@ -56,7 +56,6 @@ export default function Modal({
                                     <img
                                         src="/assets/img/escape.svg"
                                         alt="left chevron"
-                                        layout="fill"
                                         className="mx-auto h-3 w-3"
                                     />
                                 </button>
@@ -81,7 +80,6 @@ export default function Modal({
                                                     <img
                                                         src="/assets/img/chevronLeft.svg"
                                                         alt="left chevron"
-                                                        layout="fill"
                                                         className="mx-auto h-14"
                                                     />
                                                 </div>
@@ -101,7 +99,6 @@ export default function Modal({
                                                     <img
                                                         src="/assets/img/chevronRight.svg"
                                                         alt="right chevron"
-                                                        layout="fill"
                                                         className="mx-auto mb-2 h-14"
                                                     />
                                                 </div>

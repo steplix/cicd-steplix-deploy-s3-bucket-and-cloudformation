@@ -5,7 +5,7 @@ const UploadFile = ({ text }) => {
     const handleAddFile = () => {};
 
     return (
-        <div tittle={text}>
+        <div>
             <input type="file" className="hidden" />
             <label>
                 <input

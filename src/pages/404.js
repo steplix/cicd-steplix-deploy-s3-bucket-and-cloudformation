@@ -40,7 +40,7 @@ const Custom404 = () => {
                     </div>
                 </div>
                 <div className="max-w-[375px] h-[176px] md:w-[500px] md:h-[280px] lg:w-[777px] lg:h-[384px] mt-11 mx-auto xl:mx-0">
-                    <img src="/assets/img/404.svg" alt="logo" layout="fill" />
+                    <img src="/assets/img/404.svg" alt="logo" />
                 </div>
                 <div className="lg:hidden mt-[100px] flex justify-center ">
                     <Link href={{ pathname: "/", query: query }}>
