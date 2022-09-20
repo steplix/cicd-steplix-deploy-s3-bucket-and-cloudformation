@@ -12,36 +12,21 @@ function MyApp({ Component, pageProps }) {
 
             <Script id="google-analytics" strategy="lazyOnload">
                 {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-KSEN00ZW49', {
-                    page_path: window.location.pathname,
-                });
-                    `}
-            </Script>
-
-            <Script id="linkedin-tag" strategy="lazyOnload">
-                {`
-                    _linkedin_partner_id = "4555345";
-                    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-                    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-KSEN00ZW49', {
+                        page_path: window.location.pathname,
+                    });
+                    gtag('config', 'AW-10880705347');
                 `}
             </Script>
-
-            <Script id="linkedin-tag-lintrk" strategy="lazyOnload">
+      
+            <Script id='adWords' strategy="lazyOnload">
                 {`
-                (function(l) {
-                    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-                    window.lintrk.q=[]}
-                    var s = document.getElementsByTagName("script")[0];
-                    var b = document.createElement("script");
-                    b.type = "text/javascript";b.async = true;
-                    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-                    s.parentNode.insertBefore(b, s);})(window.lintrk);
+                   gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
                 `}
             </Script>
-
             <Layout>
                 <Component {...pageProps} />
             </Layout>

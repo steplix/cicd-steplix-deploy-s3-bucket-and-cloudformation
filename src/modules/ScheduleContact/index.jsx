@@ -29,6 +29,7 @@ const ScheduleContact = () => {
     const { t } = useTranslation();
 
     let brochureLang = query?.lang === "en" ? "assets/files/brochure_EN.pdf" : "assets/files/brochure_ES.pdf";
+    const handleLinkedInTag = () => window.lintrk('track', { conversion_id: 9492433 });
 
     return (
         <div className="flex flex-col space-y-14 md:space-y-20 lg:space-y-12 xl:space-y-28">
@@ -55,6 +56,7 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/kevin-halbinger"
+                                handleLinkedInTag={handleLinkedInTag}
                             />
                             <ContactCard
                                 img="assets/img/enrique.webp"
@@ -66,6 +68,7 @@ const ScheduleContact = () => {
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/enrique-serrani"
+                                handleLinkedInTag={handleLinkedInTag}
                             />
                         </div>
                     </div>
