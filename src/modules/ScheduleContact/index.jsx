@@ -28,10 +28,7 @@ const ScheduleContact = () => {
     let [query] = useLanguageQuery();
     const { t } = useTranslation();
 
-    let brochureLang = "assets/files/brochure_ES.pdf";
-    query?.lang === "en"
-        ? (brochureLang = "assets/files/brochure_EN.pdf")
-        : (brochureLang = "assets/files/brochure_ES.pdf");
+    let brochureLang = query?.lang === "en" ? "assets/files/brochure_EN.pdf" : "assets/files/brochure_ES.pdf";
 
     return (
         <div className="flex flex-col space-y-14 md:space-y-20 lg:space-y-12 xl:space-y-28">
@@ -60,23 +57,12 @@ const ScheduleContact = () => {
                                 linkCalendary="https://meetings.hubspot.com/kevin-halbinger"
                             />
                             <ContactCard
-                                img="assets/img/marcelo.webp"
-                                alt={t("contact.salesRepresentative")}
-                                job={t("contact.salesRepresentative")}
-                                name="Marcelo Zalegas"
-                                borderColor="border-yellow"
-                                bgColor="bg-yellow"
-                                icon="assets/img/almanac.svg"
-                                iconAlt="almanac"
-                                linkCalendary="https://meetings.hubspot.com/marcelo-leonardo"
-                            />
-                            <ContactCard
                                 img="assets/img/enrique.webp"
                                 alt={t("contact.salesRepresentative")}
                                 job={t("contact.salesRepresentative")}
                                 name="Enrique Serrani"
-                                borderColor="border-red"
-                                bgColor="bg-red"
+                                borderColor="border-yellow"
+                                bgColor="bg-yellow"
                                 icon="assets/img/almanac.svg"
                                 iconAlt="almanac"
                                 linkCalendary="https://meetings.hubspot.com/enrique-serrani"
