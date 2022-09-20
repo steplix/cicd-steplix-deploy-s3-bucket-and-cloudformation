@@ -431,8 +431,12 @@
             "title": "Co-Fundador & CEO"
         },
         "clientVacayGreen": {
-            "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez.“. ",
+            "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez“. ",
             "title": "CTO"
+        },
+        "clientValid": {
+            "text": "“Fue muy conveniente para nosotros encontrar una empresa como Steplix, que tiene la capacidad de responder en plazos muy desafiantes y con especificaciones breves. En todo momento propusieron mejoras y siempre teniendo en cuenta la eficiencia en costes de infraestructura“. ",
+            "title": "Product Manager"
         }
     },
     "seeMore": "Ver más",

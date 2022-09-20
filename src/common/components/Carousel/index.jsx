@@ -100,7 +100,6 @@ const Carousel = () => {
             borderColor: "border-yellow",
             text: t("happyClients.clientPow.text"),
         },
-
         {
             image: "/assets/img/clients/client-vacaygreen.svg",
             alt: "VacayGreen",
@@ -109,6 +108,15 @@ const Carousel = () => {
             companyName: "VacayGreen",
             borderColor: "border-red",
             text: t("happyClients.clientVacayGreen.text"),
+        },
+        {
+            image: "/assets/img/clients/client-valid.svg",
+            alt: "Valid",
+            name: "Federico Bitonte",
+            title: t("happyClients.clientValid.title"),
+            companyName: "Valid",
+            borderColor: "border-blue",
+            text: t("happyClients.clientValid.text"),
         },
     ];
 
