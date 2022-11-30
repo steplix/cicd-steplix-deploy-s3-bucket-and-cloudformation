@@ -7,7 +7,7 @@ const BecomeASteplixer = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container px-5 md:px-0 pt-28 xl:mb-20 my-2">
+        <div className="container px-5 md:px-0 pt-28 xl:mb-20">
             <Fade>
                 <h1 className="font-semibold text-4xl md:text-8xl lg:text-9xl xl:text-8xl">
                     {t("jobs.title")}{" "}
