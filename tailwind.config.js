@@ -2,6 +2,7 @@ module.exports = {
     mode: "jit",
     purge: ["./src/**/*.{ts,tsx,js,jsx}"],
     darkMode: false,
+    //TODO: Replace purple with purpleV3 when the V3 version starts developing
     theme: {
         colors: {
             white: "#FFFFFF",
@@ -11,6 +12,7 @@ module.exports = {
             purple: "#180228",
             black: "#0D0D0D",
             "purple-light": "#341748",
+            purpleV3: "#3C1053"
         },
         fontSize: {
             xs: ["12px"],
