@@ -2,6 +2,7 @@ import propTypes from 'prop-types';
 import Icon from '@/components/Icon';
 
 // TODO: DO THE MISSING BREAKPOINTS WHEN THE DESIGN IS DONE
+// TODO: INTEGRATE WITH THE TRANSLATE LIBRARY
 
 const CardIcon = ({ text, iconName }) => {
   return (
