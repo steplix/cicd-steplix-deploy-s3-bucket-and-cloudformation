@@ -312,3 +312,20 @@ p {
 .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
+
+/* GRADIENTS */
+
+.header-gradient {
+    background: linear-gradient(108.58deg, #3C1053 7.11%, #00A9E0 194.14%);
+}
+
+.section-gradient {
+    background: linear-gradient(180deg, #3C1053 43.71%, #00A9E0 126.87%);
+}
+
+.footer-gradient {
+    background:linear-gradient(180deg, #00A9E0 -26.27%, #3C1053 29.75%, #000000 98.25%);
+}
+
+
+/* END GRADIENTS */
