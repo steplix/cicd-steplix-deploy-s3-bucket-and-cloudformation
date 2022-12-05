@@ -8,8 +8,12 @@ html {
 }
 
 body {
-    @apply font-sofia text-white bg-purple;
+    @apply font-sofia text-purple bg-neutral-white;
     -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p {
+    @apply font-poppins;
 }
 
 .text--outlined {
