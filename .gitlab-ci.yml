@@ -316,7 +316,7 @@ release:
   variables:
     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_PRODUCTION}
     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY_PRODUCTION}
-    AWS_REGION: ${AWS_REGION_PRODUCTION}
+    AWS_REGION: ${AWS_REGION}
   stage: release
   when: manual
   environment: production
