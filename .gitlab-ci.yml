@@ -1,34 +1,335 @@
-image: steplix/node:0.0.3
-
 stages:
-    - artifact
-    - deploy
+  # - test
+  - build
+  - tag
+  - artifact
+  - merge-request
+  - merge
+  - deploy
+  - release
+
+# test:
+#   stage: test
+#   image: node:14.18.0
+#   script:
+#     - node --version
+#     - npm run lint
+#     - npm test
+#     - echo "PASSED TESTS"
+#   only:
+#     - develop
+
+build:
+  stage: build
+  image: node:14.18.0
+  script:
+    - node --version
+    - npm ci
+    - npm run release
+    - echo "BUILD SUCCESSFULLY"
+  artifacts:
+    paths:
+      - out
+    expire_in: 20 mins
+  only:
+    - testing
+    - master
+
+tag:
+  variables:
+    FOLDER_PATH: ${CI_PROJECT_DIR}
+    BRANCH: ${CI_COMMIT_REF_NAME}
+  stage: tag
+  when: manual
+  image: node:14.18.0
+  dependencies:
+    - build
+  before_script:
+    - git --version
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - project_url=$(echo ${CI_PROJECT_URL} | sed 's/https:\/\///')
+    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@$project_url
+  script:
+    # get the full tag list
+    - git fetch --tags
+    # get the latest tag (latestVersion)
+    - latestVersion=""
+    # default to 0.0.0 if there is not tags
+    - >
+      if [ ! $(git describe --tags $(git rev-list --tags --max-count=1)) ] || [ -z $(git describe --tags $(git rev-list --tags --max-count=1)) ]; then
+        latestVersion="0.0.0"
+      else
+        latestVersion="$(git describe --tags $(git rev-list --tags --max-count=1))"
+      fi
+    - echo "Last tag version" "${latestVersion}"
+    # count the number of "." occurrences
+    - occurrences=$(awk -F"." '{print NF-1}' <<< "${latestVersion}")
+    # check if everything is ok
+    - >
+      if [ "${occurrences}" != "2" ]; then
+        echo "${latestVersion} seems to be an invalid tag version (expected mayor.minor.patch like 0.0.15)"
+        exit 1
+      fi
+    # define the new tag (newVersion)
+    - mayor=$(cut -d'.' -f1 <<<"$latestVersion")
+    - minor=$(cut -d'.' -f2 <<<"$latestVersion")
+    - patch=$(cut -d'.' -f3 <<<"$latestVersion")
+    - >
+      if [ "${TYPE_UPDATE}" == "minor" ]; then
+        minor=$(( $minor + 1 ))
+        patch=0
+      elif [ "${TYPE_UPDATE}" == "mayor" ]; then
+        mayor=$(( $mayor + 1 ))
+        minor=0
+        patch=0
+      else
+        patch=$(( $patch + 1))
+      fi
+    - newVersion="${mayor}.${minor}.${patch}"
+    - echo "New tag version" "${newVersion}"
+    # check if package.json exists, in that case use npm to write de package.json
+    - >
+      if [ -f "package.json" ]; then
+
+        # Prevents throwing an error when npm version is used to set the new version to the same value as the current version
+        npm config set allow-same-version true
+
+        # a version bump but no tag or a new commit
+        npm config set git-tag-version false
+
+        # just in case, re-assign the current version
+        npm --no-git-tag-version version "$latestVersion" > /dev/null 2>&1
+
+        # increment the new version. This will write in package.json
+        npm --no-git-tag-version version patch > /dev/null 2>&1
+
+      fi
+    # add everything to a new commit
+    - git add .
+    - git commit -m "v${newVersion} created."
+    # Tagging
+    # make the new tag with a commit
+    - git tag ${newVersion} -m "Release v${newVersion}" -f
+    # check if everything is ok
+    - >
+      if [ ! $? -eq 0 ]; then
+          echo "Can't create tag '${newVersion}'"
+          exit 1
+      fi
+    # push the tag
+    - git push origin --tags -f
+    - >
+      if [ ! $? -eq 0 ]; then
+          echo "Can't push tag '${newVersion}'"
+          exit 1
+      fi
+    - echo "TAG SUCCESSFULLY"
+    - localfilepath="${newVersion}.tar.gz"
+    - git archive --format=tar.gz HEAD > "${localfilepath}"
+    # check if everything is ok
+    - >
+      if [ ! $? -eq 0 ]; then
+          echo "cannot execute: git archive --format=tar.gz HEAD > \"${localfilepath}\""
+          exit 1
+      fi
+    # create the tag file
+    - echo "${newVersion}" > "TAG"
+    - echo "Artifact ${localfilepath}"
+  artifacts:
+    paths:
+      - TAG
+      - "./${localfilepath}"
+    exclude:
+      - $CI_PROJECT_DIR/.git/**/*
+    expire_in: 10 mins
+  only:
+    - staging
 
 artifact:
-    stage: artifact
-    only:
-        - master
-    before_script:
-        - steplix-updater
-        - steplix gitlab setup-git
-        - steplix gitlab setup-amazon
-        - steplix gitlab flag init
-    script:
-        - steplix gitlab artifact
-        - steplix gitlab flag success
-    after_script:
-        - steplix gitlab slack
+  variables:
+    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY}
+    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY}
+    AWS_REGION: ${AWS_REGION}
+    FOLDER_PATH: ${CI_PROJECT_DIR}
+    S3_FOLDER_PATH: ${CI_PROJECT_PATH}
+    BUCKET: "s3://steplix-applications"
+  stage: artifact
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  when: on_success
+  needs:
+    - tag
+  dependencies:
+    - tag
+  script:
+    - aws --version
+    # precheck if amazon can access to S3
+    - aws s3 ls > /dev/null 2>&1
+    - >
+      if [ ! $? -eq 0 ]; then
+          echo "aws does not have permissions to interact with S3."
+          exit 1
+      fi
+    - localfilepath="$(cat TAG).tar.gz"
+    - echo "origin -> ${localfilepath}"
+    - destination="${BUCKET}/${S3_FOLDER_PATH}/${localfilepath}"
+    - echo "destination -> ${destination}"
+    - aws s3 cp "${localfilepath}" "${destination}"
+    - >
+      if [ ! $? -eq 0 ]; then
+        echo "error uploading to ${destination}"
+        exit 1
+      fi
+    - echo "ARTIFACT SUCCESSFULLY"
+  only:
+    - staging
+
+merge-request:
+  variables:
+    PROJECT_ID: ${CI_PROJECT_ID}
+    CURRENT_BRANCH: ${CI_COMMIT_BRANCH}
+    HOST: ${CI_PROJECT_URL}
+  stage: merge-request
+  image: node:14.18.0
+  before_script:
+    - git --version
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@${HOST}
+  script:
+    - >
+      if [ ${CURRENT_BRANCH} == "develop" ]; then
+        TARGET_BRANCH="testing"
+      elif [ ${CURRENT_BRANCH} == "testing" ]; then
+        TARGET_BRANCH="staging"
+      fi
+    # Extract the host where the server is running, and add the URL to the APIs
+    - > 
+      if [[ $HOST =~ ^https?://[^/]+ ]]; then
+        HOST="${BASH_REMATCH[0]}/api/v4/projects/"
+      fi
+    - >
+        body="{
+        \"id\": ${PROJECT_ID},
+        \"source_branch\": \"${CURRENT_BRANCH}\",
+        \"target_branch\": \"${TARGET_BRANCH}\",
+        \"title\": \"Merge ${CURRENT_BRANCH} on ${TARGET_BRANCH}\"
+        }";
+    # Require a list of all the merge request and take a look if there is already one with the same source branch
+    - listmr=`curl --silent "${HOST}${PROJECT_ID}/merge_requests?state=opened" --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}"`;
+    - countBranchs=`echo ${listmr} | { grep -o "\"source_branch\":\"${CURRENT_BRANCH}\"" || true; } | wc -l`;
+    #   No MR found, let's create a new one
+    - >
+      if [ ${countBranchs} -eq 0 ]; then
+        curl -X POST "${HOST}${PROJECT_ID}/merge_requests" \
+            --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}" \
+            --header "Content-Type: application/json" \
+            --data "${body}";
+
+        # check if everything is ok
+
+        if [ ! $? -eq 0 ]; then
+            echo error "cannot create merge request: from ${CURRENT_BRANCH} to ${TARGET_BRANCH}"
+        fi
+
+        echo success "Opened a new merge request: from ${CURRENT_BRANCH} to ${TARGET_BRANCH}";
+        fi
+  only:
+    - develop
+    - testing
+
+merge:
+  variables:
+    CURRENT_BRANCH: ${CI_COMMIT_BRANCH}
+    FOLDER_PATH: ${CI_PROJECT_DIR}
+    TARGET_BRANCH: "master"
+    MESSAGE: "Merge ${CURRENT_BRANCH} on ${TARGET_BRANCH}."
+  stage: merge
+  when: manual
+  image: node:14.18.0
+  before_script:
+    - git --version
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - project_url=$(echo ${CI_PROJECT_URL} | sed 's/https:\/\///')
+    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@$project_url
+  script:
+    - echo "Merge branches ${TARGET_BRANCH} with ${CURRENT_BRANCH}"
+    - cd ${FOLDER_PATH} > /dev/null 2>&1
+
+    # fetch all
+    - git fetch --all
+    - >
+      if [ ! $? -eq 0 ]; then
+        echo error "Can't fetch branches"
+        exit 1
+      fi
+
+    # checkout to target branch
+    - git checkout ${TARGET_BRANCH}
+
+    # merge branches
+    - git merge origin/${CURRENT_BRANCH} -m "${MESSAGE}"
+    - >
+      if [ ! $? -eq 0 ]; then
+        echo error "Can't merge branches '${TARGET_BRANCH}' with '${CURRENT_BRANCH}'"
+        exit 1
+      fi
+
+    # push merge
+    - git push -f origin ${TARGET_BRANCH}
+    - > 
+      if [ ! $? -eq 0 ]; then
+        echo error "Can't push to git branch '${TARGET_BRANCH}'"
+        exit 1
+      fi
+  after_script:
+    - echo "MERGED SUCCESSFULLY"
+  only:
+    - staging
 
 deploy:
-    stage: deploy
-    only:
-        - master
-    before_script:
-        - steplix-updater
-        - steplix gitlab setup-amazon
-        - steplix gitlab flag init
-    script:
-        - steplix gitlab deploy
-        - steplix gitlab flag success
-    after_script:
-        - steplix gitlab slack
+  variables:
+    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY}
+    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY}
+    AWS_REGION: ${AWS_REGION_TEST}
+  stage: deploy
+  environment: testing
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  dependencies:
+    - build
+  script:
+    - aws --version
+    - aws s3 rm s3://${ENV_WEBSITE_BUCKET} --recursive
+    - aws s3 cp out s3://${ENV_WEBSITE_BUCKET} --recursive --include "*"
+    - aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DIST_ID} --paths "/*"
+  after_script:
+    - echo "DEPLOYED SUCCESSFULLY"
+  only:
+    - testing
+
+release:
+  variables:
+    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_PRODUCTION}
+    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY_PRODUCTION}
+    AWS_REGION: ${AWS_REGION_PRODUCTION}
+  stage: release
+  when: manual
+  environment: production
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  dependencies:
+    - build
+  script:
+    - aws --version
+    - aws s3 rm s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive
+    - aws s3 cp out s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive --include "*"
+    - aws cloudfront create-invalidation --distribution-id ${AWS_DEPLOY_CLOUDFRONT_DIST_ID_PRODUCTION} --paths "/*"
+    - echo "DEPLOYED SUCCESSFULLY"
+  only:
+    - master
