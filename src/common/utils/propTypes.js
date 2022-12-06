@@ -16,5 +16,8 @@ export const propTypeIconName = PropTypes.oneOf([
     'car',
     'communications',
     'news', 
-    'aeronautics'
+    'aeronautics',
+    'mail',
+    'instagram',
+    'linkedIn'
 ]);

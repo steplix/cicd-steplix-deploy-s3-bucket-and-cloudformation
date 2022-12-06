@@ -14,6 +14,12 @@ export * from './car'
 export * from './communications'
 export * from './news'
 export * from './aeronautics'
+export * from './mail'
+export * from './instagram'
+export * from './linkedIn'
+export * from './iso9001'
+export * from './inet'
+export * from './iram'
 
 
 

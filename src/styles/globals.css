@@ -329,3 +329,11 @@ p {
 
 
 /* END GRADIENTS */
+
+/* ICON */
+
+.bg-icon {
+    background-color: rgba(217,217,217,0.15);
+}
+
+/* END ICON */
