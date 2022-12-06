@@ -49,7 +49,7 @@ tag:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
     - project_url=$(echo ${CI_PROJECT_URL} | sed 's/https:\/\///')
-    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@$project_url
+    - git remote set-url origin https://oauth2:${STEPLIX_GITLAB_ACCESS_TOKEN}@$project_url
   script:
     # get the full tag list
     - git fetch --tags
@@ -197,7 +197,7 @@ merge-request:
     - git --version
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@${HOST}
+    - git remote set-url origin https://oauth2:${STEPLIX_GITLAB_ACCESS_TOKEN}@${HOST}
   script:
     - >
       if [ ${CURRENT_BRANCH} == "develop" ]; then
@@ -218,13 +218,13 @@ merge-request:
         \"title\": \"Merge ${CURRENT_BRANCH} on ${TARGET_BRANCH}\"
         }";
     # Require a list of all the merge request and take a look if there is already one with the same source branch
-    - listmr=`curl --silent "${HOST}${PROJECT_ID}/merge_requests?state=opened" --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}"`;
+    - listmr=`curl --silent "${HOST}${PROJECT_ID}/merge_requests?state=opened" --header "PRIVATE-TOKEN:${STEPLIX_GITLAB_ACCESS_TOKEN}"`;
     - countBranchs=`echo ${listmr} | { grep -o "\"source_branch\":\"${CURRENT_BRANCH}\"" || true; } | wc -l`;
     #   No MR found, let's create a new one
     - >
       if [ ${countBranchs} -eq 0 ]; then
         curl -X POST "${HOST}${PROJECT_ID}/merge_requests" \
-            --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}" \
+            --header "PRIVATE-TOKEN:${STEPLIX_GITLAB_ACCESS_TOKEN}" \
             --header "Content-Type: application/json" \
             --data "${body}";
 
@@ -254,7 +254,7 @@ merge:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
     - project_url=$(echo ${CI_PROJECT_URL} | sed 's/https:\/\///')
-    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@$project_url
+    - git remote set-url origin https://oauth2:${STEPLIX_GITLAB_ACCESS_TOKEN}@$project_url
   script:
     - echo "Merge branches ${TARGET_BRANCH} with ${CURRENT_BRANCH}"
     - cd ${FOLDER_PATH} > /dev/null 2>&1
