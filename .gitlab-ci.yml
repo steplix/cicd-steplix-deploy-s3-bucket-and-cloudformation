@@ -1,17 +1,16 @@
 stages:
   # - test
-#   - aws-docker
   - build
   - tag
   - artifact
   - merge-request
   - merge
   - deploy
-  # - release
+  - release
 
 # test:
 #   stage: test
-#   image: node:16.17.0
+#   image: node:14.18.0
 #   script:
 #     - node --version
 #     - npm run lint
@@ -19,29 +18,10 @@ stages:
 #     - echo "PASSED TESTS"
 #   only:
 #     - develop
-# aws-docker:
-#   stage: aws-docker
-#   variables:
-#     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY}
-#     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY}
-#     AWS_REGION: ${AWS_REGION_TEST}
-#   image:
-#     name: amazon/aws-cli
-#     entrypoint: [""]
-#   before_script:
-#     - yum update
-#     - yum search docker
-#     - yum -y install docker 
-#     - systemctl start docker
-#     - systemctl enable docker
-#   script:
-#     - aws --version
-#     - docker --version
-#   only:
-#     - develop
+
 build:
   stage: build
-  image: node:16.17.0
+  image: node:14.18.0
   script:
     - node --version
     - npm ci
@@ -61,7 +41,7 @@ tag:
     BRANCH: ${CI_COMMIT_REF_NAME}
   stage: tag
   when: manual
-  image: node:16.17.0
+  image: node:14.18.0
   dependencies:
     - build
   before_script:
@@ -100,7 +80,6 @@ tag:
         minor=$(( $minor + 1 ))
         patch=0
       elif [ "${TYPE_UPDATE}" == "mayor" ]; then
-        echo "ENTRO AL IF DE MAYOR"
         mayor=$(( $mayor + 1 ))
         minor=0
         patch=0
@@ -171,7 +150,7 @@ artifact:
   variables:
     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY}
     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY}
-    AWS_REGION: ${AWS_REGION_TEST}
+    AWS_REGION: ${AWS_REGION}
     FOLDER_PATH: ${CI_PROJECT_DIR}
     S3_FOLDER_PATH: ${CI_PROJECT_PATH}
     BUCKET: "s3://steplix-applications"
@@ -213,12 +192,12 @@ merge-request:
     CURRENT_BRANCH: ${CI_COMMIT_BRANCH}
     HOST: ${CI_PROJECT_URL}
   stage: merge-request
-  image: node:16.17.0
+  image: node:14.18.0
   before_script:
     - git --version
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - git remote set-url origin https://oauth2:${STEPLIX_GITLAB_ACCESS_TOKEN}@${HOST}
+    - git remote set-url origin https://oauth2:${ENV_GITLAB_ACCESS_TOKEN}@${HOST}
   script:
     - >
       if [ ${CURRENT_BRANCH} == "develop" ]; then
@@ -239,13 +218,13 @@ merge-request:
         \"title\": \"Merge ${CURRENT_BRANCH} on ${TARGET_BRANCH}\"
         }";
     # Require a list of all the merge request and take a look if there is already one with the same source branch
-    - listmr=`curl --silent "${HOST}${PROJECT_ID}/merge_requests?state=opened" --header "PRIVATE-TOKEN:${STEPLIX_GITLAB_ACCESS_TOKEN}"`;
+    - listmr=`curl --silent "${HOST}${PROJECT_ID}/merge_requests?state=opened" --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}"`;
     - countBranchs=`echo ${listmr} | { grep -o "\"source_branch\":\"${CURRENT_BRANCH}\"" || true; } | wc -l`;
     #   No MR found, let's create a new one
     - >
       if [ ${countBranchs} -eq 0 ]; then
         curl -X POST "${HOST}${PROJECT_ID}/merge_requests" \
-            --header "PRIVATE-TOKEN:${STEPLIX_GITLAB_ACCESS_TOKEN}" \
+            --header "PRIVATE-TOKEN:${ENV_GITLAB_ACCESS_TOKEN}" \
             --header "Content-Type: application/json" \
             --data "${body}";
 
@@ -257,7 +236,6 @@ merge-request:
 
         echo success "Opened a new merge request: from ${CURRENT_BRANCH} to ${TARGET_BRANCH}";
         fi
-
   only:
     - develop
     - testing
@@ -270,7 +248,7 @@ merge:
     MESSAGE: "Merge ${CURRENT_BRANCH} on ${TARGET_BRANCH}."
   stage: merge
   when: manual
-  image: node:16.17.0
+  image: node:14.18.0
   before_script:
     - git --version
     - git config --global user.name "${GITLAB_USER_NAME}"
@@ -307,9 +285,8 @@ merge:
         echo error "Can't push to git branch '${TARGET_BRANCH}'"
         exit 1
       fi
-
-    # sayonara
-    - echo success "Merged."
+  after_script:
+    - echo "MERGED SUCCESSFULLY"
   only:
     - staging
 
@@ -330,29 +307,29 @@ deploy:
     - aws s3 rm s3://${ENV_WEBSITE_BUCKET} --recursive
     - aws s3 cp out s3://${ENV_WEBSITE_BUCKET} --recursive --include "*"
     - aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DIST_ID} --paths "/*"
+  after_script:
     - echo "DEPLOYED SUCCESSFULLY"
   only:
-    # - testing
+    - testing
+
+release:
+  variables:
+    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_PRODUCTION}
+    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY_PRODUCTION}
+    AWS_REGION: ${AWS_REGION_PRODUCTION}
+  stage: release
+  when: manual
+  environment: production
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  dependencies:
+    - build
+  script:
+    - aws --version
+    - aws s3 rm s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive
+    - aws s3 cp out s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive --include "*"
+    - aws cloudfront create-invalidation --distribution-id ${AWS_DEPLOY_CLOUDFRONT_DIST_ID_PRODUCTION} --paths "/*"
+    - echo "DEPLOYED SUCCESSFULLY"
+  only:
     - master
-
-# release:
-#   variables:
-#     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_PRODUCTION}
-#     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_KEY_PRODUCTION}
-#     AWS_REGION: ${AWS_REGION_PRODUCTION}
-#   stage: release
-#   environment: production
-#   image:
-#     name: amazon/aws-cli
-#     entrypoint: [""]
-#   dependencies:
-#     - build
-#   script:
-#     - aws --version
-#     - aws s3 rm s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive
-#     - aws s3 cp out s3://${ENV_WEBSITE_BUCKET_PRODUCTION} --recursive --include "*"
-#     - aws cloudfront create-invalidation --distribution-id ${AWS_DEPLOY_CLOUDFRONT_DIST_ID_PRODUCTION} --paths "/*"
-#     - echo "DEPLOYED SUCCESSFULLY"
-#   only:
-#     - master
-
