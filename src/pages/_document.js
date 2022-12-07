@@ -5,8 +5,6 @@ export default function Document() {
     <Html>
         <Head>
             <link rel="stylesheet" href="https://use.typekit.net/mzd1apf.css" />
-            { process && process?.env?.NODE_ENV !== 'production' ? (
-              <meta name="robots" content="noindex" /> ) : null }
         </Head>
       <body>
         <Main />
