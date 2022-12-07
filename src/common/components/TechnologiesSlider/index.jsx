@@ -1,58 +1,48 @@
 import React from "react";
-import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react"
-import aws from "@/public/assets/img/technologies/aws.svg";
-import docker from "@/public/assets/img/technologies/docker.svg";
-import figma from "@/public/assets/img/technologies/figma.svg";
-import flutter from "@/public/assets/img/technologies/flutter.svg";
-import git from "@/public/assets/img/technologies/git.svg";
-import kotlin from "@/public/assets/img/technologies/kotlin.svg";
-import nextjs from "@/public/assets/img/technologies/nextjs.svg";
-import nodejs from "@/public/assets/img/technologies/nodejs.svg";
-import reactjs from "@/public/assets/img/technologies/aws.svg";
 
 const images = [
   {
-    image: aws,
+    image: "static/technologies/aws.svg",
     alt: "Amazon Logo",
   },
   {
-    image: docker,
+    image: "static/technologies/docker.svg",
     alt: "Docker Logo",
 
   },
   {
-    image: figma,
+    image: "static/technologies/figma.svg",
     alt: "Figma Logo",
 
   },
   {
-    image: flutter,
+    image: "static/technologies/flutter.svg",
     alt: "Flutter Logo",
 
   },
   {
-    image: git,
+    image: "static/technologies/git.svg",
     alt: "Git Logo",
 
   },
   {
-    image: kotlin,
+    image: "static/technologies/kotlin.svg",
     alt: "Kotlin Logo",
 
   },
   {
-    image: nextjs,
+    image: "static/technologies/nextjs.svg",
     alt: "Next Logo",
 
   },
   {
-    image: nodejs,
+    image: "static/technologies/nodejs.svg",
     alt: "Node Logo",
 
   },
   {
-    image: reactjs,
+    image: "static/technologies/reactjs.svg",
     alt: "React Logo",
 
   },
@@ -83,7 +73,7 @@ const TechnologiesSlider = () => {
         {images.map((image, index) => {
           return (
             <div className={`keen-slider__slide number-slide${index}`}key={index}>
-              <Image width={100} height={50} src={image.image} alt={image.alt} />
+              <img width="100" height="50" src={image.image} alt={image.alt} />
             </div>
           );
         })} 
