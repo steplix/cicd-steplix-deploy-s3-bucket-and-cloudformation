@@ -2,15 +2,18 @@ module.exports = {
     mode: "jit",
     purge: ["./src/**/*.{ts,tsx,js,jsx}"],
     darkMode: false,
+    //TODO: Replace purple with purpleV3 when the V3 version starts developing
     theme: {
         colors: {
             white: "#FFFFFF",
-            blue: "#00A7E1",
-            red: "#F32735",
-            yellow: "#FFDA00",
-            purple: "#180228",
-            black: "#0D0D0D",
+            "neutral-white": "#F7F7F7",
+            blue: "#00A9E0",
+            red: "#EE2737",
+            yellow: "#FEDB00",
+            purple: "#3C1053",
+            black: "#121212",
             "purple-light": "#341748",
+            purpleV3: "#3C1053"
         },
         fontSize: {
             xs: ["12px"],
@@ -20,12 +23,6 @@ module.exports = {
             xl: ["20px"],
             "2xl": ["22px"],
             "3xl": ["24px"],
-            "4xl": ["30px"],
-            "5xl": ["32px"],
-            "6xl": ["36px"],
-            "7xl": ["40px"],
-            "8xl": ["42px"],
-            "9xl": ["48px"],
             "10xl": ["50px"],
             "11xl": ["60px"],
             "12xl": ["64px"],
@@ -37,6 +34,7 @@ module.exports = {
         },
         fontFamily: {
             sofia: "sofia-pro",
+            'poppins': ["Poppins", "sans-serif"]
         },
         boxShadow: {
             steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
