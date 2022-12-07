@@ -39,18 +39,7 @@ module.exports = {
         boxShadow: {
             steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
         },
-        extend: {
-            keyframes: {
-                slide: {
-                    "0%": {transform: "translateX(250px)"},
-                    "100%": {transform: "translateX(calc(-250px *9))"}
-                }
-                
-            },
-            animation: {
-                slide: "slide 20s linear infinite",
-            }
-        },
+        extend: {},
     
     },
     variants: {
