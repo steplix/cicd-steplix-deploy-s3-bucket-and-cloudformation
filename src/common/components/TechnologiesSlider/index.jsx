@@ -14,30 +14,47 @@ import reactjs from "@/public/assets/img/technologies/aws.svg";
 const images = [
   {
     image: aws,
+    alt: "Amazon Logo",
   },
   {
     image: docker,
+    alt: "Docker Logo",
+
   },
   {
     image: figma,
+    alt: "Figma Logo",
+
   },
   {
     image: flutter,
+    alt: "Flutter Logo",
+
   },
   {
     image: git,
+    alt: "Git Logo",
+
   },
   {
     image: kotlin,
+    alt: "Kotlin Logo",
+
   },
   {
     image: nextjs,
+    alt: "Next Logo",
+
   },
   {
     image: nodejs,
+    alt: "Node Logo",
+
   },
   {
     image: reactjs,
+    alt: "React Logo",
+
   },
 ];
 
@@ -66,7 +83,7 @@ const TechnologiesSlider = () => {
         {images.map((image, index) => {
           return (
             <div className={`keen-slider__slide number-slide${index}`}key={index}>
-              <Image width={100} height={50} src={image.image} alt="images" />
+              <Image width={100} height={50} src={image.image} alt={image.alt} />
             </div>
           );
         })} 
