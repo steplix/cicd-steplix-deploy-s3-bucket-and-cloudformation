@@ -451,7 +451,14 @@
         "item6": "Contactanos"
     },
     "footer": {
-        "certificateText": "Política de calidad"
+        "certificateText": "Política de calidad",
+        "rights": "Todos los derechos reservados®",
+        "links": {
+            "item0": "Quienes somos",
+            "item1": "Que hacemos",
+            "item2": "Nuestro portfolio",
+            "item3": "Contactanos"
+        }
     },
     "metaTags": {
         "home": {
