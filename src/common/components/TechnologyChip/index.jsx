@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import tagImage from "@/public/static/tag-image.png";
 
 const Chip = ({ label = "Front End", image = null, alt, customClass = "" }) => {
   return (
