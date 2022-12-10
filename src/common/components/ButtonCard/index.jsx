@@ -1,16 +1,25 @@
 import React from "react";
-import Image from "next/image";
-const ButtonCard = ({clickEvent, label="Button", buttonImage = null}) => {
+
+const ButtonCard = ({
+  clickEvent,
+  label = "Button",
+  buttonImage = null,
+  title = label,
+}) => {
   return (
     <button
-      className="flex flex-row justify-center bg-blue active:bg-sky-active text-white w-fit h-7 rounded-xl gap-y-2.5"
-      title=""
+      className="w-fit h-fit bg-blue hover:cursor-pointer active:bg-sky-active text-white rounded-xl gap-y-2.5"
+      title={title}
       alt={label}
       type="button"
       onClick={clickEvent}
     >
-        {buttonImage ? <Image src={buttonImage} width={12} height={30} alt="Button Image" /> : null}
-      <label className="px-4">{label}</label>
+      <div className="flex flex-row items-center mx-3 my-1">
+        {buttonImage ? (
+          <img src={buttonImage} width="15" height="30" alt="Button Image" />
+        ) : null}
+        <label className={buttonImage ? "ml-2" : null}>{label}</label>
+      </div>
     </button>
   );
 };
