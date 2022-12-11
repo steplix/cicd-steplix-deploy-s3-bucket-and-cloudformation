@@ -20,6 +20,8 @@ export * from './linkedIn'
 export * from './iso9001'
 export * from './inet'
 export * from './iram'
+export * from './chevronDown'
+
 
 
 

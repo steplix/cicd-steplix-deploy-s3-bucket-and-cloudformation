@@ -90,9 +90,7 @@ const Navbar = () => {
 
             {/* navbar desktop */}
             <nav
-                className={`hidden xl:flex w-full h-20 transition-height duration-500 ease-in-out absolute ${
-                    sticky ? "bg-black" : "bg-dark"
-                }`}
+                className={`hidden xl:flex w-full h-20 transition-height duration-500 ease-in-out absolute header-gradient`}
             >
                 <div className="container pr-28 flex top-0 justify-between items-center">
                     {/* logo desktop */}
@@ -101,7 +99,7 @@ const Navbar = () => {
                             <img
                                 src="/assets/img/logo-navbar.svg"
                                 alt="logo"
-                                className="w-[120px] h-[30px]"
+                                className="w-[80px] h-[30px]"
                             />
                         </a>
                     </Link>
@@ -114,7 +112,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 ${
+                                className={`hover:opacity-100 opacity-50 nav--link nav--link--blue ${
                                     router.pathname === "/about-us"
                                         ? "nav--active opacity-100"
                                         : ""
@@ -130,7 +128,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 ${
+                                className={`hover:opacity-100 opacity-50 nav--link nav--link--red ${
                                     router.pathname === "/stack"
                                         ? "nav--active opacity-100"
                                         : ""
@@ -146,7 +144,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 ${
+                                className={`hover:opacity-100 opacity-50 nav--link nav--link--yellow ${
                                     router.pathname === "/process"
                                         ? "nav--active opacity-100"
                                         : ""
@@ -157,7 +155,7 @@ const Navbar = () => {
                         </Link>
                         <Link href={{ pathname: "/jobs", query: query }}>
                             <a
-                                className={`hover:opacity-100 opacity-50 ${
+                                className={`hover:opacity-100 opacity-50 nav--link nav--link--blue ${
                                     router.pathname === "/jobs" ||
                                     router.pathname.substring(1, 5) === "jobs"
                                         ? "nav--active opacity-100"
@@ -167,7 +165,7 @@ const Navbar = () => {
                                 {t("navbar.item5")}
                             </a>
                         </Link>
-                        <Link
+                        {/* <Link
                             href={{
                                 pathname: "/contact",
                                 query: query,
@@ -184,7 +182,7 @@ const Navbar = () => {
                                     {t("navbar.item6")}
                                 </button>
                             </a>
-                        </Link>
+                        </Link> */}
                         <LanguageSelector />
                     </div>
                 </div>
