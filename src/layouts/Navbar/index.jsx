@@ -6,12 +6,15 @@ import Submenu from "@/common/components/Submenu";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
+import { routesMap } from "@/common/utils/constants";
+import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
     const { t } = useTranslation();
     let [query] = useLanguageQuery();
     query = { lang: query?.lang };
     const router = useRouter();
+    const routeTitle = routesMap[router.pathname]?.title
 
     //
     // State
@@ -42,7 +45,7 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full text-white z-50">
             {/* navbar mobile */}
-            <nav className="block xl:hidden">
+            <nav className="flex flex-col xl:hidden">
                 <div>
                     <Submenu
                         router={router}
@@ -52,47 +55,59 @@ const Navbar = () => {
                     />
                 </div>
                 <div
-                    className={`flex absolute justify-between items-center w-full h-[65px] transition-height duration-500 ease-in-out hover:bg-purple ${
-                        sticky ? "bg-black" : "bg-dark"
-                    }`}
+                    className="flex flex-col absolute w-full header-gradient"
                 >
-                    {/* logo mobile */}
-                    <div className="ml-5 items-center justify-center flex">
-                        <Link href={{ pathname: "/", query: query }}>
-                            <a>
-                                <img
-                                    src="/assets/img/logo-navbar.svg"
-                                    alt="logo"
-                                    className="w-[101px] h-6 md:w-40 md:h-10 lg:w-44 lg:h-12"
+                    <div className="flex justify-between items-center w-full h-[65px]">
+                        {/* logo mobile */}
+                        <div className="ml-5 items-center justify-center flex">
+                            <Link href={{ pathname: "/", query: query }}>
+                                <a>
+                                    <img
+                                        src="/assets/img/logo-navbar.svg"
+                                        alt="logo"
+                                        className="w-[101px] h-6 md:w-40 md:h-10 lg:w-[75px] lg:h-5"
+                                    />
+                                </a>
+                            </Link>
+                        </div>
+                        {/* button menu mobile */}
+                        <div className="z-50 mr-3">
+                            <button
+                                className="w-[32px] h-[32px] flex flex-col items-center justify-center z-50 xl:hidden"
+                                onClick={() => setToggle(!toggle)}
+                            >
+                                <span
+                                    className={`line ${toggle && "line--toggle"}`}
                                 />
-                            </a>
-                        </Link>
+                                <span
+                                    className={`line ${toggle && "line--toggle"}`}
+                                />
+                                <span
+                                    className={`line ${toggle && "line--toggle"}`}
+                                />
+                            </button>
+                        </div>
                     </div>
-                    {/* button menu mobile */}
-                    <div className="z-50 mr-3">
-                        <button
-                            className="w-[33px] h-[33px] flex flex-col items-center justify-center z-50 xl:hidden"
-                            onClick={() => setToggle(!toggle)}
-                        >
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                        </button>
-                    </div>
+                    {
+                        routeTitle ? (
+                            <div className="ml-5 h-[65px]">
+                                <h1 className="font-semibold text-[36px]">
+                                    {getOutlinedTitle(t(routeTitle)).title + " "}
+                                <span className="text--outlined">
+                                    {getOutlinedTitle(t(routeTitle))?.outlined}
+                                </span>
+                            </h1>                      
+                        </div>
+                        ) : null
+                    }
                 </div>
             </nav>
 
             {/* navbar desktop */}
             <nav
-                className={`hidden xl:flex w-full h-20 transition-height duration-500 ease-in-out absolute header-gradient`}
+                className={`hidden xl:flex xl:flex-col xl:justify-center w-full absolute header-gradient`}
             >
-                <div className="container pr-28 flex top-0 justify-between items-center">
+                <div className="container pr-28 flex top-0 justify-between items-center h-20">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
@@ -162,30 +177,24 @@ const Navbar = () => {
                                         : ""
                                 }`}
                             >
-                                {t("navbar.item5")}
+                                {t("navbar.item3")}
                             </a>
                         </Link>
-                        {/* <Link
-                            href={{
-                                pathname: "/contact",
-                                query: query,
-                            }}
-                        >
-                            <a>
-                                <button
-                                    className={`bg-white text-black rounded-full w-40 h-10 text-lg ${
-                                        router.pathname === "/contact"
-                                            ? "bg-yellow"
-                                            : ""
-                                    }`}
-                                >
-                                    {t("navbar.item6")}
-                                </button>
-                            </a>
-                        </Link> */}
                         <LanguageSelector />
                     </div>
                 </div>
+                {
+                   routeTitle ? (
+                    <div className="ml-5 h-[70px] container">
+                        <h1 className="font-bold text-[26px]">
+                            {getOutlinedTitle(t(routeTitle)).title + " "}
+                        <span className="text--outlined">
+                            {getOutlinedTitle(t(routeTitle))?.outlined}
+                        </span>
+                    </h1>                      
+                </div>
+                   ) : null 
+                }
             </nav>
         </div>
     );
