@@ -1,21 +1,11 @@
 import { PropTypes } from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useAvatarName } from '@/hooks/useAvatarName';
-import AvatarImage from './AvatarImage';
+import AvatarSkeleton from './AvatarSkeleton';
+import { AvatarContent } from './AvatarContent';
 
-import AvatarSkeleton from '@/common/components/Skeleton/AvatarSkeleton';
-
-const Avatar = ({
-  imgSrc,
-  name,
-  surname,
-  isLoading,
-  cssClasses = 'bg-gradient-to-r from-[#3C1053] to-[#00A9E0]',
-  width = 'w-8',
-  height = 'h-8',
-  nameStyle = 'text-black text-bold text-1xl',
-}) => {
-  const [nameInitials] = useAvatarName(name, surname);
+const Avatar = ({ imgSrc, name, surname, isLoading, cssClasses, nameStyle }) => {
+  const nameInitials = useAvatarName(name, surname);
   const [showClasses, setShowClasses] = useState(false);
 
   useEffect(() => {
@@ -27,19 +17,13 @@ const Avatar = ({
   return (
     <>
       <div
-        className={`flex justify-center items-center rounded-full ${
+        className={`flex justify-center items-center rounded-full w-10 h-10 md:w-12 md:h-12  ${
           showClasses ? cssClasses : ''
-        } ${width} ${height}`}>
+        }`}>
         {isLoading ? (
-          <AvatarSkeleton isIcon={false} padding='p-4' />
+          <AvatarSkeleton padding='p-4' />
         ) : (
-          <AvatarImage
-            imgSrc={imgSrc}
-            nameInitials={nameInitials}
-            nameStyle={nameStyle}
-            width={width}
-            height={height}
-          />
+          <AvatarContent imgSrc={imgSrc} nameInitials={nameInitials} nameStyle={nameStyle} />
         )}
       </div>
     </>
@@ -53,12 +37,11 @@ Avatar.propTypes = {
   name: PropTypes.string,
   surname: PropTypes.string,
   nameStyle: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string,
 };
 
 Avatar.defaultProps = {
-  cssClasses: 'bg-gradient-to-r from-[#3C1053] to-[#00A9E0]',
+  cssClasses: 'avatar-gradient',
+  nameStyle: 'text-black text-bold text-1xl',
 };
 
 export default Avatar;
