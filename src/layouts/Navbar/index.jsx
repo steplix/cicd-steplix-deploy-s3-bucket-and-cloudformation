@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div
                     className="flex flex-col absolute w-full header-gradient"
                 >
-                    <div className="flex justify-between items-center w-full h-[65px]">
+                    <div className="flex relative justify-between items-center w-full h-[65px]">
                         {/* logo mobile */}
                         <div className="ml-5 items-center justify-center flex">
                             <Link href={{ pathname: "/", query: query }}>
@@ -73,7 +73,7 @@ const Navbar = () => {
                         {/* button menu mobile */}
                         <div className="z-50 mr-3">
                             <button
-                                className="w-[32px] h-[32px] flex flex-col items-center justify-center z-50 xl:hidden"
+                                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 xl:hidden"
                                 onClick={() => setToggle(!toggle)}
                             >
                                 <span
@@ -119,7 +119,7 @@ const Navbar = () => {
                         </a>
                     </Link>
                     {/* menu options desktop */}
-                    <div className="flex justify-end items-center space-x-8 text-lg">
+                    <div className="flex justify-end items-center space-x-8 font-normal">
                         <Link
                             href={{
                                 pathname: "/about-us",
@@ -127,12 +127,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 nav--link nav--link--blue ${
-                                    router.pathname === "/about-us"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
-                            >
+                                className='nav--link nav--link--blue'>
                                 {t("navbar.item0")}
                             </a>
                         </Link>
@@ -143,11 +138,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 nav--link nav--link--red ${
-                                    router.pathname === "/stack"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
+                                className='nav--link nav--link--red'
                             >
                                 {t("navbar.item1")}
                             </a>
@@ -159,23 +150,14 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className={`hover:opacity-100 opacity-50 nav--link nav--link--yellow ${
-                                    router.pathname === "/process"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
+                                className='nav--link nav--link--yellow'
                             >
                                 {t("navbar.item2")}
                             </a>
                         </Link>
                         <Link href={{ pathname: "/jobs", query: query }}>
                             <a
-                                className={`hover:opacity-100 opacity-50 nav--link nav--link--blue ${
-                                    router.pathname === "/jobs" ||
-                                    router.pathname.substring(1, 5) === "jobs"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
+                                className='nav--link nav--link--blue'
                             >
                                 {t("navbar.item3")}
                             </a>
@@ -185,7 +167,7 @@ const Navbar = () => {
                 </div>
                 {
                    routeTitle ? (
-                    <div className="ml-5 h-[70px] container">
+                    <div className="h-[70px] container">
                         <h1 className="font-bold text-[26px]">
                             {getOutlinedTitle(t(routeTitle)).title + " "}
                         <span className="text--outlined">
