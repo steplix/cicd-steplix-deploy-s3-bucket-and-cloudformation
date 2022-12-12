@@ -1,65 +1,16 @@
 import React from "react";
-import Head from "next/head";
 import Flags from "@/common/components/Flags";
 import { useTranslation } from "next-export-i18n";
 import ImageFeatureCard from "@/common/components/ImageFeatureCard";
 import Fade from "react-reveal/Fade";
+import HeadTag from "@/common/components/HeadTag";
 
 const Stack = () => {
     const { t } = useTranslation();
 
     return (
         <>
-            <Head>
-                {/* HTML Meta Tags */}
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="icon" href="/favicon.png" />
-                <title>{t("metaTags.stack.title")}</title>
-                <meta
-                    name="description"
-                    content={t("metaTags.stack.description")}
-                />
-                <meta name="keywords" content={t("metaTags.stack.keywords")} />
-                {/* Facebook Meta Tags */}
-                <meta property="og:title" content={t("metaTags.stack.title")} />
-                <meta
-                    property="og:description"
-                    content={t("metaTags.stack.description")}
-                />
-                <meta property="og:url" content="https://steplix.com/stack/" />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:image"
-                    content="https://steplix.com/assets/img/logo.png"
-                />
-                <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content="200" />
-                <meta property="og:image:height" content="54" />
-                <meta property="og:image:alt" content="Steplix Logo" />
-                {/* Twitter Meta Tags */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta property="twitter:domain" content="steplix.com" />
-                <meta
-                    property="twitter:url"
-                    content="https://steplix.com/stack/"
-                />
-                <meta
-                    name="twitter:title"
-                    content={t("metaTags.stack.title")}
-                />
-                <meta
-                    name="twitter:description"
-                    content={t("metaTags.stack.description")}
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://steplix.com/assets/img/logo.png"
-                />
-            </Head>
+            <HeadTag title={t("metaTags.stack.title")} description={t("metaTags.stack.description")} keywords={t("metaTags.stack.keywords")} />
             <div className="relative">
                 <div className="bg--stack flex flex-col space-y-20">
                     <section className="container px-5 md:px-0 pt-28 xl:pr-24">

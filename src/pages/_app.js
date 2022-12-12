@@ -1,4 +1,5 @@
 import Script from "next/script";
+import "@fontsource/poppins"
 import "../styles/globals.css";
 import Layout from "@/layouts/Layout";
 
