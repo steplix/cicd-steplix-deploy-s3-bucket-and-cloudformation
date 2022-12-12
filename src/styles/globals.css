@@ -19,9 +19,18 @@
     }
 
     .text--outlined {
-        color: transparent;
+        color: rgba(255,255,255,0);
+        text-shadow:
+        -1px -1px 0 rgba(255, 255, 255 0),
+        0   -1px 0 rgba(255, 255, 255 0),
+        1px -1px 0 rgba(255, 255, 255 0),
+        1px  0   0 rgba(255, 255, 255 0),
+        1px  1px 0 rgba(255, 255, 255 0),
+        0    1px 0 rgba(255, 255, 255 0),
+       -1px  1px 0 rgba(255, 255, 255 0),
+       -1px  0   0 rgba(255, 255, 255 0); 
         letter-spacing: 0.1em;
-        -webkit-text-stroke: 1.3px rgb(255, 255, 255);
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
 
     .text--outlined.text-yellow {
@@ -184,14 +193,17 @@
     }
 
     .submenu {
-        @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 xl:hidden z-40 text-white;
-        clip-path: circle(30px at 93% 8%);
-        transition: all 800ms ease-out;
+        @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center xl:hidden z-40 text-white;
+        transform: translateX(-100%);
+        -webkit-transition: -webkit-transform 0.7s;
+        -moz-transition: -moz-transform 0.7s;
+        transition: transform 0.7s;
+        -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+        -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+        transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     }
     .submenu--toggle {
-        clip-path: circle(100%);
-
-        @apply opacity-100 bg-purple;
+        transform: translateX(0%);
     }
 
     .submenu--item {
@@ -199,7 +211,7 @@
     }
 
     .submenu--item--active {
-        @apply border-l-[6px] bg-icon font-bold text-xl;
+        @apply border-l-[6px] bg-icon font-bold text-base;
     }
 
     .nav--link--yellow::after {
@@ -207,6 +219,7 @@
         display: block;
         width: 0;
         height: 1.5px;
+        margin-top: 3px;
         transition: width 0.3s linear;
         @apply bg-yellow;
     }
@@ -216,6 +229,7 @@
         display: block;
         width: 0;
         height: 1.5px;
+        margin-top: 3px;
         transition: width 0.3s linear;
         @apply bg-red;
     }
@@ -225,6 +239,7 @@
         display: block;
         width: 0;
         height: 1.5px;
+        margin-top: 3px;
         transition: width 0.3s linear;
         @apply bg-blue;
     }

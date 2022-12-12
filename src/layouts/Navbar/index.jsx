@@ -65,7 +65,7 @@ const Navbar = () => {
                                     <img
                                         src="/assets/img/logo-navbar.svg"
                                         alt="logo"
-                                        className="w-[101px] h-6 md:w-40 md:h-10 lg:w-[75px] lg:h-5"
+                                        className="w-[75px] h-5"
                                     />
                                 </a>
                             </Link>
@@ -90,8 +90,8 @@ const Navbar = () => {
                     </div>
                     {
                         routeTitle ? (
-                            <div className="ml-5 h-[65px]">
-                                <h1 className="font-semibold text-[36px]">
+                            <div className="ml-5 h-[80px] md:h-[100px] flex items-center">
+                                <h1 className="font-semibold text-[36px] font-poppins">
                                     {getOutlinedTitle(t(routeTitle)).title + " "}
                                 <span className="text--outlined">
                                     {getOutlinedTitle(t(routeTitle))?.outlined}
@@ -107,7 +107,7 @@ const Navbar = () => {
             <nav
                 className={`hidden xl:flex xl:flex-col xl:justify-center w-full absolute header-gradient`}
             >
-                <div className="container pr-28 flex top-0 justify-between items-center h-20">
+                <div className="container pr-28 flex top-0 justify-between items-center h-[100px]">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
@@ -165,7 +165,7 @@ const Navbar = () => {
                         <LanguageSelector />
                     </div>
                 </div>
-                {
+                {/* {
                    routeTitle ? (
                     <div className="h-[70px] container">
                         <h1 className="font-bold text-[26px]">
@@ -176,7 +176,7 @@ const Navbar = () => {
                     </h1>                      
                 </div>
                    ) : null 
-                }
+                } */}
             </nav>
         </div>
     );
