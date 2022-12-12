@@ -1,22 +1,21 @@
-import React from "react";
+import PropTypes from "prop-types";
+import Icon from "../Icon";
 
-const Chip = ({ label = "Front End", image = null, alt, customClass = "" }) => {
+const Chip = ({ label, name, customIconClass }) => {
   return (
     <div className="w-[120px] h-[30px] text-purple-light border border-purple-light rounded-3xl">
-      <div className="flex flex-row justify-center w-fit items-center">
-        {image ? (
-          <img
-            alt={alt}
-            height="20"
-            src={image}
-            width="15"
-            className={customClass}
-          />
-        ) : null}
-        <label className={image ? "ml-2" : ""}>{label}</label>
+      <div className="flex flex-row justify-center">
+        <Icon name={name} className={customIconClass}/>
+        <label>{label}</label>
       </div>
     </div>
   );
 };
 
 export default Chip;
+
+Chip.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  customIconClass: PropTypes.string.isRequired,
+};
