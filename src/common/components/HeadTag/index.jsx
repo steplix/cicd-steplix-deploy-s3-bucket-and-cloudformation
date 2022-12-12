@@ -2,6 +2,8 @@ import React from 'react'
 import Head from "next/head";
 import PropTypes from "prop-types";
 
+// TODO: Make robots tag content dynamic
+
 const HeadTag = ({ title, keywords, description, children }) => {
   return (
     <Head>
@@ -10,7 +12,7 @@ const HeadTag = ({ title, keywords, description, children }) => {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="robots" content={(process && process?.env?.NODE_ENV) === 'production' ? "index, follow" : "noindex"} />
+    <meta name="robots" content="noindex" />
     <link rel="icon" href="/favicon.png" />
     <title>{title}</title>
     <meta
