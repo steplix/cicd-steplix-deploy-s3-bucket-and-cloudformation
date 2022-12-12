@@ -4,10 +4,10 @@ import { useMessageCopy } from '@/hooks/useMessageCopy';
 const ToastIcon = ({ icon, message, toastStyles, type, clickEvent, showToast }) => {
   const { showMessageCopied, setIsCopied } = useMessageCopy();
   const toastTypes = {
-    primary: 'bg-sky-steplix text-black',
-    error: 'bg-red-steplix text-white',
-    warning: 'bg-yellow-steplix text-black',
-    default: 'bg-black text-white',
+    primary: 'toast-primary',
+    error: 'toast-error',
+    warning: 'toast-warning',
+    default: 'toast',
   };
 
   const onClickEvent = () => {

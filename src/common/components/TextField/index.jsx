@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types';
-
 import ToastIcon from '../ToastIcon';
+import { mail as MailIcon, copy as CopyIcon } from '@/common/components/Icon/icons'
 
 const TextField = ({
-  size = 'w-12/12',
+  size,
   email,
-  styleProps = '',
+  styleProps,
   rightIcon,
   leftIcon,
   clickEvent,
-  showToast = false,
-  toastStyles = '',
+  showToast,
+  toastStyles,
   toastType,
   toastMessage,
 }) => {
   return (
     <div className={`${size} my-0 mx-auto relative`}>
       <div
-        className={`${styleProps} flex justify-between items-center mt-4 space-x-3 border-b-[1.2px] border-b-[#B0E1F7] pb-1`}>
+        className={`${styleProps} flex justify-between items-center mt-4 space-x-3 border-b-[1.2px] border-blue-light pb-1`}>
         <div className='flex gap-2 items-center'>
           {leftIcon}
           <span>{email}</span>
@@ -44,10 +44,21 @@ TextField.propTypes = {
   size: PropTypes.string,
   styleProps: PropTypes.string,
   toastStyles: PropTypes.string,
+  toastType: PropTypes.oneOf(['primary', 'error', 'warning', 'default']),
+  toastMessage: PropTypes.string,
 };
 
 TextField.defaultProps = {
   email: 'example@gmail.com',
+  toastMessage: 'Copied',
+  toastType: 'default',
+  rightIcon: <CopyIcon className='w-5' />,
+  leftIcon: <MailIcon className='w-5' />,
+  clickEvent: () => console.log('Click event is Required'),
+  showToast: true,
+  size: 'w-12/12',
+  styleProps: '',
+  toastStyles: '',
 };
 
 export default TextField;

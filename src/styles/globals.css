@@ -337,3 +337,23 @@ p {
 }
 
 /* END ICON */
+
+/* TOAST ICON */
+
+.toast-primary {
+    @apply bg-blue text-black;
+}
+
+.toast-error {
+    @apply bg-red text-white;
+}
+
+.toast-warning {
+    @apply bg-yellow text-black;
+}
+
+.toast {
+    @apply bg-black text-white;
+}
+
+/* END TOAST ICON */
