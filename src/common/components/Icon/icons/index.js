@@ -20,6 +20,16 @@ export * from './linkedIn'
 export * from './iso9001'
 export * from './inet'
 export * from './iram'
+export * from './chevronDown'
+export * from './frontend'
+export * from './qa'
+export * from './uiux'
+export * from './scrummaster'
+export * from './analyst'
+export * from './mobile'
+export * from './techlead'
+export * from './backend'
+export * from './po'
 
 
 
