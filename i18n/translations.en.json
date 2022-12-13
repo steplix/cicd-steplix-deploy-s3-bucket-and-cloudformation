@@ -441,7 +441,10 @@
         "item3": "Our Culture",
         "item4": "Happy Clients",
         "item5": "Become a Steplixer",
-        "item6": "Contact Us"
+        "item6": "Contact Us",
+        "currentLang": "English",
+        "targetLang": "Spanish",
+        "shortTargetLang": "es"
     },
     "footer": {
         "certificateText": "Quality politics",

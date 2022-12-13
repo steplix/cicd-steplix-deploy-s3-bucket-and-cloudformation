@@ -2,50 +2,59 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
-import { useLanguageQuery } from 'next-export-i18n';
+import { useLanguageQuery, useTranslation } from 'next-export-i18n';
 import { LanguageSwitcher } from "@/common/lib/i18n";
+import Icon from '@/components/Icon';
 
 const LanguageSelector = ({ sm }) => {
     const [query] = useLanguageQuery();
+    const { t } = useTranslation();
+    const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
     const { query: { slug } } = useRouter();
+    const shortCurrentLang = query?.lang;
+
+    const languageMap = {
+        current: {
+            query: shortCurrentLang,
+            text: t("navbar.currentLang")
+        },
+        target: {
+            query: t("navbar.shortTargetLang"),
+            text:  t("navbar.targetLang")
+        },
+    }
 
     return (
-        <div className="flex gap-2">
-            {query?.lang === "en" ? (
-                <LanguageSwitcher lang="es" slug={slug}>
-                    <div className="flex">
-                        <div className="w-[18px] h-[18px]">
-                            <img
-                                src="/assets/img/logo-es.svg"
-                                alt="logo"
-                                className="w-[18px] h-[18px]"
-                            />
+        <div className="flex gap-2 mt-40 xl:mt-0">
+            {shortCurrentLang ? (
+                    <div className="flex flex-col relative cursor-pointer">
+                        <div className="flex items-center space-x-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                            <div className="flex items-center space-x-1">
+                                <img
+                                    src={`/assets/img/logo-${languageMap.current.query}.svg`}
+                                    alt="logo"
+                                    className="w-[18px] h-[18px]"
+                                />
+                                <span className="text-sm xl:text-lg font-semibold">{sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}</span>
+                            </div>
+                            <Icon name="chevronDown" className={`dropdown-arrow ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
                         </div>
-                        {sm && (
-                            <p className="text-xs md:text-base my-auto ml-3">
-                                Versión en español
-                            </p>
-                        )}
-                    </div>
-                </LanguageSwitcher>
-            ) : (
-                <LanguageSwitcher lang="en" slug={slug}>
-                    <div className="flex">
-                        <div className="w-[18px] h-[18px]">
-                            <img
-                                src="/assets/img/logo-en.svg"
-                                alt="logo"
-                                className="w-[18px] h-[18px]"
-                            />
+                        <div className={`dropdown ${isDropdownOpen ? 'dropdown--open' : ''}`}>
+                            <LanguageSwitcher lang={languageMap.target.query} slug={slug}>
+                                <div className="flex items-center space-x-2 w-[99px] xl:w-[70px] dropdown-option px-1 mt-1" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                    <div className="flex items-center space-x-1">
+                                        <img
+                                            src={`/assets/img/logo-${languageMap.target.query}.svg`}
+                                            alt="logo"
+                                            className="w-[18px] h-[18px]"
+                                        />
+                                        <span className="text-sm xl:text-lg">{sm ? languageMap.target.text : languageMap.target.query.toUpperCase()}</span>
+                                    </div>
+                                </div>
+                            </LanguageSwitcher>
                         </div>
-                        {sm && (
-                            <p className="text-xs md:text-base my-auto ml-3">
-                                English version
-                            </p>
-                        )}
                     </div>
-                </LanguageSwitcher>
-            )}
+            ) : null}
         </div>
     );
 };
