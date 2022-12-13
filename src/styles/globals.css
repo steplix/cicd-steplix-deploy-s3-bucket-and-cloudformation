@@ -397,4 +397,30 @@
 
     /* END ICON */
 
+    .dropdown {
+        @apply absolute top-6;
+        transform: scale(0);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .dropdown--open {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .dropdown-arrow {
+        @apply w-[18px] h-[18px];
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-arrow--open {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-option:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-left: 1.5px solid #00A9E0;
+    }
+
 }
