@@ -2,23 +2,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
-import { useLanguageQuery } from 'next-export-i18n';
+import { useLanguageQuery, useTranslation } from 'next-export-i18n';
 import { LanguageSwitcher } from "@/common/lib/i18n";
 import Icon from '@/components/Icon';
 
 const LanguageSelector = ({ sm }) => {
     const [query] = useLanguageQuery();
+    const { t } = useTranslation();
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
     const { query: { slug } } = useRouter();
 
     const languageMap = {
         current: {
             query: query?.lang,
-            text: query?.lang === 'es' ? 'Español' : 'English'
+            text: "navbar.currentLang"
         },
         target: {
             query: query?.lang === 'es' ? 'en' : 'es',
-            text:  query?.lang === 'es' ? 'English' : 'Español'
+            text:  "navbar.targetLang"
         },
     }
 
@@ -33,7 +34,7 @@ const LanguageSelector = ({ sm }) => {
                                     alt="logo"
                                     className="w-[18px] h-[18px]"
                                 />
-                                <span className="text-sm xl:text-lg font-semibold">{sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}</span>
+                                <span className="text-sm xl:text-lg font-semibold">{sm ? t(languageMap.current.text) : languageMap.current.query.toUpperCase()}</span>
                             </div>
                             <Icon name="chevronDown" className={`dropdown-arrow ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
                         </div>
@@ -46,7 +47,7 @@ const LanguageSelector = ({ sm }) => {
                                             alt="logo"
                                             className="w-[18px] h-[18px]"
                                         />
-                                        <span className="text-sm xl:text-lg">{sm ? languageMap.target.text : languageMap.target.query.toUpperCase()}</span>
+                                        <span className="text-sm xl:text-lg">{sm ? t(languageMap.target.text) : languageMap.target.query.toUpperCase()}</span>
                                     </div>
                                 </div>
                             </LanguageSwitcher>
