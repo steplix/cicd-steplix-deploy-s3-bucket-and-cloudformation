@@ -21,6 +21,15 @@ export * from './news'
 export * from './pharmacist'
 export * from './sucess'
 export * from './trust'
+export * from './frontend'
+export * from './qa'
+export * from './uiux'
+export * from './scrummaster'
+export * from './analyst'
+export * from './mobile'
+export * from './techlead'
+export * from './backend'
+export * from './po'
 
 
 
