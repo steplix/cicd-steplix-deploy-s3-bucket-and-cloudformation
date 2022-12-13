@@ -450,7 +450,8 @@
         "item5": "Convertite en Steplixer",
         "item6": "Contactanos",
         "currentLang": "Español",
-        "targetLang": "Inglés"
+        "targetLang": "Inglés",
+        "shortTargetLang": "en"
     },
     "footer": {
         "certificateText": "Política de calidad",

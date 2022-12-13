@@ -11,21 +11,22 @@ const LanguageSelector = ({ sm }) => {
     const { t } = useTranslation();
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
     const { query: { slug } } = useRouter();
+    const shortCurrentLang = query?.lang;
 
     const languageMap = {
         current: {
-            query: query?.lang,
-            text: "navbar.currentLang"
+            query: shortCurrentLang,
+            text: t("navbar.currentLang")
         },
         target: {
-            query: query?.lang === 'es' ? 'en' : 'es',
-            text:  "navbar.targetLang"
+            query: t("navbar.shortTargetLang"),
+            text:  t("navbar.targetLang")
         },
     }
 
     return (
         <div className="flex gap-2 mt-40 xl:mt-0">
-            {languageMap?.current?.query ? (
+            {shortCurrentLang ? (
                     <div className="flex flex-col relative cursor-pointer">
                         <div className="flex items-center space-x-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                             <div className="flex items-center space-x-1">
@@ -34,7 +35,7 @@ const LanguageSelector = ({ sm }) => {
                                     alt="logo"
                                     className="w-[18px] h-[18px]"
                                 />
-                                <span className="text-sm xl:text-lg font-semibold">{sm ? t(languageMap.current.text) : languageMap.current.query.toUpperCase()}</span>
+                                <span className="text-sm xl:text-lg font-semibold">{sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}</span>
                             </div>
                             <Icon name="chevronDown" className={`dropdown-arrow ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
                         </div>
@@ -47,7 +48,7 @@ const LanguageSelector = ({ sm }) => {
                                             alt="logo"
                                             className="w-[18px] h-[18px]"
                                         />
-                                        <span className="text-sm xl:text-lg">{sm ? t(languageMap.target.text) : languageMap.target.query.toUpperCase()}</span>
+                                        <span className="text-sm xl:text-lg">{sm ? languageMap.target.text : languageMap.target.query.toUpperCase()}</span>
                                     </div>
                                 </div>
                             </LanguageSwitcher>

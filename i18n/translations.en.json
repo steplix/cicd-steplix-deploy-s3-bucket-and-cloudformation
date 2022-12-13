@@ -443,7 +443,8 @@
         "item5": "Become a Steplixer",
         "item6": "Contact Us",
         "currentLang": "English",
-        "targetLang": "Spanish"
+        "targetLang": "Spanish",
+        "shortTargetLang": "es"
     },
     "footer": {
         "certificateText": "Quality politics",
