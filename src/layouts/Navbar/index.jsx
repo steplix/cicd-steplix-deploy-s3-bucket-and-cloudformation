@@ -165,18 +165,6 @@ const Navbar = () => {
                         <LanguageSelector />
                     </div>
                 </div>
-                {/* {
-                   routeTitle ? (
-                    <div className="h-[70px] container">
-                        <h1 className="font-bold text-[26px]">
-                            {getOutlinedTitle(t(routeTitle)).title + " "}
-                        <span className="text--outlined">
-                            {getOutlinedTitle(t(routeTitle))?.outlined}
-                        </span>
-                    </h1>                      
-                </div>
-                   ) : null 
-                } */}
             </nav>
         </div>
     );
