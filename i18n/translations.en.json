@@ -444,7 +444,14 @@
         "item6": "Contact Us"
     },
     "footer": {
-        "certificateText": "Quality politics"
+        "certificateText": "Quality politics",
+        "rights": "All rights reserved®",
+        "links": {
+            "item0": "About us",
+            "item1": "What we do",
+            "item2": "Our portfolio",
+            "item3": "Contact us"
+        }
     },
     "metaTags": {
         "home": {
