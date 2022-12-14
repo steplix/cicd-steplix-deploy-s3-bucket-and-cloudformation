@@ -382,6 +382,10 @@
         background: linear-gradient(180deg, #00a9e0 -26.27%, #3c1053 29.75%, #000000 98.25%);
     }
 
+    .avatar-gradient {
+        @apply bg-gradient-to-r from-purple to-blue;
+    }
+
     /* END GRADIENTS */
 
     /* ICON */
