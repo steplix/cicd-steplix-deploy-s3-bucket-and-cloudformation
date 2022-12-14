@@ -352,7 +352,7 @@ p {
     @apply bg-yellow text-black;
 }
 
-.toast {
+.toast-default {
     @apply bg-black text-white;
 }
 

@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types';
-import ToastIcon from '../ToastIcon';
-import { mail as MailIcon, copy as CopyIcon } from '@/common/components/Icon/icons'
+import PropTypes from "prop-types";
+import ToastIcon from "../ToastIcon";
+import { mail as MailIcon, copy as CopyIcon } from "@/common/components/Icon/icons";
 
 const TextField = ({
-  size,
   email,
   styleProps,
   rightIcon,
@@ -15,10 +14,10 @@ const TextField = ({
   toastMessage,
 }) => {
   return (
-    <div className={`${size} my-0 mx-auto relative`}>
+    <div className={`w-10/12 my-0 mx-auto relative`}>
       <div
         className={`${styleProps} flex justify-between items-center mt-4 space-x-3 border-b-[1.2px] border-blue-light pb-1`}>
-        <div className='flex gap-2 items-center'>
+        <div className="flex gap-2 items-center">
           {leftIcon}
           <span>{email}</span>
         </div>
@@ -41,24 +40,22 @@ TextField.propTypes = {
   leftIcon: PropTypes.element,
   rightIcon: PropTypes.element,
   showToast: PropTypes.bool,
-  size: PropTypes.string,
   styleProps: PropTypes.string,
   toastStyles: PropTypes.string,
-  toastType: PropTypes.oneOf(['primary', 'error', 'warning', 'default']),
+  toastType: PropTypes.oneOf(["toast-primary", "toast-error", "toast-warning", "toast-default"]),
   toastMessage: PropTypes.string,
 };
 
 TextField.defaultProps = {
-  email: 'example@gmail.com',
-  toastMessage: 'Copied',
-  toastType: 'default',
-  rightIcon: <CopyIcon className='w-5' />,
-  leftIcon: <MailIcon className='w-5' />,
-  clickEvent: () => console.log('Click event is Required'),
+  email: "example@gmail.com",
+  toastMessage: "Copied",
+  toastType: "toast-default",
+  rightIcon: <CopyIcon className="w-5" />,
+  leftIcon: <MailIcon className="w-5" />,
+  clickEvent: () => console.log("Click event is Required"),
   showToast: true,
-  size: 'w-12/12',
-  styleProps: '',
-  toastStyles: '',
+  styleProps: "",
+  toastStyles: "",
 };
 
 export default TextField;

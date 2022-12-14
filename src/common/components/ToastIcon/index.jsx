@@ -1,14 +1,8 @@
-import PropTypes from 'prop-types';
-import { useMessageCopy } from '@/hooks/useMessageCopy';
+import PropTypes from "prop-types";
+import { useMessageCopy } from "@/hooks/useMessageCopy";
 
 const ToastIcon = ({ icon, message, toastStyles, type, clickEvent, showToast }) => {
   const { showMessageCopied, setIsCopied } = useMessageCopy();
-  const toastTypes = {
-    primary: 'toast-primary',
-    error: 'toast-error',
-    warning: 'toast-warning',
-    default: 'toast',
-  };
 
   const onClickEvent = () => {
     clickEvent();
@@ -16,11 +10,11 @@ const ToastIcon = ({ icon, message, toastStyles, type, clickEvent, showToast }) 
   };
 
   return (
-    <div className='w-fit relative' onClick={onClickEvent}>
-      <div className='cursor-pointer'>{icon}</div>
+    <div className="w-fit relative" onClick={onClickEvent}>
+      <div className="cursor-pointer">{icon}</div>
       {showToast && (
         <span
-          className={`${toastTypes[type]} ${toastStyles} absolute bottom-1/2 -right-3/4  py-1 px-3 rounded-md shadow-md transition-all ${showMessageCopied}`}>
+          className={`${type} ${toastStyles} absolute bottom-1/2 -right-3/4  py-1 px-3 rounded-md shadow-md transition-all ${showMessageCopied}`}>
           {message}
         </span>
       )}
@@ -33,12 +27,12 @@ ToastIcon.propTypes = {
   message: PropTypes.string,
   toastStyles: PropTypes.string,
   clickEvent: PropTypes.func,
-  type: PropTypes.oneOf(['primary', 'error', 'warning', 'default']),
+  type: PropTypes.oneOf(["toast-primary", "toast-error", "toast-warning", "toast-default"]),
 };
 
 ToastIcon.defaultProps = {
-  message: 'Copied',
-  type: 'default',
+  message: "Copied",
+  type: "toast-default",
 };
 
 export default ToastIcon;
