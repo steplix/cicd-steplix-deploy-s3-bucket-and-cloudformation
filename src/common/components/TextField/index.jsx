@@ -14,12 +14,12 @@ const TextField = ({
   toastMessage,
 }) => {
   return (
-    <div className={`w-10/12 my-0 mx-auto relative`}>
+    <div className={`w-56 lg:w-80 my-0 mx-auto relative`}>
       <div
         className={`${styleProps} flex justify-between items-center mt-4 space-x-3 border-b-[1.2px] border-blue-light pb-1`}>
         <div className="flex gap-2 items-center">
           {leftIcon}
-          <span>{email}</span>
+          <span className="text-black">{email}</span>
         </div>
         <ToastIcon
           toastStyles={toastStyles}
