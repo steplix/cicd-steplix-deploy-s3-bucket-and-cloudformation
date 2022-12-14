@@ -395,6 +395,27 @@
         background-color: rgba(217,217,217,0.15);
     }
 
+/* END ICON */
+
+/* TOAST ICON */
+
+.toast-primary {
+    @apply bg-blue text-black;
+}
+
+.toast-error {
+    @apply bg-red text-white;
+}
+
+.toast-warning {
+    @apply bg-yellow text-black;
+}
+
+.toast-default {
+    @apply bg-black text-white;
+}
+
+/* END TOAST ICON */
     /* END ICON */
 
     .dropdown {
