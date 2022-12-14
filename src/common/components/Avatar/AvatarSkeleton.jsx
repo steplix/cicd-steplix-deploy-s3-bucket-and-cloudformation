@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const AvatarSkeleton = ({ icon, padding, background }) => {
+const AvatarSkeleton = ({ icon, background }) => {
   return (
     <>
-      <div className={`${padding} ${background} rounded-full animate-pulse w-[fit-content]`}>
+      <div className={`${background} p-4 md:p-8 rounded-full animate-pulse w-[fit-content]`}>
         {icon && icon}
       </div>
     </>
@@ -12,13 +12,11 @@ const AvatarSkeleton = ({ icon, padding, background }) => {
 
 AvatarSkeleton.propTypes = {
   icon: PropTypes.element,
-  padding: PropTypes.string,
   background: PropTypes.string,
 };
 
 AvatarSkeleton.defaultProps = {
-  padding: 'p-4',
-  background: 'bg-black',
+  background: "bg-black",
 };
 
 export default AvatarSkeleton;

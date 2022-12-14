@@ -1,22 +1,15 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const AvatarName = ({ nameStyle, nameInitials }) => {
+const AvatarName = ({ nameInitials }) => {
   return (
-    <span
-    className={`${nameStyle} rounded-full w-full h-full flex justify-center items-center`}>
-    {nameInitials}
-  </span>
-  )
-}
+    <span className="text-black text-bold text-1xl rounded-full w-full h-full flex justify-center items-center">
+      {nameInitials}
+    </span>
+  );
+};
 
 AvatarName.propTypes = {
   nameInitials: PropTypes.string,
-  nameStyle: PropTypes.string,
 };
 
-AvatarName.defaultProps = {
-  nameInitials: 'DN',
-}
-
-
-export default AvatarName
+export default AvatarName;

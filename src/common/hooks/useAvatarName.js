@@ -1,14 +1,15 @@
-import { useMemo } from 'react';
+import { useEffect, useState } from "react";
 
 export const useAvatarName = (name, surname) => {
-  if (!name || !surname) throw new Error('Name and surname are required');
+  const [nameInitials, setnameInitials] = useState("");
 
-  const cutFirstNameLetter = useMemo(() => name.charAt(0).toUpperCase(), [name]);
-  const cutFirstSurnameLetter = useMemo(() => surname.charAt(0).toUpperCase(), [surname]);
-  const nameInitials = useMemo(
-    () => `${cutFirstNameLetter}${cutFirstSurnameLetter}`,
-    [cutFirstNameLetter, cutFirstSurnameLetter]
-  );
+  useEffect(() => {
+    if (!name || !surname) return;
+    const cutFirstNameLetter = name.charAt(0).toUpperCase();
+    const cutFirstSurnameLetter = surname.charAt(0).toUpperCase();
+
+    setnameInitials(`${cutFirstNameLetter}${cutFirstSurnameLetter}`);
+  }, [name, surname]);
 
   return nameInitials;
 };

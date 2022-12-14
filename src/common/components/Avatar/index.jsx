@@ -1,29 +1,32 @@
-import { PropTypes } from 'prop-types';
-import { useEffect, useState } from 'react';
-import { useAvatarName } from '@/hooks/useAvatarName';
-import AvatarSkeleton from './AvatarSkeleton';
-import { AvatarContent } from './AvatarContent';
+import { PropTypes } from "prop-types";
+import { useEffect, useState } from "react";
+import { useAvatarName } from "@/hooks/useAvatarName";
+import AvatarSkeleton from "./AvatarSkeleton";
+import AvatarImage from "./AvatarImage";
+import AvatarName from "./AvatarName";
 
-const Avatar = ({ imgSrc, name, surname, isLoading, cssClasses, nameStyle }) => {
+const Avatar = ({ imgSrc, name, surname, isLoading }) => {
   const nameInitials = useAvatarName(name, surname);
   const [showClasses, setShowClasses] = useState(false);
 
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading && !imgSrc) {
       setShowClasses(true);
     }
-  }, [isLoading]);
+  }, [imgSrc, isLoading]);
 
   return (
     <>
       <div
         className={`flex justify-center items-center rounded-full w-10 h-10 md:w-12 md:h-12  ${
-          showClasses ? cssClasses : ''
+          showClasses ? "avatar-gradient" : ""
         }`}>
         {isLoading ? (
-          <AvatarSkeleton padding='p-4' />
+          <AvatarSkeleton />
+        ) : imgSrc ? (
+          <AvatarImage imgSrc={imgSrc} />
         ) : (
-          <AvatarContent imgSrc={imgSrc} nameInitials={nameInitials} nameStyle={nameStyle} />
+          <AvatarName nameInitials={nameInitials} />
         )}
       </div>
     </>
@@ -32,16 +35,16 @@ const Avatar = ({ imgSrc, name, surname, isLoading, cssClasses, nameStyle }) => 
 
 Avatar.propTypes = {
   cssClasses: PropTypes.string,
-  imgSrc: PropTypes.string,
+  imgSrc: (props, propName, componentName) => {
+    if (!props[propName] && !props["name"] && !props["surname"]) {
+      return new Error(
+        `Provide an image source or a name and surname for the ${componentName} component.`
+      );
+    }
+  },
   isLoading: PropTypes.bool,
   name: PropTypes.string,
   surname: PropTypes.string,
-  nameStyle: PropTypes.string,
-};
-
-Avatar.defaultProps = {
-  cssClasses: 'avatar-gradient',
-  nameStyle: 'text-black text-bold text-1xl',
 };
 
 export default Avatar;
