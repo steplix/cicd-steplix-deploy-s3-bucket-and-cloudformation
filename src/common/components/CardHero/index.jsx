@@ -7,7 +7,7 @@ import { close as CloseIcon, bag as BagIcon } from '@/common/components/Icon/ico
  * @param children - SVG icon or img tag, This place is for the icon of the card
  */
 
-const HeroCard = ({ title, description, stylesProps, onClose, children }) => {
+const CardHero = ({ title, description, stylesProps, onClose, children }) => {
   return (
     <div
       className={`${stylesProps} w-60 bg-neutral-white my-0 mx-auto rounded-2xl card--shadow  min-h-[230px]`}>
@@ -23,7 +23,7 @@ const HeroCard = ({ title, description, stylesProps, onClose, children }) => {
   );
 };
 
-HeroCard.propTypes = {
+CardHero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   stylesProps: PropTypes.string,
@@ -31,10 +31,10 @@ HeroCard.propTypes = {
   children: PropTypes.element,
 };
 
-HeroCard.defaultProps = {
+CardHero.defaultProps = {
   stylesProps: '',
   onClose: () => console.log('On Close function is not defined'),
   children: <BagIcon className='w-9' />,
 };
 
-export default HeroCard;
+export default CardHero;

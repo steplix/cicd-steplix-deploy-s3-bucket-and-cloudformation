@@ -22,6 +22,16 @@ export * from './inet'
 export * from './iram'
 export * from './close'
 export * from './bag'
+export * from './chevronDown'
+export * from './frontend'
+export * from './qa'
+export * from './uiux'
+export * from './scrummaster'
+export * from './analyst'
+export * from './mobile'
+export * from './techlead'
+export * from './backend'
+export * from './po'
 
 
 

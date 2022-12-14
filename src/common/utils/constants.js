@@ -67,3 +67,21 @@ export const fieldCardValues = [
         iconName: 'aeronautics'
     },
 ];
+
+export const routesMap = {
+    "/": {
+        title: ""
+    },
+    "/about-us": {
+        title: "navbar.item0"
+    },
+    "/stack": {
+        title: "navbar.item1"
+    },
+    "/process": {
+        title: "navbar.item2"
+    },
+    "/jobs": {
+        title: "navbar.item3"
+    }
+}
