@@ -196,6 +196,10 @@ p {
     -webkit-text-stroke: 2.5px rgb(255, 255, 255);
   }
 
+  .text--outlined.text--violet {
+    -webkit-text-stroke: 1.3px #3C1053;
+  }
+
   .paragraph {
     @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl;
   }
@@ -751,4 +755,28 @@ p {
     background: rgba(255, 255, 255, 0.15);
     border-left: 1.5px solid #00a9e0;
   }
+
+
+  .underlined-title {
+    @apply font-semibold text-xl text-purple;
+    width: fit-content;
+  }
+
+  .underlined-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 3px;
+    @apply bg-blue;
+  }
+
+  .sidelined-title {
+    @apply flex space-x-3 items-center font-bold text-[26px] lg:text-[32px];
+    background: linear-gradient(180deg, #3C1053 43.71%, #00A9E0 126.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: normal;
+  }
+
 }
