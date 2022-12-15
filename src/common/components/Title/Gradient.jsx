@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ content, secondContent, size, borderPosition = 'bottom', borderWidth, height, leading = 'leading-10', color = 'title-gradient' }) => {
+const Title = ({ content, secondContent, size, borderPosition = 'bottom', borderWidth, height = '50px', leading = 'leading-10', color = 'title-gradient' }) => {
   return borderPosition === 'bottom' ? (
     <>
       <div className="title-gradient pb-[8px]">
@@ -28,8 +28,8 @@ Title.propTypes = {
   content: PropTypes.string.isRequired,
   secondContent: PropTypes.string,
   size: PropTypes.string,
-  height: PropTypes.string.isRequired,
-  borderPosition: PropTypes.oneOf(['bottom, left']),
+  height: PropTypes.string,
+  borderPosition: PropTypes.oneOf(['bottom', 'left']),
   borderWidth: PropTypes.string.isRequired,
   leading: PropTypes.string,
   color: PropTypes.string,
