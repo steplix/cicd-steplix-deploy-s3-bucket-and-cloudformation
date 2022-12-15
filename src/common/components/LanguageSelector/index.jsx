@@ -41,7 +41,7 @@ const LanguageSelector = ({ sm }) => {
                         </div>
                         <div className={`dropdown ${isDropdownOpen ? 'dropdown--open' : ''}`}>
                             <LanguageSwitcher lang={languageMap.target.query} slug={slug}>
-                                <div className="flex items-center space-x-2 w-[99px] xl:w-[70px] dropdown-option px-1 mt-1" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                <div className="flex items-center space-x-2 w-[99px] xl:w-[70px] dropdown-option mt-1" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                                     <div className="flex items-center space-x-1">
                                         <img
                                             src={`/assets/img/logo-${languageMap.target.query}.svg`}
