@@ -713,7 +713,7 @@ p {
   }
 
   .avatar-gradient {
-    @apply bg-gradient-to-r from-purple to-blue;
+    background: linear-gradient(180deg, #3C1053 43.71%, #00A9E0 126.87%);
   }
 
   /* END GRADIENTS */
@@ -751,4 +751,24 @@ p {
     background: rgba(255, 255, 255, 0.15);
     border-left: 1.5px solid #00a9e0;
   }
+
+  /* START AVATAR */
+
+  .avatar-size {
+    @apply w-[52px] h-[52px];
+  }
+
+  .avatar-size--small {
+    @apply w-[32px] h-[32px];
+  }
+
+  .avatar-size--medium {
+    @apply w-[42px] h-[42px];
+  }
+
+  .avatar-size--large {
+    @apply w-[72px] h-[72px];
+  }
+
+  /* END AVATAR */
 }
