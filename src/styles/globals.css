@@ -708,6 +708,13 @@ p {
     background: linear-gradient(180deg, #3c1053 43.71%, #00a9e0 126.87%);
   }
 
+.title-gradient {
+    background: linear-gradient(180deg, #3C1053 43.71%, #00A9E0 126.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
   .footer-gradient {
     background: linear-gradient(180deg, #00a9e0 -26.27%, #3c1053 29.75%, #000000 98.25%);
   }
@@ -747,9 +754,14 @@ p {
     transform: rotate(180deg);
   }
 
+  .dropdown-option {
+    transition: padding 0.3s ease
+  }
+
   .dropdown-option:hover {
     background: rgba(255, 255, 255, 0.15);
     border-left: 1.5px solid #00a9e0;
+    @apply px-1
   }
 
   /* START AVATAR */
