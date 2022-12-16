@@ -494,5 +494,6 @@
             "keywords": "Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
             "description": "Stack tecnológico de Steplix 🗻"
         }
-    }
+    },
+    "ButtonCardContact": "Agendar cita"
 }
