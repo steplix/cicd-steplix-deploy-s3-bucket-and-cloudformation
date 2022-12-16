@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import _ from 'lodash';
-import 'keen-slider/keen-slider.min.css';
-import { useKeenSlider } from 'keen-slider/react';
-import { useTranslation } from 'next-export-i18n';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import _ from "lodash";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import { useTranslation } from "next-export-i18n";
+import Fade from "react-reveal/Fade";
+import Title from '../Title/Gradient';
+import InvertedTitle from '../Title/Inverted';
 import TestimonialCard from '../TestimonialCard';
 
 const ResizePlugin = slider => {
@@ -174,6 +176,52 @@ const Carousel = () => {
 
   return (
     <>
+            <Title 
+            content={'Pasos hacia'} 
+            secondContent={'la cima'} 
+            size="text-[32px]" 
+            height="h-[80px]" 
+            borderWidth="w-[101px]" 
+            borderPosition="left" 
+            />
+            <br />
+            <Title 
+            content={'Equipos'} 
+            size="text-[32px]" 
+            height="h-[50px]" 
+            borderPosition="left" 
+            borderWidth="w-[101px]" 
+            color='title-gradient'
+            />
+            <br />
+            <Title 
+            content={'Exploramos'} 
+            secondContent={'tu problema'}
+            leading='leading-6'
+            size="text-[26px]" 
+            borderWidth="w-[101px]" 
+            color='title-gradient'
+            />
+            <br />
+            <Title 
+            content={'Misión'} 
+            leading='leading-6'
+            size="text-[20px]" 
+            height="h-[80px]" 
+            borderWidth="w-[60px]" 
+            color='text-purpleV3'
+            />
+            <br />
+
+            <div className='bg-black p-6'>
+            <InvertedTitle 
+            content={'Nuestro'} 
+            secondContent={'portfolio'} 
+            size="text-[32px]" 
+            leading='leading-[48px]'
+            />
+            </div>
+            <br />
       <Fade cascade>
         {/* show when it is mobile and tablet */}
         <div className="block xl:hidden">
