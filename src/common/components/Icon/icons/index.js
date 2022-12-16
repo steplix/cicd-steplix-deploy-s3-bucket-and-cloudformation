@@ -33,6 +33,9 @@ export * from './mobile'
 export * from './techlead'
 export * from './backend'
 export * from './po'
+export * from './mapPin'
+export * from './send'
+export * from './phone'
 
 
 

@@ -14,7 +14,7 @@ module.exports = {
             purple: "#3C1053",
             black: "#121212",
             "purple-light": "#341748",
-            purpleV3: "#3C1053"
+            purpleV3: "#3C1053",
         },
         fontSize: {
             xs: ["12px"],
@@ -24,6 +24,8 @@ module.exports = {
             xl: ["20px"],
             "2xl": ["22px"],
             "3xl": ["24px"],
+            "4xl": ["28px"],
+            "5xl": ["32px"],
             "10xl": ["50px"],
             "11xl": ["60px"],
             "12xl": ["64px"],
@@ -35,13 +37,12 @@ module.exports = {
         },
         fontFamily: {
             sofia: "sofia-pro",
-            'poppins': ["Poppins", "sans-serif"]
+            poppins: ["Poppins", "sans-serif"],
         },
         boxShadow: {
             steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
         },
         extend: {},
-    
     },
     variants: {
         extend: {},

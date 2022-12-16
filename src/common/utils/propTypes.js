@@ -23,5 +23,8 @@ export const propTypeIconName = PropTypes.oneOf([
     'iso9001',
     'inet',
     'iram',
-    'chevronDown'
+    'chevronDown',
+    'mapPin',
+    'send',
+    'phone'
 ]);
