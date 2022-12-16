@@ -754,8 +754,13 @@ p {
     transform: rotate(180deg);
   }
 
+  .dropdown-option {
+    transition: padding 0.3s ease
+  }
+
   .dropdown-option:hover {
     background: rgba(255, 255, 255, 0.15);
     border-left: 1.5px solid #00a9e0;
+    @apply px-1
   }
 }
