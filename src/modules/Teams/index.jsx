@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from "next-export-i18n";
-import SidelinedGradientTitle from '@/common/components/SidelinedGradientTitle'
 import Chip from '@/common/components/TechnologyChip'
+import Title from '@/common/components/Title/Gradient';
 
 const Teams = () => {
 
@@ -9,7 +9,7 @@ const Teams = () => {
 
     return (
         <section className="flex flex-col space-y-6 lg:space-y-8">
-            <SidelinedGradientTitle title={t("about_us.teams.title")} />
+            <Title content={t("about_us.teams.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
             <p className="font-poppins text-sm lg:text-base font-normal text-black">
                 {t("about_us.teams.description")}<span className="font-semibold">{t("about_us.teams.descriptionBold")}</span>
             </p>

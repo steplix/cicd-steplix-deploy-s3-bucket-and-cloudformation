@@ -1,5 +1,5 @@
 import CardIcon from '@/common/components/CardIcon'
-import SidelinedGradientTitle from '@/common/components/SidelinedGradientTitle'
+import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from "next-export-i18n";
 import React from 'react'
 
@@ -8,7 +8,7 @@ const OurValues = () => {
 
     return (
         <section className="flex flex-col space-y-6 lg:space-y-8">
-            <SidelinedGradientTitle title={t("about_us.ourValues.title")} />
+            <Title content={t("about_us.ourValues.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
             <p className="font-poppins text-sm lg:text-base font-normal text-black">
                 {t("about_us.ourValues.description")}
             </p>

@@ -783,12 +783,4 @@ p {
     @apply bg-blue;
   }
 
-  .sidelined-title {
-    @apply flex space-x-3 items-center font-bold text-[26px] lg:text-[32px];
-    background: linear-gradient(180deg, #3C1053 43.71%, #00A9E0 126.87%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    mix-blend-mode: normal;
-  }
-
 }

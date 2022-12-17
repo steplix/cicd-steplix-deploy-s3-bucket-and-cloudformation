@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'next-export-i18n'
+import Title from '@/common/components/Title/Gradient';
 
 const MissionAndVision = () => {
   const { t } = useTranslation();
