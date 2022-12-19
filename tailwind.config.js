@@ -15,6 +15,7 @@ module.exports = {
             black: "#121212",
             "purple-light": "#341748",
             purpleV3: "#3C1053",
+            "grey-transparent": "#3C10531A",
         },
         fontSize: {
             xs: ["12px"],

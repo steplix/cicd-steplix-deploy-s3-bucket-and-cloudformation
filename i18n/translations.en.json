@@ -487,5 +487,15 @@
             "keywords": "Technology Stack, React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, portability, performance, Agility, Error isolation, Scalability, Next.js, Next. js, Framework, developers, High-Performance, server-side rendering, Flutter, hybrid applications, open source SDK, Android Interface, Ios Interface, layered architecture, Amazon, AWS, Just In Time Infrastructure,  Figma, Wireframes, Interfaces, prototypes, web-based, Cloud Access,  Kotlin, Java-Based Technologies,  Node, NodeJs, Node Js, Back-end tasks, Framework, ExpressJS, Express JS",
             "description": "Steplix Technology Stack 🗻"
         }
+    },
+    "ButtonCardContact": "Schedule an appointment",
+    "ButtonBecomeSteplixer": "Become a Steplixer",
+    "CardContactSection": {
+        "pronoun": "Our",
+        "title": "Contact",
+        "title2": "Our Office",
+        "subtitle": "How to contact us",
+        "description": "Schedule a call or contact our sales team by e-mail.",
+        "phrase": "We would like to hear your ideas!"
     }
 }
