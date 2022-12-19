@@ -33,14 +33,7 @@ export * from './mobile'
 export * from './techlead'
 export * from './backend'
 export * from './po'
+export * from "./calendar";
+export * from "./linkedinBlue";
 export * from './back'
 export * from './forward'
-
-
-
-
-
-
-
-
-
