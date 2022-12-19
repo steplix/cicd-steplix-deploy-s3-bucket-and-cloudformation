@@ -26,5 +26,6 @@ export const propTypeIconName = PropTypes.oneOf([
     'chevronDown',
     'mapPin',
     'send',
-    'phone'
+    'phone',
+    'copy'
 ]);
