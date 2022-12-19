@@ -207,7 +207,8 @@
         "teams": {
             "title": "Equipos",
             "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
-            "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia."
+            "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
+            "button": "Convertite en Steplixer"
         },
         "philosophy": {
             "titleOne": "Nuestra",

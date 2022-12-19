@@ -1,8 +1,10 @@
 import React from 'react'
+import Link from 'next/link';
 import { useTranslation } from "next-export-i18n";
 import Chip from '@/common/components/TechnologyChip'
 import Title from '@/common/components/Title/Gradient';
 import PhotoCarousel from '@/common/components/PhotoCarousel';
+import Icon from '@/common/components/Icon';
 
 const Teams = () => {
 
@@ -30,8 +32,14 @@ const Teams = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full shadow-2xl h-[333px] flex items-center justify-center">
+            <div className="w-full shadow-2xl h-[333px] flex flex-col space-y-6 lg:space-y-3 items-center justify-center">
                 <PhotoCarousel />
+                <Link href="/jobs">
+                    <a className='flex items-center justify-center  text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px]'>
+                        <p>{t("about_us.teams.button")}</p>
+                        <Icon name="chevronDown" className='w-[16px] h-[16px] transform rotate-[270deg]' />
+                    </a>
+                </Link>
             </div>
         </section>
     )
