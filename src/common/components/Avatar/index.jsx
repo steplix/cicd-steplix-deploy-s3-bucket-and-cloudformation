@@ -18,7 +18,7 @@ const Avatar = ({ imgSrc, name, surname, isLoading }) => {
   return (
     <>
       <div
-        className={`flex justify-center items-center rounded-full w-10 h-10 md:w-12 md:h-12  ${
+        className={`flex justify-center items-center rounded-full avatar-size  ${
           showClasses ? "avatar-gradient" : ""
         }`}>
         {isLoading ? (

@@ -11,21 +11,18 @@ const ButtonCard = ({
 }) => {
   return (
     <button
-      className="w-fit h-fit bg-blue hover:cursor-pointer active:bg-sky-active text-white rounded-xl gap-y-2.5"
+      className="w-fit h-fit bg-blue hover:cursor-pointer active:bg-sky-active text-white rounded-2xl gap-y-2.5"
       title={title}
       alt={alt}
       type="button"
-      onClick={clickEvent}
-    >
+      onClick={clickEvent}>
       <div className="flex flex-row items-center mx-3 my-1  ">
         {iconName && <Icon name={iconName} className={customImageClass} />}
-        <label className={iconName && "ml-2"}>{label}</label>
+        <p className={iconName && "ml-2"}>{label}</p>
       </div>
     </button>
   );
 };
-
-export default ButtonCard;
 
 ButtonCard.propTypes = {
   label: propTypes.string.isRequired,
@@ -35,3 +32,5 @@ ButtonCard.propTypes = {
   iconName: propTypes.string,
   customImageClass: propTypes.string,
 };
+
+export default ButtonCard;
