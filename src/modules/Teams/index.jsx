@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from "next-export-i18n";
 import Chip from '@/common/components/TechnologyChip'
 import Title from '@/common/components/Title/Gradient';
+import PhotoCarousel from '@/common/components/PhotoCarousel';
 
 const Teams = () => {
 
@@ -29,8 +30,8 @@ const Teams = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-white w-full shadow-2xl h-[333px] flex items-center justify-center">
-                <h1>Carousel goes here</h1>
+            <div className="w-full shadow-2xl h-[333px] flex items-center justify-center">
+                <PhotoCarousel />
             </div>
         </section>
     )

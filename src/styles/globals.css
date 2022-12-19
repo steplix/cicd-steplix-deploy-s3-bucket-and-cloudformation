@@ -783,4 +783,49 @@ p {
     @apply bg-blue;
   }
 
+/* CAROUSEL */
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  @apply border-[1.5px] border-blue;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  @apply bg-blue;
+}
+
+.carousel-item-container {
+  @apply h-[202px] md:h-[256px] w-[360px] md:w-[446px] lg:w-[377px] xl:w-[320px] lg:h-[240px] xl:h-[202px] rounded-[20px];
+}
+
+.carousel-item-container__image {
+  @apply rounded-[20px];
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carouselImg {
+  @apply rounded-[20px];
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* CAROUSEL END */
+
 }
