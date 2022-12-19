@@ -37,7 +37,7 @@ const LanguageSelector = ({ sm }) => {
                                 />
                                 <span className="text-sm xl:text-lg font-semibold">{sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}</span>
                             </div>
-                            <Icon name="chevronDown" className={`dropdown-arrow ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
+                            <Icon name="chevronDown" className={`dropdown-arrow text-blue ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
                         </div>
                         <div className={`dropdown ${isDropdownOpen ? 'dropdown--open' : ''}`}>
                             <LanguageSwitcher lang={languageMap.target.query} slug={slug}>
