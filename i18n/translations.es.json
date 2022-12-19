@@ -455,6 +455,7 @@
     },
     "footer": {
         "certificateText": "Política de calidad",
+        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
         "rights": "Todos los derechos reservados®",
         "links": {
             "item0": "Quienes somos",
