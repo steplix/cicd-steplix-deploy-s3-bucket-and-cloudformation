@@ -448,6 +448,7 @@
     },
     "footer": {
         "certificateText": "Quality politics",
+        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
         "rights": "All rights reserved®",
         "links": {
             "item0": "About us",

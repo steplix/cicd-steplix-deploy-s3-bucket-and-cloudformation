@@ -72,7 +72,7 @@ const Footer = () => {
                             <Icon name="inet" className="h-[38px] w-[38px]" />
                             <Icon name="iram" className="h-[38px] w-[38px]" />
                         </div>
-                        <a href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/D-02+Quality+Policy.pdf" rel="noreferrer" target="_blank" className="font-poppins underline">{t('footer.certificateText')}</a>
+                        <a href={t('footer.certificateUrl')} rel="noreferrer" target="_blank" className="font-poppins underline">{t('footer.certificateText')}</a>
                     </div>
                 </div>
 
