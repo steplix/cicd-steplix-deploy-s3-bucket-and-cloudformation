@@ -57,9 +57,9 @@ const Navbar = () => {
                 <div
                     className="flex flex-col w-full header-gradient"
                 >
-                    <div className="flex relative justify-between items-center w-full h-[65px]">
+                    <div className="container flex relative justify-between items-center w-full h-[65px] px-5 md:px-0">
                         {/* logo mobile */}
-                        <div className="ml-5 items-center justify-center flex">
+                        <div className="items-center justify-center flex">
                             <Link href={{ pathname: "/", query: query }}>
                                 <a>
                                     <img
@@ -71,7 +71,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         {/* button menu mobile */}
-                        <div className="z-50 mr-3">
+                        <div className="z-50">
                             <button
                                 className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 lg:hidden"
                                 onClick={() => setToggle(!toggle)}
@@ -90,7 +90,7 @@ const Navbar = () => {
                     </div>
                     {
                         routeTitle ? (
-                            <div className="ml-5 h-[80px] md:h-[100px] flex items-center">
+                            <div className="container h-[80px] md:h-[100px] flex items-center px-5 md:px-0">
                                 <h1 className="font-semibold text-[36px] font-poppins">
                                     {getOutlinedTitle(t(routeTitle)).title + " "}
                                 <span className="text--outlined">
