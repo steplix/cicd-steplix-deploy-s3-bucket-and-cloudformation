@@ -4,9 +4,7 @@ import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";
 import WhatWeDo from "@/modules/WhatWeDo";
 import HappyClients from "@/modules/HappyClients";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
-import PhotoCarousel from "@/common/components/PhotoCarousel";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -88,7 +86,6 @@ export default function Home() {
                 <HappyClients />
 
                 {/* Steplix Flags */}
-                <Flags />
             </main>
         </>
     );
