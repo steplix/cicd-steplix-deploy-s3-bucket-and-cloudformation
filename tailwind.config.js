@@ -16,6 +16,8 @@ module.exports = {
             "purple-light": "#341748",
             purpleV3: "#3C1053",
             "grey-transparent": "#3C10531A",
+            "grey-70": "#707070",
+            "grey-19": "#191919"
         },
         fontSize: {
             xs: ["12px"],
@@ -40,6 +42,7 @@ module.exports = {
         },
         boxShadow: {
             steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
+            "post-card": "0px 0px 2px 1px rgba(112, 112, 112, 0.2)",
         },
         extend: {},
     },
