@@ -871,6 +871,38 @@ p {
       max-width: 1120px !important;
     }
   }
+
+  .text-outlined {
+    position: relative;
+    background: transparent;
+    color: transparent !important;
+    z-index: 0;
+    letter-spacing: 1.6px;
+  }
+
+  .text-outlined::before {
+    content: attr(data-content);
+    position: absolute;
+    -webkit-text-stroke: 1px #FFFFFF;
+    left: 0;
+    z-index: -1;
+  }
+
+  .text-outlined--purple {
+    position: relative;
+    background: transparent;
+    color: transparent !important;
+    letter-spacing: 0.12em;
+    z-index: 0;
+  }
+
+  .text-outlined--purple::before {
+    content: attr(data-content);
+    position: absolute;
+    -webkit-text-stroke: 1.4px #3C1053;
+    left: 0;
+    z-index: -1;
+  }
   
 
 }
