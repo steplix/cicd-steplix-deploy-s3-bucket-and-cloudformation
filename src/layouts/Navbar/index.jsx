@@ -55,7 +55,7 @@ const Navbar = () => {
                     />
                 </div>
                 <div
-                    className="flex flex-col absolute w-full header-gradient"
+                    className="flex flex-col w-full header-gradient"
                 >
                     <div className="flex relative justify-between items-center w-full h-[65px]">
                         {/* logo mobile */}
@@ -105,7 +105,7 @@ const Navbar = () => {
 
             {/* navbar desktop */}
             <nav
-                className={`hidden xl:flex xl:flex-col xl:justify-center w-full absolute header-gradient`}
+                className={`hidden xl:flex xl:flex-col xl:justify-center w-full header-gradient`}
             >
                 <div className="container pr-28 flex top-0 justify-between items-center h-[100px]">
                     {/* logo desktop */}

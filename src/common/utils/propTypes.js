@@ -39,4 +39,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "calendar",
   "linkedinBlue",
   "earth",
+  "back",
+  "forward"
 ]);

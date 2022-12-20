@@ -6,9 +6,9 @@ import Icon from '@/components/Icon';
 
 const CardIcon = ({ text, iconName }) => {
   return (
-    <div className="bg-white rounded-[20px] flex flex-col items-center justify-center space-y-1 py-2.5 px-2 min-w-[98px]">
+    <div className="bg-white rounded-[20px] flex flex-col items-center justify-center space-y-1 py-2.5 px-2 min-w-[88px]">
       <Icon name={iconName} className="h-6 w-6" />
-      <p className="text-xs text-purpleV3">{text}</p>
+      <p className="text-[10px] font-medium text-purple">{text}</p>
     </div>
   );
 };
