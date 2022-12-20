@@ -4,7 +4,6 @@ import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";
 import WhatWeDo from "@/modules/WhatWeDo";
 import HappyClients from "@/modules/HappyClients";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
 import PostCard from "@/common/components/PostCard";
 
@@ -97,7 +96,6 @@ export default function Home() {
                 </div>
 
                 {/* Steplix Flags */}
-                <Flags />
             </main>
         </>
     );
