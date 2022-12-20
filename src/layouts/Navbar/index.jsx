@@ -45,7 +45,7 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full text-white z-50">
             {/* navbar mobile */}
-            <nav className="flex flex-col xl:hidden">
+            <nav className="flex flex-col lg:hidden">
                 <div>
                     <Submenu
                         router={router}
@@ -73,7 +73,7 @@ const Navbar = () => {
                         {/* button menu mobile */}
                         <div className="z-50 mr-3">
                             <button
-                                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 xl:hidden"
+                                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 lg:hidden"
                                 onClick={() => setToggle(!toggle)}
                             >
                                 <span
@@ -105,9 +105,9 @@ const Navbar = () => {
 
             {/* navbar desktop */}
             <nav
-                className={`hidden xl:flex xl:flex-col xl:justify-center w-full header-gradient`}
+                className={`hidden lg:flex lg:flex-col lg:justify-center w-full header-gradient`}
             >
-                <div className="container pr-28 flex top-0 justify-between items-center h-[100px]">
+                <div className="container flex justify-between items-center h-[100px]">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
