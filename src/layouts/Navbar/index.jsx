@@ -16,6 +16,8 @@ const Navbar = () => {
     const router = useRouter();
     const routeTitle = routesMap[router.pathname]?.title
 
+    const isCurrentPathnameActive = pathname => router.pathname === pathname ? 'nav--link--active' : '' 
+
     //
     // State
     //
@@ -127,7 +129,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--blue'>
+                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/about-us")}`}>
                                 {t("navbar.item0")}
                             </a>
                         </Link>
@@ -138,7 +140,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--red'
+                                className={`nav--link nav--link--red ${isCurrentPathnameActive("/stack")}`}
                             >
                                 {t("navbar.item1")}
                             </a>
@@ -150,14 +152,14 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--yellow'
+                                className={`nav--link nav--link--yellow ${isCurrentPathnameActive("/process")}`}
                             >
                                 {t("navbar.item2")}
                             </a>
                         </Link>
                         <Link href={{ pathname: "/jobs", query: query }}>
                             <a
-                                className='nav--link nav--link--blue'
+                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/jobs")}`}
                             >
                                 {t("navbar.item3")}
                             </a>

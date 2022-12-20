@@ -16,7 +16,7 @@ const Teams = () => {
             <p className="font-poppins text-sm lg:text-base font-normal text-black">
                 {t("about_us.teams.description")}<span className="font-semibold">{t("about_us.teams.descriptionBold")}</span>
             </p>
-            <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-16 items-center lg:justify-between">
+            <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-16 items-center lg:justify-center">
                 <h3 className="font-black text-[24px] text-purple mx-auto lg:mx-0">
                     #Digital <span className="text-outlined--purple font-black" data-content="Sherpas">Sherpas</span>
                 </h3>
@@ -32,10 +32,10 @@ const Teams = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full shadow-2xl h-[333px] flex flex-col space-y-6 lg:space-y-3 items-center justify-center">
+            <div className="w-full shadow-2xl h-[333px] flex flex-col items-center justify-center">
                 <PhotoCarousel />
                 <Link href="/jobs">
-                    <a className='flex items-center justify-center  text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px]'>
+                    <a className='flex items-center justify-center text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px] mt-6 md:mt-7 lg:mt-6'>
                         <p>{t("about_us.teams.button")}</p>
                         <Icon name="chevronDown" className='w-[16px] h-[16px] transform rotate-[270deg]' />
                     </a>
