@@ -315,18 +315,7 @@ p {
   .nav-link:hover::after {
     width: 100%;
   }
-
-  .submenu {
-    @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center opacity-0 xl:hidden z-40 text-white;
-    clip-path: circle(30px at 93% 8%);
-    transition: all 800ms ease-out;
-  }
-  .submenu--toggle {
-    clip-path: circle(100%);
-
-    @apply opacity-100 bg-purple;
-  }
-
+  
   .submenu--item {
     @apply w-full h-12 hover:bg-purple-light hover:font-bold hover:border-l-4;
   }
@@ -498,7 +487,7 @@ p {
 
   .submenu {
     @apply flex flex-col space-y-2 fixed inset-0 w-full h-full items-center xl:hidden z-40 text-white;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.7s;
     -moz-transition: -moz-transform 0.7s;
     transition: transform 0.7s;
@@ -511,7 +500,7 @@ p {
   }
 
   .submenu--item {
-    @apply w-full h-12 w-full;
+    @apply w-full h-12;
   }
 
   .submenu--item--active {
