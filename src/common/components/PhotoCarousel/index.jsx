@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
+import propTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
 import Icon from "../Icon"
 
-const PhotoCarousel = () => {
+const PhotoCarousel = ({ photoArray }) => {
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = React.useState(false)
 
@@ -60,42 +61,19 @@ const PhotoCarousel = () => {
     return (
         <div className="relative w-full my-4 flex flex-col container mx-auto items-center">
           <div ref={sliderRef} className="keen-slider lg:max-w-[774px] xl:max-w-[990px] rounded-[20px]">
-            <div className="keen-slider__slide number-slide rounded-[20px]">
-              <div className="carousel-item-container">
-                <img
-                  src="/assets/img/culture/culture-02.png"
-                  alt="culture"
-                  className="carousel-item-container__image"
-                  />
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide rounded-[20px]">
-              <div className="carousel-item-container">
-                <img
-                  src="/assets/img/culture/culture-03.png"
-                  alt="culture"
-                  className="carousel-item-container__image"
-                  />
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide rounded-[20px]">
-              <div className="carousel-item-container">
-                <img
-                  src="/assets/img/culture/culture-02.png"
-                  alt="culture"
-                  className="carousel-item-container__image"
-                  />
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide rounded-[20px]">
-              <div className="carousel-item-container">
-                <img
-                  src="/assets/img/culture/culture-03.png"
-                  alt="culture"
-                  className="carousel-item-container__image"
-                  />
-              </div>
-            </div>
+            {
+              photoArray.map(({src}) => (
+                <div className="keen-slider__slide number-slide rounded-[20px]" key={src}>
+                  <div className="carousel-item-container">
+                    <img
+                      src={src}
+                      alt="culture"
+                      className="carousel-item-container__image"
+                      />
+                  </div>
+                </div> 
+              ))
+            }
           </div>
           {loaded && instanceRef.current && (
             <div className="dots md:hidden">
@@ -126,6 +104,13 @@ const PhotoCarousel = () => {
         )}
         </div>
     )
-  }
+};
+
+PhotoCarousel.propTypes = {
+  photoArray: propTypes.arrayOf(propTypes.shape({
+    src: propTypes.string
+  })).isRequired
+};
+
 
 export default PhotoCarousel;

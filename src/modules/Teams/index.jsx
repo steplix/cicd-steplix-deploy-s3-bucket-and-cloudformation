@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { useTranslation } from "next-export-i18n";
+import { aboutUsPhotoArray } from '@/common/utils/constants';
 import Chip from '@/common/components/TechnologyChip'
 import Title from '@/common/components/Title/Gradient';
 import PhotoCarousel from '@/common/components/PhotoCarousel';
@@ -33,7 +34,7 @@ const Teams = () => {
                 </div>
             </div>
             <div className="w-full shadow-2xl h-[333px] flex flex-col items-center justify-center">
-                <PhotoCarousel />
+                <PhotoCarousel photoArray={aboutUsPhotoArray} />
                 <Link href="/jobs">
                     <a className='flex items-center justify-center text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px] mt-6 md:mt-7 lg:mt-6'>
                         <p>{t("about_us.teams.button")}</p>
