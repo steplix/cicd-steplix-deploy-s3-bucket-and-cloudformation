@@ -3,10 +3,10 @@ import Icon from "../Icon";
 
 const Chip = ({ label, name, customIconClass }) => {
   return (
-    <div className="w-[120px] h-[30px] text-purple-light border border-purple-light rounded-3xl">
-      <div className="flex flex-row justify-center">
+    <div className="border-[1.5px] border-purple rounded-[40px] px-2 flex items-center justify-center min-h-[29px]">
+      <div className="flex flex-row items-center justify-center space-x-1">
         <Icon name={name} className={customIconClass}/>
-        <label>{label}</label>
+        <p className="font-semibold text-xs">{label}</p>
       </div>
     </div>
   );

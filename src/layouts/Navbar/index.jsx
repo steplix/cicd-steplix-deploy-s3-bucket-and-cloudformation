@@ -16,6 +16,8 @@ const Navbar = () => {
     const router = useRouter();
     const routeTitle = routesMap[router.pathname]?.title
 
+    const isCurrentPathnameActive = pathname => router.pathname === pathname ? 'nav--link--active' : '' 
+
     //
     // State
     //
@@ -45,7 +47,7 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full text-white z-50">
             {/* navbar mobile */}
-            <nav className="flex flex-col xl:hidden">
+            <nav className="flex flex-col lg:hidden">
                 <div>
                     <Submenu
                         router={router}
@@ -55,11 +57,11 @@ const Navbar = () => {
                     />
                 </div>
                 <div
-                    className="flex flex-col absolute w-full header-gradient"
+                    className="flex flex-col w-full header-gradient"
                 >
-                    <div className="flex relative justify-between items-center w-full h-[65px]">
+                    <div className="container flex relative justify-between items-center w-full h-[65px] px-5 md:px-0">
                         {/* logo mobile */}
-                        <div className="ml-5 items-center justify-center flex">
+                        <div className="items-center justify-center flex">
                             <Link href={{ pathname: "/", query: query }}>
                                 <a>
                                     <img
@@ -71,9 +73,9 @@ const Navbar = () => {
                             </Link>
                         </div>
                         {/* button menu mobile */}
-                        <div className="z-50 mr-3">
+                        <div className="z-50">
                             <button
-                                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 xl:hidden"
+                                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 lg:hidden"
                                 onClick={() => setToggle(!toggle)}
                             >
                                 <span
@@ -90,10 +92,10 @@ const Navbar = () => {
                     </div>
                     {
                         routeTitle ? (
-                            <div className="ml-5 h-[80px] md:h-[100px] flex items-center">
-                                <h1 className="font-semibold text-[36px] font-poppins">
+                            <div className="container h-[80px] md:h-[100px] flex items-center px-5 md:px-0">
+                                <h1 className="font-extrabold text-[32px] font-poppins tracking-[0.8px]">
                                     {getOutlinedTitle(t(routeTitle)).title + " "}
-                                <span className="text--outlined">
+                                <span className="font-bold text-outlined" data-content={getOutlinedTitle(t(routeTitle))?.outlined}>
                                     {getOutlinedTitle(t(routeTitle))?.outlined}
                                 </span>
                             </h1>                      
@@ -105,9 +107,9 @@ const Navbar = () => {
 
             {/* navbar desktop */}
             <nav
-                className={`hidden xl:flex xl:flex-col xl:justify-center w-full absolute header-gradient`}
+                className={`hidden lg:flex lg:flex-col lg:justify-center w-full header-gradient`}
             >
-                <div className="container pr-28 flex top-0 justify-between items-center h-[100px]">
+                <div className="container flex justify-between items-center h-[100px]">
                     {/* logo desktop */}
                     <Link href={{ pathname: "/", query: query }}>
                         <a>
@@ -127,7 +129,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--blue'>
+                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/about-us")}`}>
                                 {t("navbar.item0")}
                             </a>
                         </Link>
@@ -138,7 +140,7 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--red'
+                                className={`nav--link nav--link--red ${isCurrentPathnameActive("/stack")}`}
                             >
                                 {t("navbar.item1")}
                             </a>
@@ -150,14 +152,14 @@ const Navbar = () => {
                             }}
                         >
                             <a
-                                className='nav--link nav--link--yellow'
+                                className={`nav--link nav--link--yellow ${isCurrentPathnameActive("/process")}`}
                             >
                                 {t("navbar.item2")}
                             </a>
                         </Link>
                         <Link href={{ pathname: "/jobs", query: query }}>
                             <a
-                                className='nav--link nav--link--blue'
+                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/jobs")}`}
                             >
                                 {t("navbar.item3")}
                             </a>
