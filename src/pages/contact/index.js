@@ -16,6 +16,27 @@ const icons = {
   send: <Icon name="send" className="w-4" />,
 };
 
+const PHOTO_CAROUSEL = [
+  {
+    src: "assets/img/contact/contact-1.png",
+  },
+  {
+    src: "assets/img/contact/contact-2.png",
+  },
+  {
+    src: "assets/img/contact/contact-3.png",
+  },
+  {
+    src: "assets/img/contact/contact-4.png",
+  },
+  {
+    src: "assets/img/contact/contact-5.png",
+  },
+  {
+    src: "assets/img/contact/contact-6.png",
+  },
+];
+
 export default function Contact() {
   const { t } = useTranslation();
   const { width } = useResponsive();
@@ -25,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="flex flex-col relative pb-12 space-y-14 md:space-y-8 lg:pt-10 lg:space-y-12 xl:space-y-28">
+    <section className="flex flex-col relative py-0 lg:py-10 px-0 w-full mx-auto">
       {width < BREAKPOINT_WIDTH && (
         <div className="header-gradient flex">
           <div className="container py-8 px-4">
@@ -37,7 +58,7 @@ export default function Contact() {
           </div>
         </div>
       )}
-      <main className="container px-4">
+      <main className="container px-4 py-8 ">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
@@ -97,7 +118,7 @@ export default function Contact() {
           height="h-[32px]"
         />
         <div className="flex justify-center my-8">
-          <PhotoCarousel />
+          <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
         <section className="lg:flex lg:gap-8">
           <div>
@@ -139,14 +160,14 @@ export default function Contact() {
               />
             </div>
 
-            <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
+            {/* <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
               <NextLink href="/">{t("ButtonBecomeSteplixer")}</NextLink>
               <Icon
                 name="chevronRight"
                 className="w-4 rotate-[270deg]"
                 fill="currentColor"
               />
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
