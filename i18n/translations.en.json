@@ -487,5 +487,8 @@
         "subtitle": "How to contact us",
         "description": "Schedule a call or contact our sales team by e-mail.",
         "phrase": "We would like to hear your ideas!"
+    },
+    "OurPostsSay": {
+        "title": "Our posts say"
     }
 }

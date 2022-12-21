@@ -1,11 +1,8 @@
 import { useTranslation } from "next-export-i18n";
 import Masthead from "@/modules/Masthead";
-import OurCulture from "@/modules/OurCulture";
+import OurPosts from "@/modules/OurPosts";
 import AboutUs from "@/modules/AboutUs";
-import WhatWeDo from "@/modules/WhatWeDo";
-import HappyClients from "@/modules/HappyClients";
 import HeadTag from "@/common/components/HeadTag";
-import PostCard from "@/common/components/PostCard";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -74,28 +71,14 @@ export default function Home() {
                 {/* Masthead Section */}
                 <Masthead />
 
-                {/* About Us Section */}
-                <AboutUs />
+                <div className="py-10 px-4 md:px-0 w-full container mx-auto flex-col space-y-24">
 
-                {/* What We Do Section */}
-                <WhatWeDo />
+                    {/* About Us Section */}
+                    <AboutUs />
 
-                {/* Our Culture Section */}
-                <OurCulture />
-
-                {/* Happy Clients Section */}
-                <HappyClients />
-
-                {/* Post example */}
-                <div className="bg-gray-100 p-3 flex items-center justify-center w-screen h-screen">
-                    <PostCard
-                        publishingAt="3 de febrero de 2022"
-                        description="Lacus amet, laoreet viverra id faucibus nisi cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus ipsum nec nibh lacus, suspendisse."
-                        url="http://steplix.com"
-                    />
+                    {/* Happy Clients Section */}
+                    <OurPosts />
                 </div>
-
-                {/* Steplix Flags */}
             </main>
         </>
     );
