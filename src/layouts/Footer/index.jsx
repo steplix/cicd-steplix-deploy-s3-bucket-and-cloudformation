@@ -75,7 +75,7 @@ const Footer = () => {
               <Icon name="iram" className="h-[38px] w-[38px]" />
             </div>
             <a
-              href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/D-02+Quality+Policy.pdf"
+              href={t('footer.certificateUrl')}
               rel="noreferrer"
               target="_blank"
               className="font-poppins underline"
