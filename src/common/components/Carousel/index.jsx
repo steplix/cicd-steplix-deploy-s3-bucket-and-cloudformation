@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import _ from 'lodash';
-import 'keen-slider/keen-slider.min.css';
-import { useKeenSlider } from 'keen-slider/react';
-import { useTranslation } from 'next-export-i18n';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import _ from "lodash";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import { useTranslation } from "next-export-i18n";
+import Fade from "react-reveal/Fade";
+import Title from '../Title/Gradient';
+import InvertedTitle from '../Title/Inverted';
 import TestimonialCard from '../TestimonialCard';
 
 const ResizePlugin = slider => {

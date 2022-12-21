@@ -25,7 +25,7 @@ const LanguageSelector = ({ sm }) => {
     }
 
     return (
-        <div className="flex gap-2 mt-40 xl:mt-0">
+        <div className="flex gap-2 mt-40 lg:mt-0">
             {shortCurrentLang ? (
                     <div className="flex flex-col relative cursor-pointer">
                         <div className="flex items-center space-x-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
@@ -37,7 +37,7 @@ const LanguageSelector = ({ sm }) => {
                                 />
                                 <span className="text-sm xl:text-lg font-semibold">{sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}</span>
                             </div>
-                            <Icon name="chevronDown" className={`dropdown-arrow ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
+                            <Icon name="chevronDown" className={`dropdown-arrow text-blue ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
                         </div>
                         <div className={`dropdown ${isDropdownOpen ? 'dropdown--open' : ''}`}>
                             <LanguageSwitcher lang={languageMap.target.query} slug={slug}>

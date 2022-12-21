@@ -62,17 +62,17 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col-reverse items-center space-y-4 md:flex-row md:items-end lg:items-center md:justify-between text-white text-xs">
+                <div className="flex flex-col-reverse items-center space-y-4 lg:space-y-0 md:flex-row md:items-end lg:items-center md:justify-between text-white text-xs">
                     <p className="mt-12 md:mt-0">
                     {t('footer.rights')}
                     </p>
-                    <div className="flex flex-col space-y-3 lg:flex-row lg:space-x-3 text-white items-center text-xs">
+                    <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-3 text-white items-center text-xs">
                         <div className="flex space-x-3">
                             <Icon name="iso9001" className="h-[38px] w-[38px]" />
                             <Icon name="inet" className="h-[38px] w-[38px]" />
                             <Icon name="iram" className="h-[38px] w-[38px]" />
                         </div>
-                        <a href="https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/D-02+Quality+Policy.pdf" rel="noreferrer" target="_blank" className="font-poppins underline md:self-end">{t('footer.certificateText')}</a>
+                        <a href={t('footer.certificateUrl')} rel="noreferrer" target="_blank" className="font-poppins underline">{t('footer.certificateText')}</a>
                     </div>
                 </div>
 

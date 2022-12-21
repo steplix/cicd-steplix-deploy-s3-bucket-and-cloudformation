@@ -1,27 +1,30 @@
 import CardIcon from '@/common/components/CardIcon'
-import SidelinedGradientTitle from '@/common/components/SidelinedGradientTitle'
+import Title from '@/common/components/Title/Gradient';
+import { useTranslation } from "next-export-i18n";
 import React from 'react'
 
 const OurValues = () => {
-  return (
-    <div className="flex flex-col space-y-6 lg:space-y-8">
-        <SidelinedGradientTitle title="Nuestros valores" />
-        <p className="font-poppins text-sm lg:text-base font-normal text-black">
-            Aquellos que nos definen y sobre los que hacemos foco en cada proyecto.
-        </p>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center justify-center">
-            <div className="flex flex-row space-x-4 md:space-x-6">
-                <CardIcon text="Confianza" iconName="trust" />
-                <CardIcon text="Respeto mutuo" iconName="mutualRespect" />
-                <CardIcon text="Éxito" iconName="success" />
+    const { t } = useTranslation();
+
+    return (
+        <section className="flex flex-col space-y-6 lg:space-y-8">
+            <Title content={t("about_us.ourValues.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
+            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+                {t("about_us.ourValues.description")}
+            </p>
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center justify-center">
+                <div className="flex flex-row space-x-4 md:space-x-6">
+                    <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" />
+                    <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" />
+                    <CardIcon text={t("about_us.ourValues.success")} iconName="success" />
+                </div>
+                <div className="flex flex-row space-x-4 md:space-x-6">
+                    <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" />
+                    <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" />
+                </div>
             </div>
-            <div className="flex flex-row space-x-4 md:space-x-6">
-                <CardIcon text="Conciencia" iconName="awareness" />
-                <CardIcon text="Agilidad" iconName="agility" />
-            </div>
-        </div>
-    </div>
-  )
+        </section>
+    )
 }
 
 export default OurValues

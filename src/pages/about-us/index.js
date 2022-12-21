@@ -4,8 +4,6 @@ import MissionAndVision from "@/modules/MissionAndVision";
 import Teams from "@/modules/Teams";
 import OurValues from "@/modules/OurValues";
 
-//TODO: Add translation when the content has been set up
-
 export default function AboutUs() {
     const { t } = useTranslation();
 

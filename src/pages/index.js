@@ -4,8 +4,8 @@ import OurCulture from "@/modules/OurCulture";
 import AboutUs from "@/modules/AboutUs";
 import WhatWeDo from "@/modules/WhatWeDo";
 import HappyClients from "@/modules/HappyClients";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
+import PostCard from "@/common/components/PostCard";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -86,8 +86,16 @@ export default function Home() {
                 {/* Happy Clients Section */}
                 <HappyClients />
 
+                {/* Post example */}
+                <div className="bg-gray-100 p-3 flex items-center justify-center w-screen h-screen">
+                    <PostCard
+                        publishingAt="3 de febrero de 2022"
+                        description="Lacus amet, laoreet viverra id faucibus nisi cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus ipsum nec nibh lacus, suspendisse."
+                        url="http://steplix.com"
+                    />
+                </div>
+
                 {/* Steplix Flags */}
-                <Flags />
             </main>
         </>
     );

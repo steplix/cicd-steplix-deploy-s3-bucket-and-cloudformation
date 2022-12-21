@@ -188,38 +188,27 @@
     },
     "about_us": {
         "ourValues": {
-            "titleOne": "Nuestros",
-            "titleTwo": "Valores",
-            "values": {
-                "valuetOne": {
-                    "title": "Confianza",
-                    "description": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos."
-                },
-                "valuetTwo": {
-                    "title": "Respeto Mutuo",
-                    "description": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
-                },
-                "valuetThree": {
-                    "title": "Éxito",
-                    "description": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
-                },
-                "valuetFour": {
-                    "title": "Agilidad",
-                    "description": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
-                },
-                "valuetFive": {
-                    "title": "Conciencia",
-                    "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
-                }
-            }
+            "title": "Nuestros valores",
+            "description": "Aquellos que nos definen y sobre los que hacemos foco en cada proyecto.",
+            "trust": "Confianza",
+            "mutualRespect": "Respeto mutuo",
+            "success": "Éxito",
+            "awareness": "Conciencia",
+            "agility": "Agilidad"
         },
         "mission": {
-            "title": "Nuestra misión",
-            "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
+            "title": "Misión",
+            "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros Digital Sherpas."
         },
         "vision": {
-            "title": "Nuestra visión",
-            "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
+            "title": "Visión",
+            "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Digital Sherpas."
+        },
+        "teams": {
+            "title": "Equipos",
+            "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
+            "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
+            "button": "Convertite en Steplixer"
         },
         "philosophy": {
             "titleOne": "Nuestra",
@@ -455,6 +444,7 @@
     },
     "footer": {
         "certificateText": "Política de calidad",
+        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
         "rights": "Todos los derechos reservados®",
         "links": {
             "item0": "Quienes somos",
@@ -494,5 +484,6 @@
             "keywords": "Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
             "description": "Stack tecnológico de Steplix 🗻"
         }
-    }
+    },
+    "ButtonCardContact": "Agendar cita"
 }
