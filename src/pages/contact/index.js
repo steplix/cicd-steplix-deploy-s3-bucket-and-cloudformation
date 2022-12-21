@@ -8,6 +8,7 @@ import Gradient from "@/common/components/Title/Gradient";
 import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { useResponsive } from "@/common/hooks/useResponsive";
+import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
@@ -16,26 +17,7 @@ const icons = {
   send: <Icon name="send" className="w-4" />,
 };
 
-const PHOTO_CAROUSEL = [
-  {
-    src: "assets/img/contact/contact-1.png",
-  },
-  {
-    src: "assets/img/contact/contact-2.png",
-  },
-  {
-    src: "assets/img/contact/contact-3.png",
-  },
-  {
-    src: "assets/img/contact/contact-4.png",
-  },
-  {
-    src: "assets/img/contact/contact-5.png",
-  },
-  {
-    src: "assets/img/contact/contact-6.png",
-  },
-];
+
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -43,6 +25,14 @@ export default function Contact() {
   const BREAKPOINT_WIDTH = 1024;
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
+  };
+
+  const onClickSocialMediaButton = (url) => {
+    window.open(url, "_blank");
+  };
+
+  const onClickCalendarButton = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
@@ -72,42 +62,17 @@ export default function Contact() {
           <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
         </div>
         <div className="flex justify-center flex-wrap gap-4 mb-20 lg:grid lg:grid-cols-2">
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
+          {CARD_CONTACT.map((item) => (
+            <CardContact
+              key={item.email}
+              name={item.name}
+              surname={item.surname}
+              email={item.email}
+              onClickCopyButton={() => onClickCopyButton(item.email)}
+              onClickSocialMediaButton={() => onClickSocialMediaButton(item.linkedin)}
+              onClickCalendarButton={() => onClickCalendarButton(item.meeting)}
+            />
+          ))}
         </div>
 
         <Gradient

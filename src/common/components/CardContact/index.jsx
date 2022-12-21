@@ -12,8 +12,8 @@ const CardContact = ({
     surname,
     cornerIconName,
     imgSrc,
-    onClickButton,
-    onClickSocialMedia,
+    onClickCalendarButton,
+    onClickSocialMediaButton,
     onClickTextFieldButton,
 }) => {
     const [isLoadingImg, setIsLoadingImg] = useState(true);
@@ -47,8 +47,8 @@ const CardContact = ({
                             </div>
                         </div>
                         <div
-                            className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center absolute top-0 right-0 mt-4 mr-7"
-                            onClick={onClickSocialMedia}>
+                            className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center absolute top-0 right-0 mt-4 mr-7 cursor-pointer"
+                            onClick={onClickSocialMediaButton}>
                             <Icon name={cornerIconName} className="w-4" />
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const CardContact = ({
                             label={t("ButtonCardContact")}
                             iconName="calendar"
                             customImageClass="w-4"
-                            clickEvent={onClickButton}
+                            clickEvent={onClickCalendarButton}
                         />
                     </div>
                 </div>
@@ -75,8 +75,8 @@ CardContact.propTypes = {
     surname: PropTypes.string.isRequired,
     imgSrc: PropTypes.string,
     cornerIconName: PropTypes.string,
-    onClickButton: PropTypes.func.isRequired,
-    onClickSocialMedia: PropTypes.func,
+    onClickCalendarButton: PropTypes.func.isRequired,
+    onClickSocialMediaButton: PropTypes.func,
     onClickCopyButton: PropTypes.func,
 };
 
