@@ -14,9 +14,10 @@ const CardContact = ({
     imgSrc,
     onClickButton,
     onClickSocialMedia,
+    onClickTextFieldButton,
 }) => {
     const [isLoadingImg, setIsLoadingImg] = useState(true);
-    const t = useTranslation();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const timeoutImg = setTimeout(() => {
@@ -30,7 +31,7 @@ const CardContact = ({
 
     return (
         <>
-            <div className="w-80 md:w-72 lg:w-[440px] xl:w-[550px]">
+            <div className="w-80 md:w-72 lg:w-full">
                 <div className="relative bg-white shadow-steplix rounded-3xl p-4">
                     <div className="flex justify-between px-4">
                         <div className="flex gap-5 items-center mt-4">
@@ -52,7 +53,7 @@ const CardContact = ({
                         </div>
                     </div>
                     <div className="px-4">
-                        <TextField email={email} />
+                        <TextField text={email} clickEvent={onClickTextFieldButton} />
                     </div>
                     <div className="flex justify-center mt-8">
                         <ButtonCard
@@ -76,6 +77,7 @@ CardContact.propTypes = {
     cornerIconName: PropTypes.string,
     onClickButton: PropTypes.func.isRequired,
     onClickSocialMedia: PropTypes.func,
+    onClickCopyButton: PropTypes.func,
 };
 
 CardContact.defaultProps = {

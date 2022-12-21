@@ -485,5 +485,14 @@
             "description": "Stack tecnológico de Steplix 🗻"
         }
     },
-    "ButtonCardContact": "Agendar cita"
+    "ButtonCardContact": "Agendar cita",
+    "ButtonBecomeSteplixer": "Convertite en Steplixer",
+    "CardContactSection": {
+        "pronoun": "Nuestro",
+        "title": "Contacto",
+        "title2": "Nuestra Oficina",
+        "subtitle": "Cómo nos contactas",
+        "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
+        "phrase": "¡Queremos escuchar tus ideas!"
+    }
 }

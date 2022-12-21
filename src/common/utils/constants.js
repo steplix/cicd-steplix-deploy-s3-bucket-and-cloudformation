@@ -62,3 +62,24 @@ export const routesMap = {
         title: "navbar.item3"
     }
 }
+
+export const aboutUsPhotoArray = [
+    {
+        src: "/assets/img/culture/culture-02.png"
+    },
+    {
+        src: "/assets/img/culture/culture-03.png"
+    },
+    {
+        src: "/assets/img/culture/culture-02.png"
+    },
+    {
+        src: "/assets/img/culture/culture-03.png"
+    },
+    {
+        src: "/assets/img/culture/culture-02.png"
+    },
+    {
+        src: "/assets/img/culture/culture-03.png"
+    },
+]
