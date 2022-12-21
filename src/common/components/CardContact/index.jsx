@@ -14,7 +14,7 @@ const CardContact = ({
     imgSrc,
     onClickButton,
     onClickSocialMedia,
-    onClickCopyButton,
+    onClickTextFieldButton,
 }) => {
     const [isLoadingImg, setIsLoadingImg] = useState(true);
     const { t } = useTranslation();
@@ -53,7 +53,7 @@ const CardContact = ({
                         </div>
                     </div>
                     <div className="px-4">
-                        <TextField text={email} clickEvent={onClickCopyButton} />
+                        <TextField text={email} clickEvent={onClickTextFieldButton} />
                     </div>
                     <div className="flex justify-center mt-8">
                         <ButtonCard

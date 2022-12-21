@@ -51,28 +51,28 @@ export default function Contact() {
                         name="Kevin"
                         surname="Halbinger"
                         email="hello@steplix.com"
-                        onClickCopyButton={() => onClickCopyButton("hello@steplix.com")}
+                        onClickTextFieldButton={() => onClickCopyButton("hello@steplix.com")}
                         onClickButton={() => console.log("click")}
                     />
                     <CardContact
                         name="Kevin"
                         surname="Halbinger"
                         email="hello@steplix.com"
-                        onClickCopyButton={() => onClickCopyButton("hello@steplix.com")}
+                        onClickTextFieldButton={() => onClickCopyButton("hello@steplix.com")}
                         onClickButton={() => console.log("click")}
                     />
                     <CardContact
                         name="Kevin"
                         surname="Halbinger"
                         email="hello@steplix.com"
-                        onClickCopyButton={() => onClickCopyButton("hello@steplix.com")}
+                        onClickTextFieldButton={() => onClickCopyButton("hello@steplix.com")}
                         onClickButton={() => console.log("click")}
                     />
                     <CardContact
                         name="Kevin"
                         surname="Halbinger"
                         email="hello@steplix.com"
-                        onClickCopyButton={() => onClickCopyButton("hello@steplix.com")}
+                        onClickTextFieldButton={() => onClickCopyButton("hello@steplix.com")}
                         onClickButton={() => console.log("click")}
                     />
                 </div>
