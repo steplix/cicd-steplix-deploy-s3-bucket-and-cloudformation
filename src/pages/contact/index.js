@@ -6,6 +6,7 @@ import NextLink from "next/link";
 import Inverted from "@/common/components/Title/Inverted";
 import Gradient from "@/common/components/Title/Gradient";
 import CardContact from "@/common/components/CardContact";
+import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { useResponsive } from "@/common/hooks/useResponsive";
 
 const icons = {
@@ -93,9 +94,7 @@ export default function Contact() {
           height="h-[32px]"
         />
         <div className="flex justify-center my-8">
-          <div className="w-80 md:w-72 lg:w-[440px] xl:w-[550px] h-40 border-2 grid place-content-center rounded-2xl">
-            Carrousel
-          </div>
+          <PhotoCarousel />
         </div>
         <section className="lg:flex lg:gap-8">
           <div>
