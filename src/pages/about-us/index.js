@@ -3,6 +3,7 @@ import { useTranslation } from "next-export-i18n";
 import MissionAndVision from "@/modules/MissionAndVision";
 import Teams from "@/modules/Teams";
 import OurValues from "@/modules/OurValues";
+import PortfolioCard from "@/common/components/PortfolioCard";
 
 export default function AboutUs() {
     const { t } = useTranslation();
@@ -16,6 +17,8 @@ export default function AboutUs() {
                 <Teams />
 
                 <OurValues />
+
+                <PortfolioCard />
             </div>
         </>
     );
