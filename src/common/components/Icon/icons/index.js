@@ -42,3 +42,4 @@ export * from "./mobile";
 export * from "./mutualRespect";
 export * from "./phone";
 export * from "./send";
+export * from "./eccomerce";
