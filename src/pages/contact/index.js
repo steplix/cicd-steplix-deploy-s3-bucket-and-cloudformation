@@ -19,19 +19,22 @@ const icons = {
 export default function Contact() {
   const { t } = useTranslation();
   const { width } = useResponsive();
+  const BREAKPOINT_WIDTH = 1024;
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
   };
 
   return (
-    <section className="flex flex-col relative pt-16 pb-12 space-y-14 md:space-y-8 sm:pt-32 lg:space-y-12 xl:space-y-28 xl:pt-10">
-      {width < 640 && (
-        <div className="header-gradient flex p-8">
-          <Inverted
-            content={t("CardContactSection.pronoun")}
-            secondContent={t("CardContactSection.title")}
-            size="text-5xl"
-          />
+    <section className="flex flex-col relative pb-12 space-y-14 md:space-y-8 lg:pt-10 lg:space-y-12 xl:space-y-28">
+      {width < BREAKPOINT_WIDTH && (
+        <div className="header-gradient flex">
+          <div className="container py-8 px-4">
+            <Inverted
+              content={t("CardContactSection.pronoun")}
+              secondContent={t("CardContactSection.title")}
+              size="text-5xl"
+            />
+          </div>
         </div>
       )}
       <main className="container px-4">
