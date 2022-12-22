@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
 import Icon from "../Icon"
 
-const PhotoCarousel = ({ photoArray }) => {
+const PortfolioCarousel = ({ children, carouselClassName }) => {
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = React.useState(false)
 
@@ -13,11 +13,8 @@ const PhotoCarousel = ({ photoArray }) => {
         initial: 0,
         breakpoints: {
           "(min-width: 1024px)": {
-            slides: { perView: 2, spacing: 3 }
+            slides: { perView: 2, spacing: 12 }
           },
-          "(min-width: 1280px)": {
-            slides: { perView: 3, spacing: 3 }
-          }
         },
       slideChanged(slider) {
         setCurrentSlide(slider?.track?.details?.rel)
@@ -60,23 +57,13 @@ const PhotoCarousel = ({ photoArray }) => {
   
     return (
         <div className="relative w-full my-4 flex flex-col container mx-auto items-center">
-          <div ref={sliderRef} className="keen-slider lg:max-w-[774px] xl:max-w-[990px] rounded-[20px]">
+          <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
             {
-              photoArray.map(({src}) => (
-                <div className="keen-slider__slide number-slide rounded-[20px]" key={src}>
-                  <div className="carousel-item-container">
-                    <img
-                      src={src}
-                      alt="culture"
-                      className="carousel-item-container__image"
-                      />
-                  </div>
-                </div> 
-              ))
+              children
             }
           </div>
           {loaded && instanceRef.current && (
-            <div className="dots md:hidden">
+            <div className="dots mt-6 md:hidden">
               {[
                 ...Array(instanceRef?.current?.track?.details?.slides?.length).keys(),
               ].map((idx) => {
@@ -106,11 +93,10 @@ const PhotoCarousel = ({ photoArray }) => {
     )
 };
 
-PhotoCarousel.propTypes = {
-  photoArray: propTypes.arrayOf(propTypes.shape({
-    src: propTypes.string
-  })).isRequired
+PortfolioCarousel.propTypes = {
+  children: propTypes.node.isRequired,
+  carouselClassName: propTypes.string.isRequired
 };
 
 
-export default PhotoCarousel;
+export default PortfolioCarousel;
