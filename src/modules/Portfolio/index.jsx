@@ -3,7 +3,9 @@ import Link from "next/link";
 import Icon from '@/components/Icon';
 import ButtonCard from "@/common/components/ButtonCard";
 import { useTranslation } from "next-export-i18n";
-// import TechnologiesSlider from '@/common/components/TechnologiesSlider';
+import TechnologiesSlider from '@/common/components/TechnologiesSlider';
+import { repeatImageLogos } from "@/common/utils/methods";
+import { clientsLogos } from '@/common/utils/constants';
 
 const Portfolio = () => {
     const { t } = useTranslation();
@@ -44,7 +46,12 @@ const Portfolio = () => {
                     />
                 </div>
 
-                {/* <TechnologiesSlider />   */}
+                <TechnologiesSlider
+                    images={repeatImageLogos(clientsLogos, 20)}
+                    slides={8}
+                    imgClass="w-24"
+                    spacingBeetWeenSlides={10}
+                />  
             </div>
         </section>
     )

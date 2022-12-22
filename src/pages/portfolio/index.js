@@ -10,21 +10,7 @@ import { useTranslation } from "next-export-i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
 import { repeatImageLogos } from "@/common/utils/methods";
 import { PORTFOLIO_CARDS } from "@/common/utils/constants";
-
-const imageLogos = [
-  {
-    image: "assets/img/clients/web3/logo-pow.svg",
-    alt: "POW Logo",
-  },
-  {
-    image: "assets/img/clients/web3/logo-valid.svg",
-    alt: "Valid Logo",
-  },
-  {
-    image: "assets/img/clients/web3/logo-finket.svg",
-    alt: "Finket Logo",
-  },
-];
+import { clientsLogos } from '@/common/utils/constants';
 
 const PortfolioView = () => {
   const { t } = useTranslation();
@@ -111,7 +97,7 @@ const PortfolioView = () => {
         </article>
         <article className="mt-[56px]">
           <TechnologiesSlider
-            images={repeatImageLogos(imageLogos, 20)}
+            images={repeatImageLogos(clientsLogos, 20)}
             slides={8}
             imgClass="w-24"
             spacingBeetWeenSlides={10}
