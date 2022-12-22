@@ -39,7 +39,16 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </button>
                 </div>
-                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/about-us")} text-sm border-blue`}>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/")} text-sm border-blue`}>
+                    <div className="py-4 px-3.5">
+                        <Link href={{ pathname: "/", query: query }}>
+                            <a onClick={() => handleClickToggle()}>
+                                {t("navbar.item4")}
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/about-us")} text-sm border-red`}>
                     <div className="py-4 px-3.5">
                         <Link href={{ pathname: "/about-us", query: query }}>
                             <a onClick={() => handleClickToggle()}>
@@ -48,7 +57,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/stack")} text-sm border-red`}>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/stack")} text-sm border-yellow`}>
                     <div className="py-4 px-3.5">
                         <Link href={{ pathname: "/stack", query: query }}>
                             <a onClick={() => handleClickToggle()}>
@@ -57,7 +66,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/process")} text-sm border-yellow`}>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/process")} text-sm border-blue`}>
                     <div className="py-4 px-3.5">
                         <Link href={{ pathname: "/process", query: query }}>
                             <a onClick={() => handleClickToggle()}>
@@ -66,11 +75,11 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/jobs")} text-sm border-blue`}>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/jobs")} text-sm border-red`}>
                     <div className="py-4 px-3.5">
-                        <Link href={{ pathname: "/jobs", query: query }}>
+                        <Link href={{ pathname: "/contact", query: query }}>
                             <a onClick={() => handleClickToggle()}>
-                                {t("navbar.item5")}
+                                {t("navbar.item3")}
                             </a>
                         </Link>
                     </div>
