@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 
 const Svg = ({ className, children, offsetX, offsetY, originalSize, originalWidth, originalHeight }) => {
+    
     if (originalSize) {
         originalWidth = originalSize;
         originalHeight = originalSize;
     }
-    
+
     return (
         <svg
             className={`fill-current ${className}`}
@@ -36,7 +37,6 @@ Svg.propTypes = {
 Svg.defaultProps = {
     offsetX: 0,
     offsetY: 0,
-    originalSize: 20,
     originalWidth: 20,
     originalHeight: 20,
 };
