@@ -157,9 +157,9 @@ const Navbar = () => {
                                 {t("navbar.item2")}
                             </a>
                         </Link>
-                        <Link href={{ pathname: "/jobs", query: query }}>
+                        <Link href={{ pathname: "/contact", query: query }}>
                             <a
-                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/jobs")}`}
+                                className={`nav--link nav--link--blue ${isCurrentPathnameActive("/contact")}`}
                             >
                                 {t("navbar.item3")}
                             </a>

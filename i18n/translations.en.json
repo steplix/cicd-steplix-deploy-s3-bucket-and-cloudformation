@@ -433,9 +433,9 @@
     "ButtonSend": "Send",
     "navbar": {
         "item0": "About Us",
-        "item1": "Technologies",
-        "item2": "What we do",
-        "item3": "Our Culture",
+        "item1": "What we do",
+        "item2": "Our portfolio",
+        "item3": "Contact Us",
         "item4": "Happy Clients",
         "item5": "Become a Steplixer",
         "item6": "Contact Us",
@@ -451,7 +451,7 @@
             "item0": "About us",
             "item1": "What we do",
             "item2": "Our portfolio",
-            "item3": "Contact us"
+            "item3": "Contact Us"
         }
     },
     "metaTags": {
