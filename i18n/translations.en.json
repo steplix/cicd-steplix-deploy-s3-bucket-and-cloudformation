@@ -479,10 +479,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
     "rights": "All rights reserved®",
     "links": {
-        "item0": "About us",
-        "item1": "What we do",
-        "item2": "Our portfolio",
-        "item3": "Contact Us"
+      "item0": "About us",
+      "item1": "What we do",
+      "item2": "Our portfolio",
+      "item3": "Contact Us"
     }
   },
   "metaTags": {
@@ -521,29 +521,60 @@
       "keywords": "Technology Stack, React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, portability, performance, Agility, Error isolation, Scalability, Next.js, Next. js, Framework, developers, High-Performance, server-side rendering, Flutter, hybrid applications, open source SDK, Android Interface, Ios Interface, layered architecture, Amazon, AWS, Just In Time Infrastructure,  Figma, Wireframes, Interfaces, prototypes, web-based, Cloud Access,  Kotlin, Java-Based Technologies,  Node, NodeJs, Node Js, Back-end tasks, Framework, ExpressJS, Express JS",
       "description": "Steplix Technology Stack 🗻"
     }
-    },
-    "ButtonCardContact": "Schedule an appointment",
-    "ButtonBecomeSteplixer": "Become a Steplixer",
-    "CardContactSection": {
-        "pronoun": "Our",
-        "title": "Contact",
-        "title2": "Our Office",
-        "subtitle": "How to contact us",
-        "description": "Schedule a call or contact our sales team by e-mail.",
-        "phrase": "We would like to hear your ideas!"
-    },
-    "OurPostsSay": {
-        "title": "Our posts say"
-    },
-    "PortfolioHomeSection": {
-        "title": "Go to portfolio"
-    },
-    "MainHeader": {
-        "titlePartOne": "We co-create",
-        "titlePartTwo": "the path that",
-        "titlePartThree": "will take your business",
-        "titlePartFour": "to the top",
-        "subtitlePartOne": "We are your",
-        "subtitlePartTwo": "digital ally"
+  },
+  "ButtonCardContact": "Schedule an appointment",
+  "ButtonBecomeSteplixer": "Become a Steplixer",
+  "CardContactSection": {
+    "pronoun": "Our",
+    "title": "Contact",
+    "title2": "Our Office",
+    "subtitle": "How to contact us",
+    "description": "Schedule a call or contact our sales team by e-mail.",
+    "phrase": "We would like to hear your ideas!"
+  },
+
+  "PortfolioSection": {
+    "pronoun": "Our",
+    "title": "portfolio",
+    "subtitle": "Industries",
+    "subtitle2": "Our customer say",
+    "parraf1": "We scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to reach the goal."
+  },
+
+  "IconsLabel": {
+    "agro": "Agro",
+    "insurance": "Insurance",
+    "eccomerce": "Eccomerce",
+    "pharmacist": "Pharmacist",
+    "logistics": "Logistics",
+    "fintech": "Fintech",
+    "environment": "Environment",
+    "car": "Automotor",
+    "communications": "Communications",
+    "news": "Social Media",
+    "aeronautics": "Aeronautics"
+  },
+  "OurPostsSay": {
+    "title": "Our posts say"
+  },
+  "PortfolioHomeSection": {
+    "title": "Go to portfolio"
+  },
+  "MainHeader": {
+    "titlePartOne": "We co-create",
+    "titlePartTwo": "the path that",
+    "titlePartThree": "will take your business",
+    "titlePartFour": "to the top",
+    "subtitlePartOne": "We are your",
+    "subtitlePartTwo": "digital ally"
+  },
+
+  "portfolio": {
+    "cards": {
+      "finket": "Design and development of a digital platform for financial services.",
+      "pow": "We designed and developed a web dashboard to visualize E-commerce metrics and indicators.",
+      "valid": "We designed and developed an interface for cell phone stores.",
+      "sura": "We design and develop an online quotation system for your customers."
     }
+  }
 }
