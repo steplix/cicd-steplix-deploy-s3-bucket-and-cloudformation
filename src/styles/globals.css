@@ -908,4 +908,14 @@ p {
   .postsCarousel {
     @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px]; 
   }
+
+  /*------- Main Header Section ------- */
+  .mainHeader {
+    position: relative;
+    background-image: url("../../public/assets/img/bg-mountain.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
 }
