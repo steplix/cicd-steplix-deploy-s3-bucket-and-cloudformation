@@ -440,9 +440,9 @@
     "ButtonSend": "Enviar",
     "navbar": {
         "item0": "Quienes somos",
-        "item1": "Tecnologías",
-        "item2": "Qué hacemos",
-        "item3": "Nuestra cultura",
+        "item1": "Qué hacemos",
+        "item2": "Nuestro portfolio",
+        "item3": "Contáctanos",
         "item4": "Clientes felices",
         "item5": "Convertite en Steplixer",
         "item6": "Contactanos",
@@ -458,7 +458,7 @@
             "item0": "Quienes somos",
             "item1": "Qué hacemos",
             "item2": "Nuestro portfolio",
-            "item3": "Contactanos"
+            "item3": "Contáctanos"
         }
     },
     "metaTags": {
@@ -502,5 +502,11 @@
         "subtitle": "Cómo nos contactas",
         "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
         "phrase": "¡Queremos escuchar tus ideas!"
+    },
+    "OurPostsSay": {
+        "title": "Nuetros posteos dicen"
+    },
+    "PortfolioHomeSection": {
+        "title": "Ir al portfolio"
     }
 }
