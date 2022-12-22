@@ -17,12 +17,11 @@ const icons = {
   send: <Icon name="send" className="w-4" />,
 };
 
-
-
 export default function Contact() {
   const { t } = useTranslation();
   const { width } = useResponsive();
   const BREAKPOINT_WIDTH = 1024;
+
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
   };
@@ -48,7 +47,7 @@ export default function Contact() {
           </div>
         </div>
       )}
-      <main className="container px-4 py-8 ">
+      <main className="container px-4 py-8">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
@@ -61,15 +60,18 @@ export default function Contact() {
           <p>{t("CardContactSection.description")}</p>
           <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
         </div>
-        <div className="flex justify-center flex-wrap gap-4 mb-20 lg:grid lg:grid-cols-2">
+        <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2">
           {CARD_CONTACT.map((item) => (
             <CardContact
               key={item.email}
               name={item.name}
               surname={item.surname}
+              imgSrc={item?.imgSrc}
               email={item.email}
               onClickCopyButton={() => onClickCopyButton(item.email)}
-              onClickSocialMediaButton={() => onClickSocialMediaButton(item.linkedin)}
+              onClickSocialMediaButton={() =>
+                onClickSocialMediaButton(item.linkedin)
+              }
               onClickCalendarButton={() => onClickCalendarButton(item.meeting)}
             />
           ))}
@@ -85,7 +87,7 @@ export default function Contact() {
         <div className="flex justify-center my-8">
           <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
-        <section className="lg:flex lg:gap-8">
+        <section className="lg:flex lg:gap-8 mb-[72px]">
           <div>
             <div className="flex justify-center w-full">
               <div className="w-[328px] sm:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
