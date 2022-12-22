@@ -465,9 +465,9 @@
   "navbar": {
     "item0": "About Us",
     "item1": "What we do",
-    "item2": "Porfolio",
-    "item3": "Our Culture",
-    "item4": "Happy Clients",
+    "item2": "Portfolio",
+    "item3": "Contact Us",
+    "item4": "Home",
     "item5": "Become a Steplixer",
     "item6": "Contact Us",
     "currentLang": "English",
@@ -479,10 +479,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
     "rights": "All rights reserved®",
     "links": {
-      "item0": "About us",
-      "item1": "What we do",
-      "item2": "Our portfolio",
-      "item3": "Contact us"
+        "item0": "About us",
+        "item1": "What we do",
+        "item2": "Our portfolio",
+        "item3": "Contact Us"
     }
   },
   "metaTags": {

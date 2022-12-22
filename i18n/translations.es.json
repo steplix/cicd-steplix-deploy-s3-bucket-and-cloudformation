@@ -470,11 +470,11 @@
   "seeMore": "Ver más",
   "ButtonSend": "Enviar",
   "navbar": {
-    "item0": "Quienes somos",
+    "item0": "Quiénes somos",
     "item1": "Qué hacemos",
     "item2": "Portfolio",
-    "item3": "Nuestra cultura",
-    "item4": "Clientes felices",
+    "item3": "Contactanos",
+    "item4": "Home",
     "item5": "Convertite en Steplixer",
     "item6": "Contactanos",
     "currentLang": "Español",
@@ -486,10 +486,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
     "rights": "Todos los derechos reservados®",
     "links": {
-      "item0": "Quienes somos",
-      "item1": "Qué hacemos",
-      "item2": "Nuestro portfolio",
-      "item3": "Contactanos"
+        "item0": "Quienes somos",
+        "item1": "Qué hacemos",
+        "item2": "Nuestro portfolio",
+        "item3": "Contactanos"
     }
   },
   "metaTags": {
