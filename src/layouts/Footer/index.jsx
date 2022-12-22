@@ -29,7 +29,7 @@ const Footer = () => {
                 <span className="ml-2 md:ml-3 lg:ml-1">|</span>
               </div>
               <div>
-                <Link href="/process">
+                <Link href="/what-we-do">
                   <a href="#">{t("footer.links.item1")} </a>
                 </Link>
                 <span className="ml-1 hidden lg:inline">|</span>
@@ -49,12 +49,16 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-4 self-center">
             <div className="flex space-x-4 self-center md:self-end">
-              <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                <Icon name="instagram" className="h-4 w-4 text-white" />
-              </div>
-              <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                <Icon name="linkedIn" className="h-4 w-4 text-white" />
-              </div>
+              <a href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank">
+                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
+                  <Icon name="instagram" className="h-4 w-4 text-white" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/steplix" rel="noreferrer" target="_blank">
+                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
+                  <Icon name="linkedIn" className="h-4 w-4 text-white" />
+                </div>
+              </a>
             </div>
             <div className="flex space-x-2 text-white items-center text-xs lg:text-base">
               <Icon
@@ -75,7 +79,7 @@ const Footer = () => {
               <Icon name="iram" className="h-[38px] w-[38px]" />
             </div>
             <a
-              href={t('footer.certificateUrl')}
+              href={t("footer.certificateUrl")}
               rel="noreferrer"
               target="_blank"
               className="font-poppins underline"

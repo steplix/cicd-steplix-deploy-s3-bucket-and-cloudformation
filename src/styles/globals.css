@@ -861,24 +861,6 @@ p {
 
   /* END AVATAR */
 
-  @media (min-width: 768px) {
-    .container {
-      max-width: 640px !important;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .container {
-      max-width: 896px !important;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1120px !important;
-    }
-  }
-
   .text-outlined {
     position: relative;
     background: transparent;
