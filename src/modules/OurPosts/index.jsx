@@ -6,7 +6,7 @@ const OurPosts = () => {
     const { t } = useTranslation();
 
     return (
-        <section>
+        <section className="container px-4 md:px-0">
             <Title content={t("OurPostsSay.title")} borderPosition="bottom" underlineFixed size="text-[26px] leading-[26px] lg:text-[32px] lg:leading-[48px]"/>
         </section>
     )
