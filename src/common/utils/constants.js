@@ -209,6 +209,7 @@ export const CARD_CONTACT = [
     email: "khalbinger@steplix.com",
     meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
     linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
+    imgSrc: "assets/img/contact/sellers/seller-1_cropped.png",
   },
 
   {
@@ -217,6 +218,7 @@ export const CARD_CONTACT = [
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
+    imgSrc: "assets/img/contact/sellers/seller-2_cropped.png",
   },
 
   {
@@ -230,9 +232,10 @@ export const CARD_CONTACT = [
   {
     name: "Mariano",
     surname: "Wegier",
-    email: "mwegier@steplix.com ",
+    email: "mwegier@steplix.com",
     meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
     linkedin: "https://www.linkedin.com/in/marianowegier/",
+    imgSrc: "assets/img/contact/sellers/seller-4_cropped.png",
   },
 ];
 
@@ -260,5 +263,26 @@ export const posts = [
     description:
       "A la hora de llevar adelante un proyecto tecnológico, son muchos los factores a tener en cuenta. En Steplix, entendemos que la formación de equipos con perfiles multidisciplinarios es una de las claves en el resultado final de los desarrollos para nuestros clientes. De la misma forma en que construimos una...",
     url: "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop",
+  },
+];
+
+// PORTFOLIO PAGE
+
+export const PORTFOLIO_CARDS = [
+  {
+    name: "valid",
+    industryIconName: "communications",
+  },
+  {
+    name: "finket",
+    industryIconName: "fintech",
+  },
+  {
+    name: "sura",
+    industryIconName: "insurance",
+  },
+  {
+    name: "pow",
+    industryIconName: "eccomerce",
   },
 ];

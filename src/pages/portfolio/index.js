@@ -3,10 +3,13 @@ import Gradient from "@/common/components/Title/Gradient";
 import CardIcon from "@/common/components/CardIcon";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import TestimonialCard from "@/common/components/TestimonialCard";
+import PortfolioCarousel from "@/common/components/PortfolioCarousel";
+import PortfolioCard from "@/common/components/PortfolioCard";
 import { useResponsive } from "@/common/hooks/useResponsive";
 import { useTranslation } from "next-export-i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
 import { repeatImageLogos } from "@/common/utils/methods";
+import { PORTFOLIO_CARDS } from "@/common/utils/constants";
 
 const imageLogos = [
   {
@@ -42,10 +45,19 @@ const PortfolioView = () => {
           </div>
         </div>
       )}
-      <main className="container px-4 py-8 ">
-        <div className="w-1/2 my-0 mx-auto border-2 rounded-2xl h-80 grid place-content-center">
-          Carrousel Finket
-        </div>
+      <main className="container px-4 pt-12 ">
+        <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
+          {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
+            return (
+              <PortfolioCard
+                name={name}
+                industryIconName={industryIconName}
+                iconBrandClass="w-32"
+                key={index}
+              />
+            );
+          })}
+        </PortfolioCarousel>
         <div className="mt-[72px] flex flex-col gap-4">
           <Gradient
             borderPosition="left"
@@ -76,22 +88,28 @@ const PortfolioView = () => {
             height="h-[32px]"
           />
           <div className="flex justify-center">
-            {clients.map((client) => (
-              <TestimonialCard
-                key={client.name}
-                clientPosition={client.position}
-                clientCompany={client.companyName}
-                clientFirstName={client.name}
-                clientLastName={client.lastName}
-                clientOpinion={client.text}
-                clientImageUrl={client.image}
-                imageAlt={client.alt}
-                textColor={client.borderColor}
-              />
-            ))}
+            <PortfolioCarousel carouselClassName={"clientsCarousel"}>
+              {clients.map((client) => (
+                <div
+                  key={client.companyName}
+                  className="keen-slider__slide number-slide"
+                >
+                  <TestimonialCard
+                    clientImageUrl={client?.image}
+                    imageAlt={`${client?.companyName} logo`}
+                    clientPosition={client?.position}
+                    clientFirstName={client?.name}
+                    clientLastName={client?.lastName}
+                    clientOpinion={client?.text}
+                    clientCompany={client?.companyName}
+                    textColor={client.textColor}
+                  />
+                </div>
+              ))}
+            </PortfolioCarousel>
           </div>
         </article>
-        <article className="mt-[72px]">
+        <article className="mt-[56px]">
           <TechnologiesSlider
             images={repeatImageLogos(imageLogos, 20)}
             slides={8}

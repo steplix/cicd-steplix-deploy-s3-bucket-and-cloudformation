@@ -62,6 +62,7 @@ export const usePortfolioTranslation = () => {
       companyName: "CTECH",
       borderColor: "border-yellow",
       text: t("happyClients.clientFinket.text"),
+      textColor: "text-yellow",
     },
     {
       image: "/assets/img/clients/client-sura.svg",
@@ -73,6 +74,7 @@ export const usePortfolioTranslation = () => {
       companyName: "Seguros SURA",
       borderColor: "border-red",
       text: t("happyClients.clientSura.text"),
+      textColor: "text-red",
     },
     {
       image: "/assets/img/clients/sinoar-logo.webp",
@@ -84,6 +86,7 @@ export const usePortfolioTranslation = () => {
       companyName: "SinoAr",
       borderColor: "border-blue",
       text: t("happyClients.clientSinoar.text"),
+      textColor: "text-blue",
     },
     {
       image: "/assets/img/clients/client-pow.svg",
@@ -95,6 +98,7 @@ export const usePortfolioTranslation = () => {
       companyName: "Pow.",
       borderColor: "border-yellow",
       text: t("happyClients.clientPow.text"),
+      textColor: "text-yellow",
     },
     {
       image: "/assets/img/clients/client-vacaygreen.svg",
@@ -106,6 +110,7 @@ export const usePortfolioTranslation = () => {
       companyName: "VacayGreen",
       borderColor: "border-red",
       text: t("happyClients.clientVacayGreen.text"),
+      textColor: "text-red",
     },
     {
       image: "/assets/img/clients/client-valid.svg",
@@ -117,23 +122,9 @@ export const usePortfolioTranslation = () => {
       companyName: "Valid",
       borderColor: "border-blue",
       text: t("happyClients.clientValid.text"),
+      textColor: "text-blue",
     },
   ];
 
-  // TODO: Replace this array with the one obove when the carrusel is ready
-  const ARRAY_CLIENT = [
-    {
-      image: "/assets/img/clients/client-finket-v2.svg",
-      alt: "CTECH",
-      name: "Lucas",
-      position: "Ceo & Founder",
-      lastName: "Bianchi",
-      title: t("happyClients.clientFinket.title"),
-      companyName: "CTECH",
-      borderColor: "border-yellow",
-      text: t("happyClients.clientFinket.text"),
-    },
-  ];
-
-  return { clients: ARRAY_CLIENT, industries: PORTFOLIO_INDUSTRIES };
+  return { clients: ARRAY_CLIENTS, industries: PORTFOLIO_INDUSTRIES };
 };
