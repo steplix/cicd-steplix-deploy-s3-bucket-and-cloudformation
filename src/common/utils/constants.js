@@ -52,7 +52,7 @@ export const routesMap = {
   "/about-us": {
     title: "navbar.item0",
   },
-  "/stack": {
+  "/what-we-do": {
     title: "navbar.item1",
   },
   "/process": {
