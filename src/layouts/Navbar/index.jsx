@@ -142,13 +142,27 @@ const Navbar = () => {
                 {t("navbar.item1")}
               </a>
             </Link>
-            <Link href={{ pathname: "/jobs", query: query }}>
+            <Link
+              href={{
+                pathname: "/process",
+                query: query,
+              }}
+            >
               <a
-                className={`nav--link nav--link--blue ${isCurrentPathnameActive(
-                  "/jobs"
+                className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
+                  "/process"
                 )}`}
               >
                 {t("navbar.item2")}
+              </a>
+            </Link>
+            <Link href={{ pathname: "/contact", query: query }}>
+              <a
+                className={`nav--link nav--link--blue ${isCurrentPathnameActive(
+                  "/contact"
+                )}`}
+              >
+                {t("navbar.item3")}
               </a>
             </Link>
             <LanguageSelector />

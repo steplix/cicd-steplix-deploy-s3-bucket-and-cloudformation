@@ -47,6 +47,10 @@ module.exports = {
       "post-card": "0px 0px 2px 1px rgba(112, 112, 112, 0.2)",
     },
     extend: {
+      margin: {
+        "-98": "-28rem",
+        "-99": "-38rem",
+      },
       backgroundImage: {
         ["what-we-do-steps"]:
           "url('/assets/img/what-we-do/what-we-do-steps-base.png')",
