@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types';
+import { useTranslation } from "next-export-i18n";
+
 
 const Card = ({ clientImageUrl, clientFirstName, clientLastName, clientCompany, clientOpinion, clientPosition, imageAlt, textColor }) => {
+
+  const { t } = useTranslation();
+
+
   return (
     // Todo remover bordes de imagen y card, una vez que se defina el fondo / imagenes
     <article className="h-[365px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] border p-[23px] rounded-[20px] flex flex-col">
@@ -17,7 +23,7 @@ const Card = ({ clientImageUrl, clientFirstName, clientLastName, clientCompany, 
           {clientPosition} en <h4 className={`${textColor} font-bold pl-[4px]`}> {clientCompany} </h4>
         </div>
       </div>
-      <p className="text-xs leading-4">{clientOpinion}</p>
+      <p className="text-xs leading-4">{t(clientOpinion)}</p>
     </article>
   );
 };

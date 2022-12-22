@@ -914,4 +914,16 @@ p {
   .portfolio-card-shadow {
     filter: drop-shadow(10px 10px 25px rgba(61, 17, 82, 0.15));
   }
+
+  .portfolioCarousel {
+    @apply max-w-[280px] md:max-w-[376px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px] lg:min-h-[418px];
+  }
+
+  .clientsCarousel {
+    @apply max-w-[280px] md:max-w-[420px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px];
+  }
+
+  .postsCarousel {
+    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px]; 
+  }
 }

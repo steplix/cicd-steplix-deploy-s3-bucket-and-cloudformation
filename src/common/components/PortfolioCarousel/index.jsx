@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
 import Icon from "../Icon"
 
-const PortfolioCarousel = ({ children }) => {
+const PortfolioCarousel = ({ children, carouselClassName }) => {
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = React.useState(false)
 
@@ -57,7 +57,7 @@ const PortfolioCarousel = ({ children }) => {
   
     return (
         <div className="relative w-full my-4 flex flex-col container mx-auto items-center">
-          <div ref={sliderRef} className="keen-slider max-w-[280px] md:max-w-[376px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px] lg:min-h-[418px]">
+          <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
             {
               children
             }
@@ -94,10 +94,8 @@ const PortfolioCarousel = ({ children }) => {
 };
 
 PortfolioCarousel.propTypes = {
-  photoArray: propTypes.arrayOf(propTypes.shape({
-    src: propTypes.string
-  })).isRequired,
-  children: propTypes.node.isRequired
+  children: propTypes.node.isRequired,
+  carouselClassName: propTypes.string.isRequired
 };
 
 
