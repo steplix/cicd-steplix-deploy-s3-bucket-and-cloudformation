@@ -9,7 +9,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const { t } = useTranslation();
 
   return (
-    <div className='keen-slider__slide number-slide w-[280px] md:w-[376px] h-[376px] md:h-[408px] xl:w-[488px] xl:h-[408px] portfolio-card-shadow lg:drop-shadow-sm rounded-[20px] flex flex-col'>
+    <div className='keen-slider__slide number-slide w-[280px] md:w-[376px] h-[437px] xl:w-[488px] xl:h-[408px] portfolio-card-shadow lg:drop-shadow-sm rounded-[20px] flex flex-col'>
        <picture className='w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]'>
             <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.png`} />
             <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.png`} />
@@ -22,7 +22,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
                 <Icon name={industryIconName} className="w-[25px] h-[26px] text-white" />
             </div>
             <p className='text-[13px] text-black xl:max-w-[331px]'>
-                {t(`whatWeDo.portfolio.cards.${name}`)}
+                {t(`portfolio.cards.${name}`)}
             </p>
         </div>
     </div>

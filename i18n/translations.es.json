@@ -322,6 +322,45 @@
       "descriptionFour": "  Steplix, es el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
     }
   },
+  "what_we_do": {
+    "intro": {
+      "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles",
+      "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar."
+    },
+    "stepsToTheTop": {
+      "titleOne": "Pasos hacia",
+      "titleTwo": "la cima",
+      "fullTitle": "Pasos hacia la cima",
+      "descriptionOne": "Somos tu aliado digital.",
+      "descriptionTwo": " Caminemos juntos.",
+      "descriptionThree": "¿Cuál es tu punto de partida?"
+    },
+    "weExploreTheProyect": {
+      "titleOne": "Exploramos",
+      "titleTwo": "el proyecto",
+      "fullTitle": "Exploramos el proyecto",
+      "descriptionOne": "Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en",
+      "descriptionTwo": " entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
+    },
+    "weDesignYourProduct": {
+      "titleOne": "Diseñamos",
+      "titleTwo": "tu producto",
+      "fullTitle": "Diseñamos tu producto",
+      "descriptionOne": "La segunda escala se enfoca en el diseño de un MVP con el objetivo de seguir potenciando una idea Esto nos permite",
+      "descriptionTwo": " someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización."
+    },
+    "weDevelopTheSolution": {
+      "titleOne": "Desarrollamos",
+      "titleTwo": "la solución",
+      "fullTitle": "Desarrollamos la solución",
+      "descriptionOne": "Construimos y entregamos el producto final.",
+      "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
+    },
+    "HowDoWeDoIt": {
+      "titleOne": "¿Cómo lo logramos?",
+      "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
+    }
+  },
   "masthead": {
     "titlePartOne": "Somos ",
     "emptyTitlePartOne": "Sherpas",
@@ -342,112 +381,22 @@
       "title": "Conociendo tu negocio",
       "description": " Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
     },
-    "portfolio": {
-      "cards": {
-        "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-        "valid": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
-        "sura": "Diseñamos y desarrollamos un cotizador online para sus clientes.",
-        "pow": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce."
-      }
+    "cardTwo": {
+      "title": "Diseño de producto",
+      "description": "La segunda escala se enfoca en el diseño de una primera versión del producto que permitirá someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización, para seguir potenciando la idea."
     },
-    "process": {
-      "scrumFramework": {
-        "titleOne": " ¿Sabías que trabajamos bajo el ",
-        "titleTwo": "Marco Scrum?",
-        "paragraphOne": {
-          "textOne": "En Steplix utilizamos el marco de trabajo Scrum, que se basa en realizar un desarrollo iterativo/incremental que nos permite entregar valor desde el inicio del proyecto y a todo lo largo de la construcción del producto, garantizando ajustes en diseño y desarrollo en momentos oportunos del ciclo de vida. Conformamos un equipo multidisciplinario, denominado",
-          "goldenWordOne": " Scrum Team",
-          "textTwo": " que estará acompañado por un líder servicial bajo el rol de ",
-          "goldenWordTwo": " Scrum Master.",
-          "textThree": " Todos los colaboradores cuentan con los conocimientos técnicos necesarios. Cabe destacar, que es clave y necesaria la participación del cliente, a través de un representante que él mismo designe denominado bajo el rol de ",
-          "goldenWordThree": "Product Owner",
-          "textFour": " para asegurar una comunicación fluida y adecuada de los requisitos."
-        },
-        "paragraphTwo": {
-          "textOne": "El marco Scrum se compone de una serie de eventos/reuniones que se realizan en momentos estratégicos, durante ciclos de 2 semanas (",
-          "goldenWordOne": "Sprints",
-          "textTwo": ") en donde se trabaja en base a ciertos requisitos seleccionados de la lista principal relevada/priorizada (",
-          "goldenWordTwo": "Product Backlog",
-          "textThree": " ), que deriva de una reunión de planificación que da origen a la lista de requisitos que se van a construir durante esas dos semanas ( ",
-          "goldenWordThree": "Sprint Backlog",
-          "textFour": ") y se desarrollan garantizando un entregable funcional (",
-          "goldenWordFour": "Incremento del producto",
-          "textFive": ") al final de cada Sprint .  Cada dos semanas, es decir, al final de cada iteración el incremento del producto es presentado, probado y discutido con el cliente para su evaluación en una reunión que lleva adelante el equipo junto con el Product Owner. Diariamente el equipo se reúne, para mantener la alineación hacia el objetivo del Sprint en curso y al final de la iteración el Scrum Team realiza una reunión de retrospectiva para evaluar la forma como vienen trabajando y aplicar mejora continua de sus procesos y prácticas de desarrollo."
-        },
-        "subtitle": "Este tipo de marco nos permite:",
-        "items": [
-          "Gestionar las expectativas de nuestros clientes basados en resultados tangibles, que se tienen desde el inicio del proyecto.",
-          "Mejorar el time to market.",
-          "Flexibilidad y adaptación respecto a las necesidades del cliente, cambios en el mercado, etc. ",
-          "Gestión sistemática del Retorno de Inversión."
-        ]
-      },
-      "HowDoWeDoIt": {
-        "title": "¿Cómo lo hacemos?",
-        "description": "En la montaña como en los negocios, hay 4 conceptos básicos que no pueden faltar para asegurar la llegada a la cima: espíritu, cuerpo, mente y buenos recursos. Y, En steplix sabemos que podremos alcanzar cualquier desafío porque contamos con todos ellos.",
-        "concepts": {
-          "conceptOne": {
-            "title": "Espíritu",
-            "description": "Las personas son el verdadero motor por eso creamos equipos interdisciplinarios donde conjugamos los conocimientos y las miradas de cada uno para construir la mejor versión de cada producto."
-          },
-          "conceptTwo": {
-            "title": "Cuerpo",
-            "description": "Nos apoyamos en Metodologías Ágiles para una mayor performance del trabajo en sintonía con la evolución del proyecto."
-          },
-          "conceptThree": {
-            "title": "Mente",
-            "description": "Utilizamos Design Thinking como proceso creativo grupal para maximizar la generación de ideas más innovadoras."
-          },
-          "conceptFour": {
-            "title": "Recursos",
-            "description": "Aprovechamos todo el potencial de la tecnología para hacer de cada proyecto una experiencia única, con foco en el usuario."
-          }
-        }
-      },
-      "stepsToTheTop": {
-        "title": "Pasos hacia la ",
-        "titleEmpty": "cima",
-
-        "description": " Los comienzos no son todos iguales... En este camino vos elegís,",
-        "descriptionTwo": "¿Cuál es tu punto de partida?",
-        "stepOne": {
-          "title": "Conociendo tu negocio",
-          "description": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio? \n\n En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender. \n\n Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. \n\n Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla.",
-          "descriptionOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
-          "descriptionTwo": "En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
-          "descriptionThree": "Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías.",
-          "descriptionFour": "Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla. ",
-          "secondaryDescription": "¿Sabías que el 75% de las ideas de nuevos negocios fracasan en sus tres primeros años de vida?"
-        },
-        "stepTwo": {
-          "title": "Diseño de producto",
-          "description": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma. \n\n La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. \n\n De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos.",
-          "descriptionOne": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
-          "descriptionTwo": "La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra.  ",
-          "descriptionThree": "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos.",
-          "descriptionFour": "",
-          "secondaryDescription": "¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja?"
-        },
-        "stepThree": {
-          "title": "Desarrollo y entrega",
-          "description": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar. \n\n Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado. \n\n ¡Pero esto no termina aquí! \n\n En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
-          "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
-          "descriptionTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
-          "descriptionThree": "¡Pero esto no termina aquí!",
-          "descriptionFour": "En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará.",
-          "secondaryDescription": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
-        }
-      },
-      "everythingStartsWithAnIdea": {
-        "title": "Todo empieza con una idea",
-        "descriptionOne": "Esa idea que puede surgir en cualquier momento, en cualquier lugar. Que puede ser innovadora, creativa, revolucionaria, desafiante…",
-
-        "descriptionTwo": " Pero de la idea al hecho, hay un mundo de preguntas, de dudas y de decisiones por tomar.",
-
-        "descriptionThree": " En el proceso de encontrar las respuestas, es importante contar con un guía, un compañero de viaje que comparta el reto y ayude a definir el camino.",
-
-        "descriptionFour": "  Steplix, es el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
-      }
+    "cardThree": {
+      "title": "Desarrollo y entrega",
+      "description": "Esta fase consiste en construir y entregar el producto final para dar comienzo de manera oficial al negocio, respetando los tiempos e inversión acordados."
+    }
+  },
+  "ourCulture": {
+    "title": "Porque nadie llega solo hasta la cumbre...",
+    "subtitle": "Somos tu mejor",
+    "emptySubtitle": " ALIADO",
+    "cardOne": {
+      "title": "Conocemos el camino",
+      "description": "Somos guías en el ecosistema de los negocios digitales y sabemos cómo ayudarte a potenciar una idea para convertirla en un modelo de negocio escalable. "
     },
     "cardTwo": {
       "title": "Te acompañamos en este viaje",
@@ -521,11 +470,11 @@
   "seeMore": "Ver más",
   "ButtonSend": "Enviar",
   "navbar": {
-    "item0": "Quienes somos",
-    "item1": "Tecnologías",
-    "item2": "Qué hacemos",
-    "item3": "Nuestra cultura",
-    "item4": "Clientes felices",
+    "item0": "Quiénes somos",
+    "item1": "Qué hacemos",
+    "item2": "Portfolio",
+    "item3": "Contactanos",
+    "item4": "Home",
     "item5": "Convertite en Steplixer",
     "item6": "Contactanos",
     "currentLang": "Español",
@@ -537,10 +486,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
     "rights": "Todos los derechos reservados®",
     "links": {
-      "item0": "Quienes somos",
-      "item1": "Qué hacemos",
-      "item2": "Nuestro portfolio",
-      "item3": "Contactanos"
+        "item0": "Quienes somos",
+        "item1": "Qué hacemos",
+        "item2": "Nuestro portfolio",
+        "item3": "Contactanos"
     }
   },
   "metaTags": {
@@ -553,6 +502,11 @@
       "title": "Sobre nosotros | Sherpas Digitales | Steplix Software 🧗",
       "keywords": "sherpas digitales, especializados, experiencia , compromiso, equipo interdisciplinario, conocimientos, experiencia, idea de negocio, mantra, creatividad, diseño, innovación , generar valor, modelos de negocios, inversión, ROI, filosofía, desafíos de negocio, guiar, elevar, escalamos, creatividad, estrategia, innovación, tecnología, misión, soluciones innovadoras, Desarrollar, productividad, visión, soluciones de excelencia, precio competitivo, mejora continua, Valores, Confianza, Respeto Mutuo, Éxito, Agilidad, Conciencia",
       "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía."
+    },
+    "whatWeDo": {
+      "title": "Qué hacemos | Sherpas Digitales | Steplix Software 🧗",
+      "keywords": "idea, innovadora, creativa, revolucionaria, desafiante, decisiones, aliado digital, escalar, idea de negocio, minimizando el riesgo, ampliﬁcando el impacto, tiempo acordado, Descubrimiento de negocio, Comprensión y alcance, oportunidad, potencial, talleres, equipo multidisciplinario, modelos de negocio, mínimo de inversión, Diseño de producto, modelo de negocio, propuesta de valor, producto, experiencia de usuario, UX, Desarrollo y entrega, procesos, metodologías ágiles, incremental, producto digital, solución digital, funcionalidades, Espíritu, Cuerpo, Mente, Recursos, Marco Scrum, iterativo, incremental, desarrollo, entregar valor, equipo multidisciplinario, Scrum Team, Scrum Master, Product Owner, Sprints, Product Backlog, Sprint Backlog, Incremento del producto",
+      "description": "¿Cuál es tu punto de partida? 1⃣ Conociendo tu negocio | 2⃣ Diseño de producto | 3⃣ Desarrollo y entrega"
     },
     "process": {
       "title": "Qué hacemos | Sherpas Digitales | Steplix Software 🧗",
@@ -569,106 +523,10 @@
       "keywords": "Convertite en Steplixer, Steplixer",
       "description": "Chequea las ofertas de trabajo en Steplix."
     },
-    "happyClients": {
-      "title": "Lo que opinan nuestros ",
-      "titleEmpty": "clientes",
-      "clientFinket": {
-        "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“.",
-        "title": "CEO & Founder"
-      },
-      "clientSura": {
-        "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas”.",
-        "title": "Business Line Manager"
-      },
-      "clientSinoar": {
-        "text": "“Steplix respondió a nuestro requerimiento de definición de la plataforma digital para un nuevo negocio con agilidad, creatividad y dedicación. El equipo multidisciplinario que ejecutó el proyecto incluyó expertos en agroindustria y en transformación digital, con resultados excelentes en un plazo exiguo de 4 semanas“. ",
-        "title": "Director de Proyecto"
-      },
-      "clientPow": {
-        "text": "“La predisposición del equipo de Steplix fue clave en el proyecto. Destaco principalmente la capacidad que tuvieron de hacer foco en entender la necesidad. En todo momento, buscaron ser eficientes, entregar un poco más y nos acompañaron pensando la solución a futuro, enfocados en la escalabilidad“. ",
-        "title": "Co-Fundador & CEO"
-      },
-      "clientVacayGreen": {
-        "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez“. ",
-        "title": "CTO"
-      },
-      "clientValid": {
-        "text": "“Fue muy conveniente para nosotros encontrar una empresa como Steplix, que tiene la capacidad de responder en plazos muy desafiantes y con especificaciones breves. En todo momento propusieron mejoras y siempre teniendo en cuenta la eficiencia en costes de infraestructura“. ",
-        "title": "Product Manager"
-      }
-    },
-    "seeMore": "Ver más",
-    "ButtonSend": "Enviar",
-    "navbar": {
-      "item0": "Quienes somos",
-      "item1": "Qué hacemos",
-      "item2": "Nuestro portfolio",
-      "item3": "Contáctanos",
-      "item4": "Clientes felices",
-      "item5": "Convertite en Steplixer",
-      "item6": "Contactanos",
-      "currentLang": "Español",
-      "targetLang": "Inglés",
-      "shortTargetLang": "en"
-    },
-    "footer": {
-      "certificateText": "Política de calidad",
-      "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
-      "rights": "Todos los derechos reservados®",
-      "links": {
-        "item0": "Quienes somos",
-        "item1": "Qué hacemos",
-        "item2": "Nuestro portfolio",
-        "item3": "Contáctanos"
-      }
-    },
-    "metaTags": {
-      "home": {
-        "title": "Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "Fábrica de software, Microestrategia de software, Sherpas digitales, Socio digital, Negocios escalables, software business analytics, software full stack, empresas de software factory, software agile, desarrollo de software, software company, Design Thinking, Marco Scrum, Metodologías ágiles, Product Design, Develop and Deliver, Digitalización de negocio, Transformación digital, construcción de productos, Proyecto de software, Proyecto digital, soluciones digitales, Ecosistema digital para negocios, software factory, Digital Sherpas, Digital Partner",
-        "description": "Estamos aquí para co-crear el camino que llevará a tu negocio a la cima 🆙"
-      },
-      "aboutUs": {
-        "title": "Sobre nosotros | Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "sherpas digitales, especializados, experiencia , compromiso, equipo interdisciplinario, conocimientos, experiencia, idea de negocio, mantra, creatividad, diseño, innovación , generar valor, modelos de negocios, inversión, ROI, filosofía, desafíos de negocio, guiar, elevar, escalamos, creatividad, estrategia, innovación, tecnología, misión, soluciones innovadoras, Desarrollar, productividad, visión, soluciones de excelencia, precio competitivo, mejora continua, Valores, Confianza, Respeto Mutuo, Éxito, Agilidad, Conciencia",
-        "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía."
-      },
-      "process": {
-        "title": "Qué hacemos | Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "idea, innovadora, creativa, revolucionaria, desafiante, decisiones, aliado digital, escalar, idea de negocio, minimizando el riesgo, ampliﬁcando el impacto, tiempo acordado, Descubrimiento de negocio, Comprensión y alcance, oportunidad, potencial, talleres, equipo multidisciplinario, modelos de negocio, mínimo de inversión, Diseño de producto, modelo de negocio, propuesta de valor, producto, experiencia de usuario, UX, Desarrollo y entrega, procesos, metodologías ágiles, incremental, producto digital, solución digital, funcionalidades, Espíritu, Cuerpo, Mente, Recursos, Marco Scrum, iterativo, incremental, desarrollo, entregar valor, equipo multidisciplinario, Scrum Team, Scrum Master, Product Owner, Sprints, Product Backlog, Sprint Backlog, Incremento del producto",
-        "description": "¿Cuál es tu punto de partida? 1⃣ Conociendo tu negocio | 2⃣ Diseño de producto | 3⃣ Desarrollo y entrega"
-      },
-      "contact": {
-        "title": "Contactanos | Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "ideas, Agendá, comerciales, Descargá, Brochure, oficina, Argentina",
-        "description": "Contactanos para llevar juntos esa idea hacia la cima 🗻"
-      },
-      "jobs": {
-        "title": "Convertite en Steplixer | Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "Convertite en Steplixer, Steplixer",
-        "description": "Chequea las ofertas de trabajo en Steplix."
-      },
-      "stack": {
-        "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
-        "keywords": "Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
-        "description": "Stack tecnológico de Steplix 🗻"
-      }
-    },
-    "ButtonCardContact": "Agendar cita",
-    "ButtonBecomeSteplixer": "Convertite en Steplixer",
-    "CardContactSection": {
-      "pronoun": "Nuestro",
-      "title": "Contacto",
-      "title2": "Nuestra Oficina",
-      "subtitle": "Cómo nos contactas",
-      "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
-      "phrase": "¡Queremos escuchar tus ideas!"
-    },
-    "OurPostsSay": {
-      "title": "Nuetros posteos dicen"
-    },
-    "PortfolioHomeSection": {
-      "title": "Ir al portfolio"
+    "stack": {
+      "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
+      "keywords": "Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
+      "description": "Stack tecnológico de Steplix 🗻"
     }
   },
   "ButtonCardContact": "Agendar cita",
@@ -702,5 +560,14 @@
     "communications": "Comunicaciones",
     "news": "Medio digital",
     "aeronautics": "Aeronáutica"
+  },
+
+  "portfolio":{
+    "cards": {
+      "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
+      "pow": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",
+      "valid": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
+      "sura": "Diseñamos y desarrollamos un cotizador online para sus clientes."
+    }
   }
 }
