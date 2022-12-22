@@ -6,15 +6,16 @@ import { useTranslation } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
 const Submenu = ({ toggle, setToggle, query, router }) => {
-    const { t } = useTranslation();
-    //
-    // Functions
-    //
-    function handleClickToggle() {
-        setToggle((prevToggle) => !prevToggle);
-    }
+  const { t } = useTranslation();
+  //
+  // Functions
+  //
+  function handleClickToggle() {
+    setToggle((prevToggle) => !prevToggle);
+  }
 
-    const isCurrentPathnameActive = pathname => router.pathname === pathname ? 'submenu--item--active' : '' 
+  const isCurrentPathnameActive = (pathname) =>
+    router.pathname === pathname ? "submenu--item--active" : "";
 
     return (
         <>
@@ -96,10 +97,10 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
 // Proptypes
 //
 Submenu.propTypes = {
-    toggle: PropTypes.bool.isRequired,
-    query: PropTypes.object,
-    setToggle: PropTypes.func.isRequired,
-    router: PropTypes.object.isRequired,
+  toggle: PropTypes.bool.isRequired,
+  query: PropTypes.object,
+  setToggle: PropTypes.func.isRequired,
+  router: PropTypes.object.isRequired,
 };
 
 export default Submenu;
