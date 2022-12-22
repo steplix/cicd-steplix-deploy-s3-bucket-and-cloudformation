@@ -439,10 +439,10 @@
     "seeMore": "Ver más",
     "ButtonSend": "Enviar",
     "navbar": {
-        "item0": "Quienes somos",
+        "item0": "Quiénes somos",
         "item1": "Qué hacemos",
-        "item2": "Nuestro portfolio",
-        "item3": "Contáctanos",
+        "item2": "Portfolio",
+        "item3": "Contactanos",
         "item4": "Clientes felices",
         "item5": "Convertite en Steplixer",
         "item6": "Contactanos",
@@ -458,7 +458,7 @@
             "item0": "Quienes somos",
             "item1": "Qué hacemos",
             "item2": "Nuestro portfolio",
-            "item3": "Contáctanos"
+            "item3": "Contactanos"
         }
     },
     "metaTags": {
