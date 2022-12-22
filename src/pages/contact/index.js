@@ -36,17 +36,6 @@ export default function Contact() {
 
   return (
     <section className="flex flex-col relative py-0 lg:py-10 px-0 w-full mx-auto">
-      {width < BREAKPOINT_WIDTH && (
-        <div className="header-gradient flex">
-          <div className="container py-8 px-4">
-            <Inverted
-              content={t("CardContactSection.pronoun")}
-              secondContent={t("CardContactSection.title")}
-              size="text-5xl"
-            />
-          </div>
-        </div>
-      )}
       <main className="container px-4 py-8">
         <Gradient
           borderPosition="left"

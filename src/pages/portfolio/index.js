@@ -29,22 +29,9 @@ const imageLogos = [
 const PortfolioView = () => {
   const { t } = useTranslation();
   const { clients, industries } = usePortfolioTranslation();
-  const { width } = useResponsive();
-  const BREAKPOINT_WIDTH = 1024;
 
   return (
     <section className="flex flex-col relative py-0 pb-[72px] lg:pt-10 px-0 w-full mx-auto">
-      {width < BREAKPOINT_WIDTH && (
-        <div className="header-gradient flex">
-          <div className="container py-8 px-4">
-            <Inverted
-              content={t("PortfolioSection.pronoun")}
-              secondContent={t("PortfolioSection.title")}
-              size="text-5xl"
-            />
-          </div>
-        </div>
-      )}
       <main className="container px-4 pt-12 ">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
           {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
