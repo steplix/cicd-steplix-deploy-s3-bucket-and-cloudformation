@@ -44,4 +44,13 @@ export * from "./phone";
 export * from "./send";
 export * from "./pig";
 export * from './finket';
+export * from './headings';
+export * from './sim';
+export * from './shield';
+export * from './pow';
+export * from './valid';
+export * from './sura';
+
+
+
 

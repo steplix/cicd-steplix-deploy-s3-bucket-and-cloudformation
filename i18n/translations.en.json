@@ -218,6 +218,14 @@
             "descriptionThree": "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. "
         }
     },
+    "portfolio": {
+        "cards": {
+            "finket": "Design and development of digital platform for financial services.",
+            "valid": "We designed and developed an interface for mobile phone shops.",
+            "sura": "We designed and developed an online quoter for their clients.",
+            "pow": "We designed and developed a web dashboard to visualize E-commerce metrics and indicators."
+        }
+    },
     "process": {
         "scrumFramework": {
             "titleOne": "Did you know that we work under the ",

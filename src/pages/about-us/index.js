@@ -3,6 +3,8 @@ import { useTranslation } from "next-export-i18n";
 import MissionAndVision from "@/modules/MissionAndVision";
 import Teams from "@/modules/Teams";
 import OurValues from "@/modules/OurValues";
+import PortfolioCarousel from "@/common/components/PortfolioCarousel";
+import { portfolioCards } from "@/common/utils/constants";
 import PortfolioCard from "@/common/components/PortfolioCard";
 
 export default function AboutUs() {
@@ -18,7 +20,13 @@ export default function AboutUs() {
 
                 <OurValues />
 
-                <PortfolioCard />
+                <PortfolioCarousel>
+                    {
+                        portfolioCards.map(({name, iconBrandClass, industryIconName}) => (
+                        <PortfolioCard name={name} iconBrandClass={iconBrandClass} industryIconName={industryIconName} key={name} />
+                        ))
+                    }
+                </PortfolioCarousel>
             </div>
         </>
     );

@@ -83,3 +83,26 @@ export const aboutUsPhotoArray = [
         src: "/assets/img/culture/culture-03.png"
     },
 ]
+
+export const portfolioCards = [
+    {
+      name: "finket",
+      iconBrandClass: "w-[121px] h-[34px]",
+      industryIconName: "pig"
+    },
+    {
+      name: "pow",
+      iconBrandClass: "w-[96px] h-[34px]",
+      industryIconName: "headings"
+    },
+    {
+      name: "valid",
+      iconBrandClass: "w-[166px] h-[30px]",
+      industryIconName: "sim"
+    },
+    {
+      name: "sura",
+      iconBrandClass: "w-[98px] h-[34px]",
+      industryIconName: "shield"
+    },
+]

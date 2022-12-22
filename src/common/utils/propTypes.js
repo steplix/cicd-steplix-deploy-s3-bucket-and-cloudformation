@@ -46,5 +46,11 @@ export const propTypeIconName = PropTypes.oneOf([
   "trust",
   "uiux",
   "pig",
-  "finket"
+  "finket",
+  "headings",
+  "sim",
+  "shield",
+  "pow",
+  "valid",
+  "sura"
 ]);
