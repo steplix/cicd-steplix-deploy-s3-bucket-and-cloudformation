@@ -144,13 +144,13 @@ const Navbar = () => {
             </Link>
             <Link
               href={{
-                pathname: "/process",
+                pathname: "/portfolio",
                 query: query,
               }}
             >
               <a
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
-                  "/process"
+                  "/portfolio"
                 )}`}
               >
                 {t("navbar.item2")}

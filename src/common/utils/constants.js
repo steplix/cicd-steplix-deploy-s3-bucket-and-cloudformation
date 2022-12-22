@@ -55,7 +55,7 @@ export const routesMap = {
   "/what-we-do": {
     title: "navbar.item1",
   },
-  "/process": {
+  "/portfolio": {
     title: "navbar.item2",
   },
   "/contact": {
@@ -263,5 +263,26 @@ export const posts = [
     description:
       "A la hora de llevar adelante un proyecto tecnológico, son muchos los factores a tener en cuenta. En Steplix, entendemos que la formación de equipos con perfiles multidisciplinarios es una de las claves en el resultado final de los desarrollos para nuestros clientes. De la misma forma en que construimos una...",
     url: "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop",
+  },
+];
+
+// PORTFOLIO PAGE
+
+export const PORTFOLIO_CARDS = [
+  {
+    name: "valid",
+    industryIconName: "communications",
+  },
+  {
+    name: "finket",
+    industryIconName: "fintech",
+  },
+  {
+    name: "sura",
+    industryIconName: "insurance",
+  },
+  {
+    name: "pow",
+    industryIconName: "eccomerce",
   },
 ];
