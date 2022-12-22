@@ -286,3 +286,18 @@ export const PORTFOLIO_CARDS = [
     industryIconName: "eccomerce",
   },
 ];
+
+export const clientsLogos = [
+  {
+    image: "assets/img/clients/web3/logo-pow.svg",
+    alt: "POW Logo",
+  },
+  {
+    image: "assets/img/clients/web3/logo-valid.svg",
+    alt: "Valid Logo",
+  },
+  {
+    image: "assets/img/clients/web3/logo-finket.svg",
+    alt: "Finket Logo",
+  },
+];

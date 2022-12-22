@@ -67,9 +67,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                         </Link>
                     </div>
                 </div>
-                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/process")} text-sm border-blue`}>
+                <div className={`flex items-center submenu--item ${isCurrentPathnameActive("/portfolio")} text-sm border-blue`}>
                     <div className="py-4 px-3.5">
-                        <Link href={{ pathname: "/process", query: query }}>
+                        <Link href={{ pathname: "/portfolio", query: query }}>
                             <a onClick={() => handleClickToggle()}>
                                 {t("navbar.item2")}
                             </a>
