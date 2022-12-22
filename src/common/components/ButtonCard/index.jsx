@@ -8,6 +8,7 @@ const ButtonCard = ({
   clickEvent,
   iconName,
   customImageClass,
+  iconPosition = "left"
 }) => {
   return (
     <button
@@ -16,9 +17,10 @@ const ButtonCard = ({
       alt={alt}
       type="button"
       onClick={clickEvent}>
-      <div className="flex flex-row items-center mx-3 my-1  ">
-        {iconName && <Icon name={iconName} className={customImageClass} />}
-        <p className={iconName && "ml-2"}>{label}</p>
+      <div className="flex flex-row items-center px-3 py-1">
+        {iconName && iconPosition === "left" && <Icon name={iconName} className={`${customImageClass} mr-2`} />}
+        <p className="font-bold text-xs xl:text-base">{label}</p>
+        {iconName && iconPosition === "right" && <Icon name={iconName} className={`${customImageClass} ml-2`} />}
       </div>
     </button>
   );
@@ -31,6 +33,7 @@ ButtonCard.propTypes = {
   clickEvent: propTypes.func,
   iconName: propTypes.string,
   customImageClass: propTypes.string,
+  iconPosition: propTypes.oneOf(["left", "right"]),
 };
 
 export default ButtonCard;
