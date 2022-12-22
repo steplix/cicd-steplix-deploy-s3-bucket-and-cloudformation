@@ -94,10 +94,10 @@ const PhotoCarousel = ({ photoArray }) => {
         )}
           {loaded && instanceRef.current && (
             <>
-              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 md:left-10 lg:left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}>
                 <Icon name="back" className="h-[48px] w-[48px]" />
               </button>
-              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 md:right-10 lg:right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}>
                 <Icon name="forward" className="h-[48px] w-[48px]" />
               </button>
             </>
