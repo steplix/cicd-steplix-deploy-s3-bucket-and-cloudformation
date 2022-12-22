@@ -490,5 +490,8 @@
     },
     "OurPostsSay": {
         "title": "Our posts say"
+    },
+    "PortfolioHomeSection": {
+        "title": "Go to portfolio"
     }
 }

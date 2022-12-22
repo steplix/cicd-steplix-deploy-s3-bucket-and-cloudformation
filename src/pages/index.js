@@ -1,7 +1,7 @@
 import { useTranslation } from "next-export-i18n";
 import Masthead from "@/modules/Masthead";
 import OurPosts from "@/modules/OurPosts";
-import AboutUs from "@/modules/AboutUs";
+import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
 
 export default function Home() {
@@ -67,18 +67,15 @@ export default function Home() {
                     }),
                 }} />
             </HeadTag>
-            <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 relative">
+            <main className="flex flex-col">
                 {/* Masthead Section */}
                 <Masthead />
 
-                <div className="py-10 px-4 md:px-0 w-full container mx-auto flex-col space-y-24">
+                {/* Portfolio Section */}
+                <Portfolio />
 
-                    {/* About Us Section */}
-                    <AboutUs />
-
-                    {/* Happy Clients Section */}
-                    <OurPosts />
-                </div>
+                {/* Posts Section */}
+                <OurPosts />
             </main>
         </>
     );
