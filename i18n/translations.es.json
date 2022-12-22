@@ -486,10 +486,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
     "rights": "Todos los derechos reservados®",
     "links": {
-        "item0": "Quienes somos",
-        "item1": "Qué hacemos",
-        "item2": "Nuestro portfolio",
-        "item3": "Contactanos"
+      "item0": "Quienes somos",
+      "item1": "Qué hacemos",
+      "item2": "Nuestro portfolio",
+      "item3": "Contactanos"
     }
   },
   "metaTags": {
@@ -529,16 +529,6 @@
       "description": "Stack tecnológico de Steplix 🗻"
     }
   },
-  "ButtonCardContact": "Agendar cita",
-  "ButtonBecomeSteplixer": "Convertite en Steplixer",
-  "CardContactSection": {
-    "pronoun": "Nuestro",
-    "title": "Contacto",
-    "title2": "Nuestra Oficina",
-    "subtitle": "Cómo nos contactas",
-    "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
-    "phrase": "¡Queremos escuchar tus ideas!"
-  },
 
   "PortfolioSection": {
     "pronoun": "Nuestro",
@@ -562,7 +552,32 @@
     "aeronautics": "Aeronáutica"
   },
 
-  "portfolio":{
+  "ButtonCardContact": "Agendar cita",
+  "ButtonBecomeSteplixer": "Convertite en Steplixer",
+  "CardContactSection": {
+    "pronoun": "Nuestro",
+    "title": "Contacto",
+    "title2": "Nuestra Oficina",
+    "subtitle": "Cómo nos contactas",
+    "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
+    "phrase": "¡Queremos escuchar tus ideas!"
+  },
+  "OurPostsSay": {
+    "title": "Nuetros posteos dicen"
+  },
+  "PortfolioHomeSection": {
+    "title": "Ir al portfolio"
+  },
+  "MainHeader": {
+    "titlePartOne": "Co-creamos",
+    "titlePartTwo": "el camino que",
+    "titlePartThree": "llevará tu negocio",
+    "titlePartFour": "a la cima",
+    "subtitlePartOne": "Somos tu aliado",
+    "subtitlePartTwo": "digital"
+  },
+
+  "portfolio": {
     "cards": {
       "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
       "pow": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",

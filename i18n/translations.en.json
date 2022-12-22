@@ -479,10 +479,10 @@
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
     "rights": "All rights reserved®",
     "links": {
-        "item0": "About us",
-        "item1": "What we do",
-        "item2": "Our portfolio",
-        "item3": "Contact Us"
+      "item0": "About us",
+      "item1": "What we do",
+      "item2": "Our portfolio",
+      "item3": "Contact Us"
     }
   },
   "metaTags": {
@@ -554,8 +554,22 @@
     "news": "Social Media",
     "aeronautics": "Aeronautics"
   },
+  "OurPostsSay": {
+    "title": "Our posts say"
+  },
+  "PortfolioHomeSection": {
+    "title": "Go to portfolio"
+  },
+  "MainHeader": {
+    "titlePartOne": "We co-create",
+    "titlePartTwo": "the path that",
+    "titlePartThree": "will take your business",
+    "titlePartFour": "to the top",
+    "subtitlePartOne": "We are your",
+    "subtitlePartTwo": "digital ally"
+  },
 
-  "portfolio":{
+  "portfolio": {
     "cards": {
       "finket": "Design and development of a digital platform for financial services.",
       "pow": "We designed and developed a web dashboard to visualize E-commerce metrics and indicators.",

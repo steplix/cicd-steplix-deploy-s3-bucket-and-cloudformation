@@ -1,5 +1,5 @@
 import { useTranslation } from "next-export-i18n";
-import Masthead from "@/modules/Masthead";
+import MainHeader from "@/modules/MainHeader";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
@@ -68,8 +68,8 @@ export default function Home() {
                 }} />
             </HeadTag>
             <main className="flex flex-col">
-                {/* Masthead Section */}
-                <Masthead />
+                {/* MainHeader Section */}
+                <MainHeader />
 
                 {/* Portfolio Section */}
                 <Portfolio />
