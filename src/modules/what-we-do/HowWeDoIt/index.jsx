@@ -18,8 +18,9 @@ const HowDoWeDoIt = () => {
           {t("what_we_do.HowDoWeDoIt.descriptionOne")}
         </p>
       </div>
-      {/* <TechnologiesSlider /> */}
-      <p>slider</p>
+      {/* <TechnologiesSlider />
+       TODO AGREGAR SLIDER MODIFICADO
+      */}
       <p className="font-poppins text-sm lg:text-base font-normal text-black text-center">
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs
         • NextJs • Bootstrap • Material • Foundation • Tailwind • NodeJs • PHP •

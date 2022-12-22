@@ -29,7 +29,7 @@ const Footer = () => {
                 <span className="ml-2 md:ml-3 lg:ml-1">|</span>
               </div>
               <div>
-                <Link href="/process">
+                <Link href="/what-we-do">
                   <a href="#">{t("footer.links.item1")} </a>
                 </Link>
                 <span className="ml-1 hidden lg:inline">|</span>
@@ -75,7 +75,7 @@ const Footer = () => {
               <Icon name="iram" className="h-[38px] w-[38px]" />
             </div>
             <a
-              href={t('footer.certificateUrl')}
+              href={t("footer.certificateUrl")}
               rel="noreferrer"
               target="_blank"
               className="font-poppins underline"
