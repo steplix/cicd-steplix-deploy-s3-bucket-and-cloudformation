@@ -177,4 +177,62 @@ export const clientsCards = [
       borderColor: 'border-blue',
       text: 'happyClients.clientValid.text',
     },
+];
+
+
+// Constants for Contact page
+
+export const PHOTO_CAROUSEL = [
+    {
+      src: "assets/img/contact/contact-1.png",
+    },
+    {
+      src: "assets/img/contact/contact-2.png",
+    },
+    {
+      src: "assets/img/contact/contact-3.png",
+    },
+    {
+      src: "assets/img/contact/contact-4.png",
+    },
+    {
+      src: "assets/img/contact/contact-5.png",
+    },
+    {
+      src: "assets/img/contact/contact-6.png",
+    },
   ];
+  
+  export const CARD_CONTACT = [
+    {
+      name: "Kevin",
+      surname: "Halbinger",
+      email: "khalbinger@steplix.com",
+      meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
+      linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
+    },
+  
+    {
+      name: "Enrique",
+      surname: "Serrani",
+      email: "eserrani@steplix.com",
+      meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
+      linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/"
+    },
+  
+    {
+      name: "Jorge",
+      surname: "Yánez",
+      email: "jyanez@steplix.com",
+      meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
+      linkedin: "https://www.linkedin.com/in/jorgeyanezy/"
+    },
+  
+    {
+      name: "Mariano",
+      surname: "Wegier",
+      email: "mwegier@steplix.com ",
+      meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
+      linkedin: "https://www.linkedin.com/in/marianowegier/"
+    }
+]

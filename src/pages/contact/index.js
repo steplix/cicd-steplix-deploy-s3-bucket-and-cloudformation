@@ -8,6 +8,7 @@ import Gradient from "@/common/components/Title/Gradient";
 import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { useResponsive } from "@/common/hooks/useResponsive";
+import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
@@ -15,6 +16,8 @@ const icons = {
   copy: <Icon name="copy" className="w-4" />,
   send: <Icon name="send" className="w-4" />,
 };
+
+
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -24,8 +27,16 @@ export default function Contact() {
     navigator.clipboard.writeText(text);
   };
 
+  const onClickSocialMediaButton = (url) => {
+    window.open(url, "_blank");
+  };
+
+  const onClickCalendarButton = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
-    <section className="flex flex-col relative pb-12 space-y-14 md:space-y-8 lg:pt-10 lg:space-y-12 xl:space-y-28">
+    <section className="flex flex-col relative py-0 lg:py-10 px-0 w-full mx-auto">
       {width < BREAKPOINT_WIDTH && (
         <div className="header-gradient flex">
           <div className="container py-8 px-4">
@@ -37,7 +48,7 @@ export default function Contact() {
           </div>
         </div>
       )}
-      <main className="container px-4">
+      <main className="container px-4 py-8 ">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
@@ -51,42 +62,17 @@ export default function Contact() {
           <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
         </div>
         <div className="flex justify-center flex-wrap gap-4 mb-20 lg:grid lg:grid-cols-2">
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
-          <CardContact
-            name="Kevin"
-            surname="Halbinger"
-            email="hello@steplix.com"
-            onClickTextFieldButton={() =>
-              onClickCopyButton("hello@steplix.com")
-            }
-            onClickButton={() => console.log("click")}
-          />
+          {CARD_CONTACT.map((item) => (
+            <CardContact
+              key={item.email}
+              name={item.name}
+              surname={item.surname}
+              email={item.email}
+              onClickCopyButton={() => onClickCopyButton(item.email)}
+              onClickSocialMediaButton={() => onClickSocialMediaButton(item.linkedin)}
+              onClickCalendarButton={() => onClickCalendarButton(item.meeting)}
+            />
+          ))}
         </div>
 
         <Gradient
@@ -97,7 +83,7 @@ export default function Contact() {
           height="h-[32px]"
         />
         <div className="flex justify-center my-8">
-          <PhotoCarousel />
+          <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
         <section className="lg:flex lg:gap-8">
           <div>
@@ -139,14 +125,14 @@ export default function Contact() {
               />
             </div>
 
-            <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
+            {/* <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
               <NextLink href="/">{t("ButtonBecomeSteplixer")}</NextLink>
               <Icon
                 name="chevronRight"
                 className="w-4 rotate-[270deg]"
                 fill="currentColor"
               />
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
