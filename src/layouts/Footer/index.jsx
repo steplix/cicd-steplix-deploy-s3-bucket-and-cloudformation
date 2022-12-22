@@ -49,12 +49,16 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-4 self-center">
             <div className="flex space-x-4 self-center md:self-end">
-              <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                <Icon name="instagram" className="h-4 w-4 text-white" />
-              </div>
-              <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                <Icon name="linkedIn" className="h-4 w-4 text-white" />
-              </div>
+              <a href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank">
+                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
+                  <Icon name="instagram" className="h-4 w-4 text-white" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/steplix" rel="noreferrer" target="_blank">
+                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
+                  <Icon name="linkedIn" className="h-4 w-4 text-white" />
+                </div>
+              </a>
             </div>
             <div className="flex space-x-2 text-white items-center text-xs lg:text-base">
               <Icon
