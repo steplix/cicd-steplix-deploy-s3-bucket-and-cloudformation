@@ -76,7 +76,7 @@ const PhotoCarousel = ({ photoArray }) => {
             }
           </div>
           {loaded && instanceRef.current && (
-            <div className="dots md:hidden">
+            <div className="dots mt-3 md:hidden">
               {[
                 ...Array(instanceRef?.current?.track?.details?.slides?.length).keys(),
               ].map((idx) => {
