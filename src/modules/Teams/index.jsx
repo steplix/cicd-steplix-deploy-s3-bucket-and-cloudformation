@@ -36,7 +36,7 @@ const Teams = () => {
             <div className="w-full shadow-2xl h-[333px] flex flex-col items-center justify-center">
                 <PhotoCarousel photoArray={aboutUsPhotoArray} />
                 <Link href="/jobs">
-                    <a className='flex items-center justify-center text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px] mt-6 md:mt-7 lg:mt-6'>
+                    <a className='hidden items-center justify-center text-blue lg:text-white bg-none lg:bg-blue text-xs lg:text-base font-bold lg:font-semibold py-1 px-3 space-x-2 rounded-[20px] mt-6 md:mt-7 lg:mt-6'>
                         <p>{t("about_us.teams.button")}</p>
                         <Icon name="chevronDown" className='w-[16px] h-[16px] transform rotate-[270deg]' />
                     </a>
