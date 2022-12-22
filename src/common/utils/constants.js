@@ -55,7 +55,7 @@ export const routesMap = {
   "/what-we-do": {
     title: "navbar.item1",
   },
-  "/process": {
+  "/portfolio": {
     title: "navbar.item2",
   },
   "/contact": {

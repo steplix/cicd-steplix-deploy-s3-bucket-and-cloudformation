@@ -35,7 +35,7 @@ const Footer = () => {
                 <span className="ml-1 hidden lg:inline">|</span>
               </div>
               <div>
-                <Link href="/stack">
+                <Link href="/portfolio">
                   <a href="#">{t("footer.links.item2")} </a>
                 </Link>
                 <span className="ml-1">|</span>
