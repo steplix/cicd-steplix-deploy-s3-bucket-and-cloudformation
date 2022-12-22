@@ -218,6 +218,14 @@
             "descriptionThree": "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. "
         }
     },
+    "portfolio": {
+        "cards": {
+            "finket": "Design and development of digital platform for financial services.",
+            "valid": "We designed and developed an interface for mobile phone shops.",
+            "sura": "We designed and developed an online quoter for their clients.",
+            "pow": "We designed and developed a web dashboard to visualize E-commerce metrics and indicators."
+        }
+    },
     "process": {
         "scrumFramework": {
             "titleOne": "Did you know that we work under the ",
@@ -425,9 +433,9 @@
     "ButtonSend": "Send",
     "navbar": {
         "item0": "About Us",
-        "item1": "Technologies",
-        "item2": "What we do",
-        "item3": "Our Culture",
+        "item1": "What we do",
+        "item2": "Our portfolio",
+        "item3": "Contact Us",
         "item4": "Happy Clients",
         "item5": "Become a Steplixer",
         "item6": "Contact Us",
@@ -443,7 +451,7 @@
             "item0": "About us",
             "item1": "What we do",
             "item2": "Our portfolio",
-            "item3": "Contact us"
+            "item3": "Contact Us"
         }
     },
     "metaTags": {
@@ -487,5 +495,11 @@
         "subtitle": "How to contact us",
         "description": "Schedule a call or contact our sales team by e-mail.",
         "phrase": "We would like to hear your ideas!"
+    },
+    "OurPostsSay": {
+        "title": "Our posts say"
+    },
+    "PortfolioHomeSection": {
+        "title": "Go to portfolio"
     }
 }

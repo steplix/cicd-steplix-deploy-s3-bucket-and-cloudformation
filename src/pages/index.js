@@ -1,11 +1,8 @@
 import { useTranslation } from "next-export-i18n";
 import Masthead from "@/modules/Masthead";
-import OurCulture from "@/modules/OurCulture";
-import AboutUs from "@/modules/AboutUs";
-import WhatWeDo from "@/modules/WhatWeDo";
-import HappyClients from "@/modules/HappyClients";
+import OurPosts from "@/modules/OurPosts";
+import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
-import PostCard from "@/common/components/PostCard";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -70,32 +67,15 @@ export default function Home() {
                     }),
                 }} />
             </HeadTag>
-            <main className="flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28 relative">
+            <main className="flex flex-col">
                 {/* Masthead Section */}
                 <Masthead />
 
-                {/* About Us Section */}
-                <AboutUs />
+                {/* Portfolio Section */}
+                <Portfolio />
 
-                {/* What We Do Section */}
-                <WhatWeDo />
-
-                {/* Our Culture Section */}
-                <OurCulture />
-
-                {/* Happy Clients Section */}
-                <HappyClients />
-
-                {/* Post example */}
-                <div className="bg-gray-100 p-3 flex items-center justify-center w-screen h-screen">
-                    <PostCard
-                        publishingAt="3 de febrero de 2022"
-                        description="Lacus amet, laoreet viverra id faucibus nisi cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus ipsum nec nibh lacus, suspendisse."
-                        url="http://steplix.com"
-                    />
-                </div>
-
-                {/* Steplix Flags */}
+                {/* Posts Section */}
+                <OurPosts />
             </main>
         </>
     );
