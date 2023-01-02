@@ -2,6 +2,8 @@ import React from "react";
 import Title from "@/common/components/Title/Gradient";
 import { useTranslation } from "next-export-i18n";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
+import { repeatImageLogos } from "@/common/utils/methods";
+import { technologiesImages } from "@/common/utils/constants";
 
 const HowDoWeDoIt = () => {
   const { t } = useTranslation();
@@ -18,9 +20,12 @@ const HowDoWeDoIt = () => {
           {t("what_we_do.HowDoWeDoIt.descriptionOne")}
         </p>
       </div>
-      {/* <TechnologiesSlider />
-       TODO AGREGAR SLIDER MODIFICADO
-      */}
+      <TechnologiesSlider
+        images={repeatImageLogos(technologiesImages, 20)}
+        slides={8}
+        imgClass="w-24"
+        spacingBeetWeenSlides={10}
+      />
       <p className="font-poppins text-sm lg:text-base font-normal text-black text-center">
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs
         • NextJs • Bootstrap • Material • Foundation • Tailwind • NodeJs • PHP •

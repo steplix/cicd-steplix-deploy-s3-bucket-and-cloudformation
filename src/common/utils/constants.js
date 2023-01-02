@@ -301,3 +301,42 @@ export const clientsLogos = [
     alt: "Finket Logo",
   },
 ];
+
+export const technologiesImages = [
+  {
+    image: "static/technologies/aws.svg",
+    alt: "Amazon Logo",
+  },
+  {
+    image: "static/technologies/docker.svg",
+    alt: "Docker Logo",
+  },
+  {
+    image: "static/technologies/figma.svg",
+    alt: "Figma Logo",
+  },
+  {
+    image: "static/technologies/flutter.svg",
+    alt: "Flutter Logo",
+  },
+  {
+    image: "static/technologies/git.svg",
+    alt: "Git Logo",
+  },
+  {
+    image: "static/technologies/kotlin.svg",
+    alt: "Kotlin Logo",
+  },
+  {
+    image: "static/technologies/nextjs.svg",
+    alt: "Next Logo",
+  },
+  {
+    image: "static/technologies/nodejs.svg",
+    alt: "Node Logo",
+  },
+  {
+    image: "static/technologies/reactjs.svg",
+    alt: "React Logo",
+  },
+];
