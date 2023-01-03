@@ -555,7 +555,30 @@
     "aeronautics": "Aeronautics"
   },
   "OurPostsSay": {
-    "title": "Our posts say"
+    "title": "Our posts say",
+    "postLinkText": "...see more",
+    "posts": [
+      {
+        "publishingAt": "september 2022",
+        "description": "A bit of our philosophy 🧗. Sherpas are famous for assisting climbers on their ascents to the summit of Everest and other peaks. In the same way that Sherpas accompany climbers on their journey to the top, at Steplix we fully engage in business challenges....",
+        "url": "https://www.linkedin.com/posts/steplix_filosofaeda-development-software-activity-6977721230711771136-VQqZ?utm_source=share&utm_medium=member_desktop"
+      },
+      {
+        "publishingAt": "may 2022",
+        "description": "💬 Did you know that 75% of new business ideas fail in their first 3 years? At Steplix we take our clients' ideas from the ground up to the top. 🗻. We anticipated introducing our services to you in the previous post. The first one, ”Getting to know your business”, focuses on....",
+        "url": "https://www.linkedin.com/posts/steplix_steplix-software-softwaredevelopment-activity-6938216015461769216-IZUV?utm_source=share&utm_medium=member_desktop"
+      },
+      {
+        "publishingAt": "may 2022",
+        "description": "In the next posts 🔜, we will tell you about the services we offer at Steplix. Beyond details, we are interested that the protagonists, can enlighten us with examples or situations that occur in day to day life. 💡 💬 Ashley Rake, CEO of Steplix: ”The services we offer, we tailor and work on...”",
+        "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-software-activity-6933104968996401152-4UL6?utm_source=share&utm_medium=member_desktop"
+      },
+      {
+        "publishingAt": "april 2022",
+        "description": "When carrying out a technological project, there are many factors to take into account. At Steplix, we understand that the formation of teams with multidisciplinary profiles is one of the keys to the final result of the developments for our clients. In the same way that we build a...",
+        "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop"
+      }
+    ]
   },
   "PortfolioHomeSection": {
     "title": "Go to portfolio"
@@ -568,7 +591,6 @@
     "subtitlePartOne": "We are your",
     "subtitlePartTwo": "digital ally"
   },
-
   "portfolio": {
     "cards": {
       "finket": "Design and development of a digital platform for financial services.",

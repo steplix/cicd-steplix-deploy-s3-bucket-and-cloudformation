@@ -179,8 +179,7 @@ export const clientsCards = [
   },
 ];
 
-// Constants for Contact page
-
+// CONTACT PAGE
 export const PHOTO_CAROUSEL = [
   {
     src: "assets/img/contact/contact-1.png",
@@ -239,35 +238,7 @@ export const CARD_CONTACT = [
   },
 ];
 
-export const posts = [
-  {
-    publishingAt: "22 de septiembre de 2022",
-    description:
-      "Un poco de nuestra filosofía 🧗. Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio...",
-    url: "https://www.linkedin.com/posts/steplix_filosofaeda-development-software-activity-6977721230711771136-VQqZ?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    publishingAt: "22 de mayo de 2022",
-    description:
-      "💬 ¿Sabías que el 75% de las nuevas ideas de negocio fracasan en sus primeros 3 años? En Steplix llevamos las ideas de nuestros clientes desde la base hasta la cima. 🗻. Anticipamos que les presentaríamos nuestros servicios en el posteo anterior. El primero de ellos, ”Conociendo tu negocio”, se enfoca en...",
-    url: "https://www.linkedin.com/posts/steplix_steplix-software-softwaredevelopment-activity-6938216015461769216-IZUV?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    publishingAt: "22 de mayo de 2022",
-    description:
-      'En los próximos posteos 🔜, vamos a contarles sobre los servicios que ofrecemos en Steplix. Más allá de los detalles, nos interesa que los protagonistas, puedan iluminarnos con ejemplos o situaciones que se dan en el día a día. 💡 💬 Ashley Rake, CEO de Steplix: "Los servicios que ofrecemos, los confeccionamos y trabajamos...',
-    url: "https://www.linkedin.com/posts/steplix_steplix-steplixer-software-activity-6933104968996401152-4UL6?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    publishingAt: "22 de abril de 2022",
-    description:
-      "A la hora de llevar adelante un proyecto tecnológico, son muchos los factores a tener en cuenta. En Steplix, entendemos que la formación de equipos con perfiles multidisciplinarios es una de las claves en el resultado final de los desarrollos para nuestros clientes. De la misma forma en que construimos una...",
-    url: "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop",
-  },
-];
-
 // PORTFOLIO PAGE
-
 export const PORTFOLIO_CARDS = [
   {
     name: "valid",
