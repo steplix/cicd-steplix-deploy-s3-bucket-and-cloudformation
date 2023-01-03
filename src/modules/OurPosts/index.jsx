@@ -2,11 +2,11 @@ import React from 'react';
 import Title from '@/common/components/Title/Gradient';
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PostCard from "@/common/components/PostCard";
-import { posts } from "@/common/utils/constants";
 import { useTranslation } from "next-export-i18n";
 
 const OurPosts = () => {
     const { t } = useTranslation();
+    const posts = t("OurPostsSay.posts");
     let postNumber = 0;
 
     return (

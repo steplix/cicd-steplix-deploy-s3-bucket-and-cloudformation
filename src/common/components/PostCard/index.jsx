@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import Icon from '@/components/Icon';
+import { useTranslation } from "next-export-i18n";
 
 const PostCard = ({ publishingAt, description, url }) => {
+    const { t } = useTranslation();
+
     return(
         <div className="bg-white shadow-post-card p-6 rounded-[20px] w-[279px] h-[310px] md:w-[500px] md:h-[226px] lg:w-[375.5px] lg:h-[260.4px] xl:w-[488.5px] xl:h-[223.19px] max-w-lg">
             <div className="flex items-center">
@@ -23,7 +26,7 @@ const PostCard = ({ publishingAt, description, url }) => {
             <div className="text-grey-70 text-sm font-normal flex justify-end">
                 <Link href={url}>
                     <a target="_blank">
-                        <span>... ver más</span>
+                        <span>{t("OurPostsSay.postLinkText")}</span>
                     </a>
                 </Link>
 
