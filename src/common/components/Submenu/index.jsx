@@ -26,7 +26,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
       >
         <div className="flex w-full mt-4 mb-14">
           <button className="w-[126px]" onClick={() => setToggle(!toggle)}>
-            <Link href={{ pathname: "/", query: query }}>
+            <Link href={{ pathname: "/", query: query }} as="/" passHref>
               <a>
                 <img
                   src="/assets/img/submenuCompleto.svg"
@@ -43,7 +43,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/", query: query }}>
+            <Link href={{ pathname: "/", query: query }} as="/" passHref>
               <a onClick={() => handleClickToggle()}>{t("navbar.item4")}</a>
             </Link>
           </div>
@@ -54,7 +54,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/about-us", query: query }}>
+            <Link href={{ pathname: "/about-us", query: query }} as="/about-us" passHref>
               <a onClick={() => handleClickToggle()}>{t("navbar.item0")}</a>
             </Link>
           </div>
@@ -65,7 +65,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-yellow`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/what-we-do", query: query }}>
+            <Link href={{ pathname: "/what-we-do", query: query }} as="/what-we-do" passHref>
               <a onClick={() => handleClickToggle()}>{t("navbar.item1")}</a>
             </Link>
           </div>
@@ -76,7 +76,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/portfolio", query: query }}>
+            <Link href={{ pathname: "/portfolio", query: query }} as="/portfolio" passHref>
               <a onClick={() => handleClickToggle()}>{t("navbar.item2")}</a>
             </Link>
           </div>
@@ -87,7 +87,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/contact", query: query }}>
+            <Link href={{ pathname: "/contact", query: query }} as="/contact" passHref>
               <a onClick={() => handleClickToggle()}>{t("navbar.item3")}</a>
             </Link>
           </div>

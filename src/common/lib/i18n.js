@@ -28,7 +28,7 @@ export const LanguageSwitcher = ({ lang, children, shallow = false, slug }) => {
         router$1.push({
             pathname: router$1.pathname,
             query: queryObject,
-        }, undefined, { shallow: shallow });
+        }, router$1.pathname, { shallow: shallow });
     };
     // use React.cloneElement to manipulate properties
     if (React__default["default"].isValidElement(children)) {

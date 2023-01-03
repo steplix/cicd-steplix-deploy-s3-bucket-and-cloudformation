@@ -25,6 +25,7 @@ const Navbar = () => {
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
 
+
   //
   // Effects
   //
@@ -59,7 +60,7 @@ const Navbar = () => {
           <div className="container flex relative justify-between items-center w-full h-[65px] px-5 md:px-0">
             {/* logo mobile */}
             <div className="items-center justify-center flex">
-              <Link href={{ pathname: "/", query: query }}>
+              <Link href={{ pathname: "/", query: query }} as="/" passHref>
                 <a>
                   <img
                     src="/assets/img/logo-navbar.svg"
@@ -103,7 +104,7 @@ const Navbar = () => {
       >
         <div className="container flex justify-between items-center h-[100px]">
           {/* logo desktop */}
-          <Link href={{ pathname: "/", query: query }}>
+          <Link href={{ pathname: "/", query: query }} as="/">
             <a>
               <img
                 src="/assets/img/logo-navbar.svg"
@@ -119,6 +120,8 @@ const Navbar = () => {
                 pathname: "/about-us",
                 query: query,
               }}
+              as="/about-us"
+              passHref
             >
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
@@ -133,6 +136,8 @@ const Navbar = () => {
                 pathname: "/what-we-do",
                 query: query,
               }}
+              as="/what-we-do"
+              passHref
             >
               <a
                 className={`nav--link nav--link--red ${isCurrentPathnameActive(
@@ -147,6 +152,8 @@ const Navbar = () => {
                 pathname: "/portfolio",
                 query: query,
               }}
+              as="/portfolio"
+              passHref
             >
               <a
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
@@ -156,7 +163,13 @@ const Navbar = () => {
                 {t("navbar.item2")}
               </a>
             </Link>
-            <Link href={{ pathname: "/contact", query: query }}>
+            <Link 
+              href={{
+                pathname: "/contact",
+                query: query
+              }}
+              as="/contact"
+              passHref>
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   "/contact"
