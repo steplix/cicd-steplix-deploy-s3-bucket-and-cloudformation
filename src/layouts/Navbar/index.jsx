@@ -1,18 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
+import CustomNextLink from "@/common/components/CustomNextLink";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 import { useRouter } from "next/router";
 import { routesMap } from "@/common/utils/constants";
 import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
   const { t } = useTranslation();
-  let [query] = useLanguageQuery();
-  query = { lang: query?.lang };
   const router = useRouter();
   const routeTitle = routesMap[router.pathname]?.title;
 
@@ -24,7 +22,6 @@ const Navbar = () => {
   //
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
-
 
   //
   // Effects
@@ -44,6 +41,8 @@ const Navbar = () => {
     toggle ? disableBodyScroll(document) : enableBodyScroll(document);
   }, [toggle]);
 
+
+
   return (
     <div className="sticky top-0 w-full text-white z-50">
       {/* navbar mobile */}
@@ -51,7 +50,6 @@ const Navbar = () => {
         <div>
           <Submenu
             router={router}
-            query={query}
             toggle={toggle}
             setToggle={setToggle}
           />
@@ -60,7 +58,7 @@ const Navbar = () => {
           <div className="container flex relative justify-between items-center w-full h-[65px] px-5 md:px-0">
             {/* logo mobile */}
             <div className="items-center justify-center flex">
-              <Link href={{ pathname: "/", query: query }} as="/" passHref>
+              <CustomNextLink to="/">
                 <a>
                   <img
                     src="/assets/img/logo-navbar.svg"
@@ -68,7 +66,7 @@ const Navbar = () => {
                     className="w-[75px] h-5"
                   />
                 </a>
-              </Link>
+              </CustomNextLink>
             </div>
             {/* button menu mobile */}
             <div className="z-50">
@@ -104,7 +102,7 @@ const Navbar = () => {
       >
         <div className="container flex justify-between items-center h-[100px]">
           {/* logo desktop */}
-          <Link href={{ pathname: "/", query: query }} as="/">
+          <CustomNextLink to="/">
             <a>
               <img
                 src="/assets/img/logo-navbar.svg"
@@ -112,17 +110,10 @@ const Navbar = () => {
                 className="w-[80px] h-[30px]"
               />
             </a>
-          </Link>
+          </CustomNextLink>
           {/* menu options desktop */}
           <div className="flex justify-end items-center space-x-8 font-normal">
-            <Link
-              href={{
-                pathname: "/about-us",
-                query: query,
-              }}
-              as="/about-us"
-              passHref
-            >
+            <CustomNextLink to="/about-us">
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   "/about-us"
@@ -130,15 +121,8 @@ const Navbar = () => {
               >
                 {t("navbar.item0")}
               </a>
-            </Link>
-            <Link
-              href={{
-                pathname: "/what-we-do",
-                query: query,
-              }}
-              as="/what-we-do"
-              passHref
-            >
+            </CustomNextLink>
+            <CustomNextLink to="what-we-do">
               <a
                 className={`nav--link nav--link--red ${isCurrentPathnameActive(
                   "/what-we-do"
@@ -146,15 +130,8 @@ const Navbar = () => {
               >
                 {t("navbar.item1")}
               </a>
-            </Link>
-            <Link
-              href={{
-                pathname: "/portfolio",
-                query: query,
-              }}
-              as="/portfolio"
-              passHref
-            >
+            </CustomNextLink>
+            <CustomNextLink to="/portfolio">
               <a
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
                   "/portfolio"
@@ -162,14 +139,8 @@ const Navbar = () => {
               >
                 {t("navbar.item2")}
               </a>
-            </Link>
-            <Link 
-              href={{
-                pathname: "/contact",
-                query: query
-              }}
-              as="/contact"
-              passHref>
+            </CustomNextLink>
+            <CustomNextLink to="contact">
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   "/contact"
@@ -177,7 +148,7 @@ const Navbar = () => {
               >
                 {t("navbar.item3")}
               </a>
-            </Link>
+            </CustomNextLink>
             <LanguageSelector />
           </div>
         </div>

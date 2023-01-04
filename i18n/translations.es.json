@@ -43,7 +43,7 @@
     "or": "ó",
     "hr": "RRHH",
     "UI_UXDesigner": {
-      "url": "UI_UXDesigner/es",
+      "url": "UI_UXDesigner",
       "title": "UX/UI DESIGNER",
       "titleEmpty": "SR",
       "country": "Argentina",
@@ -113,7 +113,7 @@
       }
     },
     "BACKENDSSR": {
-      "url": "BACKENDSSR/es",
+      "url": "BACKENDSSR",
       "title": "BACK-END DEVELOPER",
       "titleEmpty": "SR",
       "country": "Argentina",

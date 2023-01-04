@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
+import CustomNextLink from "@/common/components/CustomNextLink";
 import PropTypes from "prop-types";
 import { useTranslation } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
-const Submenu = ({ toggle, setToggle, query, router }) => {
+const Submenu = ({ toggle, setToggle, router }) => {
   const { t } = useTranslation();
   //
   // Functions
@@ -26,7 +26,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
       >
         <div className="flex w-full mt-4 mb-14">
           <button className="w-[126px]" onClick={() => setToggle(!toggle)}>
-            <Link href={{ pathname: "/", query: query }} as="/" passHref>
+            <CustomNextLink to="/">
               <a>
                 <img
                   src="/assets/img/submenuCompleto.svg"
@@ -34,7 +34,7 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
                   alt="submenu"
                 />
               </a>
-            </Link>
+            </CustomNextLink>
           </button>
         </div>
         <div
@@ -43,9 +43,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/", query: query }} as="/" passHref>
+            <CustomNextLink to="/">
               <a onClick={() => handleClickToggle()}>{t("navbar.item4")}</a>
-            </Link>
+            </CustomNextLink>
           </div>
         </div>
         <div
@@ -54,9 +54,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/about-us", query: query }} as="/about-us" passHref>
+            <CustomNextLink to="/about-us">
               <a onClick={() => handleClickToggle()}>{t("navbar.item0")}</a>
-            </Link>
+            </CustomNextLink>
           </div>
         </div>
         <div
@@ -65,9 +65,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-yellow`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/what-we-do", query: query }} as="/what-we-do" passHref>
+            <CustomNextLink to="/what-we-do">
               <a onClick={() => handleClickToggle()}>{t("navbar.item1")}</a>
-            </Link>
+            </CustomNextLink>
           </div>
         </div>
         <div
@@ -76,9 +76,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/portfolio", query: query }} as="/portfolio" passHref>
+            <CustomNextLink to="/portfolio">
               <a onClick={() => handleClickToggle()}>{t("navbar.item2")}</a>
-            </Link>
+            </CustomNextLink>
           </div>
         </div>
         <div
@@ -87,9 +87,9 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <Link href={{ pathname: "/contact", query: query }} as="/contact" passHref>
+            <CustomNextLink to="/contact">
               <a onClick={() => handleClickToggle()}>{t("navbar.item3")}</a>
-            </Link>
+            </CustomNextLink>
           </div>
         </div>
         <div className="flex gap-x-4 w-full py-4 px-3.5">
@@ -105,7 +105,6 @@ const Submenu = ({ toggle, setToggle, query, router }) => {
 //
 Submenu.propTypes = {
   toggle: PropTypes.bool.isRequired,
-  query: PropTypes.object,
   setToggle: PropTypes.func.isRequired,
   router: PropTypes.object.isRequired,
 };

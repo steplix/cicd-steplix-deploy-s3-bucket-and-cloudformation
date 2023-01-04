@@ -1,24 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import CustomNextLink from "@/common/components/CustomNextLink";
 
-const ButtonApply = ({ url, query, apply, email }) => {
-    const slug = url?.split("/");
-
+const ButtonApply = ({ url, apply, email }) => {
     return (
         <div>
             {url && (
-                <Link
-                    href={{
-                        pathname: `/jobs/[...slug]`,
-                        query: { slug, ...query },
-                    }}
+                <CustomNextLink
+                    to={url}
+                    asPath={`/jobs/${url}`}
                 >
                     <a>
                         <button className="bg-red w-[110px] h-[49px] rounded-[5px] mt-16">
                             {apply}
                         </button>
                     </a>
-                </Link>
+                </CustomNextLink>
             )}
             {email && (
                 <Link href="mailto:rrhh@steplix.com">
