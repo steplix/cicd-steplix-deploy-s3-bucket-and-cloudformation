@@ -31,8 +31,8 @@ const CardContact = ({
 
   return (
     <>
-      <div className="w-80 md:w-72 lg:w-full">
-        <div className="relative bg-white shadow-steplix rounded-3xl p-4">
+      <div className="w-full md:w-72 lg:w-full">
+        <div className="relative bg-white card--shadow rounded-3xl p-4">
           <div className="flex justify-between px-4">
             <div className="flex gap-5 items-center mt-4">
               <Avatar
