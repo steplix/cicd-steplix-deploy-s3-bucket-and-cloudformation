@@ -60,7 +60,7 @@ export default function BecomeSteplixerPage() {
 						</Accordion.Item>
 					))}
 				</Accordion>
-				<div className="mt-[72px] mb-8">
+				<div className="mt-[72px]">
 					<p className="font-sofia font-bold text-[26px] leading-7 text-center text-purple">
 						Si sabes que puedes ser Steplixer...
 					</p>
@@ -69,17 +69,19 @@ export default function BecomeSteplixerPage() {
 						¡Envíanos tu CV!
 					</p>
 				</div>
+				<div className="mt-8 mb-[72px]">
+					<CardContact
+						email="rrhh@steplix.com"
+						name="Josefina"
+						surname="Salimei"
+						imgSrc={"assets/img/become/josefina-salimei.png"}
+						onClickCopyButton={() => copyToClipboard("rrhh@steplix.com")}
+						onClickSocialMediaButton={() =>
+							openLink("https://www.linkedin.com/in/josefina-salimei-6b2b07138/")
+						}
+					/>
 
-				<CardContact
-					email="rrhh@steplix.com"
-					name="Josefina"
-					surname="Salimei"
-					imgSrc={"assets/img/become/josefina-salimei.png"}
-					onClickCopyButton={() => copyToClipboard("rrhh@steplix.com")}
-					onClickSocialMediaButton={() =>
-						openLink("https://www.linkedin.com/in/josefina-salimei-6b2b07138/")
-					}
-				/>
+				</div>
 			</section>
 		</>
 	);

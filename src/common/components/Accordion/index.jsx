@@ -34,7 +34,7 @@ Accordion.Title = function AccordionTitle({ children, ...props }) {
 Accordion.Item = function AccordionItem({ children, ...props }) {
 	return (
 		<AccordionItemProvider {...props}>
-			<div className="text-black m-auto mb-2 max-w-3xl first-of-type:mt-12 last-of-type:mb-0 w-full rounded-2xl p-6 no-highlight card--shadow">
+			<div className="text-black m-auto mb-2 max-w-3xl first-of-type:mt-12 last-of-type:mb-0 w-full rounded-2xl p-6 no-highlight accordion--shadow">
 				{children}
 			</div>
 		</AccordionItemProvider>
