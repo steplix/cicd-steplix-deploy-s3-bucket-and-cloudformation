@@ -1,10 +1,10 @@
 import CardIcon from '@/common/components/CardIcon'
 import Title from '@/common/components/Title/Gradient';
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import React from 'react'
 
-const OurValues = () => {
-    const { t } = useTranslation();
+const OurValues = ({ locale }) => {
+    const { t } = useTranslation(locale);
 
     return (
         <section className="flex flex-col space-y-6 lg:space-y-8">

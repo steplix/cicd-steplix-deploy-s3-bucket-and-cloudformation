@@ -340,3 +340,5 @@ export const technologiesImages = [
     alt: "React Logo",
   },
 ];
+
+export const LOCALE_SLUGS = ["es", "en"];
