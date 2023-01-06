@@ -8,13 +8,14 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 const React__default = _interopDefaultLegacy(React);
 
-export const LanguageSwitcher = ({ lang, children, shallow = true, slug }) => {
+export const LanguageSwitcher = ({ lang, children, shallow = false, slug }) => {
     // state indicating if this component's target language matches the currently selected
     const { isActive: languageSwitcherIsActive } = useLanguageSwitcherIsActive(lang);
     // necessary for updating the router's query parameter inside the click handler
     const router$1 = router.useRouter();
     const [query] = useLanguageQuery(lang);
     const queryObject = {...query};
+    const targetRoute = router$1.pathname.indexOf('[locale]') === -1 ? router$1.pathname : router$1.pathname.replace('[locale]', lang); 
 
     if (slug?.length) {
         slug = [slug[0], lang]
@@ -23,12 +24,11 @@ export const LanguageSwitcher = ({ lang, children, shallow = true, slug }) => {
         delete queryObject.slug;
     }
 
-
     const updateRouter = () => {
         router$1.push({
-            pathname: router$1.pathname,
+            pathname: targetRoute,
             query: queryObject,
-        }, router$1.asPath, { shallow: shallow });
+        }, targetRoute, { shallow: shallow });
     };
     // use React.cloneElement to manipulate properties
     if (React__default["default"].isValidElement(children)) {

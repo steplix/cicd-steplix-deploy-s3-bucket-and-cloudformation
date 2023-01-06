@@ -4,13 +4,15 @@ import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
 import CustomNextLink from "@/common/components/CustomNextLink";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation } from "next-export-i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import { useRouter } from "next/router";
 import { routesMap } from "@/common/utils/constants";
 import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
+  const { t } = useTranslation(query?.locale);
   const router = useRouter();
   const routeTitle = routesMap[router.pathname]?.title;
 
@@ -113,7 +115,7 @@ const Navbar = () => {
           </CustomNextLink>
           {/* menu options desktop */}
           <div className="flex justify-end items-center space-x-8 font-normal">
-            <CustomNextLink to="/about-us">
+            <CustomNextLink to={`/${query?.lang}/about-us`}>
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   "/about-us"
