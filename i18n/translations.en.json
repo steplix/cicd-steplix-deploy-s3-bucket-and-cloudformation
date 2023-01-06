@@ -607,7 +607,11 @@
   "BecomeSteplixerSection": {
     "title": "Our Benefits",
     "title2": "Our internal values",
-    "title3": "Become a Steplixer"
+    "title3": "Become a Steplixer",
+    "sendCV": {
+      "title": "If you can be a Steplixer...",
+      "subtitle": "Send us your resume"
+    }
   },
 
   "SteplixBenefits": {

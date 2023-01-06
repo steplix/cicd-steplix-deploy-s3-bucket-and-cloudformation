@@ -62,11 +62,11 @@ export default function BecomeSteplixerPage() {
         </Accordion>
         <div className="mt-[72px] flex flex-col gap-2">
           <p className="font-poppins font-bold text-[26px] text-center text-purple">
-            Si sabes que puedes ser Steplixer...
+            {t("BecomeSteplixerSection.sendCV.title")}
           </p>
 
           <p className="font-poppins font-bold text-[26px] text-center text-purple">
-            ¡Envíanos tu CV!
+            {t("BecomeSteplixerSection.sendCV.subtitle")}
           </p>
         </div>
         <div className="mt-8 mb-[72px] w-[328px] mx-auto my-0">
