@@ -53,17 +53,19 @@ const CardContact = ({
               <Icon name={cornerIconName} className="w-4" />
             </div>
           </div>
-          <div className="px-4">
+          <div className="px-4 mb-8">
             <TextField text={email} clickEvent={onClickCopyButton} />
           </div>
-          <div className="flex justify-center mt-8">
-            <ButtonCard
-              label={t("ButtonCardContact")}
-              iconName="calendar"
-              customImageClass="w-4"
-              clickEvent={onClickCalendarButton}
-            />
-          </div>
+          {onClickCalendarButton && (
+            <div className="flex justify-center">
+              <ButtonCard
+                label={t("ButtonCardContact")}
+                iconName="calendar"
+                customImageClass="w-4"
+                clickEvent={onClickCalendarButton}
+              />
+            </div>
+          )}
         </div>
       </div>
     </>
@@ -76,7 +78,7 @@ CardContact.propTypes = {
   surname: PropTypes.string.isRequired,
   imgSrc: PropTypes.string,
   cornerIconName: PropTypes.string,
-  onClickCalendarButton: PropTypes.func.isRequired,
+  onClickCalendarButton: PropTypes.func,
   onClickSocialMediaButton: PropTypes.func,
   onClickCopyButton: PropTypes.func,
 };
