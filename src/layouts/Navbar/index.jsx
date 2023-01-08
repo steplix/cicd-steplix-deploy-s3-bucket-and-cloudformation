@@ -132,10 +132,10 @@ const Navbar = () => {
                 {t("navbar.item1")}
               </a>
             </CustomNextLink>
-            <CustomNextLink to="/portfolio">
+            <CustomNextLink to={`/${query?.lang}/portfolio`}>
               <a
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
-                  "/portfolio"
+                  `/${query?.lang}/portfolio`
                 )}`}
               >
                 {t("navbar.item2")}
