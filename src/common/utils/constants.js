@@ -183,22 +183,22 @@ export const clientsCards = [
 
 export const PHOTO_CAROUSEL = [
   {
-    src: "assets/img/contact/contact-1.png",
+    src: "/assets/img/contact/contact-1.png",
   },
   {
-    src: "assets/img/contact/contact-2.png",
+    src: "/assets/img/contact/contact-2.png",
   },
   {
-    src: "assets/img/contact/contact-3.png",
+    src: "/assets/img/contact/contact-3.png",
   },
   {
-    src: "assets/img/contact/contact-4.png",
+    src: "/assets/img/contact/contact-4.png",
   },
   {
-    src: "assets/img/contact/contact-5.png",
+    src: "/assets/img/contact/contact-5.png",
   },
   {
-    src: "assets/img/contact/contact-6.png",
+    src: "/assets/img/contact/contact-6.png",
   },
 ];
 
@@ -209,7 +209,7 @@ export const CARD_CONTACT = [
     email: "khalbinger@steplix.com",
     meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
     linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
-    imgSrc: "assets/img/contact/sellers/seller-1_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-1_cropped.png",
   },
 
   {
@@ -218,7 +218,7 @@ export const CARD_CONTACT = [
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
-    imgSrc: "assets/img/contact/sellers/seller-2_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
   },
 
   {
@@ -235,7 +235,7 @@ export const CARD_CONTACT = [
     email: "mwegier@steplix.com",
     meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
     linkedin: "https://www.linkedin.com/in/marianowegier/",
-    imgSrc: "assets/img/contact/sellers/seller-4_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-4_cropped.png",
   },
 ];
 
