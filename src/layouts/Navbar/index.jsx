@@ -17,8 +17,8 @@ const Navbar = () => {
   const routeTitle = routesMap[router.pathname]?.title;
 
   const isCurrentPathnameActive = (pathname) =>
-    router.pathname === pathname ? "nav--link--active" : "";
-
+    router.asPath === pathname ? "nav--link--active" : "";
+    
   //
   // State
   //
@@ -118,16 +118,16 @@ const Navbar = () => {
             <CustomNextLink to={`/${query?.lang}/about-us`}>
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
-                  "/about-us"
+                  `/${query?.lang}/about-us`
                 )}`}
               >
                 {t("navbar.item0")}
               </a>
             </CustomNextLink>
-            <CustomNextLink to="what-we-do">
+            <CustomNextLink to={`/${query?.lang}/what-we-do`}>
               <a
                 className={`nav--link nav--link--red ${isCurrentPathnameActive(
-                  "/what-we-do"
+                  `/${query?.lang}/what-we-do`
                 )}`}
               >
                 {t("navbar.item1")}

@@ -1,10 +1,10 @@
 import React from "react";
 import Title from "@/common/components/Title/Gradient";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import { useResponsive } from "@/common/hooks/useResponsive";
 
-const OurSteps = () => {
-  const { t } = useTranslation();
+const OurSteps = ({ locale }) => {
+  const { t } = useTranslation(locale);
   const { width } = useResponsive();
 
   const TITLE_BREAKPOINT_WIDTH = 1024;

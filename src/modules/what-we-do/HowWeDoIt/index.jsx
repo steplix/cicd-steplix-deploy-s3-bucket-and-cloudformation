@@ -1,12 +1,12 @@
 import React from "react";
 import Title from "@/common/components/Title/Gradient";
-import { useTranslation } from "next-export-i18n";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
+import { useTranslation } from "@/common/lib/i18n";
 import { repeatImageLogos } from "@/common/utils/methods";
 import { technologiesImages } from "@/common/utils/constants";
 
-const HowDoWeDoIt = () => {
-  const { t } = useTranslation();
+const HowDoWeDoIt = ({ locale }) => {
+  const { t } = useTranslation(locale);
 
   return (
     <section className="space-y-7">
