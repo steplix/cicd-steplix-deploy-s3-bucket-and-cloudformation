@@ -11,14 +11,13 @@ import { routesMap } from "@/common/utils/constants";
 import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
-  const [query] = useLanguageQuery();
-  const { t } = useTranslation(query?.locale);
   const router = useRouter();
+  const [query] = useLanguageQuery(router?.query?.locale);
+  const { t } = useTranslation(query?.locale);
   const routeTitle = routesMap[router.pathname]?.title;
 
-  const isCurrentPathnameActive = (pathname) =>
-    router.asPath === pathname ? "nav--link--active" : "";
-    
+  const isCurrentPathnameActive = (pathname) => router.asPath === pathname ? "nav--link--active" : "";
+      
   //
   // State
   //

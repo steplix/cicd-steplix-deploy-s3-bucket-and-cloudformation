@@ -7,10 +7,12 @@ import { LanguageSwitcher, useTranslation } from "@/common/lib/i18n";
 import Icon from '@/components/Icon';
 
 const LanguageSelector = ({ sm }) => {
-    const [query] = useLanguageQuery();
+    const router = useRouter();
+    const slug = router?.query?.slug;
+    const locale = router?.query?.locale;
+    const [query] = useLanguageQuery(locale);
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
-    const { query: { slug, locale } } = useRouter();
-    const shortCurrentLang = locale ? locale : query?.lang;
+    const shortCurrentLang = query?.lang;
     const { t } = useTranslation(shortCurrentLang);
 
 
