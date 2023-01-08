@@ -2,11 +2,14 @@
 import React from "react";
 import CustomNextLink from "@/common/components/CustomNextLink";
 import PropTypes from "prop-types";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
 const Submenu = ({ toggle, setToggle, router }) => {
-  const { t } = useTranslation();
+  const [query] = useLanguageQuery(router?.query?.locale);
+  const { t } = useTranslation(query?.locale);
+
   //
   // Functions
   //
@@ -15,7 +18,7 @@ const Submenu = ({ toggle, setToggle, router }) => {
   }
 
   const isCurrentPathnameActive = (pathname) =>
-    router.pathname === pathname ? "submenu--item--active" : "";
+    router.asPath === pathname ? "submenu--item--active" : "";
 
   return (
     <>
@@ -50,44 +53,44 @@ const Submenu = ({ toggle, setToggle, router }) => {
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            "/about-us"
+            `/${query?.lang}/about-us`
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to="/about-us">
+            <CustomNextLink to={`/${query?.lang}/about-us`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item0")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            "/what-we-do"
+            `/${query?.lang}/what-we-do`
           )} text-sm border-yellow`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to="/what-we-do">
+            <CustomNextLink to={`/${query?.lang}/what-we-do`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item1")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            "/portfolio"
+            `/${query?.lang}/portfolio`
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to="/portfolio">
+            <CustomNextLink to={`/${query?.lang}/portfolio`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item2")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            "/jobs"
+            `/${query?.lang}/contact`
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to="/contact">
+            <CustomNextLink to={`/${query?.lang}/contact`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item3")}</a>
             </CustomNextLink>
           </div>
