@@ -109,21 +109,21 @@ export default function Contact() {
                 clickEvent={() => onClickCopyButton("hello@steplix.com")}
               />
               <TextField
-                text="+54 (11) 5367-4369"
+                text="+54 9 1150105103"
                 rightIcon={icons.send}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
+                clickEvent={() => onClickCopyButton("+5491150105103")}
               />
             </div>
 
-            {/* <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
-              <NextLink href="/">{t("ButtonBecomeSteplixer")}</NextLink>
+            <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
+              <NextLink href="/become-steplixer">{t("ButtonBecomeSteplixer")}</NextLink>
               <Icon
                 name="chevronRight"
-                className="w-4 rotate-[270deg]"
+                className="w-4"
                 fill="currentColor"
               />
-            </div> */}
+            </div>
           </div>
         </section>
       </main>
