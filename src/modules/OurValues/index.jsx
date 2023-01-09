@@ -1,7 +1,9 @@
+import React from 'react'
 import CardIcon from '@/common/components/CardIcon'
 import Title from '@/common/components/Title/Gradient';
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import PropTypes from "prop-types"; 
 import { useTranslation } from "@/common/lib/i18n";
-import React from 'react'
 
 const OurValues = ({ locale }) => {
     const { t } = useTranslation(locale);
@@ -26,5 +28,9 @@ const OurValues = ({ locale }) => {
         </section>
     )
 }
+
+OurValues.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+  }
 
 export default OurValues

@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
+import PropTypes from "prop-types"; 
 import { useTranslation } from "@/common/lib/i18n";
-import { aboutUsPhotoArray } from '@/common/utils/constants';
+import { aboutUsPhotoArray, LOCALE_SLUGS } from '@/common/utils/constants';
 import Chip from '@/common/components/TechnologyChip'
 import Title from '@/common/components/Title/Gradient';
 import PhotoCarousel from '@/common/components/PhotoCarousel';
@@ -45,5 +46,10 @@ const Teams = ({ locale }) => {
         </section>
     )
 }
+
+Teams.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+  }
+  
 
 export default Teams

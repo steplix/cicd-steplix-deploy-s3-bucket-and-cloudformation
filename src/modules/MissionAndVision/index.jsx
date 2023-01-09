@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTranslation } from "@/common/lib/i18n";
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import PropTypes from "prop-types"; 
 import Title from '@/common/components/Title/Gradient';
 
 const MissionAndVision = ({ locale }) => {
@@ -22,6 +24,10 @@ const MissionAndVision = ({ locale }) => {
         </div>
     </section>
   )
+}
+
+MissionAndVision.propTypes = {
+  locale: PropTypes.oneOf(LOCALE_SLUGS)
 }
 
 export default MissionAndVision
