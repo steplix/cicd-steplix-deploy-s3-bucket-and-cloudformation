@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types"; 
 import Title from "@/common/components/Title/Gradient";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import { useTranslation } from "@/common/lib/i18n";
 import { repeatImageLogos } from "@/common/utils/methods";
-import { technologiesImages } from "@/common/utils/constants";
+import { technologiesImages, LOCALE_SLUGS } from "@/common/utils/constants";
 
 const HowDoWeDoIt = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -40,5 +41,9 @@ const HowDoWeDoIt = ({ locale }) => {
     </section>
   );
 };
+
+HowDoWeDoIt.propTypes = {
+  locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
 
 export default HowDoWeDoIt;

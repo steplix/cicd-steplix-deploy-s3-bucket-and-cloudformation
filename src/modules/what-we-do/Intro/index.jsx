@@ -1,5 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types"; 
+import { LOCALE_SLUGS } from '@/common/utils/constants';
 import { useTranslation } from "@/common/lib/i18n";
+
 
 const Intro = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -13,5 +16,9 @@ const Intro = ({ locale }) => {
     </section>
   );
 };
+
+Intro.propTypes = {
+  locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
 
 export default Intro;
