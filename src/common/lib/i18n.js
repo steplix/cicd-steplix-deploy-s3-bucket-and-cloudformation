@@ -12,29 +12,26 @@ export const LanguageSwitcher = ({ lang, children, shallow = false, slug }) => {
     // state indicating if this component's target language matches the currently selected
     const { isActive: languageSwitcherIsActive } = useLanguageSwitcherIsActive(lang);
     // necessary for updating the router's query parameter inside the click handler
-    const router$1 = router.useRouter();
-    const [query] = useLanguageQuery(router$1.pathname !== '/' ? router$1?.query?.locale : lang);
-    const queryObject = {...query};
-
-    if (slug?.length) {
-        slug = [slug[0], lang]
-        queryObject.slug = slug
-    } else {
-        delete queryObject.slug;
-    }
+    const {pathname, query: { locale }, push} = router.useRouter();
+    const [i18nQuery] = useLanguageQuery(pathname !== '/' ? locale : lang);
+    const queryObject = {...i18nQuery};
 
     const updateRouter = () => {
-
+                
         let targetRoute;
 
-        if (router$1.pathname.indexOf('[locale]') === -1) {
+        if (pathname.indexOf('[locale]') === -1) {
             delete queryObject.locale
-            targetRoute = router$1.pathname
+            targetRoute = pathname
         } else {
-            targetRoute = router$1.pathname.replace('[locale]', lang)
+            targetRoute = pathname.replace('[locale]', lang)
+
+            if (slug) {
+                targetRoute = targetRoute.replace('[slug]', slug)
+            }
         }
 
-        router$1.push({
+        push({
             pathname: targetRoute,
             query: queryObject,
         }, targetRoute, { shallow: shallow });

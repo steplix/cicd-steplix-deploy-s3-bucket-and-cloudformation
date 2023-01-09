@@ -2,13 +2,14 @@ import React from "react";
 import Link from "next/link";
 import CustomNextLink from "@/common/components/CustomNextLink";
 
-const ButtonApply = ({ url, apply, email }) => {
+const ButtonApply = ({ url, apply, email, locale }) => {
+
     return (
         <div>
             {url && (
                 <CustomNextLink
                     to={url}
-                    asPath={`/jobs/${url}`}
+                    asPath={`/${locale}/jobs/${url}`}
                 >
                     <a>
                         <button className="bg-red w-[110px] h-[49px] rounded-[5px] mt-16">

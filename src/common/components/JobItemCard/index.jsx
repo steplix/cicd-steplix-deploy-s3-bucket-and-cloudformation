@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ButtonApply from "../ButtonApply";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import FeatureCard from "@/common/components/FeatureCard";
 import ContactCard from "@/common/components/ContactCard";
 import Fade from "react-reveal/Fade";

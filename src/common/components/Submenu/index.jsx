@@ -2,13 +2,15 @@
 import React from "react";
 import CustomNextLink from "@/common/components/CustomNextLink";
 import PropTypes from "prop-types";
+import { useRouter } from "next/router";
 import { useTranslation } from "@/common/lib/i18n";
 import { useLanguageQuery } from "next-export-i18n";
 import LanguageSelector from "../LanguageSelector";
 
-const Submenu = ({ toggle, setToggle, router }) => {
-  const [query] = useLanguageQuery(router?.query?.locale);
-  const { t } = useTranslation(query?.locale);
+const Submenu = ({ toggle, setToggle }) => {
+  const {query: { locale }, asPath, pathname: routerPathname } = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
 
   //
   // Functions
@@ -17,8 +19,14 @@ const Submenu = ({ toggle, setToggle, router }) => {
     setToggle((prevToggle) => !prevToggle);
   }
 
-  const isCurrentPathnameActive = (pathname) =>
-    router.asPath === pathname ? "submenu--item--active" : "";
+  const isCurrentPathnameActive = (pathname) => {
+    const pathnameToTest = new RegExp(pathname)
+    if (pathname.length > 1) {
+      return pathnameToTest.test(asPath) ? "submenu--item--active" : "";
+    }
+
+    return pathname === routerPathname ? "submenu--item--active" : "";   
+  }
 
   return (
     <>
@@ -53,44 +61,44 @@ const Submenu = ({ toggle, setToggle, router }) => {
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            `/${query?.lang}/about-us`
+            'about-us'
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${query?.lang}/about-us`}>
+            <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item0")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            `/${query?.lang}/what-we-do`
+            'what-we-do'
           )} text-sm border-yellow`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${query?.lang}/what-we-do`}>
+            <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item1")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            `/${query?.lang}/portfolio`
+            'portfolio'
           )} text-sm border-blue`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${query?.lang}/portfolio`}>
+            <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item2")}</a>
             </CustomNextLink>
           </div>
         </div>
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            `/${query?.lang}/contact`
+            'contact'
           )} text-sm border-red`}
         >
           <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${query?.lang}/contact`}>
+            <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
               <a onClick={() => handleClickToggle()}>{t("navbar.item3")}</a>
             </CustomNextLink>
           </div>
@@ -109,7 +117,6 @@ const Submenu = ({ toggle, setToggle, router }) => {
 Submenu.propTypes = {
   toggle: PropTypes.bool.isRequired,
   setToggle: PropTypes.func.isRequired,
-  router: PropTypes.object.isRequired,
 };
 
 export default Submenu;
