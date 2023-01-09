@@ -21,7 +21,7 @@ const Portfolio = () => {
 
                 <div className="pt-[20px] md:pt-0 pl-[7px] md:pl-[15px] -mt-36 md:-mt-52 lg:-mt-98 xl:-mt-99">
                     <img
-                        src="/assets/img/screen-shadow.png"
+                        src="/assets/img/Mockup.png"
                         alt="Image screen"
                         className="w-full h-auto"
                     />
