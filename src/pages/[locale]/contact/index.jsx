@@ -3,12 +3,10 @@ import Icon from "@/common/components/Icon";
 import TextField from "@/common/components/TextField";
 import { useTranslation } from "@/common/lib/i18n";
 import NextLink from "next/link";
-import Inverted from "@/common/components/Title/Inverted";
 import Gradient from "@/common/components/Title/Gradient";
 import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
-import { useResponsive } from "@/common/hooks/useResponsive";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
 
 const icons = {
@@ -20,8 +18,6 @@ const icons = {
 
 const Contact = ({ locale }) => {
   const { t } = useTranslation(locale);
-  const { width } = useResponsive();
-  const BREAKPOINT_WIDTH = 1024;
 
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
@@ -80,11 +76,11 @@ const Contact = ({ locale }) => {
         <section className="lg:flex lg:gap-8 mb-[72px]">
           <div>
             <div className="flex justify-center w-full">
-              <div className="w-[328px] sm:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
+              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
                 <NextLink href="https://g.page/steplix?share">
                   <a target="_blank">
                     <img
-                      src="assets/img/map.svg"
+                      src="/assets/img/map.svg"
                       alt="map"
                       className="object-cover sm:h-[190px] w-full rounded-2xl lg:h-[280px]"
                     />
@@ -116,15 +112,6 @@ const Contact = ({ locale }) => {
                 clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
               />
             </div>
-
-            {/* <div className="text-center text-blue font-bold font-poppins my-8 flex gap-4 items-center justify-center lg:order-3 lg:self-end lg:bg-blue lg:text-white lg:px-4 lg:py-4 lg:rounded-3xl lg:w-4/5 lg:justify-center">
-              <NextLink href="/">{t("ButtonBecomeSteplixer")}</NextLink>
-              <Icon
-                name="chevronRight"
-                className="w-4 rotate-[270deg]"
-                fill="currentColor"
-              />
-            </div> */}
           </div>
         </section>
       </main>
