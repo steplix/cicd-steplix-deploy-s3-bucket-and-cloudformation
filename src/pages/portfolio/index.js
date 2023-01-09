@@ -7,7 +7,7 @@ import PortfolioCard from "@/common/components/PortfolioCard";
 import { useTranslation } from "next-export-i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
 import { repeatImageLogos } from "@/common/utils/methods";
-import { PORTFOLIO_CARDS } from "@/common/utils/constants";
+import { PORTFOLIO_CARDS, SPACE_BETWEEN_CARDS } from "@/common/utils/constants";
 import { clientsLogos } from "@/common/utils/constants";
 
 const PortfolioView = () => {
@@ -85,7 +85,7 @@ const PortfolioView = () => {
             images={repeatImageLogos(clientsLogos, 20)}
             slides={8}
             imgClass="w-24"
-            spacingBetweenSlides={10}
+            spacingBetweenSlides={SPACE_BETWEEN_CARDS}
           />
         </article>
       </main>

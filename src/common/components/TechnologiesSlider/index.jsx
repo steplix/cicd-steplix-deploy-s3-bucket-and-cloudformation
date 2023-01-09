@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import { useKeenSlider } from "keen-slider/react";
 import Icon from "../Icon";
@@ -32,7 +32,7 @@ const TechnologiesSlider = ({
   });
   return (
     <div className="">
-      <div className="keen-slider items-center" ref={sliderRef}>
+      <div className="keen-slider items-center gap-4" ref={sliderRef}>
         {images.map((image, index) => {
           return (
             <div

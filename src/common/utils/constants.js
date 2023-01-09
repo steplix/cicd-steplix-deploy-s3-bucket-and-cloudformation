@@ -336,3 +336,5 @@ export const technologiesImages = [
     alt: "React Logo",
   },
 ];
+
+export const SPACE_BETWEEN_CARDS = 0;
