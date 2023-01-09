@@ -42,6 +42,7 @@ export const propTypeIconName = PropTypes.oneOf([
   "scrummaster",
   "send",
   "sucess",
+  "success",
   "techlead",
   "trust",
   "uiux",
@@ -54,4 +55,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "pow",
   "valid",
   "sura",
+  "mission",
+  "vision",
 ]);
