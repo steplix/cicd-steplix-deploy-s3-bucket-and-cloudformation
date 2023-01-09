@@ -867,14 +867,7 @@ p {
     color: transparent !important;
     z-index: 0;
     letter-spacing: 1.6px;
-  }
-
-  .text-outlined::before {
-    content: attr(data-content);
-    position: absolute;
     -webkit-text-stroke: 1px #ffffff;
-    left: 0;
-    z-index: -1;
   }
 
   .text-outlined--purple {

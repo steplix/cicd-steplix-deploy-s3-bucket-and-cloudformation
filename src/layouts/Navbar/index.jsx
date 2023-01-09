@@ -25,6 +25,10 @@ const Navbar = () => {
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
 
+  const isBecomeSteplixer = React.useMemo(() => {
+    return router.pathname === "/become-steplixer" ? 'text-[24px]' : 'text-[32px]'
+  }, [router.pathname]);
+
   //
   // Effects
   //
@@ -83,11 +87,10 @@ const Navbar = () => {
           </div>
           {routeTitle ? (
             <div className="container h-[80px] md:h-[100px] flex items-center px-5 md:px-0">
-              <h1 className="font-extrabold text-[32px] font-poppins tracking-[0.8px]">
+              <h1 className={`font-extrabold font-poppins tracking-[0.8px] ${isBecomeSteplixer}`}>
                 {getOutlinedTitle(t(routeTitle)).title + " "}
                 <span
                   className="font-bold text-outlined"
-                  data-content={getOutlinedTitle(t(routeTitle))?.outlined}
                 >
                   {getOutlinedTitle(t(routeTitle))?.outlined}
                 </span>
