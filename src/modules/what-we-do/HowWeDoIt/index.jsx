@@ -24,7 +24,7 @@ const HowDoWeDoIt = () => {
         images={repeatImageLogos(technologiesImages, 20)}
         slides={8}
         imgClass="w-24"
-        spacingBeetWeenSlides={10}
+        spacingBetweenSlides={10}
       />
       <p className="font-poppins text-sm lg:text-base font-normal text-black text-center">
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs
