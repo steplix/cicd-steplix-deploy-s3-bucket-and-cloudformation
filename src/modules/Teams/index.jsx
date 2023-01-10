@@ -1,15 +1,16 @@
 import React from 'react'
 import Link from 'next/link';
-import { useTranslation } from "next-export-i18n";
-import { aboutUsPhotoArray } from '@/common/utils/constants';
+import PropTypes from "prop-types"; 
+import { useTranslation } from "@/common/lib/i18n";
+import { aboutUsPhotoArray, LOCALE_SLUGS } from '@/common/utils/constants';
 import Chip from '@/common/components/TechnologyChip'
 import Title from '@/common/components/Title/Gradient';
 import PhotoCarousel from '@/common/components/PhotoCarousel';
 import Icon from '@/common/components/Icon';
 
-const Teams = () => {
+const Teams = ({ locale }) => {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation(locale);
 
     return (
         <section className="flex flex-col space-y-6 lg:space-y-8">
@@ -45,5 +46,10 @@ const Teams = () => {
         </section>
     )
 }
+
+Teams.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+  }
+  
 
 export default Teams

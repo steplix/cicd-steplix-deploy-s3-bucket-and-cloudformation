@@ -12,23 +12,29 @@ export const LanguageSwitcher = ({ lang, children, shallow = false, slug }) => {
     // state indicating if this component's target language matches the currently selected
     const { isActive: languageSwitcherIsActive } = useLanguageSwitcherIsActive(lang);
     // necessary for updating the router's query parameter inside the click handler
-    const router$1 = router.useRouter();
-    const [query] = useLanguageQuery(lang);
-    const queryObject = {...query};
-
-    if (slug?.length) {
-        slug = [slug[0], lang]
-        queryObject.slug = slug
-    } else {
-        delete queryObject.slug;
-    }
-
+    const {pathname, query: { locale }, push} = router.useRouter();
+    const [i18nQuery] = useLanguageQuery(pathname !== '/' ? locale : lang);
+    const queryObject = {...i18nQuery};
 
     const updateRouter = () => {
-        router$1.push({
-            pathname: router$1.pathname,
+                
+        let targetRoute;
+
+        if (pathname.indexOf('[locale]') === -1) {
+            delete queryObject.locale
+            targetRoute = pathname
+        } else {
+            targetRoute = pathname.replace('[locale]', lang)
+
+            if (slug) {
+                targetRoute = targetRoute.replace('[slug]', slug)
+            }
+        }
+
+        push({
+            pathname: targetRoute,
             query: queryObject,
-        }, undefined, { shallow: shallow });
+        }, targetRoute, { shallow: shallow });
     };
     // use React.cloneElement to manipulate properties
     if (React__default["default"].isValidElement(children)) {

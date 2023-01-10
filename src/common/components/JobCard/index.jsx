@@ -5,7 +5,7 @@ import { useLanguageQuery } from "next-export-i18n";
 import ButtonApply from "../ButtonApply";
 import ShadowCard from "@/common/components/ShadowCard";
 
-const JobCard = ({ title, country, apply, url }) => {
+const JobCard = ({ title, country, apply, url, locale }) => {
     const [query] = useLanguageQuery();
 
     return (
@@ -19,7 +19,7 @@ const JobCard = ({ title, country, apply, url }) => {
                         {country}
                     </p>
                 </div>
-                <ButtonApply url={url} query={query} apply={apply} />
+                <ButtonApply url={url} query={query} apply={apply} locale={locale} />
             </article>
         </ShadowCard>
     );

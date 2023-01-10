@@ -1,13 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
-import { useTranslation } from "next-export-i18n";
+import CustomNextLink from "@/common/components/CustomNextLink";
 import Icon from "@/common/components/Icon";
+import { useTranslation } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useRouter } from "next/router";
 
 //TODO: RE-CHECK FOOTERS LINKS AND TRANSLATIONs
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const {query: { locale }} = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
 
   return (
     <footer className="footer-gradient py-11">
@@ -23,27 +27,27 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-1 ml-6 md:ml-0 lg:flex lg:space-x-2 lg:self-center text-white md:max-w-[225px] lg:max-w-none text-xs lg:text-base">
               <div>
-                <Link href="/about-us">
-                  <a href="#">{t("footer.links.item0")} </a>
-                </Link>
+                <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
+                  <a>{t("footer.links.item0")} </a>
+                </CustomNextLink>
                 <span className="ml-2 md:ml-3 lg:ml-1">|</span>
               </div>
               <div>
-                <Link href="/what-we-do">
-                  <a href="#">{t("footer.links.item1")} </a>
-                </Link>
+                <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
+                  <a>{t("footer.links.item1")} </a>
+                </CustomNextLink>
                 <span className="ml-1 hidden lg:inline">|</span>
               </div>
               <div>
-                <Link href="/portfolio">
-                  <a href="#">{t("footer.links.item2")} </a>
-                </Link>
+                <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
+                  <a>{t("footer.links.item2")} </a>
+                </CustomNextLink>
                 <span className="ml-1">|</span>
               </div>
               <div>
-                <Link href="/contact">
-                  <a href="#">{t("footer.links.item3")} </a>
-                </Link>
+                <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
+                  <a>{t("footer.links.item3")} </a>
+                </CustomNextLink>
               </div>
             </div>
           </div>
