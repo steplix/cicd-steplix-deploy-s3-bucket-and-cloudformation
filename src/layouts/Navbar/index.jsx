@@ -20,7 +20,7 @@ const Navbar = () => {
     const pathnameToTest = new RegExp(pathname)
     return pathnameToTest.test(asPath) ? "nav--link--active" : "";
   }
-      
+  
   //
   // State
   //
@@ -28,8 +28,8 @@ const Navbar = () => {
   const [toggle, setToggle] = React.useState(false);
 
   const isBecomeSteplixer = React.useMemo(() => {
-    return router.pathname === "/become-steplixer" ? 'text-[24px]' : 'text-[32px]'
-  }, [router.pathname]);
+    return pathname === "/become-steplixer" ? 'text-[24px]' : 'text-[32px]'
+  }, [pathname]);
 
   //
   // Effects

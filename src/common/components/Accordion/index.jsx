@@ -1,6 +1,5 @@
-import { forwardRef, useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
 import AccordionItemProvider, {
   useItemAccordion,
 } from "./context/AccordionItemContext";
