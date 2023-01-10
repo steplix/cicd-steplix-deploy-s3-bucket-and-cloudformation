@@ -377,23 +377,6 @@
       "description": "  This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
     }
   },
-  "ourCulture": {
-    "title": "Because nobody reaches the peak alone...",
-    "subtitle": "We are your best",
-    "emptySubtitle": " PARTNER",
-    "cardOne": {
-      "title": "We know the way",
-      "description": "We are guides in the digital business ecosystem, and we know how to help you promote and idea to turn it into a scalable business model. "
-    },
-    "cardTwo": {
-      "title": "We walk with you on this journey",
-      "description": "We seek and co-create innovative solutions tailored to each project and put together a team that closely supports each of your steps, from the base to the top."
-    },
-    "cardThree": {
-      "title": "We respect your conditions",
-      "description": "We accept the challenge of each client with the commitment to achieve the results in the agreed time, with the investment and the correct ROI.  "
-    }
-  },
   "modal": {
     "modalOne": {
       "title": " Understand & Scope ",
