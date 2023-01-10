@@ -79,7 +79,7 @@ export default function Contact() {
         <section className="lg:flex lg:gap-8 mb-[72px]">
           <div>
             <div className="flex justify-center w-full">
-              <div className="w-[328px] sm:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
+              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
                 <NextLink href="https://g.page/steplix?share">
                   <a target="_blank">
                     <img
