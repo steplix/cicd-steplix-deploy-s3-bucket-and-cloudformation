@@ -1,17 +1,24 @@
 import React from 'react';
-import Link from "next/link";
+import CustomNextLink from "@/common/components/CustomNextLink";
 import Icon from '@/components/Icon';
 import ButtonCard from "@/common/components/ButtonCard";
-import { useTranslation } from "next-export-i18n";
 import TechnologiesSlider from '@/common/components/TechnologiesSlider';
+import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
+import { useRouter } from "next/router";
 import { repeatImageLogos } from "@/common/utils/methods";
 import { clientsLogos } from '@/common/utils/constants';
 
 const Portfolio = () => {
-    const { t } = useTranslation();
+    const { query: { locale }, push } = useRouter();
+    const [i18nQuery] = useLanguageQuery(locale);
+    const { t } = useTranslation(i18nQuery?.locale);
 
     const onClick = (url) => {
-        window.open(url, "_self");
+        push({
+            pathname: url,
+            query: i18nQuery,
+        }, url, { shallow: false });
     };
 
     return (
@@ -28,11 +35,11 @@ const Portfolio = () => {
                 </div>
 
                 <div className="container flex lg:hidden justify-end items-end gap-2 pr-[23px] -mt-6 md:-mt-12 mb-8 md:pr-0">
-                    <Link href="/portfolio">
+                    <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
                         <a>
                             <span className="text-blue text-xs font-bold">{t("PortfolioHomeSection.title")}</span>
                         </a>
-                    </Link>
+                    </CustomNextLink>
                     <Icon name="chevronRight" className="h-4 w-4" />
                 </div>
 
@@ -41,7 +48,7 @@ const Portfolio = () => {
                         label={t("PortfolioHomeSection.title")}
                         iconName="calendar"
                         customImageClass="w-4"
-                        clickEvent={() => onClick("/portfolio")}
+                        clickEvent={() => onClick(`/${i18nQuery?.lang}/portfolio`)}
                         iconPosition="right"
                     />
                 </div>
