@@ -1,10 +1,12 @@
-import { PropTypes } from "prop-types";
-import { useEffect, useState } from "react";
-import { useTranslation } from "@/common/lib/i18n";
 import Avatar from "@/common/components/Avatar";
 import TextField from "@/common/components/TextField";
 import ButtonCard from "@/common/components/ButtonCard";
 import Icon from "../Icon";
+import { PropTypes } from "prop-types";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { useTranslation } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
 
 const CardContact = ({
   email,
@@ -16,8 +18,10 @@ const CardContact = ({
   onClickSocialMediaButton,
   onClickCopyButton,
 }) => {
+  const {query: { locale }} = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
   const [isLoadingImg, setIsLoadingImg] = useState(true);
-  const { t } = useTranslation();
 
   useEffect(() => {
     const timeoutImg = setTimeout(() => {
