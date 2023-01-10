@@ -66,27 +66,6 @@ p {
   }
 }
 
-/*--------- Process Mountain------- */
-@media (min-width: 1200px) {
-  .steplix-process {
-    height: 700px;
-    background-image: url("../../public/assets/img/bg-process.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 63% 0%;
-  }
-}
-
-@media (min-width: 1400px) {
-  .steplix-process {
-    height: 800px;
-    background-image: url("../../public/assets/img/bg-process.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0%;
-  }
-}
-
 /* CAROUSEL START */
 .number-slide {
   display: flex;
@@ -269,61 +248,8 @@ p {
   }
   /*END STACK */
 
-  /* START PROCESS */
-  .bg--process {
-    background-image: url("../../public/assets/img/bg-jobs.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 75% 170%;
-  }
-
-  @media (min-width: 768px) {
-    .bg--process {
-      background-position: 55% 110%;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .bg--process {
-      background-position: 75% 100%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .bg--process {
-      background-position: 16% 100%;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .bg--process {
-      background-position: 90% 100%;
-    }
-  }
-  /*END PROCESS */
-
   .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
-  }
-  /*--------- Process Mountain------- */
-  @media (min-width: 1200px) {
-    .steplix-process {
-      height: 700px;
-      background-image: url("../../public/assets/img/bg-process.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 63% 0%;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .steplix-process {
-      height: 800px;
-      background-image: url("../../public/assets/img/bg-process.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 50% 0%;
-    }
   }
 
   /* CAROUSEL START */
@@ -496,15 +422,6 @@ p {
   }
   /*END STACK */
 
-  /* START PROCESS */
-  .bg--process {
-    background-image: url("../../public/assets/img/bg-jobs.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 75% 170%;
-  }
-  /* END ICON */
-
   /* TOAST ICON */
 
   .toast-primary {
@@ -524,32 +441,6 @@ p {
   }
 
   /* END TOAST ICON */
-  /* END ICON */
-
-  @media (min-width: 768px) {
-    .bg--process {
-      background-position: 55% 110%;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .bg--process {
-      background-position: 75% 100%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .bg--process {
-      background-position: 16% 100%;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .bg--process {
-      background-position: 90% 100%;
-    }
-  }
-  /*END PROCESS */
 
   .shadow--gray {
     box-shadow: -0.5px 0px 3px 3px rgba(255, 255, 255, 0.5);
