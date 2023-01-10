@@ -3,28 +3,6 @@
     "subtitle": "Sorry, we can't find that page! Don't worry though, we can take you anywhere else.",
     "button": "back to home"
   },
-  "stack": {
-    "sectionOne": {
-      "title": "Our ",
-      "titleEmpty": "technologies",
-      "description": "At Steplix we work with the best technologies available on the market to make our customers' products a reality. Meet them here"
-    },
-    "sectionTwo": {
-      "title": "Other ",
-      "titleEmpty": "technologies"
-    },
-    "cards": {
-      "react": "We chose the React Javascript library for the Front-End development of single page apps and PWAs since it is focused on the use of components and allows us to shorten development times.",
-      "git": "We use Git as a code versioning tool, applying the Feature-Branch methodology and Gitlab as a repository manager.",
-      "docker": "We work with Docker, an open source option that gives us the advantages of High portability, High performance, Agility, Error isolation and Scalability.",
-      "next": "Next. js is a framework that enables developers to build high-performance web applications through server-side rendering.",
-      "flutter": "We use Flutter for hybrid applications as it is an open source SDK created by Google, which allows us to develop Android, iOS interfaces and allows full customization thanks to the layered architecture.",
-      "aws": "Amazon AWS increases the independence of the development team and allows the implementation of a Just In Time Infrastructure scheme, in which resources are only provisioned as they are required by the project.",
-      "figma": "We chose Figma as a tool to design interfaces as it gives us the possibility to create advanced wireframes, interfaces and prototypes. One of its greatest benefits is that it is web-based, which allows us to store the work in a cloud and be able to access it from any device.",
-      "kotlin": "We develop native Android applications with Kotlin creating a more concise and expressive code. In addition, it maintains full compatibility with Java-based technologies.",
-      "node": "We work with NodeJS, a Javascript interpreter based on the Chrome engine that allows us to perform 100% of the Back-End tasks required. The chosen framework is ExpressJS, a minimalist and flexible yet robust and widely tested framework within the web development industry."
-    }
-  },
   "contact": {
     "title": "We want to hear your ",
     "titleEmpty": "ideas ",
