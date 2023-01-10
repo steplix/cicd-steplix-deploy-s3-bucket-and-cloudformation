@@ -267,24 +267,6 @@
     "emptyTitle": "nosotros",
     "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
   },
-  "whatWeDo": {
-    "title": "Pasos hacia la ",
-    "emptyTitle": " cima",
-    "subtitlePartOne": " Los comienzos no son todos iguales... En este camino vos elegís.",
-    "subtitlePartTwo": "¿Cuál es tu punto de partida?",
-    "cardOne": {
-      "title": "Conociendo tu negocio",
-      "description": " Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
-    },
-    "cardTwo": {
-      "title": "Diseño de producto",
-      "description": "La segunda escala se enfoca en el diseño de una primera versión del producto que permitirá someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización, para seguir potenciando la idea."
-    },
-    "cardThree": {
-      "title": "Desarrollo y entrega",
-      "description": "Esta fase consiste en construir y entregar el producto final para dar comienzo de manera oficial al negocio, respetando los tiempos e inversión acordados."
-    }
-  },
   "modal": {
     "modalOne": {
       "title": "Conociendo tu negocio",

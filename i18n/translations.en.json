@@ -263,24 +263,6 @@
 
     "description": "We are the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you in every step of the joruney, minimizing the risk and amplifying the impact, in the agreed time. "
   },
-  "whatWeDo": {
-    "title": "Steps to the ",
-    "emptyTitle": "top",
-    "subtitlePartOne": " The beginnings are not all the same... On this path you choose.  ",
-    "subtitlePartTwo": " What is your starting point? ",
-    "cardOne": {
-      "title": "Understand & Scope",
-      "description": " As guides in the digital business ecosystem, we know that the first step is focused on understanding the opportunity and working together to find a way to add value to that business idea."
-    },
-    "cardTwo": {
-      "title": "Product Design",
-      "description": " The second scale focuses on the design of a first version of the product that will allow the business model to be tested, relieving the effor and detecting optimization opportunities to continue promoting the idea. "
-    },
-    "cardThree": {
-      "title": "Develop & Deliver",
-      "description": "  This phase consists of building and delivering the final product to officially start the business, respecting the agreed times and investment."
-    }
-  },
   "modal": {
     "modalOne": {
       "title": " Understand & Scope ",
