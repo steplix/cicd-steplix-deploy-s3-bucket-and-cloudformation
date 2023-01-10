@@ -189,33 +189,6 @@ p {
   }
   /* SUBMENU & NAVBAR END */
 
-  /* START JOBS */
-  .bg--jobs {
-    height: 1000px;
-    background-image: url("../../public/assets/img/bg-jobs.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 10px 400px;
-  }
-
-  @media (min-width: 768px) {
-    .bg--jobs {
-      height: 1000px;
-      background-image: url("../../public/assets/img/bg-jobs.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right;
-    }
-  }
-
-  .bg--job {
-    background-image: url("../../public/assets/img/bg-job.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 10px 100px;
-  }
-  /*END JOBS */
-
   /* START CONTACT */
   .bg--contact {
     background-image: url("../../public/assets/img/bg-jobs.svg");
@@ -362,33 +335,6 @@ p {
     margin: -2px;
   }
   /* SUBMENU & NAVBAR END */
-
-  /* START JOBS */
-  .bg--jobs {
-    height: 1000px;
-    background-image: url("../../public/assets/img/bg-jobs.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 10px 400px;
-  }
-
-  @media (min-width: 768px) {
-    .bg--jobs {
-      height: 1000px;
-      background-image: url("../../public/assets/img/bg-jobs.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right;
-    }
-  }
-
-  .bg--job {
-    background-image: url("../../public/assets/img/bg-job.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 10px 100px;
-  }
-  /*END JOBS */
 
   /* START CONTACT */
   .bg--contact {
