@@ -8,6 +8,7 @@ import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
+import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
@@ -112,27 +113,30 @@ const Contact = ({ locale }) => {
                 clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
               />
             </div>
+            <div className="lg:order-3 lg:self-end lg:w-3/4">
+              <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-8" />
+            </div>
           </div>
         </section>
       </main>
     </section>
   );
-}
+};
 
 export async function getStaticPaths(...args) {
-    const pathsWithLocale = getPathSlugs();
-    return {
-      paths: pathsWithLocale,
-      fallback: false
-    };
-  }
-  
+  const pathsWithLocale = getPathSlugs();
+  return {
+    paths: pathsWithLocale,
+    fallback: false,
+  };
+}
+
 export async function getStaticProps({ params }) {
-    return {
-      props: {
-        ...params
-      }
-    };
-  }
+  return {
+    props: {
+      ...params,
+    },
+  };
+}
 
 export default Contact;
