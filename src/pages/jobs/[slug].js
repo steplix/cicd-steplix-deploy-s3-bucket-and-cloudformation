@@ -2,12 +2,11 @@ import React from "react";
 import { useTranslation } from "@/common/lib/i18n";
 import JobItemCard from "@/common/components/JobItemCard";
 import Flags from "@/common/components/Flags";
-import { ActiveSearches } from "@/common/utils/ActiveSearches";
 import HeadTag from "@/common/components/HeadTag";
 
 const Job = ({ params }) => {
-    const [slug, lang] = params.slug;
-    const { t } = useTranslation(lang);
+    const slug = params.slug;
+    const { t } = useTranslation();
 
     return (
         <>
@@ -26,7 +25,18 @@ export default Job;
 
 export const getStaticPaths = async () => {
     return {
-        paths: ActiveSearches(),
+        paths: [
+            {
+                params: {
+                    slug: "UI_UXDesigner",
+                },
+            },
+            {
+                params: {
+                    slug: "BACKENDSSR",
+                },
+            }
+        ],
         fallback: false,
     };
 };

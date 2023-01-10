@@ -4,9 +4,11 @@ import Title from "@/common/components/Title/Gradient";
 import Icon from "@/common/components/Icon";
 import VisionIcon from "@/common/components/Icon/icons/VisionIcon";
 import MisionIcon from "@/common/components/Icon/icons/MisionIcon";
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import PropTypes from "prop-types"; 
 
-const MissionAndVision = () => {
-  const { t } = useTranslation();
+const MissionAndVision = ({ locale }) => {
+  const { t } = useTranslation(locale);
 
   return (
     <section className="w-full flex flex-col lg:flex-row lg:space-x-8 items-center space-y-8 lg:space-y-0">
@@ -33,4 +35,8 @@ const MissionAndVision = () => {
   );
 };
 
-export default MissionAndVision;
+MissionAndVision.propTypes = {
+  locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
+
+export default MissionAndVision

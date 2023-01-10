@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Icon from '@/components/Icon';
-import { useTranslation } from "next-export-i18n";
 import propTypes from 'prop-types';
+import { useTranslation } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useRouter } from "next/router";
 
 const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
-
-  const { t } = useTranslation();
+  const {query: { locale }} = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
 
   return (
     <div className='keen-slider__slide number-slide w-[280px] md:w-[376px] h-[437px] xl:w-[488px] xl:h-[408px] portfolio-card-shadow lg:drop-shadow-sm rounded-[20px] flex flex-col'>

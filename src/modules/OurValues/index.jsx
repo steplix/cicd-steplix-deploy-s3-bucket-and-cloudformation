@@ -1,10 +1,12 @@
+import React from 'react'
 import CardIcon from '@/common/components/CardIcon'
 import Title from '@/common/components/Title/Gradient';
-import { useTranslation } from "next-export-i18n";
-import React from 'react'
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import PropTypes from "prop-types"; 
+import { useTranslation } from "@/common/lib/i18n";
 
-const OurValues = () => {
-    const { t } = useTranslation();
+const OurValues = ({ locale }) => {
+    const { t } = useTranslation(locale);
 
     return (
         <section className="flex flex-col space-y-6 lg:space-y-8">
@@ -26,5 +28,9 @@ const OurValues = () => {
         </section>
     )
 }
+
+OurValues.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+  }
 
 export default OurValues

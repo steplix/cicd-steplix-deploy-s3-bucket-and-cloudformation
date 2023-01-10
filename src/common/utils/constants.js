@@ -182,22 +182,22 @@ export const clientsCards = [
 // CONTACT PAGE
 export const PHOTO_CAROUSEL = [
   {
-    src: "assets/img/contact/contact-1.png",
+    src: "/assets/img/contact/contact-1.png",
   },
   {
-    src: "assets/img/contact/contact-2.png",
+    src: "/assets/img/contact/contact-2.png",
   },
   {
-    src: "assets/img/contact/contact-3.png",
+    src: "/assets/img/contact/contact-3.png",
   },
   {
-    src: "assets/img/contact/contact-4.png",
+    src: "/assets/img/contact/contact-4.png",
   },
   {
-    src: "assets/img/contact/contact-5.png",
+    src: "/assets/img/contact/contact-5.png",
   },
   {
-    src: "assets/img/contact/contact-6.png",
+    src: "/assets/img/contact/contact-6.png",
   },
 ];
 
@@ -208,7 +208,7 @@ export const CARD_CONTACT = [
     email: "khalbinger@steplix.com",
     meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
     linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
-    imgSrc: "assets/img/contact/sellers/seller-1_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-1_cropped.png",
   },
 
   {
@@ -217,7 +217,7 @@ export const CARD_CONTACT = [
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
-    imgSrc: "assets/img/contact/sellers/seller-2_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
   },
 
   {
@@ -234,7 +234,7 @@ export const CARD_CONTACT = [
     email: "mwegier@steplix.com",
     meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
     linkedin: "https://www.linkedin.com/in/marianowegier/",
-    imgSrc: "assets/img/contact/sellers/seller-4_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-4_cropped.png",
   },
 ];
 
@@ -300,41 +300,42 @@ export const clientsLogos = [
 
 export const technologiesImages = [
   {
-    image: "static/technologies/aws.svg",
+    image: "/static/technologies/aws.svg",
     alt: "Amazon Logo",
   },
   {
-    image: "static/technologies/docker.svg",
+    image: "/static/technologies/docker.svg",
     alt: "Docker Logo",
   },
   {
-    image: "static/technologies/figma.svg",
+    image: "/static/technologies/figma.svg",
     alt: "Figma Logo",
   },
   {
-    image: "static/technologies/flutter.svg",
+    image: "/static/technologies/flutter.svg",
     alt: "Flutter Logo",
   },
   {
-    image: "static/technologies/git.svg",
+    image: "/static/technologies/git.svg",
     alt: "Git Logo",
   },
   {
-    image: "static/technologies/kotlin.svg",
+    image: "/static/technologies/kotlin.svg",
     alt: "Kotlin Logo",
   },
   {
-    image: "static/technologies/nextjs.svg",
+    image: "/static/technologies/nextjs.svg",
     alt: "Next Logo",
   },
   {
-    image: "static/technologies/nodejs.svg",
+    image: "/static/technologies/nodejs.svg",
     alt: "Node Logo",
   },
   {
-    image: "static/technologies/reactjs.svg",
+    image: "/static/technologies/reactjs.svg",
     alt: "React Logo",
   },
 ];
 
 export const SPACE_BETWEEN_CARDS = 0;
+export const LOCALE_SLUGS = ["es", "en"];

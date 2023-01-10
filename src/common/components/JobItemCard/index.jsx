@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ButtonApply from "../ButtonApply";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import FeatureCard from "@/common/components/FeatureCard";
 import ContactCard from "@/common/components/ContactCard";
 import Fade from "react-reveal/Fade";
 
 const JobItemCard = ({ item }) => {
-    const [query] = useLanguageQuery();
     const { t } = useTranslation();
 
     return (
@@ -28,7 +27,6 @@ const JobItemCard = ({ item }) => {
                         <ButtonApply
                             apply={t("jobs.applyButton")}
                             email="rrhh@steplix.com"
-                            query={query}
                         />
                     </div>
                     <div>
@@ -94,7 +92,6 @@ const JobItemCard = ({ item }) => {
                             <ButtonApply
                                 apply={t("jobs.applyButton")}
                                 email="rrhh@steplix.com"
-                                query={query}
                             />
                             <p>{t("jobs.or")}</p>
                             <p>rrhh@steplix.com</p>
