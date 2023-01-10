@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Flags from "@/common/components/Flags";
 import Link from "next/link";
 import { useTranslation, useLanguageQuery } from "next-export-i18n";
 
@@ -51,7 +50,6 @@ const Custom404 = () => {
                         </a>
                     </Link>
                 </div>
-                <Flags />
             </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import Flags from "@/common/components/Flags";
 import { useTranslation } from "next-export-i18n";
 import ImageFeatureCard from "@/common/components/ImageFeatureCard";
 import Fade from "react-reveal/Fade";
@@ -126,7 +125,6 @@ const Stack = () => {
                     </Fade>
                 </div>
 
-                <Flags />
             </div>
         </>
     );

@@ -1,5 +1,4 @@
 import { useTranslation } from "next-export-i18n";
-import Flags from "@/common/components/Flags";
 import EverythingStartsWithAnIdea from "@/modules/process/EverythingStartsWithAnIdea";
 import HoDoWeDoIt from "@/modules/process/HowDoWEDoIt";
 import ScrumFramework from "@/modules/process/ScrumFramework";
@@ -16,7 +15,6 @@ export default function Process() {
                 <StepsToTheTop />
                 <HoDoWeDoIt />
                 <ScrumFramework data={t("process.scrumFramework")} />
-                <Flags />
             </div>
         </>
     );

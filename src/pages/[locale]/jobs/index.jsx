@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "@/common/lib/i18n";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import BecomeASteplixer from "@/modules/jobs/BecomeASteplixer";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
 
 const Jobs = ({ locale }) => {
@@ -15,7 +14,6 @@ const Jobs = ({ locale }) => {
                 <section className="bg--jobs relative">
                     <BecomeASteplixer locale={locale} />
                 </section>
-                <Flags />
             </div>
         </>
     );

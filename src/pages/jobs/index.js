@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-export-i18n";
 import BecomeASteplixer from "@/modules/jobs/BecomeASteplixer";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
 
 export default function Jobs() {
@@ -14,7 +13,6 @@ export default function Jobs() {
                 <section className="bg--jobs relative">
                     <BecomeASteplixer />
                 </section>
-                <Flags />
             </div>
         </>
     );

@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "@/common/lib/i18n";
 import JobItemCard from "@/common/components/JobItemCard";
-import Flags from "@/common/components/Flags";
 import HeadTag from "@/common/components/HeadTag";
 
 const Job = ({ params }) => {
@@ -15,7 +14,6 @@ const Job = ({ params }) => {
                 <div className="bg--job flex flex-col space-y-14 md:space-y-8 lg:space-y-12 xl:space-y-28">
                     <JobItemCard item={t(`jobs.${slug}`)} />
                 </div>
-                <Flags />
             </div>
         </>
     );
