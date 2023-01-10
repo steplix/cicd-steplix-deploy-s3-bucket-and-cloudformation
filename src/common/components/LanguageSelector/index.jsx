@@ -2,16 +2,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
-import { useLanguageQuery, useTranslation } from 'next-export-i18n';
-import { LanguageSwitcher } from "@/common/lib/i18n";
+import { useLanguageQuery } from 'next-export-i18n';
+import { LanguageSwitcher, useTranslation } from "@/common/lib/i18n";
 import Icon from '@/components/Icon';
 
 const LanguageSelector = ({ sm }) => {
-    const [query] = useLanguageQuery();
-    const { t } = useTranslation();
+    const router = useRouter();
+    const slug = router?.query?.slug;
+    const locale = router?.query?.locale;
+    const [query] = useLanguageQuery(locale);
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
-    const { query: { slug } } = useRouter();
     const shortCurrentLang = query?.lang;
+    const { t } = useTranslation(shortCurrentLang);
+
 
     const languageMap = {
         current: {

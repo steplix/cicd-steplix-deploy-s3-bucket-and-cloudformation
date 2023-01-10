@@ -1,7 +1,11 @@
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useRouter } from "next/router";
 
 export const usePortfolioTranslation = () => {
-  const { t } = useTranslation();
+  const {query: { locale }} = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
 
   const PORTFOLIO_INDUSTRIES = [
     {

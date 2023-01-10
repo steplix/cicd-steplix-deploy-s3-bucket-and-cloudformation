@@ -1,11 +1,11 @@
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import JobCard from "@/common/components/JobCard";
 import Fade from "react-reveal/Fade";
 
-const BecomeASteplixer = () => {
-    const { t } = useTranslation();
-
+const BecomeASteplixer = ({locale}) => {
+    const { t } = useTranslation(locale);
+    
     return (
         <div className="container px-5 md:px-0 pt-28 xl:mb-20">
             <Fade>
@@ -23,6 +23,7 @@ const BecomeASteplixer = () => {
                             country={t("jobs.UI_UXDesigner.country")}
                             apply={t("jobs.applyButton")}
                             url={t("jobs.UI_UXDesigner.url")}
+                            locale={locale}
                         />
                     </div>
                     <div className="w-full h-[169px] xl:w-[490px] xl:h-[140px]">
@@ -31,6 +32,7 @@ const BecomeASteplixer = () => {
                             country={t("jobs.BACKENDSSR.country")}
                             apply={t("jobs.applyButton")}
                             url={t("jobs.BACKENDSSR.url")}
+                            locale={locale}
                         />
                     </div>
                 </div>
