@@ -403,10 +403,19 @@
   /*------- Main Header Section ------- */
   .mainHeader {
     position: relative;
-    background-image: url("../../public/assets/img/bg-mountain.svg");
+    background-image: url("../../public/assets/img/mountain.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    top: 56px;
+  }
+
+  .mountainStep {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFDA00;
+    border: 4px solid #3C1053;
+    filter: blur(2px);
+    border-radius: 50%;
   }
 
 }

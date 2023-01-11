@@ -278,12 +278,8 @@
     "title": "Ir al portfolio"
   },
   "MainHeader": {
-    "titlePartOne": "Co-creamos",
-    "titlePartTwo": "el camino que",
-    "titlePartThree": "llevará tu negocio",
-    "titlePartFour": "a la cima",
-    "subtitlePartOne": "Somos tu aliado",
-    "subtitlePartTwo": "digital"
+    "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
+    "subtitle": "Somos tu aliado <br/> digital"
   },
   "portfolio": {
     "cards": {

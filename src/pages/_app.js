@@ -1,5 +1,5 @@
 import Script from "next/script";
-import "@fontsource/poppins"
+import "@fontsource/poppins";
 import "../styles/globals.css";
 import "keen-slider/keen-slider.min.css";
 import Layout from "@/layouts/Layout";
