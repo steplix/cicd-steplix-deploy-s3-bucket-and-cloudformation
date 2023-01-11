@@ -10,11 +10,11 @@ const OurPosts = () => {
     let postNumber = 0;
 
     return (
-        <section className="container px-4 md:px-0">
+        <section className="container">
             <div className="mb-6">
                 <Title content={t("OurPostsSay.title")} borderPosition="bottom" underlineFixed size="text-[26px] leading-[26px] lg:text-[32px] lg:leading-[48px]"/>
             </div>
-            <div className="mb-[72px] lg:mb-[78px] xl:mb-[72px]">
+            <div className="mb-[72px]">
                 <PortfolioCarousel carouselClassName={"postsCarousel"}>
                     {
                         posts.map(({publishingAt, description, url}) => {
