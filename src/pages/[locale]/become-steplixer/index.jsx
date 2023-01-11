@@ -14,8 +14,6 @@ function BecomeSteplixerPage({locale}) {
   const { t } = useTranslation(locale);
   const { ref, closeAccordion } = useAccordion();
 
-  console.log({t: t("BecomeSteplixerSection.title")});
-
   return (
     <>
       <HeadTag
@@ -34,7 +32,7 @@ function BecomeSteplixerPage({locale}) {
 
         <div className="my-10 lg:grid lg:grid-cols-2 lg:gap-x-6">
           {BECOME_BENEFITS.map((item, index) => (
-            <BecomeCard key={index} icon={item.icon} benefit={item.benefit} locale={locale} />
+            <BecomeCard key={index + 1} icon={item.icon} benefit={item.benefit} locale={locale} />
           ))}
         </div>
 

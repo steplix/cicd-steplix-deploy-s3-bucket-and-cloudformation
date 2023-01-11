@@ -16,6 +16,8 @@ const BecomeCard = ({ icon, benefit, locale }) => {
 
 BecomeCard.propTypes = {
 	icon: PropTypes.string.isRequired,
+	benefit: PropTypes.string.isRequired,
+	locale: PropTypes.string.isRequired,
 };
 
 export default BecomeCard;
