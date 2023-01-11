@@ -58,7 +58,7 @@ const Navbar = () => {
           />
         </div>
         <div className="flex flex-col w-full header-gradient">
-          <div className="container flex relative justify-between items-center w-full h-[65px]">
+          <div className="container flex relative justify-between items-center w-full h-[56px] sm:h-[62px]">
             {/* logo mobile */}
             <div className="items-center justify-center flex">
               <CustomNextLink to="/">
