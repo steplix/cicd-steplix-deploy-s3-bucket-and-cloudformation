@@ -10,7 +10,7 @@ import CardContact from "@/common/components/CardContact";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { copyToClipboard, openLink } from "@/common/utils/methods";
 
-function BecomeSteplixerPage({locale}) {
+function BecomeSteplixerPage({ locale }) {
   const { t } = useTranslation(locale);
   const { ref, closeAccordion } = useAccordion();
 
@@ -21,7 +21,7 @@ function BecomeSteplixerPage({locale}) {
         description={t("metaTags.becomeSteplixer.description")}
         keywords={t("metaTags.becomeSteplixer.keywords")}
       />
-      <section className="py-10 px-4 sm:px-0 w-full container mx-auto flex-col">
+      <section className="section-container w-full container mx-auto flex-col space-y-24">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}
@@ -32,7 +32,12 @@ function BecomeSteplixerPage({locale}) {
 
         <div className="my-10 lg:grid lg:grid-cols-2 lg:gap-x-6">
           {BECOME_BENEFITS.map((item, index) => (
-            <BecomeCard key={index + 1} icon={item.icon} benefit={item.benefit} locale={locale} />
+            <BecomeCard
+              key={index + 1}
+              icon={item.icon}
+              benefit={item.benefit}
+              locale={locale}
+            />
           ))}
         </div>
 
@@ -94,16 +99,15 @@ export async function getStaticPaths(...args) {
   const pathsWithLocale = getPathSlugs();
   return {
     paths: pathsWithLocale,
-    fallback: false
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
-
   return {
     props: {
-      ...params
-    }
+      ...params,
+    },
   };
 }
 
