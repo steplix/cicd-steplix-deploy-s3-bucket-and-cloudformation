@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @layer base {
   html {
     scroll-behavior: auto;
@@ -44,14 +46,41 @@
     @apply text-base leading-tight md:text-xl lg:text-3xl xl:text-xl;
   }
 
-  /*--------- container ------- */
+  /* CONTAINER START */
+  
   .container {
     width: 100%;
-    max-width: none;
+    max-width: 1280px !important;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 16px;
   }
-  
+
+  @media (min-width: 640px) {
+    .container {
+      padding: 0 40px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0 64px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      padding: 0 80px;
+    }
+  }
+
+  .section-container {
+    padding-top: 48px;
+    padding-bottom: 72px;
+  }
+
+  /* CONTAINER END */
+
   /* SUBMENU & NAVBAR START */
 
   .nav-link::after {

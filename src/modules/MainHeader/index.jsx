@@ -7,7 +7,7 @@ const MainHeader = () => {
 
     return (
         <header className="mainHeader h-screen">
-            <div className="container h-full px-4 md:px-0">
+            <div className="container h-full">
                 <div className="flex flex-col gap-y-6 justify-center h-full">
                     <h1 className="text-[26px] font-black font-poppins flex flex-col leading-[31.2px] lg:text-5xl">
                         <span>{t("MainHeader.titlePartOne")}</span>
