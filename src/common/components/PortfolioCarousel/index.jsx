@@ -57,7 +57,7 @@ const PortfolioCarousel = ({ children, carouselClassName }) => {
   );
 
   return (
-    <div className="relative w-full my-4 flex flex-col container mx-auto items-center">
+    <div className="relative w-full flex flex-col container mx-auto items-center">
       <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
         {children}
       </div>

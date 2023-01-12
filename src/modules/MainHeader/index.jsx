@@ -94,10 +94,10 @@ const MainHeader = () => {
             onClick={() => console.log("entra3")}
         />
       </div>
-      <div className="container px-4 absolute top-[150px] w-">
+      <div className="container absolute top-[150px] w-">
         <StepOne />
       </div>
-      <div className="container px-4 absolute top-[539px]">
+      <div className="container absolute top-[539px]">
         <button
           className="h-[48px] w-[48px] transform translate-y-[-50%] bg-none rounded-full"
           onClick={(e) => setStep(step - 1)}

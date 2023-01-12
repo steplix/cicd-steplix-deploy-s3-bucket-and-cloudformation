@@ -31,11 +31,11 @@ const Submenu = ({ toggle, setToggle }) => {
   return (
     <>
       <div
-        className={`submenu px-4 header-gradient font-normal ${
+        className={`submenu header-gradient font-normal ${
           toggle ? "submenu--toggle" : ""
         }`}
       >
-        <div className="flex w-full mt-4 mb-14">
+        <div className="flex container w-full mt-4 mb-14">
           <button className="w-[126px]" onClick={() => setToggle(!toggle)}>
             <CustomNextLink to="/">
               <a>
@@ -48,6 +48,7 @@ const Submenu = ({ toggle, setToggle }) => {
             </CustomNextLink>
           </button>
         </div>
+        <div className="container">
         <div
           className={`flex items-center submenu--item ${isCurrentPathnameActive(
             "/"
@@ -105,6 +106,7 @@ const Submenu = ({ toggle, setToggle }) => {
         </div>
         <div className="flex gap-x-4 w-full py-4 px-3.5">
           <LanguageSelector sm />
+        </div>
         </div>
       </div>
     </>
