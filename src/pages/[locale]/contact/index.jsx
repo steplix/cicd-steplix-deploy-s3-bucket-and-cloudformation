@@ -32,21 +32,21 @@ const Contact = ({ locale }) => {
   };
 
   return (
-    <section className="flex flex-col relative w-full mx-auto">
-      <main className="container section-container">
+    <section className="section-container w-full container mx-auto flex-col space-y-24">
+      <div className="flex flex-col gap-6">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
           borderWidth="border-2"
-          size="text-4xl"
+          size="text-[26px] md:text-5xl"
           height="h-[32px]"
         />
+        <p className="flex flex-col text-base xl:text-lg gap-8 md:gap-4">
+          {t("CardContactSection.description")}{" "}
+          <span className="font-bold">{t("CardContactSection.phrase")}</span>
+        </p>
 
-        <div className="my-5">
-          <p>{t("CardContactSection.description")}</p>
-          <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
-        </div>
-        <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2">
+        <div className="flex justify-center flex-wrap gap-4 sm:grid sm:grid-cols-2">
           {CARD_CONTACT.map((item) => (
             <CardContact
               key={item.email}
@@ -62,7 +62,8 @@ const Contact = ({ locale }) => {
             />
           ))}
         </div>
-
+      </div>
+      <section>
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.title2")}
@@ -70,10 +71,11 @@ const Contact = ({ locale }) => {
           size="text-4xl"
           height="h-[32px]"
         />
-        <div className="flex justify-center my-8">
+        <div className="flex justify-center mt-6 mb-8 md:mb-10">
           <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
-        <section className="lg:flex lg:gap-8">
+
+        <div className="lg:flex lg:gap-8">
           <div>
             <div className="flex justify-center w-full">
               <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
@@ -91,14 +93,14 @@ const Contact = ({ locale }) => {
           </div>
 
           <div className="lg:flex lg:flex-col lg:gap-4">
-            <div className="flex gap-2 items-center justify-center mt-5 lg:order-2">
+            <div className="flex gap-2 items-center justify-center mt-[18px] lg:order-2">
               <Icon name="mapPin" className="w-3 lg:w-5" />
               <p className="text-xs lg:text-base">
                 Costa rica 4999, Palermo, Buenos Aires. Argentina.
               </p>
             </div>
 
-            <div className="flex gap-2 items-center justify-center mt-5 flex-wrap w-3/4 mx-auto my-0 lg:order-1 lg:m-0 lg:w-full">
+            <div className="flex gap-2 items-center justify-center mt-6 flex-wrap w-3/4 mx-auto my-0 lg:order-1 lg:m-0 lg:w-full">
               <TextField
                 text="hello@steplix.com"
                 rightIcon={icons.copy}
@@ -113,26 +115,26 @@ const Contact = ({ locale }) => {
               />
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </section>
   );
-}
+};
 
 export async function getStaticPaths(...args) {
-    const pathsWithLocale = getPathSlugs();
-    return {
-      paths: pathsWithLocale,
-      fallback: false
-    };
-  }
-  
+  const pathsWithLocale = getPathSlugs();
+  return {
+    paths: pathsWithLocale,
+    fallback: false,
+  };
+}
+
 export async function getStaticProps({ params }) {
-    return {
-      props: {
-        ...params
-      }
-    };
-  }
+  return {
+    props: {
+      ...params,
+    },
+  };
+}
 
 export default Contact;

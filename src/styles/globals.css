@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @layer base {
   html {
@@ -47,7 +47,7 @@
   }
 
   /* CONTAINER START */
-  
+
   .container {
     width: 100%;
     max-width: 1280px !important;
@@ -317,7 +317,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .dots {
     display: flex;
     padding: 10px 0;
@@ -426,7 +426,7 @@
   }
 
   .postsCarousel {
-    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px]; 
+    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px];
   }
 
   /*------- Main Header Section ------- */
@@ -438,4 +438,13 @@
     background-attachment: scroll;
   }
 
+  .card--padding {
+    padding: 12px 12px 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card--padding {
+      padding: 12px 32px 16px;
+    }
+  }
 }

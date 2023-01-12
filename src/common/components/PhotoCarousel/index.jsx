@@ -59,7 +59,7 @@ const PhotoCarousel = ({ photoArray }) => {
     ])
   
     return (
-        <div className="relative w-full my-4 flex flex-col container mx-auto items-center">
+        <div className="relative w-full flex flex-col container mx-auto items-center">
           <div ref={sliderRef} className="keen-slider lg:max-w-[774px] xl:max-w-[990px] rounded-[20px]">
             {
               photoArray.map(({src}) => (

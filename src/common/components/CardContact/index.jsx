@@ -18,7 +18,9 @@ const CardContact = ({
   onClickSocialMediaButton,
   onClickCopyButton,
 }) => {
-  const {query: { locale }} = useRouter();
+  const {
+    query: { locale },
+  } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
   const [isLoadingImg, setIsLoadingImg] = useState(true);
@@ -35,8 +37,8 @@ const CardContact = ({
 
   return (
     <>
-      <div className="w-full md:w-72 lg:w-full">
-        <div className="relative bg-white card--shadow rounded-3xl p-4">
+      <div className="w-full">
+        <div className="relative bg-white card--shadow rounded-3xl card--padding">
           <div className="flex justify-between px-4">
             <div className="flex gap-5 items-center mt-4">
               <Avatar
@@ -54,7 +56,7 @@ const CardContact = ({
               className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center absolute top-0 right-0 mt-4 mr-7 cursor-pointer"
               onClick={onClickSocialMediaButton}
             >
-              <Icon name={cornerIconName} className="w-4" />
+              <Icon name={cornerIconName} className="w-4 h-3" />
             </div>
           </div>
           <div className="px-4">
