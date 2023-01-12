@@ -7,6 +7,8 @@ import HeadTag from "@/common/components/HeadTag";
 export default function Home() {
     const { t } = useTranslation();
 
+    //TODO: CHECK IMAGE SCRIPT
+
     return (
         <>
             <HeadTag title={t("metaTags.home.title")} description={t("metaTags.home.description")} keywords={t("metaTags.home.keywords")}>

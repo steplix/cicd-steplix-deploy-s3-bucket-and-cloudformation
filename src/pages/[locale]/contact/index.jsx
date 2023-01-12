@@ -32,8 +32,8 @@ const Contact = ({ locale }) => {
   };
 
   return (
-    <section className="flex flex-col relative py-0 lg:py-10 px-0 w-full mx-auto">
-      <main className="container px-4 py-8">
+    <section className="flex flex-col relative w-full mx-auto">
+      <main className="container section-container">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
@@ -73,7 +73,7 @@ const Contact = ({ locale }) => {
         <div className="flex justify-center my-8">
           <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
-        <section className="lg:flex lg:gap-8 mb-[72px]">
+        <section className="lg:flex lg:gap-8">
           <div>
             <div className="flex justify-center w-full">
               <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">

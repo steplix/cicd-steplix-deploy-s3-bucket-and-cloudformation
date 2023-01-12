@@ -16,8 +16,8 @@ const PortfolioView = ({ locale }) => {
   const { clients, industries } = usePortfolioTranslation();
 
   return (
-    <section className="flex flex-col relative py-0 pb-[72px] lg:pt-10 px-0 w-full mx-auto">
-      <main className="container px-4 pt-12 ">
+    <section className="flex flex-col relative w-full mx-auto">
+      <main className="container section-container">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
           {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
             return (
