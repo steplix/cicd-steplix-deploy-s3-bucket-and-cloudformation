@@ -1,4 +1,3 @@
-import Inverted from "@/common/components/Title/Inverted";
 import Gradient from "@/common/components/Title/Gradient";
 import CardIcon from "@/common/components/CardIcon";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
@@ -9,7 +8,11 @@ import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { useTranslation } from "@/common/lib/i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
 import { repeatImageLogos } from "@/common/utils/methods";
-import { PORTFOLIO_CARDS, clientsLogos } from "@/common/utils/constants";
+import {
+  PORTFOLIO_CARDS,
+  SPACE_BETWEEN_CARDS,
+  clientsLogos,
+} from "@/common/utils/constants";
 
 const PortfolioView = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -86,7 +89,7 @@ const PortfolioView = ({ locale }) => {
             images={repeatImageLogos(clientsLogos, 20)}
             slides={8}
             imgClass="w-24"
-            spacingBeetWeenSlides={10}
+            spacingBeetWeenSlides={SPACE_BETWEEN_CARDS}
           />
         </article>
       </main>
@@ -95,19 +98,19 @@ const PortfolioView = ({ locale }) => {
 };
 
 export async function getStaticPaths(...args) {
-    const pathsWithLocale = getPathSlugs();
-    return {
-      paths: pathsWithLocale,
-      fallback: false
-    };
-  }
-  
+  const pathsWithLocale = getPathSlugs();
+  return {
+    paths: pathsWithLocale,
+    fallback: false,
+  };
+}
+
 export async function getStaticProps({ params }) {
-    return {
-      props: {
-        ...params
-      }
-    };
-  }
-  
+  return {
+    props: {
+      ...params,
+    },
+  };
+}
+
 export default PortfolioView;
