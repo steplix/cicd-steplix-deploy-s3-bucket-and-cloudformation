@@ -33,8 +33,8 @@ const Contact = ({ locale }) => {
   };
 
   return (
-    <section className="flex flex-col relative py-0 lg:py-10 px-0 w-full mx-auto">
-      <main className="container px-4 py-8">
+    <section className="flex flex-col relative w-full mx-auto">
+      <main className="container section-container">
         <Gradient
           borderPosition="left"
           content={t("CardContactSection.subtitle")}
@@ -74,7 +74,7 @@ const Contact = ({ locale }) => {
         <div className="flex justify-center my-8">
           <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
-        <section className="lg:flex lg:gap-8 mb-[72px]">
+        <section className="lg:flex lg:gap-8">
           <div>
             <div className="flex justify-center w-full">
               <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
@@ -107,14 +107,17 @@ const Contact = ({ locale }) => {
                 clickEvent={() => onClickCopyButton("hello@steplix.com")}
               />
               <TextField
-                text="+54 (11) 5367-4369"
+                text="+54 9 1150105103"
                 rightIcon={icons.send}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
+                clickEvent={() => onClickCopyButton("+5491150105103")}
               />
             </div>
             <div className="lg:order-3 lg:self-end lg:w-3/4">
-              <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-8" />
+              <ButtonBecomeSteplixer
+                locale={locale}
+                customStyles="h-[37px] my-8"
+              />
             </div>
           </div>
         </section>
