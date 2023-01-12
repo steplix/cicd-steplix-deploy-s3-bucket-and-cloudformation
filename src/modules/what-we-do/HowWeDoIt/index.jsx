@@ -4,7 +4,7 @@ import Title from "@/common/components/Title/Gradient";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import { useTranslation } from "@/common/lib/i18n";
 import { repeatImageLogos } from "@/common/utils/methods";
-import { technologiesImages, LOCALE_SLUGS } from "@/common/utils/constants";
+import { technologiesImages, LOCALE_SLUGS, SPACE_BETWEEN_CARDS } from "@/common/utils/constants";
 
 const HowDoWeDoIt = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -25,7 +25,7 @@ const HowDoWeDoIt = ({ locale }) => {
         images={repeatImageLogos(technologiesImages, 20)}
         slides={8}
         imgClass="w-24"
-        spacingBeetWeenSlides={10}
+        spacingBetweenSlides={SPACE_BETWEEN_CARDS}
       />
       <p className="font-poppins text-sm lg:text-base font-normal text-black text-center">
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs

@@ -6,8 +6,6 @@ import { useTranslation } from "@/common/lib/i18n";
 import { useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 
-//TODO: RE-CHECK FOOTERS LINKS AND TRANSLATIONs
-
 const Footer = () => {
   const {query: { locale }} = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
