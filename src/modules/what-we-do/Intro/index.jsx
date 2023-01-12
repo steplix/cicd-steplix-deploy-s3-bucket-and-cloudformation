@@ -1,8 +1,11 @@
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import PropTypes from "prop-types"; 
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import { useTranslation } from "@/common/lib/i18n";
 
-const Intro = () => {
-  const { t } = useTranslation();
+
+const Intro = ({ locale }) => {
+  const { t } = useTranslation(locale);
 
   return (
     <section className="w-full">
@@ -13,5 +16,9 @@ const Intro = () => {
     </section>
   );
 };
+
+Intro.propTypes = {
+  locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
 
 export default Intro;

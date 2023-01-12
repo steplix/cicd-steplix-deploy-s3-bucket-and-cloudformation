@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import { useLanguageQuery } from "next-export-i18n";
 import propTypes from "prop-types";
 
 
 const CustomNextLink = ({ children, to, asPath }) => {
-    let [query] = useLanguageQuery();
-
+    const router = useRouter();
+    const [query] = useLanguageQuery(router?.query?.locale);
+    
     return (
     <Link href={{ pathname: to, query }} as={!asPath ? to : asPath} passHref>
         {children}

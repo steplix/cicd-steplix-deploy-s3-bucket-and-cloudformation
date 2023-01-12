@@ -4,19 +4,23 @@ import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
 import CustomNextLink from "@/common/components/CustomNextLink";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation } from "next-export-i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import { useRouter } from "next/router";
 import { routesMap } from "@/common/utils/constants";
 import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
-  const { t } = useTranslation();
-  const router = useRouter();
-  const routeTitle = routesMap[router.pathname]?.title;
+  const {query: { locale }, pathname, asPath } = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
+  const routeTitle = routesMap[pathname]?.title;
 
-  const isCurrentPathnameActive = (pathname) =>
-    router.pathname === pathname ? "nav--link--active" : "";
-
+  const isCurrentPathnameActive = (pathname) => {
+    const pathnameToTest = new RegExp(pathname)
+    return pathnameToTest.test(asPath) ? "nav--link--active" : "";
+  }
+      
   //
   // State
   //
@@ -49,13 +53,12 @@ const Navbar = () => {
       <nav className="flex flex-col lg:hidden">
         <div>
           <Submenu
-            router={router}
             toggle={toggle}
             setToggle={setToggle}
           />
         </div>
         <div className="flex flex-col w-full header-gradient">
-          <div className="container flex relative justify-between items-center w-full h-[65px] px-5 md:px-0">
+          <div className="container flex relative justify-between items-center w-full h-[56px] sm:h-[62px]">
             {/* logo mobile */}
             <div className="items-center justify-center flex">
               <CustomNextLink to="/">
@@ -113,37 +116,37 @@ const Navbar = () => {
           </CustomNextLink>
           {/* menu options desktop */}
           <div className="flex justify-end items-center space-x-8 font-normal">
-            <CustomNextLink to="/about-us">
+            <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
-                  "/about-us"
+                  `/${i18nQuery?.lang}/about-us`
                 )}`}
               >
                 {t("navbar.item0")}
               </a>
             </CustomNextLink>
-            <CustomNextLink to="what-we-do">
+            <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
               <a
                 className={`nav--link nav--link--red ${isCurrentPathnameActive(
-                  "/what-we-do"
+                  `/${i18nQuery?.lang}/what-we-do`
                 )}`}
               >
                 {t("navbar.item1")}
               </a>
             </CustomNextLink>
-            <CustomNextLink to="/portfolio">
+            <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
               <a
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
-                  "/portfolio"
+                  `/${i18nQuery?.lang}/portfolio`
                 )}`}
               >
                 {t("navbar.item2")}
               </a>
             </CustomNextLink>
-            <CustomNextLink to="contact">
+            <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
               <a
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
-                  "/contact"
+                  `/${i18nQuery?.lang}/contact`
                 )}`}
               >
                 {t("navbar.item3")}
