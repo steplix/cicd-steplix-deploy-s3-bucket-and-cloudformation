@@ -62,4 +62,12 @@ export const propTypeIconName = PropTypes.oneOf([
   "columbia",
   "smartium",
   "vacay",
+  "book",
+  "eng",
+  "hybrid",
+  "goal",
+  "heart",
+  "inflation",
+  "location",
+  "vacations",
 ]);
