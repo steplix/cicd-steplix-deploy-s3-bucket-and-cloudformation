@@ -29,10 +29,10 @@
     },
     "vision": {
       "title": "Vision",
-      "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our Digital Sherpas."
+      "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our Steplixers."
     },
     "teams": {
-      "title": "Teams",
+      "title": "Team",
       "description": "In the same way that the Sherpas accompany the climbers on their journey to the top, the Digital Sherpas are ",
       "descriptionBold": "fully committed to the business challenges of our clients, guiding them and elevating their ideas to the maximum.",
       "button": "Become a Steplixer"
@@ -85,7 +85,7 @@
       "descriptionTwo": "respecting the deadlines and the agreed investment."
     },
     "HowDoWeDoIt": {
-      "titleOne": "How do we do it?",
+      "titleOne": "Our technologies",
       "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
     }
   },

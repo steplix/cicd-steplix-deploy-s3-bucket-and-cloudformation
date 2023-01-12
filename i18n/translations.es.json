@@ -29,10 +29,10 @@
     },
     "vision": {
       "title": "Visión",
-      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Digital Sherpas."
+      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Steplixers."
     },
     "teams": {
-      "title": "Equipos",
+      "title": "Equipo",
       "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
       "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
       "button": "Convertite en Steplixer"
@@ -85,7 +85,7 @@
       "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
     },
     "HowDoWeDoIt": {
-      "titleOne": "¿Cómo lo logramos?",
+      "titleOne": "Nuestras tecnologías",
       "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
     }
   },
@@ -245,7 +245,7 @@
   },
 
   "ButtonCardContact": "Agendar cita",
-  "ButtonBecomeSteplixer": "Convertite en Steplixer",
+  "ButtonBecomeSteplixer": "Conviértete en Steplixer",
   "CardContactSection": {
     "pronoun": "Nuestro",
     "title": "Contacto",

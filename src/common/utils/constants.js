@@ -264,16 +264,41 @@ export const PORTFOLIO_CARDS = [
 
 export const clientsLogos = [
   {
-    image: "/assets/img/clients/web3/logo-pow.svg",
+    image: "pow",
     alt: "POW Logo",
   },
   {
-    image: "/assets/img/clients/web3/logo-valid.svg",
+    image: "valid",
     alt: "Valid Logo",
   },
   {
-    image: "/assets/img/clients/web3/logo-finket.svg",
+    image: "finket",
     alt: "Finket Logo",
+  },
+  {
+    image: "sura",
+    alt: "Sura Logo",
+  },
+  {
+    image: "ceva",
+    alt: "Ceva Logo",
+  },
+  {
+    image: "columbia",
+    alt: "Columbia Logo",
+  },
+  {
+    image: "smartium",
+    alt: "Smartium Logo",
+  },
+  {
+    image: "vacay",
+    alt: "VacayGreen Logo",
+  },
+
+  {
+    image: "c5n",
+    alt: "C5N Logo",
   },
 ];
 
@@ -316,6 +341,7 @@ export const technologiesImages = [
   },
 ];
 
+export const SPACE_BETWEEN_CARDS = 0;
 // BECOME A STEPLIXER PAGE
 
 export const BECOME_BENEFITS = [
