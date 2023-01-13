@@ -77,16 +77,8 @@ const Contact = ({ locale }) => {
         <section className="lg:flex lg:gap-8">
           <div>
             <div className="flex justify-center w-full">
-              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
-                <NextLink href="https://g.page/steplix?share">
-                  <a target="_blank">
-                    <img
-                      src="/assets/img/map.svg"
-                      alt="map"
-                      className="object-cover sm:h-[190px] w-full rounded-2xl lg:h-[280px]"
-                    />
-                  </a>
-                </NextLink>
+              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px] mx-auto my-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.712679763581!2d-58.4320564841754!3d-34.58613596407618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a870c199cd%3A0x7d236c1582f013b4!2sSteplix!5e0!3m2!1ses!2sar!4v1673455604016!5m2!1ses!2sar" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="sm:h-[190px] w-full rounded-2xl lg:h-[280px]" />
               </div>
             </div>
           </div>
