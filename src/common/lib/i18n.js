@@ -13,7 +13,7 @@ export const LanguageSwitcher = ({ lang, children, shallow = false, slug }) => {
     const { isActive: languageSwitcherIsActive } = useLanguageSwitcherIsActive(lang);
     // necessary for updating the router's query parameter inside the click handler
     const {pathname, query: { locale }, push} = router.useRouter();
-    const [i18nQuery] = useLanguageQuery(pathname !== '/' ? locale : lang);
+    const [i18nQuery] = useLanguageQuery(pathname === '/' || pathname === '/404' ? lang : locale);
     const queryObject = {...i18nQuery};
 
     const updateRouter = () => {
