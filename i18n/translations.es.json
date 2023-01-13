@@ -29,10 +29,10 @@
     },
     "vision": {
       "title": "Visión",
-      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Digital Sherpas."
+      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Steplixers."
     },
     "teams": {
-      "title": "Equipos",
+      "title": "Equipo",
       "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
       "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
       "button": "Convertite en Steplixer"
@@ -85,7 +85,7 @@
       "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
     },
     "HowDoWeDoIt": {
-      "titleOne": "¿Cómo lo logramos?",
+      "titleOne": "Nuestras tecnologías",
       "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
     }
   },
@@ -159,9 +159,9 @@
     "item0": "Quiénes somos",
     "item1": "Qué hacemos",
     "item2": "Portfolio",
-    "item3": "Contactanos",
+    "item3": "Contáctanos",
     "item4": "Home",
-    "item5": "Convertite en Steplixer",
+    "item5": "Conviértete en Steplixer",
     "item6": "Contactanos",
     "currentLang": "Español",
     "targetLang": "Inglés",
@@ -175,7 +175,7 @@
       "item0": "Quienes somos",
       "item1": "Qué hacemos",
       "item2": "Nuestro portfolio",
-      "item3": "Contactanos"
+      "item3": "Contáctanos"
     }
   },
   "metaTags": {
@@ -213,6 +213,12 @@
       "title": "Tecnologías | Sherpas Digitales | Steplix Software 🧗",
       "keywords": "Stack tecnológico,  React, JavaScript, Front-end, PWA, GIT, Feature-Branch, Gitlab, Docker, Portabilidad, Performance, Agilidad, Aislamiento de errores, Escalabilidad, Next.js, Next. js, Marco de trabajo, Desarrolladores, Alto rendimiento, Renderización, Flutter, Aplicaciones híbridas, SDK Código abierto, Interfaz Android, Interfaz IOS, Arquitectura en capas, Amazon, AWS, Infraestructura Just In Tine, Figma, Wireframes, Interfaz, Prototipo, basado en la web, Nube, Kotlin, Basadas en Java, Node, NodeJs, Node Js, Back-end, Marco de trabajo, ExpressJS, Express JS",
       "description": "Stack tecnológico de Steplix 🗻"
+    },
+
+    "becomeSteplixer": {
+      "title": "Conviértete en Steplixer | Sherpas Digitales | Steplix Software 🧗",
+      "keywords": "Conviértete en Steplixer, Steplixer",
+      "description": "Chequea las ofertas de trabajo en Steplix."
     }
   },
 
@@ -239,7 +245,7 @@
   },
 
   "ButtonCardContact": "Agendar cita",
-  "ButtonBecomeSteplixer": "Convertite en Steplixer",
+  "ButtonBecomeSteplixer": "Conviértete en Steplixer",
   "CardContactSection": {
     "pronoun": "Nuestro",
     "title": "Contacto",
@@ -291,6 +297,85 @@
       "pow": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",
       "valid": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
       "sura": "Diseñamos y desarrollamos un cotizador online para sus clientes."
+    }
+  },
+
+  "BecomeSteplixerSection": {
+    "title": "Nuestros beneficios",
+    "title2": "Nuestros valores internos",
+    "title3": "Conviértete en Steplixer",
+    "sendCV": {
+      "title": "Si sabes que puedes ser Steplixer...",
+      "subtitle": "¡Envíanos tu CV!"
+    }
+  },
+
+  "SteplixBenefits": {
+    "benefit1": {
+      "title": "Trabajo híbrido",
+      "description": "La ofi queda en Palermo y es todo lo que está bien. También puedes trabajar desde tu casa los días que quieras. "
+    },
+
+    "benefit2": {
+      "title": "Cuando eliges venir a la ofi",
+      "description": "Masajista, osteópata, acceso a refrigerios y snacks, parrilladas en el almuerzo, sala de juegos."
+    },
+
+    "benefit3": {
+      "title": "Ajustes por inflación",
+      "description": "3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos."
+    },
+
+    "benefit4": {
+      "title": "3 semanas de vacaciones",
+      "description": "2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas."
+    },
+
+    "benefit5": {
+      "title": "Flexibilidad",
+      "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok."
+    },
+
+    "benefit6": {
+      "title": "Clases de inglés",
+      "description": "Contamos con profes disponibles para que mejores tu nivel de inglés."
+    },
+
+    "benefit7": {
+      "title": "Plan carrera",
+      "description": "Tenemos las herramientas disponibles para que crezcas y te capacites en tu área."
+    },
+
+    "benefit8": {
+      "title": "Prepaga de primer nivel",
+      "description": "Cuidamos y protegemos tu salud con los mejores prestadores del país."
+    }
+  },
+
+  "SteplixInternalValues": {
+    "value1": {
+      "title": "Confianza",
+      "description": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos."
+    },
+
+    "value2": {
+      "title": "Respeto mutuo",
+      "description": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
+    },
+
+    "value3": {
+      "title": "Éxito",
+      "description": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
+    },
+
+    "value4": {
+      "title": "Agilidad",
+      "description": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
+    },
+
+    "value5": {
+      "title": "Conciencia",
+      "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
     }
   }
 }

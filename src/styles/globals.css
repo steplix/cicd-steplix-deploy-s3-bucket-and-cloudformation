@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 @layer base {
   html {
     scroll-behavior: auto;
@@ -47,7 +45,7 @@
   }
 
   /* CONTAINER START */
-  
+
   .container {
     width: 100%;
     max-width: 1280px !important;
@@ -317,7 +315,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .dots {
     display: flex;
     padding: 10px 0;
@@ -387,14 +385,7 @@
     color: transparent !important;
     z-index: 0;
     letter-spacing: 1.6px;
-  }
-
-  .text-outlined::before {
-    content: attr(data-content);
-    position: absolute;
     -webkit-text-stroke: 1px #ffffff;
-    left: 0;
-    z-index: -1;
   }
 
   .text-outlined--purple {
@@ -426,7 +417,7 @@
   }
 
   .postsCarousel {
-    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px]; 
+    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px];
   }
 
   /*------- Main Header Section ------- */
@@ -438,4 +429,11 @@
     background-attachment: scroll;
   }
 
+  .no-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .accordion--shadow {
+    box-shadow: 10px 10px 25px rgba(61, 17, 82, 0.15);
+  }
 }

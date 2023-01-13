@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import { useKeenSlider } from "keen-slider/react";
+import Icon from "../Icon";
+import { isAsset } from "@/common/utils/validators";
 
 const TechnologiesSlider = ({
   images,
   slides,
-  spacingBeetWeenSlides,
+  spacingBetweenSlides,
   imgClass,
 }) => {
   const animation = { duration: 30000, easing: (t) => t };
@@ -16,7 +18,7 @@ const TechnologiesSlider = ({
     drag: false,
     slides: {
       perView: slides,
-      spacing: spacingBeetWeenSlides,
+      spacing: spacingBetweenSlides,
     },
     created(s) {
       s.moveToIdx(5, true, animation);
@@ -30,11 +32,18 @@ const TechnologiesSlider = ({
   });
   return (
     <div className="">
-      <div className="keen-slider" ref={sliderRef}>
+      <div className="keen-slider items-center gap-4" ref={sliderRef}>
         {images.map((image, index) => {
           return (
-            <div className={`keen-slider__slide w-full flex gap-2`} key={index}>
-              <img src={image.image} alt={image.alt} className={imgClass} />
+            <div
+              className={`keen-slider__slide w-full flex gap-2 items-center`}
+              key={index}
+            >
+              {isAsset(image.image) ? (
+                <img src={image.image} alt={image.alt} className={imgClass} />
+              ) : (
+                <Icon name={image.image} className={imgClass} />
+              )}
             </div>
           );
         })}
@@ -51,13 +60,13 @@ TechnologiesSlider.propTypes = {
     })
   ),
   slides: PropTypes.number,
-  spacingBeetWeenSlides: PropTypes.number,
+  spacingBetweenSlides: PropTypes.number,
   imgClass: PropTypes.string,
 };
 
 TechnologiesSlider.defaultProps = {
   slides: 3,
-  spacingBeetWeenSlides: 0,
+  spacingBetweenSlides: 0,
 };
 
 export default TechnologiesSlider;
