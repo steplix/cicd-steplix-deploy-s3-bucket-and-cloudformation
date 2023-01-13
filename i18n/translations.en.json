@@ -310,10 +310,11 @@
   "portfolio": {
     "cards": {
       "finket": "Design and development of a digital platform for financial services.",
-      "pow": "We designed and developed a web dashboard to visualize E-commerce metrics and indicators.",
-      "valid": "We designed and developed an interface for cell phone stores.",
-      "sura": "We design and develop an online quotation system for your customers."
-    }
+      "pow": "Design and development of a web dashboard to visualize E-commerce metrics and indicators.",
+      "valid": "Design and development of an interface for cell phone stores.",
+      "sura": "Design and development of an online quotation system for your customers."
+    },
+    "button": "See more"
   },
   "BecomeSteplixerSection": {
     "title": "Our Benefits",

@@ -311,10 +311,11 @@
   "portfolio": {
     "cards": {
       "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-      "pow": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",
-      "valid": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
-      "sura": "Diseñamos y desarrollamos un cotizador online para sus clientes."
-    }
+      "pow": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
+      "valid": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
+      "sura": "Diseño y desarrollo de un cotizador online para sus clientes."
+    },
+    "button": "Conocer más"
   },
 
   "BecomeSteplixerSection": {

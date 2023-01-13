@@ -17,6 +17,10 @@
     @apply font-poppins;
   }
 
+  .w-fit {
+    width: fit-content;
+  }
+
   .text--outlined {
     color: rgba(255, 255, 255, 0);
     text-shadow: -1px -1px 0 rgba(255, 255, 255 0),
