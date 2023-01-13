@@ -4,10 +4,11 @@
  * @returns {object} { title: string, outlined: string }
  */
 export const getOutlinedTitle = (title) => {
+		
 	const titleArray = title.split(" ");
 
 	if (titleArray.length > 1) {
-		const outlined = titleArray.at(-1);
+		const outlined = titleArray.slice(-1);
 		titleArray.pop();
 		const title = titleArray.join(" ")
 

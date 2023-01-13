@@ -14,8 +14,8 @@ const Navbar = () => {
   const {query: { locale }, pathname, asPath } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
-  const routeTitle = routesMap[pathname]?.title;
-
+  const routeTitle = routesMap[pathname.substring(10)]?.title;
+  
   const isCurrentPathnameActive = (pathname) => {
     const pathnameToTest = new RegExp(pathname)
     return pathnameToTest.test(asPath) ? "nav--link--active" : "";
@@ -26,10 +26,6 @@ const Navbar = () => {
   //
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
-
-  const isBecomeSteplixer = React.useMemo(() => {
-    return pathname === "/become-steplixer" ? 'text-[24px]' : 'text-[32px]'
-  }, [pathname]);
 
   //
   // Effects
@@ -88,9 +84,9 @@ const Navbar = () => {
             </div>
           </div>
           {routeTitle ? (
-            <div className="container h-[80px] md:h-[100px] flex items-center px-5 md:px-0">
-              <h1 className={`font-extrabold font-poppins tracking-[0.8px] ${isBecomeSteplixer}`}>
-                {getOutlinedTitle(t(routeTitle)).title + " "}
+            <div className="container h-[74px] sm:h-[68px] flex items-center">
+              <h1 className={`font-extrabold font-poppins tracking-[0.8px] text-3xl`}>
+                {getOutlinedTitle(t(routeTitle))?.title + " "}
                 <span
                   className="font-bold text-outlined"
                 >
@@ -125,7 +121,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/about-us`
                 )}`}
               >
-                {t("navbar.item0")}
+                {t("navbar.item0.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
@@ -134,7 +130,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/what-we-do`
                 )}`}
               >
-                {t("navbar.item1")}
+                {t("navbar.item1.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
@@ -143,7 +139,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/portfolio`
                 )}`}
               >
-                {t("navbar.item2")}
+                {t("navbar.item2.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
@@ -152,7 +148,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/contact`
                 )}`}
               >
-                {t("navbar.item3")}
+                {t("navbar.item3.route")}
               </a>
             </CustomNextLink>
             <LanguageSelector />

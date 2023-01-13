@@ -157,13 +157,30 @@
   },
   "seeMore": "See more",
   "navbar": {
-    "item0": "About Us",
-    "item1": "What we do",
-    "item2": "Portfolio",
-    "item3": "Contact Us",
-    "item4": "Home",
-    "item5": "Become a Steplixer",
-    "item6": "Contact Us",
+    "item0": {
+      "route": "About Us",
+      "title": "About Us"
+    },
+    "item1": {
+      "route": "What we do",
+      "title": "What we do"
+    },
+    "item2": {
+      "route": "Portfolio",
+      "title": "Our Portfolio"
+    },
+    "item3": {
+      "route": "Contact Us",
+      "title": "Contact Us"
+    },
+    "item4": {
+      "route": "Home",
+      "title": ""
+    },
+    "item5": {
+      "route": "Become a Steplixer",
+      "title": "Become a Steplixer"
+    },
     "currentLang": "English",
     "targetLang": "Spanish",
     "shortTargetLang": "es"
