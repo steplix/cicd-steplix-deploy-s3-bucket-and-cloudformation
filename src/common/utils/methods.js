@@ -1,10 +1,17 @@
+/**
+ * @param {string} title
+ * @returns {object} { title: string, outlined: string }
+ */
 export const getOutlinedTitle = (title) => {
   const titleArray = title.split(" ");
 
   if (titleArray.length > 1) {
-    const outlined = titleArray.pop();
+    const outlined = titleArray.at(-1);
+    titleArray.pop();
+    const title = titleArray.join(" ");
+
     return {
-      title: titleArray.join(" "),
+      title,
       outlined,
     };
   }
@@ -21,4 +28,17 @@ export const repeatImageLogos = (images, times) => {
     repeatedImages.push(...images);
   }
   return repeatedImages;
+};
+
+export const copyToClipboard = (text) => {
+  navigator.clipboard.writeText(text);
+};
+
+export const openLink = (url) => {
+  window.open(url, "_blank");
+};
+
+export const copyAndMailTo = (text) => {
+  copyToClipboard(text);
+  openLink(`mailto:${text}`);
 };

@@ -387,14 +387,7 @@
     color: transparent !important;
     z-index: 0;
     letter-spacing: 1.6px;
-  }
-
-  .text-outlined::before {
-    content: attr(data-content);
-    position: absolute;
     -webkit-text-stroke: 1px #ffffff;
-    left: 0;
-    z-index: -1;
   }
 
   .text-outlined--purple {
@@ -446,5 +439,12 @@
     .card--padding {
       padding: 12px 32px 16px;
     }
+  }
+  .no-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .accordion--shadow {
+    box-shadow: 10px 10px 25px rgba(61, 17, 82, 0.15);
   }
 }

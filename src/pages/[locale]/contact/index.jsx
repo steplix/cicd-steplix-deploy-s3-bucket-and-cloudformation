@@ -8,9 +8,15 @@ import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
+import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import {
+  copyAndMailTo,
+  copyToClipboard,
+  openLink,
+} from "@/common/utils/methods";
 
 const icons = {
-  mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
+  mail: <Icon name="mailTextField" className="w-4" fill="#3C1053" />,
   phone: <Icon name="phone" className="w-4" />,
   copy: <Icon name="copy" className="w-4" />,
   send: <Icon name="send" className="w-4" />,
@@ -18,18 +24,6 @@ const icons = {
 
 const Contact = ({ locale }) => {
   const { t } = useTranslation(locale);
-
-  const onClickCopyButton = (text) => {
-    navigator.clipboard.writeText(text);
-  };
-
-  const onClickSocialMediaButton = (url) => {
-    window.open(url, "_blank");
-  };
-
-  const onClickCalendarButton = (url) => {
-    window.open(url, "_blank");
-  };
 
   return (
     <section className="section-container w-full container mx-auto flex-col space-y-24">
@@ -54,11 +48,9 @@ const Contact = ({ locale }) => {
               surname={item.surname}
               imgSrc={item?.imgSrc}
               email={item.email}
-              onClickCopyButton={() => onClickCopyButton(item.email)}
-              onClickSocialMediaButton={() =>
-                onClickSocialMediaButton(item.linkedin)
-              }
-              onClickCalendarButton={() => onClickCalendarButton(item.meeting)}
+              onClickCopyButton={() => copyToClipboard(item.email)}
+              onClickSocialMediaButton={() => openLink(item.linkedin)}
+              onClickCalendarButton={() => openLink(item.meeting)}
             />
           ))}
         </div>
@@ -68,7 +60,7 @@ const Contact = ({ locale }) => {
           borderPosition="left"
           content={t("CardContactSection.title2")}
           borderWidth="border-2"
-          size="text-4xl"
+          size="text-[26px] md:text-5xl"
           height="h-[32px]"
         />
         <div className="flex justify-center mt-6 mb-8 md:mb-10">
@@ -105,13 +97,19 @@ const Contact = ({ locale }) => {
                 text="hello@steplix.com"
                 rightIcon={icons.copy}
                 leftIcon={icons.mail}
-                clickEvent={() => onClickCopyButton("hello@steplix.com")}
+                clickEvent={() => copyAndMailTo("hello@steplix.com")}
               />
               <TextField
-                text="+54 (11) 5367-4369"
+                text="+54 9 1150105103"
                 rightIcon={icons.send}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
+                clickEvent={() => copyToClipboard("+5491150105103")}
+              />
+            </div>
+            <div className="lg:order-3 lg:self-end lg:w-3/4">
+              <ButtonBecomeSteplixer
+                locale={locale}
+                customStyles="h-[37px] my-8"
               />
             </div>
           </div>

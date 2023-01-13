@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-4 self-center">
+          <div className="flex flex-col gap-4 lg:flex-row self-center">
             <div className="flex space-x-4 self-center md:self-end">
               <a href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank">
                 <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
