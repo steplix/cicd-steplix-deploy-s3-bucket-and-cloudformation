@@ -1,4 +1,5 @@
 import Gradient from "@/common/components/Title/Gradient";
+import HeadTag from "@/common/components/HeadTag";
 import CardIcon from "@/common/components/CardIcon";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import TestimonialCard from "@/common/components/TestimonialCard";
@@ -19,6 +20,8 @@ const PortfolioView = ({ locale }) => {
   const { clients, industries } = usePortfolioTranslation();
 
   return (
+    <>
+    <HeadTag title={t("metaTags.portfolio.title")} description={t("metaTags.portfolio.description")} keywords={t("metaTags.portfolio.keywords")} />
     <section className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
@@ -94,6 +97,7 @@ const PortfolioView = ({ locale }) => {
         </article>
       </main>
     </section>
+    </>
   );
 };
 
