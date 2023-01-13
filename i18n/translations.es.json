@@ -156,13 +156,30 @@
   },
   "seeMore": "Ver más",
   "navbar": {
-    "item0": "Quiénes somos",
-    "item1": "Qué hacemos",
-    "item2": "Portfolio",
-    "item3": "Contáctanos",
-    "item4": "Home",
-    "item5": "Conviértete en Steplixer",
-    "item6": "Contactanos",
+    "item0": {
+      "route": "Quiénes somos",
+      "title": "Quiénes somos"
+    },
+    "item1": {
+      "route": "Qué hacemos",
+      "title": "Qué hacemos"
+    },
+    "item2": {
+      "route": "Portfolio",
+      "title": "Nuestro porfolio"
+    },
+    "item3": {
+      "route": "Contáctanos",
+      "title": "Nuestro contacto"
+    },
+    "item4": {
+      "route": "Home",
+      "title": ""
+    },
+    "item5": {
+      "route": "Conviértete en Steplixer",
+      "title": "Conviértete en Steplixer"
+    },
     "currentLang": "Español",
     "targetLang": "Inglés",
     "shortTargetLang": "en"

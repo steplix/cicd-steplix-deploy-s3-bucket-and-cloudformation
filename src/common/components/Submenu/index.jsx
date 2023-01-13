@@ -56,7 +56,7 @@ const Submenu = ({ toggle, setToggle }) => {
         >
           <div className="py-4 px-3.5">
             <CustomNextLink to="/">
-              <a onClick={() => handleClickToggle()}>{t("navbar.item4")}</a>
+              <a onClick={() => handleClickToggle()}>{t("navbar.item4.route")}</a>
             </CustomNextLink>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Submenu = ({ toggle, setToggle }) => {
         >
           <div className="py-4 px-3.5">
             <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item0")}</a>
+              <a onClick={() => handleClickToggle()}>{t("navbar.item0.route")}</a>
             </CustomNextLink>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Submenu = ({ toggle, setToggle }) => {
         >
           <div className="py-4 px-3.5">
             <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item1")}</a>
+              <a onClick={() => handleClickToggle()}>{t("navbar.item1.route")}</a>
             </CustomNextLink>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Submenu = ({ toggle, setToggle }) => {
         >
           <div className="py-4 px-3.5">
             <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item2")}</a>
+              <a onClick={() => handleClickToggle()}>{t("navbar.item2.route")}</a>
             </CustomNextLink>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Submenu = ({ toggle, setToggle }) => {
         >
           <div className="py-4 px-3.5">
             <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item3")}</a>
+              <a onClick={() => handleClickToggle()}>{t("navbar.item3.route")}</a>
             </CustomNextLink>
           </div>
         </div>
