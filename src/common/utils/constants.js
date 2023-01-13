@@ -74,7 +74,7 @@ export const aboutUsPhotoArray = [
     src: "/assets/img/teams/teams-2.png",
   },
   {
-    src: "/assets/img/teams/teams-3.png",
+    src: "/assets/img/teams/teams-6.png",
   },
   {
     src: "/assets/img/teams/teams-4.png",
@@ -83,7 +83,7 @@ export const aboutUsPhotoArray = [
     src: "/assets/img/teams/teams-5.png",
   },
   {
-    src: "/assets/img/teams/teams-6.png",
+    src: "/assets/img/teams/teams-3.png",
   },
   {
     src: "/assets/img/teams/teams-7.png",
