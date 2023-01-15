@@ -1,11 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import CustomNextLink from "@/common/components/CustomNextLink";
+import { useRouter } from "next/router";
+import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 
 const Custom404 = () => {
-    const { t } = useTranslation();
-    const [query] = useLanguageQuery();
+    const {query: { locale }} = useRouter();
+    const [i18nQuery] = useLanguageQuery(locale);
+    const { t } = useTranslation(i18nQuery?.locale);
 
     return (
         <div className="relative h-screen w-full">
@@ -29,26 +32,26 @@ const Custom404 = () => {
                     </div>
 
                     <div className="hidden lg:block lg:ml-8">
-                        <Link href={{ pathname: "/", query: query }}>
+                        <CustomNextLink to="/">
                             <a>
                                 <button className="lg:w-[194px] lg:h-[53px] lg:mt-12 bg-blue rounded-lg paragraph">
                                     {t("404.button")}
                                 </button>
                             </a>
-                        </Link>
+                        </CustomNextLink>
                     </div>
                 </div>
                 <div className="max-w-[375px] h-[176px] md:w-[500px] md:h-[280px] lg:w-[777px] lg:h-[384px] mt-11 mx-auto xl:mx-0">
                     <img src="/assets/img/404.svg" alt="logo" />
                 </div>
                 <div className="lg:hidden mt-[100px] flex justify-center ">
-                    <Link href={{ pathname: "/", query: query }}>
+                    <CustomNextLink to="/">
                         <a>
                             <button className="w-[138px] h-[39px] md:w-[165px] md:h-[39px] bg-blue rounded-lg paragraph">
                                 {t("404.button")}
                             </button>{" "}
                         </a>
-                    </Link>
+                    </CustomNextLink>
                 </div>
             </div>
         </div>
