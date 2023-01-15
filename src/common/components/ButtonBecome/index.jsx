@@ -1,14 +1,14 @@
-import NextLink from "next/link";
+import CustomNextLink from "@/common/components/CustomNextLink";
 import PropTypes from 'prop-types';
 import Icon from "@/components/Icon";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import { LOCALE_SLUGS } from "@/common/utils/constants";
 
 const ButtonBecomeSteplixer = ({ locale, customStyles }) => {
   const { t } = useTranslation(locale);
   return (
     <div className={`text-center text-blue font-bold h font-poppins flex gap-4 items-center justify-center lg:bg-blue lg:text-white lg:rounded-3xl lg:justify-center ${customStyles}`}>
-      <NextLink href="/become-steplixer">{t("ButtonBecomeSteplixer")}</NextLink>
+      <CustomNextLink to={`/${locale}/become-steplixer`}>{t("ButtonBecomeSteplixer")}</CustomNextLink>
       <Icon name="chevronRight" className="w-4" fill="currentColor" />
     </div>
   );
