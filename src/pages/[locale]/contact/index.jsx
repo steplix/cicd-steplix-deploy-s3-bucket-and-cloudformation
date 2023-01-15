@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Icon from "@/common/components/Icon";
 import TextField from "@/common/components/TextField";
+import HeadTag from "@/common/components/HeadTag";
 import { useTranslation } from "@/common/lib/i18n";
 import NextLink from "next/link";
 import Gradient from "@/common/components/Title/Gradient";
@@ -33,6 +34,8 @@ const Contact = ({ locale }) => {
   };
 
   return (
+    <>
+    <HeadTag title={t("metaTags.contact.title")} description={t("metaTags.contact.description")} keywords={t("metaTags.contact.keywords")} />
     <section className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <Gradient
@@ -123,6 +126,7 @@ const Contact = ({ locale }) => {
         </section>
       </main>
     </section>
+    </>
   );
 };
 
