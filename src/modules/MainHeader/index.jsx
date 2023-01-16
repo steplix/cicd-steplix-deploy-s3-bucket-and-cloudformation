@@ -8,8 +8,8 @@ const MainHeader = () => {
     return (
         <header className="mainHeader h-screen">
             <div className="container h-full">
-                <div className="flex flex-col gap-y-6 justify-center h-full">
-                    <h1 className="text-[26px] font-black font-poppins flex flex-col leading-[31.2px] lg:text-5xl">
+                <div className="flex flex-col gap-y-6 h-full pt-[94px] sm:pt-[98px] lg:pt-[140px] xl:pt-[121px]">
+                    <h1 className="text-[26px] font-bold font-poppins flex flex-col leading-[31.2px] lg:text-5xl">
                         <span>{t("MainHeader.titlePartOne")}</span>
                         <span>{t("MainHeader.titlePartTwo")}</span>
                         <span>{t("MainHeader.titlePartThree")}</span>
