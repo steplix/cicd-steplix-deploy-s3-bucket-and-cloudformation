@@ -54,4 +54,7 @@ export const propTypeIconName = PropTypes.oneOf([
   "pow",
   "valid",
   "sura",
+  "trophy",
+  "map",
+  "restart",
 ]);

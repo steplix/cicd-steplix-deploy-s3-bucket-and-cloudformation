@@ -2,7 +2,7 @@ import React from "react";
 import parse from 'html-react-parser';
 import { useTranslation } from "next-export-i18n";
 
-const StepOne = () => {
+const StepInitial = () => {
   const { t } = useTranslation();
 
   return (
@@ -18,4 +18,4 @@ const StepOne = () => {
   );
 };
 
-export default StepOne;
+export default StepInitial;

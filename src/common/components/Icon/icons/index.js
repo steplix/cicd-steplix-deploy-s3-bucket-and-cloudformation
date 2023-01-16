@@ -51,3 +51,6 @@ export * from "./shield";
 export * from "./pow";
 export * from "./valid";
 export * from "./sura";
+export * from "./trophy";
+export * from "./map";
+export * from "./restart";
