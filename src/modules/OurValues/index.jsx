@@ -16,13 +16,13 @@ const OurValues = ({ locale }) => {
             </p>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center justify-center">
                 <div className="flex flex-row space-x-4 md:space-x-6">
-                    <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" />
-                    <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" />
-                    <CardIcon text={t("about_us.ourValues.success")} iconName="success" />
+                    <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" resize />
+                    <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" resize />
+                    <CardIcon text={t("about_us.ourValues.success")} iconName="success" resize />
                 </div>
                 <div className="flex flex-row space-x-4 md:space-x-6">
-                    <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" />
-                    <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" />
+                    <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" resize />
+                    <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" resize />
                 </div>
             </div>
         </section>

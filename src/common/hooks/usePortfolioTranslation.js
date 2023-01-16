@@ -26,10 +26,6 @@ export const usePortfolioTranslation = () => {
       text: t("IconsLabel.pharmacist"),
     },
     {
-      icon: "logistics",
-      text: t("IconsLabel.logistics"),
-    },
-    {
       icon: "fintech",
       text: t("IconsLabel.fintech"),
     },
