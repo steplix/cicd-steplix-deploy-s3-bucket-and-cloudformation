@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
           {routeTitle ? (
             <div className="container h-[74px] sm:h-[68px] flex items-center">
-              <h1 className={`font-extrabold font-poppins tracking-[0.8px] text-3xl`}>
+              <h1 className={`font-bold font-poppins tracking-[0.8px] text-3xl`}>
                 {getOutlinedTitle(t(routeTitle))?.title + " "}
                 <span
                   className="font-bold text-outlined"
