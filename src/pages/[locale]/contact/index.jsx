@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Icon from "@/common/components/Icon";
 import TextField from "@/common/components/TextField";
+import HeadTag from "@/common/components/HeadTag";
 import { useTranslation } from "@/common/lib/i18n";
 import NextLink from "next/link";
 import Gradient from "@/common/components/Title/Gradient";
@@ -8,6 +9,7 @@ import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
+import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
@@ -32,6 +34,8 @@ const Contact = ({ locale }) => {
   };
 
   return (
+    <>
+    <HeadTag title={t("metaTags.contact.title")} description={t("metaTags.contact.description")} keywords={t("metaTags.contact.keywords")} />
     <section className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <Gradient
@@ -76,16 +80,8 @@ const Contact = ({ locale }) => {
         <section className="lg:flex lg:gap-8">
           <div>
             <div className="flex justify-center w-full">
-              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px]  mx-auto my-0">
-                <NextLink href="https://g.page/steplix?share">
-                  <a target="_blank">
-                    <img
-                      src="/assets/img/map.svg"
-                      alt="map"
-                      className="object-cover sm:h-[190px] w-full rounded-2xl lg:h-[280px]"
-                    />
-                  </a>
-                </NextLink>
+              <div className="w-full md:w-[560px] lg:w-[513px] xl:w-[739px] mx-auto my-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.712679763581!2d-58.4320564841754!3d-34.58613596407618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a870c199cd%3A0x7d236c1582f013b4!2sSteplix!5e0!3m2!1ses!2sar!4v1673455604016!5m2!1ses!2sar" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="sm:h-[190px] w-full rounded-2xl lg:h-[280px]" />
               </div>
             </div>
           </div>
@@ -106,33 +102,40 @@ const Contact = ({ locale }) => {
                 clickEvent={() => onClickCopyButton("hello@steplix.com")}
               />
               <TextField
-                text="+54 (11) 5367-4369"
+                text="+54 9 1150105103"
                 rightIcon={icons.send}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+54 (11) 5367-4369")}
+                clickEvent={() => onClickCopyButton("+5491150105103")}
+              />
+            </div>
+            <div className="lg:order-3 lg:self-end lg:w-3/4">
+              <ButtonBecomeSteplixer
+                locale={locale}
+                customStyles="h-[37px] my-8"
               />
             </div>
           </div>
         </section>
       </main>
     </section>
+    </>
   );
-}
+};
 
 export async function getStaticPaths(...args) {
-    const pathsWithLocale = getPathSlugs();
-    return {
-      paths: pathsWithLocale,
-      fallback: false
-    };
-  }
-  
+  const pathsWithLocale = getPathSlugs();
+  return {
+    paths: pathsWithLocale,
+    fallback: false,
+  };
+}
+
 export async function getStaticProps({ params }) {
-    return {
-      props: {
-        ...params
-      }
-    };
-  }
+  return {
+    props: {
+      ...params,
+    },
+  };
+}
 
 export default Contact;
