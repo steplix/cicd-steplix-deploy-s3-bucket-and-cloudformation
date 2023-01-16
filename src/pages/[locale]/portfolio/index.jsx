@@ -47,7 +47,7 @@ const PortfolioView = ({ locale }) => {
           <p>{t("PortfolioSection.parraf1")}</p>
         </div>
 
-        <div className="mx-auto w-full my-7 gap-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7">
+        <div className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5">
           {industries.map((industry) => (
             <CardIcon
               key={industry.text}
