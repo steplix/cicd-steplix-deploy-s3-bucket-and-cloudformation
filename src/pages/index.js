@@ -1,4 +1,4 @@
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
