@@ -18,7 +18,7 @@ export default function Home({ locale }) {
 
     return (
         <>
-            <HeadTag title={t("metaTags.home.title")} description={t("metaTags.home.description")} keywords={t("metaTags.home.keywords")} />
+            <HeadTag metaContent={{title: t("metaTags.home.title"), description: t("metaTags.home.description"), keywords: t("metaTags.home.keywords")}} />
             <main className="flex flex-col">
                 {/* MainHeader Section */}
                 <MainHeader locale={locale} />
