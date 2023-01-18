@@ -26,7 +26,7 @@ function BecomeSteplixerPage({ locale }) {
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}
           borderWidth="border-2"
-          size="text-4xl"
+          size="text-[26px] lg:text-4xl"
           height="h-[32px]"
         />
 
@@ -68,11 +68,11 @@ function BecomeSteplixerPage({ locale }) {
           ))}
         </Accordion>
         <div className="mt-[72px] flex flex-col gap-2">
-          <p className="font-poppins font-bold text-[26px] text-center text-purple">
+          <p className="font-sofia font-bold text-[26px] text-center text-purple">
             {t("BecomeSteplixerSection.sendCV.title")}
           </p>
 
-          <p className="font-poppins font-bold text-[26px] text-center text-purple">
+          <p className="font-sofia font-bold text-[26px] text-center text-purple">
             {t("BecomeSteplixerSection.sendCV.subtitle")}
           </p>
         </div>
