@@ -45,7 +45,7 @@ const CardContact = ({
             </div>
           </div>
           <div className="px-4 mb-8">
-            <TextField text={email} clickEvent={onClickCopyButton} />
+            <TextField text={email} clickEvent={onClickCopyButton} toastMessage={t("contact.copyButton")} />
           </div>
           {onClickCalendarButton && (
             <div className="flex justify-center">

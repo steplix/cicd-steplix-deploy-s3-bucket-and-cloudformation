@@ -11,7 +11,8 @@
     "brochure": "Portfolio",
     "ourOfficeTitle": "Our",
     "salesRepresentative": "Sales Representative",
-    "ourOfficeTitleEmpty": "office"
+    "ourOfficeTitleEmpty": "office",
+    "copyButton": "Copied"
   },
   "about_us": {
     "ourValues": {
