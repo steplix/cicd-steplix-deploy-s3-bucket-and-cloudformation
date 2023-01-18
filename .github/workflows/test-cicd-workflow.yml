@@ -16,7 +16,7 @@ jobs:
     uses: ./.github/workflows/notify.yml
     with:
       slack-channel: "test-cicd"
-      slack-title: "Push Event"
+      slack-title: "Prueba de CICD"
       slack-message: ${{ github.repository.url }}
       job-status: ${{ needs.testing.result }}
     secrets:
