@@ -12,7 +12,7 @@ export default function AboutUs({ locale }) {
     return (
         <>
             <HeadTag title={t("metaTags.aboutUs.title")} description={t("metaTags.aboutUs.description")} keywords={t("metaTags.aboutUs.keywords")} />
-            <div className="section-container w-full container mx-auto flex-col space-y-24">
+            <div className="section-container w-full container mx-auto flex-col space-y-[72px]">
                 <MissionAndVision locale={locale} />
 
                 <Teams locale={locale} />

@@ -14,7 +14,7 @@ const PortfolioCarousel = ({ children, carouselClassName }) => {
       initial: 0,
       breakpoints: {
         "(min-width: 1024px)": {
-          slides: { perView: 2, spacing: 5 },
+          slides: { perView: 2, spacing: 16 },
         },
       },
       slideChanged(slider) {

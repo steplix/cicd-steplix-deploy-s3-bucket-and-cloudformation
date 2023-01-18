@@ -13,10 +13,10 @@ const PhotoCarousel = ({ photoArray }) => {
         initial: 0,
         breakpoints: {
           "(min-width: 1024px)": {
-            slides: { perView: 2, spacing: 3 }
+            slides: { perView: 2, spacing: 16 }
           },
           "(min-width: 1280px)": {
-            slides: { perView: 3, spacing: 3 }
+            slides: { perView: 3, spacing: 16 }
           }
         },
       slideChanged(slider) {
