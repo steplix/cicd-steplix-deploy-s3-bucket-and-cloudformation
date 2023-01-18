@@ -70,7 +70,7 @@ const PortfolioView = ({ locale }) => {
               {clients.map((client) => (
                 <div
                   key={client.companyName}
-                  className="keen-slider__slide number-slide"
+                  className="keen-slider__slide"
                 >
                   <TestimonialCard
                     clientImageUrl={client?.image}
@@ -87,12 +87,11 @@ const PortfolioView = ({ locale }) => {
             </PortfolioCarousel>
           </div>
         </article>
-        <article className="mt-[56px]">
+        <article className="mt-[56px] w-">
           <TechnologiesSlider
             images={repeatImageLogos(clientsLogos, 20)}
             slides={8}
-            imgClass="w-24"
-            spacingBeetWeenSlides={SPACE_BETWEEN_CARDS}
+            imgClass="w-20"
           />
         </article>
       </main>

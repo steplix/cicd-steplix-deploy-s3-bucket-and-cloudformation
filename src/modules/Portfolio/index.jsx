@@ -57,7 +57,7 @@ const Portfolio = () => {
                     images={repeatImageLogos(clientsLogos, 20)}
                     slides={8}
                     imgClass="w-24"
-                    spacingBeetWeenSlides={10}
+                    spacingBetWeenSlides={10}
                 />  
             </div>
         </section>
