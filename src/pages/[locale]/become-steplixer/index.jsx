@@ -21,7 +21,7 @@ function BecomeSteplixerPage({ locale }) {
         description={t("metaTags.becomeSteplixer.description")}
         keywords={t("metaTags.becomeSteplixer.keywords")}
       />
-      <section className="section-container w-full container mx-auto flex-col space-y-24">
+      <section className="section-container w-full container mx-auto flex-col">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}
@@ -30,7 +30,7 @@ function BecomeSteplixerPage({ locale }) {
           height="h-[32px]"
         />
 
-        <div className="my-10 lg:grid lg:grid-cols-2 lg:gap-x-6">
+        <div className="mt-10 mb lg:grid lg:grid-cols-2 lg:gap-x-6">
           {BECOME_BENEFITS.map((item, index) => (
             <BecomeCard
               key={index + 1}
@@ -46,7 +46,7 @@ function BecomeSteplixerPage({ locale }) {
           content={t("BecomeSteplixerSection.title2")}
           borderWidth="border-2"
           size="text-[26px]"
-          height="h-[32px] mt-[72px] mb-[32px]"
+          height="h-[32px] mt-[72px] mb-6 md:mb-8"
         />
         <Accordion chevron closeAccordion={closeAccordion} ref={ref}>
           {OUR_VALUES.map((item, index) => (
