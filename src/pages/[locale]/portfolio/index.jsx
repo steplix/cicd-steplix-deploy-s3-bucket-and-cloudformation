@@ -36,7 +36,7 @@ const PortfolioView = ({ locale }) => {
             );
           })}
         </PortfolioCarousel>
-        <div className="mt-[72px] flex flex-col gap-4">
+        <div className="mt-[72px] flex flex-col gap-6">
           <Gradient
             borderPosition="left"
             content={t("PortfolioSection.subtitle")}
@@ -47,7 +47,7 @@ const PortfolioView = ({ locale }) => {
           <p>{t("PortfolioSection.parraf1")}</p>
         </div>
 
-        <div className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5">
+        <div className="mx-auto w-full max-w-[260px] sm:max-w-none mt-12 gap-4 grid grid-cols-2 sm:grid-cols-5">
           {industries.map((industry) => (
             <CardIcon
               key={industry.text}
@@ -57,7 +57,7 @@ const PortfolioView = ({ locale }) => {
           ))}
         </div>
 
-        <article className="mt-[72px] flex flex-col gap-8">
+        <article className="mt-[72px] flex flex-col gap-6">
           <Gradient
             borderPosition="left"
             content={t("PortfolioSection.subtitle2")}

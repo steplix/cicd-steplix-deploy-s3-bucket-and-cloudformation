@@ -21,7 +21,7 @@ function BecomeSteplixerPage({ locale }) {
         description={t("metaTags.becomeSteplixer.description")}
         keywords={t("metaTags.becomeSteplixer.keywords")}
       />
-      <section className="section-container w-full container mx-auto flex-col space-y-24">
+      <section className="section-container w-full container mx-auto flex-col">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}

@@ -46,9 +46,9 @@ const Contact = ({ locale }) => {
           height="h-[32px]"
         />
 
-        <div className="my-5">
+        <div className="mt-6 mb-10">
           <p>{t("CardContactSection.description")}</p>
-          <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
+          <p className="font-bold mt-6">{t("CardContactSection.phrase")}</p>
         </div>
         <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2 xl:mx-[76px] lg:mx-[64px]">
           {CARD_CONTACT.map((item) => (
@@ -74,7 +74,7 @@ const Contact = ({ locale }) => {
           size="text-4xl"
           height="h-[32px]"
         />
-        <div className="flex justify-center my-8">
+        <div className="flex justify-center my-10">
           <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
         </div>
         <section className="lg:flex lg:gap-5 lg:mx-[64px] xl:mx-[76px]">
@@ -108,7 +108,7 @@ const Contact = ({ locale }) => {
                 clickEvent={() => onClickCopyButton("+5491150105103")}
               />
             </div>
-            <div className="lg:order-3 lg:self-end lg:w-3/4">
+            <div className="lg:order-3 lg:self-end">
               <ButtonBecomeSteplixer
                 locale={locale}
                 customStyles="h-[37px] my-8"

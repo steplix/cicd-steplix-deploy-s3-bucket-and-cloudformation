@@ -14,10 +14,11 @@ const Teams = ({ locale }) => {
     const { t } = useTranslation(locale);
 
     return (
-        <section className="flex flex-col space-y-6 lg:space-y-8">
+        <section className="flex flex-col">
             <Title content={t("about_us.teams.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
+            <div className='my-8'>
                 <PhotoCarousel photoArray={aboutUsPhotoArray} />
-
+            </div>
             <div className="flex flex-col gap-8 space-y-6 lg:space-y-0 lg:space-x-16 items-center lg:justify-center">
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center justify-center">
                     <div className="flex flex-row space-x-3 md:space-x-6">
@@ -36,10 +37,10 @@ const Teams = ({ locale }) => {
                 </h3>
                 
             </div>
-            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+            <p className="font-poppins text-sm lg:text-base font-normal text-black my-8">
                 {t("about_us.teams.description")}<span className="font-semibold">{t("about_us.teams.descriptionBold")}</span>
             </p>
-            <div className='w-[248px] mx-auto my-0'>
+            <div className='mx-auto my-0'>
                 <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-4" />
             </div>
         </section>
