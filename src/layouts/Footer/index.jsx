@@ -13,7 +13,7 @@ const Footer = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <footer className="footer-gradient py-11">
+    <footer className="footer-gradient py-8 sm:py-[26px] h-[490px] sm:h-[271px] lg:h-[252px]">
       <div className="container flex flex-col sm:space-y-0 lg:space-y-4">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between lg:flex-col lg:items-start lg:space-y-4">
           <div className="flex flex-col items-center sm:items-start w-full">
@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 sm:mt-0 sm:mb-6 flex flex-col lg:flex-row lg:space-x-4 self-center">
+          <div className="mt-10 sm:mt-0 sm:mb-7 flex flex-col lg:flex-row lg:space-x-4 self-center">
             <div className="flex space-x-4 self-center sm:self-end sm:mb-1 lg:mb-0">
               <a href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank">
                 <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center space-y-4 sm:space-y-0 lg:space-y-0 sm:flex-row sm:items-end lg:items-center sm:justify-between text-white text-xs mt-[72px]">
+        <div className="flex flex-col-reverse items-center space-y-4 sm:space-y-0 lg:space-y-0 sm:flex-row sm:items-end lg:items-center sm:justify-between text-white text-xs sm:!mt-4 lg:mt-[72px]">
           <p className="text-[10px] font-light mt-11 sm:mt-0">{t("footer.rights")}</p>
           <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-3 text-white items-center text-xs">
             <div className="flex space-x-3">
@@ -87,7 +87,7 @@ const Footer = () => {
               href={t("footer.certificateUrl")}
               rel="noreferrer"
               target="_blank"
-              className="font-poppins underline text-[11px]"
+              className="font-poppins underline text-[11px] sm:self-end lg:self-auto"
             >
               {t("footer.certificateText")}
             </a>
