@@ -1,4 +1,5 @@
 import { forwardRef, useEffect, useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from "prop-types";
 import AccordionItemProvider, {
   useItemAccordion,
@@ -37,8 +38,8 @@ Accordion.Title = function AccordionTitle({ children, ...props }) {
 Accordion.Item = function AccordionItem({ children, ...props }) {
   return (
     <AccordionItemProvider {...props}>
-      <div className="w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl">
-        <div className="text-black relative">{children}</div>
+      <div className="relative w-full h-[64px]">
+        <div className="text-black w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl bg-white absolute">{children}</div>
       </div>
     </AccordionItemProvider>
   );
@@ -64,7 +65,7 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
   return (
     <>
       <div
-        className={`transition-all flex justify-between cursor-pointer text-2xl px-6 py-5 font-normal select-none items-center z-50`}
+        className={`transition-all flex justify-between cursor-pointer text-2xl px-6 py-[17px] font-normal select-none items-center`}
         onClick={onClick}
         {...props}
       >
@@ -83,25 +84,22 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
 
 Accordion.Body = function AccordionHeader({ children }) {
   const { toggleItem } = useItemAccordion();
-
-  const [maxH, setMaxH] = useState("h-0");
-
-  useEffect(() => {
-    if (toggleItem) {
-      return setMaxH("h-full px-6 pb-4 pt-0");
-    }
-
-    return setMaxH("h-0 p-0");
-  }, [toggleItem]);
-
+  
   return (
-    <>
-      <div
-        className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden ${maxH}`}
-      >
-        {children}
-      </div>
-    </>
+    <AnimatePresence>
+      {
+        toggleItem ? (
+          <motion.div
+          className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden px-6 pb-4 pt-0 relative z-50 bg-white`}
+          initial={{ height: 0 }}
+          animate={{ height: 'auto', transition: { duration: 0.5 } }}
+          exit={{ height: 0, opacity: 0, transition: { duration: 0.5 } }}
+        >
+          {children}
+        </motion.div>
+        ) : null
+      }
+    </AnimatePresence>
   );
 };
 
