@@ -15,13 +15,15 @@ import {
   clientsLogos,
 } from "@/common/utils/constants";
 
+//TODO: ADD NO INDEX PROP TO META TAG BEFORE DEPLOYING
+
 const PortfolioView = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { clients, industries } = usePortfolioTranslation();
 
   return (
     <>
-    <HeadTag title={t("metaTags.portfolio.title")} description={t("metaTags.portfolio.description")} keywords={t("metaTags.portfolio.keywords")} />
+    <HeadTag metaContent={{title: t("metaTags.portfolio.title"), description: t("metaTags.portfolio.description"), keywords: t("metaTags.portfolio.keywords")}} />
     <section className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>

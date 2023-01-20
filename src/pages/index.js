@@ -1,4 +1,4 @@
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
@@ -9,9 +9,11 @@ export default function Home() {
 
     //TODO: CHECK IMAGE SCRIPT
 
+    // , description:t("metaTags.home.description"), keywords:t("metaTags.home.keywords")
+
     return (
         <>
-            <HeadTag title={t("metaTags.home.title")} description={t("metaTags.home.description")} keywords={t("metaTags.home.keywords")}>
+            <HeadTag metaContent={{title: t("metaTags.home.title"), description: t("metaTags.home.description"), keywords: t("metaTags.home.keywords")}}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
