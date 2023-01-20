@@ -11,7 +11,7 @@ export default function AboutUs({ locale }) {
 
     return (
         <>
-            <HeadTag title={t("metaTags.aboutUs.title")} description={t("metaTags.aboutUs.description")} keywords={t("metaTags.aboutUs.keywords")} />
+            <HeadTag metaContent={{title: t("metaTags.aboutUs.title"), description: t("metaTags.aboutUs.description"), keywords: t("metaTags.aboutUs.keywords")}} />
             <div className="section-container w-full container mx-auto flex-col space-y-24">
                 <MissionAndVision locale={locale} />
 

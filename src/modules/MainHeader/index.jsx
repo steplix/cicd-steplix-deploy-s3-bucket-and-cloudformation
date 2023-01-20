@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { useTranslation } from "next-export-i18n";
+import PropTypes from "prop-types"; 
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import { useTranslation } from "@/common/lib/i18n";
 
-const MainHeader = () => {
-    const { t } = useTranslation();
+const MainHeader = ({ locale }) => {
+    const { t } = useTranslation(locale);
 
     return (
         <header className="mainHeader h-screen">
@@ -25,5 +27,10 @@ const MainHeader = () => {
         </header>
     );
 };
+
+MainHeader.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
+
 
 export default MainHeader;
