@@ -70,4 +70,5 @@ export const propTypeIconName = PropTypes.oneOf([
   "inflation",
   "location",
   "vacations",
+  "whatsapp"
 ]);
