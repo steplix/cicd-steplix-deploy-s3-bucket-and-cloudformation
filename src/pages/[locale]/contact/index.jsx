@@ -16,6 +16,7 @@ const icons = {
   phone: <Icon name="phone" className="w-4" />,
   copy: <Icon name="copy" className="w-4" />,
   send: <Icon name="send" className="w-4" />,
+  whatsapp: <Icon name="whatsapp" className="w-4" />
 };
 
 const Contact = ({ locale }) => {
@@ -105,7 +106,7 @@ const Contact = ({ locale }) => {
               />
               <TextField
                 text="+54 9 1150105103"
-                rightIcon={icons.send}
+                rightIcon={icons.whatsapp}
                 leftIcon={icons.phone}
                 clickEvent={() => onClickSocialMediaButton(WHATSAPP_LINK)}
               />
