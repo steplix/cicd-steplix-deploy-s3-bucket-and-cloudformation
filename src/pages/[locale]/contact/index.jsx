@@ -20,6 +20,8 @@ const icons = {
 
 const Contact = ({ locale }) => {
   const { t } = useTranslation(locale);
+  const encodedText = encodeURIComponent(t("contact.whatsAppMessage"))
+  const WHATSAPP_LINK = `https://wa.me/5491150105103?text=${encodedText}`;
 
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
@@ -105,7 +107,7 @@ const Contact = ({ locale }) => {
                 text="+54 9 1150105103"
                 rightIcon={icons.send}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+5491150105103")}
+                clickEvent={() => onClickSocialMediaButton(WHATSAPP_LINK)}
               />
             </div>
             <div className="lg:order-3 lg:self-end lg:w-3/4">
