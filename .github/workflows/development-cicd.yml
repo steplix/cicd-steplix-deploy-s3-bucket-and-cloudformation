@@ -1,0 +1,32 @@
+name: Push in development branch
+
+on:
+  push:
+    branches:
+      - develop
+
+
+jobs:
+  testing:
+    uses: ./.github/workflows/test.yml
+    with:
+      node-version: ${{ vars.NODE_VERSION }}
+
+  generate-pr:
+    needs: [testing]
+    uses: ./.github/workflows/generate-pr.yml
+    with:
+      destination-branch-name: ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}
+      pr-title: "Pulling develop into ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}"
+
+  notify:
+    if: ${{ always() }}
+    needs: [testing, generate-pr]
+    uses: ./.github/workflows/notify.yml
+    with:
+      slack-channel: ${{ vars.SLACK_CHANNEL }}
+      slack-title: Push in DEVELOP branch
+      slack-message: ${{ github.repository.url }}
+      job-status: ${{ needs.testing.result || needs.generate-pr.result }}
+    secrets:
+      slack-webhook: ${{ secrets.SLACK_WEBHOOK }}

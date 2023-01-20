@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import _ from "lodash";
 import parse from 'html-react-parser';
-import { useTranslation } from "next-export-i18n";
+import { LOCALE_SLUGS } from '@/common/utils/constants';
+import { useTranslation } from "@/common/lib/i18n";
 import { useMountainScroll } from "@/common/hooks/useMountainScroll";
 import Icon from "@/common/components/Icon";
 import StepInitial from "./contentSteps/stepInitial";
@@ -46,8 +47,8 @@ const stepsByBreakpoint = [
   }
 ];
 
-const MainHeader = () => {
-  const { t } = useTranslation();
+const MainHeader = ({ locale }) => {
+  const { t } = useTranslation(locale);
   const scrollRef = useMountainScroll();
   const [step, setStep] = useState(1);
 
@@ -169,5 +170,10 @@ const MainHeader = () => {
     </header>
   );
 };
+
+MainHeader.propTypes = {
+    locale: PropTypes.oneOf(LOCALE_SLUGS)
+}
+
 
 export default MainHeader;

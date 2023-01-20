@@ -35,7 +35,7 @@ const Contact = ({ locale }) => {
 
   return (
     <>
-    <HeadTag title={t("metaTags.contact.title")} description={t("metaTags.contact.description")} keywords={t("metaTags.contact.keywords")} />
+    <HeadTag metaContent={{title: t("metaTags.contact.title"), description: t("metaTags.contact.description"), keywords: t("metaTags.contact.keywords")}} />
     <section className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <Gradient

@@ -16,11 +16,7 @@ function BecomeSteplixerPage({ locale }) {
 
   return (
     <>
-      <HeadTag
-        title={t("metaTags.becomeSteplixer.title")}
-        description={t("metaTags.becomeSteplixer.description")}
-        keywords={t("metaTags.becomeSteplixer.keywords")}
-      />
+      <HeadTag metaContent={{title: t("metaTags.becomeSteplixer.title"), description: t("metaTags.becomeSteplixer.description"), keywords: t("metaTags.becomeSteplixer.keywords")}} />
       <section className="section-container w-full container mx-auto flex-col space-y-24">
         <Gradient
           borderPosition="left"
