@@ -5,6 +5,7 @@ import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import TestimonialCard from "@/common/components/TestimonialCard";
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PortfolioCard from "@/common/components/PortfolioCard";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { useTranslation } from "@/common/lib/i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
@@ -24,7 +25,7 @@ const PortfolioView = ({ locale }) => {
   return (
     <>
     <HeadTag metaContent={{title: t("metaTags.portfolio.title"), description: t("metaTags.portfolio.description"), keywords: t("metaTags.portfolio.keywords")}} />
-    <section className="flex flex-col relative w-full mx-auto">
+    <TransitionWrapper className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
           {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
@@ -98,7 +99,7 @@ const PortfolioView = ({ locale }) => {
           />
         </article>
       </main>
-    </section>
+    </TransitionWrapper>
     </>
   );
 };
