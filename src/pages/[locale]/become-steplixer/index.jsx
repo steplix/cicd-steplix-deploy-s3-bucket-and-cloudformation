@@ -9,6 +9,7 @@ import TitleIcon from "@/common/components/Title/TitleIcon";
 import CardContact from "@/common/components/CardContact";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { copyToClipboard, openLink } from "@/common/utils/methods";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 
 function BecomeSteplixerPage({ locale }) {
   const { t } = useTranslation(locale);
@@ -17,11 +18,13 @@ function BecomeSteplixerPage({ locale }) {
   return (
     <>
       <HeadTag
-        title={t("metaTags.becomeSteplixer.title")}
-        description={t("metaTags.becomeSteplixer.description")}
-        keywords={t("metaTags.becomeSteplixer.keywords")}
+        metaContent={{
+          title: t("metaTags.becomeSteplixer.title"),
+          description: t("metaTags.becomeSteplixer.description"),
+          keywords: t("metaTags.becomeSteplixer.keywords"),
+        }}
       />
-      <section className="section-container w-full container mx-auto flex-col">
+      <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-24">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}
@@ -90,7 +93,7 @@ function BecomeSteplixerPage({ locale }) {
             }
           />
         </div>
-      </section>
+      </TransitionWrapper>
     </>
   );
 }
