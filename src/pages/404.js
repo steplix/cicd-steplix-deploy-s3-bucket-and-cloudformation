@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import CustomNextLink from "@/common/components/CustomNextLink";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import { useRouter } from "next/router";
 import { useLanguageQuery } from "next-export-i18n";
 import { useTranslation } from "@/common/lib/i18n";
+
 
 const Custom404 = () => {
     const {query: { locale }} = useRouter();
@@ -11,7 +13,7 @@ const Custom404 = () => {
     const { t } = useTranslation(i18nQuery?.locale);
 
     return (
-        <div className="relative h-screen w-full">
+        <TransitionWrapper className="relative h-screen w-full">
             <div className="lg:py-[220px] pt-[110px] flex lg:justify-center flex-col lg:items-center lg:flex-row-reverse">
                 <div className="w-full lg:w-[550px] xl:w-[700px]">
                     <div className="lg:ml-8">
@@ -54,7 +56,7 @@ const Custom404 = () => {
                     </CustomNextLink>
                 </div>
             </div>
-        </div>
+        </TransitionWrapper>
     );
 };
 
