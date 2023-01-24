@@ -10,24 +10,26 @@ const HowDoWeDoIt = ({ locale }) => {
   const { t } = useTranslation(locale);
 
   return (
-    <section className="space-y-7">
+    <section>
       <Title
         content={t("what_we_do.HowDoWeDoIt.titleOne")}
         size="text-[26px] lg:text-[32px]"
         underlineFixed
       />
       <div>
-        <p className="font-poppins text-sm lg:text-base font-normal text-black">
+        <p className="font-poppins text-sm lg:text-base font-normal text-black text-center mt-6">
           {t("what_we_do.HowDoWeDoIt.descriptionOne")}
         </p>
       </div>
+      <div className="mt-12">
       <TechnologiesSlider
         images={repeatImageLogos(technologiesImages, 20)}
         slides={8}
         imgClass="w-24"
         spacingBetweenSlides={SPACE_BETWEEN_CARDS}
-      />
-      <p className="font-poppins text-sm lg:text-base font-normal text-black text-center">
+        />
+      </div>
+      <p className="font-poppins text-sm lg:text-base font-normal text-black text-center mt-8">
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs
         • NextJs • Bootstrap • Material • Foundation • Tailwind • NodeJs • PHP •
         Java • Python • Ruby • C • C++ • C# • GO • ASP.NET • Express • Ember •
