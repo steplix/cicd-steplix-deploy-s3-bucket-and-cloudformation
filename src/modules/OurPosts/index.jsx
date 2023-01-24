@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '@/common/components/Title/Gradient';
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PostCard from "@/common/components/PostCard";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 
 const OurPosts = () => {
     const { t } = useTranslation();

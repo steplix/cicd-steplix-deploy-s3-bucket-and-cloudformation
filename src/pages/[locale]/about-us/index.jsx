@@ -2,6 +2,7 @@ import HeadTag from "@/common/components/HeadTag";
 import { useTranslation } from "@/common/lib/i18n";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import MissionAndVision from "@/modules/MissionAndVision";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import Teams from "@/modules/Teams";
 import OurValues from "@/modules/OurValues";
 
@@ -11,14 +12,14 @@ export default function AboutUs({ locale }) {
 
     return (
         <>
-            <HeadTag title={t("metaTags.aboutUs.title")} description={t("metaTags.aboutUs.description")} keywords={t("metaTags.aboutUs.keywords")} />
-            <div className="section-container w-full container mx-auto flex-col space-y-24">
+            <HeadTag metaContent={{title: t("metaTags.aboutUs.title"), description: t("metaTags.aboutUs.description"), keywords: t("metaTags.aboutUs.keywords")}} />
+            <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-24">
                 <MissionAndVision locale={locale} />
 
                 <Teams locale={locale} />
 
                 <OurValues locale={locale} />
-            </div>
+            </TransitionWrapper>
         </>
     );
 }

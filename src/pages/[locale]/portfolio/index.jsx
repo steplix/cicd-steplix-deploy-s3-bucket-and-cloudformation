@@ -1,25 +1,43 @@
+import React from "react";
 import Gradient from "@/common/components/Title/Gradient";
+import HeadTag from "@/common/components/HeadTag";
 import CardIcon from "@/common/components/CardIcon";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import TestimonialCard from "@/common/components/TestimonialCard";
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PortfolioCard from "@/common/components/PortfolioCard";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { useTranslation } from "@/common/lib/i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
 import { repeatImageLogos } from "@/common/utils/methods";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { stagger } from "@/common/lib/animation";
 import {
   PORTFOLIO_CARDS,
   SPACE_BETWEEN_CARDS,
   clientsLogos,
 } from "@/common/utils/constants";
 
+//TODO: ADD NO INDEX PROP TO META TAG BEFORE DEPLOYING
+
 const PortfolioView = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { clients, industries } = usePortfolioTranslation();
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+    }
+  }, [controls, inView]);
 
   return (
-    <section className="flex flex-col relative w-full mx-auto">
+    <>
+    <HeadTag metaContent={{title: t("metaTags.portfolio.title"), description: t("metaTags.portfolio.description"), keywords: t("metaTags.portfolio.keywords")}} />
+    <TransitionWrapper className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
           {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
@@ -44,7 +62,7 @@ const PortfolioView = ({ locale }) => {
           <p>{t("PortfolioSection.parraf1")}</p>
         </div>
 
-        <div className="mx-auto w-full my-7 gap-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7">
+        <motion.div className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5" variants={stagger} initial="initial" animate={controls} ref={ref}>
           {industries.map((industry) => (
             <CardIcon
               key={industry.text}
@@ -52,7 +70,7 @@ const PortfolioView = ({ locale }) => {
               text={industry.text}
             />
           ))}
-        </div>
+        </motion.div>
 
         <article className="mt-[72px] flex flex-col gap-8">
           <Gradient
@@ -93,7 +111,8 @@ const PortfolioView = ({ locale }) => {
           />
         </article>
       </main>
-    </section>
+    </TransitionWrapper>
+    </>
   );
 };
 

@@ -49,21 +49,20 @@ export const routesMap = {
   "/": {
     title: "",
   },
-  "/about-us": {
-    title: "navbar.item0",
+  "about-us": {
+    title: "navbar.item0.title",
   },
-  "/what-we-do": {
-    title: "navbar.item1",
+  "what-we-do": {
+    title: "navbar.item1.title",
   },
-  "/portfolio": {
-    title: "navbar.item2",
+  "portfolio": {
+    title: "navbar.item2.title",
   },
-  "/contact": {
-    title: "navbar.item3",
+  "contact": {
+    title: "navbar.item3.title",
   },
-
-  "/become-steplixer": {
-    title: "navbar.item5",
+  "become-steplixer": {
+    title: "navbar.item5.title",
   },
 };
 
@@ -75,7 +74,7 @@ export const aboutUsPhotoArray = [
     src: "/assets/img/teams/teams-2.png",
   },
   {
-    src: "/assets/img/teams/teams-3.png",
+    src: "/assets/img/teams/teams-6.png",
   },
   {
     src: "/assets/img/teams/teams-4.png",
@@ -84,7 +83,7 @@ export const aboutUsPhotoArray = [
     src: "/assets/img/teams/teams-5.png",
   },
   {
-    src: "/assets/img/teams/teams-6.png",
+    src: "/assets/img/teams/teams-3.png",
   },
   {
     src: "/assets/img/teams/teams-7.png",

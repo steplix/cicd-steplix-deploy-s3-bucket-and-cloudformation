@@ -1,10 +1,25 @@
 import Script from "next/script";
-import "@fontsource/poppins"
+import "@fontsource/poppins/100.css";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
 import "../styles/globals.css";
 import "keen-slider/keen-slider.min.css";
 import Layout from "@/layouts/Layout";
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
+
 
 function MyApp({ Component, pageProps }) {
+
+    const { asPath } = useRouter();
+
+
     return (
         <>
             <Script
@@ -30,7 +45,9 @@ function MyApp({ Component, pageProps }) {
                 `}
             </Script>
             <Layout>
-                <Component {...pageProps} />
+                <AnimatePresence exitBeforeEnter>
+                    <Component {...pageProps} key={asPath} />
+                </AnimatePresence>
             </Layout>
         </>
     );
