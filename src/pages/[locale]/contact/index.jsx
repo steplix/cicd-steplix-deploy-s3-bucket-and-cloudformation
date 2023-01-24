@@ -10,16 +10,21 @@ import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
 import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
+
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
   phone: <Icon name="phone" className="w-4" />,
   copy: <Icon name="copy" className="w-4" />,
   send: <Icon name="send" className="w-4" />,
+  whatsapp: <Icon name="whatsapp" className="w-4" />
 };
 
 const Contact = ({ locale }) => {
   const { t } = useTranslation(locale);
+  const encodedText = encodeURIComponent(t("contact.whatsAppMessage"))
+  const WHATSAPP_LINK = `https://wa.me/5491150105103?text=${encodedText}`;
 
   const onClickCopyButton = (text) => {
     navigator.clipboard.writeText(text);
@@ -35,8 +40,8 @@ const Contact = ({ locale }) => {
 
   return (
     <>
-    <HeadTag title={t("metaTags.contact.title")} description={t("metaTags.contact.description")} keywords={t("metaTags.contact.keywords")} />
-    <section className="flex flex-col relative w-full mx-auto">
+    <HeadTag metaContent={{title: t("metaTags.contact.title"), description: t("metaTags.contact.description"), keywords: t("metaTags.contact.keywords")}} />
+    <TransitionWrapper className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <Gradient
           borderPosition="left"
@@ -103,9 +108,9 @@ const Contact = ({ locale }) => {
               />
               <TextField
                 text="+54 9 1150105103"
-                rightIcon={icons.send}
+                rightIcon={icons.whatsapp}
                 leftIcon={icons.phone}
-                clickEvent={() => onClickCopyButton("+5491150105103")}
+                clickEvent={() => onClickSocialMediaButton(WHATSAPP_LINK)}
               />
             </div>
             <div className="lg:order-3 lg:self-end lg:w-3/4">
@@ -117,7 +122,7 @@ const Contact = ({ locale }) => {
           </div>
         </section>
       </main>
-    </section>
+    </TransitionWrapper>
     </>
   );
 };

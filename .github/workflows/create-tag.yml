@@ -1,0 +1,29 @@
+name: Create TAG
+
+on:
+  workflow_call:
+    # Map the workflow outputs to job outputs
+    outputs:
+      tag:
+        description: "The tag created"
+        value: ${{ jobs.tagging.outputs.new-tag }}
+
+jobs:
+
+  ### Running the TAG creation
+
+  tagging:
+    runs-on: ubuntu-latest
+    outputs:
+      new-tag: ${{ steps.tag_version.outputs.new_tag }}
+    steps:
+#      - uses: actions/checkout@v3
+## GET LATEST TAG
+#      - name: Get latest tag
+#        id: latest-tag
+#        run: latest_tag=0.0.0 && latest_tag=$(git tag | sort -V | tail -1) && echo tag=$latest_tag >> $GITHUB_OUTPUT
+      - name: Bump version and push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
