@@ -21,81 +21,82 @@ const PortfolioView = ({ locale }) => {
 
   return (
     <>
-    <HeadTag title={t("metaTags.portfolio.title")} description={t("metaTags.portfolio.description")} keywords={t("metaTags.portfolio.keywords")} />
-    <section className="flex flex-col relative w-full mx-auto">
-      <main className="container section-container">
-        <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
-          {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
-            return (
-              <PortfolioCard
-                name={name}
-                industryIconName={industryIconName}
-                iconBrandClass="w-32"
-                key={index}
-              />
-            );
-          })}
-        </PortfolioCarousel>
-        <div className="mt-[72px] flex flex-col gap-4">
-          <Gradient
-            borderPosition="left"
-            content={t("PortfolioSection.subtitle")}
-            borderWidth="border-2"
-            size="text-4xl"
-            height="h-[32px]"
-          />
-          <p>{t("PortfolioSection.parraf1")}</p>
-        </div>
-
-        <div className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5">
-          {industries.map((industry) => (
-            <CardIcon
-              key={industry.text}
-              iconName={industry.icon}
-              text={industry.text}
+      <HeadTag
+        title={t("metaTags.portfolio.title")}
+        description={t("metaTags.portfolio.description")}
+        keywords={t("metaTags.portfolio.keywords")}
+      />
+      <section className="flex flex-col relative w-full mx-auto">
+        <main className="container section-container">
+          <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
+            {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
+              return (
+                <PortfolioCard
+                  name={name}
+                  industryIconName={industryIconName}
+                  iconBrandClass="w-32"
+                  key={index}
+                />
+              );
+            })}
+          </PortfolioCarousel>
+          <div className="mt-[72px] flex flex-col gap-4">
+            <Gradient
+              borderPosition="left"
+              content={t("PortfolioSection.subtitle")}
+              borderWidth="border-2"
+              size="text-4xl"
+              height="h-[32px]"
             />
-          ))}
-        </div>
-
-        <article className="mt-[72px] flex flex-col gap-8">
-          <Gradient
-            borderPosition="left"
-            content={t("PortfolioSection.subtitle2")}
-            borderWidth="border-2"
-            size="text-4xl"
-            height="h-[32px]"
-          />
-          <div className="flex justify-center">
-            <PortfolioCarousel carouselClassName={"clientsCarousel"}>
-              {clients.map((client) => (
-                <div
-                  key={client.companyName}
-                  className="keen-slider__slide"
-                >
-                  <TestimonialCard
-                    clientImageUrl={client?.image}
-                    imageAlt={`${client?.companyName} logo`}
-                    clientPosition={client?.position}
-                    clientFirstName={client?.name}
-                    clientLastName={client?.lastName}
-                    clientOpinion={client?.text}
-                    clientCompany={client?.companyName}
-                    textColor={client.textColor}
-                  />
-                </div>
-              ))}
-            </PortfolioCarousel>
+            <p>{t("PortfolioSection.parraf1")}</p>
           </div>
-        </article>
-        <article className="mt-[56px] w-">
-          <TechnologiesSlider
-            images={repeatImageLogos(clientsLogos, 20)}
-            slides={8}
-            imgClass="w-20"
-          />
-        </article>
-      </main>
-    </section>
+
+          <div className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5">
+            {industries.map((industry) => (
+              <CardIcon
+                key={industry.text}
+                iconName={industry.icon}
+                text={industry.text}
+              />
+            ))}
+          </div>
+
+          <article className="mt-[72px] flex flex-col gap-8">
+            <Gradient
+              borderPosition="left"
+              content={t("PortfolioSection.subtitle2")}
+              borderWidth="border-2"
+              size="text-4xl"
+              height="h-[32px]"
+            />
+            <div className="flex justify-center">
+              <PortfolioCarousel carouselClassName={"clientsCarousel"}>
+                {clients.map((client) => (
+                  <div key={client.companyName} className="keen-slider__slide">
+                    <TestimonialCard
+                      clientImageUrl={client?.image}
+                      imageAlt={`${client?.companyName} logo`}
+                      clientPosition={client?.position}
+                      clientFirstName={client?.name}
+                      clientLastName={client?.lastName}
+                      clientOpinion={client?.text}
+                      clientCompany={client?.companyName}
+                      textColor={client.textColor}
+                    />
+                  </div>
+                ))}
+              </PortfolioCarousel>
+            </div>
+          </article>
+          <article className="mt-[56px]">
+            <TechnologiesSlider
+              images={repeatImageLogos(clientsLogos, 20)}
+              slides={8}
+              imgClass="w-20"
+            />
+          </article>
+        </main>
+      </section>
     </>
   );
 };
