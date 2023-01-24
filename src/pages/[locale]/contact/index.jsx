@@ -10,6 +10,8 @@ import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
 import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
+
 
 const icons = {
   mail: <Icon name="mail" className="w-4" fill="#3C1053" />,
@@ -39,7 +41,7 @@ const Contact = ({ locale }) => {
   return (
     <>
     <HeadTag metaContent={{title: t("metaTags.contact.title"), description: t("metaTags.contact.description"), keywords: t("metaTags.contact.keywords")}} />
-    <section className="flex flex-col relative w-full mx-auto">
+    <TransitionWrapper className="flex flex-col relative w-full mx-auto">
       <main className="container section-container">
         <Gradient
           borderPosition="left"
@@ -120,7 +122,7 @@ const Contact = ({ locale }) => {
           </div>
         </section>
       </main>
-    </section>
+    </TransitionWrapper>
     </>
   );
 };

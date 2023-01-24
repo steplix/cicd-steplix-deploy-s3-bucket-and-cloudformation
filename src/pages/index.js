@@ -1,5 +1,6 @@
 import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
@@ -71,7 +72,7 @@ export default function Home() {
                     }),
                 }} />
             </HeadTag>
-            <main className="flex flex-col">
+            <TransitionWrapper className="flex flex-col">
                 {/* MainHeader Section */}
                 <MainHeader />
 
@@ -80,7 +81,7 @@ export default function Home() {
 
                 {/* Posts Section */}
                 <OurPosts />
-            </main>
+            </TransitionWrapper>
         </>
     );
 }
