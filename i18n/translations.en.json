@@ -11,7 +11,8 @@
     "brochure": "Portfolio",
     "ourOfficeTitle": "Our",
     "salesRepresentative": "Sales Representative",
-    "ourOfficeTitleEmpty": "office"
+    "ourOfficeTitleEmpty": "office",
+    "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:"
   },
   "about_us": {
     "ourValues": {

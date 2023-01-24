@@ -11,8 +11,15 @@ import "@fontsource/poppins/900.css";
 import "../styles/globals.css";
 import "keen-slider/keen-slider.min.css";
 import Layout from "@/layouts/Layout";
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
+
 
 function MyApp({ Component, pageProps }) {
+
+    const { asPath } = useRouter();
+
+
     return (
         <>
             <Script
@@ -38,7 +45,9 @@ function MyApp({ Component, pageProps }) {
                 `}
             </Script>
             <Layout>
-                <Component {...pageProps} />
+                <AnimatePresence exitBeforeEnter>
+                    <Component {...pageProps} key={asPath} />
+                </AnimatePresence>
             </Layout>
         </>
     );

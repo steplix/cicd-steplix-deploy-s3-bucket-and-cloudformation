@@ -67,3 +67,5 @@ export * from "./heart";
 export * from "./inflation";
 export * from "./location";
 export * from "./vacations";
+export * from "./whatsapp";
+
