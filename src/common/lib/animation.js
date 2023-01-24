@@ -1,3 +1,10 @@
+export const imageHoverZoomIn = {
+    scale: 1.1,
+    transition: {
+        duration: 0.50
+    }
+}
+
 export const pageTransition = {
     hidden: {
       opacity: 0,
