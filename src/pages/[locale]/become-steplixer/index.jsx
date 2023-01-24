@@ -11,24 +11,29 @@ import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { copyToClipboard, openLink } from "@/common/utils/methods";
 import TransitionWrapper from "@/common/components/TransitionWrapper";
 
-
 function BecomeSteplixerPage({ locale }) {
   const { t } = useTranslation(locale);
   const { ref, closeAccordion } = useAccordion();
 
   return (
     <>
-      <HeadTag metaContent={{title: t("metaTags.becomeSteplixer.title"), description: t("metaTags.becomeSteplixer.description"), keywords: t("metaTags.becomeSteplixer.keywords")}} />
+      <HeadTag
+        metaContent={{
+          title: t("metaTags.becomeSteplixer.title"),
+          description: t("metaTags.becomeSteplixer.description"),
+          keywords: t("metaTags.becomeSteplixer.keywords"),
+        }}
+      />
       <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-24">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}
           borderWidth="border-2"
-          size="text-4xl"
+          size="text-[26px] lg:text-4xl"
           height="h-[32px]"
         />
 
-        <div className="my-10 lg:grid lg:grid-cols-2 lg:gap-x-6">
+        <div className="mt-10 mb lg:grid lg:grid-cols-2 lg:gap-x-6">
           {BECOME_BENEFITS.map((item, index) => (
             <BecomeCard
               key={index + 1}
@@ -44,7 +49,7 @@ function BecomeSteplixerPage({ locale }) {
           content={t("BecomeSteplixerSection.title2")}
           borderWidth="border-2"
           size="text-[26px]"
-          height="h-[32px] mt-[72px] mb-[32px]"
+          height="h-[32px] mt-[72px] mb-6 md:mb-8"
         />
         <Accordion chevron closeAccordion={closeAccordion} ref={ref}>
           {OUR_VALUES.map((item, index) => (
@@ -66,11 +71,11 @@ function BecomeSteplixerPage({ locale }) {
           ))}
         </Accordion>
         <div className="mt-[72px] flex flex-col gap-2">
-          <p className="font-poppins font-bold text-[26px] text-center text-purple">
+          <p className="font-sofia font-bold text-[26px] text-center text-purple">
             {t("BecomeSteplixerSection.sendCV.title")}
           </p>
 
-          <p className="font-poppins font-bold text-[26px] text-center text-purple">
+          <p className="font-sofia font-bold text-[26px] text-center text-purple">
             {t("BecomeSteplixerSection.sendCV.subtitle")}
           </p>
         </div>
