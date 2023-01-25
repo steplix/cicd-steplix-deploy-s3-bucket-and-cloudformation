@@ -41,6 +41,6 @@ jobs:
       slack-channel: ${{ vars.SLACK_CHANNEL }}
       slack-title: "DEPLOY to prod version: ${{ github.event.release.tag_name }}"
       slack-message: ${{ github.repository.url }}
-      job-status: ${{ needs.building.result || needs.upload.result || needs.generate-pr.result}}
+      job-status: ${{ needs.download-artifact-and-unzip.result || needs.upload-to-production.result }}
     secrets:
       slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
