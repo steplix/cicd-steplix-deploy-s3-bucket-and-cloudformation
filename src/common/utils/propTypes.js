@@ -70,4 +70,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "inflation",
   "location",
   "vacations",
+  "mailTextField",
+  "whatsapp",
 ]);

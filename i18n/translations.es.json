@@ -12,6 +12,7 @@
     "ourOfficeTitle": "Nuestra",
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
+    "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
     "copyButton": "Copiado"
   },
   "about_us": {
@@ -256,7 +257,7 @@
   "CardContactSection": {
     "pronoun": "Nuestro",
     "title": "Contacto",
-    "title2": "Nuestra Oficina",
+    "title2": "Nuestra oficina",
     "subtitle": "Cómo nos contactas",
     "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
     "phrase": "¡Queremos escuchar tus ideas!"

@@ -1,17 +1,16 @@
-import React from 'react'
-import Link from 'next/link';
-import PropTypes from "prop-types"; 
+import React from "react";
+import Link from "next/link";
+import PropTypes from "prop-types";
 import { useTranslation } from "@/common/lib/i18n";
-import { aboutUsPhotoArray, LOCALE_SLUGS } from '@/common/utils/constants';
-import Chip from '@/common/components/TechnologyChip'
-import Title from '@/common/components/Title/Gradient';
-import PhotoCarousel from '@/common/components/PhotoCarousel';
-import Icon from '@/common/components/Icon';
-import ButtonBecomeSteplixer from '@/common/components/ButtonBecome';
+import { aboutUsPhotoArray, LOCALE_SLUGS } from "@/common/utils/constants";
+import Chip from "@/common/components/TechnologyChip";
+import Title from "@/common/components/Title/Gradient";
+import PhotoCarousel from "@/common/components/PhotoCarousel";
+import Icon from "@/common/components/Icon";
+import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
 
 const Teams = ({ locale }) => {
-
-    const { t } = useTranslation(locale);
+  const { t } = useTranslation(locale);
 
     return (
         <section className="flex flex-col">
@@ -48,8 +47,7 @@ const Teams = ({ locale }) => {
 }
 
 Teams.propTypes = {
-    locale: PropTypes.oneOf(LOCALE_SLUGS)
-  }
-  
+  locale: PropTypes.oneOf(LOCALE_SLUGS),
+};
 
-export default Teams
+export default Teams;

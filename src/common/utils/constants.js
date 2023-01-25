@@ -55,10 +55,10 @@ export const routesMap = {
   "what-we-do": {
     title: "navbar.item1.title",
   },
-  "portfolio": {
+  portfolio: {
     title: "navbar.item2.title",
   },
-  "contact": {
+  contact: {
     title: "navbar.item3.title",
   },
   "become-steplixer": {
@@ -281,6 +281,7 @@ export const clientsLogos = [
   {
     image: "ceva",
     alt: "Ceva Logo",
+    class: "w-8",
   },
   {
     image: "columbia",
@@ -340,7 +341,7 @@ export const technologiesImages = [
   },
 ];
 
-export const SPACE_BETWEEN_CARDS = 0;
+export const SPACE_BETWEEN_CARDS = 20;
 // BECOME A STEPLIXER PAGE
 
 export const BECOME_BENEFITS = [

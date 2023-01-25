@@ -2,6 +2,8 @@
 import React from "react"
 import propTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
+import { motion } from "framer-motion";
+import { imageHoverZoomIn } from "@/common/lib/animation";
 import Icon from "../Icon"
 
 const PhotoCarousel = ({ photoArray }) => {
@@ -65,10 +67,11 @@ const PhotoCarousel = ({ photoArray }) => {
               photoArray.map(({src}) => (
                 <div className="keen-slider__slide number-slide rounded-[20px]" key={src}>
                   <div className="carousel-item-container">
-                    <img
+                    <motion.img
                       src={src}
                       alt="culture"
                       className="carousel-item-container__image"
+                      whileHover={imageHoverZoomIn}
                       />
                   </div>
                 </div> 

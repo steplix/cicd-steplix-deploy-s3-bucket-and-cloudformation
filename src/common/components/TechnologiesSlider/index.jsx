@@ -31,18 +31,18 @@ const TechnologiesSlider = ({
     },
   });
   return (
-    <div className="">
+    <div className="max-h-[34px]">
       <div className="keen-slider items-center gap-4" ref={sliderRef}>
         {images.map((image, index) => {
           return (
             <div
-              className={`keen-slider__slide w-full flex gap-2 items-center`}
+              className={`keen-slider__slide flex items-center`}
               key={index}
             >
               {isAsset(image.image) ? (
                 <img src={image.image} alt={image.alt} className={imgClass} />
               ) : (
-                <Icon name={image.image} className={imgClass} />
+                <Icon name={image.image} className={image.class ?? imgClass} />
               )}
             </div>
           );

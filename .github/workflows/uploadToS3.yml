@@ -1,0 +1,57 @@
+name: uploadToS3
+
+on:
+  workflow_call:
+    inputs:
+      #Artifact repository to use for download
+      artifact-repository:
+        type: string
+        description: "Value of first parameter to get. By default it uses output-dir"
+        default: output-dir
+        required: false
+      #Path del bucket to use for upload
+      aws-bucket-destination-path:
+        type: string
+        description: 'Destination path to upload'
+        default: "/*"
+        required: false
+      aws-bucket:
+        type: string
+        description: 'Name of Bucket'
+        required: true
+      aws-cloudfront-distribution-id:
+        type: string
+        description: 'id of cloudfront'
+        required: false
+    secrets:
+      aws-access-key-id:
+        required: true
+      aws-secret-access-key:
+        required: true
+      aws-region:
+        required: true
+
+
+jobs:
+
+  ### Running the build
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: ${{ inputs.artifact-repository }}
+          path: output
+      - uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: ${{ secrets.aws-region }}
+      - name: copy files to S3
+        run: |
+          aws s3 sync output s3://${{ inputs.aws-bucket }}
+      - name: Cloudfront invalidation
+        if: ${{ inputs.aws-cloudfront-distribution-id != '' }}
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.aws-cloudfront-distribution-id }} --paths ${{ inputs.aws-bucket-destination-path }}

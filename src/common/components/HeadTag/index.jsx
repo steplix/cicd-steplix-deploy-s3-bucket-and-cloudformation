@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 
 // TODO: Make robots tag content dynamic
 
-const HeadTag = ({ title, keywords, description, children }) => {
+const HeadTag = ({ metaContent, children }) => {
+
+  const { title, keywords, description } = metaContent;
+
   return (
     <Head>
     {/* HTML Meta Tags */}
@@ -56,10 +59,13 @@ const HeadTag = ({ title, keywords, description, children }) => {
 }
 
 HeadTag.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    keywords: PropTypes.string.isRequired,
-    children: PropTypes.node,
+    metaContent: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        keywords: PropTypes.string.isRequired,
+        noIndex: PropTypes.bool
+    }),
+    children: PropTypes.node
 };
 
 export default HeadTag

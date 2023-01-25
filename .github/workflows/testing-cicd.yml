@@ -1,0 +1,46 @@
+name: Push in testing branch
+
+on:
+  push:
+    branches:
+      - testing
+
+
+jobs:
+
+  building:
+    uses: ./.github/workflows/build.yml
+    with:
+      node-version: ${{ vars.NODE_VERSION }}
+      artifact-repository: ${{ vars.ARTIFACT_REPOSITORY }}
+
+  upload:
+    needs: building
+    uses: ./.github/workflows/uploadToS3.yml
+    with:
+      artifact-repository: ${{ vars.ARTIFACT_REPOSITORY }}
+      aws-cloudfront-distribution-id: ${{ vars.TEST_AWS_CLOUDFRONT_DISTRIBUTION_ID }}
+      aws-bucket: ${{ vars.TEST_AWS_BUCKET }}
+    secrets:
+      aws-access-key-id: ${{ secrets.TEST_AWS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.TEST_AWS_SECRET_ACCESS_KEY }}
+      aws-region: ${{ secrets.TEST_AWS_REGION }}
+
+  generate-pr:
+    needs: upload
+    uses: ./.github/workflows/generate-pr.yml
+    with:
+      destination-branch-name: ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}
+      pr-title: "Pulling testing into ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}"
+
+  notify:
+    if: ${{ always() }}
+    needs: [ generate-pr ]
+    uses: ./.github/workflows/notify.yml
+    with:
+      slack-channel: ${{ vars.SLACK_CHANNEL }}
+      slack-title: Push in TESTING branch
+      slack-message: ${{ github.repository.url }}
+      job-status: ${{ needs.generate-pr.result }}
+    secrets:
+      slack-webhook: ${{ secrets.SLACK_WEBHOOK }}

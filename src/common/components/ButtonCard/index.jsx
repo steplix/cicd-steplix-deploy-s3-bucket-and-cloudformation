@@ -8,19 +8,24 @@ const ButtonCard = ({
   clickEvent,
   iconName,
   customImageClass,
-  iconPosition = "left"
+  iconPosition = "left",
 }) => {
   return (
     <button
-      className="w-fit h-fit bg-blue hover:cursor-pointer active:bg-sky-active text-white rounded-2xl gap-y-2.5"
+      className="w-fit h-fit bg-blue hover:cursor-pointer text-white rounded-[20px] gap-y-2.5"
       title={title}
       alt={alt}
       type="button"
-      onClick={clickEvent}>
-      <div className="flex flex-row items-center px-3 py-1">
-        {iconName && iconPosition === "left" && <Icon name={iconName} className={`${customImageClass} mr-2`} />}
-        <p className="font-bold text-xs xl:text-base">{label}</p>
-        {iconName && iconPosition === "right" && <Icon name={iconName} className={`${customImageClass} ml-2`} />}
+      onClick={clickEvent}
+    >
+      <div className="flex flex-row items-center py-2 pr-4 pl-3">
+        {iconName && iconPosition === "left" && (
+          <Icon name={iconName} className={`${customImageClass} mr-2`} />
+        )}
+        <p className="font-bold font-poppins text-xs xl:text-base">{label}</p>
+        {iconName && iconPosition === "right" && (
+          <Icon name={iconName} className={`${customImageClass} ml-2`} />
+        )}
       </div>
     </button>
   );
