@@ -3,7 +3,6 @@ import TextField from "@/common/components/TextField";
 import ButtonCard from "@/common/components/ButtonCard";
 import Icon from "../Icon";
 import { PropTypes } from "prop-types";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "@/common/lib/i18n";
 import { useLanguageQuery } from "next-export-i18n";
@@ -23,17 +22,6 @@ const CardContact = ({
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
-  const [isLoadingImg, setIsLoadingImg] = useState(true);
-
-  useEffect(() => {
-    const timeoutImg = setTimeout(() => {
-      setIsLoadingImg(false);
-    }, 2000);
-
-    return () => {
-      clearTimeout(timeoutImg);
-    };
-  }, []);
 
   return (
     <>
@@ -42,7 +30,6 @@ const CardContact = ({
           <div className="flex justify-between px-4">
             <div className="flex gap-5 items-center mt-4">
               <Avatar
-                isLoading={isLoadingImg}
                 name={name}
                 surname={surname}
                 imgSrc={imgSrc}
@@ -60,7 +47,7 @@ const CardContact = ({
             </div>
           </div>
           <div className="px-4 mb-8">
-            <TextField text={email} clickEvent={onClickCopyButton} />
+            <TextField text={email} clickEvent={onClickCopyButton} toastMessage={t("contact.copyButton")} />
           </div>
           {onClickCalendarButton && (
             <div className="flex justify-center">

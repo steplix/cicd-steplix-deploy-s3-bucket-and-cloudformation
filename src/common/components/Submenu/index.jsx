@@ -49,61 +49,66 @@ const Submenu = ({ toggle, setToggle }) => {
           </button>
         </div>
         <div className="container">
-        <div
-          className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            "/"
-          )} text-sm border-blue`}
-        >
-          <div className="py-4 px-3.5">
-            <CustomNextLink to="/">
-              <a onClick={() => handleClickToggle()}>{t("navbar.item4.route")}</a>
-            </CustomNextLink>
+        <CustomNextLink to="/">
+          <div
+            className={`flex items-center submenu--item ${isCurrentPathnameActive(
+              "/"
+            )} text-sm border-blue`}
+            onClick={() => handleClickToggle()}
+          >
+            <div className="py-4 px-3.5">
+                <a>{t("navbar.item4.route")}</a>
+            </div>
           </div>
-        </div>
-        <div
-          className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            'about-us'
-          )} text-sm border-red`}
-        >
-          <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item0.route")}</a>
-            </CustomNextLink>
+        </CustomNextLink>
+        <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
+          <div
+            className={`flex items-center submenu--item ${isCurrentPathnameActive(
+              'about-us'
+            )} text-sm border-red`}
+            onClick={() => handleClickToggle()}
+          >
+            <div className="py-4 px-3.5">
+                <a>{t("navbar.item0.route")}</a>
+            </div>
           </div>
-        </div>
-        <div
-          className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            'what-we-do'
-          )} text-sm border-yellow`}
-        >
-          <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item1.route")}</a>
-            </CustomNextLink>
+        </CustomNextLink>
+        <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
+          <div
+            className={`flex items-center submenu--item ${isCurrentPathnameActive(
+              'what-we-do'
+            )} text-sm border-yellow`}
+            onClick={() => handleClickToggle()}
+          >
+            <div className="py-4 px-3.5">
+                <a>{t("navbar.item1.route")}</a>
+            </div>
           </div>
-        </div>
-        <div
-          className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            'portfolio'
-          )} text-sm border-blue`}
-        >
-          <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item2.route")}</a>
-            </CustomNextLink>
+        </CustomNextLink>
+        <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
+          <div
+            className={`flex items-center submenu--item ${isCurrentPathnameActive(
+              'portfolio'
+            )} text-sm border-blue`}
+            onClick={() => handleClickToggle()}
+          >
+            <div className="py-4 px-3.5">
+                <a>{t("navbar.item2.route")}</a>
+            </div>
           </div>
-        </div>
-        <div
-          className={`flex items-center submenu--item ${isCurrentPathnameActive(
-            'contact'
-          )} text-sm border-red`}
-        >
-          <div className="py-4 px-3.5">
-            <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
-              <a onClick={() => handleClickToggle()}>{t("navbar.item3.route")}</a>
-            </CustomNextLink>
+        </CustomNextLink>
+        <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
+          <div
+            className={`flex items-center submenu--item ${isCurrentPathnameActive(
+              'contact'
+            )} text-sm border-red`}
+            onClick={() => handleClickToggle()}
+          >
+            <div className="py-4 px-3.5">
+                <a>{t("navbar.item3.route")}</a>
+            </div>
           </div>
-        </div>
+        </CustomNextLink>
         <div className="flex gap-x-4 w-full py-4 px-3.5">
           <LanguageSelector sm />
         </div>
