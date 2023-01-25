@@ -462,4 +462,15 @@
   .accordion--shadow {
     box-shadow: 10px 10px 25px rgba(61, 17, 82, 0.15);
   }
+
+  
+  /* TODO: APPLY THESE CLASSES ON MOST OF WEB TEXTS */
+
+  .text-mobile {
+    @apply text-[13px] leading-[16.9px];
+  }
+
+  .text-custom-base {
+    @apply text-[16px] leading-[20.8px];
+  }
 }

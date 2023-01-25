@@ -10,7 +10,7 @@ const HowDoWeDoIt = ({ locale }) => {
   const { t } = useTranslation(locale);
 
   return (
-    <section>
+    <section className={`mt-[324px] ${locale !== 'en' ? 'mt-[324px]' : 'mt-[364px]'} sm:mt-[389px] lg:mt-[528px] xl:mt-[551px]`}>
       <Title
         content={t("what_we_do.HowDoWeDoIt.titleOne")}
         size="text-[26px] lg:text-[32px]"

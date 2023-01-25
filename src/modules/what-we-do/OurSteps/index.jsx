@@ -9,23 +9,22 @@ const OurSteps = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { width } = useResponsive();
 
-  const TITLE_BREAKPOINT_WIDTH = 1024;
   const SUBTITLE_BREAKPOINT_WIDTH = 640;
   return (
-    <section className="relative w-[1279px] h-[1292px]">
-        <div className="w-full bg-what-we-do-steps sm:bg-what-we-do-steps-sm lg:bg-what-we-do-steps-lg xl:bg-what-we-do-steps-xl bg-center bg-no-repeat absolute h-full -top-9 bg-origin-content" style={{ zIndex: -1 }} />
+    <section className="relative">
+        {/* <div className="w-full bg-what-we-do-steps sm:bg-what-we-do-steps-sm lg:bg-what-we-do-steps-lg xl:bg-what-we-do-steps-xl bg-center bg-no-repeat absolute h-full -top-9 bg-origin-content" style={{ zIndex: -1 }} /> */}
         <div className="mt-6">
-          <p className="font-poppins lg:text-base font-normal text-black">
+          <p className="font-poppins text-custom-base font-normal text-black">
             {t("what_we_do.stepsToTheTop.descriptionOne")}
           </p>
-          <p className="font-poppins lg:text-base font-normal text-black">
+          <p className="font-poppins text-custom-base font-normal text-black">
             {t("what_we_do.stepsToTheTop.descriptionTwo")}
           </p>
-          <p className="font-poppins lg:text-base font-bold text-black">
+          <p className="font-poppins text-custom-base font-bold text-black">
             {t("what_we_do.stepsToTheTop.descriptionThree")}
           </p>
         </div>
-        <div className="max-w-[270px] sm:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-[72px]">
+        <div className="max-w-[270px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-[49px] lg:mt-[72px]">
           {width < SUBTITLE_BREAKPOINT_WIDTH ? (
             <Title
               content={t("what_we_do.weExploreTheProyect.titleOne")}
@@ -42,15 +41,15 @@ const OurSteps = ({ locale }) => {
           )}
 
           <div className="mt-6">
-            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+            <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black">
               {t("what_we_do.weExploreTheProyect.descriptionOne")}
-              <span className="font-poppins text-sm lg:text-base font-bold text-black">
+              <span className="font-poppins text-mobile lg:text-custom-base font-bold text-black">
                 {t("what_we_do.weExploreTheProyect.descriptionTwo")}
               </span>
             </p>
           </div>
         </div>
-        <div className="max-w-[270px] sm:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-16">
+        <div className="max-w-[270px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-[56px] xl:mt-16">
           {width < SUBTITLE_BREAKPOINT_WIDTH ? (
             <Title
               content={t("what_we_do.weDesignYourProduct.titleOne")}
@@ -67,15 +66,15 @@ const OurSteps = ({ locale }) => {
           )}
 
           <div className="mt-6">
-            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+            <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black">
               {t("what_we_do.weDesignYourProduct.descriptionOne")}
-              <span className="font-poppins text-sm lg:text-base font-bold text-black">
+              <span className="font-poppins text-mobile lg:text-custom-base font-bold text-black">
                 {t("what_we_do.weDesignYourProduct.descriptionTwo")}
               </span>
             </p>
           </div>
         </div>
-        <div className="max-w-[270px] sm:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-16">
+        <div className="max-w-[270px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[665px] xl:max-w-[834px] w-full mt-[56px] xl:mt-16">
           {width < SUBTITLE_BREAKPOINT_WIDTH ? (
             <Title
               content={t("what_we_do.weDevelopTheSolution.titleOne")}
@@ -92,9 +91,9 @@ const OurSteps = ({ locale }) => {
           )}
 
           <div className="pt-[24px]">
-            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+            <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black">
               {t("what_we_do.weDevelopTheSolution.descriptionOne")}
-              <span className="font-poppins text-sm lg:text-base font-bold text-black">
+              <span className="font-poppins text-mobile lg:text-custom-base font-bold text-black">
                 {t("what_we_do.weDevelopTheSolution.descriptionTwo")}
               </span>
             </p>

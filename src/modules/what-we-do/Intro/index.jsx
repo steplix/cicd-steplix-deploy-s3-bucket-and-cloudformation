@@ -11,8 +11,7 @@ const Intro = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { width } = useResponsive();
   const TITLE_BREAKPOINT_WIDTH = 1024;
-
-
+  
   return (
     <section className="w-full">
       {width < TITLE_BREAKPOINT_WIDTH ? (
@@ -31,9 +30,9 @@ const Intro = ({ locale }) => {
             height="h-[40px]"
           />
         )}
-      <p className="font-poppins text-sm lg:text-base font-normal text-black mt-6">
+      <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black mt-6 w-full max-w-[328px] sm:max-w-[558px] lg:max-w-none">
         <strong>{t("what_we_do.intro.descriptionOne")}</strong>
-        {t("what_we_do.intro.descriptionTwo")}
+        {(t("what_we_do.intro.descriptionTwo"))}
       </p>
     </section>
   );
