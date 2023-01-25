@@ -24,7 +24,7 @@ function BecomeSteplixerPage({ locale }) {
           keywords: t("metaTags.becomeSteplixer.keywords"),
         }}
       />
-      <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-24">
+      <TransitionWrapper className="section-container w-full container mx-auto flex-col">
         <Gradient
           borderPosition="left"
           content={t("BecomeSteplixerSection.title")}

@@ -20,9 +20,9 @@ const OurValues = ({ locale }) => {
       }, [controls, inView]);
 
     return (
-        <section className="flex flex-col space-y-6 lg:space-y-8">
+        <section className="flex flex-col">
             <Title content={t("about_us.ourValues.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
-            <p className="font-poppins text-sm lg:text-base font-normal text-black">
+            <p className="font-poppins text-sm lg:text-base font-normal text-black sm:my-6 my-6 mb-8">
                 {t("about_us.ourValues.description")}
             </p>
             <motion.div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center justify-center" variants={stagger} initial="initial" animate={controls} ref={ref}>
