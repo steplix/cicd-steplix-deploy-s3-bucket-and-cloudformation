@@ -2,11 +2,10 @@ name: Create TAG
 
 on:
   workflow_call:
-    # Map the workflow outputs to job outputs
     outputs:
       tag:
         description: "The tag created"
-        value: ${{ jobs.tagging.outputs.new-tag }}
+        value: ${{ jobs.tagging.outputs.tag }}
 
 jobs:
 
@@ -15,15 +14,23 @@ jobs:
   tagging:
     runs-on: ubuntu-latest
     outputs:
-      new-tag: ${{ steps.tag_version.outputs.new_tag }}
+      tag: ${{ steps.bumped_tag.outputs.version }}
     steps:
-#      - uses: actions/checkout@v3
-## GET LATEST TAG
-#      - name: Get latest tag
-#        id: latest-tag
-#        run: latest_tag=0.0.0 && latest_tag=$(git tag | sort -V | tail -1) && echo tag=$latest_tag >> $GITHUB_OUTPUT
-      - name: Bump version and push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v6.1
+      - uses: steplix/cicd-get-parameter@v0.1.0
+        id: args
         with:
+          parameter-0: major
+          parameter-1: minor
+
+      - name: Get bumping mode
+        id: bump-mode
+        run: echo "mode=${{ steps.args.outputs.parameter-0 || steps.args.outputs.parameter-1 || 'patch' }}" >> $GITHUB_OUTPUT
+
+      # Bump tag without affecting repository
+      - uses: zwaldowski/semver-release-action@v3
+        name: Get bumped tag
+        id: bumped_tag
+        with:
+          dry_run: true
+          bump: ${{ steps.bump-mode.outputs.mode }}
           github_token: ${{ secrets.GITHUB_TOKEN }}

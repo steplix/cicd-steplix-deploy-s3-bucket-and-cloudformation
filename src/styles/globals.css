@@ -433,6 +433,15 @@
     background-attachment: scroll;
   }
 
+  .card--padding {
+    padding: 12px 12px 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card--padding {
+      padding: 12px 32px 16px;
+    }
+  }
   .banner {
     position: relative;
     background-image: url("../../public/assets/img/bg-banner.png");
