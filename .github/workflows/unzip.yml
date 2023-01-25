@@ -1,0 +1,54 @@
+name: Download and UNZIP
+
+on:
+  workflow_call:
+    inputs:
+      zip-name:
+        type: string
+        description: "Name of ZIP"
+        required: true
+      artifact-repository:
+        type: string
+        description: "folder to upload the unzip file"
+        required: true
+      aws-bucket:
+        type: string
+        description: 'Name of Bucket'
+        required: true
+    secrets:
+      aws-access-key-id:
+        required: true
+      aws-secret-access-key:
+        required: true
+      aws-region:
+        required: true
+
+jobs:
+
+  ### Running the download and UNZIP
+
+  download-artifact-and-unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: ${{ secrets.aws-region }}
+
+      - name: download zip from S3
+        run: |
+          aws s3 cp s3://${{ inputs.aws-bucket }}/${{ inputs.zip-name }}.tar.gz .
+
+      - name: mkdir
+        run: mkdir output
+
+      - name: un-zip
+        id: unzip
+        run: tar -xvzf ${{ inputs.zip-name }}.tar.gz -C output
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ inputs.artifact-repository }}
+          path: output
+          retention-days: 1

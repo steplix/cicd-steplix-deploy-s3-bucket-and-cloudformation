@@ -473,4 +473,24 @@
   .text-custom-base {
     @apply text-[16px] leading-[20.8px];
   }
+  /* RAISE BTN EFFECT */
+
+  .btn:before, .btn::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    transition: all 250ms ease-out;
+  }
+  
+  .btn--raise:before {
+    top: 0;
+    border-radius: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn--raise:hover::before {
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(31, 31, 31, 0.5);   
+  }
 }

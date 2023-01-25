@@ -12,7 +12,8 @@
     "ourOfficeTitle": "Our",
     "salesRepresentative": "Sales Representative",
     "ourOfficeTitleEmpty": "office",
-    "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:"
+    "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
+    "copyButton": "Copied"
   },
   "about_us": {
     "ourValues": {
@@ -251,7 +252,7 @@
   "IconsLabel": {
     "agro": "Agro",
     "insurance": "Insurance",
-    "eccomerce": "Eccomerce",
+    "eccomerce": "Ecommerce",
     "pharmacist": "Pharmacist",
     "logistics": "Logistics",
     "fintech": "Fintech",
@@ -309,7 +310,7 @@
   },
   "BecomeSteplixerSection": {
     "title": "Our Benefits",
-    "title2": "Our internal values",
+    "title2": "Our values",
     "title3": "Become a Steplixer",
     "sendCV": {
       "title": "If you can be a Steplixer...",

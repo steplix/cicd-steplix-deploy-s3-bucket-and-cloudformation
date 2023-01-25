@@ -49,11 +49,11 @@ const Contact = ({ locale }) => {
             height="h-[32px]"
           />
 
-          <div className="my-5">
+          <div className="mt-6 mb-10">
             <p>{t("CardContactSection.description")}</p>
             <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
           </div>
-          <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2">
+          <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2 xl:mx-[76px] lg:mx-[64px]">
             {CARD_CONTACT.map((item) => (
               <CardContact
                 key={item.email}
@@ -114,7 +114,7 @@ const Contact = ({ locale }) => {
                   clickEvent={() => openLink(WHATSAPP_LINK)}
                 />
               </div>
-              <div className="lg:order-3 lg:self-end lg:w-3/4">
+              <div className="lg:order-3 lg:self-end">
                 <ButtonBecomeSteplixer
                   locale={locale}
                   customStyles="h-[37px] my-8"

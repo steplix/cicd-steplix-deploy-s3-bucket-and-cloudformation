@@ -57,7 +57,7 @@ const PortfolioView = ({ locale }) => {
               );
             })}
           </PortfolioCarousel>
-          <div className="mt-[72px] flex flex-col gap-4">
+          <div className="mt-[72px] flex flex-col gap-6">
             <Gradient
               borderPosition="left"
               content={t("PortfolioSection.subtitle")}
@@ -69,7 +69,7 @@ const PortfolioView = ({ locale }) => {
           </div>
 
           <motion.div
-            className="mx-auto w-full max-w-[260px] sm:max-w-none my-7 gap-4 grid grid-cols-2 sm:grid-cols-5"
+            className="mx-auto w-full max-w-[260px] sm:max-w-none mt-12 gap-4 grid grid-cols-2 sm:grid-cols-5"
             variants={stagger}
             initial="initial"
             animate={controls}
@@ -84,7 +84,7 @@ const PortfolioView = ({ locale }) => {
             ))}
           </motion.div>
 
-          <article className="mt-[72px] flex flex-col gap-8">
+          <article className="mt-[72px] flex flex-col gap-6">
             <Gradient
               borderPosition="left"
               content={t("PortfolioSection.subtitle2")}
