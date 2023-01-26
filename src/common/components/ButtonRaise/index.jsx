@@ -6,7 +6,7 @@ import { useTranslation } from "@/common/lib/i18n";
 import { LOCALE_SLUGS } from "@/common/utils/constants";
 import { useLanguageQuery } from "next-export-i18n";
 
-const ButtonBecomeSteplixer = ({ locale, customStyles, i18nKeyText, pathname }) => {
+const ButtonRaise = ({ locale, customStyles, i18nKeyText, pathname }) => {
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
 
@@ -20,11 +20,11 @@ const ButtonBecomeSteplixer = ({ locale, customStyles, i18nKeyText, pathname }) 
   );
 };
 
-ButtonBecomeSteplixer.propTypes = {
+ButtonRaise.propTypes = {
   locale: PropTypes.oneOf(LOCALE_SLUGS),
   customStyles: PropTypes.string,
   i18nKeyText: PropTypes.string.isRequired,
   pathname: PropTypes.string.isRequired
 };
 
-export default ButtonBecomeSteplixer;
+export default ButtonRaise;

@@ -7,7 +7,7 @@ import Chip from "@/common/components/TechnologyChip";
 import Title from "@/common/components/Title/Gradient";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import Icon from "@/common/components/Icon";
-import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import ButtonRaise from "@/common/components/ButtonRaise";
 
 const Teams = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -51,7 +51,7 @@ const Teams = ({ locale }) => {
                 {t("about_us.teams.description")}<span className="font-semibold">{t("about_us.teams.descriptionBold")}</span>
             </p>
             <div className='mx-auto my-0'>
-                <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-4" i18nKeyText={"ButtonBecomeSteplixer"} pathname="/become-steplixer" />
+                <ButtonRaise locale={locale} customStyles="h-[37px] my-4" i18nKeyText={"ButtonBecomeSteplixer"} pathname="/become-steplixer" />
             </div>
         </section>
     )

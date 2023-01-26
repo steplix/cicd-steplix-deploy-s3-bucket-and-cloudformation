@@ -7,7 +7,7 @@ import { useTranslation } from "@/common/lib/i18n";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { stagger } from "@/common/lib/animation";
-import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import ButtonBecomeSteplixer from "@/common/components/ButtonRaise";
 
 
 const OurValues = ({ locale }) => {
