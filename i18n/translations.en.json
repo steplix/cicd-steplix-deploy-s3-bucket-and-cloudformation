@@ -307,7 +307,8 @@
       "valid": "Design and development of an interface for cell phone stores.",
       "sura": "Design and development of an online quotation system for your customers."
     },
-    "button": "See more"
+    "message": "Do you want to know more?",
+    "button": "Contact us"
   },
   "BecomeSteplixerSection": {
     "title": "Our Benefits",

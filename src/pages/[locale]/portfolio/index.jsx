@@ -46,13 +46,13 @@ const PortfolioView = ({ locale }) => {
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
         <main className="container section-container">
           <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
-            {PORTFOLIO_CARDS.map(({ name, industryIconName }, index) => {
+            {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
                 <PortfolioCard
                   name={name}
                   industryIconName={industryIconName}
-                  iconBrandClass="w-32"
-                  key={index}
+                  iconBrandClass={iconBrandClass}
+                  key={name}
                 />
               );
             })}
