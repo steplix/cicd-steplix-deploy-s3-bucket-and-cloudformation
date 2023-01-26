@@ -19,6 +19,7 @@ jobs:
       - uses: steplix/cicd-get-parameter@v0.1.0
         id: args
         with:
+          message:
           parameter-0: major
           parameter-1: minor
 
@@ -31,6 +32,5 @@ jobs:
         name: Get bumped tag
         id: bumped_tag
         with:
-          dry_run: true
           bump: ${{ steps.bump-mode.outputs.mode }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
