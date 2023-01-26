@@ -17,7 +17,7 @@ const Title = ({
 }) => {
   return borderPosition === "bottom" ? (
     <>
-      <div className={`${underlineFixed ? 'underlined-title-fixed' : 'underlined-title'} ${size} ${color}`}>
+      <div className={`${underlineFixed ? 'underlined-title-fixed' : 'underlined-title'} ${size} ${color} leading-none`}>
         <h2>{content}</h2>
         {
           secondContent && (<h2>{secondContent}</h2>)
