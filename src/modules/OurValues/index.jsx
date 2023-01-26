@@ -7,6 +7,8 @@ import { useTranslation } from "@/common/lib/i18n";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { stagger } from "@/common/lib/animation";
+import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+
 
 const OurValues = ({ locale }) => {
     const { t } = useTranslation(locale);
@@ -25,17 +27,18 @@ const OurValues = ({ locale }) => {
             <p className="font-poppins text-sm lg:text-base font-normal text-black sm:my-6 my-6 mb-8">
                 {t("about_us.ourValues.description")}
             </p>
-            <motion.div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center justify-center" variants={stagger} initial="initial" animate={controls} ref={ref}>
-                <div className="flex flex-row space-x-4 md:space-x-6">
+            <motion.div className="flex flex-col sm:flex-row lg:flex-col space-y-4 sm:space-y-0 lg:space-y-6 sm:space-x-6 items-center justify-center mb-8" variants={stagger} initial="initial" animate={controls} ref={ref}>
+                <div className="flex flex-row space-x-4 sm:space-x-6">
                     <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" resize />
                     <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" resize />
                     <CardIcon text={t("about_us.ourValues.success")} iconName="success" resize />
                 </div>
-                <div className="flex flex-row space-x-4 md:space-x-6">
+                <div className="flex flex-row space-x-4 sm:space-x-6">
                     <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" resize />
                     <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" resize />
                 </div>
             </motion.div>
+            <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-4 mx-auto" i18nKeyText={"ButtonProject"} pathname="/contact" />
         </section>
     )
 }

@@ -118,6 +118,8 @@ const Contact = ({ locale }) => {
                 <ButtonBecomeSteplixer
                   locale={locale}
                   customStyles="h-[37px] my-8"
+                  i18nKeyText={"ButtonBecomeSteplixer"}
+                  pathname="/become-steplixer"
                 />
               </div>
             </div>
