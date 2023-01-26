@@ -19,15 +19,26 @@ const Teams = ({ locale }) => {
                 <PhotoCarousel photoArray={aboutUsPhotoArray} />
             </div>
             <div className="flex flex-col gap-8 space-y-6 lg:space-y-0 lg:space-x-16 items-center lg:justify-center">
-                <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center justify-center">
-                    <div className="flex flex-row space-x-3 md:space-x-6">
+                <div className="flex flex-col space-y-4 lg:space-y-[18px] sm:space-x-0 items-center justify-center">
+                    <div className="flex flex-row space-x-4 lg:space-x-[18px]">
                         <Chip label={"QA"} name="qa" customIconClass="h-[18px] w-[18px] mt-2" />
                         <Chip label={"UI/UX"} name="uiux" customIconClass="h-[18px] w-[18px]" />
                         <Chip label={"Mobile"} name="mobile" customIconClass="h-[18px] w-[18px] text-white"/>
+                        <div className="hidden sm:block">
+                            <Chip label={"Back end"} name="backend" customIconClass="h-[18px] w-[18px]" />
+                        </div>
                     </div>
-                    <div className="flex flex-row space-x-3 md:space-x-6">
-                        <Chip label={"Front end"} name="frontend" customIconClass="h-[18px] w-[18px] mt-1" />
-                        <Chip label={"Back end"} name="backend" customIconClass="h-[18px] w-[18px]" />
+                    <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-4 lg:space-x-[18px]">
+                        <div className="flex flex-row space-x-4 sm:space-x-0">
+                            <div className="block sm:hidden">
+                                <Chip label={"Back end"} name="backend" customIconClass="h-[18px] w-[18px]" />
+                            </div>
+                            <Chip label={"Front end"} name="frontend" customIconClass="h-[18px] w-[18px] mt-1" />
+                        </div>
+                        <div className="flex flex-row space-x-4 lg:space-x-[18px]">
+                            <Chip label={"Scrum"} name="scrum" customIconClass="h-[18px] w-[18px]" />
+                            <Chip label={"Architect"} name="architect" customIconClass="h-[18px] w-[18px] text-white mt-1" />
+                        </div>
                     </div>
                 </div>
                 
