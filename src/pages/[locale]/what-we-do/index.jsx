@@ -15,7 +15,7 @@ export default function WhatWeDo({ locale }) {
     <>
       <HeadTag metaContent={{title: t("metaTags.whatWeDo.title"), description: t("metaTags.whatWeDo.description"), keywords: t("metaTags.whatWeDo.keywords")}} />
       <TransitionWrapper className="w-full h-full relative flex">
-        <div className={`bg-what-we-do-steps sm:bg-what-we-do-steps-sm lg:bg-what-we-do-steps-lg xl:bg-what-we-do-steps-xl bg-center bg-no-repeat absolute w-full ${locale !== 'en' ? 'top-0' : '-top-2'} sm:top-0 bg-origin-content h-[1287px] sm:h-[1145px] lg:h-[1250px] xl:h-[1249px]`} style={{ zIndex: -1 }} />
+        <div className={`z-[-1] bg-what-we-do-steps sm:bg-what-we-do-steps-sm lg:bg-what-we-do-steps-lg xl:bg-what-we-do-steps-xl bg-center bg-no-repeat absolute w-full ${locale !== 'en' ? 'top-0' : '-top-2'} sm:top-0 bg-origin-content h-[1287px] sm:h-[1145px] lg:h-[1250px] xl:h-[1249px]`} />
         <div className="container section-container w-full mx-auto flex-col">
         <Intro locale={locale} />
         <OurSteps locale={locale} />
