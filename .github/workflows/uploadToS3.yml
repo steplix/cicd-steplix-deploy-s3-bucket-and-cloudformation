@@ -9,12 +9,6 @@ on:
         description: "Value of first parameter to get. By default it uses output-dir"
         default: output-dir
         required: false
-      #Path del bucket to use for upload
-      aws-bucket-destination-path:
-        type: string
-        description: 'Destination path to upload'
-        default: "/*"
-        required: false
       aws-bucket:
         type: string
         description: 'Name of Bucket'
@@ -54,4 +48,4 @@ jobs:
       - name: Cloudfront invalidation
         if: ${{ inputs.aws-cloudfront-distribution-id != '' }}
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ inputs.aws-cloudfront-distribution-id }} --paths ${{ inputs.aws-bucket-destination-path }}
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.aws-cloudfront-distribution-id }} --paths "/*"
