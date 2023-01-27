@@ -9,7 +9,7 @@ import CardContact from "@/common/components/CardContact";
 import PhotoCarousel from "@/common/components/PhotoCarousel";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { CARD_CONTACT, PHOTO_CAROUSEL } from "@/common/utils/constants";
-import ButtonBecomeSteplixer from "@/common/components/ButtonBecome";
+import ButtonRaise from "@/common/components/ButtonRaise";
 import {
   copyAndMailTo,
   copyToClipboard,
@@ -115,9 +115,11 @@ const Contact = ({ locale }) => {
                 />
               </div>
               <div className="lg:order-3 lg:self-end">
-                <ButtonBecomeSteplixer
+                <ButtonRaise
                   locale={locale}
                   customStyles="h-[37px] my-8"
+                  i18nKeyText={"ButtonBecomeSteplixer"}
+                  pathname="/become-steplixer"
                 />
               </div>
             </div>

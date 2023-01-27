@@ -13,7 +13,7 @@ const Footer = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <footer className="footer-gradient py-8 sm:py-[26px] h-[490px] sm:h-[271px] lg:h-[252px]">
+    <footer className="footer-gradient h-[490px] pt-8 pb-[72px] sm:pt-[25px] sm:pb-[65px] lg:pt-[46px] sm:h-[271px] lg:h-[252px]">
       <div className="container flex flex-col sm:space-y-0 lg:space-y-4">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between lg:flex-col lg:items-start lg:space-y-4">
           <div className="flex flex-col items-center sm:items-start w-full">
@@ -21,7 +21,7 @@ const Footer = () => {
               <img
                 src="/assets/img/logo-navbar.svg"
                 alt="logo"
-                className="w-[78px] h-[20px] lg:w-[109px] lg:h-[28px]"
+                className="w-[70px] h-[18px] lg:w-[86px] lg:h-[22px]"
               />
             </div>
             <div className="mt-6 grid grid-cols-2 ml-6 sm:ml-0 lg:flex lg:space-x-2 lg:self-center text-white sm:max-w-[225px] lg:max-w-none text-xs lg:text-base font-medium">

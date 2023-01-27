@@ -246,18 +246,23 @@ export const PORTFOLIO_CARDS = [
   {
     name: "valid",
     industryIconName: "communications",
+    iconBrandClass: "w-[166px] h-[30px]",
   },
   {
     name: "finket",
     industryIconName: "fintech",
+    iconBrandClass: "w-[121px] h-[34px]",
   },
   {
     name: "sura",
     industryIconName: "insurance",
+    iconBrandClass: "w-[98px] h-[34px]",
   },
   {
     name: "pow",
     industryIconName: "eccomerce",
+    iconBrandClass: "w-[96px] h-[34px]",
+
   },
 ];
 
