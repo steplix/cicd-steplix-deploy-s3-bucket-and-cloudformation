@@ -109,7 +109,7 @@ const Navbar = () => {
               <img
                 src="/assets/img/logo-navbar.svg"
                 alt="logo"
-                className="w-[80px] h-[30px]"
+                className="w-[90px] h-[24px] lg:w-[115px] lg:h-[40px]"
               />
             </a>
           </CustomNextLink>

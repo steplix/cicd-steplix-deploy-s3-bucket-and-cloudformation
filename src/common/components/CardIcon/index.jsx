@@ -9,11 +9,11 @@ const CardIcon = ({ text, iconName, resize }) => {
   const isPluralText = textArray.length > 1;
 
   return (
-    <motion.div className={`bg-white rounded-[20px] flex flex-col items-center justify-center space-y-1 min-w-[88px] min-h-[68px] max-w-[123px] sm:max-w-none ${
-      resize && 'lg:min-h-[120px] lg:min-w-[160px] xl:min-w-[204px] lg:space-y-2'
+    <motion.div className={`bg-white rounded-[20px] flex  ${resize ? 'flex-col lg:flex-row' : 'flex-col'} items-center justify-center space-y-1 lg:space-y-2 min-w-[88px] min-h-[68px] lg:min-h-[120px] max-w-[123px] sm:max-w-none ${
+      resize && 'lg:min-w-[283px] xl:min-w-[357px] lg:space-x-6'
     }`} variants={fadeInUp}>
-      <Icon name={iconName} className={`h-6 w-6 ${resize && 'lg:h-[39px] w-[39px]'}`} />
-      <p className={`text-[10px] text-center font-medium text-purple ${resize && 'lg:text-[13px]'}`}>
+      <Icon name={iconName} className={`h-6 w-6 lg:h-[56px] lg:w-[56px]`} />
+      <p className={`text-[10px] text-center font-medium text-purple lg:text-base`}>
         {textArray[0]}
         {
           isPluralText && (
