@@ -505,6 +505,11 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: 1280px) {
+    .banner {
+      background-size: cover;
+    }
+  }
   .no-highlight {
     -webkit-tap-highlight-color: transparent;
   }

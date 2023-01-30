@@ -10,7 +10,6 @@ import Banner from "../Banner";
 const Portfolio = () => {
   const {
     query: { locale },
-    push,
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
@@ -20,7 +19,7 @@ const Portfolio = () => {
       <>
         <Banner />
 
-        <div className="container">
+        <div className="container mt-[72px]">
           <TechnologiesSlider
               images={repeatImageLogos(clientsLogos, 20)}
               slides={8}
