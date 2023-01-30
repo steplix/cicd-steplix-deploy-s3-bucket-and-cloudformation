@@ -36,20 +36,22 @@ const Banner = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <div className="banner relative w-auto h-[596px] xl:h-[639px] flex justify-center items-end">
-          <img
-            src="/assets/img/home/mockup-xs.png"
-            alt="Image screen"
-            className="h-auto w-9/12 xl:w-[809px]"
-          />
-          <div className="pb-20 flex flex-col items-center">
-            <HomeLineBanner className="relative top-[-17px] -left-4 w-[265.76px] h-[362.84px] xl:w-[356.48px] xl:h-[392.12px] origin-center transform -rotate-12" />
-            <ButtonPortfolio
-              locale={locale}
-              customStyles="h-[37px] w-[159px]"
-              i18nKeyText={"PortfolioHomeSection.title"}
-              pathname="/portfolio"
+        <div className="banner relative h-[596px] xl:h-[639px] w-screen">
+          <div className="container flex justify-center items-end">
+            <img
+              src="/assets/img/home/mockup-xs.png"
+              alt="Image screen"
+              className="h-auto w-9/12 xl:w-[809px]"
             />
+            <div className="pb-20 flex flex-col items-center">
+              <HomeLineBanner className="relative top-[-17px] -left-4 w-[265.76px] h-[362.84px] xl:w-[356.48px] xl:h-[392.12px] origin-center transform -rotate-12" />
+              <ButtonPortfolio
+                locale={locale}
+                customStyles="h-[37px] w-fit"
+                i18nKeyText={"PortfolioHomeSection.title"}
+                pathname="/portfolio"
+              />
+            </div>
           </div>
         </div>
       </div>
