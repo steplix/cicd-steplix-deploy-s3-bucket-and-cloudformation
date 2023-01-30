@@ -16,7 +16,7 @@ const Teams = ({ locale }) => {
         <section className="flex flex-col">
             <Title content={t("about_us.teams.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
             <div className='my-8'>
-                <PhotoCarousel photoArray={aboutUsPhotoArray} />
+                <PhotoCarousel photoArray={aboutUsPhotoArray} locale={locale} />
             </div>
             <div className="flex flex-col gap-8 space-y-6 lg:space-y-0 lg:space-x-16 items-center lg:justify-center">
                 <div className="flex flex-col space-y-4 lg:space-y-[18px] sm:space-x-0 items-center justify-center">

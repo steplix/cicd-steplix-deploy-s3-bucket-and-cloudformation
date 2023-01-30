@@ -30,7 +30,7 @@ const LanguageSelector = ({ sm }) => {
     return (
         <div className="flex gap-2 mt-40 lg:mt-0">
             {shortCurrentLang ? (
-                    <div className="flex flex-col relative cursor-pointer">
+                    <button className="flex flex-col relative cursor-pointer">
                         <div className="flex items-center space-x-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                             <div className="flex items-center space-x-1">
                                 <img
@@ -56,7 +56,7 @@ const LanguageSelector = ({ sm }) => {
                                 </div>
                             </LanguageSwitcher>
                         </div>
-                    </div>
+                    </button>
             ) : null}
         </div>
     );

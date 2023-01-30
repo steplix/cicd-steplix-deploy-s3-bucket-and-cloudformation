@@ -20,7 +20,7 @@ const Footer = () => {
             <div>
               <img
                 src="/assets/img/logo-navbar.svg"
-                alt="logo"
+                alt="Steplix logo"
                 className="w-[70px] h-[18px] lg:w-[86px] lg:h-[22px]"
               />
             </div>

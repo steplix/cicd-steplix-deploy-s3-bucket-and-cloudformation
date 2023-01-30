@@ -76,7 +76,7 @@ const Contact = ({ locale }) => {
             height="h-[32px]"
           />
           <div className="flex justify-center my-8">
-            <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
+            <PhotoCarousel photoArray={PHOTO_CAROUSEL} locale={locale} />
           </div>
           <section className="lg:flex lg:gap-8">
             <div>

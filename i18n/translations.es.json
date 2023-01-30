@@ -13,7 +13,15 @@
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
     "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
-    "copyButton": "Copiado"
+    "copyButton": "Copiado",
+    "imagesAlt": {
+      "imgOne": "Nuestra oficina de reuniones es súper cómoda con un lindo ventanal y un súper monitor.",
+      "imgTwo": "El recibidor de nuestra oficina tiene un lindo sillón que nos permite reunirnos a charlar y está lleno de nuestra identidad como Steplixers.",
+      "imgThree": "Sala general cuenta con mesas grandes y sillas confortables para el trabajo diario de los equipos de Steplix.",
+      "imgFour": "La oficina por fuera es un edificio antiguo que está en la esquina de Uriarte y Costa Rica, en Palermo.",
+      "imgFive": "Dentro del edificio tenemos un patio interno al que miran las oficinas del segundo y tercer piso. La planta baja es punto de encuentro y tenemos hasta parrilla para nuestros afters.",
+      "imgSix": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+    }
   },
   "about_us": {
     "ourValues": {
@@ -37,7 +45,16 @@
       "title": "Equipo",
       "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
       "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
-      "button": "Convertite en Steplixer"
+      "button": "Convertite en Steplixer",
+      "imagesAlt": {
+        "imgOne": "Equipo comercial trabajando durante una reunion en la oficina.",
+        "imgTwo": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+        "imgThree": "Steplixers luego de un workshop.",
+        "imgFour": "Steplixers descontracturados celebrando en un bar.",
+        "imgFive": "Distintos equipos trabajando juntos para potenciar una idea.",
+        "imgSix": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+        "imgSeven": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+      }
     },
     "philosophy": {
       "titleOne": "Nuestra",
@@ -184,7 +201,8 @@
     },
     "currentLang": "Español",
     "targetLang": "Inglés",
-    "shortTargetLang": "en"
+    "shortTargetLang": "en",
+    "logoAlt": "Logo de Steplix que permite navegar hacia la pantalla principal."
   },
   "footer": {
     "certificateText": "Política de calidad",
@@ -290,7 +308,8 @@
     ]
   },
   "PortfolioHomeSection": {
-    "title": "Ir al portfolio"
+    "title": "Ir al portfolio",
+    "mountainImageAlt": ""
   },
   "MainHeader": {
     "titlePartOne": "Co-creamos",

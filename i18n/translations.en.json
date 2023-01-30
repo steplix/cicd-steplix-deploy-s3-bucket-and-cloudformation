@@ -13,7 +13,16 @@
     "salesRepresentative": "Sales Representative",
     "ourOfficeTitleEmpty": "office",
     "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
-    "copyButton": "Copied"
+    "copyButton": "Copied",
+    "imagesAlt": {
+      "imgOne": "Our meeting office is super comfortable with a deadlight and a super monitor.",
+      "imgTwo": "The lobby of our office has a nice armchair that allows us to meet for a chat and is full of our identity as Steplixers.",
+      "imgThree": "Our general room has large tables and comfortable chairs for the daily work of the Steplix teams.",
+      "imgFour": "The office on the outside is an old building on the corner of Uriarte and Costa Rica in Palermo, Buenos Aires.",
+      "imgFive": "Inside the building we have an internal patio that the offices on the second and third floors look out over. The ground floor is a meeting point and we even have a grill for our after parties.",
+      "imgSix": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+    }
+
   },
   "about_us": {
     "ourValues": {
@@ -37,7 +46,16 @@
       "title": "Team",
       "description": "In the same way that the Sherpas accompany the climbers on their journey to the top, the Digital Sherpas are ",
       "descriptionBold": "fully committed to the business challenges of our clients, guiding them and elevating their ideas to the maximum.",
-      "button": "Become a Steplixer"
+      "button": "Become a Steplixer",
+      "imagesAlt": {
+        "imgOne": "Business team working during a meeting in the office.",
+        "imgTwo": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgThree": "Steplixers after a workshop.",
+        "imgFour": "Relaxed Steplixers celebrating in a bar.",
+        "imgFive": "Different teams working together to promote an idea.",
+        "imgSix": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgSeven": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+      }
     },
     "philosophy": {
       "titleOne": "Our",
@@ -185,7 +203,8 @@
     },
     "currentLang": "English",
     "targetLang": "Spanish",
-    "shortTargetLang": "es"
+    "shortTargetLang": "es",
+    "logoAlt": "Steplix logo that allows you to navigate to the main screen."
   },
   "footer": {
     "certificateText": "Quality policy",
@@ -290,7 +309,9 @@
     ]
   },
   "PortfolioHomeSection": {
-    "title": "Go to portfolio"
+    "title": "Go to portfolio",
+    "mountainImageAlt": "Imagen interactiva de una montaña. Analogía que permite explicar los pasos necesarios para llegar a tu producto deseado.",
+    "deviceImageAlt": "Imagen de un dispositivo tablet que enseña una interfaz de un proyecto interno diseñado por el equipo de Steplix."
   },
   "MainHeader": {
     "titlePartOne": "We co-create",
