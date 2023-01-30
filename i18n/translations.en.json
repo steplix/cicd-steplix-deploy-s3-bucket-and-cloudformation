@@ -293,12 +293,17 @@
     "title": "Go to portfolio"
   },
   "MainHeader": {
-    "titlePartOne": "We co-create",
-    "titlePartTwo": "the path that",
-    "titlePartThree": "will take your business",
-    "titlePartFour": "to the top",
-    "subtitlePartOne": "We are your",
-    "subtitlePartTwo": "digital ally"
+    "title": "We co-create <br/> the path that <br/> will take your business <br/> to the top.",
+    "subtitle": "We are your <br/> digital ally",
+    "stepOneTitle": "We know <br/> the way",
+    "stepOneDescription": "We are guides in the digital business ecosystem and we know how to help you promote an idea to turn it into a competitive product.",
+    "stepTwoTitle": "We accompany you <br/> on the journey",
+    "stepTwoDescription": "We co-create custom solutions applying design, innovation and engineering.",
+    "stepThreeTitle": "We achieve <br/> results",
+    "stepThreeDescription": "We accept the challenge of each client with the commitment to achieve the results in the agreed time, with the correct investment and ROI.",
+    "finalTitle": "Together we reach <br/> the top",
+    "finalSubtitle": "#DigitalSherpas",
+    "finalTextLink": "Discover us"
   },
   "portfolio": {
     "cards": {
