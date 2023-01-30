@@ -1,40 +1,21 @@
 import PropTypes from 'prop-types';
-import { CloseCardIcon } from './CloseCardIcon';
-import { CardBody } from './CardBody';
-import { close as CloseIcon, bag as BagIcon } from '@/common/components/Icon/icons';
 
-/**
- * @param children - SVG icon or img tag, This place is for the icon of the card
- */
-
-const CardHero = ({ title, description, stylesProps, onClose, children }) => {
+const CardHero = ({ title, description, icon }) => {
   return (
-    <div
-      className={`${stylesProps} w-60 bg-neutral-white my-0 mx-auto rounded-2xl card--shadow  min-h-[230px]`}>
-      <div className='flex flex-col p-2 mb'>
-        <CloseCardIcon onClose={onClose}>
-          <CloseIcon className='w-4' />
-        </CloseCardIcon>
-        <CardBody title={title} description={description}>
-          {children}
-        </CardBody>
+    <div className="bg-white pt-4 pb-6 px-6 rounded-2xl w-[245px] h-auto lg:w-[305px] flex flex-col gap-4 shadow-step-card cardStep">
+      <span>{icon}</span>
+      <div className='flex flex-col gap-2'>
+        <span className="font-sofia text-xl lg:text-[26px] leading-6 lg:leading-[26px] font-semibold lg:font-bold">{title}</span>
+        <span className="font-poppins text-black text-[13px] lg:text-base leading-[16.9px] lg:leading-[20.8px] font-normal">{description}</span>
       </div>
     </div>
   );
 };
 
 CardHero.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired,
-  stylesProps: PropTypes.string,
-  onClose: PropTypes.func,
-  children: PropTypes.element,
-};
-
-CardHero.defaultProps = {
-  stylesProps: '',
-  onClose: () => console.log('On Close function is not defined'),
-  children: <BagIcon className='w-9' />,
+  icon: PropTypes.element.isRequired,
 };
 
 export default CardHero;

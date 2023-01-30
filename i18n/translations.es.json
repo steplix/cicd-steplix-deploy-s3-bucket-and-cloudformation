@@ -312,12 +312,17 @@
     "mountainImageAlt": ""
   },
   "MainHeader": {
-    "titlePartOne": "Co-creamos",
-    "titlePartTwo": "el camino que",
-    "titlePartThree": "llevará tu negocio",
-    "titlePartFour": "a la cima",
-    "subtitlePartOne": "Somos tu aliado",
-    "subtitlePartTwo": "digital"
+    "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
+    "subtitle": "Somos tu aliado <br/> digital",
+    "stepOneTitle": "Conocemos el <br/> camino",
+    "stepOneDescription": "Somos guías en el ecosistema de los negocios digitales y sabemos como ayudarte a potenciar una idea para convertirla en un producto competitivo.",
+    "stepTwoTitle": "Te acompañamos <br/> en el viaje",
+    "stepTwoDescription": "Co-creamos soluciones a medida aplicando diseño, innovación e ingeniería.",
+    "stepThreeTitle": "Logramos <br/> resultados",
+    "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
+    "finalTitle": "Juntos llegamos <br/> a la cima",
+    "finalSubtitle": "#DigitalSherpas",
+    "finalTextLink": "Descubrenos"
   },
   "portfolio": {
     "cards": {

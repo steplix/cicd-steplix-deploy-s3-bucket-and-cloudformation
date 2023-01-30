@@ -38,10 +38,10 @@ function MyApp({ Component, pageProps }) {
                     gtag('config', 'AW-10880705347');
                 `}
             </Script>
-      
+
             <Script id='adWords' strategy="lazyOnload">
                 {`
-                   gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
+                    gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
                 `}
             </Script>
             <Layout>
