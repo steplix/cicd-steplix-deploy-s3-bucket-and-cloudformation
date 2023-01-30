@@ -9,31 +9,10 @@ on:
         description: "Value of first parameter to get. By default it uses output-dir"
         default: output-dir
         required: false
-      #Path del bucket to use for upload
-      aws-bucket-destination-path:
-        type: string
-        description: 'Destination path to upload'
-        default: "/*"
-        required: false
-      #Path del bucket to use for upload the artifact
-      aws-bucket-artifact-destination-path:
-        type: string
-        description: 'Destination path to upload the artifact'
-        default: "/*"
-        required: false
-      artifact-name:
-        type: string
-        description: 'Destination path to upload the artifact'
-        default: "/*"
-        required: false
       aws-bucket:
         type: string
         description: 'Name of Bucket'
         required: true
-      aws-bucket-artifact:
-        type: string
-        description: 'Name of Bucket to upload the artifact'
-        required: false
       aws-cloudfront-distribution-id:
         type: string
         description: 'id of cloudfront'
@@ -69,17 +48,4 @@ jobs:
       - name: Cloudfront invalidation
         if: ${{ inputs.aws-cloudfront-distribution-id != '' }}
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ inputs.aws-cloudfront-distribution-id }} --paths ${{ inputs.aws-bucket-destination-path }}
-
-      # If recive aws-bucket-artifact secret generate and upload zip artifact
-      - name: checkout
-        if: ${{ inputs.aws-bucket-artifact != '' }}
-        uses: actions/checkout@v3
-      - name: Zip Folder to upload
-        if: ${{ inputs.aws-bucket-artifact != '' }}
-        run: zip -r ${{ inputs.artifact-name }}.zip .
-      - name: Zip Folder to upload
-        if: ${{ inputs.aws-bucket-artifact != '' }}
-        run: |
-          aws s3 sync ${{ inputs.artifact-name }}.zip s3://${{ inputs.aws-bucket-artifact }}
-      - run: echo "UPLOAD SUCCESSFULLY"
+          aws cloudfront create-invalidation --distribution-id ${{ inputs.aws-cloudfront-distribution-id }} --paths "/*"

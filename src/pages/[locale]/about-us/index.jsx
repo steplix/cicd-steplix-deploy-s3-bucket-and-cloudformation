@@ -7,36 +7,40 @@ import Teams from "@/modules/Teams";
 import OurValues from "@/modules/OurValues";
 
 export default function AboutUs({ locale }) {
+  const { t } = useTranslation(locale);
 
-    const { t } = useTranslation(locale);
+  return (
+    <>
+      <HeadTag
+        metaContent={{
+          title: t("metaTags.aboutUs.title"),
+          description: t("metaTags.aboutUs.description"),
+          keywords: t("metaTags.aboutUs.keywords"),
+        }}
+      />
+      <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-[72px]">
+        <MissionAndVision locale={locale} />
 
-    return (
-        <>
-            <HeadTag metaContent={{title: t("metaTags.aboutUs.title"), description: t("metaTags.aboutUs.description"), keywords: t("metaTags.aboutUs.keywords")}} />
-            <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-24">
-                <MissionAndVision locale={locale} />
+        <Teams locale={locale} />
 
-                <Teams locale={locale} />
-
-                <OurValues locale={locale} />
-            </TransitionWrapper>
-        </>
-    );
+        <OurValues locale={locale} />
+      </TransitionWrapper>
+    </>
+  );
 }
-
 
 export async function getStaticPaths(...args) {
   const pathsWithLocale = getPathSlugs();
   return {
     paths: pathsWithLocale,
-    fallback: false
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
   return {
     props: {
-      ...params
-    }
+      ...params,
+    },
   };
 }

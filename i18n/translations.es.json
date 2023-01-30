@@ -12,7 +12,8 @@
     "ourOfficeTitle": "Nuestra",
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
-    "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:"
+    "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
+    "copyButton": "Copiado"
   },
   "about_us": {
     "ourValues": {
@@ -54,7 +55,7 @@
   "what_we_do": {
     "intro": {
       "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles",
-      "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental. Esto nos permite probarlo, aprender rápido y evolucionar."
+      "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental.\n Esto nos permite probarlo, aprender rápido y evolucionar."
     },
     "stepsToTheTop": {
       "titleOne": "Pasos hacia",
@@ -240,7 +241,7 @@
   "IconsLabel": {
     "agro": "Agropecuario",
     "insurance": "Seguros",
-    "eccomerce": "E-Commerce",
+    "eccomerce": "Ecommerce",
     "pharmacist": "Farmacéutica",
     "logistics": "Logística",
     "fintech": "Fintech",
@@ -253,10 +254,11 @@
 
   "ButtonCardContact": "Agendar cita",
   "ButtonBecomeSteplixer": "Conviértete en Steplixer",
+  "ButtonProject": "Cuéntanos tu proyecto",
   "CardContactSection": {
     "pronoun": "Nuestro",
     "title": "Contacto",
-    "title2": "Nuestra Oficina",
+    "title2": "Nuestra oficina",
     "subtitle": "Cómo nos contactas",
     "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
     "phrase": "¡Queremos escuchar tus ideas!"
@@ -310,12 +312,13 @@
       "valid": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
       "sura": "Diseño y desarrollo de un cotizador online para sus clientes."
     },
-    "button": "Conocer más"
+    "message": "¿Quieres conocer más?",
+    "button": "Contáctanos"
   },
 
   "BecomeSteplixerSection": {
     "title": "Nuestros beneficios",
-    "title2": "Nuestros valores internos",
+    "title2": "Nuestros valores",
     "title3": "Conviértete en Steplixer",
     "sendCV": {
       "title": "Si sabes que puedes ser Steplixer...",
