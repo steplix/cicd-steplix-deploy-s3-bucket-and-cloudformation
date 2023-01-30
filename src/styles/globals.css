@@ -421,7 +421,7 @@
   }
 
   .postsCarousel {
-    @apply max-w-[328px] md:max-w-[410px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px];
+    @apply max-w-[328px] sm:max-w-[420px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px];
   }
 
   /*------- Main Header Section ------- */

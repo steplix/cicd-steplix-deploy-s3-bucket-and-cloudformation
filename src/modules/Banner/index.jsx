@@ -54,27 +54,6 @@ const Banner = () => {
         </div>
       </div>
     </>
-    // <div className="z-[-1] mb-9">
-    //   <div className="banner relative h-[1000px] z-[-1] ">
-    //     <img
-    //       src="/assets/img/home/Mockup.png"
-    //       alt="Image screen"
-    //       className="h-auto w-9/12 inset-0 absolute z-[-1]"
-    //     />
-    //     <div className="w-3/12 absolute top-[15%] right-[5%] z-[-1]">
-    //       <HomeLineBanner />
-    //       <div className="absolute">
-    //         <ButtonCard
-    //           label={t("PortfolioHomeSection.title")}
-    //           iconName="calendar"
-    //           customImageClass="w-4"
-    //           clickEvent={() => onClick(`/${i18nQuery?.lang}/portfolio`)}
-    //           iconPosition="right"
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
