@@ -431,15 +431,62 @@
     background-size: cover;
     background-repeat: no-repeat;
     top: 56px;
+    touch-action: pan-y;
   }
 
   .mountainStep {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     background: #FFDA00;
     border: 4px solid #3C1053;
     filter: blur(2px);
     border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  .line-step-1 {
+    position: relative;
+    background-image: url("../../public/assets/img/home/line-step-1-lg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .line-step-2 {
+    position: relative;
+    background-image: url("../../public/assets/img/home/line-step-2-lg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .line-step-3 {
+    position: relative;
+    background-image: url("../../public/assets/img/home/line-step-3-lg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 1023px) {
+    .line-step-1 {
+      position: relative;
+      background-image: url("../../public/assets/img/home/line-step-1-md.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .line-step-2 {
+      position: relative;
+      background-image: url("../../public/assets/img/home/line-step-2-md.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .line-step-3 {
+      position: relative;
+      background-image: url("../../public/assets/img/home/line-step-3-md.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .banner {
@@ -461,5 +508,29 @@
 
   .accordion--shadow {
     box-shadow: 10px 10px 25px rgba(61, 17, 82, 0.15);
+  }
+
+  .cardStep {
+    z-index: 1;
+    position: relative;
+    animation-name: slider;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,1,0.5,1);
+  }
+
+  @keyframes slider {
+    from { transform: translateX(300px); }
+    to   { transform: translateX(0); }
+  }
+
+  .mainTitle {
+    animation-name: fade;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 }

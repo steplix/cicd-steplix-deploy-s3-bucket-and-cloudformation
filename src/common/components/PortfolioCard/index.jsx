@@ -28,7 +28,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
             <p className='text-[13px] text-black xl:max-w-[331px] mt-8 line-clamp-2'>
                 {t(`portfolio.cards.${name}`)}
             </p>
-            <CustomNextLink>
+            <CustomNextLink to={`/${locale}/contact`}>
               <button className='flex space-x-1 items-center justify-center text-xs font-bold text-blue sm:text-white bg-white sm:bg-blue w-fit sm:px-2 sm:py-1 rounded-[20px] mt-[60px]'>
                 <p>{t(`portfolio.button`)}</p>
                 <Icon name="chevronDown" className="transform rotate-[270deg] w-[13px]" />

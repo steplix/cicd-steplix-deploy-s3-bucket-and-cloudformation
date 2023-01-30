@@ -16,12 +16,12 @@ const StepEnd = () => {
         <div className="flex justify-end items-end gap-2">
             <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
                 <a>
-                    <span className="text-blue text-xs font-bold">{t("MainHeader.finalTextLink")}</span>
+                    <span className="font-poppins text-blue text-xs font-bold">{t("MainHeader.finalTextLink")}</span>
                 </a>
             </CustomNextLink>
             <Icon name="chevronRight" className="h-4 w-4" />
         </div>
-        <h1 className="text-[26px] font-bold font-sofia leading-[31.2px] lg:text-5xl text-right">
+        <h1 className="text-[26px] font-bold font-sofia leading-[31.2px] lg:leading-[38.4px] lg:text-5xl text-right">
             {parse(t("MainHeader.finalTitle"))}
         </h1>
         <div className="w-5 h-1 bg-purple" />

@@ -7,7 +7,7 @@ const StepInitial = () => {
 
   return (
     <div className="flex flex-col gap-y-6 justify-center h-full">
-      <h1 className="text-[26px] font-bold font-poppins leading-[31.2px] lg:text-5xl">
+      <h1 className="font-bold font-poppins leading-[31.2px] lg:leading-[38.4px] text-[26px] lg:text-5xl">
         {parse(t("MainHeader.title"))}
       </h1>
       <div className="w-5 h-1 bg-purple" />
