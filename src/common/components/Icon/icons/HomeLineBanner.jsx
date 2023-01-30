@@ -1,7 +1,7 @@
 const HomeLineBanner = (props) => (
   <svg
-    width={168}
-    height={420}
+    // width={265.76}
+    // height={362.84}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

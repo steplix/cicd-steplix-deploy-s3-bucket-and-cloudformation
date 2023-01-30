@@ -73,9 +73,9 @@ const MainHeader = ({ locale }) => {
   return (
     <header
       ref={scrollRef}
-      className="overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden h-[569px] lg:h-[889px]"
+      className="overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden h-[569px] lg:h-[811px] lg:top-[49px]"
     >
-      <div className="mainHeader w-[1088px] sm:w-[1091px] lg:w-[1725px] h-[492px] sm:h-[538px] lg:h-[780px] lg:translate-x-[-18px]">
+      <div className="mainHeader w-[1088px] sm:w-[1091px] lg:w-[1725px] h-[492px] sm:h-[538px] lg:h-[780px] lg:translate-x-[-18px] top-[96px] sm:top-[55px] lg:top-[60px]">
         <div className="block lg:hidden">
           {step === 2 &&
             <>
@@ -167,7 +167,7 @@ const MainHeader = ({ locale }) => {
           </div>
         }
 
-        <div className="container absolute top-[539px]">
+        <div className="container absolute top-[578px] sm:top-[541px]">
           {stepsByBreakpoint[step-1].showPrevious &&
             <button
               className="h-[48px] w-[48px] transform translate-y-[-50%] sm:translate-y-[70%] bg-none rounded-full"
