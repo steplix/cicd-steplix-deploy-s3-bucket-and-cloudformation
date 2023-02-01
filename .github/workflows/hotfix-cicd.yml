@@ -27,14 +27,14 @@ jobs:
       - run: npm run release
 
   generate-pr-to-master:
-    needs: [testing,building]
+    needs: [testing,build]
     uses: ./.github/workflows/generate-pr.yml
     with:
       destination-branch-name: ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}
       pr-title: "<patch> is TAG VERSION INCREMENT: Pushing HOTFIX ${{ github.ref_name }} into Master"
 
   generate-pr-to-develop:
-    needs: [testing,building]
+    needs: [testing,build]
     uses: ./.github/workflows/generate-pr.yml
     with:
       destination-branch-name: ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}
@@ -42,7 +42,7 @@ jobs:
 
   notify:
     if: ${{ always() }}
-    needs: [ testing,building,generate-pr-to-master,generate-pr-to-develop ]
+    needs: [ testing,build,generate-pr-to-master,generate-pr-to-develop ]
     uses: ./.github/workflows/notify.yml
     with:
       slack-channel: ${{ vars.SLACK_CHANNEL }}
