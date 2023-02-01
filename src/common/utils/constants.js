@@ -355,33 +355,33 @@ export const BECOME_BENEFITS = [
     benefit: "benefit1",
   },
   {
-    icon: "location",
+    icon: "inflation",
     benefit: "benefit2",
   },
   {
-    icon: "inflation",
+    icon: "goal",
     benefit: "benefit3",
   },
   {
-    icon: "vacations",
+    icon: "eng",
     benefit: "benefit4",
   },
   {
-    icon: "goal",
+    icon: "book",
     benefit: "benefit5",
   },
   {
-    icon: "eng",
+    icon: "heart",
     benefit: "benefit6",
   },
 
   {
-    icon: "book",
+    icon: "location",
     benefit: "benefit7",
   },
 
   {
-    icon: "heart",
+    icon: "salary",
     benefit: "benefit8",
   },
 ];

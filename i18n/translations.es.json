@@ -329,42 +329,35 @@
   "SteplixBenefits": {
     "benefit1": {
       "title": "Trabajo híbrido",
-      "description": "La ofi queda en Palermo y es todo lo que está bien. También puedes trabajar desde tu casa los días que quieras. "
+      "description": "Puedes elegir qué días trabajar desde la ofi. El espacio esta preparado para que estés cómodo y tengas ganas de venir."
     },
-
     "benefit2": {
-      "title": "Cuando eliges venir a la ofi",
-      "description": "Masajista, osteópata, acceso a refrigerios y snacks, parrilladas en el almuerzo, sala de juegos."
+      "title": "Revisión de salario",
+      "description": "Realizamos ajustes de acuerdo a resultado de evaluaciones de desempeño y cumplimiento de  objetivos."
     },
-
     "benefit3": {
-      "title": "Ajustes por inflación",
-      "description": "3 veces al año, incluyendo instancias de evaluación de desempeño donde se contemplan reconocimientos."
-    },
-
-    "benefit4": {
-      "title": "3 semanas de vacaciones",
-      "description": "2 para que te tomes cuando quieras y una a fin de año durante las fiestas que todos los Steplixers nos tomamos 1 semana para descansar y recargar pilas."
-    },
-
-    "benefit5": {
       "title": "Flexibilidad",
       "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok."
     },
-
-    "benefit6": {
+    "benefit4": {
       "title": "Clases de inglés",
       "description": "Contamos con profes disponibles para que mejores tu nivel de inglés."
     },
-
-    "benefit7": {
-      "title": "Plan carrera",
+    "benefit5": {
+      "title": "Plan de carrera",
       "description": "Tenemos las herramientas disponibles para que crezcas y te capacites en tu área."
     },
-
-    "benefit8": {
+    "benefit6": {
       "title": "Prepaga de primer nivel",
       "description": "Cuidamos y protegemos tu salud con los mejores prestadores del país."
+    },
+    "benefit7": {
+      "title": "Cuando eliges venir a la ofi",
+      "description": "Masajista, osteópata, acceso a refrigerios y snacks, parrilladas en el almuerzo, sala de juegos."
+    },
+    "benefit8": {
+      "title": "Salario competitivo",
+      "description": "Ofrecemos compensaciones alineadas al mercado."
     }
   },
 
