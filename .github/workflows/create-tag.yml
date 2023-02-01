@@ -2,6 +2,12 @@ name: Create TAG
 
 on:
   workflow_call:
+    inputs:
+      text-where-search-for-parameters:
+        type: string
+        description: 'Message to parse. Defaults to head commit message'
+        required: false
+        default: ${{ github.event.head_commit.message }}
     outputs:
       tag:
         description: "The tag created"
@@ -19,7 +25,7 @@ jobs:
       - uses: steplix/cicd-get-parameter@v0.1.0
         id: args
         with:
-          message:
+          message: ${{ inputs.text-where-search-for-parameters}}
           parameter-0: major
           parameter-1: minor
 
