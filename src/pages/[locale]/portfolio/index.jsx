@@ -44,7 +44,7 @@ const PortfolioView = ({ locale }) => {
         }}
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
-        <main className="container section-container">
+        <section className="container section-container">
           <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
             {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
@@ -122,7 +122,7 @@ const PortfolioView = ({ locale }) => {
               spacingBeetWeenSlides={SPACE_BETWEEN_CARDS}
             />
           </article>
-        </main>
+        </section>
       </TransitionWrapper>
     </>
   );

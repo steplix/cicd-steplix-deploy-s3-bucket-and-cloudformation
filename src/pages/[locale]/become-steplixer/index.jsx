@@ -34,9 +34,9 @@ function BecomeSteplixerPage({ locale }) {
         />
 
         <div className="mt-10 mb lg:grid lg:grid-cols-2 lg:gap-x-6">
-          {BECOME_BENEFITS.map((item, index) => (
+          {BECOME_BENEFITS.map((item) => (
             <BecomeCard
-              key={index + 1}
+              key={item.icon}
               icon={item.icon}
               benefit={item.benefit}
               locale={locale}
@@ -81,11 +81,11 @@ function BecomeSteplixerPage({ locale }) {
         </div>
         <div className="mt-8 mb-[72px] w-[328px] mx-auto my-0">
           <CardContact
-            email="rrhh@steplix.com"
+            email="people@steplix.com"
             name="Josefina"
             surname="Salimei"
             imgSrc={"/assets/img/become/josefina-salimei.png"}
-            onClickCopyButton={() => copyToClipboard("rrhh@steplix.com")}
+            onClickCopyButton={() => copyToClipboard("people@steplix.com")}
             onClickSocialMediaButton={() =>
               openLink(
                 "https://www.linkedin.com/in/josefina-salimei-6b2b07138/"

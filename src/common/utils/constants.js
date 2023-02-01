@@ -50,16 +50,16 @@ export const routesMap = {
     title: "",
   },
   "about-us": {
-    title: "navbar.item0.title",
-  },
-  "what-we-do": {
     title: "navbar.item1.title",
   },
-  portfolio: {
+  "what-we-do": {
     title: "navbar.item2.title",
   },
-  contact: {
+  portfolio: {
     title: "navbar.item3.title",
+  },
+  contact: {
+    title: "navbar.item4.title",
   },
   "become-steplixer": {
     title: "navbar.item5.title",
@@ -355,33 +355,33 @@ export const BECOME_BENEFITS = [
     benefit: "benefit1",
   },
   {
-    icon: "location",
+    icon: "inflation",
     benefit: "benefit2",
   },
   {
-    icon: "inflation",
+    icon: "goal",
     benefit: "benefit3",
   },
   {
-    icon: "vacations",
+    icon: "eng",
     benefit: "benefit4",
   },
   {
-    icon: "goal",
+    icon: "book",
     benefit: "benefit5",
   },
   {
-    icon: "eng",
+    icon: "heart",
     benefit: "benefit6",
   },
 
   {
-    icon: "book",
+    icon: "location",
     benefit: "benefit7",
   },
 
   {
-    icon: "heart",
+    icon: "salary",
     benefit: "benefit8",
   },
 ];
@@ -410,3 +410,139 @@ export const OUR_VALUES = [
   },
 ];
 export const LOCALE_SLUGS = ["es", "en"];
+
+export const MOUNTAIN_STEPS = {
+  xs: [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSize: 0,
+  },
+  {
+    id: 2,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 155,
+  },
+  {
+    id: 3,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 155,
+  },
+  {
+    id: 4,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 270,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: true,
+    scrollSize: 270, 
+  }],
+  sm: [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSize: 0,
+  },
+  {
+    id: 2,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 0,
+  },
+  {
+    id: 3,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 155,
+  },
+  {
+    id: 4,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 270,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: true, 
+    scrollSize: 270,
+  }],
+  md: [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSize: 0,
+  },
+  {
+    id: 2,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 0,
+  },
+  {
+    id: 3,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 155,
+  },
+  {
+    id: 4,
+    showNext: true,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 270,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: true, 
+    scrollSize: 270,
+  }],
+  lg: [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSize: 650,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 650,
+  }],
+  xl: [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSize: 650,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: false,
+    scrollSize: 650,
+  }]
+}
