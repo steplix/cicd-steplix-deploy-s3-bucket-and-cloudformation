@@ -159,24 +159,24 @@
   "seeMore": "Ver más",
   "navbar": {
     "item0": {
+      "route": "Inicio",
+      "title": ""
+    },
+    "item1": {
       "route": "Quiénes somos",
       "title": "Quiénes somos"
     },
-    "item1": {
+    "item2": {
       "route": "Qué hacemos",
       "title": "Qué hacemos"
     },
-    "item2": {
-      "route": "Portfolio",
+    "item3": {
+      "route": "Porfolio",
       "title": "Nuestro porfolio"
     },
-    "item3": {
+    "item4": {
       "route": "Contáctanos",
       "title": "Nuestro contacto"
-    },
-    "item4": {
-      "route": "Home",
-      "title": ""
     },
     "item5": {
       "route": "Conviértete en Steplixer",

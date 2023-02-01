@@ -160,24 +160,24 @@
   "seeMore": "See more",
   "navbar": {
     "item0": {
+      "route": "Home",
+      "title": ""
+    },
+    "item1": {
       "route": "About Us",
       "title": "About Us"
     },
-    "item1": {
+    "item2": {
       "route": "What we do",
       "title": "What we do"
     },
-    "item2": {
+    "item3": {
       "route": "Portfolio",
       "title": "Our Portfolio"
     },
-    "item3": {
+    "item4": {
       "route": "Contact Us",
       "title": "Contact Us"
-    },
-    "item4": {
-      "route": "Home",
-      "title": ""
     },
     "item5": {
       "route": "Become a Steplixer",

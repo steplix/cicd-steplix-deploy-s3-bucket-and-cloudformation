@@ -50,16 +50,16 @@ export const routesMap = {
     title: "",
   },
   "about-us": {
-    title: "navbar.item0.title",
-  },
-  "what-we-do": {
     title: "navbar.item1.title",
   },
-  portfolio: {
+  "what-we-do": {
     title: "navbar.item2.title",
   },
-  contact: {
+  portfolio: {
     title: "navbar.item3.title",
+  },
+  contact: {
+    title: "navbar.item4.title",
   },
   "become-steplixer": {
     title: "navbar.item5.title",

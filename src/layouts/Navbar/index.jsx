@@ -121,7 +121,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/about-us`
                 )}`}
               >
-                {t("navbar.item0.route")}
+                {t("navbar.item1.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
@@ -130,7 +130,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/what-we-do`
                 )}`}
               >
-                {t("navbar.item1.route")}
+                {t("navbar.item2.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
@@ -139,7 +139,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/portfolio`
                 )}`}
               >
-                {t("navbar.item2.route")}
+                {t("navbar.item3.route")}
               </a>
             </CustomNextLink>
             <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
@@ -148,7 +148,7 @@ const Navbar = () => {
                   `/${i18nQuery?.lang}/contact`
                 )}`}
               >
-                {t("navbar.item3.route")}
+                {t("navbar.item4.route")}
               </a>
             </CustomNextLink>
             <LanguageSelector />
