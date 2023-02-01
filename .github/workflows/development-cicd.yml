@@ -1,4 +1,6 @@
 name: Push in development branch
+run-name: >
+  "Create PR FROM develop TO ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}: ${{ github.event.head_commit.message }}"
 
 on:
   push:
@@ -12,21 +14,33 @@ jobs:
     with:
       node-version: ${{ vars.NODE_VERSION }}
 
+  build:
+    needs: [ testing ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+      - run: npm ci
+      - run: npm run release
+
+
   generate-pr:
-    needs: [testing]
+    needs: [build]
     uses: ./.github/workflows/generate-pr.yml
     with:
       destination-branch-name: ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}
-      pr-title: "Pulling develop into ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}"
+      pr-title: "Pushing develop into ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}"
 
   notify:
     if: ${{ always() }}
-    needs: [testing, generate-pr]
+    needs: [testing, build, generate-pr]
     uses: ./.github/workflows/notify.yml
     with:
       slack-channel: ${{ vars.SLACK_CHANNEL }}
       slack-title: Push in DEVELOP branch
       slack-message: ${{ github.repository.url }}
-      job-status: ${{ needs.testing.result || needs.generate-pr.result }}
+      job-status: ${{ needs.testing.result || needs.build.result || needs.generate-pr.result }}
     secrets:
       slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
