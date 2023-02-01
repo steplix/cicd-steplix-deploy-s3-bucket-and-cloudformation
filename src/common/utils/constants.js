@@ -206,15 +206,6 @@ export const PHOTO_CAROUSEL = [
 
 export const CARD_CONTACT = [
   {
-    name: "Kevin",
-    surname: "Halbinger",
-    email: "khalbinger@steplix.com",
-    meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
-    linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
-    imgSrc: "/assets/img/contact/sellers/seller-1_cropped.png",
-  },
-
-  {
     name: "Enrique",
     surname: "Serrani",
     email: "eserrani@steplix.com",
@@ -222,22 +213,13 @@ export const CARD_CONTACT = [
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
     imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
   },
-
   {
     name: "Jorge",
     surname: "Yánez",
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
-  },
-
-  {
-    name: "Mariano",
-    surname: "Wegier",
-    email: "mwegier@steplix.com",
-    meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
-    linkedin: "https://www.linkedin.com/in/marianowegier/",
-    imgSrc: "/assets/img/contact/sellers/seller-4_cropped.png",
+    imgSrc: "/assets/img/contact/sellers/seller-5.png",
   },
 ];
 
