@@ -57,7 +57,7 @@ const Submenu = ({ toggle, setToggle }) => {
             onClick={() => handleClickToggle()}
           >
             <div className="py-4 px-3.5">
-                <a>{t("navbar.item4.route")}</a>
+                <a>{t("navbar.item0.route")}</a>
             </div>
           </div>
         </CustomNextLink>
@@ -69,7 +69,7 @@ const Submenu = ({ toggle, setToggle }) => {
             onClick={() => handleClickToggle()}
           >
             <div className="py-4 px-3.5">
-                <a>{t("navbar.item0.route")}</a>
+                <a>{t("navbar.item1.route")}</a>
             </div>
           </div>
         </CustomNextLink>
@@ -81,7 +81,7 @@ const Submenu = ({ toggle, setToggle }) => {
             onClick={() => handleClickToggle()}
           >
             <div className="py-4 px-3.5">
-                <a>{t("navbar.item1.route")}</a>
+                <a>{t("navbar.item2.route")}</a>
             </div>
           </div>
         </CustomNextLink>
@@ -93,7 +93,7 @@ const Submenu = ({ toggle, setToggle }) => {
             onClick={() => handleClickToggle()}
           >
             <div className="py-4 px-3.5">
-                <a>{t("navbar.item2.route")}</a>
+                <a>{t("navbar.item3.route")}</a>
             </div>
           </div>
         </CustomNextLink>
@@ -105,7 +105,7 @@ const Submenu = ({ toggle, setToggle }) => {
             onClick={() => handleClickToggle()}
           >
             <div className="py-4 px-3.5">
-                <a>{t("navbar.item3.route")}</a>
+                <a>{t("navbar.item4.route")}</a>
             </div>
           </div>
         </CustomNextLink>
