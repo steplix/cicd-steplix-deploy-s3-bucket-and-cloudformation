@@ -60,6 +60,7 @@ const Contact = ({ locale }) => {
                 name={item.name}
                 surname={item.surname}
                 imgSrc={item?.imgSrc}
+                imgAlt={t(item?.imgAlt)}
                 email={item.email}
                 onClickCopyButton={() => copyToClipboard(item.email)}
                 onClickSocialMediaButton={() => openLink(item.linkedin)}

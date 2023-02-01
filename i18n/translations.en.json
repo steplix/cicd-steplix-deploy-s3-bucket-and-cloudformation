@@ -11,6 +11,12 @@
     "brochure": "Portfolio",
     "ourOfficeTitle": "Our",
     "salesRepresentative": "Sales Representative",
+    "salesRepresentativeAlt": {
+      "Kevin": "Photograpy of Kevin Halbinger, sales representative",
+      "Mariano": "Photograpy of Mariano Weiger, sales representative",
+      "Enrique": "Photograpy of Enrique Serrani, sales representative",
+      "Jorge": "Photograpy of Jorge Yánez, sales representative"
+    },
     "ourOfficeTitleEmpty": "office",
     "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
     "copyButton": "Copied",

@@ -13,6 +13,7 @@ const CardContact = ({
   surname,
   cornerIconName,
   imgSrc,
+  imgAlt,
   onClickCalendarButton,
   onClickSocialMediaButton,
   onClickCopyButton,
@@ -33,6 +34,7 @@ const CardContact = ({
                 name={name}
                 surname={surname}
                 imgSrc={imgSrc}
+                imgAlt={imgAlt}
               />
               <div className="flex flex-col">
                 <p className="text-black text-base font-bold">{name}</p>
@@ -70,6 +72,7 @@ CardContact.propTypes = {
   name: PropTypes.string.isRequired,
   surname: PropTypes.string.isRequired,
   imgSrc: PropTypes.string,
+  imgAlt: PropTypes.string,
   cornerIconName: PropTypes.string,
   onClickCalendarButton: PropTypes.func,
   onClickSocialMediaButton: PropTypes.func,

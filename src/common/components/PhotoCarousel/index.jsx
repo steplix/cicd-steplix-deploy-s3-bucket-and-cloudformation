@@ -116,7 +116,7 @@ PhotoCarousel.propTypes = {
   photoArray: propTypes.arrayOf(propTypes.shape({
     src: propTypes.string
   })).isRequired,
-  locale: PropTypes.oneOf(LOCALE_SLUGS),
+  locale: propTypes.oneOf(LOCALE_SLUGS),
 };
 
 

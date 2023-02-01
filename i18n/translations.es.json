@@ -12,6 +12,12 @@
     "ourOfficeTitle": "Nuestra",
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
+    "salesRepresentativeAlt": {
+      "Kevin": "Fotografía de Kevin Halbinger, representate de ventas",
+      "Mariano": "Fotografía de Mariano Weiger, representate de ventas",
+      "Enrique": "Fotografía de Enrique Serrani, representate de ventas",
+      "Jorge": "Fotografía de Jorge Yánez, representate de ventas"
+    },
     "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
     "copyButton": "Copiado",
     "imagesAlt": {

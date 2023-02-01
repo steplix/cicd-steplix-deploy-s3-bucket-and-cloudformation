@@ -225,6 +225,7 @@ export const CARD_CONTACT = [
     meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
     linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
     imgSrc: "/assets/img/contact/sellers/seller-1_cropped.png",
+    imgAlt: "contact.salesRepresentativeAlt.Kevin"
   },
 
   {
@@ -234,6 +235,7 @@ export const CARD_CONTACT = [
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
     imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
+    imgAlt: "contact.salesRepresentativeAlt.Enrique"
   },
 
   {
@@ -242,6 +244,7 @@ export const CARD_CONTACT = [
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
+    imgAlt: "contact.salesRepresentativeAlt.Jorge"
   },
 
   {
@@ -251,6 +254,7 @@ export const CARD_CONTACT = [
     meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
     linkedin: "https://www.linkedin.com/in/marianowegier/",
     imgSrc: "/assets/img/contact/sellers/seller-4_cropped.png",
+    imgAlt: "contact.salesRepresentativeAlt.Mariano"
   },
 ];
 
