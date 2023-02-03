@@ -20,7 +20,7 @@ const OurPosts = () => {
                         posts.map(({publishingAt, description, url}) => {
                             postNumber++;
                             return(
-                                <div className="keen-slider__slide number-slide" key={`post-${postNumber}`}>
+                                <div className="keen-slider__slide number-slide p-1" key={`post-${postNumber}`}>
                                     <PostCard
                                         publishingAt={publishingAt}
                                         description={description}
