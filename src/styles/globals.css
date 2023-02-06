@@ -413,7 +413,7 @@
   }
 
   .portfolioCarousel {
-    @apply max-w-[280px] sm:max-w-[376px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px] lg:min-h-[418px];
+    @apply max-w-[288px] sm:max-w-[384px] lg:max-w-[784px] xl:max-w-[1008px] rounded-[20px] lg:min-h-[418px];
   }
 
   .clientsCarousel {
