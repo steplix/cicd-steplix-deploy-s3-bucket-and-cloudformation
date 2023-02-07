@@ -13,7 +13,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <div className='keen-slider__slide number-slide w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] portfolio-card-shadow lg:drop-shadow-sm rounded-[20px] flex flex-col'>
+    <div className='w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] shadow-portfolio-card rounded-[20px] flex flex-col'>
       <picture className='w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]'>
         <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.png`} />
         <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.png`} />
