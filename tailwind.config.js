@@ -45,7 +45,8 @@ module.exports = {
     boxShadow: {
       steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
       "post-card": "0px 0px 2px 1px rgba(112, 112, 112, 0.2)",
-      "step-card": "10px 10px 25px rgba(61, 17, 82, 0.15)"
+      "step-card": "10px 10px 25px rgba(61, 17, 82, 0.15)",
+      "portfolio-card": "0px 7px 16px 0px rgba(100, 100, 111, 0.1)"
     },
     extend: {
       margin: {
