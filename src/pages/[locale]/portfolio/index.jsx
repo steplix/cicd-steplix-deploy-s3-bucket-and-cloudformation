@@ -44,20 +44,21 @@ const PortfolioView = ({ locale }) => {
         }}
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
-        <section className="container section-container">
+        <section className="container pb-[72px]">
           <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
             {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
-                <PortfolioCard
+                <div key={name} className="keen-slider__slide number-slide rounded-[20px]">
+                  <PortfolioCard
                   name={name}
                   industryIconName={industryIconName}
                   iconBrandClass={iconBrandClass}
-                  key={name}
                 />
+                </div>
               );
             })}
           </PortfolioCarousel>
-          <div className="mt-[72px] flex flex-col gap-6">
+          <div className="mt-[14px] flex flex-col gap-6">
             <Gradient
               borderPosition="left"
               content={t("PortfolioSection.subtitle")}
@@ -93,7 +94,7 @@ const PortfolioView = ({ locale }) => {
               height="h-[32px]"
             />
             <div className="flex justify-center">
-              <PortfolioCarousel carouselClassName={"clientsCarousel"}>
+              <PortfolioCarousel carouselClassName={"clientsCarousel"} spacing={14}>
                 {clients.map((client) => (
                   <div
                     key={client.companyName}

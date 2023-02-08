@@ -15,7 +15,7 @@ const OurPosts = () => {
                 <Title content={t("OurPostsSay.title")} borderPosition="bottom" underlineFixed size="text-[26px] leading-[26px] lg:text-[32px] lg:leading-[48px]"/>
             </div>
             <div className="mb-[72px]">
-                <PortfolioCarousel carouselClassName={"postsCarousel"}>
+                <PortfolioCarousel carouselClassName={"postsCarousel"} spacing={8}>
                     {
                         posts.map(({publishingAt, description, url}) => {
                             postNumber++;

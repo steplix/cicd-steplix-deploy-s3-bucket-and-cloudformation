@@ -4,7 +4,15 @@ import propTypes from "prop-types";
 import { useKeenSlider } from "keen-slider/react";
 import Icon from "../Icon";
 
-const PortfolioCarousel = ({ children, carouselClassName }) => {
+const AdaptiveHeight = (slider) => {
+  function updateHeight() {
+    slider.container.style.height =
+      slider.slides[slider.track.details.rel].offsetHeight + 96 + "px"
+  }
+  slider.on("created", updateHeight)
+}
+
+const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = React.useState(false);
 
@@ -14,7 +22,7 @@ const PortfolioCarousel = ({ children, carouselClassName }) => {
       initial: 0,
       breakpoints: {
         "(min-width: 1024px)": {
-          slides: { perView: 2, spacing: 8 },
+          slides: { perView: 2, spacing },
         },
       },
       slideChanged(slider) {
@@ -23,11 +31,12 @@ const PortfolioCarousel = ({ children, carouselClassName }) => {
       created() {
         setLoaded(true);
       },
-    }
+    },
+    [carouselClassName !== 'portfolioCarousel' ? () => {} : AdaptiveHeight]
   );
 
   return (
-    <div className="relative w-full flex flex-col container mx-auto items-center">
+    <div className="relative w-full flex flex-col mx-auto items-center">
       <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
         {children}
       </div>
@@ -73,6 +82,7 @@ const PortfolioCarousel = ({ children, carouselClassName }) => {
 PortfolioCarousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
+  spacing: propTypes.number
 };
 
 export default PortfolioCarousel;
