@@ -501,15 +501,28 @@
   .banner {
     position: relative;
     background-image: url("../../public/assets/img/bg-banner.png");
-    background-size: contain;
+    background-size: 100% 146px;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 640px) {
+    .banner {
+      background-size: 100% 233px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .banner {
+      background-size: 100% 387px;
+    }
   }
 
   @media (min-width: 1280px) {
     .banner {
-      background-size: cover;
+      background-size: 100% 467px;
     }
   }
+
   .no-highlight {
     -webkit-tap-highlight-color: transparent;
   }
