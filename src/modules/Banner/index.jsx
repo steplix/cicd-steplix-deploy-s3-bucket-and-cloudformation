@@ -1,57 +1,33 @@
 import ButtonPortfolio from "@/common/components/ButtonRaise";
-import CustomNextLink from "@/common/components/CustomNextLink";
-import Icon from "@/common/components/Icon";
 import HomeLineBanner from "@/common/components/Icon/icons/HomeLineBanner";
-import { useTranslation } from "@/common/lib/i18n";
 import { useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 
 const Banner = () => {
-  const {
-    query: { locale },
-    push,
-  } = useRouter();
+  const { query: { locale } } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
-  const { t } = useTranslation(i18nQuery?.locale);
 
   return (
     <>
-      <div className="block lg:hidden">
-        <div className="banner relative w-auto h-[288px] sm:h-[449px] flex flex-col items-center mb-12">
-          <img
-            src="/assets/img/home/mockup-xs.png"
-            alt="Image screen"
-            className="w-[328px] h-[256px] sm:w-[561px] sm:h-[417px]"
-          />
-          <div className="container flex justify-end">
-            <div className="flex justify-end items-center space-x-3 w-[125px] h-[32px]">
-              <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
-                <a className="text-blue text-xs font-bold leading-[15.6px] font-poppins">
-                  {t("PortfolioHomeSection.title")}
-                </a>
-              </CustomNextLink>
-              <Icon name="chevronRight" className="h-4 w-4" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="hidden lg:block">
-        <div className="banner relative h-[596px] xl:h-[639px] w-screen">
-          <div className="container flex justify-center items-end">
-            <img
-              src="/assets/img/home/mockup-xs.png"
+      <div className="banner xl:container w-auto h-[288px] sm:h-[449px] lg:h-[596px] flex flex-col items-center">
+        <div className="container relative w-full h-full">
+            <picture className='w-full max-w-[328px] sm:max-w-[561px] lg:max-w-[714px] xl:max-w-[834px] absolute top-0 left-2/4 transform -translate-x-2/4 lg:left-[5%] lg:translate-x-0 mx-auto'>
+            <source media="(min-width: 1280px)" srcSet="/assets/img/home/mockup-xl.png" />
+            <source media="(min-width: 1024px)" srcSet="/assets/img/home/mockup-lg.png" />
+            <source media="(min-width: 640px)" srcSet="/assets/img/home/mockup-sm.png" />
+              <img
+              src="/assets/img/home/mockup-base.png"
               alt="Image screen"
-              className="h-auto w-9/12 xl:w-[809px]"
-            />
-            <div className="pb-20 flex flex-col items-center">
-              <HomeLineBanner className="relative top-[-17px] -left-4 w-[265.76px] h-[362.84px] xl:w-[356.48px] xl:h-[392.12px] origin-center transform -rotate-12" />
+              />
+          </picture>
+          <div className="flex flex-col max-w-[300px] sm:max-w-[475px] lg:max-h-[none] w-full h-full relative lg:static items-center mx-auto">
+              <HomeLineBanner />
               <ButtonPortfolio
-                locale={locale}
-                customStyles="h-[37px] w-fit"
+                locale={i18nQuery?.lang}
+                customStyles="!absolute bottom-0 right-0 lg:bottom-24 lg:right-24 xl:bottom-6 xl:right-0 h-[37px] w-fit"
                 i18nKeyText={"PortfolioHomeSection.title"}
                 pathname="/portfolio"
               />
-            </div>
           </div>
         </div>
       </div>
