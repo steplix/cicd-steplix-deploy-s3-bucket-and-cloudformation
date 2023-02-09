@@ -7,7 +7,7 @@ import Banner from "../Banner";
 const Portfolio = () => {
 
   return (
-    <section className="mb-[72px] lg:mt-[-196px]">
+    <section className="mb-[72px] lg:mt-0">
       <>
         <Banner />
 

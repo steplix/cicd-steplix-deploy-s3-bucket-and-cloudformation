@@ -62,6 +62,8 @@ module.exports = {
           "url('/assets/img/what-we-do/what-we-do-steps-lg.png')",
         ["what-we-do-steps-xl"]:
           "url('/assets/img/what-we-do/what-we-do-steps-xl.png')",
+        ["mountain"]:
+          "url('/assets/img/home/mountain.svg')",
       },
     },
   },

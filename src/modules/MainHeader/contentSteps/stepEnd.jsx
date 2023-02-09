@@ -7,7 +7,7 @@ import CustomNextLink from "@/common/components/CustomNextLink";
 import Icon from '@/components/Icon';
 
 const StepEnd = () => {
-    const { query: { locale }, push } = useRouter();
+    const { query: { locale } } = useRouter();
     const [i18nQuery] = useLanguageQuery(locale);
     const { t } = useTranslation(i18nQuery?.locale);
 
