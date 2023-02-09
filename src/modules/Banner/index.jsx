@@ -36,7 +36,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <div className="banner relative h-[596px] xl:h-[639px] w-screen">
+        <div className="banner relative h-[596px] xl:h-[639px]">
           <div className="container flex justify-center items-end">
             <img
               src="/assets/img/home/mockup-xs.png"

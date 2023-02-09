@@ -15,7 +15,7 @@ const Portfolio = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <section className="mb-[72px] lg:mt-[-196px]">
+    <section className="mb-[72px] lg:mt-0">
       <>
         <Banner />
 
