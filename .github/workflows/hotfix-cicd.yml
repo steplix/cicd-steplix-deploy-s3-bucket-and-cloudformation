@@ -1,14 +1,15 @@
-name: Push in development branch
+name: Push Hotfix in master branch
 run-name: >
-  "Create PR FROM develop TO ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}: ${{ github.event.head_commit.message }}"
+  Push: ${{ github.ref_name }}
 
 on:
   push:
     branches:
-      - develop
+      - 'hotfix/**'
 
 
 jobs:
+
   testing:
     uses: ./.github/workflows/test.yml
     with:
@@ -25,22 +26,28 @@ jobs:
       - run: npm ci
       - run: npm run release
 
+  generate-pr-to-master:
+    needs: [testing,build]
+    uses: ./.github/workflows/generate-pr.yml
+    with:
+      destination-branch-name: ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}
+      pr-title: "<patch> is TAG VERSION INCREMENT: Pushing HOTFIX ${{ github.ref_name }} into Master"
 
-  generate-pr:
-    needs: [build]
+  generate-pr-to-develop:
+    needs: [testing,build]
     uses: ./.github/workflows/generate-pr.yml
     with:
       destination-branch-name: ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}
-      pr-title: "Pushing develop into ${{ vars.DESTINATION_PR_ON_DEVELOP_WORKFLOW }}"
+      pr-title: "Pushing HOTFIX ${{ github.ref_name }} into Develop"
 
   notify:
     if: ${{ always() }}
-    needs: [testing, build, generate-pr]
+    needs: [ testing,build,generate-pr-to-master,generate-pr-to-develop ]
     runs-on: ubuntu-latest
     steps:
       - name: Notify Slack
         uses: steplix/cicd-notify@0.0.17
         with:
           template: 'push'
-          status: ${{ needs.testing.result || needs.build.result || needs.generate-pr.result }}
+          status: ${{ needs.testing.result || needs.build.result || needs.generate-pr-to-master.result || needs.generate-pr-to-develop.result }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK }}

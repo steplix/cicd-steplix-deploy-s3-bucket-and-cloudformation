@@ -184,24 +184,24 @@
   "seeMore": "See more",
   "navbar": {
     "item0": {
+      "route": "Home",
+      "title": ""
+    },
+    "item1": {
       "route": "About Us",
       "title": "About Us"
     },
-    "item1": {
+    "item2": {
       "route": "What we do",
       "title": "What we do"
     },
-    "item2": {
+    "item3": {
       "route": "Portfolio",
       "title": "Our Portfolio"
     },
-    "item3": {
+    "item4": {
       "route": "Contact Us",
       "title": "Contact Us"
-    },
-    "item4": {
-      "route": "Home",
-      "title": ""
     },
     "item5": {
       "route": "Become a Steplixer",
@@ -355,42 +355,35 @@
   "SteplixBenefits": {
     "benefit1": {
       "title": "Hybrid work",
-      "description": "The office is in Palermo and it's all good. You can also work from home on the days you want."
+      "description": "You can choose which days you work from the office. The place is prepared to make you feel comfortable and have the enthusiasm to come."
     },
-
     "benefit2": {
-      "title": "When you choose to come to the office",
-      "description": "Massage therapist, osteopath, access to refreshments and snacks, barbecues at lunch, game room."
+      "title": "Salary review",
+      "description": "We make adjustments according to the results of performance evaluations and fulfillment of objectives."
     },
-
     "benefit3": {
-      "title": "Adjustments for inflation",
-      "description": "3 times a year, including instances of performance evaluation where recognitions are contemplated."
-    },
-
-    "benefit4": {
-      "title": "3 weeks vacation",
-      "description": "2 for you to take whenever you want and one at the end of the year during the holidays when all Steplixers take a week to rest and recharge our batteries."
-    },
-
-    "benefit5": {
       "title": "Flexibility",
       "description": "We work by objectives. As long as you are organized and meet your goals, everything is ok."
     },
-
-    "benefit6": {
+    "benefit4": {
       "title": "English classes",
       "description": "We have teachers available for you to improve your English level."
     },
-
-    "benefit7": {
+    "benefit5": {
       "title": "Career plan",
       "description": "We have the tools available for you to grow and train in your area."
     },
-
-    "benefit8": {
+    "benefit6": {
       "title": "Top level prepaid health insurance",
       "description": "We care for and protect your health with the best providers in the country."
+    },
+    "benefit7": {
+      "title": "When you choose to come to the office",
+      "description": "Massage therapist, osteopath, access to refreshments and snacks, barbecues at lunch, game room."
+    },
+    "benefit8": {
+      "title": "Competitive salary",
+      "description": "We offer market-aligned compensation."
     }
   },
 

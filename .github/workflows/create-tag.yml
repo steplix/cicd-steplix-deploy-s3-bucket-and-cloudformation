@@ -2,6 +2,12 @@ name: Create TAG
 
 on:
   workflow_call:
+    inputs:
+      text-where-search-for-parameters:
+        type: string
+        description: 'Message to parse. Defaults to head commit message'
+        required: false
+        default: ${{ github.event.head_commit.message }}
     outputs:
       tag:
         description: "The tag created"
@@ -16,16 +22,16 @@ jobs:
     outputs:
       tag: ${{ steps.bumped_tag.outputs.version }}
     steps:
-      - uses: steplix/cicd-get-parameter@v0.1.0
+      - uses: steplix/cicd-check-parameter@1.0.0
         id: args
         with:
-          message:
-          parameter-0: major
-          parameter-1: minor
+          message: ${{ inputs.text-where-search-for-parameters}}
+          param-0: major
+          param-1: minor
 
       - name: Get bumping mode
         id: bump-mode
-        run: echo "mode=${{ steps.args.outputs.parameter-0 || steps.args.outputs.parameter-1 || 'patch' }}" >> $GITHUB_OUTPUT
+        run: echo "mode=${{ (steps.args.outputs.param-0 == 'true' && 'major') || (steps.args.outputs.param-1 == 'true' && 'minor') || 'patch' }}" >> $GITHUB_OUTPUT
 
       # Bump tag without affecting repository
       - uses: zwaldowski/semver-release-action@v3

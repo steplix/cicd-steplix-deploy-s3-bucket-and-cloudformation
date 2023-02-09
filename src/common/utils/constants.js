@@ -50,16 +50,16 @@ export const routesMap = {
     title: "",
   },
   "about-us": {
-    title: "navbar.item0.title",
-  },
-  "what-we-do": {
     title: "navbar.item1.title",
   },
-  portfolio: {
+  "what-we-do": {
     title: "navbar.item2.title",
   },
-  contact: {
+  portfolio: {
     title: "navbar.item3.title",
+  },
+  contact: {
+    title: "navbar.item4.title",
   },
   "become-steplixer": {
     title: "navbar.item5.title",
@@ -219,16 +219,6 @@ export const PHOTO_CAROUSEL = [
 
 export const CARD_CONTACT = [
   {
-    name: "Kevin",
-    surname: "Halbinger",
-    email: "khalbinger@steplix.com",
-    meeting: "https://meetings.hubspot.com/kevin-halbinger?embed=true%22",
-    linkedin: "https://www.linkedin.com/in/kevin-halbingercofoundersteplix/",
-    imgSrc: "/assets/img/contact/sellers/seller-1_cropped.png",
-    imgAlt: "contact.salesRepresentativeAlt.Kevin"
-  },
-
-  {
     name: "Enrique",
     surname: "Serrani",
     email: "eserrani@steplix.com",
@@ -237,24 +227,14 @@ export const CARD_CONTACT = [
     imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
     imgAlt: "contact.salesRepresentativeAlt.Enrique"
   },
-
   {
     name: "Jorge",
     surname: "Yánez",
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
-    imgAlt: "contact.salesRepresentativeAlt.Jorge"
-  },
-
-  {
-    name: "Mariano",
-    surname: "Wegier",
-    email: "mwegier@steplix.com",
-    meeting: "https://meetings.hubspot.com/mariano-wegier?embed=true",
-    linkedin: "https://www.linkedin.com/in/marianowegier/",
-    imgSrc: "/assets/img/contact/sellers/seller-4_cropped.png",
-    imgAlt: "contact.salesRepresentativeAlt.Mariano"
+    imgAlt: "contact.salesRepresentativeAlt.Jorge",
+    imgSrc: "/assets/img/contact/sellers/seller-5.png",
   },
 ];
 
@@ -372,33 +352,33 @@ export const BECOME_BENEFITS = [
     benefit: "benefit1",
   },
   {
-    icon: "location",
+    icon: "inflation",
     benefit: "benefit2",
   },
   {
-    icon: "inflation",
+    icon: "goal",
     benefit: "benefit3",
   },
   {
-    icon: "vacations",
+    icon: "eng",
     benefit: "benefit4",
   },
   {
-    icon: "goal",
+    icon: "book",
     benefit: "benefit5",
   },
   {
-    icon: "eng",
+    icon: "heart",
     benefit: "benefit6",
   },
 
   {
-    icon: "book",
+    icon: "location",
     benefit: "benefit7",
   },
 
   {
-    icon: "heart",
+    icon: "salary",
     benefit: "benefit8",
   },
 ];
@@ -434,132 +414,167 @@ export const MOUNTAIN_STEPS = {
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSize: 0,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 0,
   },
   {
     id: 2,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 155,
+    scrollSizeNext: 155,
+    scrollSizePrevious: 155,
   },
   {
     id: 3,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 155,
+    scrollSizeNext: 155,
+    scrollSizePrevious: 155,
   },
   {
     id: 4,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 270,
+    scrollSizeNext: 270,
+    scrollSizePrevious: 155,
   },
   {
     id: 5,
     showNext: false,
     showPrevious: true,
     showRestart: true,
-    scrollSize: 270, 
+    scrollSizeNext: 0, 
+    scrollSizePrevious: 270,
   }],
   sm: [{
     id: 1,
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSize: 0,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 0,
   },
   {
     id: 2,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 0,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 0,
   },
   {
     id: 3,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 155,
+    scrollSizeNext: 155,
+    scrollSizePrevious: 155,
   },
   {
     id: 4,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 270,
+    scrollSizeNext: 270,
+    scrollSizePrevious: 155,
   },
   {
     id: 5,
     showNext: false,
     showPrevious: true,
-    showRestart: true, 
-    scrollSize: 270,
+    showRestart: true,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 270,
   }],
   md: [{
     id: 1,
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSize: 0,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 0,
   },
   {
     id: 2,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 0,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 0,
   },
   {
     id: 3,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 155,
+    scrollSizeNext: 155,
+    scrollSizePrevious: 155,
   },
   {
     id: 4,
     showNext: true,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 270,
+    scrollSizeNext: 270,
+    scrollSizePrevious: 155,
   },
   {
     id: 5,
     showNext: false,
     showPrevious: true,
     showRestart: true, 
-    scrollSize: 270,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 168,
   }],
   lg: [{
     id: 1,
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSize: 650,
+    scrollSizeNext: 650,
+    scrollSizePrevious: 0,
   },
   {
     id: 5,
     showNext: false,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 650,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 650,
   }],
   xl: [{
     id: 1,
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSize: 650,
+    scrollSizeNext: 650,
+    scrollSizePrevious: 0,
   },
   {
     id: 5,
     showNext: false,
     showPrevious: true,
     showRestart: false,
-    scrollSize: 650,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 650,
+  }],
+  '2xl': [{
+    id: 1,
+    showNext: true,
+    showPrevious: false,
+    showRestart: false,
+    scrollSizeNext: 100,
+    scrollSizePrevious: 0,
+  },
+  {
+    id: 5,
+    showNext: false,
+    showPrevious: true,
+    showRestart: false,
+    scrollSizeNext: 0,
+    scrollSizePrevious: 100,
   }]
 }

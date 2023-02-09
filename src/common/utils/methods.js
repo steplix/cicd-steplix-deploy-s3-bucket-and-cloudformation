@@ -57,7 +57,10 @@ export const getShortBreakpoint = (width) => {
 		case width >= 1024 && width < 1280:
 			return 'lg';
 
-		case width >= 1280:
+		case width >= 1280 && width < 1360:
 			return 'xl';
+
+    case width >= 1360:
+      return '2xl';
 	}
 }
