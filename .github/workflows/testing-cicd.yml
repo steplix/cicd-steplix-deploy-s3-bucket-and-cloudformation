@@ -1,6 +1,6 @@
 name: Push in testing branch
 run-name: >
-  "Deploying testing and creting PR to ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}"
+  "Deploying testing and creating PR to ${{ vars.DESTINATION_PR_ON_TESTING_WORKFLOW }}"
 on:
   push:
     branches:
@@ -43,11 +43,11 @@ jobs:
   notify:
     if: ${{ always() }}
     needs: [ build_deploy,generate-pr ]
-    uses: ./.github/workflows/notify.yml
-    with:
-      slack-channel: ${{ vars.SLACK_CHANNEL }}
-      slack-title: Push in TESTING branch
-      slack-message: ${{ github.repository.url }}
-      job-status: ${{ needs.build_deploy.result || needs.generate-pr.result }}
-    secrets:
-      slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Slack
+        uses: steplix/cicd-notify@0.0.17
+        with:
+          template: 'push'
+          status: ${{ needs.build_deploy.result || needs.generate-pr.result }}
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK }}
