@@ -36,11 +36,11 @@ jobs:
   notify:
     if: ${{ always() }}
     needs: [testing, build, generate-pr]
-    uses: ./.github/workflows/notify.yml
-    with:
-      slack-channel: ${{ vars.SLACK_CHANNEL }}
-      slack-title: Push in DEVELOP branch
-      slack-message: ${{ github.repository.url }}
-      job-status: ${{ needs.testing.result || needs.build.result || needs.generate-pr.result }}
-    secrets:
-      slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Slack
+        uses: steplix/cicd-notify@0.0.17
+        with:
+          template: 'push'
+          status: ${{ needs.testing.result || needs.build.result || needs.generate-pr.result }}
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK }}
