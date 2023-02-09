@@ -92,8 +92,8 @@ Accordion.Body = function AccordionHeader({ children }) {
           <motion.div
           className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden px-6 pb-4 pt-0 relative z-50 bg-white`}
           initial={{ height: 0 }}
-          animate={{ height: 'auto', transition: { duration: 0.5 } }}
-          exit={{ height: 0, opacity: 0, transition: { duration: 0.5 } }}
+          animate={{ height: 'auto', transition: { ease: "linear", duration: 0.4 } }}
+          exit={{ height: 0, opacity: 0, transition: { ease: "linear", duration: 0.2 } }}
         >
           {children}
         </motion.div>

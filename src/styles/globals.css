@@ -421,7 +421,7 @@
   }
 
   .portfolioCarousel {
-    @apply max-w-[280px] sm:max-w-[376px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px] lg:min-h-[418px];
+    @apply max-w-[288px] sm:max-w-[384px] lg:max-w-[784px] xl:max-w-[1008px] rounded-[20px] lg:min-h-[418px];
   }
 
   .clientsCarousel {
@@ -512,15 +512,28 @@
   .banner {
     position: relative;
     background-image: url("../../public/assets/img/bg-banner.png");
-    background-size: contain;
+    background-size: 100% 146px;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 640px) {
+    .banner {
+      background-size: 100% 233px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .banner {
+      background-size: 100% 387px;
+    }
   }
 
   @media (min-width: 1280px) {
     .banner {
-      background-size: cover;
+      background-size: 100% 467px;
     }
   }
+
   .no-highlight {
     -webkit-tap-highlight-color: transparent;
   }

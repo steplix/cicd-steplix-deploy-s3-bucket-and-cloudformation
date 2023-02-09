@@ -71,3 +71,4 @@ export * from "./mailTextField";
 export * from "./whatsapp";
 export * from "./scrum";
 export * from "./architect";
+export * from "./salary";

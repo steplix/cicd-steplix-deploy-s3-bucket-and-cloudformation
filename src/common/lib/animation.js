@@ -6,20 +6,20 @@ export const stagger = {
     },
   };
   
-  export const fadeInUp = {
+  export const fadeInFromTheSide = {
     initial: {
-      y: 60,
+      x: 60,
       opacity: 0,
     },
     animate: {
-      y: 0,
+      x: 0,
       opacity: 1,
       transition: {
         duration: 0.75,
         ease: [0.6, -0.5, 0.01, 0.99],
       },
     },
-};
+  };
 
 export const imageHoverZoomIn = {
     scale: 1.1,

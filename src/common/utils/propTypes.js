@@ -76,5 +76,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "mailTextField",
   "whatsapp",
   "scrum",
-  "architect"
+  "architect",
+  "salary"
 ]);

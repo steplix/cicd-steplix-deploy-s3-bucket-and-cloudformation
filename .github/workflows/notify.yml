@@ -26,7 +26,7 @@ on:
 
 jobs:
 
-### Running the notification
+  ### Running the notification
 
   notification:
     runs-on: ubuntu-latest
