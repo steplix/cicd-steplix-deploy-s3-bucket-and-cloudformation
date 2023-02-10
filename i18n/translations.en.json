@@ -330,14 +330,27 @@
     "stepThreeDescription": "We accept the challenge of each client with the commitment to achieve the results in the agreed time, with the correct investment and ROI.",
     "finalTitle": "Together we reach <br/> the top",
     "finalSubtitle": "#DigitalSherpas",
-    "finalTextLink": "Discover us"
+    "finalTextLink": "Discover us",
+    "bannerImageAlt": "Mockup image of our application Steplix time"
   },
   "portfolio": {
     "cards": {
-      "finket": "Design and development of a digital platform for financial services.",
-      "pow": "Design and development of a web dashboard to visualize E-commerce metrics and indicators.",
-      "valid": "Design and development of an interface for cell phone stores.",
-      "sura": "Design and development of an online quotation system for your customers."
+      "finket": {
+        "text": "Design and development of a digital platform for financial services.",
+        "imageAlt": "Mockup image of Finket Application"
+      },
+      "pow": {
+        "text": "Design and development of a web dashboard to visualize E-commerce metrics and indicators.",
+        "imageAlt": "Mockup image of Pow Application"
+      },
+      "valid": {
+        "text": "Design and development of an interface for cell phone stores.",
+        "imageAlt": "Mockup image of Valid Application"
+      },
+      "sura": {
+        "text": "Design and development of an online quotation system for your customers.",
+        "imageAlt": "Mockup image of Sura Application"
+      }
     },
     "message": "Do you want to know more?",
     "button": "Contact us"

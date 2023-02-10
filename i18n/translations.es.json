@@ -328,14 +328,27 @@
     "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
     "finalTitle": "Juntos llegamos <br/> a la cima",
     "finalSubtitle": "#DigitalSherpas",
-    "finalTextLink": "Descubrenos"
+    "finalTextLink": "Descubrenos",
+    "bannerImageAlt": "Imagen de la maqueta de nuestra aplicación Steplix time"
   },
   "portfolio": {
     "cards": {
-      "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-      "pow": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
-      "valid": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
-      "sura": "Diseño y desarrollo de un cotizador online para sus clientes."
+      "finket": {
+        "text": "Diseño y desarrollo de plataforma digital de servicios financieros.",
+        "imageAlt": "Imagén maqueta de la aplicación de Finket"
+      },
+      "pow": {
+        "text": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
+        "imageAlt": "Imagén maqueta de la aplicación de Pow"
+      },
+      "valid": {
+        "text": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
+        "imageAlt": "Imagén maqueta de la aplicación de Valid"
+      },
+      "sura": {
+        "text": "Diseño y desarrollo de un cotizador online para sus clientes.",
+        "imageAlt": "Imagén maqueta de la aplicación de Sura"
+      }
     },
     "message": "¿Quieres conocer más?",
     "button": "Contáctanos"
