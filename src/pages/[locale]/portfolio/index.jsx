@@ -65,6 +65,7 @@ const PortfolioView = ({ locale }) => {
               borderWidth="border-2"
               size="text-4xl"
               height="h-[32px]"
+              type="h1"
             />
             <p>{t("PortfolioSection.parraf1")}</p>
           </div>

@@ -31,6 +31,7 @@ function BecomeSteplixerPage({ locale }) {
           borderWidth="border-2"
           size="text-[26px] lg:text-4xl"
           height="h-[32px]"
+          type="h1"
         />
 
         <div className="mt-10 mb lg:grid lg:grid-cols-2 lg:gap-x-6">

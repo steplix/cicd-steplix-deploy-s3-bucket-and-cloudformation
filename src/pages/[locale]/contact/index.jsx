@@ -47,6 +47,7 @@ const Contact = ({ locale }) => {
             borderWidth="border-2"
             size="text-4xl"
             height="h-[32px]"
+            type="h1"
           />
 
           <div className="mt-6 mb-10">

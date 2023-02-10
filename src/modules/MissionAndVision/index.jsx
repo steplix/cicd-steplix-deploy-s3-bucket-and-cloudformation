@@ -19,6 +19,7 @@ const MissionAndVision = ({ locale }) => {
             content={t("about_us.mission.title")}
             size="text-[26px] lg:text-[32px]"
             height="h-[32px]"
+            type="h1"
           />
           <MisionIcon />
         </div>
