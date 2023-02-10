@@ -4,13 +4,15 @@ import TransitionWrapper from "@/common/components/TransitionWrapper";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
+import { useRouter } from "next/router";
+import { useLanguageQuery } from "next-export-i18n";
 
 export default function Home() {
-    const { t } = useTranslation();
+    const { query: { locale } } = useRouter();
+    const [i18nQuery] = useLanguageQuery(locale);
+    const { t } = useTranslation(i18nQuery?.lang !== 'es' ? 'en' : 'es');
 
     //TODO: CHECK IMAGE SCRIPT
-
-    // , description:t("metaTags.home.description"), keywords:t("metaTags.home.keywords")
 
     return (
         <>
