@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
 import propTypes from 'prop-types';
+import Icon from "../Icon"
 import { useTranslation } from "@/common/lib/i18n";
 import { useKeenSlider } from "keen-slider/react"
 import { motion } from "framer-motion";
 import { imageHoverZoomIn } from "@/common/lib/animation";
-import Icon from "../Icon"
 import { LOCALE_SLUGS } from "@/common/utils/constants";
 
 const PhotoCarousel = ({ photoArray, locale }) => {
@@ -100,10 +100,10 @@ const PhotoCarousel = ({ photoArray, locale }) => {
         )}
           {loaded && instanceRef.current && (
             <>
-              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()} aria-label={t("carouselButtonAriaLabel.backward")}>
                 <Icon name="back" className="h-[48px] w-[48px]" />
               </button>
-              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()} aria-label={t("carouselButtonAriaLabel.forward")}>
                 <Icon name="forward" className="h-[48px] w-[48px]" />
               </button>
             </>

@@ -25,6 +25,7 @@ const Banner = () => {
           <div className="flex flex-col max-w-[300px] sm:max-w-[475px] lg:max-h-[none] w-full h-full relative lg:static items-center mx-auto">
               <HomeLineBanner />
               <ButtonPortfolio
+                ariaLabel={t("navbar.item3.ariaLabel")}
                 locale={i18nQuery?.lang}
                 customStyles="!absolute bottom-0 right-0 lg:bottom-24 lg:right-24 xl:bottom-6 xl:right-0 h-[37px] w-fit"
                 i18nKeyText={"PortfolioHomeSection.title"}

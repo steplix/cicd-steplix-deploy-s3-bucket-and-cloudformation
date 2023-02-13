@@ -1,5 +1,5 @@
-var en = require("./translations.en.json");
-var es = require("./translations.es.json");
+const en = require("./translations.en.json");
+const es = require("./translations.es.json");
 
 const i18n = {
     translations: {
@@ -7,7 +7,6 @@ const i18n = {
         es,
     },
     defaultLang: "es",
-    useBrowserDefault: true,
 };
 
 module.exports = i18n;

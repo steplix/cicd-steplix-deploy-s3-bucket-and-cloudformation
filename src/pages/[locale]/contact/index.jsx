@@ -122,6 +122,7 @@ const Contact = ({ locale }) => {
                   customStyles="h-[37px] my-8"
                   i18nKeyText={"ButtonBecomeSteplixer"}
                   pathname="/become-steplixer"
+                  ariaLabel={t("navbar.item5.ariaLabel")}
                 />
               </div>
             </div>

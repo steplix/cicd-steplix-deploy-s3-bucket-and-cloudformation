@@ -38,7 +38,7 @@ const OurValues = ({ locale }) => {
                     <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" resize />
                 </div>
             </motion.div>
-            <ButtonBecomeSteplixer locale={locale} customStyles="h-[37px] my-4 mx-auto" i18nKeyText={"ButtonProject"} pathname="/contact" />
+            <ButtonBecomeSteplixer ariaLabel={t("navbar.item4.ariaLabel")} locale={locale} customStyles="h-[37px] my-4 mx-auto" i18nKeyText={"ButtonProject"} pathname="/contact" />
         </section>
     )
 }

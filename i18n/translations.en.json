@@ -17,6 +17,8 @@
       "Enrique": "Photograpy of Enrique Serrani, sales representative",
       "Jorge": "Photograpy of Jorge Yánez, sales representative"
     },
+    "scheduleAriaLabel": "Schedule an appointment with one of our sales representative",
+    "socialMediaAriaLabel": "Visit one of our sales representative's LinkedIn",
     "ourOfficeTitleEmpty": "office",
     "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
     "copyButton": "Copied",
@@ -185,43 +187,54 @@
   "navbar": {
     "item0": {
       "route": "Home",
-      "title": ""
+      "title": "",
+      "ariaLabel": "Navigate to the home page"
     },
     "item1": {
       "route": "About Us",
-      "title": "About Us"
+      "title": "About Us",
+      "ariaLabel": "Navigate to the about us page"
     },
     "item2": {
       "route": "What we do",
-      "title": "What we do"
+      "title": "What we do",
+      "ariaLabel": "Navigate to the what we do page"
     },
     "item3": {
       "route": "Portfolio",
-      "title": "Our Portfolio"
+      "title": "Our Portfolio",
+      "ariaLabel": "Navigate to the portfolio page"
     },
     "item4": {
       "route": "Contact Us",
-      "title": "Contact Us"
+      "title": "Contact Us",
+      "ariaLabel": "Navigate to the contact us page"
     },
     "item5": {
       "route": "Become a Steplixer",
-      "title": "Become a Steplixer"
+      "title": "Become a Steplixer",
+      "ariaLabel": "Navigate to the become steplixer page"
     },
     "currentLang": "English",
     "targetLang": "Spanish",
     "shortTargetLang": "es",
-    "logoAlt": "Steplix logo that allows you to navigate to the main screen."
+    "submenuOpenAriaLabel": "Open navigation submenu",
+    "submenuCloseAriaLabel": "Close navigation submenu"
   },
   "footer": {
     "certificateText": "Quality policy",
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
+    "certificateAriaLabel": "Visit the document of our quality policy",
     "rights": "All rights reserved®",
     "links": {
       "item0": "About us",
       "item1": "What we do",
       "item2": "Our portfolio",
       "item3": "Contact Us"
-    }
+    },
+    "instagramAriaLabel": "Visit Steplix Instagram",
+    "linkedInAriaLabel": "Visit Steplix LinkedIn",
+    "emailAriaLabel": "Send us an email"
   },
   "metaTags": {
     "home": {
@@ -425,5 +438,9 @@
       "title": "Awareness",
       "description": "It is the ability to recognize the surrounding reality. It is to promote sustainability, empathy and diversity. It is to influence from our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. It is to avoid discrimination, aggression and malice."
     }
+  },
+  "carouselButtonAriaLabel": {
+    "backward": "Button that moves the carousel backward",
+    "forward": "Button that moves the carousel forward"
   }
 }

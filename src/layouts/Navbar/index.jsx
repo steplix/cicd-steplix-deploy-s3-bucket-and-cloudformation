@@ -65,8 +65,9 @@ const Navbar = () => {
                 <a>
                   <img
                     src="/assets/img/logo-navbar.svg"
-                    alt="logo"
+                    alt="Steplix logo"
                     className="w-[75px] h-5"
+                    aria-label={t("navbar.item0.ariaLabel")}
                   />
                 </a>
               </CustomNextLink>
@@ -76,6 +77,7 @@ const Navbar = () => {
               <button
                 className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 lg:hidden"
                 onClick={() => setToggle(!toggle)}
+                aria-label={ toggle ? t("navbar.submenuCloseAriaLabel") : t("navbar.submenuOpenAriaLabel")}
               >
                 <span className={`line ${toggle && "line--toggle"}`} />
                 <span className={`line ${toggle && "line--toggle"}`} />
@@ -108,8 +110,9 @@ const Navbar = () => {
             <a>
               <img
                 src="/assets/img/logo-navbar.svg"
-                alt="logo"
+                alt="Steplix logo"
                 className="w-[90px] h-[24px] lg:w-[115px] lg:h-[40px]"
+                aria-label={t("navbar.item0.ariaLabel")}
               />
             </a>
           </CustomNextLink>
@@ -120,6 +123,7 @@ const Navbar = () => {
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   `/${i18nQuery?.lang}/about-us`
                 )}`}
+                aria-label={t("navbar.item1.ariaLabel")}
               >
                 {t("navbar.item1.route")}
               </a>
@@ -129,6 +133,7 @@ const Navbar = () => {
                 className={`nav--link nav--link--red ${isCurrentPathnameActive(
                   `/${i18nQuery?.lang}/what-we-do`
                 )}`}
+                aria-label={t("navbar.item2.ariaLabel")}
               >
                 {t("navbar.item2.route")}
               </a>
@@ -138,6 +143,7 @@ const Navbar = () => {
                 className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
                   `/${i18nQuery?.lang}/portfolio`
                 )}`}
+                aria-label={t("navbar.item3.ariaLabel")}
               >
                 {t("navbar.item3.route")}
               </a>
@@ -147,6 +153,7 @@ const Navbar = () => {
                 className={`nav--link nav--link--blue ${isCurrentPathnameActive(
                   `/${i18nQuery?.lang}/contact`
                 )}`}
+                aria-label={t("navbar.item4.ariaLabel")}
               >
                 {t("navbar.item4.route")}
               </a>

@@ -31,7 +31,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
         <div className="mt-[48px] flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-4 items-center justify-center">
           <p className='text-black text-[13px] font-medium'>{t("portfolio.message")}</p>
           <CustomNextLink to={`/${locale}/contact`}>
-            <button className='flex space-x-1 items-center justify-center text-xs font-bold text-blue sm:text-white bg-white sm:bg-blue w-fit sm:px-2 sm:py-1 rounded-[20px]'>
+            <button aria-label={t("navbar.item4.ariaLabel")} className='flex space-x-1 items-center justify-center text-xs font-bold text-blue sm:text-white bg-white sm:bg-blue w-fit sm:px-2 sm:py-1 rounded-[20px]'>
               <p>{t(`portfolio.button`)}</p>
               <Icon name="chevronDown" className="transform rotate-[270deg] w-[13px]" />
             </button>

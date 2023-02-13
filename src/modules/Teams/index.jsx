@@ -51,7 +51,7 @@ const Teams = ({ locale }) => {
                 {t("about_us.teams.description")}<span className="font-semibold">{t("about_us.teams.descriptionBold")}</span>
             </p>
             <div className='mx-auto my-0'>
-                <ButtonRaise locale={locale} customStyles="h-[37px] my-4" i18nKeyText={"ButtonBecomeSteplixer"} pathname="/become-steplixer" />
+                <ButtonRaise ariaLabel={t("navbar.item5.ariaLabel")} locale={locale} customStyles="h-[37px] my-4" i18nKeyText={"ButtonBecomeSteplixer"} pathname="/become-steplixer" />
             </div>
         </section>
     )

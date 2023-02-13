@@ -2,6 +2,7 @@
 import React from "react";
 import propTypes from "prop-types";
 import { useKeenSlider } from "keen-slider/react";
+import { useTranslation } from "@/common/lib/i18n";
 import Icon from "../Icon";
 
 const AdaptiveHeight = (slider) => {
@@ -13,6 +14,7 @@ const AdaptiveHeight = (slider) => {
 }
 
 const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = React.useState(false);
 
@@ -64,12 +66,14 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
           <button
             className="h-[48px] hidden sm:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full"
             onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}
+            aria-label={t("carouselButtonAriaLabel.backward")}
           >
             <Icon name="back" className="h-[48px] w-[48px]" />
           </button>
           <button
             className="h-[48px] hidden sm:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]"
             onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}
+            aria-label={t("carouselButtonAriaLabel.forward")}
           >
             <Icon name="forward" className="h-[48px] w-[48px]" />
           </button>

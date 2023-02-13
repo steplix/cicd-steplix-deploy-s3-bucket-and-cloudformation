@@ -41,12 +41,13 @@ const CardContact = ({
                 <p className="text-black text-base font-bold">{surname}</p>
               </div>
             </div>
-            <div
+            <button
               className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center absolute top-0 right-0 mt-4 mr-7 cursor-pointer"
               onClick={onClickSocialMediaButton}
+              aria-label={t("contact.socialMediaAriaLabel")}
             >
               <Icon name={cornerIconName} className="w-4 h-3" />
-            </div>
+            </button>
           </div>
           <div className="px-4 mb-8">
             <TextField text={email} clickEvent={onClickCopyButton} toastMessage={t("contact.copyButton")} />
@@ -58,6 +59,7 @@ const CardContact = ({
                 iconName="calendar"
                 customImageClass="w-4"
                 clickEvent={onClickCalendarButton}
+                ariaLabel={t("contact.scheduleAriaLabel")}
               />
             </div>
           )}
