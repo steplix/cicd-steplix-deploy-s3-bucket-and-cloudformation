@@ -25,7 +25,7 @@ const PostCard = ({ publishingAt, description, url }) => {
             <p className="text-grey-19 text-mobile mt-5 font-normal font-poppins sm:line-clamp-5 lg:line-clamp-none">{description}</p>
             <div className="text-grey-70 text-sm font-normal flex justify-end">
                 <Link href={url}>
-                    <a target="_blank">
+                    <a target="_blank" aria-label={t("OurPostsSay.postLinkAriaLabel")}>
                         <span>{t("OurPostsSay.postLinkText")}</span>
                     </a>
                 </Link>

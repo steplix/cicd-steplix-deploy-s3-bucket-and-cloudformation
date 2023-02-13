@@ -304,6 +304,7 @@
   "OurPostsSay": {
     "title": "Our posts say",
     "postLinkText": "...see more",
+    "postLinkAriaLabel": "Read more about the post",
     "posts": [
       {
         "publishingAt": "september 2022",
@@ -344,7 +345,12 @@
     "finalTitle": "Together we reach <br/> the top",
     "finalSubtitle": "#DigitalSherpas",
     "finalTextLink": "Discover us",
-    "bannerImageAlt": "Mockup image of our application Steplix time"
+    "bannerImageAlt": "Mockup image of our application Steplix time",
+    "buttonAriaLabel": {
+      "forward": "Button to move forward into the animation flow",
+      "backward": "Button to move backward into the animation flow",
+      "reset": "Button to reset the animation flow"
+    } 
   },
   "portfolio": {
     "cards": {
@@ -375,7 +381,13 @@
     "sendCV": {
       "title": "If you can be a Steplixer...",
       "subtitle": "Send us your resume"
-    }
+    },
+    "accordionButtonAriaLabel": {
+      "open": "Open accordion item",
+      "close": "Close accordion item"
+    },
+    "socialMediaAriaLabel": "Visit our Head of People's LinkedIn",
+    "imageAlt": "Photography of Josefina Salimei, Steplix's Head of People"
   },
 
   "SteplixBenefits": {

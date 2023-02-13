@@ -4,13 +4,9 @@ import TransitionWrapper from "@/common/components/TransitionWrapper";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
-import { useRouter } from "next/router";
-import { useLanguageQuery } from "next-export-i18n";
 
 export default function Home() {
-    const { query: { locale } } = useRouter();
-    const [i18nQuery] = useLanguageQuery(locale);
-    const { t } = useTranslation(i18nQuery?.lang !== 'es' ? 'en' : 'es');
+    const { t } = useTranslation();
 
     //TODO: CHECK IMAGE SCRIPT
 

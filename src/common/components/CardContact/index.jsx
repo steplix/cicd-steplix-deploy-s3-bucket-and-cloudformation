@@ -6,6 +6,7 @@ import { PropTypes } from "prop-types";
 import { useRouter } from "next/router";
 import { useTranslation } from "@/common/lib/i18n";
 import { useLanguageQuery } from "next-export-i18n";
+import propTypes from "prop-types";
 
 const CardContact = ({
   email,
@@ -17,6 +18,7 @@ const CardContact = ({
   onClickCalendarButton,
   onClickSocialMediaButton,
   onClickCopyButton,
+  socialMediaAriaLabel
 }) => {
   const {
     query: { locale },
@@ -44,7 +46,7 @@ const CardContact = ({
             <button
               className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center absolute top-0 right-0 mt-4 mr-7 cursor-pointer"
               onClick={onClickSocialMediaButton}
-              aria-label={t("contact.socialMediaAriaLabel")}
+              aria-label={socialMediaAriaLabel}
             >
               <Icon name={cornerIconName} className="w-4 h-3" />
             </button>
@@ -79,6 +81,7 @@ CardContact.propTypes = {
   onClickCalendarButton: PropTypes.func,
   onClickSocialMediaButton: PropTypes.func,
   onClickCopyButton: PropTypes.func,
+  socialMediaAriaLabel: propTypes.string
 };
 
 CardContact.defaultProps = {

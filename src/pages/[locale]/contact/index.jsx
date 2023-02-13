@@ -66,6 +66,7 @@ const Contact = ({ locale }) => {
                 onClickCopyButton={() => copyToClipboard(item.email)}
                 onClickSocialMediaButton={() => openLink(item.linkedin)}
                 onClickCalendarButton={() => openLink(item.meeting)}
+                socialMediaAriaLabel={t("contact.socialMediaAriaLabel")}
               />
             ))}
           </div>

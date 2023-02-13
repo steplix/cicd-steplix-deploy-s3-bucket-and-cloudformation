@@ -15,7 +15,7 @@ const StepEnd = () => {
     <div className="flex flex-col gap-y-4 justify-end items-end h-full">
         <div className="flex justify-end items-end gap-2">
             <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
-                <a>
+                <a aria-label={t("navbar.item1.ariaLabel")}>
                     <span className="font-poppins text-blue text-xs font-bold">{t("MainHeader.finalTextLink")}</span>
                 </a>
             </CustomNextLink>

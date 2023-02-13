@@ -86,6 +86,8 @@ function BecomeSteplixerPage({ locale }) {
             name="Josefina"
             surname="Salimei"
             imgSrc={"/assets/img/become/josefina-salimei.png"}
+            imgAlt={t("BecomeSteplixerSection.imageAlt")}
+            socialMediaAriaLabel={t("BecomeSteplixerSection.socialMediaAriaLabel")}
             onClickCopyButton={() => copyToClipboard("people@steplix.com")}
             onClickSocialMediaButton={() =>
               openLink(

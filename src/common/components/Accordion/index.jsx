@@ -1,5 +1,6 @@
 import { forwardRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from "@/common/lib/i18n";
 import PropTypes from "prop-types";
 import AccordionItemProvider, {
   useItemAccordion,
@@ -48,6 +49,7 @@ Accordion.Item = function AccordionItem({ children, ...props }) {
 Accordion.Header = function AccordionHeader({ children, ...props }) {
   const { id, setItemId, toggleShow, rotate, closeItem } = useItemAccordion();
   const { chevron, closeAccordion } = useGlobalAccordion();
+  const { t } = useTranslation();
 
   const onClick = () => {
     toggleShow();
@@ -64,10 +66,11 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
 
   return (
     <>
-      <div
-        className={`transition-all flex justify-between cursor-pointer text-2xl px-6 py-[17px] font-normal select-none items-center`}
+      <button
+        className={`!w-full transition-all flex justify-between cursor-pointer text-2xl px-6 py-[17px] font-normal select-none items-center`}
         onClick={onClick}
         {...props}
+        aria-label={rotate ? t("BecomeSteplixerSection.accordionButtonAriaLabel.close") : t("BecomeSteplixerSection.accordionButtonAriaLabel.open")}
       >
         {children}
         {chevron && (
@@ -77,7 +80,7 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
             <Icon name="chevronDown" className="w-6" fill="#00A9E0" />
           </span>
         )}
-      </div>
+      </button>
     </>
   );
 };
