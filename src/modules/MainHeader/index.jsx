@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import _ from "lodash";
-import { LOCALE_SLUGS, MOUNTAIN_STEPS } from '@/common/utils/constants';
+import { useTranslation } from "@/common/lib/i18n";
+import { MOUNTAIN_STEPS } from '@/common/utils/constants';
 import { useMountainScroll } from "@/common/hooks/useMountainScroll";
 import { getShortBreakpoint } from "@/common/utils/methods";
 import StepInitial from "./contentSteps/stepInitial";
@@ -12,6 +12,7 @@ import ScrollButton from "./contentSteps/scrollButton";
 
 const MainHeader = () => {
   const scrollRef = useMountainScroll();
+  const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
   const [stepsByBreakpoint, setStepsByBreakpoint] = useState(MOUNTAIN_STEPS['xs']);
   const [showStepIntermediate, setShowStepIntermediate] = useState({
@@ -72,11 +73,11 @@ const MainHeader = () => {
 
   return (
     <header className="relative">
-      <div ref={scrollRef} className="overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden whitespace-nowrap lg:h-[626px] xl:h-[572px] 2xl:container 2xl:p-0">
+      <div ref={scrollRef}  className="containerScroll overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden whitespace-nowrap lg:h-[626px] xl:h-[572px] 2xl:container 2xl:p-0">
         <div className="relative bg-mountain bg-no-repeat bg-contain sm:bg-cover lg:bg-contain w-[1088px] sm:w-[1091px] lg:w-[1725px] h-[536px] sm:h-[538px] lg:h-[824.15px] top-[59px] xl:top-6 sm:top-[50px] lg:translate-x-[-18px] 2xl:translate-x-[-291px] lg:z-20">
           {stepsByBreakpoint[currentStep-1].id === 1 &&
             <>
-              <div className="absolute hidden lg:block top-[458px] left-[463px] lg:z-20"
+              <button aria-label={t("MainHeader.buttonAriaLabel.forward")} className="absolute hidden lg:block top-[458px] left-[463px] lg:z-20"
                 onClick={() =>
                   setShowStepIntermediate({ one: !showStepIntermediate.one, two: false, three: false })
                 }
@@ -88,8 +89,8 @@ const MainHeader = () => {
                 }
               >
                 <MountainStep/>
-              </div>
-              <div className="absolute hidden lg:block top-[210px] left-[753px] lg:z-20"
+              </button>
+              <button aria-label={t("MainHeader.buttonAriaLabel.forward")} className="absolute hidden lg:block top-[210px] left-[753px] lg:z-20"
                 onClick={() =>
                   setShowStepIntermediate({ one: false, two: !showStepIntermediate.two, three: false })
                 }
@@ -101,8 +102,8 @@ const MainHeader = () => {
                 }
               >
                 <MountainStep/>
-              </div>
-              <div className="absolute hidden lg:block top-[18px] left-[988px] lg:z-20"
+              </button>
+              <button aria-label={t("MainHeader.buttonAriaLabel.forward")} className="absolute hidden lg:block top-[18px] left-[988px] lg:z-20"
                 onClick={() =>
                   setShowStepIntermediate({ one: false, two: false, three: !showStepIntermediate.three })
                 }
@@ -114,7 +115,7 @@ const MainHeader = () => {
                 }
               >
                 <MountainStep/>
-              </div>
+              </button>
             </>
           }
         </div>
@@ -217,6 +218,7 @@ const MainHeader = () => {
           icon="back"
           scrollAction={() => scrollLeft(stepsByBreakpoint[currentStep-1].scrollSizePrevious)}
           customClass="float-left lg:float-right"
+          ariaLabel={t("MainHeader.buttonAriaLabel.backward")}
         />
 
         <ScrollButton
@@ -224,6 +226,7 @@ const MainHeader = () => {
           icon="forward"
           scrollAction={() => scrollRight(stepsByBreakpoint[currentStep-1].scrollSizeNext)}
           customClass="float-right lg:float-left lg:z-20"
+          ariaLabel={t("MainHeader.buttonAriaLabel.forward")}
         />
 
         <ScrollButton
@@ -231,6 +234,7 @@ const MainHeader = () => {
           icon="restart"
           scrollAction={() => scrollInit()}
           customClass="float-right"
+          ariaLabel={t("MainHeader.buttonAriaLabel.reset")}
         />
       </div> 
     </header>

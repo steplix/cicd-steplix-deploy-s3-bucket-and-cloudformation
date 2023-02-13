@@ -47,6 +47,7 @@ const Contact = ({ locale }) => {
             borderWidth="border-2"
             size="text-4xl"
             height="h-[32px]"
+            type="h1"
           />
 
           <div className="mt-6 mb-10">
@@ -60,10 +61,12 @@ const Contact = ({ locale }) => {
                 name={item.name}
                 surname={item.surname}
                 imgSrc={item?.imgSrc}
+                imgAlt={t(item?.imgAlt)}
                 email={item.email}
                 onClickCopyButton={() => copyToClipboard(item.email)}
                 onClickSocialMediaButton={() => openLink(item.linkedin)}
                 onClickCalendarButton={() => openLink(item.meeting)}
+                socialMediaAriaLabel={t("contact.socialMediaAriaLabel")}
               />
             ))}
           </div>
@@ -76,7 +79,7 @@ const Contact = ({ locale }) => {
             height="h-[32px]"
           />
           <div className="flex justify-center my-8">
-            <PhotoCarousel photoArray={PHOTO_CAROUSEL} />
+            <PhotoCarousel photoArray={PHOTO_CAROUSEL} locale={locale} />
           </div>
           <section className="lg:flex lg:gap-8">
             <div>
@@ -120,6 +123,7 @@ const Contact = ({ locale }) => {
                   customStyles="h-[37px] my-8"
                   i18nKeyText={"ButtonBecomeSteplixer"}
                   pathname="/become-steplixer"
+                  ariaLabel={t("navbar.item5.ariaLabel")}
                 />
               </div>
             </div>

@@ -433,6 +433,10 @@
   }
 
   /*------- Main Header Section ------- */
+  .containerScroll {
+    touch-action: none;
+  }
+
   .mainHeader {
     background-image: url("../../public/assets/img/home/mountain.svg");
     background-size: cover;

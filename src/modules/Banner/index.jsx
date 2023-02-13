@@ -2,10 +2,12 @@ import ButtonPortfolio from "@/common/components/ButtonRaise";
 import HomeLineBanner from "@/common/components/Icon/icons/HomeLineBanner";
 import { useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
+import { useTranslation } from "@/common/lib/i18n";
 
 const Banner = () => {
   const { query: { locale } } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.lang);
 
   return (
     <>
@@ -17,12 +19,13 @@ const Banner = () => {
             <source media="(min-width: 640px)" srcSet="/assets/img/home/mockup-sm.png" />
               <img
               src="/assets/img/home/mockup-base.png"
-              alt="Image screen"
+              alt={t("MainHeader.bannerImageAlt")}
               />
           </picture>
           <div className="flex flex-col max-w-[300px] sm:max-w-[475px] lg:max-h-[none] w-full h-full relative lg:static items-center mx-auto">
               <HomeLineBanner />
               <ButtonPortfolio
+                ariaLabel={t("navbar.item3.ariaLabel")}
                 locale={i18nQuery?.lang}
                 customStyles="!absolute bottom-0 right-0 lg:bottom-24 lg:right-24 xl:bottom-6 xl:right-0 h-[37px] w-fit"
                 i18nKeyText={"PortfolioHomeSection.title"}

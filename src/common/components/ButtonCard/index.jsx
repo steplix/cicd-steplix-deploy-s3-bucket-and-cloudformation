@@ -9,6 +9,7 @@ const ButtonCard = ({
   iconName,
   customImageClass,
   iconPosition = "left",
+  ariaLabel
 }) => {
   return (
     <button
@@ -17,6 +18,7 @@ const ButtonCard = ({
       alt={alt}
       type="button"
       onClick={clickEvent}
+      aria-label={ariaLabel}
     >
       <div className="flex flex-row items-center py-2 pr-4 pl-3">
         {iconName && iconPosition === "left" && (
@@ -39,6 +41,7 @@ ButtonCard.propTypes = {
   iconName: propTypes.string,
   customImageClass: propTypes.string,
   iconPosition: propTypes.oneOf(["left", "right"]),
+  ariaLabel: propTypes.string
 };
 
 export default ButtonCard;
