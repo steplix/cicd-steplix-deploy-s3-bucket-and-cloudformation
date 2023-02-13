@@ -69,24 +69,31 @@ export const routesMap = {
 export const aboutUsPhotoArray = [
   {
     src: "/assets/img/teams/teams-1.png",
+    alt: "about_us.teams.imagesAlt.imgOne",
   },
   {
     src: "/assets/img/teams/teams-2.png",
+    alt: "about_us.teams.imagesAlt.imgTwo",
   },
   {
     src: "/assets/img/teams/teams-6.png",
+    alt: "about_us.teams.imagesAlt.imgThree",
   },
   {
     src: "/assets/img/teams/teams-4.png",
+    alt: "about_us.teams.imagesAlt.imgFour",
   },
   {
     src: "/assets/img/teams/teams-5.png",
+    alt: "about_us.teams.imagesAlt.imgFive",
   },
   {
     src: "/assets/img/teams/teams-3.png",
+    alt: "about_us.teams.imagesAlt.imgSix",
   },
   {
     src: "/assets/img/teams/teams-7.png",
+    alt: "about_us.teams.imagesAlt.imgSeven",
   },
 ];
 
@@ -186,21 +193,27 @@ export const clientsCards = [
 export const PHOTO_CAROUSEL = [
   {
     src: "/assets/img/contact/contact-1.png",
+    alt: "contact.imagesAlt.imgOne"
   },
   {
     src: "/assets/img/contact/contact-2.png",
+    alt: "contact.imagesAlt.imgTwo"
   },
   {
     src: "/assets/img/contact/contact-3.png",
+    alt: "contact.imagesAlt.imgThree"
   },
   {
     src: "/assets/img/contact/contact-4.png",
+    alt: "contact.imagesAlt.imgFour"
   },
   {
     src: "/assets/img/contact/contact-5.png",
+    alt: "contact.imagesAlt.imgFive"
   },
   {
     src: "/assets/img/contact/contact-6.png",
+    alt: "contact.imagesAlt.imgSix"
   },
 ];
 
@@ -212,6 +225,7 @@ export const CARD_CONTACT = [
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
     imgSrc: "/assets/img/contact/sellers/seller-2_cropped.png",
+    imgAlt: "contact.salesRepresentativeAlt.Enrique"
   },
   {
     name: "Jorge",
@@ -219,6 +233,7 @@ export const CARD_CONTACT = [
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
+    imgAlt: "contact.salesRepresentativeAlt.Jorge",
     imgSrc: "/assets/img/contact/sellers/seller-5.png",
   },
 ];

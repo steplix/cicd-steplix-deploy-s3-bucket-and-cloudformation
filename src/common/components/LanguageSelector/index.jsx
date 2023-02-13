@@ -30,8 +30,8 @@ const LanguageSelector = ({ sm }) => {
     return (
         <div className="flex gap-2 mt-40 lg:mt-0">
             {shortCurrentLang ? (
-                    <div className="flex flex-col relative cursor-pointer">
-                        <div className="flex items-center space-x-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                    <button className="flex flex-col relative cursor-pointer" onClick={() => setIsDropdownOpen(!isDropdownOpen)} tabIndex={1}>
+                        <div className="flex items-center space-x-2">
                             <div className="flex items-center space-x-1">
                                 <img
                                     src={`/assets/img/logo-${languageMap.current.query}.svg`}
@@ -44,7 +44,7 @@ const LanguageSelector = ({ sm }) => {
                         </div>
                         <div className={`dropdown ${isDropdownOpen ? 'dropdown--open' : ''}`}>
                             <LanguageSwitcher lang={languageMap.target.query} slug={slug}>
-                                <div className="flex items-center space-x-2 w-[99px] xl:w-[70px] dropdown-option mt-1" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                <button className="flex items-center space-x-2 w-[99px] xl:w-[70px] dropdown-option mt-1" onClick={() => setIsDropdownOpen(!isDropdownOpen)} tabIndex={1}>
                                     <div className="flex items-center space-x-1">
                                         <img
                                             src={`/assets/img/logo-${languageMap.target.query}.svg`}
@@ -53,10 +53,10 @@ const LanguageSelector = ({ sm }) => {
                                         />
                                         <span className="text-sm xl:text-lg">{sm ? languageMap.target.text : languageMap.target.query.toUpperCase()}</span>
                                     </div>
-                                </div>
+                                </button>
                             </LanguageSwitcher>
                         </div>
-                    </div>
+                    </button>
             ) : null}
         </div>
     );

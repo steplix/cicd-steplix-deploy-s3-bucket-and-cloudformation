@@ -11,9 +11,26 @@
     "brochure": "Portfolio",
     "ourOfficeTitle": "Our",
     "salesRepresentative": "Sales Representative",
+    "salesRepresentativeAlt": {
+      "Kevin": "Photograpy of Kevin Halbinger, sales representative",
+      "Mariano": "Photograpy of Mariano Weiger, sales representative",
+      "Enrique": "Photograpy of Enrique Serrani, sales representative",
+      "Jorge": "Photograpy of Jorge Yánez, sales representative"
+    },
+    "scheduleAriaLabel": "Schedule an appointment with one of our sales representative",
+    "socialMediaAriaLabel": "Visit one of our sales representative's LinkedIn",
     "ourOfficeTitleEmpty": "office",
     "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
-    "copyButton": "Copied"
+    "copyButton": "Copied",
+    "imagesAlt": {
+      "imgOne": "Our meeting office is super comfortable with a deadlight and a super monitor.",
+      "imgTwo": "The lobby of our office has a nice armchair that allows us to meet for a chat and is full of our identity as Steplixers.",
+      "imgThree": "Our general room has large tables and comfortable chairs for the daily work of the Steplix teams.",
+      "imgFour": "The office on the outside is an old building on the corner of Uriarte and Costa Rica in Palermo, Buenos Aires.",
+      "imgFive": "Inside the building we have an internal patio that the offices on the second and third floors look out over. The ground floor is a meeting point and we even have a grill for our after parties.",
+      "imgSix": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+    }
+
   },
   "about_us": {
     "ourValues": {
@@ -37,7 +54,16 @@
       "title": "Team",
       "description": "In the same way that the Sherpas accompany the climbers on their journey to the top, the Digital Sherpas are ",
       "descriptionBold": "fully committed to the business challenges of our clients, guiding them and elevating their ideas to the maximum.",
-      "button": "Become a Steplixer"
+      "button": "Become a Steplixer",
+      "imagesAlt": {
+        "imgOne": "Business team working during a meeting in the office.",
+        "imgTwo": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgThree": "Steplixers after a workshop.",
+        "imgFour": "Relaxed Steplixers celebrating in a bar.",
+        "imgFive": "Different teams working together to promote an idea.",
+        "imgSix": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgSeven": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+      }
     },
     "philosophy": {
       "titleOne": "Our",
@@ -161,42 +187,54 @@
   "navbar": {
     "item0": {
       "route": "Home",
-      "title": ""
+      "title": "",
+      "ariaLabel": "Navigate to the home page"
     },
     "item1": {
       "route": "About Us",
-      "title": "About Us"
+      "title": "About Us",
+      "ariaLabel": "Navigate to the about us page"
     },
     "item2": {
       "route": "What we do",
-      "title": "What we do"
+      "title": "What we do",
+      "ariaLabel": "Navigate to the what we do page"
     },
     "item3": {
       "route": "Portfolio",
-      "title": "Our Portfolio"
+      "title": "Our Portfolio",
+      "ariaLabel": "Navigate to the portfolio page"
     },
     "item4": {
       "route": "Contact Us",
-      "title": "Contact Us"
+      "title": "Contact Us",
+      "ariaLabel": "Navigate to the contact us page"
     },
     "item5": {
       "route": "Become a Steplixer",
-      "title": "Become a Steplixer"
+      "title": "Become a Steplixer",
+      "ariaLabel": "Navigate to the become steplixer page"
     },
     "currentLang": "English",
     "targetLang": "Spanish",
-    "shortTargetLang": "es"
+    "shortTargetLang": "es",
+    "submenuOpenAriaLabel": "Open navigation submenu",
+    "submenuCloseAriaLabel": "Close navigation submenu"
   },
   "footer": {
     "certificateText": "Quality policy",
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
+    "certificateAriaLabel": "Visit the document of our quality policy",
     "rights": "All rights reserved®",
     "links": {
       "item0": "About us",
       "item1": "What we do",
       "item2": "Our portfolio",
       "item3": "Contact Us"
-    }
+    },
+    "instagramAriaLabel": "Visit Steplix Instagram",
+    "linkedInAriaLabel": "Visit Steplix LinkedIn",
+    "emailAriaLabel": "Send us an email"
   },
   "metaTags": {
     "home": {
@@ -266,6 +304,7 @@
   "OurPostsSay": {
     "title": "Our posts say",
     "postLinkText": "...see more",
+    "postLinkAriaLabel": "Read more about the post",
     "posts": [
       {
         "publishingAt": "september 2022",
@@ -290,7 +329,9 @@
     ]
   },
   "PortfolioHomeSection": {
-    "title": "Go to portfolio"
+    "title": "Go to portfolio",
+    "mountainImageAlt": "Imagen interactiva de una montaña. Analogía que permite explicar los pasos necesarios para llegar a tu producto deseado.",
+    "deviceImageAlt": "Imagen de un dispositivo tablet que enseña una interfaz de un proyecto interno diseñado por el equipo de Steplix."
   },
   "MainHeader": {
     "title": "We co-create <br/> the path that <br/> will take your business <br/> to the top.",
@@ -303,14 +344,32 @@
     "stepThreeDescription": "We accept the challenge of each client with the commitment to achieve the results in the agreed time, with the correct investment and ROI.",
     "finalTitle": "Together we reach <br/> the top",
     "finalSubtitle": "#DigitalSherpas",
-    "finalTextLink": "Discover us"
+    "finalTextLink": "Discover us",
+    "bannerImageAlt": "Mockup image of our application Steplix time",
+    "buttonAriaLabel": {
+      "forward": "Button to move forward into the animation flow",
+      "backward": "Button to move backward into the animation flow",
+      "reset": "Button to reset the animation flow"
+    } 
   },
   "portfolio": {
     "cards": {
-      "finket": "Design and development of a digital platform for financial services.",
-      "pow": "Design and development of a web dashboard to visualize E-commerce metrics and indicators.",
-      "valid": "Design and development of an interface for cell phone stores.",
-      "sura": "Design and development of an online quotation system for your customers."
+      "finket": {
+        "text": "Design and development of a digital platform for financial services.",
+        "imageAlt": "Mockup image of Finket Application"
+      },
+      "pow": {
+        "text": "Design and development of a web dashboard to visualize E-commerce metrics and indicators.",
+        "imageAlt": "Mockup image of Pow Application"
+      },
+      "valid": {
+        "text": "Design and development of an interface for cell phone stores.",
+        "imageAlt": "Mockup image of Valid Application"
+      },
+      "sura": {
+        "text": "Design and development of an online quotation system for your customers.",
+        "imageAlt": "Mockup image of Sura Application"
+      }
     },
     "message": "Do you want to know more?",
     "button": "Contact us"
@@ -322,7 +381,13 @@
     "sendCV": {
       "title": "If you can be a Steplixer...",
       "subtitle": "Send us your resume"
-    }
+    },
+    "accordionButtonAriaLabel": {
+      "open": "Open accordion item",
+      "close": "Close accordion item"
+    },
+    "socialMediaAriaLabel": "Visit our Head of People's LinkedIn",
+    "imageAlt": "Photography of Josefina Salimei, Steplix's Head of People"
   },
 
   "SteplixBenefits": {
@@ -385,5 +450,9 @@
       "title": "Awareness",
       "description": "It is the ability to recognize the surrounding reality. It is to promote sustainability, empathy and diversity. It is to influence from our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. It is to avoid discrimination, aggression and malice."
     }
+  },
+  "carouselButtonAriaLabel": {
+    "backward": "Button that moves the carousel backward",
+    "forward": "Button that moves the carousel forward"
   }
 }

@@ -31,6 +31,7 @@ function BecomeSteplixerPage({ locale }) {
           borderWidth="border-2"
           size="text-[26px] lg:text-4xl"
           height="h-[32px]"
+          type="h1"
         />
 
         <div className="mt-10 mb lg:grid lg:grid-cols-2 lg:gap-x-6">
@@ -85,6 +86,8 @@ function BecomeSteplixerPage({ locale }) {
             name="Josefina"
             surname="Salimei"
             imgSrc={"/assets/img/become/josefina-salimei.png"}
+            imgAlt={t("BecomeSteplixerSection.imageAlt")}
+            socialMediaAriaLabel={t("BecomeSteplixerSection.socialMediaAriaLabel")}
             onClickCopyButton={() => copyToClipboard("people@steplix.com")}
             onClickSocialMediaButton={() =>
               openLink(

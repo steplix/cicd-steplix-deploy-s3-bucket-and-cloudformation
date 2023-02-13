@@ -12,8 +12,24 @@
     "ourOfficeTitle": "Nuestra",
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
+    "salesRepresentativeAlt": {
+      "Kevin": "Fotografía de Kevin Halbinger, representate de ventas",
+      "Mariano": "Fotografía de Mariano Weiger, representate de ventas",
+      "Enrique": "Fotografía de Enrique Serrani, representate de ventas",
+      "Jorge": "Fotografía de Jorge Yánez, representate de ventas"
+    },
+    "scheduleAriaLabel": "Agenda una cita con uno de nuestros representates de ventas",
+    "socialMediaAriaLabel": "Visita el LinkedIn de uno de nuestros representates de ventas",
     "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
-    "copyButton": "Copiado"
+    "copyButton": "Copiado",
+    "imagesAlt": {
+      "imgOne": "Nuestra oficina de reuniones es súper cómoda con un lindo ventanal y un súper monitor.",
+      "imgTwo": "El recibidor de nuestra oficina tiene un lindo sillón que nos permite reunirnos a charlar y está lleno de nuestra identidad como Steplixers.",
+      "imgThree": "Sala general cuenta con mesas grandes y sillas confortables para el trabajo diario de los equipos de Steplix.",
+      "imgFour": "La oficina por fuera es un edificio antiguo que está en la esquina de Uriarte y Costa Rica, en Palermo.",
+      "imgFive": "Dentro del edificio tenemos un patio interno al que miran las oficinas del segundo y tercer piso. La planta baja es punto de encuentro y tenemos hasta parrilla para nuestros afters.",
+      "imgSix": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+    }
   },
   "about_us": {
     "ourValues": {
@@ -37,7 +53,16 @@
       "title": "Equipo",
       "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
       "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
-      "button": "Convertite en Steplixer"
+      "button": "Convertite en Steplixer",
+      "imagesAlt": {
+        "imgOne": "Equipo comercial trabajando durante una reunion en la oficina.",
+        "imgTwo": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+        "imgThree": "Steplixers luego de un workshop.",
+        "imgFour": "Steplixers descontracturados celebrando en un bar.",
+        "imgFive": "Distintos equipos trabajando juntos para potenciar una idea.",
+        "imgSix": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+        "imgSeven": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+      }
     },
     "philosophy": {
       "titleOne": "Nuestra",
@@ -160,42 +185,54 @@
   "navbar": {
     "item0": {
       "route": "Inicio",
-      "title": ""
+      "title": "",
+      "ariaLabel": "Navegar hacia la página de inicio"
     },
     "item1": {
       "route": "Quiénes somos",
-      "title": "Quiénes somos"
+      "title": "Quiénes somos",
+      "ariaLabel": "Navegar hacia la página de quiénes somos"
     },
     "item2": {
       "route": "Qué hacemos",
-      "title": "Qué hacemos"
+      "title": "Qué hacemos",
+      "ariaLabel": "Navegar hacia la página qué hacemos"
     },
     "item3": {
       "route": "Porfolio",
-      "title": "Nuestro porfolio"
+      "title": "Nuestro porfolio",
+      "ariaLabel": "Navegar hacia la página portfolio"
     },
     "item4": {
       "route": "Contáctanos",
-      "title": "Nuestro contacto"
+      "title": "Nuestro contacto",
+      "ariaLabel": "Navegar hacia la página contáctanos"
     },
     "item5": {
       "route": "Conviértete en Steplixer",
-      "title": "Conviértete en Steplixer"
+      "title": "Conviértete en Steplixer",
+      "ariaLabel": "Navegar hacia la página conviértete en Steplixer"
     },
     "currentLang": "Español",
     "targetLang": "Inglés",
-    "shortTargetLang": "en"
+    "shortTargetLang": "en",
+    "submenuOpenAriaLabel": "Abrir submenu de navegación",
+    "submenuCloseAriaLabel": "Cerrar submenu de navegación"
   },
   "footer": {
     "certificateText": "Política de calidad",
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
+    "certificateAriaLabel": "Visita el documento de nuestra política de calidad",
     "rights": "Todos los derechos reservados®",
     "links": {
       "item0": "Quienes somos",
       "item1": "Qué hacemos",
       "item2": "Nuestro portfolio",
       "item3": "Contáctanos"
-    }
+    },
+    "instagramAriaLabel": "Visita Steplix Instagram",
+    "linkedInAriaLabel": "Visita Steplix LinkedIn",
+    "emailAriaLabel": "Envíanos un email"
   },
   "metaTags": {
     "home": {
@@ -266,6 +303,7 @@
   "OurPostsSay": {
     "title": "Nuestros posteos dicen",
     "postLinkText": "...ver más",
+    "postLinkAriaLabel": "Leer más sobre el post",
     "posts": [
       {
         "publishingAt": "septiembre 2022",
@@ -290,7 +328,8 @@
     ]
   },
   "PortfolioHomeSection": {
-    "title": "Ir al portfolio"
+    "title": "Ir al portfolio",
+    "mountainImageAlt": ""
   },
   "MainHeader": {
     "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
@@ -303,14 +342,32 @@
     "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
     "finalTitle": "Juntos llegamos <br/> a la cima",
     "finalSubtitle": "#DigitalSherpas",
-    "finalTextLink": "Descubrenos"
+    "finalTextLink": "Descubrenos",
+    "bannerImageAlt": "Imagen de la maqueta de nuestra aplicación Steplix time",
+    "buttonAriaLabel": {
+      "forward": "Botón que avanza el flujo de animación hacia adelante",
+      "backward": "Botón que avanza el flujo de animación hacia atrás",
+      "reset": "Botón que reinicia el flujo de animacíón"
+    } 
   },
   "portfolio": {
     "cards": {
-      "finket": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-      "pow": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
-      "valid": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
-      "sura": "Diseño y desarrollo de un cotizador online para sus clientes."
+      "finket": {
+        "text": "Diseño y desarrollo de plataforma digital de servicios financieros.",
+        "imageAlt": "Imagén maqueta de la aplicación de Finket"
+      },
+      "pow": {
+        "text": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
+        "imageAlt": "Imagén maqueta de la aplicación de Pow"
+      },
+      "valid": {
+        "text": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
+        "imageAlt": "Imagén maqueta de la aplicación de Valid"
+      },
+      "sura": {
+        "text": "Diseño y desarrollo de un cotizador online para sus clientes.",
+        "imageAlt": "Imagén maqueta de la aplicación de Sura"
+      }
     },
     "message": "¿Quieres conocer más?",
     "button": "Contáctanos"
@@ -323,7 +380,13 @@
     "sendCV": {
       "title": "Si sabes que puedes ser Steplixer...",
       "subtitle": "¡Envíanos tu CV!"
-    }
+    },
+    "accordionButtonAriaLabel": {
+      "open": "Abrir acordión item",
+      "close": "Cerrar acordión item"
+    },
+    "socialMediaAriaLabel": "Visita Head of People LinkedIn",
+    "imageAlt": "Fotografía de Josefina Salimei, Steplix's Head of People"
   },
 
   "SteplixBenefits": {
@@ -386,5 +449,9 @@
       "title": "Conciencia",
       "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
     }
+  },
+  "carouselButtonAriaLabel": {
+    "backward": "Botón que mueve el carrusel hacia atrás",
+    "forward": "Botón que mueve el carrusel hacia adelante"
   }
 }

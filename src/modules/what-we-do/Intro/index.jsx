@@ -28,6 +28,7 @@ const Intro = ({ locale }) => {
             borderPosition="left"
             size="text-[32px]"
             height="h-[40px]"
+            type="h1"
           />
         )}
       <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black mt-6 w-full max-w-[328px] sm:max-w-[558px] lg:max-w-none">

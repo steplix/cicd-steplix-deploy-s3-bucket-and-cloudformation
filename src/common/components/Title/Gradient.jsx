@@ -1,5 +1,7 @@
 import React from "react";
+import Heading from "@/components/Heading";
 import PropTypes from "prop-types";
+import { useResponsive } from "@/common/hooks/useResponsive";
 
 /*
   IT'S A MUST TO PASS DIFFERENT FONT SIZES THROUGH THE DIFFERENT BREAKPOINTS
@@ -13,25 +15,46 @@ const Title = ({
   height = "h-[50px]",
   leading = "leading-10",
   color = "title-gradient",
-  underlineFixed
+  underlineFixed,
+  type
 }) => {
+
+  const { width } = useResponsive();
+  const TITLE_BREAKPOINT_WIDTH = 1024;
+
+  type = width < TITLE_BREAKPOINT_WIDTH ? "h2" : type
+
   return borderPosition === "bottom" ? (
     <>
       <div className={`${underlineFixed ? 'underlined-title-fixed' : 'underlined-title'} ${size} ${color} leading-none`}>
-        <h2>{content}</h2>
-        {
-          secondContent && (<h2>{secondContent}</h2>)
-        }
+        <Heading type={type || "h2"}>
+          {
+            secondContent ? (
+            <span>
+              {content}
+              <br />
+              {secondContent}
+            </span>
+            ) : <span>{content}</span>
+          }
+        </Heading>
       </div>
     </>
   ) : (
     <div className={`flex ${height} items-center`}>
       <div className="w-[3px] h-full bg-blue" />
       <div className={`${color} pl-4`}>
-        <h2 className={`${size} ${leading} font-bold`}>{content}</h2>
-        {secondContent && (
-          <h2 className={`${size} ${leading} font-bold`}>{secondContent}</h2>
-        )}
+        <Heading type={type || "h2"} className={`${size} ${leading} font-bold`}>
+          {
+            secondContent ? (
+            <span>
+              {content}
+              <br />
+              {secondContent}
+            </span>
+            ) : <span>{content}</span>
+          }
+        </Heading>
       </div>
     </div>
   );
@@ -48,7 +71,8 @@ Title.propTypes = {
   borderPosition: PropTypes.oneOf(["bottom", "left"]),
   leading: PropTypes.string,
   color: PropTypes.string,
-  underlineFixed: PropTypes.bool
+  underlineFixed: PropTypes.bool,
+  type: PropTypes.string
 };
 
 export default Title;

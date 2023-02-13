@@ -10,8 +10,6 @@ export default function Home() {
 
     //TODO: CHECK IMAGE SCRIPT
 
-    // , description:t("metaTags.home.description"), keywords:t("metaTags.home.keywords")
-
     return (
         <>
             <HeadTag metaContent={{title: t("metaTags.home.title"), description: t("metaTags.home.description"), keywords: t("metaTags.home.keywords")}}>

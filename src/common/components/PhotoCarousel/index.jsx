@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
 import propTypes from 'prop-types';
+import Icon from "../Icon"
+import { useTranslation } from "@/common/lib/i18n";
 import { useKeenSlider } from "keen-slider/react"
 import { motion } from "framer-motion";
 import { imageHoverZoomIn } from "@/common/lib/animation";
-import Icon from "../Icon"
+import { LOCALE_SLUGS } from "@/common/utils/constants";
 
-const PhotoCarousel = ({ photoArray }) => {
+const PhotoCarousel = ({ photoArray, locale }) => {
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = React.useState(false)
+    const { t } = useTranslation(locale);
 
     const [sliderRef, instanceRef] = useKeenSlider({
         loop: true,
@@ -64,12 +67,12 @@ const PhotoCarousel = ({ photoArray }) => {
         <div className="relative w-full flex flex-col container mx-auto items-center">
           <div ref={sliderRef} className="keen-slider lg:max-w-[774px] xl:max-w-[990px] rounded-[20px]">
             {
-              photoArray.map(({src}) => (
+              photoArray.map(({src, alt}) => (
                 <div className="keen-slider__slide number-slide rounded-[20px]" key={src}>
                   <div className="carousel-item-container">
                     <motion.img
                       src={src}
-                      alt="culture"
+                      alt={t(alt)}
                       className="carousel-item-container__image"
                       whileHover={imageHoverZoomIn}
                       />
@@ -97,10 +100,10 @@ const PhotoCarousel = ({ photoArray }) => {
         )}
           {loaded && instanceRef.current && (
             <>
-              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full" onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()} aria-label={t("carouselButtonAriaLabel.backward")}>
                 <Icon name="back" className="h-[48px] w-[48px]" />
               </button>
-              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}>
+              <button className="h-[48px] hidden md:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]" onClick={(e) => e.stopPropagation() || instanceRef?.current.next()} aria-label={t("carouselButtonAriaLabel.forward")}>
                 <Icon name="forward" className="h-[48px] w-[48px]" />
               </button>
             </>
@@ -112,7 +115,8 @@ const PhotoCarousel = ({ photoArray }) => {
 PhotoCarousel.propTypes = {
   photoArray: propTypes.arrayOf(propTypes.shape({
     src: propTypes.string
-  })).isRequired
+  })).isRequired,
+  locale: propTypes.oneOf(LOCALE_SLUGS),
 };
 
 
