@@ -80,6 +80,12 @@ const MainHeader = () => {
                 onClick={() =>
                   setShowStepIntermediate({ one: !showStepIntermediate.one, two: false, three: false })
                 }
+                onMouseEnter={() => 
+                  setShowStepIntermediate({ one: !showStepIntermediate.one, two: false, three: false })
+                }
+                onMouseLeave={() => 
+                  setShowStepIntermediate({ one: false, two: false, three: false })
+                }
               >
                 <MountainStep/>
               </div>
@@ -87,12 +93,24 @@ const MainHeader = () => {
                 onClick={() =>
                   setShowStepIntermediate({ one: false, two: !showStepIntermediate.two, three: false })
                 }
+                onMouseEnter={() =>
+                  setShowStepIntermediate({ one: false, two: !showStepIntermediate.two, three: false })
+                }
+                onMouseLeave={() =>
+                  setShowStepIntermediate({ one: false, two: false, three: false })
+                }
               >
                 <MountainStep/>
               </div>
               <div className="absolute hidden lg:block top-[18px] left-[988px] lg:z-20"
                 onClick={() =>
                   setShowStepIntermediate({ one: false, two: false, three: !showStepIntermediate.three })
+                }
+                onMouseEnter={() =>
+                  setShowStepIntermediate({ one: false, two: false, three: !showStepIntermediate.three })
+                }
+                onMouseLeave={() =>
+                  setShowStepIntermediate({ one: false, two: false, three: false })
                 }
               >
                 <MountainStep/>
