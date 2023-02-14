@@ -369,6 +369,10 @@
       "sura": {
         "text": "Design and development of an online quotation system for your customers.",
         "imageAlt": "Mockup image of Sura Application"
+      },
+      "smartium": {
+        "text": "Design and development of a dashboard for the early detection of incidents.",
+        "imageAlt": "Mockup image of Smartium Application"
       }
     },
     "message": "Do you want to know more?",

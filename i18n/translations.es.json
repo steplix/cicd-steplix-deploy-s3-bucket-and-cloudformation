@@ -367,6 +367,10 @@
       "sura": {
         "text": "Diseño y desarrollo de un cotizador online para sus clientes.",
         "imageAlt": "Imagén maqueta de la aplicación de Sura"
+      },
+      "smartium": {
+        "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
+        "imageAlt": "Imagén maqueta de la aplicación de Smartium"
       }
     },
     "message": "¿Quieres conocer más?",

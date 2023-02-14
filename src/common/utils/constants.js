@@ -251,14 +251,20 @@ export const PORTFOLIO_CARDS = [
     iconBrandClass: "w-[121px] h-[34px]",
   },
   {
+    name: "pow",
+    industryIconName: "eccommerceB",
+    iconBrandClass: "w-[96px] h-[34px]",
+
+  },
+  {
     name: "sura",
     industryIconName: "insurance",
     iconBrandClass: "w-[98px] h-[34px]",
   },
   {
-    name: "pow",
+    name: "smartium",
     industryIconName: "eccomerce",
-    iconBrandClass: "w-[96px] h-[34px]",
+    iconBrandClass: "w-[136px] h-[35px]",
 
   },
 ];
