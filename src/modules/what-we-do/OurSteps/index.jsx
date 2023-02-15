@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "@/common/components/Title/Gradient";
 import PropTypes from "prop-types"; 
+import parse from 'html-react-parser';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 import { useTranslation } from "@/common/lib/i18n";
 import { useResponsive } from "@/common/hooks/useResponsive";
@@ -67,7 +68,7 @@ const OurSteps = ({ locale }) => {
 
           <div className="mt-6">
             <p className="font-poppins text-mobile lg:text-custom-base font-normal text-black">
-              {t("what_we_do.weDesignYourProduct.descriptionOne")}
+                {parse(t("what_we_do.weDesignYourProduct.descriptionOne"))}
               <span className="font-poppins text-mobile lg:text-custom-base font-bold text-black">
                 {t("what_we_do.weDesignYourProduct.descriptionTwo")}
               </span>

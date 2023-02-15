@@ -44,11 +44,11 @@
     },
     "mission": {
       "title": "Mission",
-      "description": "Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our Digital Sherpas."
+      "description": "Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators."
     },
     "vision": {
       "title": "Vision",
-      "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our Steplixers."
+      "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators."
     },
     "teams": {
       "title": "Team",
@@ -102,7 +102,7 @@
       "titleOne": "We design",
       "titleTwo": "you product",
       "fullTitle": "We design your product",
-      "descriptionOne": "The second scale is focused on the design of an MVP with the aim of continuing to promote the idea. Doing this allow us to ",
+      "descriptionOne": "The second scale is focused on the design of an <u><span title=\"Minimum Viable Product\">MVP</span></u> with the aim of continuing to promote the idea. Doing this allows us to ",
       "descriptionTwo": "test the business model, revealing the effort and detecting optimization opportunities."
     },
     "weDevelopTheSolution": {
@@ -367,7 +367,7 @@
         "imageAlt": "Mockup image of Valid Application"
       },
       "sura": {
-        "text": "Design and development of an online quotation system for your customers.",
+        "text": "Design and development of an online quotation system for their customers.",
         "imageAlt": "Mockup image of Sura Application"
       },
       "smartium": {
@@ -397,52 +397,52 @@
   "SteplixBenefits": {
     "benefit1": {
       "title": "Hybrid work",
-      "description": "You can choose which days you work from the office. The place is prepared to make you feel comfortable and have the enthusiasm to come."
+      "description": "You can choose your working days at the office. It's a comfortable and an appealing place to be."
     },
     "benefit2": {
       "title": "Salary review",
-      "description": "We make adjustments according to the results of performance evaluations and fulfillment of objectives."
+      "description": "We adjust salaries according to performance reviews and goal achievements."
     },
     "benefit3": {
       "title": "Flexibility",
-      "description": "We work by objectives. As long as you are organized and meet your goals, everything is ok."
+      "description": "We work by objectives. As long as you organize yourself and meet your goals, everything's ok."
     },
     "benefit4": {
-      "title": "English classes",
-      "description": "We have teachers available for you to improve your English level."
+      "title": "English lessons",
+      "description": "We have teachers available to improve your English level."
     },
     "benefit5": {
       "title": "Career plan",
-      "description": "We have the tools available for you to grow and train in your area."
+      "description": "We provide the training tools needed for you to grow in your area."
     },
     "benefit6": {
-      "title": "Top level prepaid health insurance",
-      "description": "We care for and protect your health with the best providers in the country."
+      "title": "Top level health insurance",
+      "description": "We care and protect your health with the best providers in the country."
     },
     "benefit7": {
-      "title": "When you choose to come to the office",
-      "description": "Massage therapist, osteopath, access to refreshments and snacks, barbecues at lunch, game room."
+      "title": "When you come to the office",
+      "description": "You can access a massage therapist, an osteopath, refreshments and snacks, barbecues at lunch and a playroom."
     },
     "benefit8": {
       "title": "Competitive salary",
-      "description": "We offer market-aligned compensation."
+      "description": "We offer market aligned compensations."
     }
   },
 
   "SteplixInternalValues": {
     "value1": {
       "title": "Trust",
-      "description": "It is the faith in the contribution of the other, it is to give certainty that we will fulfill our commitments to others. It is not to fail the other or ourselves."
+      "description": "It is the faith in the contribution of others, to give certainty that commitments to others will be fulfilled. Not failing others or ourselves."
     },
 
     "value2": {
       "title": "Mutual respect",
-      "description": "It is communicating with honesty and empathy, giving others the opportunity to express their doubts and disagreements, trusting that they are always looking to add value. It is to avoid wasting our time, the time of the group, making excuses or talking unnecessarily."
+      "description": "It is communicating with honesty and empathy, giving others the opportunity to express their doubts and disagreements, trusting that they are always looking to add value. To avoid wasting time, the time of the group, making excuses or talking unnecessarily."
     },
 
     "value3": {
       "title": "Success",
-      "description": "It is the satisfaction of our clients. It is obtained by showing attitude, initiative and proactivity, resilience, solving problems and seeking to stand out, both in our solutions and in the teams we form. It is to grow all the time, personally and professionally."
+      "description": "It is the satisfaction of our clients. It is obtained by showing attitude, initiative, proactivity, resilience, solving problems and seeking to stand out, both in our solutions and in the teams we are part of. It is to grow all the time, personally and professionally."
     },
 
     "value4": {
@@ -452,7 +452,7 @@
 
     "value5": {
       "title": "Awareness",
-      "description": "It is the ability to recognize the surrounding reality. It is to promote sustainability, empathy and diversity. It is to influence from our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. It is to avoid discrimination, aggression and malice."
+      "description": "It is the ability to recognize the surrounding reality. It is to promote sustainability, empathy and diversity. It is to influence others with our coherence, integrity and honesty. It is to recognize the need to live honoring respect, balance and equity. To avoid discrimination, aggression and malice."
     }
   },
   "carouselButtonAriaLabel": {
