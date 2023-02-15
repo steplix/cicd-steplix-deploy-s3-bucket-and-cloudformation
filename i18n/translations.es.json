@@ -43,11 +43,11 @@
     },
     "mission": {
       "title": "Misión",
-      "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros Digital Sherpas."
+      "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
     },
     "vision": {
       "title": "Visión",
-      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros Steplixers."
+      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
     },
     "teams": {
       "title": "Equipo",
@@ -101,7 +101,7 @@
       "titleOne": "Diseñamos",
       "titleTwo": "tu producto",
       "fullTitle": "Diseñamos tu producto",
-      "descriptionOne": "La segunda escala se enfoca en el diseño de un MVP con el objetivo de seguir potenciando una idea Esto nos permite",
+      "descriptionOne": "La segunda escala se enfoca en el diseño de un <u><span title=\"Minimum Viable Product\">MVP</span></u> con el objetivo de seguir potenciando una idea. Esto nos permite",
       "descriptionTwo": " someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización."
     },
     "weDevelopTheSolution": {
@@ -354,19 +354,23 @@
     "cards": {
       "finket": {
         "text": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-        "imageAlt": "Imagén maqueta de la aplicación de Finket"
+        "imageAlt": "Imagen maqueta de la aplicación de Finket"
       },
       "pow": {
         "text": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
-        "imageAlt": "Imagén maqueta de la aplicación de Pow"
+        "imageAlt": "Imagen maqueta de la aplicación de Pow"
       },
       "valid": {
         "text": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
-        "imageAlt": "Imagén maqueta de la aplicación de Valid"
+        "imageAlt": "Imagen maqueta de la aplicación de Valid"
       },
       "sura": {
         "text": "Diseño y desarrollo de un cotizador online para sus clientes.",
-        "imageAlt": "Imagén maqueta de la aplicación de Sura"
+        "imageAlt": "Imagen maqueta de la aplicación de Sura"
+      },
+      "smartium": {
+        "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
+        "imageAlt": "Imagen maqueta de la aplicación de Smartium"
       }
     },
     "message": "¿Quieres conocer más?",
@@ -392,15 +396,15 @@
   "SteplixBenefits": {
     "benefit1": {
       "title": "Trabajo híbrido",
-      "description": "Puedes elegir qué días trabajar desde la ofi. El espacio esta preparado para que estés cómodo y tengas ganas de venir."
+      "description": "Puedes elegir qué días trabajar desde la ofi. El espacio está preparado para que estés cómodo y tengas ganas de venir."
     },
     "benefit2": {
       "title": "Revisión de salario",
-      "description": "Realizamos ajustes de acuerdo a resultado de evaluaciones de desempeño y cumplimiento de  objetivos."
+      "description": "Realizamos ajustes de acuerdo a evaluaciones de desempeño y cumplimiento de objetivos."
     },
     "benefit3": {
       "title": "Flexibilidad",
-      "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus objetivos, todo ok."
+      "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus asignaciones, todo ok."
     },
     "benefit4": {
       "title": "Clases de inglés",
@@ -415,8 +419,8 @@
       "description": "Cuidamos y protegemos tu salud con los mejores prestadores del país."
     },
     "benefit7": {
-      "title": "Cuando eliges venir a la ofi",
-      "description": "Masajista, osteópata, acceso a refrigerios y snacks, parrilladas en el almuerzo, sala de juegos."
+      "title": "Cuando vienes a la ofi",
+      "description": "Puedes acceder a masajista, osteópata, refrigerios, snacks, parrilladas en el almuerzo y sala de juegos."
     },
     "benefit8": {
       "title": "Salario competitivo",
