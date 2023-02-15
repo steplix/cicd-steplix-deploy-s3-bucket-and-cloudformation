@@ -354,19 +354,23 @@
     "cards": {
       "finket": {
         "text": "Diseño y desarrollo de plataforma digital de servicios financieros.",
-        "imageAlt": "Imagén maqueta de la aplicación de Finket"
+        "imageAlt": "Imagen maqueta de la aplicación de Finket"
       },
       "pow": {
         "text": "Diseño y desarrollo de un dashboard web para visualizar métricas e indicadores de E-commerce.",
-        "imageAlt": "Imagén maqueta de la aplicación de Pow"
+        "imageAlt": "Imagen maqueta de la aplicación de Pow"
       },
       "valid": {
         "text": "Diseño y desarrollo de una interfaz para tiendas de telefonía móvil.",
-        "imageAlt": "Imagén maqueta de la aplicación de Valid"
+        "imageAlt": "Imagen maqueta de la aplicación de Valid"
       },
       "sura": {
         "text": "Diseño y desarrollo de un cotizador online para sus clientes.",
-        "imageAlt": "Imagén maqueta de la aplicación de Sura"
+        "imageAlt": "Imagen maqueta de la aplicación de Sura"
+      },
+      "smartium": {
+        "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
+        "imageAlt": "Imagen maqueta de la aplicación de Smartium"
       }
     },
     "message": "¿Quieres conocer más?",
