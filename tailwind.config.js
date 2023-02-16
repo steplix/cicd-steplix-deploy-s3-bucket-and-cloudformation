@@ -63,7 +63,7 @@ module.exports = {
         ["what-we-do-steps-xl"]:
           "url('/assets/img/what-we-do/what-we-do-steps-xl.webp')",
         ["mountain"]:
-          "url('/assets/img/home/mountain.svg')",
+          "url('/assets/img/home/mountain.webp')",
       },
     },
   },
