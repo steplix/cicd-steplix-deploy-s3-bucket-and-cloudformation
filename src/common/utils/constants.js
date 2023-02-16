@@ -68,31 +68,31 @@ export const routesMap = {
 
 export const aboutUsPhotoArray = [
   {
-    src: "/assets/img/teams/teams-1.png",
+    src: "/assets/img/teams/teams-1.webp",
     alt: "about_us.teams.imagesAlt.imgOne",
   },
   {
-    src: "/assets/img/teams/teams-2.png",
+    src: "/assets/img/teams/teams-2.webp",
     alt: "about_us.teams.imagesAlt.imgTwo",
   },
   {
-    src: "/assets/img/teams/teams-6.png",
+    src: "/assets/img/teams/teams-6.webp",
     alt: "about_us.teams.imagesAlt.imgThree",
   },
   {
-    src: "/assets/img/teams/teams-4.png",
+    src: "/assets/img/teams/teams-4.webp",
     alt: "about_us.teams.imagesAlt.imgFour",
   },
   {
-    src: "/assets/img/teams/teams-5.png",
+    src: "/assets/img/teams/teams-5.webp",
     alt: "about_us.teams.imagesAlt.imgFive",
   },
   {
-    src: "/assets/img/teams/teams-3.png",
+    src: "/assets/img/teams/teams-3.webp",
     alt: "about_us.teams.imagesAlt.imgSix",
   },
   {
-    src: "/assets/img/teams/teams-7.png",
+    src: "/assets/img/teams/teams-7.webp",
     alt: "about_us.teams.imagesAlt.imgSeven",
   },
 ];
