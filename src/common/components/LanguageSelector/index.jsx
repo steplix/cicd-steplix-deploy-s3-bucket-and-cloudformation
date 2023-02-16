@@ -28,7 +28,7 @@ const LanguageSelector = ({ sm }) => {
     }
 
     return (
-        <div className="flex gap-2 mt-40 lg:mt-0">
+        <div className="flex gap-2 mt-8 lg:mt-0">
             {shortCurrentLang ? (
                     <button className="flex flex-col relative cursor-pointer" onClick={() => setIsDropdownOpen(!isDropdownOpen)} tabIndex={1}>
                         <div className="flex items-center space-x-2">
