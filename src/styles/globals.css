@@ -515,7 +515,7 @@
   }
   .banner {
     position: relative;
-    background-image: url("../../public/assets/img/bg-banner.png");
+    background-image: url("../../public/assets/img/home/bg-banner.webp");
     background-size: 100% 146px;
     background-repeat: no-repeat;
   }
