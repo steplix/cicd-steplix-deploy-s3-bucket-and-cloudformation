@@ -416,20 +416,20 @@
     z-index: -1;
   }
 
-  .portfolio-card-shadow {
+  .card-shadow {
     filter: drop-shadow(10px 10px 25px rgba(61, 17, 82, 0.15));
   }
 
   .portfolioCarousel {
-    @apply max-w-[288px] sm:max-w-[384px] lg:max-w-[784px] xl:max-w-[1008px] rounded-[20px] lg:min-h-[418px];
+    @apply max-w-[312px] sm:max-w-[408px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px] lg:min-h-[418px];
   }
 
   .clientsCarousel {
-    @apply max-w-[280px] md:max-w-[420px] lg:max-w-[772px] xl:max-w-[996px] rounded-[20px];
+    @apply max-w-[311px] md:max-w-[520px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px];
   }
 
   .postsCarousel {
-    @apply max-w-[328px] sm:max-w-[420px] lg:max-w-[770px] xl:max-w-[996px] rounded-[20px];
+    @apply max-w-[311px] sm:max-w-[532px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px];
   }
 
   /*------- Main Header Section ------- */
