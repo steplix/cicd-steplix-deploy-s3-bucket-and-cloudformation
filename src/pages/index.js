@@ -19,12 +19,6 @@ export default function Home() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "LocalBusiness",
-                        image: [
-                            "https://steplix.com/assets/img/logo.png",
-                            "https://example.com/assets/img/culture/culture-01.png",
-                            "https://example.com/assets/img/culture/culture-02.png",
-                            "https://example.com/assets/img/culture/culture-03.png",
-                        ],
                         name: "Steplix Software",
                         address: {
                             "@type": "PostalAddress",

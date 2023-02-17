@@ -55,15 +55,15 @@ module.exports = {
       },
       backgroundImage: {
         ["what-we-do-steps"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-base.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-base.webp')",
         ["what-we-do-steps-sm"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-md.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-md.webp')",
         ["what-we-do-steps-lg"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-lg.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-lg.webp')",
         ["what-we-do-steps-xl"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-xl.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-xl.webp')",
         ["mountain"]:
-          "url('/assets/img/home/mountain.svg')",
+          "url('/assets/img/home/mountain.webp')",
       },
     },
   },
