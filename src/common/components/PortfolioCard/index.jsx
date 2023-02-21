@@ -25,7 +25,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
               <Icon name={name} className={iconBrandClass}  />
               <Icon name={industryIconName} className="w-[25px] h-[26px] text-white" />
           </div>
-          <p className='text-[13px] text-black xl:max-w-[331px] mt-8 line-clamp-2'>
+          <p className='text-[13px] text-black xl:max-w-[440px] mt-8 line-clamp-2'>
               {t(`portfolio.cards.${name}.text`)}
           </p>
         <div className="mt-[48px] flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-4 items-center justify-center">
