@@ -75,9 +75,9 @@ const Footer = () => {
           <p className="text-[10px] font-light mt-11 sm:mt-0">{t("footer.rights")}</p>
           <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-3 text-white items-center text-xs">
             <div className="flex space-x-3">
-              <Icon name="iso9001" className="h-[38px] w-[38px]" />
-              <Icon name="inet" className="h-[38px] w-[38px]" />
-              <Icon name="iram" className="h-[38px] w-[38px]" />
+              <Icon name="iso9001" className="h-[40px] w-[40px]" />
+              <Icon name="inet" className="h-[40px] w-[40px]" />
+              <Icon name="iram" className="h-[40px] w-[40px]" />
             </div>
             <a
               href={t("footer.certificateUrl")}
