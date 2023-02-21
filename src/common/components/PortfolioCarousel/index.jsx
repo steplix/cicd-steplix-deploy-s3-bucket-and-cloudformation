@@ -5,15 +5,15 @@ import { useKeenSlider } from "keen-slider/react";
 import { useTranslation } from "@/common/lib/i18n";
 import Icon from "../Icon";
 
-const AdaptiveHeight = (slider) => {
+const adaptiveHeight = (slider, adaptiveHeightValue) => {
   function updateHeight() {
     slider.container.style.height =
-      slider.slides[slider.track.details.rel].offsetHeight + 96 + "px"
+      slider.slides[slider.track.details.rel].offsetHeight + adaptiveHeightValue + "px"
   }
   slider.on("created", updateHeight)
 }
 
-const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
+const PortfolioCarousel = ({ children, carouselClassName, spacing, adaptiveHeightValue }) => {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = React.useState(false);
@@ -34,7 +34,7 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
         setLoaded(true);
       },
     },
-    [carouselClassName !== 'portfolioCarousel' ? () => {} : AdaptiveHeight]
+    [(slider) => adaptiveHeight(slider, adaptiveHeightValue)]
   );
 
   return (
@@ -86,7 +86,8 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing }) => {
 PortfolioCarousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
-  spacing: propTypes.number
+  spacing: propTypes.number,
+  adaptiveHeight: propTypes.number
 };
 
 export default PortfolioCarousel;

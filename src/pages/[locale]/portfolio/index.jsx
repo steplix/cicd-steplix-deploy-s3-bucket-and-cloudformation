@@ -45,7 +45,7 @@ const PortfolioView = ({ locale }) => {
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
         <section className="container pb-[72px]">
-          <PortfolioCarousel carouselClassName={"portfolioCarousel"}>
+          <PortfolioCarousel carouselClassName={"portfolioCarousel"} adaptiveHeightValue={96}>
             {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
                 <div key={name} className="keen-slider__slide number-slide rounded-[20px]">
@@ -86,7 +86,7 @@ const PortfolioView = ({ locale }) => {
             ))}
           </motion.div>
 
-          <article className="mt-[72px] flex flex-col gap-6">
+          <article className="mt-[72px] flex flex-col">
             <Gradient
               borderPosition="left"
               content={t("PortfolioSection.subtitle2")}
@@ -95,7 +95,7 @@ const PortfolioView = ({ locale }) => {
               height="h-[32px]"
             />
             <div className="flex justify-center">
-              <PortfolioCarousel carouselClassName={"clientsCarousel"} spacing={14}>
+              <PortfolioCarousel carouselClassName={"clientsCarousel"} adaptiveHeightValue={48}>
                 {clients.map((client) => (
                   <div
                     key={client.companyName}
@@ -116,7 +116,7 @@ const PortfolioView = ({ locale }) => {
               </PortfolioCarousel>
             </div>
           </article>
-          <article className="mt-[56px]">
+          <article className="mt-8">
             <TechnologiesSlider
               images={repeatImageLogos(clientsLogos, 20)}
               slides={8}
