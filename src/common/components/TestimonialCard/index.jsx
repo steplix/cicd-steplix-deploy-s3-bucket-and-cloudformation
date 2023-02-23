@@ -16,7 +16,7 @@ const Card = ({
 
   return (
     // Todo remover bordes de imagen y card, una vez que se defina el fondo / imagenes
-    <article className="h-[365px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white shadow-card">
+    <article className="h-[365px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white card-shadow">
       <div className="flex flex-col justify-between pb-6">
         <div className="flex">
           <img

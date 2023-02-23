@@ -13,7 +13,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <div className='w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] shadow-card rounded-[20px] flex flex-col'>
+    <div className='w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col'>
       <picture className='w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]'>
         <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.webp`} />
         <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
@@ -25,7 +25,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
               <Icon name={name} className={iconBrandClass}  />
               <Icon name={industryIconName} className="w-[25px] h-[26px] text-white" />
           </div>
-          <p className='text-[13px] text-black xl:max-w-[440px] mt-8 line-clamp-2'>
+          <p className='text-[13px] text-black xl:max-w-[440px] mt-8 line-clamp-2 xl:min-h-[39px]'>
               {t(`portfolio.cards.${name}.text`)}
           </p>
         <div className="mt-[48px] flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-4 items-center justify-center">
