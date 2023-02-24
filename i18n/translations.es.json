@@ -162,15 +162,15 @@
     },
     "clientSura": {
       "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas”.",
-      "title": "Business Line Manager"
+      "title": "Business Manager"
     },
     "clientSinoar": {
       "text": "“Steplix respondió a nuestro requerimiento de definición de la plataforma digital para un nuevo negocio con agilidad, creatividad y dedicación. El equipo multidisciplinario que ejecutó el proyecto incluyó expertos en agroindustria y en transformación digital, con resultados excelentes en un plazo exiguo de 4 semanas“. ",
-      "title": "Director de Proyecto"
+      "title": "Project Manager"
     },
     "clientPow": {
       "text": "“La predisposición del equipo de Steplix fue clave en el proyecto. Destaco principalmente la capacidad que tuvieron de hacer foco en entender la necesidad. En todo momento, buscaron ser eficientes, entregar un poco más y nos acompañaron pensando la solución a futuro, enfocados en la escalabilidad“. ",
-      "title": "Co-Fundador & CEO"
+      "title": "Co-Founder & CEO"
     },
     "clientVacayGreen": {
       "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez“. ",
@@ -179,6 +179,10 @@
     "clientValid": {
       "text": "“Fue muy conveniente para nosotros encontrar una empresa como Steplix, que tiene la capacidad de responder en plazos muy desafiantes y con especificaciones breves. En todo momento propusieron mejoras y siempre teniendo en cuenta la eficiencia en costes de infraestructura“. ",
       "title": "Product Manager"
+    },
+    "clientCeva": {
+      "text": "La experiencia con Steplix fue positiva. El equipo mostró agilidad y dedicación en la ejecución del servicio, aportando valor en todo momento. El servicio prestado por Steplix fue muy bueno y recomendamos su trabajo. Estamos interesados en trabajar con ellos nuevamente en el futuro para desarrollar upgrades específicos que se detectaron durante el servicio.",
+      "title": "Marketing"
     }
   },
   "seeMore": "Ver más",
