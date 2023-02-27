@@ -78,5 +78,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "scrum",
   "architect",
   "salary",
-  "eccommerceB"
+  "eccommerceB",
+  "x28"
 ]);

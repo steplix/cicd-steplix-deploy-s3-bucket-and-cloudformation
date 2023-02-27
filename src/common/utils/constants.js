@@ -303,10 +303,13 @@ export const clientsLogos = [
     image: "vacay",
     alt: "VacayGreen Logo",
   },
-
   {
     image: "c5n",
     alt: "C5N Logo",
+  },
+  {
+    image: "x28",
+    alt: "x28 Alarmas Logo",
   },
 ];
 

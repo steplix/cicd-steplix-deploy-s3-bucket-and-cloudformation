@@ -73,3 +73,4 @@ export * from "./scrum";
 export * from "./architect";
 export * from "./salary";
 export * from './eccommerceB';
+export * from './x28';
