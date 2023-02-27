@@ -124,6 +124,18 @@ export const usePortfolioTranslation = () => {
       text: t("happyClients.clientValid.text"),
       textColor: "text-blue",
     },
+    {
+      image: "/assets/img/clients/client-ceva.webp",
+      alt: "Ceva",
+      name: "María",
+      lastName: "Fariña",
+      position: "Marketing",
+      title: t("happyClients.clientCeva.title"),
+      companyName: "CEVA Salud Animal",
+      borderColor: "border-blue",
+      text: t("happyClients.clientCeva.text"),
+      textColor: "text-blue",
+    },
   ];
 
   return { clients: ARRAY_CLIENTS, industries: PORTFOLIO_INDUSTRIES };

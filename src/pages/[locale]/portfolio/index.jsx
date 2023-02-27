@@ -104,7 +104,7 @@ const PortfolioView = ({ locale }) => {
                     <TestimonialCard
                       clientImageUrl={client?.image}
                       imageAlt={`${client?.companyName} logo`}
-                      clientPosition={client?.position}
+                      clientPosition={client?.title}
                       clientFirstName={client?.name}
                       clientLastName={client?.lastName}
                       clientOpinion={client?.text}
