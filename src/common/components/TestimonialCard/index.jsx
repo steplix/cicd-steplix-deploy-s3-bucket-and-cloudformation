@@ -16,15 +16,15 @@ const Card = ({
 
   return (
     // Todo remover bordes de imagen y card, una vez que se defina el fondo / imagenes
-    <article className="h-[365px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white shadow-card">
+    <article className="h-[408px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white card-shadow text-black">
       <div className="flex flex-col justify-between pb-6">
-        <div className="flex">
+        <div className="flex space-x-3 mb-[10px]">
           <img
             alt={imageAlt}
-            className="w-[52px] h-[52px] rounded-full bg-black"
+            className="w-[56px] h-[56px] rounded-full"
             src={clientImageUrl}
           />
-          <div className="pl-[18px] pb-[6px]">
+          <div className="text-left">
             <h3 className="text-[26px] leading-none font-bold">
               {clientFirstName}
             </h3>
@@ -33,14 +33,15 @@ const Card = ({
             </h3>
           </div>
         </div>
-        <div className="flex">
-          {clientPosition} en{" "}
+        <div className="flex text-[13px] font-medium md:text-base">
+          {clientPosition} -
           <h4 className={`${textColor} font-bold pl-[4px]`}>
             {" "}
             {clientCompany}{" "}
           </h4>
         </div>
       </div>
+      {/* TODO:: Modify to text mobile when the responsive and changes are applied on Figma */}
       <p className="text-xs leading-4">{t(clientOpinion)}</p>
     </article>
   );

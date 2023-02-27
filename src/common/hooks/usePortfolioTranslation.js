@@ -53,7 +53,7 @@ export const usePortfolioTranslation = () => {
 
   const ARRAY_CLIENTS = [
     {
-      image: "/assets/img/clients/client-finket-v2.svg",
+      image: "/assets/img/clients/client-finket.webp",
       alt: "CTECH",
       name: "Lucas",
       position: "Ceo & Founder",
@@ -62,10 +62,10 @@ export const usePortfolioTranslation = () => {
       companyName: "CTECH",
       borderColor: "border-yellow",
       text: t("happyClients.clientFinket.text"),
-      textColor: "text-yellow",
+      textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-sura.svg",
+      image: "/assets/img/clients/client-sura.webp",
       alt: "sura",
       name: "Juan",
       lastName: "Ramallo",
@@ -74,7 +74,7 @@ export const usePortfolioTranslation = () => {
       companyName: "Seguros SURA",
       borderColor: "border-red",
       text: t("happyClients.clientSura.text"),
-      textColor: "text-red",
+      textColor: "text-blue",
     },
     {
       image: "/assets/img/clients/sinoar-logo.webp",
@@ -89,7 +89,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-pow.svg",
+      image: "/assets/img/clients/client-pow.webp",
       alt: "Pow.",
       name: "Guido",
       lastName: "Ginesi",
@@ -98,10 +98,10 @@ export const usePortfolioTranslation = () => {
       companyName: "Pow.",
       borderColor: "border-yellow",
       text: t("happyClients.clientPow.text"),
-      textColor: "text-yellow",
+      textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-vacaygreen.svg",
+      image: "/assets/img/clients/client-vacaygreen.webp",
       alt: "VacayGreen",
       name: "Gonzalo",
       lastName: "Arreche",
@@ -110,10 +110,10 @@ export const usePortfolioTranslation = () => {
       companyName: "VacayGreen",
       borderColor: "border-red",
       text: t("happyClients.clientVacayGreen.text"),
-      textColor: "text-red",
+      textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-valid.svg",
+      image: "/assets/img/clients/client-valid.webp",
       alt: "Valid",
       name: "Federico",
       lastName: "Bitonte",
@@ -122,6 +122,18 @@ export const usePortfolioTranslation = () => {
       companyName: "Valid",
       borderColor: "border-blue",
       text: t("happyClients.clientValid.text"),
+      textColor: "text-blue",
+    },
+    {
+      image: "/assets/img/clients/client-ceva.webp",
+      alt: "Ceva",
+      name: "María",
+      lastName: "Fariña",
+      position: "Marketing",
+      title: t("happyClients.clientCeva.title"),
+      companyName: "CEVA Salud Animal",
+      borderColor: "border-blue",
+      text: t("happyClients.clientCeva.text"),
       textColor: "text-blue",
     },
   ];

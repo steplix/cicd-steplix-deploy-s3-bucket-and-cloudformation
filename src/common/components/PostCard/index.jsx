@@ -8,7 +8,7 @@ const PostCard = ({ publishingAt, description, url }) => {
     const { t } = useTranslation();
 
     return(
-        <div className="bg-white shadow-card p-6 rounded-[20px] w-[279px] h-[310px] sm:w-[500px] sm:h-[226.38px] lg:w-[375.5px] lg:h-[260.4px] xl:w-[488.5px] xl:h-[223.19px] max-w-lg">
+        <div className="bg-white card-shadow p-6 rounded-[20px] w-[279px] h-[310px] sm:w-[500px] sm:h-[226.38px] lg:w-[375.5px] lg:h-[260.4px] xl:w-[488.5px] xl:h-[223.19px] max-w-lg">
             <div className="flex items-center">
                 <img className="h-14 w-14 md:w-[52.16px] md:h-[52.16px]" src="/assets/img/steplixAvatarPost.svg" alt="Steplix Avatar"/>
                 <div className="ml-2">
