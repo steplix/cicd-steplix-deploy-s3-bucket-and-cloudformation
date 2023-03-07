@@ -1,8 +1,8 @@
-import ButtonPortfolio from "@/common/components/ButtonRaise";
-import HomeLineBanner from "@/common/components/Icon/icons/HomeLineBanner";
 import { useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 import { useTranslation } from "@/common/lib/i18n";
+import Service from "@/common/components/Service";
+import { SERVICES } from "@/common/utils/constants";
 
 const Banner = () => {
   const { query: { locale } } = useRouter();
@@ -10,31 +10,13 @@ const Banner = () => {
   const { t } = useTranslation(i18nQuery?.lang);
 
   return (
-    <>
-      <div className="banner xl:container w-auto h-[288px] sm:h-[449px] lg:h-[596px] flex flex-col items-center">
-        <div className="container relative w-full h-full">
-            <picture className='w-full max-w-[328px] sm:max-w-[561px] lg:max-w-[714px] xl:max-w-[834px] absolute top-0 left-2/4 transform -translate-x-2/4 lg:left-[5%] lg:translate-x-0 mx-auto'>
-            <source media="(min-width: 1280px)" srcSet="/assets/img/home/mockup-xl.png" />
-            <source media="(min-width: 1024px)" srcSet="/assets/img/home/mockup-lg.png" />
-            <source media="(min-width: 640px)" srcSet="/assets/img/home/mockup-sm.png" />
-              <img
-              src="/assets/img/home/mockup-base.png"
-              alt={t("MainHeader.bannerImageAlt")}
-              />
-          </picture>
-          <div className="flex flex-col max-w-[300px] sm:max-w-[475px] lg:max-h-[none] w-full h-full relative lg:static items-center mx-auto">
-              <HomeLineBanner />
-              <ButtonPortfolio
-                ariaLabel={t("navbar.item3.ariaLabel")}
-                locale={i18nQuery?.lang}
-                customStyles="!absolute bottom-0 right-0 lg:bottom-24 lg:right-24 xl:bottom-6 xl:right-0 h-[37px] w-fit"
-                i18nKeyText={"PortfolioHomeSection.title"}
-                pathname="/portfolio"
-              />
-          </div>
-        </div>
+    <div className="container banner rounded-t-[20px] px-0 pt-12 2xl:pt-[69px] flex justify-center">
+      <div className="flex flex-col content-start gap-x-10 gap-y-10 lg:gap-y-12 items-center sm:flex-row sm:justify-center sm:flex-wrap w-full sm:w-[559px] lg:w-[896px] xl:w-[1120px] h-[1041px] sm:h-[633px] lg:h-[472px] 2xl:h-[491px]">
+        {SERVICES.map((service, index) => {
+          return <Service key={service.name} name={t(service.name)} description={t(service.description)} iconName={service.icon} />
+        })}
       </div>
-    </>
+    </div>
   );
 };
 
