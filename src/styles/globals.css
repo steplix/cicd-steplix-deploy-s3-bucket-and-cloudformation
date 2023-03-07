@@ -513,28 +513,39 @@
       padding: 12px 32px 16px;
     }
   }
+
   .banner {
     position: relative;
-    background-image: url("../../public/assets/img/home/bg-banner.webp");
-    background-size: 100% 146px;
+    background-image: url("../../public/assets/img/home/banner-xs.webp");
+    background-size: 100% 1148px;
     background-repeat: no-repeat;
   }
 
   @media (min-width: 640px) {
     .banner {
-      background-size: 100% 233px;
+      background-image: url("../../public/assets/img/home/banner-sm.webp");
+      background-size: 100% 100%;
     }
   }
 
   @media (min-width: 1024px) {
     .banner {
-      background-size: 100% 387px;
+      background-image: url("../../public/assets/img/home/banner-lg.webp");
+      background-size: 100% 100%;
     }
   }
 
   @media (min-width: 1280px) {
     .banner {
-      background-size: 100% 467px;
+      background-image: url("../../public/assets/img/home/banner-xl.webp");
+      background-size: 100% 100%;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .banner {
+      background-image: url("../../public/assets/img/home/banner-2xl.webp");
+      background-size: 100% 100%;
     }
   }
 

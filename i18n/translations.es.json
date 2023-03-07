@@ -352,7 +352,29 @@
       "forward": "Botón que avanza el flujo de animación hacia adelante",
       "backward": "Botón que avanza el flujo de animación hacia atrás",
       "reset": "Botón que reinicia el flujo de animacíón"
-    } 
+    },
+    "services": {
+      "SoftwareDevelopment": {
+        "name": "Desarrollo de Software",
+        "description": "Soluciones a la medida de tus necesidades."
+      },
+      "ProductDesign": {
+        "name": "Diseño de producto",
+        "description": "Mejoramos la experiencia de usuario."
+      },
+      "QAAutomation": {
+        "name": "Automatización de QA",
+        "description": "Garantizamos la calidad del software."
+      },
+      "DataEngineering": {
+        "name": "Ingeniería de datos",
+        "description": "Analizamos datos para impulsar tu crecimiento."
+      },
+      "StrategicConsulting": {
+        "name": "Consultoría estratégica",
+        "description": "Aumentamos la eficiencia y rentabilidad."
+      }
+    }
   },
   "portfolio": {
     "cards": {

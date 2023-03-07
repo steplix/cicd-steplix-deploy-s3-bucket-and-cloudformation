@@ -74,3 +74,8 @@ export * from "./architect";
 export * from "./salary";
 export * from './eccommerceB';
 export * from './x28';
+export * from './serviceQA';
+export * from './serviceDataEngineering';
+export * from './serviceDesign';
+export * from './serviceDevelopment';
+export * from './serviceConsultancy';
