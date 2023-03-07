@@ -354,7 +354,29 @@
       "forward": "Button to move forward into the animation flow",
       "backward": "Button to move backward into the animation flow",
       "reset": "Button to reset the animation flow"
-    } 
+    },
+    "services": {
+      "SoftwareDevelopment": {
+        "name": "Software Development",
+        "description": "Tailored solutions."
+      },
+      "ProductDesign": {
+        "name": "Product Design",
+        "description": "Improving user experience."
+      },
+      "QAAutomation": {
+        "name": "QA Automation",
+        "description": "We guarantee software quality."
+      },
+      "DataEngineering": {
+        "name": "Data Engineering",
+        "description": "We analyze data to boost your growth."
+      },
+      "StrategicConsulting": {
+        "name": "Strategic Consulting",
+        "description": "Increasing efficiency and profitability."
+      }
+    }
   },
   "portfolio": {
     "cards": {

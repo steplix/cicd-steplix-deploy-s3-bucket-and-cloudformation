@@ -417,6 +417,7 @@ export const OUR_VALUES = [
 ];
 export const LOCALE_SLUGS = ["es", "en"];
 
+// HOME PAGE
 export const MOUNTAIN_STEPS = {
   xs: [{
     id: 1,
@@ -587,3 +588,32 @@ export const MOUNTAIN_STEPS = {
     scrollSizePrevious: 100,
   }]
 }
+
+export const SERVICES = [
+  {
+    icon: "serviceDevelopment",
+    name: "MainHeader.services.SoftwareDevelopment.name",
+    description: "MainHeader.services.SoftwareDevelopment.description"
+  },
+
+  {
+    icon: "serviceDesign",
+    name: "MainHeader.services.ProductDesign.name",
+    description: "MainHeader.services.ProductDesign.description"
+  },
+  {
+    icon: "serviceQA",
+    name: "MainHeader.services.QAAutomation.name",
+    description: "MainHeader.services.QAAutomation.description"
+  },
+  {
+    icon: "serviceDataEngineering",
+    name: "MainHeader.services.DataEngineering.name",
+    description: "MainHeader.services.DataEngineering.description"
+  },
+  {
+    icon: "serviceConsultancy",
+    name: "MainHeader.services.StrategicConsulting.name",
+    description: "MainHeader.services.StrategicConsulting.description"
+  },
+];
