@@ -2,7 +2,7 @@ import React from "react";
 import TechnologiesSlider from "@/common/components/TechnologiesSlider";
 import { repeatImageLogos } from "@/common/utils/methods";
 import { clientsLogos, SPACE_BETWEEN_CARDS } from "@/common/utils/constants";
-import Banner from "../Banner";
+import Banner from "../Home/Banner";
 
 const Portfolio = () => {
 

@@ -288,6 +288,35 @@
     @apply px-1;
   }
 
+  .dropdown-tech {
+    @apply relative top-6;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .dropdown-tech--open {
+    height: auto;
+    opacity: 1;
+  }
+
+  @keyframes growOut {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
   /* TITLE */
 
   .underlined-title {

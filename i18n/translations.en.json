@@ -113,7 +113,7 @@
       "descriptionTwo": "respecting the deadlines and the agreed investment."
     },
     "HowDoWeDoIt": {
-      "titleOne": "Our technologies",
+      "titleOne": "Technology",
       "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
     }
   },
@@ -358,7 +358,7 @@
     "services": {
       "SoftwareDevelopment": {
         "name": "Software Development",
-        "description": "Tailored solutions."
+        "description": "We build tailored solutions."
       },
       "ProductDesign": {
         "name": "Product Design",

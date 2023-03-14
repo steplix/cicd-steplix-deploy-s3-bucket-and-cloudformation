@@ -1,5 +1,7 @@
 import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
+import Banner from "@/modules/Home/Banner";
+import HowDoWeDoIt from "@/modules/Home/HowWeDoIt";
 import TransitionWrapper from "@/common/components/TransitionWrapper";
 import OurPosts from "@/modules/OurPosts";
 import Portfolio from "@/modules/Portfolio";
@@ -68,8 +70,11 @@ export default function Home() {
                 {/* MainHeader Section */}
                 <MainHeader />
 
-                {/* Portfolio Section */}
-                <Portfolio />
+                {/* Banner Section */}
+                <Banner />
+
+                {/* Technology Section */}
+                <HowDoWeDoIt />
 
                 {/* Posts Section */}
                 <OurPosts />
