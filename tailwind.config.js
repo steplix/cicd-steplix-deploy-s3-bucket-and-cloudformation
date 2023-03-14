@@ -18,6 +18,7 @@ module.exports = {
       "grey-transparent": "#3C10531A",
       "grey-70": "#707070",
       "grey-19": "#191919",
+      "grey-neutro": "#616161",
     },
     fontSize: {
       xs: ["12px"],

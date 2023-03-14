@@ -317,42 +317,51 @@ export const technologiesImages = [
   {
     image: "/static/technologies/aws.svg",
     alt: "Amazon Logo",
+    class: "w-14",
   },
   {
     image: "/static/technologies/docker.svg",
     alt: "Docker Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/figma.svg",
     alt: "Figma Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/flutter.svg",
     alt: "Flutter Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/git.svg",
     alt: "Git Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/kotlin.svg",
     alt: "Kotlin Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/nextjs.svg",
     alt: "Next Logo",
+    class: "w-16",
   },
   {
     image: "/static/technologies/nodejs.svg",
     alt: "Node Logo",
+    class: "w-24",
   },
   {
     image: "/static/technologies/reactjs.svg",
     alt: "React Logo",
+    class: "w-24",
   },
 ];
 
-export const SPACE_BETWEEN_CARDS = 20;
+export const SPACE_BETWEEN_CARDS = 16;
 // BECOME A STEPLIXER PAGE
 
 export const BECOME_BENEFITS = [
