@@ -113,7 +113,9 @@
     },
     "HowDoWeDoIt": {
       "titleOne": "Tecnología",
-      "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
+      "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario.",
+      "openDropdownText": "Ver menos",
+      "closedDropdownText": "Ver más"
     }
   },
   "aboutUs": {

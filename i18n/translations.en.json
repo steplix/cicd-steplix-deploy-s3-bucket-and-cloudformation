@@ -114,7 +114,9 @@
     },
     "HowDoWeDoIt": {
       "titleOne": "Technology",
-      "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
+      "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user.",
+      "openDropdownText": "See less",
+      "closedDropdownText": "See more"
     }
   },
   "aboutUs": {
