@@ -36,7 +36,7 @@ const HowDoWeDoIt = () => {
       <div className="flex justify-end">
         <button className="cursor-pointer" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
           <div className="flex items-end gap-2">
-            <span className="font-poppins text-blue text-xs font-bold">Ver menos</span>
+            <span className="font-poppins text-blue text-xs font-bold">{isDropdownOpen ? t("seeLess") : t("seeMore") }</span>
             <Icon name="chevronDown" className={`h-4 w-4 dropdown-arrow text-blue ${isDropdownOpen ? 'dropdown-arrow--open' : ''}`} />
           </div>
         </button>

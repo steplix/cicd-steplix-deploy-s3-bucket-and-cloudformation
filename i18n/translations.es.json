@@ -186,6 +186,7 @@
     }
   },
   "seeMore": "Ver más",
+  "seeLess": "Ver menos",
   "navbar": {
     "item0": {
       "route": "Inicio",
@@ -242,7 +243,7 @@
     "home": {
       "title": "Digital Sherpas | Steplix Software 🧗",
       "keywords": "fábrica de software, microestrategia de software, sherpas digitales, socio digital, negocios escalables, software de análisis de negocio, software full stack, empresas de software factory, software ágil, desarrollo de software, empresa de software, diseño centrado en el usuario, marco scrum, metodologías ágiles, diseño de productos, desarrollo y entrega, digitalización de negocios, transformación digital, construcción de productos, proyecto de software, proyecto de digitalización, soluciones digitales, ecosistema digital para negocios, software factory, sherpas digitales, socio digital, ingeniería de software, análisis de negocio, desarrollo de aplicaciones móviles, consultoría de transformación digital, diseño de productos, desarrollo de soluciones escalables, proyectos de software a medida, soluciones para mejorar la productividad, servicios de consultoría tecnológica, desarrollo de software full stack, servicios de diseño y desarrollo ágiles, productos de software personalizados, proyectos de digitalización de negocios, implementación de metodologías ágiles, estrategias de negocio en tecnología, servicios de software factory, análisis de procesos de negocio, soluciones de inteligencia artificial, desarrollo de aplicaciones web, estrategias de crecimiento en tecnología, servicios de consultoría en liderazgo tecnológico, servicios de gestión de proyectos de software, desarrollo de soluciones de automatización de procesos, desarrollo de soluciones de análisis de datos",
-      "description": "Co-creamos el camino que llevará tu negocio a la cima. Somos tu aliado digital."
+      "description": "Diseñamos y desarrollamos software a la medida de tus necesidades."
     },
     "aboutUs": {
       "title": "Sobre nosotros | Digital Sherpas | Steplix Software 🧗",
