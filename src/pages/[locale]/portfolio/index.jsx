@@ -2,29 +2,22 @@ import React from "react";
 import Gradient from "@/common/components/Title/Gradient";
 import HeadTag from "@/common/components/HeadTag";
 import CardIcon from "@/common/components/CardIcon";
-import TechnologiesSlider from "@/common/components/TechnologiesSlider";
-import TestimonialCard from "@/common/components/TestimonialCard";
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PortfolioCard from "@/common/components/PortfolioCard";
 import TransitionWrapper from "@/common/components/TransitionWrapper";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { useTranslation } from "@/common/lib/i18n";
 import { usePortfolioTranslation } from "@/common/hooks/usePortfolioTranslation";
-import { repeatImageLogos } from "@/common/utils/methods";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { stagger } from "@/common/lib/animation";
-import {
-  PORTFOLIO_CARDS,
-  SPACE_BETWEEN_CARDS,
-  clientsLogos,
-} from "@/common/utils/constants";
+import { PORTFOLIO_CARDS } from "@/common/utils/constants";
 
 //TODO: ADD NO INDEX PROP TO META TAG BEFORE DEPLOYING
 
 const PortfolioView = ({ locale }) => {
   const { t } = useTranslation(locale);
-  const { clients, industries } = usePortfolioTranslation();
+  const { industries } = usePortfolioTranslation();
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -58,6 +51,7 @@ const PortfolioView = ({ locale }) => {
               );
             })}
           </PortfolioCarousel>
+
           <div className="mt-[14px] flex flex-col gap-6">
             <Gradient
               borderPosition="left"
@@ -85,45 +79,6 @@ const PortfolioView = ({ locale }) => {
               />
             ))}
           </motion.div>
-
-          <article className="mt-[72px] flex flex-col">
-            <Gradient
-              borderPosition="left"
-              content={t("PortfolioSection.subtitle2")}
-              borderWidth="border-2"
-              size="text-4xl"
-              height="h-[32px]"
-            />
-            <div className="flex justify-center">
-              <PortfolioCarousel carouselClassName={"clientsCarousel"} adaptiveHeightValue={48}>
-                {clients.map((client) => (
-                  <div
-                    key={client.companyName}
-                    className="keen-slider__slide number-slide"
-                  >
-                    <TestimonialCard
-                      clientImageUrl={client?.image}
-                      imageAlt={`${client?.companyName} logo`}
-                      clientPosition={client?.title}
-                      clientFirstName={client?.name}
-                      clientLastName={client?.lastName}
-                      clientOpinion={client?.text}
-                      clientCompany={client?.companyName}
-                      textColor={client.textColor}
-                    />
-                  </div>
-                ))}
-              </PortfolioCarousel>
-            </div>
-          </article>
-          <article className="mt-8">
-            <TechnologiesSlider
-              images={repeatImageLogos(clientsLogos, 20)}
-              slides={8}
-              imgClass="w-24"
-              spacingBeetWeenSlides={SPACE_BETWEEN_CARDS}
-            />
-          </article>
         </section>
       </TransitionWrapper>
     </>

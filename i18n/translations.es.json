@@ -375,6 +375,9 @@
         "name": "Consultoría estratégica",
         "description": "Aumentamos la eficiencia y rentabilidad."
       }
+    },
+    "clients": {
+      "title": "Clientes"
     }
   },
   "portfolio": {
