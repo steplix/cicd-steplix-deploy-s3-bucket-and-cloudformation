@@ -2,9 +2,8 @@ import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
 import Banner from "@/modules/Home/Banner";
 import HowDoWeDoIt from "@/modules/Home/HowWeDoIt";
+import Clients from "@/modules/Home/Clients";
 import TransitionWrapper from "@/common/components/TransitionWrapper";
-import OurPosts from "@/modules/OurPosts";
-import Portfolio from "@/modules/Portfolio";
 import HeadTag from "@/common/components/HeadTag";
 
 export default function Home() {
@@ -76,8 +75,8 @@ export default function Home() {
                 {/* Technology Section */}
                 <HowDoWeDoIt />
 
-                {/* Posts Section */}
-                <OurPosts />
+                {/* Clients Section */}
+                <Clients />
             </TransitionWrapper>
         </>
     );

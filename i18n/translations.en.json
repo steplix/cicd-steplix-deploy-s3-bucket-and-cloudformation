@@ -377,6 +377,9 @@
         "name": "Strategic Consulting",
         "description": "Increasing efficiency and profitability."
       }
+    },
+    "clients": {
+      "title": "Clients"
     }
   },
   "portfolio": {

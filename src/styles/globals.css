@@ -626,8 +626,9 @@
   }
 
   .text-custom-base {
-    @apply text-[16px] leading-[20.8px];
+    @apply !text-[16px] leading-[20.8px];
   }
+
   /* RAISE BTN EFFECT */
 
   .btn:before, .btn::after {
@@ -648,4 +649,14 @@
   .btn--raise:hover::before {
     box-shadow: 0 0.5em 0.5em -0.4em rgba(31, 31, 31, 0.5);   
   }
+
+  /* END RAISE BTN EFFECT */
+
+  /* CLIENTS HOME SECTION */
+
+  .clients-list {
+    @apply max-w-[18rem] sm:max-w-[29.5rem] lg:max-w-none mx-auto;
+  }
+
+  /* END CLIENTS HOME SECTION */
 }

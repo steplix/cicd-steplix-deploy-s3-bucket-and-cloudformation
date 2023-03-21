@@ -271,46 +271,55 @@ export const PORTFOLIO_CARDS = [
 
 export const clientsLogos = [
   {
-    image: "pow",
-    alt: "POW Logo",
-  },
-  {
     image: "valid",
     alt: "Valid Logo",
+    class: "w-[63px] lg:w-[75px] xl:w-[93px]"
   },
   {
     image: "finket",
     alt: "Finket Logo",
+    class: "w-[68px] sm:w-[75px] lg:w-[90px] xl:w-[112px]"
   },
   {
-    image: "sura",
-    alt: "Sura Logo",
-  },
-  {
-    image: "ceva",
-    alt: "Ceva Logo",
-    class: "w-8",
-  },
-  {
-    image: "columbia",
-    alt: "Columbia Logo",
-  },
-  {
-    image: "smartium",
-    alt: "Smartium Logo",
+    image: "pow",
+    alt: "POW Logo",
+    class: "w-[56px] sm:w-[62px] lg:w-[75px] xl:w-[93px]"
   },
   {
     image: "vacay",
     alt: "VacayGreen Logo",
+    class: "w-[135px] sm:w-[148px] lg:w-[180px] xl:w-[221px]"
+  },
+  {
+    image: "sura",
+    alt: "Sura Logo",
+    class: "w-[65px] sm:w-[84px] lg:w-[102px] xl:w-[126px]"
+  },
+  {
+    image: "columbia",
+    alt: "Columbia Logo",
+    class: "w-[78px] sm:w-[119px] lg:w-[144px] xl:w-[177px]"
   },
   {
     image: "c5n",
     alt: "C5N Logo",
+    class: "w-[65px] sm:w-[85px] xl:w-[105px]"
   },
   {
     image: "x28",
     alt: "x28 Alarmas Logo",
+    class: "w-[66px] lg:w-[70px] xl:w-[86px]"
   },
+  {
+    image: "smartium",
+    alt: "Smartium Logo",
+    class: "w-[79px] sm:w-[113px] lg:w-[137px] xl:w-[168px]"
+  },
+  {
+    image: "ceva",
+    alt: "Ceva Logo",
+    class: "w-10 lg:w-[47px] xl:w-[58px]",
+  }
 ];
 
 export const technologiesImages = [
