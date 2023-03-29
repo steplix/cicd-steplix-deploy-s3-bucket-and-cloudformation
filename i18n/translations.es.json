@@ -225,7 +225,7 @@
     "submenuCloseAriaLabel": "Cerrar submenu de navegación"
   },
   "footer": {
-    "certificateText": "Política de calidad",
+    "certificateText": "Trabajamos bajo procesos certificados y auditados.",
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
     "certificateAriaLabel": "Visita el documento de nuestra política de calidad",
     "rights": "Todos los derechos reservados®",
