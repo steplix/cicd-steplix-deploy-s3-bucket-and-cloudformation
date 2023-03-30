@@ -1,4 +1,5 @@
 import Script from "next/script";
+import React from "react";
 import "@fontsource/poppins/100.css";
 import "@fontsource/poppins/200.css";
 import "@fontsource/poppins/300.css";
@@ -11,8 +12,21 @@ import "@fontsource/poppins/900.css";
 import "../styles/globals.css";
 import "keen-slider/keen-slider.min.css";
 import Layout from "@/layouts/Layout";
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
+import { useLanguageQuery } from "next-export-i18n";
+
 
 function MyApp({ Component, pageProps }) {
+
+    const { asPath, query: { locale } } = useRouter();
+    const [i18nQuery] = useLanguageQuery(locale);
+
+
+    React.useEffect(() => {
+        document.documentElement.lang = i18nQuery?.lang;
+      }, [i18nQuery?.lang]);
+
     return (
         <>
             <Script
@@ -31,14 +45,16 @@ function MyApp({ Component, pageProps }) {
                     gtag('config', 'AW-10880705347');
                 `}
             </Script>
-      
+
             <Script id='adWords' strategy="lazyOnload">
                 {`
-                   gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
+                    gtag('event', 'conversion', {'send_to': 'AW-10880705347/OdMNCKmky9QDEMPGqcQo'});
                 `}
             </Script>
             <Layout>
-                <Component {...pageProps} />
+                <AnimatePresence exitBeforeEnter>
+                    <Component {...pageProps} key={asPath} />
+                </AnimatePresence>
             </Layout>
         </>
     );

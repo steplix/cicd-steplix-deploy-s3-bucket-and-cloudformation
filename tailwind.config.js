@@ -18,6 +18,7 @@ module.exports = {
       "grey-transparent": "#3C10531A",
       "grey-70": "#707070",
       "grey-19": "#191919",
+      "grey-neutro": "#616161",
     },
     fontSize: {
       xs: ["12px"],
@@ -45,6 +46,8 @@ module.exports = {
     boxShadow: {
       steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
       "post-card": "0px 0px 2px 1px rgba(112, 112, 112, 0.2)",
+      "step-card": "10px 10px 25px rgba(61, 17, 82, 0.15)",
+      "card": "0px 4px 20px rgba(0, 0, 0, 0.25);"
     },
     extend: {
       margin: {
@@ -53,18 +56,23 @@ module.exports = {
       },
       backgroundImage: {
         ["what-we-do-steps"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-base.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-base.webp')",
         ["what-we-do-steps-sm"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-md.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-md.webp')",
         ["what-we-do-steps-lg"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-lg.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-lg.webp')",
         ["what-we-do-steps-xl"]:
-          "url('/assets/img/what-we-do/what-we-do-steps-xl.png')",
+          "url('/assets/img/what-we-do/what-we-do-steps-xl.webp')",
+        ["mountain"]:
+          "url('/assets/img/home/mountain.webp')",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    require("@tailwindcss/line-clamp")
+  ],
 };

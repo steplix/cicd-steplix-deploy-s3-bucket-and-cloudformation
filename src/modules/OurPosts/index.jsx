@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '@/common/components/Title/Gradient';
 import PortfolioCarousel from "@/common/components/PortfolioCarousel";
 import PostCard from "@/common/components/PostCard";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 
 const OurPosts = () => {
     const { t } = useTranslation();
@@ -11,11 +11,11 @@ const OurPosts = () => {
 
     return (
         <section className="container">
-            <div className="mb-6">
+            <div>
                 <Title content={t("OurPostsSay.title")} borderPosition="bottom" underlineFixed size="text-[26px] leading-[26px] lg:text-[32px] lg:leading-[48px]"/>
             </div>
-            <div className="mb-[72px]">
-                <PortfolioCarousel carouselClassName={"postsCarousel"}>
+            <div className="mb-[48px]">
+                <PortfolioCarousel carouselClassName={"postsCarousel"} adaptiveHeightValue={48}>
                     {
                         posts.map(({publishingAt, description, url}) => {
                             postNumber++;

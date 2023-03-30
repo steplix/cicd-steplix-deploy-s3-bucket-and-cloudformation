@@ -5,7 +5,7 @@ import AvatarSkeleton from "./AvatarSkeleton";
 import AvatarImage from "./AvatarImage";
 import AvatarName from "./AvatarName";
 
-const Avatar = ({ imgSrc, name, surname, isLoading }) => {
+const Avatar = ({ imgSrc, imgAlt, name, surname, isLoading }) => {
   const nameInitials = useAvatarName(name, surname);
   const [showClasses, setShowClasses] = useState(false);
 
@@ -24,7 +24,7 @@ const Avatar = ({ imgSrc, name, surname, isLoading }) => {
         {isLoading ? (
           <AvatarSkeleton />
         ) : imgSrc ? (
-          <AvatarImage imgSrc={imgSrc} />
+          <AvatarImage imgSrc={imgSrc} imgAlt={imgAlt} />
         ) : (
           <AvatarName nameInitials={nameInitials} />
         )}
@@ -42,6 +42,7 @@ Avatar.propTypes = {
       );
     }
   },
+  imgAlt: PropTypes.string,
   isLoading: PropTypes.bool,
   name: PropTypes.string,
   surname: PropTypes.string,

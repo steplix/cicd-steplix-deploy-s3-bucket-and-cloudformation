@@ -13,84 +13,81 @@ const Footer = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <footer className="footer-gradient py-8 sm:py-[26px] h-[490px] sm:h-[271px] lg:h-[252px]">
-      <div className="container flex flex-col sm:space-y-0 lg:space-y-4">
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between lg:flex-col lg:items-start lg:space-y-4">
+    <footer className="footer-gradient h-[510.62px] pt-8 pb-[72px] sm:pt-[25px] sm:pb-[65px] lg:pt-6 lg:pb-8 sm:h-[271px] lg:h-[276.5px]">
+      <div className="container flex flex-col gap-y-[4.5rem] sm:gap-y-4">
+        <div className="flex flex-col items-center sm:flex-row lg:flex-col sm:items-start lg:space-y-4">
           <div className="flex flex-col items-center sm:items-start w-full">
             <div>
               <img
                 src="/assets/img/logo-navbar.svg"
-                alt="logo"
-                className="w-[78px] h-[20px] lg:w-[109px] lg:h-[28px]"
+                alt="Steplix logo"
+                className="w-[70px] h-[18px] lg:w-[86px] lg:h-[22px]"
               />
             </div>
-            <div className="mt-6 grid grid-cols-2 ml-6 sm:ml-0 lg:flex lg:space-x-2 lg:self-center text-white sm:max-w-[225px] lg:max-w-none text-xs lg:text-base font-medium">
-              <div className="w-fit">
-                <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
-                  <a>{t("footer.links.item0")} </a>
-                </CustomNextLink>
-                <span className="ml-1">|</span>
-              </div>
-              <div className="w-fit">
-                <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
-                  <a>{t("footer.links.item1")} </a>
-                </CustomNextLink>
-                <span className="hidden lg:inline-block lg:ml-1">|</span>
-              </div>
-              <div className="w-fit mt-2 lg:mt-0 lg:ml-1">
-                <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
-                  <a>{t("footer.links.item2")} </a>
-                </CustomNextLink>
-                <span className="">|</span>
-              </div>
-              <div className="w-fit ml-1 mt-2 lg:mt-0">
-                <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
-                  <a className="">{t("footer.links.item3")} </a>
-                </CustomNextLink>
-              </div>
+            <div className="mt-6 lg:mt-4 text-white text-xs leading-6 tracking-[0.03em] lg:text-base lg:leading-8 font-medium flex flex-wrap justify-center sm:justify-start gap-1 max-w-[187px] lg:w-full lg:max-w-none lg:justify-center">
+              <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
+                <a aria-label={t("navbar.item1.ariaLabel")}>{t("footer.links.item0")} </a>
+              </CustomNextLink>
+
+              <div>|</div>
+
+              <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
+                <a aria-label={t("navbar.item2.ariaLabel")}>{t("footer.links.item1")} </a>
+              </CustomNextLink>
+
+              <div className="hidden lg:block">|</div>
+
+              <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
+                <a aria-label={t("navbar.item3.ariaLabel")}>{t("footer.links.item2")} </a>
+              </CustomNextLink>
+
+              <div>|</div>
+
+              <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
+                <a aria-label={t("navbar.item4.ariaLabel")}>{t("footer.links.item3")} </a>
+              </CustomNextLink>
             </div>
           </div>
-          <div className="mt-10 sm:mt-0 sm:mb-7 flex flex-col lg:flex-row lg:space-x-4 self-center">
+          <div className="mt-8 lg:mt-4 sm:mt-0 sm:mb-7 flex flex-col lg:flex-row lg:space-x-4 self-center">
             <div className="flex space-x-4 self-center sm:self-end sm:mb-1 lg:mb-0">
-              <a href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank">
-                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                  <Icon name="instagram" className="h-4 w-4 text-white" />
-                </div>
+              <a className="rounded-full h-8 w-8 flex items-center justify-center bg-icon" href="https://www.instagram.com/steplixsoftware/" rel="noreferrer" target="_blank" aria-label={t("footer.instagramAriaLabel")}>
+                <Icon name="instagram" className="h-4 w-4 text-white" />
               </a>
-              <a href="https://www.linkedin.com/company/steplix" rel="noreferrer" target="_blank">
-                <div className="rounded-full h-8 w-8 flex items-center justify-center bg-icon">
-                  <Icon name="linkedIn" className="h-4 w-4 text-white" />
-                </div>
+              <a className="rounded-full h-8 w-8 flex items-center justify-center bg-icon" href="https://www.linkedin.com/company/steplix" rel="noreferrer" target="_blank" aria-label={t("footer.linkedInAriaLabel")}>                
+                <Icon name="linkedIn" className="h-4 w-4 text-white" />   
               </a>
             </div>
-            <div className="flex space-x-2 text-white items-center text-xs lg:text-[13px] mt-3 lg:mt-0">
+            <div className="flex space-x-2 font-poppins text-white items-center text-mobile mt-3 lg:mt-0">
               <Icon
                 name="mail"
                 className="h-[19px] w-[19px] text-white"
                 fill="white"
               />
               <Link href="mailto:hello@steplix.com">
-                <a className="font-poppins">hello@steplix.com</a>
+                <a aria-label={t("footer.emailAriaLabel")}>hello@steplix.com</a>
               </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center space-y-4 sm:space-y-0 lg:space-y-0 sm:flex-row sm:items-end lg:items-center sm:justify-between text-white text-xs sm:!mt-4 lg:mt-[72px]">
-          <p className="text-[10px] font-light mt-11 sm:mt-0">{t("footer.rights")}</p>
-          <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-3 text-white items-center text-xs">
-            <div className="flex space-x-3">
-              <Icon name="iso9001" className="h-[38px] w-[38px]" />
-              <Icon name="inet" className="h-[38px] w-[38px]" />
-              <Icon name="iram" className="h-[38px] w-[38px]" />
+        <div className="flex flex-col-reverse items-center sm:flex-row sm:items-end lg:items-end sm:justify-between text-white text-xs">
+          <p className="text-[10px] leading-[0.813rem] font-light mt-11 sm:mt-0">{t("footer.rights")}</p>
+          <div className="flex flex-col space-y-3 sm:space-y-2 items-center sm:items-end text-xs text-center leading-[0.894rem] lg:leading-[0.975rem] tracking-[0.01em]">
+            <div className="flex space-x-3 sm:space-x-3.5 lg:space-x-4">
+              <Icon name="iso9001" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
+              <Icon name="inet" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
+              <Icon name="iram" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
             </div>
-            <a
-              href={t("footer.certificateUrl")}
-              rel="noreferrer"
-              target="_blank"
-              className="font-poppins underline text-[11px] sm:self-end lg:self-auto"
-            >
-              {t("footer.certificateText")}
-            </a>
+            <div className="w-[150px] sm:w-fit">
+              <a
+                href={t("footer.certificateUrl")}
+                rel="noreferrer"
+                target="_blank"
+                className="font-poppins underline text-[10px] sm:self-end lg:self-auto"
+                aria-label={t("footer.certificateAriaLabel")}
+              >
+                {t("footer.certificateText")}
+              </a>
+            </div>
           </div>
         </div>
       </div>

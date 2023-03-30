@@ -1,4 +1,6 @@
 import { forwardRef, useEffect, useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from "@/common/lib/i18n";
 import PropTypes from "prop-types";
 import AccordionItemProvider, {
   useItemAccordion,
@@ -37,8 +39,8 @@ Accordion.Title = function AccordionTitle({ children, ...props }) {
 Accordion.Item = function AccordionItem({ children, ...props }) {
   return (
     <AccordionItemProvider {...props}>
-      <div className="w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl">
-        <div className="text-black relative">{children}</div>
+      <div className="relative w-full h-[64px]">
+        <div className="text-black w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl bg-white absolute">{children}</div>
       </div>
     </AccordionItemProvider>
   );
@@ -47,6 +49,7 @@ Accordion.Item = function AccordionItem({ children, ...props }) {
 Accordion.Header = function AccordionHeader({ children, ...props }) {
   const { id, setItemId, toggleShow, rotate, closeItem } = useItemAccordion();
   const { chevron, closeAccordion } = useGlobalAccordion();
+  const { t } = useTranslation();
 
   const onClick = () => {
     toggleShow();
@@ -63,10 +66,11 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
 
   return (
     <>
-      <div
-        className={`transition-all flex justify-between cursor-pointer text-2xl px-6 py-5 font-normal select-none items-center z-50`}
+      <button
+        className={`!w-full transition-all flex justify-between cursor-pointer text-2xl px-6 py-[17px] font-normal select-none items-center`}
         onClick={onClick}
         {...props}
+        aria-label={rotate ? t("BecomeSteplixerSection.accordionButtonAriaLabel.close") : t("BecomeSteplixerSection.accordionButtonAriaLabel.open")}
       >
         {children}
         {chevron && (
@@ -76,32 +80,29 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
             <Icon name="chevronDown" className="w-6" fill="#00A9E0" />
           </span>
         )}
-      </div>
+      </button>
     </>
   );
 };
 
 Accordion.Body = function AccordionHeader({ children }) {
   const { toggleItem } = useItemAccordion();
-
-  const [maxH, setMaxH] = useState("h-0");
-
-  useEffect(() => {
-    if (toggleItem) {
-      return setMaxH("h-full px-6 pb-4 pt-0");
-    }
-
-    return setMaxH("h-0 p-0");
-  }, [toggleItem]);
-
+  
   return (
-    <>
-      <div
-        className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden ${maxH}`}
-      >
-        {children}
-      </div>
-    </>
+    <AnimatePresence>
+      {
+        toggleItem ? (
+          <motion.div
+          className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden px-6 pb-4 pt-0 relative z-50 bg-white`}
+          initial={{ height: 0 }}
+          animate={{ height: 'auto', transition: { ease: "linear", duration: 0.4 } }}
+          exit={{ height: 0, opacity: 0, transition: { ease: "linear", duration: 0.2 } }}
+        >
+          {children}
+        </motion.div>
+        ) : null
+      }
+    </AnimatePresence>
   );
 };
 

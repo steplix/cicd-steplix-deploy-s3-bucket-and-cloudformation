@@ -1,7 +1,9 @@
-import { useTranslation } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import MainHeader from "@/modules/MainHeader";
-import OurPosts from "@/modules/OurPosts";
-import Portfolio from "@/modules/Portfolio";
+import Banner from "@/modules/Home/Banner";
+import HowDoWeDoIt from "@/modules/Home/HowWeDoIt";
+import Clients from "@/modules/Home/Clients";
+import TransitionWrapper from "@/common/components/TransitionWrapper";
 import HeadTag from "@/common/components/HeadTag";
 
 export default function Home() {
@@ -11,19 +13,13 @@ export default function Home() {
 
     return (
         <>
-            <HeadTag title={t("metaTags.home.title")} description={t("metaTags.home.description")} keywords={t("metaTags.home.keywords")}>
+            <HeadTag metaContent={{title: t("metaTags.home.title"), description: t("metaTags.home.description"), keywords: t("metaTags.home.keywords")}}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "LocalBusiness",
-                        image: [
-                            "https://steplix.com/assets/img/logo.png",
-                            "https://example.com/assets/img/culture/culture-01.png",
-                            "https://example.com/assets/img/culture/culture-02.png",
-                            "https://example.com/assets/img/culture/culture-03.png",
-                        ],
                         name: "Steplix Software",
                         address: {
                             "@type": "PostalAddress",
@@ -69,16 +65,19 @@ export default function Home() {
                     }),
                 }} />
             </HeadTag>
-            <main className="flex flex-col">
+            <TransitionWrapper className="flex flex-col">
                 {/* MainHeader Section */}
                 <MainHeader />
 
-                {/* Portfolio Section */}
-                <Portfolio />
+                {/* Banner Section */}
+                <Banner />
 
-                {/* Posts Section */}
-                <OurPosts />
-            </main>
+                {/* Technology Section */}
+                <HowDoWeDoIt />
+
+                {/* Clients Section */}
+                <Clients />
+            </TransitionWrapper>
         </>
     );
 }

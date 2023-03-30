@@ -8,7 +8,7 @@ const PostCard = ({ publishingAt, description, url }) => {
     const { t } = useTranslation();
 
     return(
-        <div className="bg-white shadow-post-card p-6 rounded-[20px] w-[279px] h-[310px] md:w-[500px] md:h-[226px] lg:w-[375.5px] lg:h-[260.4px] xl:w-[488.5px] xl:h-[223.19px] max-w-lg">
+        <div className="bg-white card-shadow p-6 rounded-[20px] w-[279px] h-[310px] sm:w-[500px] sm:h-[226.38px] lg:w-[375.5px] lg:h-[260.4px] xl:w-[488.5px] xl:h-[223.19px] max-w-lg">
             <div className="flex items-center">
                 <img className="h-14 w-14 md:w-[52.16px] md:h-[52.16px]" src="/assets/img/steplixAvatarPost.svg" alt="Steplix Avatar"/>
                 <div className="ml-2">
@@ -22,10 +22,10 @@ const PostCard = ({ publishingAt, description, url }) => {
                     </div>
                 </div>
             </div>
-            <p className="text-grey-19 text-[13px] mt-5 leading-[16.9px] font-normal">{description}</p>
+            <p className="text-grey-19 text-mobile mt-5 font-normal font-poppins sm:line-clamp-5 lg:line-clamp-none">{description}</p>
             <div className="text-grey-70 text-sm font-normal flex justify-end">
                 <Link href={url}>
-                    <a target="_blank">
+                    <a target="_blank" aria-label={t("OurPostsSay.postLinkAriaLabel")}>
                         <span>{t("OurPostsSay.postLinkText")}</span>
                     </a>
                 </Link>

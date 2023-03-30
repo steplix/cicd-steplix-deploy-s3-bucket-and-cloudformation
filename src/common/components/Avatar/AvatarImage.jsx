@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types';
 
-const AvatarImage = ({ imgSrc }) => {
+const AvatarImage = ({ imgSrc, imgAlt }) => {
   return (
     <>
       <div className='relative'>
-        <img alt='profile' className='w-full h-full object-cover rounded-full' src={imgSrc} />
+        <img alt={imgAlt} className='w-full h-full object-cover rounded-full' src={imgSrc} />
       </div>
     </>
   );
@@ -13,6 +13,7 @@ const AvatarImage = ({ imgSrc }) => {
 
 AvatarImage.propTypes = {
   imgSrc: PropTypes.string,
+  imgAlt: PropTypes.string,
 };
 
 export default AvatarImage;

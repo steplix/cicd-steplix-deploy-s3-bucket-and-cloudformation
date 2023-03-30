@@ -1,14 +1,12 @@
-import React, { useMemo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { useKeenSlider } from "keen-slider/react";
-import Icon from "../Icon";
 import { isAsset } from "@/common/utils/validators";
+import Icon from "../Icon";
 
 const TechnologiesSlider = ({
   images,
-  slides,
   spacingBetweenSlides,
-  imgClass,
 }) => {
   const animation = { duration: 30000, easing: (t) => t };
 
@@ -17,8 +15,35 @@ const TechnologiesSlider = ({
     renderMode: "performance",
     drag: false,
     slides: {
-      perView: slides,
+      perView: 3,
       spacing: spacingBetweenSlides,
+    },
+    breakpoints: {
+      '(min-width: 640px)': {
+        slides: {
+          perView: 5,
+        },
+      },
+      '(min-width: 768px)': {
+        slides: {
+          perView: 5,
+        },
+      },
+      '(min-width: 1024px)': {
+        slides: {
+          perView: 8,
+        },
+      },
+      '(min-width: 1280px)': {
+        slides: {
+          perView: 10,
+        },
+      },
+      '(min-width: 1536px)': {
+        slides: {
+          perView: 10,
+        },
+      },
     },
     created(s) {
       s.moveToIdx(5, true, animation);
@@ -30,19 +55,20 @@ const TechnologiesSlider = ({
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
   });
+
   return (
-    <div className="">
+    <div className="max-h-[53px]">
       <div className="keen-slider items-center gap-4" ref={sliderRef}>
         {images.map((image, index) => {
           return (
             <div
-              className={`keen-slider__slide w-full flex gap-2 items-center`}
+              className={`keen-slider__slide flex items-center justify-center`}
               key={index}
             >
               {isAsset(image.image) ? (
-                <img src={image.image} alt={image.alt} className={imgClass} />
+                <img src={image.image} alt={image.alt} className={image.class} />
               ) : (
-                <Icon name={image.image} className={imgClass} />
+                <Icon name={image.image} className={image.class} />
               )}
             </div>
           );
@@ -59,13 +85,10 @@ TechnologiesSlider.propTypes = {
       alt: PropTypes.string.isRequired,
     })
   ),
-  slides: PropTypes.number,
   spacingBetweenSlides: PropTypes.number,
-  imgClass: PropTypes.string,
 };
 
 TechnologiesSlider.defaultProps = {
-  slides: 3,
   spacingBetweenSlides: 0,
 };
 
