@@ -337,8 +337,10 @@
     "mountainImageAlt": ""
   },
   "MainHeader": {
+    "slogan": "Somos tu aliado digital",
     "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
-    "subtitle": "Somos tu aliado <br/> digital",
+    "subtitleMobile": "Diseñamos y <br/> desarrollamos software <br/> a la medida de tus <br/> necesidades",
+    "subtitleBase": "Diseñamos y desarrollamos <br/> software a la medida de tus <br/> necesidades",
     "stepOneTitle": "Conocemos el <br/> camino",
     "stepOneDescription": "Somos guías en el ecosistema de los negocios digitales y sabemos como ayudarte a potenciar una idea para convertirla en un producto competitivo.",
     "stepTwoTitle": "Te acompañamos <br/> en el viaje",

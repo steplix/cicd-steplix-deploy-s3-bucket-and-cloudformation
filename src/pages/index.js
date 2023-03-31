@@ -1,5 +1,5 @@
 import { useTranslation } from "@/common/lib/i18n";
-import MainHeader from "@/modules/MainHeader";
+import MainHeader from "@/modules/Home/MainHeader";
 import Banner from "@/modules/Home/Banner";
 import HowDoWeDoIt from "@/modules/Home/HowWeDoIt";
 import Clients from "@/modules/Home/Clients";

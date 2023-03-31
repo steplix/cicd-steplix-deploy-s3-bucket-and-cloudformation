@@ -73,8 +73,8 @@ const MainHeader = () => {
 
   return (
     <header className="relative">
-      <div ref={scrollRef}  className="containerScroll overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden whitespace-nowrap lg:h-[626px] xl:h-[572px] 2xl:container 2xl:p-0">
-        <div className="relative bg-mountain bg-no-repeat bg-contain sm:bg-cover lg:bg-contain w-[1088px] sm:w-[1091px] lg:w-[1725px] h-[536px] sm:h-[538px] lg:h-[824.15px] top-[59px] xl:top-6 sm:top-[50px] lg:translate-x-[-18px] 2xl:translate-x-[-291px] lg:z-20">
+      <div ref={scrollRef}  className="containerScroll overflow-x-scroll scroll-smooth scrollbar-hide overflow-y-hidden whitespace-nowrap h-[548px] sm:h-[560px] lg:h-[610px] xl:h-[572px] 2xl:p-0 2xl:container">
+        <div className="relative bg-mountain bg-no-repeat bg-contain sm:bg-cover lg:bg-contain w-[1088px] sm:w-[1091px] lg:w-[1725px] h-[536px] sm:h-[538px] lg:h-[836px] top-[55px] sm:top-[45px] lg:top-[67px] xl:top-6 lg:translate-x-[-18px] 2xl:translate-x-[-150px] lg:z-20">
           {stepsByBreakpoint[currentStep-1].id === 1 &&
             <>
               <button aria-label={t("MainHeader.buttonAriaLabel.forward")} className="absolute hidden lg:block top-[458px] left-[463px] lg:z-20"
@@ -122,7 +122,7 @@ const MainHeader = () => {
       </div>
 
       {stepsByBreakpoint[currentStep-1].id === 1 && showInitialState &&
-        <div className="container absolute top-[94px] sm:top-[98px] lg:top-[140px] xl:top-[120px] lg:z-10">
+        <div className="container absolute top-[44.5px] sm:top-[46px] lg:top-[95px] xl:top-[92px] lg:z-10">
           <StepInitial/>
         </div>
       }
@@ -142,12 +142,12 @@ const MainHeader = () => {
             dashLine={{
               name: "line-step-1",
               position: {
-                top: "top-[135px] lg:top-[285px] xl:top-[265px] 2xl:top-[265px]",
-                left: "left-[95px] lg:left-[164px] xl:left-[150px] 2xl:left-[120px]"
+                top: "top-[135px] lg:top-[260px] xl:top-[265px] 2xl:top-[265px]",
+                left: "left-[95px] lg:left-[115px] xl:left-[148px] 2xl:left-[255px]"
               },
               size: {
-                width: "w-[190.4px] lg:w-[246.39px] 2xl:w-[54.34px]",
-                height: "h-[162px] lg:h-[174px] 2xl:h-[173.88px]"
+                width: "w-[190.4px] lg:w-[300px] xl:w-[260px]",
+                height: "h-[162px] lg:h-[210px] xl:h-[180px]"
               },
             }}
           />
@@ -169,11 +169,11 @@ const MainHeader = () => {
               name: "line-step-2",
               position: {
                 top: "top-[82px] lg:top-[140px] xl:top-[110px] 2xl:top-[112px]",
-                left: "left-[245px] lg:left-[305px] xl:left-[296px] 2xl:left-[23px]",
+                left: "left-[245px] lg:left-[305px] xl:left-[296px] 2xl:left-[200px]",
               },
               size: {
-                width: "w-[225.5px] lg:w-[390px]",
-                height: "h-[86.06px] lg:h-[90px]",
+                width: "w-[225.5px] lg:w-[390px] 2xl:w-[350px]",
+                height: "h-[86.06px] lg:h-[90px] 2xl:h-[90px]",
               },
             }}
           />
@@ -194,8 +194,8 @@ const MainHeader = () => {
             dashLine={{
               name: "line-step-3",
               position: {
-                top: "top-[5px] lg:top-[33px] xl:top-[0px] 2xl:top-[0px]",
-                left: "left-[136px] lg:left-[300px] 2xl:left-[26px]",
+                top: "top-[5px] lg:top-[45px] xl:top-[0px] 2xl:top-[0px]",
+                left: "left-[136px] lg:left-[300px] 2xl:left-[160px]",
               },
               size: {
                 width: "w-[358.5px] lg:w-[620px]",
@@ -207,17 +207,17 @@ const MainHeader = () => {
       }
 
       {stepsByBreakpoint[currentStep-1].id === 5 &&
-        <div className="container absolute cardStepEndAnimation top-[59px] sm:top-[72px] lg:top-[109px]">
+        <div className="container absolute cardStepEndAnimation top-[59px] sm:top-[72px] lg:top-[109px] lg:z-20">
           <StepEnd/>
         </div>
       }
 
-      <div className="container absolute top-[483px] lg:top-[461.4px] xl:top-[427px] lg:z-20">
+      <div className="container absolute top-[417px] lg:top-[461.4px] xl:top-[440px]">
         <ScrollButton
           isVisible={stepsByBreakpoint[currentStep-1].showPrevious}
           icon="back"
           scrollAction={() => scrollLeft(stepsByBreakpoint[currentStep-1].scrollSizePrevious)}
-          customClass="float-left lg:float-right"
+          customClass="float-left lg:float-right lg:z-20"
           ariaLabel={t("MainHeader.buttonAriaLabel.backward")}
         />
 
@@ -225,7 +225,7 @@ const MainHeader = () => {
           isVisible={stepsByBreakpoint[currentStep-1].showNext}
           icon="forward"
           scrollAction={() => scrollRight(stepsByBreakpoint[currentStep-1].scrollSizeNext)}
-          customClass="float-right lg:float-left lg:z-20"
+          customClass={`${currentStep === 1 ? 'float-left' : 'float-right'} lg:z-20`}
           ariaLabel={t("MainHeader.buttonAriaLabel.forward")}
         />
 
@@ -233,7 +233,7 @@ const MainHeader = () => {
           isVisible={stepsByBreakpoint[currentStep-1].showRestart}
           icon="restart"
           scrollAction={() => scrollInit()}
-          customClass="float-right"
+          customClass="float-right lg:z-20"
           ariaLabel={t("MainHeader.buttonAriaLabel.reset")}
         />
       </div> 
