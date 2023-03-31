@@ -339,8 +339,10 @@
     "deviceImageAlt": "Imagen de un dispositivo tablet que enseña una interfaz de un proyecto interno diseñado por el equipo de Steplix."
   },
   "MainHeader": {
+    "slogan": "We are your digital ally",
     "title": "We co-create <br/> the path that <br/> will take your business <br/> to the top.",
-    "subtitle": "We are your <br/> digital ally",
+    "subtitleMobile": "We design and <br/> develop software <br/> according to your <br/> needs",
+    "subtitleBase": "We design and develop <br/> software according to your <br/> needs",
     "stepOneTitle": "We know <br/> the way",
     "stepOneDescription": "We are guides in the digital business ecosystem and we know how to help you promote an idea to turn it into a competitive product.",
     "stepTwoTitle": "We accompany you <br/> on the journey",

@@ -594,7 +594,7 @@ export const MOUNTAIN_STEPS = {
     showNext: true,
     showPrevious: false,
     showRestart: false,
-    scrollSizeNext: 100,
+    scrollSizeNext: 300,
     scrollSizePrevious: 0,
   },
   {
@@ -603,7 +603,7 @@ export const MOUNTAIN_STEPS = {
     showPrevious: true,
     showRestart: false,
     scrollSizeNext: 0,
-    scrollSizePrevious: 100,
+    scrollSizePrevious: 300,
   }]
 }
 
