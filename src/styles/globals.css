@@ -466,12 +466,6 @@
     touch-action: none;
   }
 
-  .mainHeader {
-    background-image: url("../../public/assets/img/home/mountain.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   .mountainStep {
     box-sizing: border-box;
     background: #FFDA00;
