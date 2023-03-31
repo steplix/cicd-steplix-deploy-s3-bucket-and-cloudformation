@@ -1,7 +1,8 @@
-import MainHeader from "@/modules/MainHeader";
-import OurPosts from "@/modules/OurPosts";
+import MainHeader from "@/modules/Home/MainHeader";
+import Banner from "@/modules/Home/Banner";
+import HowDoWeDoIt from "@/modules/Home/HowWeDoIt";
+import Clients from "@/modules/Home/Clients";
 import HeadTag from "@/common/components/HeadTag";
-import Portfolio from "@/modules/Portfolio";
 import { useTranslation } from "@/common/lib/i18n";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { useEffect } from "react";
@@ -21,13 +22,16 @@ export default function Home({ locale }) {
             <HeadTag metaContent={{title: t("metaTags.home.title"), description: t("metaTags.home.description"), keywords: t("metaTags.home.keywords")}} />
             <main className="flex flex-col">
                 {/* MainHeader Section */}
-                <MainHeader locale={locale} />
+                <MainHeader />
 
-                {/* Portfolio Section */}
-                <Portfolio />
+                {/* Banner Section */}
+                <Banner />
 
-                {/* Posts Section */}
-                <OurPosts />
+                {/* Technology Section */}
+                <HowDoWeDoIt />
+
+                {/* Clients Section */}
+                <Clients />
             </main>
         </>
     );
