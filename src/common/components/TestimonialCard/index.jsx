@@ -1,65 +1,58 @@
-/* eslint-disable @next/next/no-img-element */
-import React from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "next-export-i18n";
 
 const TestimonialCard = ({
-    image,
-    imageAlt,
-    witnessName,
-    witnessPosition,
-    witnessCompany,
-    testimonial,
-    cardBorderColor,
-    divideColor,
+  clientImageUrl,
+  clientFirstName,
+  clientLastName,
+  clientCompany,
+  clientOpinion,
+  clientPosition,
+  imageAlt,
+  textColor,
 }) => {
-    return (
-        <article
-            className={`${cardBorderColor} border-2 rounded-3xl min-h-[400px] md:min-h-[370px] lg:min-h-[420px] xl:min-h-[500px] w-full xl:w-[464px] px-4 lg:px-7 xl:px-6 pt-8 lg:pt-12 xl:pt-7`}
-        >
-            <div className="flex flex-col space-y-6 md:space-y-14">
-                <div className="flex space-x-8 md:space-x-6 xl:space-x-4">
-                    <div className="flex flex-col space-y-6 xl:space-y-4">
-                        <img
-                            className="h-[1.3rem] w-16 md:h-8 md:w-24 lg:h-11 lg:w-32 xl:h-8 xl:w-24 mt-1"
-                            src={image}
-                            alt={imageAlt}
-                        />
-                        <div
-                            className={`h-1 xl:h-1.5 w-[50px] md:w-[90px] my-4 md:my-6 ${divideColor}`}
-                        />
-                    </div>
-                    <div className="flex flex-col">
-                        <p className="leading-tight font-bold md:font-semibold text-3xl lg:text-5xl xl:text-3xl">
-                            {witnessName}
-                        </p>
-                        <p className="leading-tight font-light md:font-normal text-base md:text-xl lg:text-3xl xl:text-xl">
-                            {witnessPosition}{" "}
-                            <span className="text-yellow">
-                                {witnessCompany}
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <p className="text-base md:text-xl lg:text-3xl xl:text-xl leading-tight">
-                    {testimonial}
-                </p>
-            </div>
-        </article>
-    );
+  const { t } = useTranslation();
+
+  return (
+    <article className="h-[408px] w-[280px] md:w-[488px] md:h-[268px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white card-shadow text-black">
+      <div className="flex flex-col justify-between pb-6">
+        <div className="flex space-x-3 mb-[10px]">
+          <img
+            alt={imageAlt}
+            className="w-[56px] h-[56px] rounded-full"
+            src={clientImageUrl}
+          />
+          <div className="text-left">
+            <h3 className="text-[26px] leading-none font-bold">
+              {clientFirstName}
+            </h3>
+            <h3 className="text-[26px] leading-none font-bold">
+              {clientLastName}
+            </h3>
+          </div>
+        </div>
+        <div className="flex text-[13px] font-medium md:text-base">
+          {clientPosition} -
+          <h4 className={`${textColor} font-bold pl-[4px]`}>
+            {" "}
+            {clientCompany}{" "}
+          </h4>
+        </div>
+      </div>
+      {/* TODO:: Modify to text mobile when the responsive and changes are applied on Figma */}
+      <p className="text-xs leading-4">{t(clientOpinion)}</p>
+    </article>
+  );
 };
 
-//
-// PropsTypes
-//
 TestimonialCard.propTypes = {
-    image: PropTypes.string.isRequired,
-    imageAlt: PropTypes.string.isRequired,
-    witnessName: PropTypes.string.isRequired,
-    witnessPosition: PropTypes.string.isRequired,
-    witnessCompany: PropTypes.string.isRequired,
-    testimonial: PropTypes.string.isRequired,
-    cardBorderColor: PropTypes.string.isRequired,
-    divideColor: PropTypes.oneOf(["bg-red", "bg-blue", "bg-yellow"]).isRequired,
+  clientFirstName: PropTypes.string.isRequired,
+  clientLastName: PropTypes.string.isRequired,
+  clientCompany: PropTypes.string.isRequired,
+  clientOpinion: PropTypes.string.isRequired,
+  clientImageUrl: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
+  textColor: PropTypes.string.isRequired,
 };
 
 export default TestimonialCard;

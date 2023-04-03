@@ -1,196 +1,167 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
 import LanguageSelector from "@/common/components/LanguageSelector";
 import Submenu from "@/common/components/Submenu";
+import CustomNextLink from "@/common/components/CustomNextLink";
+import { motion, AnimatePresence } from 'framer-motion';
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import { useLanguageQuery } from "next-export-i18n";
+import { useTranslation } from "@/common/lib/i18n";
 import { useRouter } from "next/router";
+import { routesMap } from "@/common/utils/constants";
+import { getOutlinedTitle } from "@/common/utils/methods";
 
 const Navbar = () => {
-    const { t } = useTranslation();
-    let [query] = useLanguageQuery();
-    query = { lang: query?.lang };
-    const router = useRouter();
+  const {query: { locale }, pathname, asPath } = useRouter();
+  const [i18nQuery] = useLanguageQuery(locale);
+  const { t } = useTranslation(i18nQuery?.locale);
+  const routeTitle = routesMap[pathname.substring(10)]?.title;
+  
+  const isCurrentPathnameActive = (pathname) => {
+    const pathnameToTest = new RegExp(pathname)
+    return pathnameToTest.test(asPath) ? "nav--link--active" : "";
+  }
+  
+  //
+  // State
+  //
+  const [sticky, setSticky] = React.useState(false);
+  const [toggle, setToggle] = React.useState(false);
 
-    //
-    // State
-    //
-    const [sticky, setSticky] = React.useState(false);
-    const [toggle, setToggle] = React.useState(false);
+  //
+  // Effects
+  //
+  React.useEffect(() => {
+    const onScroll = () => {
+      const currentPosition = window.pageYOffset;
+      setTimeout(() => {
+        setSticky(currentPosition > 52 ? true : !(currentPosition === 0));
+      }, 5);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-    //
-    // Effects
-    //
-    React.useEffect(() => {
-        const onScroll = () => {
-            const currentPosition = window.pageYOffset;
-            setTimeout(() => {
-                setSticky(
-                    currentPosition > 52 ? true : !(currentPosition === 0)
-                );
-            }, 5);
-        };
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+  React.useEffect(() => {
+    toggle ? disableBodyScroll(document) : enableBodyScroll(document);
+  }, [toggle]);
 
-    React.useEffect(() => {
-        toggle ? disableBodyScroll(document) : enableBodyScroll(document);
-    }, [toggle]);
-
-    return (
-        <div className="sticky top-0 w-full text-white z-50">
-            {/* navbar mobile */}
-            <nav className="block xl:hidden">
-                <div>
-                    <Submenu
-                        router={router}
-                        query={query}
-                        toggle={toggle}
-                        setToggle={setToggle}
+  return (
+    <div className="sticky top-0 w-full text-white z-50">
+      {/* navbar mobile */}
+      <nav className="flex flex-col lg:hidden">
+        <div className={`flex flex-col w-full header-gradient absolute top-0`}>
+          <div className="container flex justify-between items-center w-full h-[56px] sm:h-[62px]">
+            {/* logo mobile */}
+            <div className="items-center justify-center flex">
+              <button className="" aria-label={t("navbar.item0.ariaLabel")} onClick={() => toggle ? setToggle(!toggle) : null}    >
+                <CustomNextLink to="/">
+                  <a>
+                    <img
+                      src="/assets/img/logo-navbar.svg"
+                      alt="Steplix logo"
+                      className="w-[75px] h-5"
                     />
-                </div>
-                <div
-                    className={`flex absolute justify-between items-center w-full h-[65px] transition-height duration-500 ease-in-out hover:bg-purple ${
-                        sticky ? "bg-black" : "bg-dark"
-                    }`}
-                >
-                    {/* logo mobile */}
-                    <div className="ml-5 items-center justify-center flex">
-                        <Link href={{ pathname: "/", query: query }}>
-                            <a>
-                                <img
-                                    src="/assets/img/logo-navbar.svg"
-                                    alt="logo"
-                                    className="w-[101px] h-6 md:w-40 md:h-10 lg:w-44 lg:h-12"
-                                />
-                            </a>
-                        </Link>
-                    </div>
-                    {/* button menu mobile */}
-                    <div className="z-50 mr-3">
-                        <button
-                            className="w-[33px] h-[33px] flex flex-col items-center justify-center z-50 xl:hidden"
-                            onClick={() => setToggle(!toggle)}
-                        >
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                            <span
-                                className={`line ${toggle && "line--toggle"}`}
-                            />
-                        </button>
-                    </div>
-                </div>
-            </nav>
-
-            {/* navbar desktop */}
-            <nav
-                className={`hidden xl:flex w-full h-20 transition-height duration-500 ease-in-out absolute ${
-                    sticky ? "bg-black" : "bg-dark"
-                }`}
-            >
-                <div className="container pr-28 flex top-0 justify-between items-center">
-                    {/* logo desktop */}
-                    <Link href={{ pathname: "/", query: query }}>
-                        <a>
-                            <img
-                                src="/assets/img/logo-navbar.svg"
-                                alt="logo"
-                                className="w-[120px] h-[30px]"
-                            />
-                        </a>
-                    </Link>
-                    {/* menu options desktop */}
-                    <div className="flex justify-end items-center space-x-8 text-lg">
-                        <Link
-                            href={{
-                                pathname: "/about-us",
-                                query: query,
-                            }}
-                        >
-                            <a
-                                className={`hover:opacity-100 opacity-50 ${
-                                    router.pathname === "/about-us"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
-                            >
-                                {t("navbar.item0")}
-                            </a>
-                        </Link>
-                        <Link
-                            href={{
-                                pathname: "/stack",
-                                query: query,
-                            }}
-                        >
-                            <a
-                                className={`hover:opacity-100 opacity-50 ${
-                                    router.pathname === "/stack"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
-                            >
-                                {t("navbar.item1")}
-                            </a>
-                        </Link>
-                        <Link
-                            href={{
-                                pathname: "/process",
-                                query: query,
-                            }}
-                        >
-                            <a
-                                className={`hover:opacity-100 opacity-50 ${
-                                    router.pathname === "/process"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
-                            >
-                                {t("navbar.item2")}
-                            </a>
-                        </Link>
-                        <Link href={{ pathname: "/jobs", query: query }}>
-                            <a
-                                className={`hover:opacity-100 opacity-50 ${
-                                    router.pathname === "/jobs" ||
-                                    router.pathname.substring(1, 5) === "jobs"
-                                        ? "nav--active opacity-100"
-                                        : ""
-                                }`}
-                            >
-                                {t("navbar.item5")}
-                            </a>
-                        </Link>
-                        <Link
-                            href={{
-                                pathname: "/contact",
-                                query: query,
-                            }}
-                        >
-                            <a>
-                                <button
-                                    className={`bg-white text-black rounded-full w-40 h-10 text-lg ${
-                                        router.pathname === "/contact"
-                                            ? "bg-yellow"
-                                            : ""
-                                    }`}
-                                >
-                                    {t("navbar.item6")}
-                                </button>
-                            </a>
-                        </Link>
-                        <LanguageSelector />
-                    </div>
-                </div>
-            </nav>
+                  </a>
+                </CustomNextLink>
+              </button>
+            </div>
+            {/* button menu mobile */}
+            <div className="z-50">
+              <button
+                className="w-[24px] h-[24px] flex flex-col items-center justify-center z-50 lg:hidden"
+                onClick={() => setToggle(!toggle)}
+                aria-label={ toggle ? t("navbar.submenuCloseAriaLabel") : t("navbar.submenuOpenAriaLabel")}
+              >
+                <span className={`line ${toggle && "line--toggle"}`} />
+                <span className={`line ${toggle && "line--toggle"}`} />
+                <span className={`line ${toggle && "line--toggle"}`} />
+              </button>
+            </div>
+          </div>
+          <Submenu toggle={toggle} setToggle={setToggle} />
+          <AnimatePresence>
+          {routeTitle && !toggle ? (
+              <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1, transition: { ease: "linear", duration: 0.1 } }}
+              exit={{ opacity: 0, height: 0, transition: { ease: "linear", duration: 0.1 }}} className="relative container h-[74px] sm:h-[68px] flex items-center">
+                <h1 className={`font-bold font-poppins tracking-[0.8px] text-3xl`}>
+                  {getOutlinedTitle(t(routeTitle))?.title + " "}
+                  <span
+                    className="font-bold text-outlined"
+                  >
+                    {getOutlinedTitle(t(routeTitle))?.outlined}
+                  </span>
+                </h1>
+              </motion.div>
+          ) : null}
+          </AnimatePresence>
         </div>
-    );
+      </nav>
+
+      {/* navbar desktop */}
+      <nav
+        className={`hidden lg:flex lg:flex-col lg:justify-center w-full header-gradient`}
+      >
+        <div className="container flex justify-between items-center h-[100px]">
+          {/* logo desktop */}
+          <CustomNextLink to="/">
+            <a>
+              <img
+                src="/assets/img/logo-navbar.svg"
+                alt="Steplix logo"
+                className="w-[90px] h-[24px] lg:w-[115px] lg:h-[40px]"
+                aria-label={t("navbar.item0.ariaLabel")}
+              />
+            </a>
+          </CustomNextLink>
+          {/* menu options desktop */}
+          <div className="flex justify-end items-center space-x-8 font-normal">
+            <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
+              <a
+                className={`nav--link nav--link--blue ${isCurrentPathnameActive(
+                  `/${i18nQuery?.lang}/about-us`
+                )}`}
+                aria-label={t("navbar.item1.ariaLabel")}
+              >
+                {t("navbar.item1.route")}
+              </a>
+            </CustomNextLink>
+            <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
+              <a
+                className={`nav--link nav--link--red ${isCurrentPathnameActive(
+                  `/${i18nQuery?.lang}/what-we-do`
+                )}`}
+                aria-label={t("navbar.item2.ariaLabel")}
+              >
+                {t("navbar.item2.route")}
+              </a>
+            </CustomNextLink>
+            <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
+              <a
+                className={`nav--link nav--link--yellow ${isCurrentPathnameActive(
+                  `/${i18nQuery?.lang}/portfolio`
+                )}`}
+                aria-label={t("navbar.item3.ariaLabel")}
+              >
+                {t("navbar.item3.route")}
+              </a>
+            </CustomNextLink>
+            <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
+              <a
+                className={`nav--link nav--link--blue ${isCurrentPathnameActive(
+                  `/${i18nQuery?.lang}/contact`
+                )}`}
+                aria-label={t("navbar.item4.ariaLabel")}
+              >
+                {t("navbar.item4.route")}
+              </a>
+            </CustomNextLink>
+            <LanguageSelector />
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;

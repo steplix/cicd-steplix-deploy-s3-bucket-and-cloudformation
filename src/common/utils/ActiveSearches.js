@@ -3,6 +3,7 @@ export const ActiveSearches = () => [
         params: {
             slug: ["UI_UXDesigner", "es"],
         },
+        locale: "en"
     },
     {
         params: {
@@ -19,4 +20,5 @@ export const ActiveSearches = () => [
             slug: ["BACKENDSSR", "en"],
         },
     },
+    
 ];

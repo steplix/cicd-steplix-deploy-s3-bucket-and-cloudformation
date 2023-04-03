@@ -4,11 +4,8 @@ out
 
 # Dependency directory
 node_modules
-package-lock.json
 
 # Environments
 .env
 DS_Store
 
-# VS Code Settings
-.vscode
