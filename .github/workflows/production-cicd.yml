@@ -3,10 +3,11 @@ run-name: >
   ${{ github.event.pull_request.title }}
 
 on:
-  push:
+  pull_request_target:
+    types:
+      - closed
     branches:
       - master
-
 
 jobs:
 
