@@ -79,3 +79,4 @@ export * from './serviceDataEngineering';
 export * from './serviceDesign';
 export * from './serviceDevelopment';
 export * from './serviceConsultancy';
+export * from './peopleSpeak';
