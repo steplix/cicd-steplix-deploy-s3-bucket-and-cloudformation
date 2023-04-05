@@ -221,6 +221,7 @@ export const CARD_CONTACT = [
   {
     name: "Enrique",
     surname: "Serrani",
+    title: "Sales Manager Latam",
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
@@ -230,6 +231,7 @@ export const CARD_CONTACT = [
   {
     name: "Jorge",
     surname: "Yánez",
+    title: "Sr Sales Representative Latam",
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",

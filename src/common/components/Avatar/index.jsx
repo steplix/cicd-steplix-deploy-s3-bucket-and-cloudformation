@@ -1,35 +1,24 @@
 import { PropTypes } from "prop-types";
-import { useEffect, useState } from "react";
 import { useAvatarName } from "@/hooks/useAvatarName";
-import AvatarSkeleton from "./AvatarSkeleton";
 import AvatarImage from "./AvatarImage";
 import AvatarName from "./AvatarName";
 
-const Avatar = ({ imgSrc, imgAlt, name, surname, isLoading }) => {
+const Avatar = ({ imgSrc, imgAlt, name, surname }) => {
   const nameInitials = useAvatarName(name, surname);
-  const [showClasses, setShowClasses] = useState(false);
-
-  useEffect(() => {
-    if (!isLoading && !imgSrc) {
-      setShowClasses(true);
-    }
-  }, [imgSrc, isLoading]);
+  const avatarComponent = imgSrc ? (
+    <AvatarImage imgSrc={imgSrc} imgAlt={imgAlt} />
+    ) : (
+    <AvatarName nameInitials={nameInitials} />
+    );
 
   return (
-    <>
-      <div
-        className={`flex justify-center items-center rounded-full avatar-size  ${
-          showClasses ? "avatar-gradient" : ""
-        }`}>
-        {isLoading ? (
-          <AvatarSkeleton />
-        ) : imgSrc ? (
-          <AvatarImage imgSrc={imgSrc} imgAlt={imgAlt} />
-        ) : (
-          <AvatarName nameInitials={nameInitials} />
-        )}
-      </div>
-    </>
+    <div
+      className={`flex justify-center items-center rounded-full w-[72px] h-[72px]  ${
+        !imgSrc ? "avatar-gradient" : ""
+      }`}
+    >
+      {avatarComponent}
+    </div>
   );
 };
 
@@ -43,7 +32,6 @@ Avatar.propTypes = {
     }
   },
   imgAlt: PropTypes.string,
-  isLoading: PropTypes.bool,
   name: PropTypes.string,
   surname: PropTypes.string,
 };
