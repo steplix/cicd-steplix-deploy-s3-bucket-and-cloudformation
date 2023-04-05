@@ -60,6 +60,7 @@ const Contact = ({ locale }) => {
                 key={item.email}
                 name={item.name}
                 surname={item.surname}
+                title={item.title}
                 imgSrc={item?.imgSrc}
                 imgAlt={t(item?.imgAlt)}
                 email={item.email}
