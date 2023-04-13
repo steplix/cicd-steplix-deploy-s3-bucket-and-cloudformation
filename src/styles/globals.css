@@ -6,14 +6,12 @@
   html {
     scroll-behavior: auto;
     scroll-padding-top: 160px;
-    height: -webkit-fill-available;
   }
 
   body {
     @apply font-sofia text-purple bg-neutral-white;
     -webkit-font-smoothing: subpixel-antialiased;
-    /* mobile viewport bug fix ios */
-    min-height: -webkit-fill-available;
+    width: 100lvw;
   }
 
   p {
