@@ -127,7 +127,7 @@ export const usePortfolioTranslation = () => {
     {
       image: "/assets/img/clients/client-ceva.webp",
       alt: "Ceva",
-      name: "María",
+      name: "Maria",
       lastName: "Fariña",
       position: "Marketing",
       title: t("happyClients.clientCeva.title"),
