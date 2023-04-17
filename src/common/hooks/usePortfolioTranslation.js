@@ -53,7 +53,7 @@ export const usePortfolioTranslation = () => {
 
   const ARRAY_CLIENTS = [
     {
-      image: "/assets/img/clients/client-finket.webp",
+      image: "/assets/img/clients/client-finket.svg",
       alt: "CTECH",
       name: "Lucas",
       position: "Ceo & Founder",
@@ -65,7 +65,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-sura.webp",
+      image: "/assets/img/clients/client-sura.svg",
       alt: "sura",
       name: "Juan",
       lastName: "Ramallo",
@@ -77,7 +77,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/sinoar-logo.webp",
+      image: "/assets/img/clients/client-sinoar.svg",
       alt: "SinoAr",
       name: "Ramón",
       lastName: "Uranga",
@@ -89,7 +89,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-pow.webp",
+      image: "/assets/img/clients/client-pow.svg",
       alt: "Pow.",
       name: "Guido",
       lastName: "Ginesi",
@@ -101,7 +101,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-vacaygreen.webp",
+      image: "/assets/img/clients/client-vacaygreen.svg",
       alt: "VacayGreen",
       name: "Gonzalo",
       lastName: "Arreche",
@@ -113,7 +113,7 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-valid.webp",
+      image: "/assets/img/clients/client-valid.svg",
       alt: "Valid",
       name: "Federico",
       lastName: "Bitonte",
@@ -125,9 +125,9 @@ export const usePortfolioTranslation = () => {
       textColor: "text-blue",
     },
     {
-      image: "/assets/img/clients/client-ceva.webp",
+      image: "/assets/img/clients/client-ceva.svg",
       alt: "Ceva",
-      name: "María",
+      name: "Maria",
       lastName: "Fariña",
       position: "Marketing",
       title: t("happyClients.clientCeva.title"),

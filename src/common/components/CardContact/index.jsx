@@ -43,7 +43,7 @@ const CardContact = ({
                   <p className="font-sofia font-medium text-black text-xl leading-6">{surname}</p>
                 </div>
                 <div>
-                  <p className="text-black text-[10px] leading-[13px] tracking-[0.03em] font-medium">{title}</p>
+                  <p className="text-grey-neutro text-mobile tracking-[0.03em] font-normal">{title}</p>
                 </div>
               </div>
             </div>
