@@ -84,5 +84,6 @@ export const propTypeIconName = PropTypes.oneOf([
   "serviceDataEngineering",
   "serviceDesign",
   "serviceDevelopment",
-  "serviceConsultancy"
+  "serviceConsultancy",
+  "peopleSpeak"
 ]);

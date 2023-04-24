@@ -11,6 +11,7 @@
   body {
     @apply font-sofia text-purple bg-neutral-white;
     -webkit-font-smoothing: subpixel-antialiased;
+    width: 100lvw;
   }
 
   p {

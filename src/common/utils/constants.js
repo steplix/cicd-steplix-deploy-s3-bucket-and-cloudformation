@@ -193,27 +193,27 @@ export const clientsCards = [
 export const PHOTO_CAROUSEL = [
   {
     src: "/assets/img/contact/contact-1.webp",
-    alt: "contact.imagesAlt.imgOne"
+    alt: "contact.imagesAlt.imgOne",
   },
   {
     src: "/assets/img/contact/contact-2.webp",
-    alt: "contact.imagesAlt.imgTwo"
+    alt: "contact.imagesAlt.imgTwo",
   },
   {
     src: "/assets/img/contact/contact-3.webp",
-    alt: "contact.imagesAlt.imgThree"
+    alt: "contact.imagesAlt.imgThree",
   },
   {
     src: "/assets/img/contact/contact-4.webp",
-    alt: "contact.imagesAlt.imgFour"
+    alt: "contact.imagesAlt.imgFour",
   },
   {
     src: "/assets/img/contact/contact-5.webp",
-    alt: "contact.imagesAlt.imgFive"
+    alt: "contact.imagesAlt.imgFive",
   },
   {
     src: "/assets/img/contact/contact-6.webp",
-    alt: "contact.imagesAlt.imgSix"
+    alt: "contact.imagesAlt.imgSix",
   },
 ];
 
@@ -221,20 +221,24 @@ export const CARD_CONTACT = [
   {
     name: "Enrique",
     surname: "Serrani",
+    title: "Sales Manager Latam",
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
     imgSrc: "/assets/img/contact/sellers/seller-1.webp",
-    imgAlt: "contact.salesRepresentativeAlt.Enrique"
+    imgAlt: "contact.salesRepresentativeAlt.Enrique",
+    gtagEventName: "serrani",
   },
   {
     name: "Jorge",
     surname: "Yánez",
+    title: "Sr Sales Representative Latam",
     email: "jyanez@steplix.com",
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
     imgAlt: "contact.salesRepresentativeAlt.Jorge",
     imgSrc: "/assets/img/contact/sellers/seller-2.webp",
+    gtagEventName: "yanez",
   },
 ];
 
@@ -254,7 +258,6 @@ export const PORTFOLIO_CARDS = [
     name: "pow",
     industryIconName: "eccommerceB",
     iconBrandClass: "w-[96px] h-[34px]",
-
   },
   {
     name: "sura",
@@ -265,7 +268,6 @@ export const PORTFOLIO_CARDS = [
     name: "smartium",
     industryIconName: "eccomerce",
     iconBrandClass: "w-[136px] h-[35px]",
-
   },
 ];
 
@@ -273,53 +275,53 @@ export const clientsLogos = [
   {
     image: "valid",
     alt: "Valid Logo",
-    class: "w-[63px] lg:w-[75px] xl:w-[93px]"
+    class: "w-[63px] lg:w-[75px] xl:w-[93px]",
   },
   {
     image: "finket",
     alt: "Finket Logo",
-    class: "w-[68px] sm:w-[75px] lg:w-[90px] xl:w-[112px]"
+    class: "w-[68px] sm:w-[75px] lg:w-[90px] xl:w-[112px]",
   },
   {
     image: "pow",
     alt: "POW Logo",
-    class: "w-[56px] sm:w-[62px] lg:w-[75px] xl:w-[93px]"
+    class: "w-[56px] sm:w-[62px] lg:w-[75px] xl:w-[93px]",
   },
   {
     image: "vacay",
     alt: "VacayGreen Logo",
-    class: "w-[135px] sm:w-[148px] lg:w-[180px] xl:w-[221px]"
+    class: "w-[135px] sm:w-[148px] lg:w-[180px] xl:w-[221px]",
   },
   {
     image: "sura",
     alt: "Sura Logo",
-    class: "w-[65px] sm:w-[84px] lg:w-[102px] xl:w-[126px]"
+    class: "w-[65px] sm:w-[84px] lg:w-[102px] xl:w-[126px]",
   },
   {
     image: "columbia",
     alt: "Columbia Logo",
-    class: "w-[78px] sm:w-[119px] lg:w-[144px] xl:w-[177px]"
+    class: "w-[78px] sm:w-[119px] lg:w-[144px] xl:w-[177px]",
   },
   {
     image: "c5n",
     alt: "C5N Logo",
-    class: "w-[65px] sm:w-[85px] xl:w-[105px]"
+    class: "w-[65px] sm:w-[85px] xl:w-[105px]",
   },
   {
     image: "x28",
     alt: "x28 Alarmas Logo",
-    class: "w-[66px] lg:w-[70px] xl:w-[86px]"
+    class: "w-[66px] lg:w-[70px] xl:w-[86px]",
   },
   {
     image: "smartium",
     alt: "Smartium Logo",
-    class: "w-[79px] sm:w-[113px] lg:w-[137px] xl:w-[168px]"
+    class: "w-[79px] sm:w-[113px] lg:w-[137px] xl:w-[168px]",
   },
   {
     image: "ceva",
     alt: "Ceva Logo",
     class: "w-10 lg:w-[47px] xl:w-[58px]",
-  }
+  },
 ];
 
 export const technologiesImages = [
@@ -437,201 +439,213 @@ export const LOCALE_SLUGS = ["es", "en"];
 
 // HOME PAGE
 export const MOUNTAIN_STEPS = {
-  xs: [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 2,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 155,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 3,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 155,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 4,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 270,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: true,
-    scrollSizeNext: 0, 
-    scrollSizePrevious: 270,
-  }],
-  sm: [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 2,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 3,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 155,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 4,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 270,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: true,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 270,
-  }],
-  md: [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 2,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 3,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 155,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 4,
-    showNext: true,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 270,
-    scrollSizePrevious: 155,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: true, 
-    scrollSizeNext: 0,
-    scrollSizePrevious: 168,
-  }],
-  lg: [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 650,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 650,
-  }],
-  xl: [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 650,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 650,
-  }],
-  '2xl': [{
-    id: 1,
-    showNext: true,
-    showPrevious: false,
-    showRestart: false,
-    scrollSizeNext: 300,
-    scrollSizePrevious: 0,
-  },
-  {
-    id: 5,
-    showNext: false,
-    showPrevious: true,
-    showRestart: false,
-    scrollSizeNext: 0,
-    scrollSizePrevious: 300,
-  }]
-}
+  xs: [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 2,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 155,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 3,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 155,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 4,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 270,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: true,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 270,
+    },
+  ],
+  sm: [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 2,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 3,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 155,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 4,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 270,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: true,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 270,
+    },
+  ],
+  md: [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 2,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 3,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 155,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 4,
+      showNext: true,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 270,
+      scrollSizePrevious: 155,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: true,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 168,
+    },
+  ],
+  lg: [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 650,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 650,
+    },
+  ],
+  xl: [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 650,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 650,
+    },
+  ],
+  "2xl": [
+    {
+      id: 1,
+      showNext: true,
+      showPrevious: false,
+      showRestart: false,
+      scrollSizeNext: 300,
+      scrollSizePrevious: 0,
+    },
+    {
+      id: 5,
+      showNext: false,
+      showPrevious: true,
+      showRestart: false,
+      scrollSizeNext: 0,
+      scrollSizePrevious: 300,
+    },
+  ],
+};
 
 export const SERVICES = [
   {
     icon: "serviceDevelopment",
     name: "MainHeader.services.SoftwareDevelopment.name",
-    description: "MainHeader.services.SoftwareDevelopment.description"
+    description: "MainHeader.services.SoftwareDevelopment.description",
   },
 
   {
     icon: "serviceDesign",
     name: "MainHeader.services.ProductDesign.name",
-    description: "MainHeader.services.ProductDesign.description"
+    description: "MainHeader.services.ProductDesign.description",
   },
   {
     icon: "serviceQA",
     name: "MainHeader.services.QAAutomation.name",
-    description: "MainHeader.services.QAAutomation.description"
+    description: "MainHeader.services.QAAutomation.description",
   },
   {
     icon: "serviceDataEngineering",
     name: "MainHeader.services.DataEngineering.name",
-    description: "MainHeader.services.DataEngineering.description"
+    description: "MainHeader.services.DataEngineering.description",
   },
   {
     icon: "serviceConsultancy",
     name: "MainHeader.services.StrategicConsulting.name",
-    description: "MainHeader.services.StrategicConsulting.description"
+    description: "MainHeader.services.StrategicConsulting.description",
   },
 ];
