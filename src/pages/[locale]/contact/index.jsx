@@ -30,6 +30,11 @@ const Contact = ({ locale }) => {
   const encodedText = encodeURIComponent(t("contact.whatsAppMessage"));
   const WHATSAPP_LINK = `https://wa.me/5491150105103?text=${encodedText}`;
 
+  const handleOnClickWhatsApp = () => {
+    openLink(WHATSAPP_LINK);
+    window.gtag("event", "click_boton_whatsapp");
+  };
+
   return (
     <>
       <HeadTag
@@ -68,6 +73,7 @@ const Contact = ({ locale }) => {
                 onClickSocialMediaButton={() => openLink(item.linkedin)}
                 onClickCalendarButton={() => openLink(item.meeting)}
                 socialMediaAriaLabel={t("contact.socialMediaAriaLabel")}
+                gtagEventName={item.gtagEventName}
               />
             ))}
           </div>
@@ -115,7 +121,7 @@ const Contact = ({ locale }) => {
                   text="+54 9 1150105103"
                   rightIcon={icons.whatsapp}
                   leftIcon={icons.phone}
-                  clickEvent={() => openLink(WHATSAPP_LINK)}
+                  clickEvent={handleOnClickWhatsApp}
                 />
               </div>
               <div className="lg:order-3 lg:self-end">

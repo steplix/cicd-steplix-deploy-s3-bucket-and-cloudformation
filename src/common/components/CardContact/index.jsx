@@ -18,12 +18,26 @@ const CardContact = ({
   onClickCalendarButton,
   onClickSocialMediaButton,
   onClickCopyButton,
-  socialMediaAriaLabel
+  socialMediaAriaLabel,
+  gtagEventName,
 }) => {
-
-  const { query: { locale } } = useRouter();
+  const {
+    query: { locale },
+  } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
+
+  const handleSocialMediaClick = () => {
+    console.log("click linkedin", gtagEventName);
+    onClickSocialMediaButton();
+    window.gtag("event", `click_linkedin_${gtagEventName}`);
+  };
+
+  const handleCalendarClick = () => {
+    console.log("click hubspot", gtagEventName);
+    onClickCalendarButton();
+    window.gtag("event", `cita_hubspot_${gtagEventName}`);
+  };
 
   return (
     <div className="relative bg-white card--shadow rounded-3xl w-full p-6">
@@ -39,24 +53,34 @@ const CardContact = ({
               />
               <div className="flex flex-col gap-2.5">
                 <div className="flex flex-col">
-                  <p className="font-sofia font-medium text-black text-xl leading-6">{name}</p>
-                  <p className="font-sofia font-medium text-black text-xl leading-6">{surname}</p>
+                  <p className="font-sofia font-medium text-black text-xl leading-6">
+                    {name}
+                  </p>
+                  <p className="font-sofia font-medium text-black text-xl leading-6">
+                    {surname}
+                  </p>
                 </div>
                 <div>
-                  <p className="text-grey-neutro text-mobile tracking-[0.03em] font-normal">{title}</p>
+                  <p className="text-grey-neutro text-mobile tracking-[0.03em] font-normal">
+                    {title}
+                  </p>
                 </div>
               </div>
             </div>
             <button
               className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
-              onClick={onClickSocialMediaButton}
+              onClick={handleSocialMediaClick}
               aria-label={socialMediaAriaLabel}
             >
               <Icon name={cornerIconName} className="w-4 h-3" />
             </button>
           </div>
           <div>
-            <TextField text={email} clickEvent={onClickCopyButton} toastMessage={t("contact.copyButton")} />
+            <TextField
+              text={email}
+              clickEvent={onClickCopyButton}
+              toastMessage={t("contact.copyButton")}
+            />
           </div>
         </div>
         {onClickCalendarButton && (
@@ -79,7 +103,7 @@ const CardContact = ({
                 label={t("ButtonCardContact")}
                 iconName="calendar"
                 customImageClass="w-4"
-                clickEvent={onClickCalendarButton}
+                clickEvent={handleCalendarClick}
                 ariaLabel={t("contact.scheduleAriaLabel")}
               />
             </div>
@@ -101,7 +125,8 @@ CardContact.propTypes = {
   onClickCalendarButton: PropTypes.func,
   onClickSocialMediaButton: PropTypes.func,
   onClickCopyButton: PropTypes.func,
-  socialMediaAriaLabel: PropTypes.string
+  socialMediaAriaLabel: PropTypes.string,
+  gtagEventName: PropTypes.string,
 };
 
 CardContact.defaultProps = {
