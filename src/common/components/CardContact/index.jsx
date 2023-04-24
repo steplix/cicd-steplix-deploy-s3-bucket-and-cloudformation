@@ -28,13 +28,11 @@ const CardContact = ({
   const { t } = useTranslation(i18nQuery?.locale);
 
   const handleSocialMediaClick = () => {
-    console.log("click linkedin", gtagEventName);
     onClickSocialMediaButton();
     window.gtag("event", `click_linkedin_${gtagEventName}`);
   };
 
   const handleCalendarClick = () => {
-    console.log("click hubspot", gtagEventName);
     onClickCalendarButton();
     window.gtag("event", `cita_hubspot_${gtagEventName}`);
   };
