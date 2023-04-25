@@ -41,7 +41,7 @@ const CardContact = ({
     <div className="relative bg-white card--shadow rounded-3xl w-full p-6">
       <div className="flex flex-col gap-[3.375rem]">
         <div className="flex flex-col gap-6">
-          <div className="flex justify-between">
+          <div className="relative">
             <div className="flex gap-2 items-center">
               <Avatar
                 name={name}
@@ -66,7 +66,7 @@ const CardContact = ({
               </div>
             </div>
             <button
-              className="bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
+              className="absolute top-0 right-0 bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
               onClick={handleSocialMediaClick}
               aria-label={socialMediaAriaLabel}
             >

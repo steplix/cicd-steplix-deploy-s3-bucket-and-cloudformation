@@ -59,7 +59,7 @@ const Contact = ({ locale }) => {
             <p>{t("CardContactSection.description")}</p>
             <p className="font-bold mt-4">{t("CardContactSection.phrase")}</p>
           </div>
-          <div className="flex justify-center flex-wrap gap-4 mb-[72px] lg:grid lg:grid-cols-2 xl:mx-[76px] lg:mx-[64px]">
+          <div className="flex justify-center flex-wrap gap-4 mb-[72px] md:grid md:grid-cols-2">
             {CARD_CONTACT.map((item) => (
               <CardContact
                 key={item.email}
