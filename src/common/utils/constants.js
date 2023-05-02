@@ -225,7 +225,7 @@ export const CARD_CONTACT = [
     email: "eserrani@steplix.com",
     meeting: "https://meetings.hubspot.com/enrique-serrani?embed=true",
     linkedin: "https://www.linkedin.com/in/enrique-serrani-a69a2036/",
-    imgSrc: "/assets/img/contact/sellers/seller-1.webp",
+    imgSrc: "/assets/img/contact/sellers/seller-1.svg",
     imgAlt: "contact.salesRepresentativeAlt.Enrique",
     gtagEventName: "serrani",
   },
@@ -237,7 +237,7 @@ export const CARD_CONTACT = [
     meeting: "https://meetings.hubspot.com/jyanez1?embed=true",
     linkedin: "https://www.linkedin.com/in/jorgeyanezy/",
     imgAlt: "contact.salesRepresentativeAlt.Jorge",
-    imgSrc: "/assets/img/contact/sellers/seller-2.webp",
+    imgSrc: "/assets/img/contact/sellers/seller-2.svg",
     gtagEventName: "yanez",
   },
 ];
