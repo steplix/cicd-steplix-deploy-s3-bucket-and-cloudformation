@@ -13,7 +13,7 @@ const Footer = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <footer className="footer-gradient h-[510.62px] pt-8 pb-[72px] sm:pt-[25px] sm:pb-[65px] lg:pt-6 lg:pb-8 sm:h-[271px] lg:h-[276.5px]">
+    <footer className="footer-gradient h-[518.62px] pt-8 pb-[72px] sm:pt-[25px] sm:pb-[65px] lg:pt-6 lg:pb-8 sm:h-[271px] lg:h-[276.5px]">
       <div className="container flex flex-col gap-y-[4.5rem] sm:gap-y-4">
         <div className="flex flex-col items-center sm:flex-row lg:flex-col sm:items-start lg:space-y-4">
           <div className="flex flex-col items-center sm:items-start w-full">
@@ -70,14 +70,26 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse items-center sm:flex-row sm:items-end lg:items-end sm:justify-between text-white text-xs">
-          <p className="text-[10px] leading-[0.813rem] font-light mt-11 sm:mt-0">{t("footer.rights")}</p>
+        <div className="flex flex-col gap-2 mt-11 sm:mt-0">
+          <p className="text-[10px] leading-[0.813rem] font-light text-center sm:text-left">{t("footer.rights")}</p>
+          <p className="text-center sm:text-left"><a
+            href={`/assets/files/${t("footer.privacyPolicyFile")}`}
+            rel="noreferrer"
+            target="_blank"
+            className="font-poppins underline text-[10px] sm:self-end lg:self-auto"
+            aria-label={t("footer.privacyPolicyAriaLabel")}
+          >
+            {t("footer.privacyPolicyText")}
+          </a></p>
+          </div>
+          
           <div className="flex flex-col space-y-3 sm:space-y-2 items-center sm:items-end text-xs text-center leading-[0.894rem] lg:leading-[0.975rem] tracking-[0.01em]">
             <div className="flex space-x-3 sm:space-x-3.5 lg:space-x-4">
               <Icon name="iso9001" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
               <Icon name="inet" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
               <Icon name="iram" className="h-[47.62px] w-[47.62px] sm:h-[52.82px] sm:w-[52.82px] lg:h-[61.5px] lg:w-[61.5px]" />
             </div>
-            <div className="w-[150px] sm:w-fit">
+            <div className="sm:w-fit">
               <a
                 href={t("footer.certificateUrl")}
                 rel="noreferrer"
