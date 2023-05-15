@@ -227,7 +227,7 @@
     "submenuCloseAriaLabel": "Close navigation submenu"
   },
   "footer": {
-    "certificateText": "We work under certified and audited processes.",
+    "certificateText": "Certified and audited processes.",
     "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
     "certificateAriaLabel": "Visit the document of our quality policy",
     "rights": "All rights reserved®",
@@ -239,7 +239,10 @@
     },
     "instagramAriaLabel": "Visit Steplix Instagram",
     "linkedInAriaLabel": "Visit Steplix LinkedIn",
-    "emailAriaLabel": "Send us an email"
+    "emailAriaLabel": "Send us an email",
+    "privacyPolicyText": "Privacy policy",
+    "privacyPolicyFile": "Privacy_Policy.pdf",
+    "privacyPolicyAriaLabel": "Visit the document of our privacy policy"
   },
   "metaTags": {
     "home": {

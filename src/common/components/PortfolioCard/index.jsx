@@ -18,7 +18,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
         <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.webp`} />
         <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
         <source media="(min-width: 640px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
-        <img alt={t(`portfolio.cards.${name}.imageAlt`)} src={`/assets/img/portfolio/${name}.webp`} className='w-full' />   
+        <img alt={t(`portfolio.cards.${name}.imageAlt`)} src={`/assets/img/portfolio/${name}.svg`} className='w-full' />   
       </picture> 
       <div className='px-6 w-full h-full py-4 flex flex-col justify-center bg-white rounded-bl-[20px] rounded-br-[20px]'>
           <div className='flex items-center justify-between'>
