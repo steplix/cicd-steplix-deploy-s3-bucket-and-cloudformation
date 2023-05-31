@@ -16,7 +16,7 @@ const HowDoWeDoIt = () => {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
 
   return (
-    <section className="container section-container pt-14 rounded-t-[20px] ">
+    <section className="container section-container pt-[72px] md:pt-[56px] lg:pt-[72px] rounded-t-[20px] ">
       <Title
         content={t("what_we_do.HowDoWeDoIt.titleOne")}
         size="text-[26px] lg:text-[32px]"
