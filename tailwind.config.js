@@ -47,7 +47,8 @@ module.exports = {
       steplix: "0 4px 20px 0 rgba(255, 255, 255, 0.25)",
       "post-card": "0px 0px 2px 1px rgba(112, 112, 112, 0.2)",
       "step-card": "10px 10px 25px rgba(61, 17, 82, 0.15)",
-      "card": "0px 4px 20px rgba(0, 0, 0, 0.25);"
+      "card": "0px 4px 20px rgba(0, 0, 0, 0.25);",
+      "tech-card": "0px 2px 8px rgba(0, 0, 0, 0.2);"
     },
     extend: {
       margin: {

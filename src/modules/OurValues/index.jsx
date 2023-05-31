@@ -31,13 +31,13 @@ const OurValues = ({ locale }) => {
             </p>
             <motion.div className="flex flex-col sm:flex-row lg:flex-col space-y-4 sm:space-y-0 lg:space-y-6 sm:space-x-6 items-center justify-center mb-8" variants={stagger} initial="initial" animate={controls} ref={ref}>
                 <div className="flex flex-row space-x-4 sm:space-x-6">
-                    <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" resize />
-                    <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" resize />
-                    <CardIcon text={t("about_us.ourValues.success")} iconName="success" resize />
+                    <CardIcon text={t("about_us.ourValues.trust")} iconName="trust" resize customClass='border border-blue shadow-tech-card' />
+                    <CardIcon text={t("about_us.ourValues.mutualRespect")} iconName="mutualRespect" resize customClass='border border-blue shadow-tech-card'/>
+                    <CardIcon text={t("about_us.ourValues.success")} iconName="success" resize customClass='border border-blue shadow-tech-card'/>
                 </div>
                 <div className="flex flex-row space-x-4 sm:space-x-6">
-                    <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" resize />
-                    <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" resize />
+                    <CardIcon text={t("about_us.ourValues.awareness")} iconName="awareness" resize customClass='border border-blue shadow-tech-card'/>
+                    <CardIcon text={t("about_us.ourValues.agility")} iconName="agility" resize customClass='border border-blue shadow-tech-card'/>
                 </div>
             </motion.div>
             <ButtonBecomeSteplixer ariaLabel={t("navbar.item4.ariaLabel")} locale={locale} customStyles="h-[37px] my-4 mx-auto" i18nKeyText={"ButtonProject"} pathname="/contact" />
