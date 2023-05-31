@@ -19,10 +19,8 @@ export default function AboutUs({ locale }) {
         }}
       />
       <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-[72px]">
-        <MissionAndVision locale={locale} />
-
         <Teams locale={locale} />
-
+        <MissionAndVision locale={locale} />
         <OurValues locale={locale} />
       </TransitionWrapper>
     </>

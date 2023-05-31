@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { stagger } from "@/common/lib/animation";
 import ButtonBecomeSteplixer from "@/common/components/ButtonRaise";
+import ValuesIcon from '@/common/components/Icon/icons/ValuesIcon';
 
 
 const OurValues = ({ locale }) => {
@@ -24,6 +25,7 @@ const OurValues = ({ locale }) => {
     return (
         <section className="flex flex-col">
             <Title content={t("about_us.ourValues.title")} borderPosition="left" height="h-9" size="text-[26px] lg:text-[32px]"/>
+            <ValuesIcon />
             <p className="font-poppins text-sm lg:text-base font-normal text-black sm:my-6 my-6 mb-8">
                 {t("about_us.ourValues.description")}
             </p>
