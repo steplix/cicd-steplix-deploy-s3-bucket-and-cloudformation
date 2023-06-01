@@ -18,7 +18,7 @@ const Clients = () => {
     const { clients } = usePortfolioTranslation();
 
     return (
-        <section className="container">
+        <section className="container pt-[72px] 2xl:pt-14">
             <Title
                 content={t("MainHeader.clients.title")}
                 size="text-[26px] lg:text-[32px]"
@@ -47,7 +47,7 @@ const Clients = () => {
                     </div>
                 ))}
             </PortfolioCarousel>
-            <div className="section-container pt-6 flex justify-center">
+            <div className="pt-6 flex justify-center">
                 <ButtonRaise
                     locale={i18nQuery?.lang}
                     ariaLabel={t("navbar.item4.ariaLabel")}

@@ -72,11 +72,11 @@ export default function Home() {
                 {/* Banner Section */}
                 <Banner />
 
-                {/* Technology Section */}
-                <HowDoWeDoIt />
-
                 {/* Clients Section */}
                 <Clients />
+
+                {/* Technology Section */}
+                <HowDoWeDoIt />
             </TransitionWrapper>
         </>
     );
