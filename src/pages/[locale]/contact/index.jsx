@@ -106,7 +106,7 @@ const Contact = ({ locale }) => {
               <div className="flex gap-2 items-center justify-center mt-5 lg:order-2">
                 <Icon name="mapPin" className="w-3 lg:w-5" />
                 <p className="text-xs lg:text-base">
-                  Costa rica 4999, Palermo, Buenos Aires. Argentina.
+                  Viamonte 1181, CABA, Buenos Aires. Argentina.
                 </p>
               </div>
 
