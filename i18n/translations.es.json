@@ -1,496 +1,511 @@
 {
-  "404": {
-    "subtitle": "¡Lo sentimos! No pudimos encontrar esta página. No te preocupes, podemos llevarte hacia otro lugar.",
-    "button": "Volver al home"
-  },
-  "contact": {
-    "title": "Queremos escuchar tus ",
-    "titleEmpty": "ideas ",
-    "subtitle": "Agendá una llamada con nuestros comerciales",
-    "brochureText": "Descargá nuestro ",
-    "brochure": "Portfolio",
-    "ourOfficeTitle": "Nuestra",
-    "ourOfficeTitleEmpty": "oficina",
-    "salesRepresentative": "Comercial",
-    "salesRepresentativeAlt": {
-      "Kevin": "Fotografía de Kevin Halbinger, representate de ventas",
-      "Mariano": "Fotografía de Mariano Weiger, representate de ventas",
-      "Enrique": "Fotografía de Enrique Serrani, representate de ventas",
-      "Jorge": "Fotografía de Jorge Yánez, representate de ventas"
-    },
-    "scheduleAriaLabel": "Agenda una cita con uno de nuestros representates de ventas",
-    "socialMediaAriaLabel": "Visita el LinkedIn de uno de nuestros representates de ventas",
-    "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
-    "copyButton": "Copiado",
-    "imagesAlt": {
-      "imgOne": "Nuestra oficina de reuniones es súper cómoda con un lindo ventanal y un súper monitor.",
-      "imgTwo": "El recibidor de nuestra oficina tiene un lindo sillón que nos permite reunirnos a charlar y está lleno de nuestra identidad como Steplixers.",
-      "imgThree": "Sala general cuenta con mesas grandes y sillas confortables para el trabajo diario de los equipos de Steplix.",
-      "imgFour": "La oficina por fuera es un edificio antiguo que está en la esquina de Uriarte y Costa Rica, en Palermo.",
-      "imgFive": "Dentro del edificio tenemos un patio interno al que miran las oficinas del segundo y tercer piso. La planta baja es punto de encuentro y tenemos hasta parrilla para nuestros afters.",
-      "imgSix": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
-    }
-  },
-  "about_us": {
-    "ourValues": {
-      "title": "Nuestros valores",
-      "description": "Aquellos que nos definen y sobre los que hacemos foco en cada proyecto.",
-      "trust": "Confianza",
-      "mutualRespect": "Respeto mutuo",
-      "success": "Éxito",
-      "awareness": "Conciencia",
-      "agility": "Agilidad"
-    },
-    "mission": {
-      "title": "Misión",
-      "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
-    },
-    "vision": {
-      "title": "Visión",
-      "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
-    },
-    "teams": {
-      "title": "Equipo",
-      "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
-      "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
-      "button": "Convertite en Steplixer",
-      "imagesAlt": {
-        "imgOne": "Equipo comercial trabajando durante una reunion en la oficina.",
-        "imgTwo": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
-        "imgThree": "Steplixers luego de un workshop.",
-        "imgFour": "Steplixers descontracturados celebrando en un bar.",
-        "imgFive": "Distintos equipos trabajando juntos para potenciar una idea.",
-        "imgSix": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
-        "imgSeven": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
-      }
-    },
-    "philosophy": {
-      "titleOne": "Nuestra",
-      "titleTwo": "filosofía",
-      "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
-    },
-    "digitalSherpas": {
-      "titleOne": "Sherpas",
-      "titleTwo": "Digitales",
-      "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de negocios, contamos con la mezcla exacta de seniority, experiencia y compromiso.",
-      "descriptionTwo": " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
-      "descriptionThree": "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y el ROI correctos."
-    }
-  },
-  "what_we_do": {
-    "intro": {
-      "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles",
-      "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental.\n Esto nos permite probarlo, aprender rápido y evolucionar."
-    },
-    "stepsToTheTop": {
-      "titleOne": "Pasos hacia",
-      "titleTwo": "la cima",
-      "fullTitle": "Pasos hacia la cima",
-      "descriptionOne": "Somos tu aliado digital.",
-      "descriptionTwo": " Caminemos juntos.",
-      "descriptionThree": "¿Cuál es tu punto de partida?"
-    },
-    "weExploreTheProyect": {
-      "titleOne": "Exploramos",
-      "titleTwo": "el proyecto",
-      "fullTitle": "Exploramos el proyecto",
-      "descriptionOne": "Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en",
-      "descriptionTwo": " entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
-    },
-    "weDesignYourProduct": {
-      "titleOne": "Diseñamos",
-      "titleTwo": "tu producto",
-      "fullTitle": "Diseñamos tu producto",
-      "descriptionOne": "La segunda escala se enfoca en el diseño de un <u><span title=\"Minimum Viable Product\">MVP</span></u> con el objetivo de seguir potenciando una idea. Esto nos permite",
-      "descriptionTwo": " someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización."
-    },
-    "weDevelopTheSolution": {
-      "titleOne": "Desarrollamos",
-      "titleTwo": "la solución",
-      "fullTitle": "Desarrollamos la solución",
-      "descriptionOne": "Construimos y entregamos el producto final.",
-      "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
-    },
-    "HowDoWeDoIt": {
-      "titleOne": "Tecnología",
-      "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
-    }
-  },
-  "aboutUs": {
-    "title": "Sobre ",
-    "emptyTitle": "nosotros",
-    "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
-  },
-  "modal": {
-    "modalOne": {
-      "title": "Conociendo tu negocio",
-      "descriptionOne": {
-        "textOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
-        "textTwo": "En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
-        "textThree": "Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. ",
-        "textFour": "Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla."
-      },
-      "descriptionTwo": " ¿Sabías que el 75% de las ideas de nuevos negocios fracasan en sus tres primeros años de vida?"
-    },
-    "modalTwo": {
-      "title": "Diseño de producto ",
-      "descriptionOne": {
-        "textOne": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
-        "textTwo": "La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. ",
-        "textThree": "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos. ",
-        "textFour": " "
-      },
-      "descriptionTwo": " ¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja? "
-    },
-    "modalThree": {
-      "title": "Desarrollo y entrega ",
-      "descriptionOne": {
-        "textOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
-        "textTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
-        "textThree": "¡Pero esto no termina aquí! ",
-        "textFour": "En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará."
-      },
-      "descriptionTwo": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
-    }
-  },
-  "happyClients": {
-    "title": "Lo que opinan nuestros ",
-    "titleEmpty": "clientes",
-    "clientFinket": {
-      "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“.",
-      "title": "CEO & Founder"
-    },
-    "clientSura": {
-      "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas”.",
-      "title": "Business Manager"
-    },
-    "clientSinoar": {
-      "text": "“Steplix respondió a nuestro requerimiento de definición de la plataforma digital para un nuevo negocio con agilidad, creatividad y dedicación. El equipo multidisciplinario que ejecutó el proyecto incluyó expertos en agroindustria y en transformación digital, con resultados excelentes en un plazo exiguo de 4 semanas“. ",
-      "title": "Project Manager"
-    },
-    "clientPow": {
-      "text": "“La predisposición del equipo de Steplix fue clave en el proyecto. Destaco principalmente la capacidad que tuvieron de hacer foco en entender la necesidad. En todo momento, buscaron ser eficientes, entregar un poco más y nos acompañaron pensando la solución a futuro, enfocados en la escalabilidad“. ",
-      "title": "Co-Founder & CEO"
-    },
-    "clientVacayGreen": {
-      "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez“. ",
-      "title": "CTO"
-    },
-    "clientValid": {
-      "text": "“Fue muy conveniente para nosotros encontrar una empresa como Steplix, que tiene la capacidad de responder en plazos muy desafiantes y con especificaciones breves. En todo momento propusieron mejoras y siempre teniendo en cuenta la eficiencia en costes de infraestructura“. ",
-      "title": "Product Manager"
-    },
-    "clientCeva": {
-      "text": "La experiencia con Steplix fue positiva. El equipo mostró agilidad y dedicación en la ejecución del servicio, aportando valor en todo momento. El servicio prestado por Steplix fue muy bueno y recomendamos su trabajo. Estamos interesados en trabajar con ellos nuevamente en el futuro para desarrollar upgrades específicos que se detectaron durante el servicio.",
-      "title": "Marketing"
-    }
-  },
-  "seeMore": "Ver más",
-  "seeLess": "Ver menos",
-  "navbar": {
-    "item0": {
-      "route": "Inicio",
-      "title": "",
-      "ariaLabel": "Navegar hacia la página de inicio"
-    },
-    "item1": {
-      "route": "Quiénes somos",
-      "title": "Quiénes somos",
-      "ariaLabel": "Navegar hacia la página de quiénes somos"
-    },
-    "item2": {
-      "route": "Qué hacemos",
-      "title": "Qué hacemos",
-      "ariaLabel": "Navegar hacia la página qué hacemos"
-    },
-    "item3": {
-      "route": "Porfolio",
-      "title": "Nuestro porfolio",
-      "ariaLabel": "Navegar hacia la página portfolio"
-    },
-    "item4": {
-      "route": "Contáctanos",
-      "title": "Nuestro contacto",
-      "ariaLabel": "Navegar hacia la página contáctanos"
-    },
-    "item5": {
-      "route": "Conviértete en Steplixer",
-      "title": "Conviértete en Steplixer",
-      "ariaLabel": "Navegar hacia la página conviértete en Steplixer"
-    },
-    "currentLang": "Español",
-    "targetLang": "Inglés",
-    "shortTargetLang": "en",
-    "submenuOpenAriaLabel": "Abrir submenu de navegación",
-    "submenuCloseAriaLabel": "Cerrar submenu de navegación"
-  },
-  "footer": {
-    "certificateText": "Procesos certificados y auditados.",
-    "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
-    "certificateAriaLabel": "Visita el documento de nuestra política de calidad",
-    "rights": "Todos los derechos reservados®",
-    "links": {
-      "item0": "Quienes somos",
-      "item1": "Qué hacemos",
-      "item2": "Nuestro portfolio",
-      "item3": "Contáctanos"
-    },
-    "instagramAriaLabel": "Visita Steplix Instagram",
-    "linkedInAriaLabel": "Visita Steplix LinkedIn",
-    "emailAriaLabel": "Envíanos un email",
-    "privacyPolicyText": "Políticas de privacidad",
-    "privacyPolicyFile": "Politicas_de_privacidad.pdf",
-    "privacyPolicyAriaLabel": "Visita el documento de nuestras políticas de privacidad"
-  },
-  "metaTags": {
-    "home": {
-      "title": "Digital Sherpas | Steplix Software 🧗",
-      "keywords": "fábrica de software, microestrategia de software, sherpas digitales, socio digital, negocios escalables, software de análisis de negocio, software full stack, empresas de software factory, software ágil, desarrollo de software, empresa de software, diseño centrado en el usuario, marco scrum, metodologías ágiles, diseño de productos, desarrollo y entrega, digitalización de negocios, transformación digital, construcción de productos, proyecto de software, proyecto de digitalización, soluciones digitales, ecosistema digital para negocios, software factory, sherpas digitales, socio digital, ingeniería de software, análisis de negocio, desarrollo de aplicaciones móviles, consultoría de transformación digital, diseño de productos, desarrollo de soluciones escalables, proyectos de software a medida, soluciones para mejorar la productividad, servicios de consultoría tecnológica, desarrollo de software full stack, servicios de diseño y desarrollo ágiles, productos de software personalizados, proyectos de digitalización de negocios, implementación de metodologías ágiles, estrategias de negocio en tecnología, servicios de software factory, análisis de procesos de negocio, soluciones de inteligencia artificial, desarrollo de aplicaciones web, estrategias de crecimiento en tecnología, servicios de consultoría en liderazgo tecnológico, servicios de gestión de proyectos de software, desarrollo de soluciones de automatización de procesos, desarrollo de soluciones de análisis de datos",
-      "description": "Diseñamos y desarrollamos software a la medida de tus necesidades."
-    },
-    "aboutUs": {
-      "title": "Sobre nosotros | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "Steplix, Empresa de software, Estrategia de negocio, Innovación, Experiencia en el mercado, Equipo de Steplix, Tecnología, Mejora continua, Procesos ágiles, Talento Steplixers, Proyectos exitosos, Casos de estudio, Industrias atendidas, Soluciones personalizadas, Liderazgo en tecnología, Filosofía de la empresa, Cultura de la empresa, Valores de Steplix, Socio estratégico, Desarrollo sostenible, Empresa responsable, Socios tecnológicos, Certificaciones, Metodologías ágiles, Desarrollo de software a medida, Tecnología de vanguardia, Proyectos de digitalización, Soluciones escalables, Mejora de la productividad, Eficiencia en los procesos, Proyectos de tecnología",
-      "description": "Somos tu aliado digital. Nuestros Digital Sherpas guían y elevan tus ideas de negocio a nuevas alturas. Comprometidos con la excelencia, entregas puntuales y precios competitivos."
-    },
-    "whatWeDo": {
-      "title": "Qué hacemos | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "idea, innovadora, creativa, revolucionaria, desafiante, decisiones, aliado digital, escalar, idea de negocio, minimizando el riesgo, ampliﬁcando el impacto, tiempo acordado, Descubrimiento de negocio, Comprensión y alcance, oportunidad, potencial, talleres, equipo multidisciplinario, modelos de negocio, mínimo de inversión, Diseño de producto, modelo de negocio, propuesta de valor, producto, experiencia de usuario, UX, Desarrollo y entrega, procesos, metodologías ágiles, incremental, producto digital, solución digital, funcionalidades, Espíritu, Cuerpo, Mente, Recursos, Marco Scrum, iterativo, incremental, desarrollo, entregar valor, equipo multidisciplinario, Scrum Team, Scrum Master, Product Owner, Sprints, Product Backlog, Sprint Backlog, Incremento del producto",
-      "description": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental. Esto nos permite probarlo, aprender rápido y evolucionar."
-    },
-    "portfolio": {
-      "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
-      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio."
+    "404": {
+        "subtitle": "¡Lo sentimos! No pudimos encontrar esta página. No te preocupes, podemos llevarte hacia otro lugar.",
+        "button": "Volver al home"
     },
     "contact": {
-      "title": "Contáctanos | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "ideas, Agendá, comerciales, Descargá, Brochure, oficina, Argentina",
-      "description": "Póngase en contacto con nosotros. Ya sea para una pregunta sobre un proyecto o para discutir nuestros servicios, estamos aquí para ayudarle. Contáctanos hoy."
+        "title": "Queremos escuchar tus ",
+        "titleEmpty": "ideas ",
+        "subtitle": "Agendá una llamada con nuestros comerciales",
+        "brochureText": "Descargá nuestro ",
+        "brochure": "Portfolio",
+        "ourOfficeTitle": "Nuestra",
+        "ourOfficeTitleEmpty": "oficina",
+        "salesRepresentative": "Comercial",
+        "salesRepresentativeAlt": {
+            "Kevin": "Fotografía de Kevin Halbinger, representate de ventas",
+            "Mariano": "Fotografía de Mariano Weiger, representate de ventas",
+            "Enrique": "Fotografía de Enrique Serrani, representate de ventas",
+            "Jorge": "Fotografía de Jorge Yánez, representate de ventas"
+        },
+        "scheduleAriaLabel": "Agenda una cita con uno de nuestros representates de ventas",
+        "socialMediaAriaLabel": "Visita el LinkedIn de uno de nuestros representates de ventas",
+        "whatsAppMessage": "Nombre: \nEmpresa: \nE-mail: \nMensaje o breve información del proyecto:",
+        "copyButton": "Copiado",
+        "imagesAlt": {
+            "imgOne": "Nuestra oficina de reuniones es súper cómoda con un lindo ventanal y un súper monitor.",
+            "imgTwo": "El recibidor de nuestra oficina tiene un lindo sillón que nos permite reunirnos a charlar y está lleno de nuestra identidad como Steplixers.",
+            "imgThree": "Sala general cuenta con mesas grandes y sillas confortables para el trabajo diario de los equipos de Steplix.",
+            "imgFour": "La oficina por fuera es un edificio antiguo que está en la esquina de Uriarte y Costa Rica, en Palermo.",
+            "imgFive": "Dentro del edificio tenemos un patio interno al que miran las oficinas del segundo y tercer piso. La planta baja es punto de encuentro y tenemos hasta parrilla para nuestros afters.",
+            "imgSix": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+        }
     },
-    "becomeSteplixer": {
-      "title": "Conviértete en Steplixer | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "Unete a Steplix, Oportunidades laborales, Vacantes, Equipo de Steplix, Cultura laboral, Valores de Steplix, Procesos ágiles, Liderazgo en tecnología, Mejora continua, Remuneración competitiva, Beneficios laborales, Desarrollo profesional, Solicita un trabajo, Crecimiento profesional, Comunidad Steplixer",
-      "description": "Únete a nuestro equipo de profesionales talentosos. Conviértete en un Steplixer y ayuda a impulsar la innovación digital mientras desarrollas tu carrera. Aplica ahora."
+    "about_us": {
+        "ourValues": {
+            "title": "Valores",
+            "description": "Aquellos que nos definen y sobre los que hacemos foco en cada proyecto.",
+            "trust": {
+                "title": "Confianza",
+                "description": "Creer en la integridad y habilidades de las personas, y a la vez dar certeza de que cumpliremos nuestros compromisos."
+            },
+            "mutualRespect": {
+                "title": "Respeto mutuo",
+                "description": "Valorar a las personas y sus diferencias, ser inclusivos y responsables, comunicarnos con honestidad y empatía para lograr un ambiente colaborativo y armonioso."
+            },
+            "success": {
+                "title": "Éxito",
+                "description": "Lograr la satisfacción de nuestros clientes y sus usuarios superando expectativas. Requiere de actitud positiva y profesionalismo frente a los desafíos, generando oportunidades de crecimiento y mejora continua del equipo."
+            },
+            "awareness": {
+                "title": "Conciencia",
+                "description": "Comprender el impacto de nuestras acciones en el entorno y en los demás. Impulsar la innovación responsable. Promover la sostenibilidad, el desarrollo de empatía, equilibrio y equidad para contribuir al bienestar de todos."
+            },
+            "agility": {
+                "title": "Agilidad",
+                "description": "Ser prácticos y flexibles. Responder a los cambios de forma efectiva. Requiere ser capaz de adaptarse, ser transparente e inspeccionar los resultados obtenidos. "
+            }
+        },
+        "mission": {
+            "title": "Misión",
+            "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
+        },
+        "vision": {
+            "title": "Visión",
+            "description": "Brindar soluciones de excelencia, en tiempo y precio competitivo, basados en la mejora continua de nuestros procesos internos y el talento de nuestros colaboradores."
+        },
+        "teams": {
+            "title": "Equipo",
+            "description": "De la misma manera que los Sherpas acompañan a los escaladores en su viaje hacia la cima, los Digital Sherpas ",
+            "descriptionBold": "nos comprometemos plenamente con los desafíos de negocio de nuestros clientes, guiándo y elevando sus ideas a la máxima potencia.",
+            "button": "Convertite en Steplixer",
+            "imagesAlt": {
+                "imgOne": "Equipo comercial trabajando durante una reunion en la oficina.",
+                "imgTwo": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+                "imgThree": "Steplixers luego de un workshop.",
+                "imgFour": "Steplixers descontracturados celebrando en un bar.",
+                "imgFive": "Distintos equipos trabajando juntos para potenciar una idea.",
+                "imgSix": "El equipo de Steplix reunido en la oficina contentos mirando de frente.",
+                "imgSeven": "Steplixers reunidos en la vereda de la oficina en el barrio de Palermo."
+            }
+        },
+        "philosophy": {
+            "titleOne": "Nuestra",
+            "titleTwo": "filosofía",
+            "description": " Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio que nuestros clientes nos confían para guiar y elevar esa idea a su máxima potencia. Así, escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
+        },
+        "digitalSherpas": {
+            "titleOne": "Sherpas",
+            "titleTwo": "Digitales",
+            "descriptionOne": " Somos sherpas digitales especializados en diferentes áreas de negocios, contamos con la mezcla exacta de seniority, experiencia y compromiso.",
+            "descriptionTwo": " Componemos un equipo interdisciplinario que conjuga los conocimientos y las miradas de cada integrante para crear una experiencia que asegure la llegada a la cima de cada idea de negocio.",
+            "descriptionThree": "  Nuestro mantra: Desde Steplix, creemos que la creatividad, el diseño y la innovación son la apuesta para encontrar nuevas formas de generar valor y nuevos modelos de negocios, con la inversión y el ROI correctos."
+        }
+    },
+    "what_we_do": {
+        "intro": {
+            "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles",
+            "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental.\n Esto nos permite probarlo, aprender rápido y evolucionar."
+        },
+        "stepsToTheTop": {
+            "titleOne": "Pasos hacia",
+            "titleTwo": "la cima",
+            "fullTitle": "Pasos hacia la cima",
+            "descriptionOne": "Somos tu aliado digital.",
+            "descriptionTwo": " Caminemos juntos.",
+            "descriptionThree": "¿Cuál es tu punto de partida?"
+        },
+        "weExploreTheProyect": {
+            "titleOne": "Exploramos",
+            "titleTwo": "el proyecto",
+            "fullTitle": "Exploramos el proyecto",
+            "descriptionOne": "Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en",
+            "descriptionTwo": " entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
+        },
+        "weDesignYourProduct": {
+            "titleOne": "Diseñamos",
+            "titleTwo": "tu producto",
+            "fullTitle": "Diseñamos tu producto",
+            "descriptionOne": "La segunda escala se enfoca en el diseño de un <u><span title=\"Minimum Viable Product\">MVP</span></u> con el objetivo de seguir potenciando una idea. Esto nos permite",
+            "descriptionTwo": " someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización."
+        },
+        "weDevelopTheSolution": {
+            "titleOne": "Desarrollamos",
+            "titleTwo": "la solución",
+            "fullTitle": "Desarrollamos la solución",
+            "descriptionOne": "Construimos y entregamos el producto final.",
+            "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
+        },
+        "HowDoWeDoIt": {
+            "titleOne": "Tecnología",
+            "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
+        }
+    },
+    "aboutUs": {
+        "title": "Sobre ",
+        "emptyTitle": "nosotros",
+        "description": "Somos el aliado digital que co-creará la mejor ruta para escalar esa idea de negocio hasta su pico más alto y te acompañará en cada paso de esta travesía, minimizando el riesgo y ampliﬁcando el impacto, en el tiempo acordado."
+    },
+    "modal": {
+        "modalOne": {
+            "title": "Conociendo tu negocio",
+            "descriptionOne": {
+                "textOne": "Ideas hay muchas. Pero constantemente nos preguntamos… ¿Hay negocio?",
+                "textTwo": "En esta etapa nos dedicamos a descubrir en conjunto la oportunidad del proyecto minimizando el riesgo de fracaso. El equipo de Steplix hará las preguntas correctas para detectar todas las dependencias técnicas, de negocio y los posibles bloqueadores junto al cliente para identificar el potencial de esta idea en el mercado. A través de talleres entre el cliente y un equipo multidisciplinario, refinamos los modelos de negocio y definimos juntos el camino a emprender.",
+                "textThree": "Para asegurarnos de entender el contexto y todas sus variables, sometemos la idea a una serie de análisis, mediante la aplicación de distintas metodologías. ",
+                "textFour": "Con un mínimo de inversión podes entender si hay oportunidad y cómo aprovecharla."
+            },
+            "descriptionTwo": " ¿Sabías que el 75% de las ideas de nuevos negocios fracasan en sus tres primeros años de vida?"
+        },
+        "modalTwo": {
+            "title": "Diseño de producto ",
+            "descriptionOne": {
+                "textOne": "Una vez definido el modelo de negocio y la propuesta de valor, nos disponemos a diseñar en conjunto todas las funcionalidades que tendrá el producto, esa idea que originó el negocio y dar un paso más hacia la cima. El diseño del producto es muy importante porque a través de las interfaces y experiencia de usuario es donde el cliente final percibe verdaderamente el valor de la plataforma.",
+                "textTwo": "La estrategia, creatividad e innovación, son clave en esta etapa colaborativa en la que Steplix diseña junto al cliente el producto digital más adecuado para potenciar el negocio y crear una respuesta emocional en quien lo compra. ",
+                "textThree": "De esta manera, lideramos la experiencia del usuario (UX) mejorando las funcionalidades y facilitando la interacción de forma ágil y satisfactoria para todos. ",
+                "textFour": " "
+            },
+            "descriptionTwo": " ¿Sabías que en la era de la hiperconectividad los usuarios viven bombardeados por distintos productos a diario y la tasa de fidelidad es muy baja? "
+        },
+        "modalThree": {
+            "title": "Desarrollo y entrega ",
+            "descriptionOne": {
+                "textOne": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental que nos habilita para probarlo, aprender rápido y evolucionar.",
+                "textTwo": "Con todo el camino recorrido y la información recolectada, el equipo avanza en la construcción del producto digital, que una vez listo, dará sus primeros pasos firmes en el mercado.",
+                "textThree": "¡Pero esto no termina aquí! ",
+                "textFour": "En esta etapa, tanto el producto como el modelo de negocio siguen en constante evolución. Con la puesta en funcionamiento, se descubren nuevas habilidades y funcionalidades que reinician la dinámica de co-creación de la solución digital, y en este camino Steplix también te acompañará."
+            },
+            "descriptionTwo": "¿Sabías que la mayoría de los proyectos fracasan en la estimación de costos y tiempo, demorando el time to market?"
+        }
+    },
+    "happyClients": {
+        "title": "Lo que opinan nuestros ",
+        "titleEmpty": "clientes",
+        "clientFinket": {
+            "text": "“Nuestra experiencia con Steplix ha sido muy positiva desde el principio. Se han distinguido en todo momento por su capacidad de trabajo, compromiso, creatividad a la hora de presentar propuestas y su dedicación. Cuentan con un destacado equipo de trabajo, donde la calidad humana es su gran valor. Sin duda un socio clave a tener en cuenta a la hora de acometer proyectos que requieran soluciones sencillas a retos de gran complejidad“.",
+            "title": "CEO & Founder"
+        },
+        "clientSura": {
+            "text": "“Destaco la asistencia y profesionalidad del equipo de Steplix. Siempre listo, proactivo y con muchas ganas de entregar un producto de primera calidad. No solo hicieron lo que les pedimos, también agregaron una “milla extra” para ofrecer siempre mejores propuestas”.",
+            "title": "Business Manager"
+        },
+        "clientSinoar": {
+            "text": "“Steplix respondió a nuestro requerimiento de definición de la plataforma digital para un nuevo negocio con agilidad, creatividad y dedicación. El equipo multidisciplinario que ejecutó el proyecto incluyó expertos en agroindustria y en transformación digital, con resultados excelentes en un plazo exiguo de 4 semanas“. ",
+            "title": "Project Manager"
+        },
+        "clientPow": {
+            "text": "“La predisposición del equipo de Steplix fue clave en el proyecto. Destaco principalmente la capacidad que tuvieron de hacer foco en entender la necesidad. En todo momento, buscaron ser eficientes, entregar un poco más y nos acompañaron pensando la solución a futuro, enfocados en la escalabilidad“. ",
+            "title": "Co-Founder & CEO"
+        },
+        "clientVacayGreen": {
+            "text": "“Fue muy fácil trabajar con Steplix, desde la comprensión de mis necesidades hasta la ejecución. Me hicieron sentir muy cómodo brindando un trato super cálido y profesional a la vez“. ",
+            "title": "CTO"
+        },
+        "clientValid": {
+            "text": "“Fue muy conveniente para nosotros encontrar una empresa como Steplix, que tiene la capacidad de responder en plazos muy desafiantes y con especificaciones breves. En todo momento propusieron mejoras y siempre teniendo en cuenta la eficiencia en costes de infraestructura“. ",
+            "title": "Product Manager"
+        },
+        "clientCeva": {
+            "text": "La experiencia con Steplix fue positiva. El equipo mostró agilidad y dedicación en la ejecución del servicio, aportando valor en todo momento. El servicio prestado por Steplix fue muy bueno y recomendamos su trabajo. Estamos interesados en trabajar con ellos nuevamente en el futuro para desarrollar upgrades específicos que se detectaron durante el servicio.",
+            "title": "Marketing"
+        }
+    },
+    "seeMore": "Ver más",
+    "seeLess": "Ver menos",
+    "navbar": {
+        "item0": {
+            "route": "Inicio",
+            "title": "",
+            "ariaLabel": "Navegar hacia la página de inicio"
+        },
+        "item1": {
+            "route": "Quiénes somos",
+            "title": "Quiénes somos",
+            "ariaLabel": "Navegar hacia la página de quiénes somos"
+        },
+        "item2": {
+            "route": "Qué hacemos",
+            "title": "Qué hacemos",
+            "ariaLabel": "Navegar hacia la página qué hacemos"
+        },
+        "item3": {
+            "route": "Porfolio",
+            "title": "Nuestro porfolio",
+            "ariaLabel": "Navegar hacia la página portfolio"
+        },
+        "item4": {
+            "route": "Contáctanos",
+            "title": "Nuestro contacto",
+            "ariaLabel": "Navegar hacia la página contáctanos"
+        },
+        "item5": {
+            "route": "Conviértete en Steplixer",
+            "title": "Conviértete en Steplixer",
+            "ariaLabel": "Navegar hacia la página conviértete en Steplixer"
+        },
+        "currentLang": "Español",
+        "targetLang": "Inglés",
+        "shortTargetLang": "en",
+        "submenuOpenAriaLabel": "Abrir submenu de navegación",
+        "submenuCloseAriaLabel": "Cerrar submenu de navegación"
+    },
+    "footer": {
+        "certificateText": "Procesos certificados y auditados.",
+        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
+        "certificateAriaLabel": "Visita el documento de nuestra política de calidad",
+        "rights": "Todos los derechos reservados®",
+        "links": {
+            "item0": "Quienes somos",
+            "item1": "Qué hacemos",
+            "item2": "Nuestro portfolio",
+            "item3": "Contáctanos"
+        },
+        "instagramAriaLabel": "Visita Steplix Instagram",
+        "linkedInAriaLabel": "Visita Steplix LinkedIn",
+        "emailAriaLabel": "Envíanos un email",
+        "privacyPolicyText": "Políticas de privacidad",
+        "privacyPolicyFile": "Politicas_de_privacidad.pdf",
+        "privacyPolicyAriaLabel": "Visita el documento de nuestras políticas de privacidad"
+    },
+    "metaTags": {
+        "home": {
+            "title": "Digital Sherpas | Steplix Software 🧗",
+            "keywords": "fábrica de software, microestrategia de software, sherpas digitales, socio digital, negocios escalables, software de análisis de negocio, software full stack, empresas de software factory, software ágil, desarrollo de software, empresa de software, diseño centrado en el usuario, marco scrum, metodologías ágiles, diseño de productos, desarrollo y entrega, digitalización de negocios, transformación digital, construcción de productos, proyecto de software, proyecto de digitalización, soluciones digitales, ecosistema digital para negocios, software factory, sherpas digitales, socio digital, ingeniería de software, análisis de negocio, desarrollo de aplicaciones móviles, consultoría de transformación digital, diseño de productos, desarrollo de soluciones escalables, proyectos de software a medida, soluciones para mejorar la productividad, servicios de consultoría tecnológica, desarrollo de software full stack, servicios de diseño y desarrollo ágiles, productos de software personalizados, proyectos de digitalización de negocios, implementación de metodologías ágiles, estrategias de negocio en tecnología, servicios de software factory, análisis de procesos de negocio, soluciones de inteligencia artificial, desarrollo de aplicaciones web, estrategias de crecimiento en tecnología, servicios de consultoría en liderazgo tecnológico, servicios de gestión de proyectos de software, desarrollo de soluciones de automatización de procesos, desarrollo de soluciones de análisis de datos",
+            "description": "Diseñamos y desarrollamos software a la medida de tus necesidades."
+        },
+        "aboutUs": {
+            "title": "Sobre nosotros | Digital Sherpas | Steplix Software 🧗",
+            "keywords": "Steplix, Empresa de software, Estrategia de negocio, Innovación, Experiencia en el mercado, Equipo de Steplix, Tecnología, Mejora continua, Procesos ágiles, Talento Steplixers, Proyectos exitosos, Casos de estudio, Industrias atendidas, Soluciones personalizadas, Liderazgo en tecnología, Filosofía de la empresa, Cultura de la empresa, Valores de Steplix, Socio estratégico, Desarrollo sostenible, Empresa responsable, Socios tecnológicos, Certificaciones, Metodologías ágiles, Desarrollo de software a medida, Tecnología de vanguardia, Proyectos de digitalización, Soluciones escalables, Mejora de la productividad, Eficiencia en los procesos, Proyectos de tecnología",
+            "description": "Somos tu aliado digital. Nuestros Digital Sherpas guían y elevan tus ideas de negocio a nuevas alturas. Comprometidos con la excelencia, entregas puntuales y precios competitivos."
+        },
+        "whatWeDo": {
+            "title": "Qué hacemos | Digital Sherpas | Steplix Software 🧗",
+            "keywords": "idea, innovadora, creativa, revolucionaria, desafiante, decisiones, aliado digital, escalar, idea de negocio, minimizando el riesgo, ampliﬁcando el impacto, tiempo acordado, Descubrimiento de negocio, Comprensión y alcance, oportunidad, potencial, talleres, equipo multidisciplinario, modelos de negocio, mínimo de inversión, Diseño de producto, modelo de negocio, propuesta de valor, producto, experiencia de usuario, UX, Desarrollo y entrega, procesos, metodologías ágiles, incremental, producto digital, solución digital, funcionalidades, Espíritu, Cuerpo, Mente, Recursos, Marco Scrum, iterativo, incremental, desarrollo, entregar valor, equipo multidisciplinario, Scrum Team, Scrum Master, Product Owner, Sprints, Product Backlog, Sprint Backlog, Incremento del producto",
+            "description": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental. Esto nos permite probarlo, aprender rápido y evolucionar."
+        },
+        "portfolio": {
+            "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
+            "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
+            "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio."
+        },
+        "contact": {
+            "title": "Contáctanos | Digital Sherpas | Steplix Software 🧗",
+            "keywords": "ideas, Agendá, comerciales, Descargá, Brochure, oficina, Argentina",
+            "description": "Póngase en contacto con nosotros. Ya sea para una pregunta sobre un proyecto o para discutir nuestros servicios, estamos aquí para ayudarle. Contáctanos hoy."
+        },
+        "becomeSteplixer": {
+            "title": "Conviértete en Steplixer | Digital Sherpas | Steplix Software 🧗",
+            "keywords": "Unete a Steplix, Oportunidades laborales, Vacantes, Equipo de Steplix, Cultura laboral, Valores de Steplix, Procesos ágiles, Liderazgo en tecnología, Mejora continua, Remuneración competitiva, Beneficios laborales, Desarrollo profesional, Solicita un trabajo, Crecimiento profesional, Comunidad Steplixer",
+            "description": "Únete a nuestro equipo de profesionales talentosos. Conviértete en un Steplixer y ayuda a impulsar la innovación digital mientras desarrollas tu carrera. Aplica ahora."
+        }
+    },
+
+    "PortfolioSection": {
+        "pronoun": "Nuestro",
+        "title": "portfolio",
+        "subtitle": "Industrias",
+        "subtitle2": "Nuestros clientes dicen",
+        "parraf1": "Escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
+    },
+
+    "IconsLabel": {
+        "agro": "Agropecuario",
+        "insurance": "Seguros",
+        "eccomerce": "Ecommerce",
+        "pharmacist": "Farmacéutica",
+        "logistics": "Logística",
+        "fintech": "Fintech",
+        "environment": "Medioambiente",
+        "car": "Automotor",
+        "communications": "Comunicaciones",
+        "news": "Medio digital",
+        "aeronautics": "Aeronáutica"
+    },
+
+    "ButtonCardContact": "Agendar cita",
+    "ButtonBecomeSteplixer": "Conviértete en Steplixer",
+    "ButtonProject": "Cuéntanos tu proyecto",
+    "CardContactSection": {
+        "pronoun": "Nuestro",
+        "title": "Contacto",
+        "title2": "Nuestra oficina",
+        "subtitle": "Cómo nos contactas",
+        "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
+        "phrase": "¡Queremos escuchar tus ideas!"
+    },
+    "OurPostsSay": {
+        "title": "Nuestros posteos dicen",
+        "postLinkText": "...ver más",
+        "postLinkAriaLabel": "Leer más sobre el post",
+        "posts": [
+            {
+                "publishingAt": "septiembre 2022",
+                "description": "Un poco de nuestra filosofía 🧗. Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio...",
+                "url": "https://www.linkedin.com/posts/steplix_filosofaeda-development-software-activity-6977721230711771136-VQqZ?utm_source=share&utm_medium=member_desktop"
+            },
+            {
+                "publishingAt": "mayo 2022",
+                "description": "💬 ¿Sabías que el 75% de las nuevas ideas de negocio fracasan en sus primeros 3 años? En Steplix llevamos las ideas de nuestros clientes desde la base hasta la cima. 🗻. Anticipamos que les presentaríamos nuestros servicios en el posteo anterior. El primero de ellos, ”Conociendo tu negocio”, se enfoca en...",
+                "url": "https://www.linkedin.com/posts/steplix_steplix-software-softwaredevelopment-activity-6938216015461769216-IZUV?utm_source=share&utm_medium=member_desktop"
+            },
+            {
+                "publishingAt": "mayo 2022",
+                "description": "En los próximos posteos 🔜, vamos a contarles sobre los servicios que ofrecemos en Steplix. Más allá de los detalles, nos interesa que los protagonistas, puedan iluminarnos con ejemplos o situaciones que se dan en el día a día. 💡 💬 Ashley Rake, CEO de Steplix: ”Los servicios que ofrecemos, los confeccionamos y trabajamos...”",
+                "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-software-activity-6933104968996401152-4UL6?utm_source=share&utm_medium=member_desktop"
+            },
+            {
+                "publishingAt": "abril 2022",
+                "description": "A la hora de llevar adelante un proyecto tecnológico, son muchos los factores a tener en cuenta. En Steplix, entendemos que la formación de equipos con perfiles multidisciplinarios es una de las claves en el resultado final de los desarrollos para nuestros clientes. De la misma forma en que construimos una...",
+                "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop"
+            }
+        ]
+    },
+    "PortfolioHomeSection": {
+        "title": "Ir al porfolio",
+        "mountainImageAlt": ""
+    },
+    "MainHeader": {
+        "slogan": "Somos tu aliado digital",
+        "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
+        "subtitleMobile": "Diseñamos y <br/> desarrollamos software <br/> a la medida de tus <br/> necesidades",
+        "subtitleBase": "Diseñamos y desarrollamos <br/> software a la medida de tus <br/> necesidades",
+        "stepOneTitle": "Conocemos el <br/> camino",
+        "stepOneDescription": "Somos guías en el ecosistema de los negocios digitales y sabemos como ayudarte a potenciar una idea para convertirla en un producto competitivo.",
+        "stepTwoTitle": "Te acompañamos <br/> en el viaje",
+        "stepTwoDescription": "Co-creamos soluciones a medida aplicando diseño, innovación e ingeniería.",
+        "stepThreeTitle": "Logramos <br/> resultados",
+        "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
+        "finalTitle": "Juntos llegamos <br/> a la cima",
+        "finalSubtitle": "#DigitalSherpas",
+        "finalTextLink": "Descubrenos",
+        "bannerImageAlt": "Imagen de la maqueta de nuestra aplicación Steplix time",
+        "buttonAriaLabel": {
+            "forward": "Botón que avanza el flujo de animación hacia adelante",
+            "backward": "Botón que avanza el flujo de animación hacia atrás",
+            "reset": "Botón que reinicia el flujo de animacíón"
+        },
+        "services": {
+            "SoftwareDevelopment": {
+                "name": "Desarrollo de Software",
+                "description": "Soluciones a la medida de tus necesidades."
+            },
+            "ProductDesign": {
+                "name": "Diseño de producto",
+                "description": "Mejoramos la experiencia de usuario."
+            },
+            "QAAutomation": {
+                "name": "Automatización de QA",
+                "description": "Garantizamos la calidad del software."
+            },
+            "DataEngineering": {
+                "name": "Ingeniería de datos",
+                "description": "Analizamos datos para impulsar tu crecimiento."
+            },
+            "StrategicConsulting": {
+                "name": "Consultoría estratégica",
+                "description": "Aumentamos la eficiencia y rentabilidad."
+            }
+        },
+        "clients": {
+            "title": "Clientes"
+        }
+    },
+    "portfolio": {
+        "cards": {
+            "finket": {
+                "text": "Diseñamos y desarrollamos una plataforma digital de servicios financieros.",
+                "imageAlt": "Imagen maqueta de la aplicación de Finket"
+            },
+            "pow": {
+                "text": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",
+                "imageAlt": "Imagen maqueta de la aplicación de Pow"
+            },
+            "valid": {
+                "text": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
+                "imageAlt": "Imagen maqueta de la aplicación de Valid"
+            },
+            "sura": {
+                "text": "Diseñamos y desarrollamos un cotizador online para sus clientes.",
+                "imageAlt": "Imagen maqueta de la aplicación de Sura"
+            },
+            "smartium": {
+                "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
+                "imageAlt": "Imagen maqueta de la aplicación de Smartium"
+            }
+        },
+        "message": "¿Quieres conocer más?",
+        "button": "Contáctanos"
+    },
+
+    "BecomeSteplixerSection": {
+        "title": "Nuestros beneficios",
+        "title2": "Nuestros valores",
+        "title3": "Conviértete en Steplixer",
+        "sendCV": {
+            "title": "Si sabes que puedes ser Steplixer...",
+            "subtitle": "¡Envíanos tu CV!"
+        },
+        "accordionButtonAriaLabel": {
+            "open": "Abrir acordión item",
+            "close": "Cerrar acordión item"
+        },
+        "socialMediaAriaLabel": "Visita Head of People LinkedIn",
+        "imageAlt": "Fotografía de Josefina Salimei, Steplix's Head of People"
+    },
+
+    "SteplixBenefits": {
+        "benefit1": {
+            "title": "Trabajo híbrido",
+            "description": "Puedes elegir qué días trabajar desde la ofi. El espacio está preparado para que estés cómodo y tengas ganas de venir."
+        },
+        "benefit2": {
+            "title": "Revisión de salario",
+            "description": "Realizamos ajustes de acuerdo a evaluaciones de desempeño y cumplimiento de objetivos."
+        },
+        "benefit3": {
+            "title": "Flexibilidad",
+            "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus asignaciones, todo ok."
+        },
+        "benefit4": {
+            "title": "Clases de inglés",
+            "description": "Contamos con profes disponibles para que mejores tu nivel de inglés."
+        },
+        "benefit5": {
+            "title": "Plan de carrera",
+            "description": "Tenemos las herramientas disponibles para que crezcas y te capacites en tu área."
+        },
+        "benefit6": {
+            "title": "Prepaga de primer nivel",
+            "description": "Cuidamos y protegemos tu salud con los mejores prestadores del país."
+        },
+        "benefit7": {
+            "title": "Cuando vienes a la ofi",
+            "description": "Puedes acceder a masajista, osteópata, refrigerios, snacks, parrilladas en el almuerzo y sala de juegos."
+        },
+        "benefit8": {
+            "title": "Salario competitivo",
+            "description": "Ofrecemos compensaciones alineadas al mercado."
+        }
+    },
+
+    "SteplixInternalValues": {
+        "value1": {
+            "title": "Confianza",
+            "description": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos."
+        },
+
+        "value2": {
+            "title": "Respeto mutuo",
+            "description": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
+        },
+
+        "value3": {
+            "title": "Éxito",
+            "description": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
+        },
+
+        "value4": {
+            "title": "Agilidad",
+            "description": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
+        },
+
+        "value5": {
+            "title": "Conciencia",
+            "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
+        }
+    },
+    "carouselButtonAriaLabel": {
+        "backward": "Botón que mueve el carrusel hacia atrás",
+        "forward": "Botón que mueve el carrusel hacia adelante"
     }
-  },
-
-  "PortfolioSection": {
-    "pronoun": "Nuestro",
-    "title": "portfolio",
-    "subtitle": "Industrias",
-    "subtitle2": "Nuestros clientes dicen",
-    "parraf1": "Escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
-  },
-
-  "IconsLabel": {
-    "agro": "Agropecuario",
-    "insurance": "Seguros",
-    "eccomerce": "Ecommerce",
-    "pharmacist": "Farmacéutica",
-    "logistics": "Logística",
-    "fintech": "Fintech",
-    "environment": "Medioambiente",
-    "car": "Automotor",
-    "communications": "Comunicaciones",
-    "news": "Medio digital",
-    "aeronautics": "Aeronáutica"
-  },
-
-  "ButtonCardContact": "Agendar cita",
-  "ButtonBecomeSteplixer": "Conviértete en Steplixer",
-  "ButtonProject": "Cuéntanos tu proyecto",
-  "CardContactSection": {
-    "pronoun": "Nuestro",
-    "title": "Contacto",
-    "title2": "Nuestra oficina",
-    "subtitle": "Cómo nos contactas",
-    "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
-    "phrase": "¡Queremos escuchar tus ideas!"
-  },
-  "OurPostsSay": {
-    "title": "Nuestros posteos dicen",
-    "postLinkText": "...ver más",
-    "postLinkAriaLabel": "Leer más sobre el post",
-    "posts": [
-      {
-        "publishingAt": "septiembre 2022",
-        "description": "Un poco de nuestra filosofía 🧗. Los sherpas son famosos por ayudar a los escaladores en sus ascensiones a la cumbre del Everest y otros picos. De la misma manera que los sherpas acompañan a los escaladores en su viaje hacia la cima, en Steplix nos comprometemos plenamente en los desafíos de negocio...",
-        "url": "https://www.linkedin.com/posts/steplix_filosofaeda-development-software-activity-6977721230711771136-VQqZ?utm_source=share&utm_medium=member_desktop"
-      },
-      {
-        "publishingAt": "mayo 2022",
-        "description": "💬 ¿Sabías que el 75% de las nuevas ideas de negocio fracasan en sus primeros 3 años? En Steplix llevamos las ideas de nuestros clientes desde la base hasta la cima. 🗻. Anticipamos que les presentaríamos nuestros servicios en el posteo anterior. El primero de ellos, ”Conociendo tu negocio”, se enfoca en...",
-        "url": "https://www.linkedin.com/posts/steplix_steplix-software-softwaredevelopment-activity-6938216015461769216-IZUV?utm_source=share&utm_medium=member_desktop"
-      },
-      {
-        "publishingAt": "mayo 2022",
-        "description": "En los próximos posteos 🔜, vamos a contarles sobre los servicios que ofrecemos en Steplix. Más allá de los detalles, nos interesa que los protagonistas, puedan iluminarnos con ejemplos o situaciones que se dan en el día a día. 💡 💬 Ashley Rake, CEO de Steplix: ”Los servicios que ofrecemos, los confeccionamos y trabajamos...”",
-        "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-software-activity-6933104968996401152-4UL6?utm_source=share&utm_medium=member_desktop"
-      },
-      {
-        "publishingAt": "abril 2022",
-        "description": "A la hora de llevar adelante un proyecto tecnológico, son muchos los factores a tener en cuenta. En Steplix, entendemos que la formación de equipos con perfiles multidisciplinarios es una de las claves en el resultado final de los desarrollos para nuestros clientes. De la misma forma en que construimos una...",
-        "url": "https://www.linkedin.com/posts/steplix_steplix-steplixer-softwaredevelopment-activity-6929804760791277569-SoGI?utm_source=share&utm_medium=member_desktop"
-      }
-    ]
-  },
-  "PortfolioHomeSection": {
-    "title": "Ir al porfolio",
-    "mountainImageAlt": ""
-  },
-  "MainHeader": {
-    "slogan": "Somos tu aliado digital",
-    "title": "Co-creamos <br/> el camino que <br/> llevará tu negocio <br/> a la cima.",
-    "subtitleMobile": "Diseñamos y <br/> desarrollamos software <br/> a la medida de tus <br/> necesidades",
-    "subtitleBase": "Diseñamos y desarrollamos <br/> software a la medida de tus <br/> necesidades",
-    "stepOneTitle": "Conocemos el <br/> camino",
-    "stepOneDescription": "Somos guías en el ecosistema de los negocios digitales y sabemos como ayudarte a potenciar una idea para convertirla en un producto competitivo.",
-    "stepTwoTitle": "Te acompañamos <br/> en el viaje",
-    "stepTwoDescription": "Co-creamos soluciones a medida aplicando diseño, innovación e ingeniería.",
-    "stepThreeTitle": "Logramos <br/> resultados",
-    "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
-    "finalTitle": "Juntos llegamos <br/> a la cima",
-    "finalSubtitle": "#DigitalSherpas",
-    "finalTextLink": "Descubrenos",
-    "bannerImageAlt": "Imagen de la maqueta de nuestra aplicación Steplix time",
-    "buttonAriaLabel": {
-      "forward": "Botón que avanza el flujo de animación hacia adelante",
-      "backward": "Botón que avanza el flujo de animación hacia atrás",
-      "reset": "Botón que reinicia el flujo de animacíón"
-    },
-    "services": {
-      "SoftwareDevelopment": {
-        "name": "Desarrollo de Software",
-        "description": "Soluciones a la medida de tus necesidades."
-      },
-      "ProductDesign": {
-        "name": "Diseño de producto",
-        "description": "Mejoramos la experiencia de usuario."
-      },
-      "QAAutomation": {
-        "name": "Automatización de QA",
-        "description": "Garantizamos la calidad del software."
-      },
-      "DataEngineering": {
-        "name": "Ingeniería de datos",
-        "description": "Analizamos datos para impulsar tu crecimiento."
-      },
-      "StrategicConsulting": {
-        "name": "Consultoría estratégica",
-        "description": "Aumentamos la eficiencia y rentabilidad."
-      }
-    },
-    "clients": {
-      "title": "Clientes"
-    }
-  },
-  "portfolio": {
-    "cards": {
-      "finket": {
-        "text": "Diseñamos y desarrollamos una plataforma digital de servicios financieros.",
-        "imageAlt": "Imagen maqueta de la aplicación de Finket"
-      },
-      "pow": {
-        "text": "Diseñamos y desarrollamos un dashboard web para visualizar métricas e indicadores de E-commerce.",
-        "imageAlt": "Imagen maqueta de la aplicación de Pow"
-      },
-      "valid": {
-        "text": "Diseñamos y desarrollamos una interfaz para tiendas de telefonía móvil.",
-        "imageAlt": "Imagen maqueta de la aplicación de Valid"
-      },
-      "sura": {
-        "text": "Diseñamos y desarrollamos un cotizador online para sus clientes.",
-        "imageAlt": "Imagen maqueta de la aplicación de Sura"
-      },
-      "smartium": {
-        "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
-        "imageAlt": "Imagen maqueta de la aplicación de Smartium"
-      }
-    },
-    "message": "¿Quieres conocer más?",
-    "button": "Contáctanos"
-  },
-
-  "BecomeSteplixerSection": {
-    "title": "Nuestros beneficios",
-    "title2": "Nuestros valores",
-    "title3": "Conviértete en Steplixer",
-    "sendCV": {
-      "title": "Si sabes que puedes ser Steplixer...",
-      "subtitle": "¡Envíanos tu CV!"
-    },
-    "accordionButtonAriaLabel": {
-      "open": "Abrir acordión item",
-      "close": "Cerrar acordión item"
-    },
-    "socialMediaAriaLabel": "Visita Head of People LinkedIn",
-    "imageAlt": "Fotografía de Josefina Salimei, Steplix's Head of People"
-  },
-
-  "SteplixBenefits": {
-    "benefit1": {
-      "title": "Trabajo híbrido",
-      "description": "Puedes elegir qué días trabajar desde la ofi. El espacio está preparado para que estés cómodo y tengas ganas de venir."
-    },
-    "benefit2": {
-      "title": "Revisión de salario",
-      "description": "Realizamos ajustes de acuerdo a evaluaciones de desempeño y cumplimiento de objetivos."
-    },
-    "benefit3": {
-      "title": "Flexibilidad",
-      "description": "Trabajamos por objetivos. Mientras te organices y cumplas tus asignaciones, todo ok."
-    },
-    "benefit4": {
-      "title": "Clases de inglés",
-      "description": "Contamos con profes disponibles para que mejores tu nivel de inglés."
-    },
-    "benefit5": {
-      "title": "Plan de carrera",
-      "description": "Tenemos las herramientas disponibles para que crezcas y te capacites en tu área."
-    },
-    "benefit6": {
-      "title": "Prepaga de primer nivel",
-      "description": "Cuidamos y protegemos tu salud con los mejores prestadores del país."
-    },
-    "benefit7": {
-      "title": "Cuando vienes a la ofi",
-      "description": "Puedes acceder a masajista, osteópata, refrigerios, snacks, parrilladas en el almuerzo y sala de juegos."
-    },
-    "benefit8": {
-      "title": "Salario competitivo",
-      "description": "Ofrecemos compensaciones alineadas al mercado."
-    }
-  },
-
-  "SteplixInternalValues": {
-    "value1": {
-      "title": "Confianza",
-      "description": "Es la fé en el aporte del otro, es dar certeza que cumpliremos nuestros compromisos con los demás. Es no fallarle al otro ni a nosotros mismos."
-    },
-
-    "value2": {
-      "title": "Respeto mutuo",
-      "description": "Es comunicarnos con honestidad y empatía, darle al otro la oportunidad de expresar sus dudas y desacuerdos confiando que busca siempre añadir valor. Es evitar desperdiciar nuestro tiempo, del grupo, poner excusas o hablar innecesariamente."
-    },
-
-    "value3": {
-      "title": "Éxito",
-      "description": "Es la satisfacción de nuestros clientes. Se obtiene mostrando actitud, iniciativa y proactividad, resiliencia, resolviendo problemas y buscando destacar, tanto en nuestras soluciones como en los equipos que conformamos. Es crecer todo el tiempo, personal y profesionalmente."
-    },
-
-    "value4": {
-      "title": "Agilidad",
-      "description": "Es adaptarse a las situaciones, al cambio y a los desafíos, buscando la practicidad, aprender de los errores y aplicando la mejora continua. Es evitar la rigidez, ser testarudos o quedarnos quietos."
-    },
-
-    "value5": {
-      "title": "Conciencia",
-      "description": "Es la capacidad de reconocer la realidad circundante. Es fomentar la sostenibilidad, la empatía y la diversidad. Es influir a partir de nuestra coherencia, integridad y honestidad. Es reconocer la necesidad de vivir honrando el respeto, el equilibrio y la equidad. Es evitar la discriminacion, la agresión y la malicia."
-    }
-  },
-  "carouselButtonAriaLabel": {
-    "backward": "Botón que mueve el carrusel hacia atrás",
-    "forward": "Botón que mueve el carrusel hacia adelante"
-  }
 }
