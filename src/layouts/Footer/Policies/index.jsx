@@ -1,0 +1,34 @@
+import PropTypes from "prop-types";
+
+const Policies = ({
+  rightsText,
+  privacyPolicyFilename,
+  privacyPolicyAriaLabel,
+  privacyPolicyText,
+}) => {
+  return (
+    <div className="flex flex-col sm:flex-row gap-2 font-poppins text-center text-white">
+      <p className="text-[10px] leading-[0.813rem] font-light sm:text-left">
+        {rightsText}
+      </p>
+      <a
+        href={`/assets/files/${privacyPolicyFilename}`}
+        rel="noreferrer"
+        target="_blank"
+        className="underline text-[10px] leading-4 tracking-[0.01em]"
+        aria-label={privacyPolicyAriaLabel}
+      >
+        {privacyPolicyText}
+      </a>
+    </div>
+  );
+};
+
+Policies.propTypes = {
+  rightsText: PropTypes.string.isRequired,
+  privacyPolicyFilename: PropTypes.string.isRequired,
+  privacyPolicyAriaLabel: PropTypes.string.isRequired,
+  privacyPolicyText: PropTypes.string.isRequired,
+};
+
+export default Policies;
