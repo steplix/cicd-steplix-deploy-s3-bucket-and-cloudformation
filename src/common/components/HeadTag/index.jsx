@@ -1,71 +1,51 @@
-import React from 'react'
-import Head from "next/head";
-import PropTypes from "prop-types";
+import Head from 'next/head';
+import PropTypes from 'prop-types';
 
 // TODO: Make robots tag content dynamic
 
 const HeadTag = ({ metaContent, children }) => {
-
   const { title, keywords, description } = metaContent;
 
   return (
     <Head>
-    {/* HTML Meta Tags */}
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="robots" content="noindex" />
-    <link rel="icon" href="/favicon.png" />
-    <title>{title}</title>
-    <meta
-        name="description"
-        content={description}
-    />
-    <meta name="keywords" content={keywords} />
-    {/* Facebook Meta Tags */}
-    <meta property="og:title" content={title} />
-    <meta
-        property="og:description"
-        content={description}
-    />
-    <meta property="og:url" content="https://steplix.com/" />
-    <meta property="og:type" content="website" />
-    <meta
-        property="og:image"
-        content="https://steplix.com/assets/img/logo.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="54" />
-    <meta property="og:image:alt" content="Steplix Logo" />
-    {/* Twitter Meta Tags */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="steplix.com" />
-    <meta property="twitter:url" content="https://steplix.com/" />
-    <meta name="twitter:title" content={title} />
-    <meta
-        name="twitter:description"
-        content={description}
-    />
-    <meta
-        name="twitter:image"
-        content="https://steplix.com/assets/img/logo.png"
-    />
-    {/* Structured Data */}
-    {children}
+      {/* HTML Meta Tags */}
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+      <meta content="noindex" name="robots" />
+      <link href="/favicon.png" rel="icon" />
+      <title>{title}</title>
+      <meta content={description} name="description" />
+      <meta content={keywords} name="keywords" />
+      {/* Facebook Meta Tags */}
+      <meta content={title} property="og:title" />
+      <meta content={description} property="og:description" />
+      <meta content="https://steplix.com/" property="og:url" />
+      <meta content="website" property="og:type" />
+      <meta content="https://steplix.com/assets/img/logo.png" property="og:image" />
+      <meta content="image/png" property="og:image:type" />
+      <meta content="200" property="og:image:width" />
+      <meta content="54" property="og:image:height" />
+      <meta content="Steplix Logo" property="og:image:alt" />
+      {/* Twitter Meta Tags */}
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta content="steplix.com" property="twitter:domain" />
+      <meta content="https://steplix.com/" property="twitter:url" />
+      <meta content={title} name="twitter:title" />
+      <meta content={description} name="twitter:description" />
+      <meta content="https://steplix.com/assets/img/logo.png" name="twitter:image" />
+      {/* Structured Data */}
+      {children}
     </Head>
-  )
-}
-
-HeadTag.propTypes = {
-    metaContent: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        keywords: PropTypes.string.isRequired,
-        noIndex: PropTypes.bool
-    }),
-    children: PropTypes.node
+  );
 };
 
-export default HeadTag
+HeadTag.propTypes = {
+  metaContent: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    keywords: PropTypes.string.isRequired,
+    noIndex: PropTypes.bool,
+  }),
+  children: PropTypes.node,
+};
+
+export default HeadTag;

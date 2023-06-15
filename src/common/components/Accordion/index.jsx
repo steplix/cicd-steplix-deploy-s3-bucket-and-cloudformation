@@ -1,15 +1,12 @@
-import { forwardRef, useEffect, useState } from "react";
+import { forwardRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from "@/common/lib/i18n";
-import PropTypes from "prop-types";
-import AccordionItemProvider, {
-  useItemAccordion,
-} from "./context/AccordionItemContext";
-import AccordionGlobalProvider, {
-  useGlobalAccordion,
-} from "./context/AccordionGlobalContext";
+import PropTypes from 'prop-types';
 
-import Icon from "@/common/components/Icon";
+import AccordionItemProvider, { useItemAccordion } from './context/AccordionItemContext';
+import AccordionGlobalProvider, { useGlobalAccordion } from './context/AccordionGlobalContext';
+
+import { useTranslation } from '@/common/lib/i18n';
+import Icon from '@/common/components/Icon';
 
 // eslint-disable-next-line react/display-name
 const Accordion = forwardRef(({ children, ...props }, ref) => {
@@ -27,10 +24,7 @@ const Accordion = forwardRef(({ children, ...props }, ref) => {
 
 Accordion.Title = function AccordionTitle({ children, ...props }) {
   return (
-    <h1
-      className="text-4xl leading-5 mt-0 mb-2 text-black text-center"
-      {...props}
-    >
+    <h1 className="text-4xl leading-5 mt-0 mb-2 text-black text-center" {...props}>
       {children}
     </h1>
   );
@@ -40,7 +34,9 @@ Accordion.Item = function AccordionItem({ children, ...props }) {
   return (
     <AccordionItemProvider {...props}>
       <div className="relative w-full h-[64px]">
-        <div className="text-black w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl bg-white absolute">{children}</div>
+        <div className="text-black w-full h-[fit-content] no-highlight accordion--shadow rounded-2xl bg-white absolute">
+          {children}
+        </div>
       </div>
     </AccordionItemProvider>
   );
@@ -70,14 +66,16 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
         className={`!w-full transition-all flex justify-between cursor-pointer text-2xl px-6 py-[17px] font-normal select-none items-center`}
         onClick={onClick}
         {...props}
-        aria-label={rotate ? t("BecomeSteplixerSection.accordionButtonAriaLabel.close") : t("BecomeSteplixerSection.accordionButtonAriaLabel.open")}
+        aria-label={
+          rotate
+            ? t('BecomeSteplixerSection.accordionButtonAriaLabel.close')
+            : t('BecomeSteplixerSection.accordionButtonAriaLabel.open')
+        }
       >
         {children}
         {chevron && (
-          <span
-            className={`${rotate ? "rotate-180" : "rotate-0"} transition-all `}
-          >
-            <Icon name="chevronDown" className="w-6" fill="#00A9E0" />
+          <span className={`${rotate ? 'rotate-180' : 'rotate-0'} transition-all `}>
+            <Icon className="w-6" fill="#00A9E0" name="chevronDown" />
           </span>
         )}
       </button>
@@ -87,21 +85,26 @@ Accordion.Header = function AccordionHeader({ children, ...props }) {
 
 Accordion.Body = function AccordionHeader({ children }) {
   const { toggleItem } = useItemAccordion();
-  
+
   return (
     <AnimatePresence>
-      {
-        toggleItem ? (
-          <motion.div
+      {toggleItem ? (
+        <motion.div
+          animate={{
+            height: 'auto',
+            transition: { ease: 'linear', duration: 0.4 },
+          }}
           className={`rounded-b-2xl text-[13px] font-normal whitespace-pre-wrap select-none overflow-hidden px-6 pb-4 pt-0 relative z-50 bg-white`}
+          exit={{
+            height: 0,
+            opacity: 0,
+            transition: { ease: 'linear', duration: 0.2 },
+          }}
           initial={{ height: 0 }}
-          animate={{ height: 'auto', transition: { ease: "linear", duration: 0.4 } }}
-          exit={{ height: 0, opacity: 0, transition: { ease: "linear", duration: 0.2 } }}
         >
           {children}
         </motion.div>
-        ) : null
-      }
+      ) : null}
     </AnimatePresence>
   );
 };

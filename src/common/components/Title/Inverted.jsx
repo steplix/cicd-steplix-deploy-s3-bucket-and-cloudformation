@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 // TODO ubicar los titulos en cada seccion
@@ -7,7 +6,9 @@ const Title = ({ content, secondContent, size, leading = 'leading-10' }) => {
   return (
     <div className="flex">
       <p className={`${size} ${leading} font-bold pr-3 text-white`}>{content}</p>
-      {secondContent && <p className={`${size} ${leading} font-bold text--outlined`}>{secondContent}</p>}
+      {secondContent && (
+        <p className={`${size} ${leading} font-bold text--outlined`}>{secondContent}</p>
+      )}
     </div>
   );
 };

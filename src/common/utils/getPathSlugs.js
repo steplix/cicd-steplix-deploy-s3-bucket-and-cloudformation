@@ -1,9 +1,9 @@
-import { LOCALE_SLUGS } from "./constants";
+import { LOCALE_SLUGS } from './constants';
 
 export const getPathSlugs = () => {
-    return LOCALE_SLUGS.map((locale) => ({
-      params: {
-        locale,
-      },
-    }));
-}
+  return LOCALE_SLUGS.map((locale) => ({
+    params: {
+      locale,
+    },
+  }));
+};

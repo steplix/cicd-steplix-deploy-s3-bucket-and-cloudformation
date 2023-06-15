@@ -1,18 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useKeenSlider } from "keen-slider/react";
-import { isAsset } from "@/common/utils/validators";
-import Icon from "../Icon";
+import PropTypes from 'prop-types';
+import { useKeenSlider } from 'keen-slider/react';
 
-const TechnologiesSlider = ({
-  images,
-  spacingBetweenSlides,
-}) => {
+import Icon from '../Icon';
+
+import { isAsset } from '@/common/utils/validators';
+
+const TechnologiesSlider = ({ images, spacingBetweenSlides }) => {
   const animation = { duration: 30000, easing: (t) => t };
 
   const [sliderRef] = useKeenSlider({
     loop: true,
-    renderMode: "performance",
+    renderMode: 'performance',
     drag: false,
     slides: {
       perView: 3,
@@ -58,17 +56,14 @@ const TechnologiesSlider = ({
 
   return (
     <div className="max-h-[53px]">
-      <div className="keen-slider items-center gap-4" ref={sliderRef}>
+      <div ref={sliderRef} className="keen-slider items-center gap-4">
         {images.map((image, index) => {
           return (
-            <div
-              className={`keen-slider__slide flex items-center justify-center`}
-              key={index}
-            >
+            <div key={index} className={`keen-slider__slide flex items-center justify-center`}>
               {isAsset(image.image) ? (
-                <img src={image.image} alt={image.alt} className={image.class} />
+                <img alt={image.alt} className={image.class} src={image.image} />
               ) : (
-                <Icon name={image.image} className={image.class} />
+                <Icon className={image.class} name={image.image} />
               )}
             </div>
           );
@@ -83,7 +78,7 @@ TechnologiesSlider.propTypes = {
     PropTypes.shape({
       image: PropTypes.string.isRequired,
       alt: PropTypes.string.isRequired,
-    })
+    }),
   ),
   spacingBetweenSlides: PropTypes.number,
 };

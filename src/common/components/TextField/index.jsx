@@ -1,6 +1,7 @@
-import PropTypes from "prop-types";
-import ToastIcon from "../ToastIcon";
-import Icon from "../Icon";
+import PropTypes from 'prop-types';
+
+import ToastIcon from '../ToastIcon';
+import Icon from '../Icon';
 
 const TextField = ({
   text,
@@ -23,12 +24,12 @@ const TextField = ({
           <span className="text-black">{text}</span>
         </div>
         <ToastIcon
-          toastStyles={toastStyles}
+          clickEvent={clickEvent}
           icon={rightIcon}
           message={toastMessage}
-          clickEvent={clickEvent}
-          type={toastType}
           showToast={showToast}
+          toastStyles={toastStyles}
+          type={toastType}
         />
       </div>
     </div>
@@ -43,25 +44,20 @@ TextField.propTypes = {
   showToast: PropTypes.bool,
   styleProps: PropTypes.string,
   toastStyles: PropTypes.string,
-  toastType: PropTypes.oneOf([
-    "toast-primary",
-    "toast-error",
-    "toast-warning",
-    "toast-default",
-  ]),
+  toastType: PropTypes.oneOf(['toast-primary', 'toast-error', 'toast-warning', 'toast-default']),
   toastMessage: PropTypes.string,
 };
 
 TextField.defaultProps = {
-  text: "example@gmail.com",
-  toastMessage: "Copied",
-  toastType: "toast-default",
-  rightIcon: <Icon name="copy" className="w-5" />,
-  leftIcon: <Icon name="mailTextField" className="w-5" />,
-  clickEvent: () => console.log("Click event is Required"),
+  text: 'example@gmail.com',
+  toastMessage: 'Copied',
+  toastType: 'toast-default',
+  rightIcon: <Icon className="w-5" name="copy" />,
+  leftIcon: <Icon className="w-5" name="mailTextField" />,
+  clickEvent: () => alert('Click event is Required'),
   showToast: true,
-  styleProps: "",
-  toastStyles: "",
+  styleProps: '',
+  toastStyles: '',
 };
 
 export default TextField;
