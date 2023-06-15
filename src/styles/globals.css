@@ -24,10 +24,11 @@
 
     .text--outlined {
         color: rgba(255, 255, 255, 0);
-        text-shadow: -1px -1px 0 rgba(255, 255, 255 0), 0 -1px 0 rgba(255, 255, 255 0),
-            1px -1px 0 rgba(255, 255, 255 0), 1px 0 0 rgba(255, 255, 255 0),
-            1px 1px 0 rgba(255, 255, 255 0), 0 1px 0 rgba(255, 255, 255 0),
-            -1px 1px 0 rgba(255, 255, 255 0), -1px 0 0 rgba(255, 255, 255 0);
+        text-shadow: -1px -1px 0 rgba(255, 255, 255 0),
+            0 -1px 0 rgba(255, 255, 255 0), 1px -1px 0 rgba(255, 255, 255 0),
+            1px 0 0 rgba(255, 255, 255 0), 1px 1px 0 rgba(255, 255, 255 0),
+            0 1px 0 rgba(255, 255, 255 0), -1px 1px 0 rgba(255, 255, 255 0),
+            -1px 0 0 rgba(255, 255, 255 0);
         letter-spacing: 0.1em;
         -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
@@ -94,7 +95,7 @@
     /* SUBMENU & NAVBAR START */
 
     .nav-link::after {
-        content: '';
+        content: "";
         display: block;
         width: 0;
         height: 1px;
@@ -128,7 +129,7 @@
     }
 
     .nav--link--yellow::after {
-        content: '';
+        content: "";
         display: block;
         width: 0;
         height: 1.5px;
@@ -138,7 +139,7 @@
     }
 
     .nav--link--red::after {
-        content: '';
+        content: "";
         display: block;
         width: 0;
         height: 1.5px;
@@ -148,7 +149,7 @@
     }
 
     .nav--link--blue::after {
-        content: '';
+        content: "";
         display: block;
         width: 0;
         height: 1.5px;
@@ -235,7 +236,12 @@
     }
 
     .footer-gradient {
-        background: linear-gradient(180deg, #00a9e0 -26.27%, #3c1053 29.75%, #000000 98.25%);
+        background: linear-gradient(
+            180deg,
+            #00a9e0 -26.27%,
+            #3c1053 29.75%,
+            #000000 98.25%
+        );
     }
 
     .avatar-gradient {
@@ -320,7 +326,7 @@
     }
 
     .underlined-title::after {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 2px;
@@ -334,7 +340,7 @@
     }
 
     .underlined-title-fixed::after {
-        content: '';
+        content: "";
         display: block;
         width: 100px;
         height: 2px;
@@ -444,17 +450,28 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     }
 
+    .card-inactive {
+        transform: scale(0.85);
+        height: 364px !important;
+    }
+
     @media (max-width: 767px) {
         .card-active {
             height: 408px !important;
-            width: 280px !important;
+            transform: scale(1);
         }
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
+        .card-inactive {
+            transform: scale(0.85);
+            height: 260px !important;
+            width: 431px !important;
+        }
         .card-active {
             height: 293px !important;
             width: 488px !important;
+            transform: scale(1);
         }
     }
 
@@ -463,7 +480,7 @@
     }
 
     .clientsCarousel {
-        @apply max-w-[290px] md:max-w-[520px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px];
+        @apply max-w-[270px] md:max-w-[460px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px];
     }
 
     .postsCarousel {
@@ -485,21 +502,21 @@
 
     .line-step-1 {
         position: relative;
-        background-image: url('../../public/assets/img/home/line-step-1-lg.svg');
+        background-image: url("../../public/assets/img/home/line-step-1-lg.svg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .line-step-2 {
         position: relative;
-        background-image: url('../../public/assets/img/home/line-step-2-lg.svg');
+        background-image: url("../../public/assets/img/home/line-step-2-lg.svg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .line-step-3 {
         position: relative;
-        background-image: url('../../public/assets/img/home/line-step-3-lg.svg');
+        background-image: url("../../public/assets/img/home/line-step-3-lg.svg");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -507,21 +524,21 @@
     @media (max-width: 1023px) {
         .line-step-1 {
             position: relative;
-            background-image: url('../../public/assets/img/home/line-step-1-md.svg');
+            background-image: url("../../public/assets/img/home/line-step-1-md.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         .line-step-2 {
             position: relative;
-            background-image: url('../../public/assets/img/home/line-step-2-md.svg');
+            background-image: url("../../public/assets/img/home/line-step-2-md.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         .line-step-3 {
             position: relative;
-            background-image: url('../../public/assets/img/home/line-step-3-md.svg');
+            background-image: url("../../public/assets/img/home/line-step-3-md.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -530,7 +547,7 @@
     @media (min-width: 1360px) {
         .line-step-1 {
             position: relative;
-            background-image: url('../../public/assets/img/home/line-step-1-2xl.svg');
+            background-image: url("../../public/assets/img/home/line-step-1-2xl.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -548,35 +565,35 @@
 
     .banner {
         position: relative;
-        background-image: url('../../public/assets/img/home/banner-xs.webp');
+        background-image: url("../../public/assets/img/home/banner-xs.webp");
         background-size: 100% 1148px;
         background-repeat: no-repeat;
     }
 
     @media (min-width: 640px) {
         .banner {
-            background-image: url('../../public/assets/img/home/banner-sm.webp');
+            background-image: url("../../public/assets/img/home/banner-sm.webp");
             background-size: 100% 100%;
         }
     }
 
     @media (min-width: 1024px) {
         .banner {
-            background-image: url('../../public/assets/img/home/banner-lg.webp');
+            background-image: url("../../public/assets/img/home/banner-lg.webp");
             background-size: 100% 100%;
         }
     }
 
     @media (min-width: 1280px) {
         .banner {
-            background-image: url('../../public/assets/img/home/banner-xl.webp');
+            background-image: url("../../public/assets/img/home/banner-xl.webp");
             background-size: 100% 100%;
         }
     }
 
     @media (min-width: 1536px) {
         .banner {
-            background-image: url('../../public/assets/img/home/banner-2xl.webp');
+            background-image: url("../../public/assets/img/home/banner-2xl.webp");
             background-size: 100% 100%;
         }
     }
@@ -648,7 +665,7 @@
 
     .btn:before,
     .btn::after {
-        content: '';
+        content: "";
         position: absolute;
         z-index: -2;
         transition: all 250ms ease-out;
