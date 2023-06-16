@@ -1,3 +1,4 @@
+import React from 'react';
 import Script from 'next/script';
 import '@fontsource/poppins/100.css';
 import '@fontsource/poppins/200.css';
