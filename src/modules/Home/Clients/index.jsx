@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from '@/common/lib/i18n';
 import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
 import { clientsLogos } from '@/common/utils/constants';
-import PortfolioCarousel from '@/common/components/PortfolioCarousel';
+import ClientsCarousel from '@/common/components/ClientsCarousel';
 import TestimonialCard from '@/common/components/TestimonialCard';
 import Title from '@/common/components/Title/Gradient';
 import Icon from '@/common/components/Icon';
@@ -32,7 +32,7 @@ const Clients = () => {
           })}
         </div>
       </div>
-      <PortfolioCarousel adaptiveHeightValue={48} carouselClassName={'clientsCarousel'}>
+      <ClientsCarousel adaptiveHeightValue={48} carouselClassName={'clientsCarousel'}>
         {clients.map((client) => (
           <div
             key={client.companyName}
@@ -50,7 +50,7 @@ const Clients = () => {
             />
           </div>
         ))}
-      </PortfolioCarousel>
+      </ClientsCarousel>
       <div className="flex justify-center">
         <ButtonRaise
           ariaLabel={t('navbar.item4.ariaLabel')}
