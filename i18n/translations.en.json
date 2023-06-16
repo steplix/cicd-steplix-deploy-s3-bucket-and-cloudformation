@@ -399,6 +399,9 @@
         },
         "clients": {
             "title": "Clients"
+        },
+        "partners": {
+            "title": "Partners"
         }
     },
     "portfolio": {

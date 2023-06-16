@@ -3,6 +3,7 @@ import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
 import Clients from '@/modules/Home/Clients';
+import Partners from '@/modules/Home/Partners';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import HeadTag from '@/common/components/HeadTag';
 
@@ -78,6 +79,7 @@ export default function Home() {
 
         {/* Technology Section */}
         <HowDoWeDoIt />
+        <Partners />
       </TransitionWrapper>
     </>
   );
