@@ -2,7 +2,7 @@ import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
 import { useTranslation } from '@/common/lib/i18n';
-import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
+// import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
 import PartnerCard from '@/common/components/PartnerCard';
 import Title from '@/common/components/Title/Gradient';
 
@@ -12,7 +12,7 @@ const Clients = () => {
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.lang);
-  const { clients } = usePortfolioTranslation();
+  //   const { clients } = usePortfolioTranslation();
 
   return (
     <section className="container pt-[72px] pb-[50px] 2xl:pt-14 overflow-hidden space-y-8">
