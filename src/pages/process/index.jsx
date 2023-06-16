@@ -1,7 +1,7 @@
-import WhatWeDo from "../[locale]/what-we-do";
+import WhatWeDo from '../[locale]/what-we-do';
 
 export default function Process() {
-  return WhatWeDo("en");
+  return WhatWeDo('en');
 }
 
 export async function getStaticProps({ params }) {

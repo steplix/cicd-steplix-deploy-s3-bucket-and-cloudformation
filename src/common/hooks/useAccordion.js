@@ -1,4 +1,4 @@
-const { useRef, useState, useEffect } = require("react");
+const { useRef, useState, useEffect } = require('react');
 
 export const useAccordion = () => {
   const accordionRef = useRef(null);
@@ -15,10 +15,10 @@ export const useAccordion = () => {
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
 
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 

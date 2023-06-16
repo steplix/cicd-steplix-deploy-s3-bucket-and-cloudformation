@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const AvatarSkeleton = ({ icon, background }) => {
   return (
@@ -16,7 +16,7 @@ AvatarSkeleton.propTypes = {
 };
 
 AvatarSkeleton.defaultProps = {
-  background: "bg-black",
+  background: 'bg-black',
 };
 
 export default AvatarSkeleton;

@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Policies = ({
   rightsText,
@@ -8,15 +8,13 @@ const Policies = ({
 }) => {
   return (
     <div className="flex flex-col sm:flex-row gap-2 font-poppins text-center text-white">
-      <p className="text-[10px] leading-[0.813rem] font-light sm:text-left">
-        {rightsText}
-      </p>
+      <p className="text-[10px] leading-[0.813rem] font-light sm:text-left">{rightsText}</p>
       <a
+        aria-label={privacyPolicyAriaLabel}
+        className="underline text-[10px] leading-4 tracking-[0.01em]"
         href={`/assets/files/${privacyPolicyFilename}`}
         rel="noreferrer"
         target="_blank"
-        className="underline text-[10px] leading-4 tracking-[0.01em]"
-        aria-label={privacyPolicyAriaLabel}
       >
         {privacyPolicyText}
       </a>

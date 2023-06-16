@@ -1,4 +1,4 @@
-import Svg from "../svg";
+import Svg from '../svg';
 
 const calendar = ({ className }) => (
   <Svg className={className} originalSize={14}>

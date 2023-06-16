@@ -1,7 +1,7 @@
-import Svg from "../svg";
+import Svg from '../svg';
 
 const c5n = ({ className }) => (
-  <Svg className={className} originalWidth={128} originalHeight={33}>
+  <Svg className={className} originalHeight={33} originalWidth={128}>
     <g clipPath="url(#clip0_1894_100624)">
       <path
         d="M0.619141 16.6053V0.5H16.5753H32.5314V16.6053V32.7105H16.5753H0.619141V16.6053ZM27.0909 16.6053V6.0983H16.6159H6.14085V16.6053V27.1122H16.6159H27.0909V16.6053Z"
@@ -14,12 +14,7 @@ const c5n = ({ className }) => (
     </g>
     <defs>
       <clipPath id="clip0_1894_100624">
-        <rect
-          width="103.938"
-          height="32.2105"
-          fill="white"
-          transform="translate(0.619629 0.5)"
-        />
+        <rect fill="white" height="32.2105" transform="translate(0.619629 0.5)" width="103.938" />
       </clipPath>
     </defs>
   </Svg>
