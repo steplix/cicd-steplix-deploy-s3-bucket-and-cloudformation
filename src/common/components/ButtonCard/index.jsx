@@ -1,5 +1,6 @@
-import propTypes from "prop-types";
-import Icon from "../Icon";
+import propTypes from 'prop-types';
+
+import Icon from '../Icon';
 
 const ButtonCard = ({
   label,
@@ -8,25 +9,25 @@ const ButtonCard = ({
   clickEvent,
   iconName,
   customImageClass,
-  iconPosition = "left",
-  ariaLabel
+  iconPosition = 'left',
+  ariaLabel,
 }) => {
   return (
     <button
+      alt={alt}
+      aria-label={ariaLabel}
       className="w-fit h-fit bg-blue hover:cursor-pointer text-white rounded-[20px] gap-y-2.5"
       title={title}
-      alt={alt}
       type="button"
       onClick={clickEvent}
-      aria-label={ariaLabel}
     >
       <div className="flex flex-row items-center py-2 pr-4 pl-3">
-        {iconName && iconPosition === "left" && (
-          <Icon name={iconName} className={`${customImageClass} mr-2`} />
+        {iconName && iconPosition === 'left' && (
+          <Icon className={`${customImageClass} mr-2`} name={iconName} />
         )}
         <p className="font-bold font-poppins text-xs xl:text-base">{label}</p>
-        {iconName && iconPosition === "right" && (
-          <Icon name={iconName} className={`${customImageClass} ml-2`} />
+        {iconName && iconPosition === 'right' && (
+          <Icon className={`${customImageClass} ml-2`} name={iconName} />
         )}
       </div>
     </button>
@@ -40,8 +41,8 @@ ButtonCard.propTypes = {
   clickEvent: propTypes.func,
   iconName: propTypes.string,
   customImageClass: propTypes.string,
-  iconPosition: propTypes.oneOf(["left", "right"]),
-  ariaLabel: propTypes.string
+  iconPosition: propTypes.oneOf(['left', 'right']),
+  ariaLabel: propTypes.string,
 };
 
 export default ButtonCard;
