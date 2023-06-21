@@ -5,7 +5,6 @@ import { motion, useAnimation } from 'framer-motion';
 import Gradient from '@/common/components/Title/Gradient';
 import HeadTag from '@/common/components/HeadTag';
 import CardIcon from '@/common/components/CardIcon';
-import PortfolioCarousel from '@/common/components/PortfolioCarousel';
 import PortfolioCard from '@/common/components/PortfolioCard';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
@@ -13,6 +12,7 @@ import { useTranslation } from '@/common/lib/i18n';
 import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
 import { stagger } from '@/common/lib/animation';
 import { PORTFOLIO_CARDS } from '@/common/utils/constants';
+import Carousel from '@/common/components/Carousel';
 
 //TODO: ADD NO INDEX PROP TO META TAG BEFORE DEPLOYING
 
@@ -39,10 +39,18 @@ const PortfolioView = ({ locale }) => {
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
         <section className="container pb-[72px]">
-          <PortfolioCarousel adaptiveHeightValue={96} carouselClassName={'portfolioCarousel'}>
+          <Carousel
+            hasArrows
+            adaptiveHeightValue={96}
+            cardClassName="portfolio-card--active"
+            carouselClassName={'portfolioCarousel sm:h-[500px]'}
+          >
             {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
-                <div key={name} className="keen-slider__slide number-slide rounded-[20px]">
+                <div
+                  key={name}
+                  className="keen-slider__slide rounded-[20px] flex justify-center items-center"
+                >
                   <PortfolioCard
                     iconBrandClass={iconBrandClass}
                     industryIconName={industryIconName}
@@ -51,7 +59,7 @@ const PortfolioView = ({ locale }) => {
                 </div>
               );
             })}
-          </PortfolioCarousel>
+          </Carousel>
 
           <div className="mt-[14px] flex flex-col gap-6">
             <Gradient

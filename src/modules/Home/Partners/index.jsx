@@ -2,9 +2,10 @@ import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
 import { useTranslation } from '@/common/lib/i18n';
-// import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
 import PartnerCard from '@/common/components/PartnerCard';
 import Title from '@/common/components/Title/Gradient';
+import { PARTNERS_CARDS } from '@/common/utils/constants';
+import Carousel from '@/common/components/Carousel';
 
 const Clients = () => {
   const {
@@ -12,29 +13,37 @@ const Clients = () => {
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.lang);
-  //   const { clients } = usePortfolioTranslation();
+
+  // Duplicate Partners info array to show side cards in carousel
+  const duplicatedpartners = [...PARTNERS_CARDS, ...PARTNERS_CARDS];
 
   return (
-    <section className="container pt-[72px] pb-[50px] 2xl:pt-14 overflow-hidden space-y-8">
+    <section className="container pt-[56px] pb-[50px] 2xl:pt-14 overflow-hidden space-y-8">
       <Title
         underlineFixed
         content={t('MainHeader.partners.title')}
         size="text-[26px] lg:text-[32px]"
       />
-      {/* <ClientsCarousel adaptiveHeightValue={48} carouselClassName={'clientsCarousel'}>
-        {clients.map((client) => (
-          <div
-            key={client.companyName}
-            className={`keen-slider__slide number-slide flex justify-center items-center w-[279px] h-[158px]`}
-          > */}
-      <PartnerCard
-        description="Cámara de la industria Argentina del Software."
-        imageUrl="/assets/img/partners/cessi.svg"
-        // imageAlt={`${client?.companyName} logo`}
-      />
-      {/* </div>
+      <Carousel
+        cardClassName="partners-card--active"
+        carouselClassName="partnersCarousel h-[200px] sm:h-[240px]"
+      >
+        {duplicatedpartners.map(({ imageAlt, imageUrl, description }, index) => (
+          <div key={index} className={`keen-slider__slide flex justify-center items-center`}>
+            <PartnerCard description={description} imageAlt={imageAlt} imageUrl={imageUrl} />
+          </div>
         ))}
-      </ClientsCarousel> */}
+      </Carousel>
+      <div className="hidden sm:flex items-center justify-center space-x-4 ">
+        {PARTNERS_CARDS.map(({ imageAlt, imageUrl, description }, index) => (
+          <PartnerCard
+            key={index}
+            description={description}
+            imageAlt={imageAlt}
+            imageUrl={imageUrl}
+          />
+        ))}
+      </div>
     </section>
   );
 };
