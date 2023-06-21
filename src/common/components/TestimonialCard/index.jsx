@@ -14,7 +14,7 @@ const TestimonialCard = ({
   const { t } = useTranslation();
 
   return (
-    <article className="w-[280px] h-[408px] md:w-[488px] md:h-[293px] lg:h-[316px] lg:w-[376px] xl:h-[268px] xl:w-[488px] p-[23px] rounded-[20px] flex flex-col bg-white card-shadow text-black overflow-hidden transition-all duration-500 ease-in-out card-inactive">
+    <article className=" p-[23px] rounded-[20px] flex flex-col bg-white card-shadow text-black overflow-hidden transition-all duration-500 ease-in-out clients-card--inactive">
       <div className="flex flex-col justify-between pb-6">
         <div className="flex space-x-3 mb-[10px]">
           <img alt={imageAlt} className="w-[56px] h-[56px] rounded-full" src={clientImageUrl} />

@@ -15,17 +15,29 @@ const adaptiveHeight = (slider, adaptiveHeightValue) => {
   slider.on('created', updateHeight);
 };
 
-// eslint-disable-next-line no-unused-vars
-const PortfolioCarousel = ({ children, carouselClassName, spacing, adaptiveHeightValue }) => {
+// carouselClassName: set the responsive height of the cards
+// cardClassName: set the active card attributes. For this carousel to work with the scale effect,
+// an active classname for the cards needs to be created in styles.css, along with an inactive class. See clients section in home for example
+
+const Carousel = ({
+  children,
+  carouselClassName,
+  adaptiveHeightValue,
+  cardClassName,
+  hasArrows,
+}) => {
   const { t } = useTranslation();
-  // eslint-disable-next-line no-unused-vars
-  const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = React.useState(false);
 
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
       initial: 1,
+      slides: {
+        origin: 'center',
+        // perView set to 1.01 to force rendering cards to the sides of the active one
+        perView: 1.01,
+      },
       breakpoints: {
         '(min-width: 1024px)': {
           slides: { perView: 2 },
@@ -35,16 +47,14 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing, adaptiveHeigh
       slideChanged(slider) {
         slider.slides.map((slide, index) => {
           if (index === slider.track.details.rel) {
-            slide.children[0].classList.add('card-active');
+            slide.children[0].classList.add(cardClassName);
           } else {
-            slide.children[0].classList.remove('card-active');
+            slide.children[0].classList.remove(cardClassName);
           }
         });
-
-        setCurrentSlide(slider?.track?.details?.rel);
       },
       created(slider) {
-        if (slider) slider.slides[1].children[0].classList.add('card-active');
+        if (slider) slider.slides[1].children[0].classList.add(cardClassName);
         setLoaded(true);
       },
     },
@@ -53,18 +63,11 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing, adaptiveHeigh
 
   return (
     <div className="relative w-full flex flex-col mx-auto items-center">
-      <div
-        ref={sliderRef}
-        className={`keen-slider ${carouselClassName}`}
-        style={{
-          // hide the overflow on screens wider than 1024px
-          overflow: instanceRef?.current?.size > 520 ? 'hidden' : 'visible !important',
-        }}
-      >
+      <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
         {children}
       </div>
 
-      {loaded && instanceRef.current && (
+      {hasArrows && loaded && instanceRef.current && (
         <>
           <button
             aria-label={t('carouselButtonAriaLabel.backward')}
@@ -86,11 +89,12 @@ const PortfolioCarousel = ({ children, carouselClassName, spacing, adaptiveHeigh
   );
 };
 
-PortfolioCarousel.propTypes = {
+Carousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
-  spacing: propTypes.number,
+  cardClassName: propTypes.string.isRequired,
   adaptiveHeight: propTypes.number,
+  hasArrows: propTypes.bool,
 };
 
-export default PortfolioCarousel;
+export default Carousel;

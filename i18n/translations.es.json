@@ -398,6 +398,9 @@
         },
         "clients": {
             "title": "Clientes"
+        },
+        "partners": {
+            "title": "Socios"
         }
     },
     "portfolio": {
@@ -507,5 +510,15 @@
     "carouselButtonAriaLabel": {
         "backward": "Botón que mueve el carrusel hacia atrás",
         "forward": "Botón que mueve el carrusel hacia adelante"
+    },
+    "partners": {
+        "cessi": {
+            "title": "Cessi",
+            "description": "Cámara de la industria Argentina del Software."
+        },
+        "poloIt": {
+            "title": "Polo It",
+            "description": "Polo de Tecnología Informática de Buenos Aires."
+        }
     }
 }

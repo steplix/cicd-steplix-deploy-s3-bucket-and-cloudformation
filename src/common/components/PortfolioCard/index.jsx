@@ -15,7 +15,7 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <div className="w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col">
+    <div className="w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col portfolio-card--inactive transition-all duration-500 ease-in-out ">
       <picture className="w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]">
         <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.webp`} />
         <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
