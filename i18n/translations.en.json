@@ -510,5 +510,15 @@
     "carouselButtonAriaLabel": {
         "backward": "Button that moves the carousel backward",
         "forward": "Button that moves the carousel forward"
+    },
+    "partners": {
+        "cessi": {
+            "title": "Cessi",
+            "description": "Chamber of the Argentine Software Industry."
+        },
+        "poloIt": {
+            "title": "Polo It",
+            "description": "Information Technology Hub of Buenos Aires."
+        }
     }
 }

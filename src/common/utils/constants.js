@@ -649,3 +649,18 @@ export const SERVICES = [
     description: 'MainHeader.services.StrategicConsulting.description',
   },
 ];
+
+export const PARTNERS_CARDS = [
+  {
+    name: 'cessi',
+    description: 'partners.cessi.description',
+    imageUrl: '/assets/img/partners/cessi.svg',
+    imageAlt: 'partners.cessi.description',
+  },
+  {
+    name: 'poloIt',
+    description: 'partners.poloIt.description',
+    imageUrl: '/assets/img/partners/polo-it.svg',
+    imageAlt: 'partners.poloIt.description',
+  },
+];
