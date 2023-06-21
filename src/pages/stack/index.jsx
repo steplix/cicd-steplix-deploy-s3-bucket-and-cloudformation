@@ -1,7 +1,7 @@
-import Home from "../[locale]/index";
+import Home from '../[locale]/index';
 
 export default function Stack() {
-  return Home("en");
+  return Home('en');
 }
 
 export async function getStaticProps({ params }) {

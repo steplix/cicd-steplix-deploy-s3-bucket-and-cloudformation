@@ -1,7 +1,7 @@
-import LocaleContact from "../[locale]/contact";
+import LocaleContact from '../[locale]/contact';
 
 export default function Contact() {
-  return LocaleContact("en");
+  return LocaleContact('en');
 }
 
 export async function getStaticProps({ params }) {

@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 export function useMountainScroll() {
   const scrollableContainerRef = useRef();
@@ -10,7 +10,6 @@ export function useMountainScroll() {
       return () => scrollableContainer;
     }
   }, []);
-
 
   return scrollableContainerRef;
 }

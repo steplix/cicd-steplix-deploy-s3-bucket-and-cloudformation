@@ -1,7 +1,7 @@
-import BecomeSteplixer from "../[locale]/become-steplixer";
+import BecomeSteplixer from '../[locale]/become-steplixer';
 
 export default function Jobs() {
-  return BecomeSteplixer("en");
+  return BecomeSteplixer('en');
 }
 
 export async function getStaticProps({ params }) {

@@ -1,12 +1,12 @@
-import React from "react";
-import { useTranslation } from "@/common/lib/i18n";
-import { useLanguageQuery } from "next-export-i18n";
-import { useRouter } from "next/router";
+import { useLanguageQuery } from 'next-export-i18n';
+import { useRouter } from 'next/router';
 
-import Certificates from "./Certificates";
-import NavigationLinks from "./NavigationLinks";
-import Contact from "./Contact";
-import Policies from "./Policies";
+import Certificates from './Certificates';
+import NavigationLinks from './NavigationLinks';
+import Contact from './Contact';
+import Policies from './Policies';
+
+import { useTranslation } from '@/common/lib/i18n';
 
 const Footer = () => {
   const {
@@ -22,32 +22,32 @@ const Footer = () => {
           <div className="flex flex-col gap-8 sm:gap-4 items-center sm:items-start w-full">
             <div>
               <img
-                src="/assets/img/logo-navbar.svg"
                 alt="Steplix logo"
                 className="w-[70px] h-[18px] sm:w-[86px] sm:h-[22px]"
+                src="/assets/img/logo-navbar.svg"
               />
             </div>
             <NavigationLinks />
           </div>
           <Contact />
           <Certificates
+            ariaLabel={t('footer.certificateAriaLabel')}
             className="block sm:hidden"
-            url={t("footer.certificateUrl")}
-            ariaLabel={t("footer.certificateAriaLabel")}
-            text={t("footer.certificateText")}
+            text={t('footer.certificateText')}
+            url={t('footer.certificateUrl')}
           />
           <Policies
-            rightsText={t("footer.rights")}
-            privacyPolicyFilename={t("footer.privacyPolicyFile")}
-            privacyPolicyAriaLabel={t("footer.privacyPolicyAriaLabel")}
-            privacyPolicyText={t("footer.privacyPolicyText")}
+            privacyPolicyAriaLabel={t('footer.privacyPolicyAriaLabel')}
+            privacyPolicyFilename={t('footer.privacyPolicyFile')}
+            privacyPolicyText={t('footer.privacyPolicyText')}
+            rightsText={t('footer.rights')}
           />
         </div>
         <Certificates
+          ariaLabel={t('footer.certificateAriaLabel')}
           className="hidden sm:block"
-          url={t("footer.certificateUrl")}
-          ariaLabel={t("footer.certificateAriaLabel")}
-          text={t("footer.certificateText")}
+          text={t('footer.certificateText')}
+          url={t('footer.certificateUrl')}
         />
       </div>
     </footer>

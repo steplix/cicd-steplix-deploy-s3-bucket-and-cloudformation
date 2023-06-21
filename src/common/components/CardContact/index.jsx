@@ -1,11 +1,13 @@
-import PropTypes from "prop-types";
-import { useRouter } from "next/router";
-import { useTranslation } from "@/common/lib/i18n";
-import { useLanguageQuery } from "next-export-i18n";
-import Avatar from "@/common/components/Avatar";
-import TextField from "@/common/components/TextField";
-import ButtonCard from "@/common/components/ButtonCard";
-import Icon from "../Icon";
+import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
+import { useLanguageQuery } from 'next-export-i18n';
+
+import Icon from '../Icon';
+
+import { useTranslation } from '@/common/lib/i18n';
+import Avatar from '@/common/components/Avatar';
+import TextField from '@/common/components/TextField';
+import ButtonCard from '@/common/components/ButtonCard';
 
 const CardContact = ({
   email,
@@ -29,12 +31,12 @@ const CardContact = ({
 
   const handleSocialMediaClick = () => {
     onClickSocialMediaButton();
-    window.gtag("event", `click_linkedin_${gtagEventName}`);
+    window.gtag('event', `click_linkedin_${gtagEventName}`);
   };
 
   const handleCalendarClick = () => {
     onClickCalendarButton();
-    window.gtag("event", `cita_hubspot_${gtagEventName}`);
+    window.gtag('event', `cita_hubspot_${gtagEventName}`);
   };
 
   return (
@@ -43,20 +45,11 @@ const CardContact = ({
         <div className="flex flex-col gap-6">
           <div className="relative">
             <div className="flex gap-2 items-center">
-              <Avatar
-                name={name}
-                surname={surname}
-                imgSrc={imgSrc}
-                imgAlt={imgAlt}
-              />
+              <Avatar imgAlt={imgAlt} imgSrc={imgSrc} name={name} surname={surname} />
               <div className="flex flex-col gap-2.5">
                 <div className="flex flex-col">
-                  <p className="font-sofia font-medium text-black text-xl leading-6">
-                    {name}
-                  </p>
-                  <p className="font-sofia font-medium text-black text-xl leading-6">
-                    {surname}
-                  </p>
+                  <p className="font-sofia font-medium text-black text-xl leading-6">{name}</p>
+                  <p className="font-sofia font-medium text-black text-xl leading-6">{surname}</p>
                 </div>
                 <div>
                   <p className="text-grey-neutro text-mobile tracking-[0.03em] font-normal">
@@ -66,43 +59,35 @@ const CardContact = ({
               </div>
             </div>
             <button
+              aria-label={socialMediaAriaLabel}
               className="absolute top-0 right-0 bg-grey-transparent rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
               onClick={handleSocialMediaClick}
-              aria-label={socialMediaAriaLabel}
             >
-              <Icon name={cornerIconName} className="w-4 h-3" />
+              <Icon className="w-4 h-3" name={cornerIconName} />
             </button>
           </div>
           <div>
             <TextField
-              text={email}
               clickEvent={onClickCopyButton}
-              toastMessage={t("contact.copyButton")}
+              text={email}
+              toastMessage={t('contact.copyButton')}
             />
           </div>
         </div>
         {onClickCalendarButton && (
           <div className="flex justify-between">
             <div className="flex items-center gap-2">
-              <Icon name="peopleSpeak" className="w-6 h-6" />
-              <img
-                src={`/assets/img/logo-es.svg`}
-                alt="logo"
-                className="w-[20px] h-[20px]"
-              />
-              <img
-                src={`/assets/img/logo-en.svg`}
-                alt="logo"
-                className="w-[20px] h-[20px]"
-              />
+              <Icon className="w-6 h-6" name="peopleSpeak" />
+              <img alt="logo" className="w-[20px] h-[20px]" src={`/assets/img/logo-es.svg`} />
+              <img alt="logo" className="w-[20px] h-[20px]" src={`/assets/img/logo-en.svg`} />
             </div>
             <div className="">
               <ButtonCard
-                label={t("ButtonCardContact")}
-                iconName="calendar"
-                customImageClass="w-4"
+                ariaLabel={t('contact.scheduleAriaLabel')}
                 clickEvent={handleCalendarClick}
-                ariaLabel={t("contact.scheduleAriaLabel")}
+                customImageClass="w-4"
+                iconName="calendar"
+                label={t('ButtonCardContact')}
               />
             </div>
           </div>
@@ -128,7 +113,7 @@ CardContact.propTypes = {
 };
 
 CardContact.defaultProps = {
-  cornerIconName: "linkedinBlue",
+  cornerIconName: 'linkedinBlue',
 };
 
 export default CardContact;

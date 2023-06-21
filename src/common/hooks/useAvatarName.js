@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const useAvatarName = (name, surname) => {
-  const [nameInitials, setnameInitials] = useState("");
+  const [nameInitials, setnameInitials] = useState('');
 
   useEffect(() => {
     if (!name || !surname) return;
