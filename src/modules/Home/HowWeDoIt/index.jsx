@@ -54,7 +54,7 @@ const HowDoWeDoIt = () => {
       <div
         className={`dropdown-tech ${
           isDropdownOpen ? 'dropdown-tech--open' : ''
-        } font-poppins text-mobile lg:text-custom-base font-normal text-grey-neutro text-center`}
+        } font-poppins text-mobile lg:text-custom-base font-normal text-grey-neutro text-center mb-[22px]`}
       >
         HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs • NextJs •
         Bootstrap • Material • Foundation • Tailwind • NodeJs • PHP • Java • Python • Ruby • C • C++
