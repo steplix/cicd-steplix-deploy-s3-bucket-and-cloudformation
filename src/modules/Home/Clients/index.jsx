@@ -59,7 +59,7 @@ const Clients = () => {
       <div className="flex justify-center">
         <ButtonRaise
           ariaLabel={t('navbar.item4.ariaLabel')}
-          customStyles="h-[37px] py-2 !px-4 !text-custom-base"
+          customStyles="h-[37px] py-2 mt-5 lg:mt-8 !px-4 !text-custom-base"
           i18nKeyText={'ButtonProject'}
           locale={i18nQuery?.lang}
           pathname="/contact"

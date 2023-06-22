@@ -43,7 +43,7 @@ const Teams = ({ locale }) => {
             />
             <Chip
               customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px]"
-              label={'UI/UX'}
+              label={'UX/UI'}
               name="uiux"
             />
             <Chip
@@ -92,7 +92,7 @@ const Teams = ({ locale }) => {
       <div className="mx-auto mt-8 lg:mt-10 xl:mt-14">
         <ButtonRaise
           ariaLabel={t('navbar.item5.ariaLabel')}
-          customStyles="h-[37px] my-4"
+          customStyles="h-[37px]"
           i18nKeyText={'ButtonBecomeSteplixer'}
           locale={locale}
           pathname="/become-steplixer"
