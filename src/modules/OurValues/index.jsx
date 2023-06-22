@@ -39,7 +39,7 @@ const OurValues = ({ locale }) => {
       <motion.div
         ref={ref}
         animate={controls}
-        className="flex flex-col sm:flex-col-reverse md:flex-col space-y-4 sm:space-y-0 md:space-y-6 sm:gap-4 md:gap-0 items-center justify-center mb-8"
+        className="flex flex-col sm:flex-col-reverse md:flex-col space-y-4 sm:space-y-0 md:space-y-6 sm:gap-4 md:gap-0 items-center justify-center mb-8 lg:mb-10"
         initial="initial"
         variants={stagger}
       >
@@ -80,7 +80,7 @@ const OurValues = ({ locale }) => {
       </motion.div>
       <ButtonBecomeSteplixer
         ariaLabel={t('navbar.item4.ariaLabel')}
-        customStyles="h-[37px] my-4 mx-auto"
+        customStyles="h-[37px] mx-auto"
         i18nKeyText={'ButtonProject'}
         locale={locale}
         pathname="/contact"

@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Icon from '@/components/Icon';
 import { fadeInFromTheSide } from '@/common/lib/animation';
@@ -12,7 +12,15 @@ const FlipCard = ({ text, iconName, resize, description }) => {
   const textArray = text.split(' ');
   const isPluralText = textArray.length > 1;
 
+  const ref = useRef();
+
   const handleOnClick = () => setIsActive(!isActive);
+
+  const handleClickOutside = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setIsActive(false);
+    }
+  };
 
   useEffect(() => {
     const breakpoint = getShortBreakpoint(window.innerWidth);
@@ -20,6 +28,14 @@ const FlipCard = ({ text, iconName, resize, description }) => {
     if (breakpoint === 'xs' || breakpoint === 'sm') {
       setIsTouchDevice(true);
     }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('touchstart', handleClickOutside);
+
+    return () => {
+      document.addEventListener('touchstart', handleClickOutside);
+    };
   }, []);
 
   return (
@@ -30,6 +46,7 @@ const FlipCard = ({ text, iconName, resize, description }) => {
       variants={fadeInFromTheSide}
     >
       <div
+        ref={ref}
         className={`relative w-full h-full duration-1000 preserve-3d  perspective-1000 flipcard  ${
           isTouchDevice ? isActive && 'rotate-y-180' : 'group-hover:rotate-y-180'
         }`}

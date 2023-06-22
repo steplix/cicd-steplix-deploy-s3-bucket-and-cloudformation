@@ -18,7 +18,7 @@ const Clients = () => {
   const duplicatedpartners = [...PARTNERS_CARDS, ...PARTNERS_CARDS];
 
   return (
-    <section className="container pt-[56px] pb-[50px] 2xl:pt-14 overflow-hidden space-y-8">
+    <section className="container pb-[50px] 2xl:pt-14 overflow-hidden space-y-8">
       <Title
         underlineFixed
         content={t('MainHeader.partners.title')}
