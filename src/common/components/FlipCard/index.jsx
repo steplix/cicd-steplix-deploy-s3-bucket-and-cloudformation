@@ -6,11 +6,9 @@ import Icon from '@/components/Icon';
 import { fadeInFromTheSide } from '@/common/lib/animation';
 import { getShortBreakpoint } from '@/common/utils/methods';
 
-const FlipCard = ({ text, iconName, resize, description }) => {
+const FlipCard = ({ title, iconName, resize, description }) => {
   const [isActive, setIsActive] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState('');
-  const textArray = text.split(' ');
-  const isPluralText = textArray.length > 1;
 
   const ref = useRef();
 
@@ -54,14 +52,7 @@ const FlipCard = ({ text, iconName, resize, description }) => {
       >
         <div className="flex flex-col absolute w-full h-full justify-center items-center backface-hidden space-y-[10px] border border-blue bg-white rounded-[20px] shadow-tech-card">
           <Icon className={`h-[40px] w-[40px]`} name={iconName} />
-          <p className={`text-[20px] text-center font-medium text-purple lg:text-base`}>
-            {textArray[0]}
-            {isPluralText && (
-              <>
-                <br className="lg:hidden" /> {textArray[1]}
-              </>
-            )}
-          </p>
+          <p className={`title-[20px] text-center font-medium text-purple lg:text-base`}>{title}</p>
         </div>
         <div className="absolute w-full h-full rotate-y-180 flex items-center  backface-hidden border border-blue bg-white rounded-[20px] shadow-tech-card">
           <p className=" text-xs text-center p-4">{description}</p>
@@ -72,7 +63,7 @@ const FlipCard = ({ text, iconName, resize, description }) => {
 };
 
 FlipCard.propTypes = {
-  text: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
   iconName: propTypes.string.isRequired,
   resize: propTypes.bool,
   description: propTypes.string,
