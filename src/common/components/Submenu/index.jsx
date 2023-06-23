@@ -1,15 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import CustomNextLink from "@/common/components/CustomNextLink";
-import PropTypes from "prop-types";
-import { useRouter } from "next/router";
-import { useTranslation } from "@/common/lib/i18n";
-import { useLanguageQuery } from "next-export-i18n";
-import LanguageSelector from "../LanguageSelector";
+import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
+import { useLanguageQuery } from 'next-export-i18n';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import LanguageSelector from '../LanguageSelector';
+
+import { useTranslation } from '@/common/lib/i18n';
+import CustomNextLink from '@/common/components/CustomNextLink';
+
 const Submenu = ({ toggle, setToggle }) => {
-  const {query: { locale }, asPath, pathname: routerPathname } = useRouter();
+  const {
+    query: { locale },
+    asPath,
+    pathname: routerPathname,
+  } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
 
@@ -21,89 +26,98 @@ const Submenu = ({ toggle, setToggle }) => {
   }
 
   const isCurrentPathnameActive = (pathname) => {
-    const pathnameToTest = new RegExp(pathname)
+    const pathnameToTest = new RegExp(pathname);
+
     if (pathname.length > 1) {
-      return pathnameToTest.test(asPath) ? "submenu--item--active" : "";
+      return pathnameToTest.test(asPath) ? 'submenu--item--active' : '';
     }
 
-    return pathname === routerPathname ? "submenu--item--active" : "";   
-  }
+    return pathname === routerPathname ? 'submenu--item--active' : '';
+  };
 
   return (
     <AnimatePresence>
-      {
-        toggle ? (
-          <motion.div className="container mt-8 relative z-10" 
+      {toggle ? (
+        <motion.div
+          animate={{
+            opacity: 1,
+            height: '100vh',
+            transition: { ease: 'linear', duration: 0.25 },
+          }}
+          className="container mt-8 relative z-10"
+          exit={{
+            opacity: 0,
+            height: 0,
+            transition: { ease: 'linear', duration: 0.25 },
+          }}
           initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: '100vh', transition: { ease: "linear", duration: 0.25 } }}
-          exit={{ opacity: 0, height: 0, transition: { ease: "linear", duration: 0.25 } }}>
+        >
           <CustomNextLink to="/">
             <button
               className={`flex items-center submenu--item ${isCurrentPathnameActive(
-                "/"
-              )} text-sm border-blue`}    
+                '/',
+              )} text-sm border-blue`}
               onClick={() => handleClickToggle()}
             >
               <div className="py-4 px-3.5">
-                  <a aria-label={t("navbar.item0.ariaLabel")}>{t("navbar.item0.route")}</a>
+                <a aria-label={t('navbar.item0.ariaLabel')}>{t('navbar.item0.route')}</a>
               </div>
             </button>
           </CustomNextLink>
           <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
             <button
               className={`flex items-center submenu--item ${isCurrentPathnameActive(
-                'about-us'
+                'about-us',
               )} text-sm border-red`}
               onClick={() => handleClickToggle()}
             >
               <div className="py-4 px-3.5">
-                  <a aria-label={t("navbar.item1.ariaLabel")}>{t("navbar.item1.route")}</a>
+                <a aria-label={t('navbar.item1.ariaLabel')}>{t('navbar.item1.route')}</a>
               </div>
             </button>
           </CustomNextLink>
           <CustomNextLink to={`/${i18nQuery?.lang}/what-we-do`}>
             <button
               className={`flex items-center submenu--item ${isCurrentPathnameActive(
-                'what-we-do'
+                'what-we-do',
               )} text-sm border-yellow`}
               onClick={() => handleClickToggle()}
             >
               <div className="py-4 px-3.5">
-                  <a aria-label={t("navbar.item2.ariaLabel")}>{t("navbar.item2.route")}</a>
+                <a aria-label={t('navbar.item2.ariaLabel')}>{t('navbar.item2.route')}</a>
               </div>
             </button>
           </CustomNextLink>
           <CustomNextLink to={`/${i18nQuery?.lang}/portfolio`}>
             <button
               className={`flex items-center submenu--item ${isCurrentPathnameActive(
-                'portfolio'
+                'portfolio',
               )} text-sm border-blue`}
               onClick={() => handleClickToggle()}
             >
               <div className="py-4 px-3.5">
-                  <a aria-label={t("navbar.item3.ariaLabel")}>{t("navbar.item3.route")}</a>
+                <a aria-label={t('navbar.item3.ariaLabel')}>{t('navbar.item3.route')}</a>
               </div>
             </button>
           </CustomNextLink>
           <CustomNextLink to={`/${i18nQuery?.lang}/contact`}>
             <button
               className={`flex items-center submenu--item ${isCurrentPathnameActive(
-                'contact'
+                'contact',
               )} text-sm border-red`}
               onClick={() => handleClickToggle()}
             >
               <div className="py-4 px-3.5">
-                  <a aria-label={t("navbar.item4.ariaLabel")}>{t("navbar.item4.route")}</a>
+                <a aria-label={t('navbar.item4.ariaLabel')}>{t('navbar.item4.route')}</a>
               </div>
             </button>
           </CustomNextLink>
           <div className="flex gap-x-4 w-full py-4 px-3.5">
             <LanguageSelector sm />
-          </div>   
+          </div>
         </motion.div>
-        ) : null
-      }
-      </AnimatePresence>
+      ) : null}
+    </AnimatePresence>
   );
 };
 

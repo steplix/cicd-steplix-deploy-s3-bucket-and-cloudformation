@@ -1,4 +1,4 @@
-import Svg from "../svg";
+import Svg from '../svg';
 
 const mail = ({ className, fill }) => (
   <Svg className={className} originalSize={18}>

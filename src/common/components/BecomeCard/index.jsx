@@ -1,16 +1,17 @@
-import PropTypes from "prop-types";
-import { useTranslation } from "@/common/lib/i18n";
-import TitleIcon from "../Title/TitleIcon";
+import PropTypes from 'prop-types';
+
+import TitleIcon from '../Title/TitleIcon';
+
+import { useTranslation } from '@/common/lib/i18n';
 
 const BecomeCard = ({ icon, benefit, locale }) => {
   const { t } = useTranslation(locale);
+
   return (
     <article className="flex flex-col gap-2 mb-10">
       <TitleIcon icon={icon} title={t(`SteplixBenefits.${benefit}.title`)} />
       <div>
-        <p className="text-[13px] lg:text-base">
-          {t(`SteplixBenefits.${benefit}.description`)}
-        </p>
+        <p className="text-[13px] lg:text-base">{t(`SteplixBenefits.${benefit}.description`)}</p>
       </div>
     </article>
   );

@@ -1,12 +1,12 @@
-const en = require("./translations.en.json");
-const es = require("./translations.es.json");
+const en = require('./translations.en.json');
+const es = require('./translations.es.json');
 
 const i18n = {
-    translations: {
-        en,
-        es,
-    },
-    defaultLang: "en",
+  translations: {
+    en,
+    es,
+  },
+  defaultLang: 'en',
 };
 
 module.exports = i18n;

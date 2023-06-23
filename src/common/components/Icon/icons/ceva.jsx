@@ -1,7 +1,7 @@
-import Svg from "../svg";
+import Svg from '../svg';
 
 const ceva = ({ className }) => (
-  <Svg className={className} originalWidth={36} originalHeight={33}>
+  <Svg className={className} originalHeight={33} originalWidth={36}>
     <g clipPath="url(#clip0_1894_100641)">
       <path
         d="M34.0729 16.6014C34.0729 25.5909 26.6499 32.7028 17.4821 32.7028C8.31435 32.7028 0.936035 25.5909 0.936035 16.6014C0.936035 7.61189 8.35907 0.5 17.5268 0.5C26.6946 0.5 34.0729 7.61111 34.0729 16.6014Z"
@@ -34,12 +34,12 @@ const ceva = ({ className }) => (
     </g>
     <defs>
       <radialGradient
-        id="paint0_radial_1894_100641"
         cx="0"
         cy="0"
-        r="1"
-        gradientUnits="userSpaceOnUse"
         gradientTransform="translate(17.8875 12.3149) scale(14.1799 14.1821)"
+        gradientUnits="userSpaceOnUse"
+        id="paint0_radial_1894_100641"
+        r="1"
       >
         <stop stopColor="#009ADF" />
         <stop offset="0.21" stopColor="#008ECA" />
@@ -49,12 +49,7 @@ const ceva = ({ className }) => (
         <stop offset="1" stopColor="#2B2171" />
       </radialGradient>
       <clipPath id="clip0_1894_100641">
-        <rect
-          width="33.1616"
-          height="32.2105"
-          fill="white"
-          transform="translate(0.936035 0.5)"
-        />
+        <rect fill="white" height="32.2105" transform="translate(0.936035 0.5)" width="33.1616" />
       </clipPath>
     </defs>
   </Svg>

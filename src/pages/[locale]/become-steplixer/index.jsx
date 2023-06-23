@@ -1,19 +1,30 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
 import { useTranslation } from "@/common/lib/i18n";
-import { useAccordion } from "@/common/hooks/useAccordion";
 import HeadTag from "@/common/components/HeadTag";
 import Gradient from "@/common/components/Title/Gradient";
 import BecomeCard from "@/common/components/BecomeCard";
-import { BECOME_BENEFITS, OUR_VALUES } from "@/common/utils/constants";
-import Accordion from "@/common/components/Accordion";
-import TitleIcon from "@/common/components/Title/TitleIcon";
+import { BECOME_BENEFITS } from "@/common/utils/constants";
 import CardContact from "@/common/components/CardContact";
+import FlipCard from "@/common/components/FlipCard";
 import { getPathSlugs } from "@/common/utils/getPathSlugs";
 import { copyToClipboard, openLink } from "@/common/utils/methods";
 import TransitionWrapper from "@/common/components/TransitionWrapper";
+import { stagger } from "@/common/lib/animation";
+import HighlightedText from "@/common/components/HighlightedText";
 
 function BecomeSteplixerPage({ locale }) {
   const { t } = useTranslation(locale);
-  const { ref, closeAccordion } = useAccordion();
+  const [ref, inView] = useInView();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+    }
+  }, [controls, inView]);
 
   return (
     <>
@@ -27,10 +38,10 @@ function BecomeSteplixerPage({ locale }) {
       <TransitionWrapper className="section-container w-full container mx-auto flex-col">
         <Gradient
           borderPosition="left"
-          content={t("BecomeSteplixerSection.title")}
           borderWidth="border-2"
-          size="text-[26px] lg:text-4xl"
+          content={t("BecomeSteplixerSection.title")}
           height="h-[32px]"
+          size="text-[26px] lg:text-4xl"
           type="h1"
         />
 
@@ -38,8 +49,8 @@ function BecomeSteplixerPage({ locale }) {
           {BECOME_BENEFITS.map((item) => (
             <BecomeCard
               key={item.icon}
-              icon={item.icon}
               benefit={item.benefit}
+              icon={item.icon}
               locale={locale}
             />
           ))}
@@ -47,30 +58,90 @@ function BecomeSteplixerPage({ locale }) {
 
         <Gradient
           borderPosition="left"
-          content={t("BecomeSteplixerSection.title2")}
           borderWidth="border-2"
-          size="text-[26px]"
+          content={t("BecomeSteplixerSection.title2")}
           height="h-[32px] mt-[72px] mb-6 md:mb-8"
+          size="text-[26px]"
         />
-        <Accordion chevron closeAccordion={closeAccordion} ref={ref}>
-          {OUR_VALUES.map((item, index) => (
-            <Accordion.Item key={index} id={index + 1}>
-              <Accordion.Header>
-                <TitleIcon
-                  icon={item.icon}
-                  title={t(`SteplixInternalValues.${item.value}.title`)}
-                  spacing="gap-4"
-                  titleSize="text-base"
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="initial"
+          variants={stagger}
+        >
+          <div className="flex flex-col gap-4 mb-8 sm:mb-6 lg:mb-10 sm:flex-row sm:justify-center sm:flex-wrap">
+            <FlipCard
+              resize
+              description={
+                <HighlightedText
+                  text={t("about_us.ourValues.trust.description")}
+                  sentencesToHighlight={t(
+                    "about_us.ourValues.trust.highlightedSentences"
+                  )}
+                  highlightStyle="text--custom-primary"
                 />
-              </Accordion.Header>
-              <Accordion.Body>
-                <p className="mt-4">
-                  {t(`SteplixInternalValues.${item.value}.description`)}
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>
-          ))}
-        </Accordion>
+              }
+              iconName="trust"
+              title={t("about_us.ourValues.trust.title")}
+            />
+            <FlipCard
+              resize
+              description={
+                <HighlightedText
+                  text={t("about_us.ourValues.mutualRespect.description")}
+                  sentencesToHighlight={t(
+                    "about_us.ourValues.mutualRespect.highlightedSentences"
+                  )}
+                  highlightStyle="text--custom-primary"
+                />
+              }
+              iconName="mutualRespect"
+              title={t("about_us.ourValues.mutualRespect.title")}
+            />
+            <FlipCard
+              resize
+              description={
+                <HighlightedText
+                  text={t("about_us.ourValues.success.description")}
+                  sentencesToHighlight={t(
+                    "about_us.ourValues.success.highlightedSentences"
+                  )}
+                  highlightStyle="text--custom-primary"
+                />
+              }
+              iconName="success"
+              title={t("about_us.ourValues.success.title")}
+            />
+            <FlipCard
+              resize
+              description={
+                <HighlightedText
+                  text={t("about_us.ourValues.awareness.description")}
+                  sentencesToHighlight={t(
+                    "about_us.ourValues.awareness.highlightedSentences"
+                  )}
+                  highlightStyle="text--custom-primary"
+                />
+              }
+              iconName="awareness"
+              title={t("about_us.ourValues.awareness.title")}
+            />
+            <FlipCard
+              resize
+              description={
+                <HighlightedText
+                  text={t("about_us.ourValues.agility.description")}
+                  sentencesToHighlight={t(
+                    "about_us.ourValues.agility.highlightedSentences"
+                  )}
+                  highlightStyle="text--custom-primary"
+                />
+              }
+              iconName="agility"
+              title={t("about_us.ourValues.agility.title")}
+            />
+          </div>
+        </motion.div>
         <div className="mt-[72px] flex flex-col gap-2">
           <p className="font-sofia font-bold text-[26px] text-center text-purple">
             {t("BecomeSteplixerSection.sendCV.title")}
@@ -83,11 +154,13 @@ function BecomeSteplixerPage({ locale }) {
         <div className="mt-8 mb-[72px] w-[328px] mx-auto my-0">
           <CardContact
             email="people@steplix.com"
-            name="Josefina"
-            surname="Salimei"
-            imgSrc={"/assets/img/become/josefina-salimei.webp"}
             imgAlt={t("BecomeSteplixerSection.imageAlt")}
-            socialMediaAriaLabel={t("BecomeSteplixerSection.socialMediaAriaLabel")}
+            imgSrc={"/assets/img/become/josefina-salimei.webp"}
+            name="Josefina"
+            socialMediaAriaLabel={t(
+              "BecomeSteplixerSection.socialMediaAriaLabel"
+            )}
+            surname="Salimei"
             onClickCopyButton={() => copyToClipboard("people@steplix.com")}
             onClickSocialMediaButton={() =>
               openLink(
@@ -101,8 +174,10 @@ function BecomeSteplixerPage({ locale }) {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 export async function getStaticPaths(...args) {
   const pathsWithLocale = getPathSlugs();
+
   return {
     paths: pathsWithLocale,
     fallback: false,
