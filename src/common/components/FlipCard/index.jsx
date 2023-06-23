@@ -55,7 +55,7 @@ const FlipCard = ({ title, iconName, resize, description }) => {
           <p className={`title-[20px] text-center font-medium text-purple lg:text-base`}>{title}</p>
         </div>
         <div className="absolute w-full h-full rotate-y-180 flex items-center  backface-hidden border border-blue bg-white rounded-[20px] shadow-tech-card">
-          <p className=" text-xs text-center p-4">{description}</p>
+          <p className="text-mobile text-center text-black p-4">{description}</p>
         </div>
       </div>
     </motion.div>
@@ -66,7 +66,7 @@ FlipCard.propTypes = {
   title: propTypes.string.isRequired,
   iconName: propTypes.string.isRequired,
   resize: propTypes.bool,
-  description: propTypes.string,
+  description: propTypes.element,
 };
 
 export default FlipCard;

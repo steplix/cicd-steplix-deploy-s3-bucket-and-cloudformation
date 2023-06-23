@@ -22,6 +22,11 @@
         width: fit-content;
     }
 
+    .text--custom-primary {
+        color: #00a9e0;
+        font-weight: 600;
+    }
+
     .text--outlined {
         color: rgba(255, 255, 255, 0);
         text-shadow: -1px -1px 0 rgba(255, 255, 255 0),

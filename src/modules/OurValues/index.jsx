@@ -1,15 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from 'framer-motion';
+import React from "react";
+import PropTypes from "prop-types";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
-import FlipCard from '@/common/components/FlipCard';
-import Title from '@/common/components/Title/Gradient';
-import { LOCALE_SLUGS } from '@/common/utils/constants';
-import { useTranslation } from '@/common/lib/i18n';
-import { stagger } from '@/common/lib/animation';
-import ButtonBecomeSteplixer from '@/common/components/ButtonRaise';
-import { ValuesIcon } from '@/common/components/Icon/icons';
+import FlipCard from "@/common/components/FlipCard";
+import Title from "@/common/components/Title/Gradient";
+import { LOCALE_SLUGS } from "@/common/utils/constants";
+import { useTranslation } from "@/common/lib/i18n";
+import { stagger } from "@/common/lib/animation";
+import ButtonBecomeSteplixer from "@/common/components/ButtonRaise";
+import { ValuesIcon } from "@/common/components/Icon/icons";
+import HighlightedText from "@/common/components/HighlightedText";
 
 const OurValues = ({ locale }) => {
   const { t } = useTranslation(locale);
@@ -18,7 +19,7 @@ const OurValues = ({ locale }) => {
 
   React.useEffect(() => {
     if (inView) {
-      controls.start('animate');
+      controls.start("animate");
     }
   }, [controls, inView]);
 
@@ -27,14 +28,14 @@ const OurValues = ({ locale }) => {
       <div className=" flex gap-4 items-center">
         <Title
           borderPosition="left"
-          content={t('about_us.ourValues.title')}
+          content={t("about_us.ourValues.title")}
           height="h-9"
           size="text-[26px] lg:text-[32px]"
         />
-        <ValuesIcon className={'h-10 w-10'} />
+        <ValuesIcon className={"h-10 w-10"} />
       </div>
       <p className="font-poppins text-sm lg:text-base font-normal text-black sm:my-6 my-6 mb-8">
-        {t('about_us.ourValues.description')}
+        {t("about_us.ourValues.description")}
       </p>
       <motion.div
         ref={ref}
@@ -46,42 +47,82 @@ const OurValues = ({ locale }) => {
         <div className="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-row items-center lg:space-x-4 gap-4">
           <FlipCard
             resize
-            description={t('about_us.ourValues.trust.description')}
+            description={
+              <HighlightedText
+                text={t("about_us.ourValues.trust.description")}
+                sentencesToHighlight={t(
+                  "about_us.ourValues.trust.highlightedSentences"
+                )}
+                highlightStyle="text--custom-primary"
+              />
+            }
             iconName="trust"
-            title={t('about_us.ourValues.trust.title')}
+            title={t("about_us.ourValues.trust.title")}
           />
           <FlipCard
             resize
-            description={t('about_us.ourValues.mutualRespect.description')}
+            description={
+              <HighlightedText
+                text={t("about_us.ourValues.mutualRespect.description")}
+                sentencesToHighlight={t(
+                  "about_us.ourValues.mutualRespect.highlightedSentences"
+                )}
+                highlightStyle="text--custom-primary"
+              />
+            }
             iconName="mutualRespect"
-            title={t('about_us.ourValues.mutualRespect.title')}
+            title={t("about_us.ourValues.mutualRespect.title")}
           />
           <FlipCard
             resize
-            description={t('about_us.ourValues.success.description')}
+            description={
+              <HighlightedText
+                text={t("about_us.ourValues.success.description")}
+                sentencesToHighlight={t(
+                  "about_us.ourValues.success.highlightedSentences"
+                )}
+                highlightStyle="text--custom-primary"
+              />
+            }
             iconName="success"
-            title={t('about_us.ourValues.success.title')}
+            title={t("about_us.ourValues.success.title")}
           />
         </div>
         <div className="flex flex-col sm:flex-row items-center lg:space-x-4 gap-4">
           <FlipCard
             resize
-            description={t('about_us.ourValues.awareness.description')}
+            description={
+              <HighlightedText
+                text={t("about_us.ourValues.awareness.description")}
+                sentencesToHighlight={t(
+                  "about_us.ourValues.awareness.highlightedSentences"
+                )}
+                highlightStyle="text--custom-primary"
+              />
+            }
             iconName="awareness"
-            title={t('about_us.ourValues.awareness.title')}
+            title={t("about_us.ourValues.awareness.title")}
           />
           <FlipCard
             resize
-            description={t('about_us.ourValues.agility.description')}
+            description={
+              <HighlightedText
+                text={t("about_us.ourValues.agility.description")}
+                sentencesToHighlight={t(
+                  "about_us.ourValues.agility.highlightedSentences"
+                )}
+                highlightStyle="text--custom-primary"
+              />
+            }
             iconName="agility"
-            title={t('about_us.ourValues.agility.title')}
+            title={t("about_us.ourValues.agility.title")}
           />
         </div>
       </motion.div>
       <ButtonBecomeSteplixer
-        ariaLabel={t('navbar.item4.ariaLabel')}
+        ariaLabel={t("navbar.item4.ariaLabel")}
         customStyles="h-[37px] mx-auto"
-        i18nKeyText={'ButtonProject'}
+        i18nKeyText={"ButtonProject"}
         locale={locale}
         pathname="/contact"
       />
