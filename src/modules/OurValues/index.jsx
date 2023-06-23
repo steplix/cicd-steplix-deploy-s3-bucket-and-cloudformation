@@ -40,11 +40,10 @@ const OurValues = ({ locale }) => {
       <motion.div
         ref={ref}
         animate={controls}
-        className="flex flex-col sm:flex-col-reverse md:flex-col space-y-4 sm:space-y-0 md:space-y-6 sm:gap-4 md:gap-0 items-center justify-center mb-8 lg:mb-10"
         initial="initial"
         variants={stagger}
       >
-        <div className="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-row items-center lg:space-x-4 gap-4">
+        <div className="flex flex-col gap-4 mb-8 sm:mb-6 lg:mb-10 sm:flex-row sm:justify-center sm:flex-wrap">
           <FlipCard
             resize
             description={
@@ -87,8 +86,6 @@ const OurValues = ({ locale }) => {
             iconName="success"
             title={t("about_us.ourValues.success.title")}
           />
-        </div>
-        <div className="flex flex-col sm:flex-row items-center lg:space-x-4 gap-4">
           <FlipCard
             resize
             description={

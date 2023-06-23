@@ -40,7 +40,7 @@ const FlipCard = ({ title, iconName, resize, description }) => {
     <motion.div
       className={`flex cursor-pointer ${
         resize ? 'flex-col lg:flex-row' : 'flex-col'
-      } items-center justify-center space-y-1 w-[329px] sm:w-[290px] h-[134px] lg:space-y-2 md:w-[272px] md:h-[149px] lg:w-[290px] xl:w-[362px] sm:max-w-none group `}
+      } items-center justify-center space-y-1 w-[329px] h-[134px] lg:space-y-2 sm:w-[272px] sm:h-[149px] lg:w-[288px] xl:w-[362px] sm:max-w-none group `}
       variants={fadeInFromTheSide}
     >
       <div
