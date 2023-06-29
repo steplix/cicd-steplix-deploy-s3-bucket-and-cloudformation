@@ -562,7 +562,7 @@
 
     /*------- Main Header Section ------- */
     .containerScroll {
-        touch-action: none;
+        touch-action: pan-y;
     }
 
     .mountainStep {
