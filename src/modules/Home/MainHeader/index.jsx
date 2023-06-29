@@ -260,7 +260,7 @@ const MainHeader = () => {
         </div>
       )}
 
-      <div className="container absolute top-[417px] lg:top-[461.4px] xl:top-[440px]">
+      <div className="container containerScroll absolute top-[417px] lg:top-[461.4px] xl:top-[440px]">
         <ScrollButton
           ariaLabel={t('MainHeader.buttonAriaLabel.backward')}
           customClass="float-left lg:float-right lg:z-20"
