@@ -245,9 +245,10 @@
         "submenuCloseAriaLabel": "Cerrar submenu de navegación"
     },
     "footer": {
-        "certificateText": "Procesos certificados y auditados.",
-        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
-        "certificateAriaLabel": "Visita el documento de nuestra política de calidad",
+        "certificateText": "Procesos certificados y auditados",
+        "qualityPolicyText": "Política de calidad",
+        "qualityPolicyUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Politica_de_calidad.pdf",
+        "qualityPolicyAriaLabel": "Visita el documento de nuestra política de calidad",
         "rights": "Todos los derechos reservados®",
         "links": {
             "item0": "Quienes somos",

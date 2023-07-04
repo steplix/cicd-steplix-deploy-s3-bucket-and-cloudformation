@@ -246,9 +246,10 @@
         "submenuCloseAriaLabel": "Close navigation submenu"
     },
     "footer": {
-        "certificateText": "Certified and audited processes.",
-        "certificateUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
-        "certificateAriaLabel": "Visit the document of our quality policy",
+        "certificateText": "Certified and audited processes",
+        "qualityPolicyText": "Quality Policy",
+        "qualityPolicyUrl": "https://s3.sa-east-1.amazonaws.com/static01.steplix.com/docs/Quality_Policy.pdf",
+        "qualityPolicyAriaLabel": "Visit the document of our quality policy",
         "rights": "All rights reserved®",
         "links": {
             "item0": "About us",
@@ -297,7 +298,7 @@
     },
     "ButtonCardContact": "Book a meeting",
     "ButtonBecomeSteplixer": "Become a Steplixer",
-    "ButtonProject": "Tell us your project",
+    "ButtonProject": "Scope your project",
     "CardContactSection": {
         "pronoun": "Our",
         "title": "Contact",
