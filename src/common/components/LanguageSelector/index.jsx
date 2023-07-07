@@ -42,7 +42,7 @@ const LanguageSelector = ({ sm }) => {
                 className="w-[18px] h-[18px]"
                 src={`/assets/img/logo-${languageMap.current.query}.svg`}
               />
-              <span className="text-sm xl:text-lg font-semibold">
+              <span className="text-sm xl:text-lg font-semibold xl:leading-[1.45]">
                 {sm ? languageMap.current.text : languageMap.current.query.toUpperCase()}
               </span>
             </div>
@@ -64,7 +64,7 @@ const LanguageSelector = ({ sm }) => {
                     className="w-[18px] h-[18px]"
                     src={`/assets/img/logo-${languageMap.target.query}.svg`}
                   />
-                  <span className="text-sm xl:text-lg">
+                  <span className="text-sm xl:text-lg xl:leading-[1.45]">
                     {sm ? languageMap.target.text : languageMap.target.query.toUpperCase()}
                   </span>
                 </div>
