@@ -38,27 +38,44 @@
             "trust": {
                 "title": "Trust",
                 "description": "Believe in the integrity and abilities of people, while also providing certainty that we will fulfill our commitments.",
-                "highlightedSentences": ["Believe in the integrity and abilities", "commitments"]
+                "highlightedSentences": [
+                    "Believe in the integrity and abilities",
+                    "commitments"
+                ]
             },
             "mutualRespect": {
                 "title": "Mutual Respect",
                 "description": "Value people and their differences, be inclusive and responsible, communicate with honesty and empathy to achieve a collaborative and harmonious environment.",
-                "highlightedSentences": ["be inclusive and responsible", "honesty and empathy", "collaborative and harmonious"]
+                "highlightedSentences": [
+                    "be inclusive and responsible",
+                    "honesty and empathy",
+                    "collaborative and harmonious"
+                ]
             },
             "success": {
                 "title": "Success",
                 "description": "Achieving customer and user satisfaction by exceeding expectations requires a positive attitude and professionalism in the face of challenges, generating opportunities for team growth and continuous improvement.",
-                "highlightedSentences": ["customer and user satisfaction", "positive attitude and professionalism", "growth and continuous improvement"]
+                "highlightedSentences": [
+                    "customer and user satisfaction",
+                    "positive attitude and professionalism",
+                    "growth and continuous improvement"
+                ]
             },
             "awareness": {
                 "title": "Awareness",
                 "description": "Understand the impact of our actions on the environment and others. Drive responsible innovation. Promote sustainability, the development of empathy, balance, and equity to contribute to the well-being of all.",
-                "highlightedSentences": ["Understand the impact", "Promote sustainability, the development of empathy, balance, and equity"]
+                "highlightedSentences": [
+                    "Understand the impact",
+                    "Promote sustainability, the development of empathy, balance, and equity"
+                ]
             },
             "agility": {
                 "title": "Agility",
                 "description": "Being practical and flexible. Responding to changes effectively. It requires being able to adapt, be transparent, and inspect the results obtained.",
-                "highlightedSentences": ["Being practical and flexible", "being able to adapt, be transparent, and inspect"]
+                "highlightedSentences": [
+                    "Being practical and flexible",
+                    "being able to adapt, be transparent, and inspect"
+                ]
             }
         },
         "mission": {
@@ -407,7 +424,7 @@
             "title": "Clients"
         },
         "partners": {
-            "title": "Partners"
+            "title": "Members"
         }
     },
     "portfolio": {
