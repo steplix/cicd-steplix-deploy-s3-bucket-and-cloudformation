@@ -38,27 +38,44 @@
             "trust": {
                 "title": "Confianza",
                 "description": "Creer en la integridad y habilidades de las personas, y a la vez dar certeza de que cumpliremos nuestros compromisos.",
-                "highlightedSentences": ["Creer en la integridad y habilidades", "compromisos"]
+                "highlightedSentences": [
+                    "Creer en la integridad y habilidades",
+                    "compromisos"
+                ]
             },
             "mutualRespect": {
                 "title": "Respeto mutuo",
                 "description": "Valorar a las personas y sus diferencias, ser inclusivos y responsables, comunicarnos con honestidad y empatía para lograr un ambiente colaborativo y armonioso.",
-                "highlightedSentences": ["inclusivos y responsables", "honestidad y empatía", "colaborativo y armonioso"]
+                "highlightedSentences": [
+                    "inclusivos y responsables",
+                    "honestidad y empatía",
+                    "colaborativo y armonioso"
+                ]
             },
             "success": {
                 "title": "Éxito",
                 "description": "Lograr la satisfacción de nuestros clientes y sus usuarios superando expectativas. Requiere de actitud positiva y profesionalismo frente a los desafíos, generando oportunidades de crecimiento y mejora continua del equipo.",
-                "highlightedSentences": ["satisfacción de nuestros clientes y sus usuarios", "actitud positiva y profesionalismo", "crecimiento y mejora continua"]
+                "highlightedSentences": [
+                    "satisfacción de nuestros clientes y sus usuarios",
+                    "actitud positiva y profesionalismo",
+                    "crecimiento y mejora continua"
+                ]
             },
             "awareness": {
                 "title": "Conciencia",
                 "description": "Comprender el impacto de nuestras acciones en el entorno y en los demás. Impulsar la innovación responsable. Promover la sostenibilidad, el desarrollo de empatía, equilibrio y equidad para contribuir al bienestar de todos.",
-                "highlightedSentences": ["Comprender el impacto", "Promover la sostenibilidad, el desarrollo de empatía, equilibrio y equidad"]
+                "highlightedSentences": [
+                    "Comprender el impacto",
+                    "Promover la sostenibilidad, el desarrollo de empatía, equilibrio y equidad"
+                ]
             },
             "agility": {
                 "title": "Agilidad",
                 "description": "Ser prácticos y flexibles. Responder a los cambios de forma efectiva. Requiere ser capaz de adaptarse, ser transparente e inspeccionar los resultados obtenidos. ",
-                "highlightedSentences": ["Ser prácticos y flexibles", "adaptarse, ser transparente e inspeccionar"]
+                "highlightedSentences": [
+                    "Ser prácticos y flexibles",
+                    "adaptarse, ser transparente e inspeccionar"
+                ]
             }
         },
         "mission": {
@@ -406,7 +423,7 @@
             "title": "Clientes"
         },
         "partners": {
-            "title": "Socios"
+            "title": "Miembros"
         }
     },
     "portfolio": {

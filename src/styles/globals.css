@@ -757,12 +757,4 @@
     }
 
     /* END RAISE BTN EFFECT */
-
-    /* CLIENTS HOME SECTION */
-
-    .clients-list {
-        @apply max-w-[18rem] sm:max-w-[29.5rem] lg:max-w-none mx-auto;
-    }
-
-    /* END CLIENTS HOME SECTION */
 }
