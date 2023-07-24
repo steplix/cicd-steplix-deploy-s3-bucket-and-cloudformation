@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import LocaleAboutUs from '../[locale]/about-us';
+import LocalePortfolio from '../[locale]/portfolio';
 
-export default function AboutUs() {
+export default function Portfolio() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/en/about-us');
+    router.replace('/en/portfolio');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return LocaleAboutUs('en');
+  return LocalePortfolio('en');
 }

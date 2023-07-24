@@ -1,13 +1,15 @@
-import LocaleAboutUs from '../[locale]/about-us';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default function AboutUs() {
-  return LocaleAboutUs('en');
-}
+import LocaleContact from '../[locale]/contact';
 
-export async function getStaticProps({ params }) {
-  return {
-    props: {
-      ...params,
-    },
-  };
+export default function Contact() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/en/contact');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return LocaleContact('en');
 }
