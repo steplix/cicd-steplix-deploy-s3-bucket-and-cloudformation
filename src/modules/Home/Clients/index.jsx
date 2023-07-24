@@ -7,8 +7,9 @@ import { clientsLogos } from '@/common/utils/constants';
 import ClientsCarousel from '@/common/components/Carousel';
 import TestimonialCard from '@/common/components/TestimonialCard';
 import Title from '@/common/components/Title/Gradient';
-import Icon from '@/common/components/Icon';
 import ButtonRaise from '@/common/components/ButtonRaise';
+import TechnologiesSlider from '@/common/components/TechnologiesSlider';
+import { repeatImageLogos } from '@/common/utils/methods';
 
 const Clients = () => {
   const {
@@ -26,11 +27,7 @@ const Clients = () => {
         size="text-[26px] lg:text-[32px]"
       />
       <div className="section-container clients-list">
-        <div className="flex flex-wrap justify-center items-center gap-10 xl:gap-12">
-          {clientsLogos.map((client) => {
-            return <Icon key={client.image} className={client.class} name={client.image} />;
-          })}
-        </div>
+        <TechnologiesSlider images={repeatImageLogos(clientsLogos, 20)} />
       </div>
       <ClientsCarousel
         hasArrows
