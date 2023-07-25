@@ -88,10 +88,6 @@ export const aboutUsPhotoArray = [
     alt: 'about_us.teams.imagesAlt.imgFive',
   },
   {
-    src: '/assets/img/teams/teams-3.webp',
-    alt: 'about_us.teams.imagesAlt.imgSix',
-  },
-  {
     src: '/assets/img/teams/teams-7.webp',
     alt: 'about_us.teams.imagesAlt.imgSeven',
   },
