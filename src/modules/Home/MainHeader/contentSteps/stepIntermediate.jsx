@@ -11,7 +11,7 @@ const StepIntermediate = ({ cardInfo, stepPosition, dashLine }) => {
   return (
     <div className="relative">
       <div
-        className={`absolute hidden sm:block 2xl:hidden cardStepAnimation ${dashLine.name} ${dashLine.position.top} ${dashLine.position.left} ${dashLine.size.width} ${dashLine.size.height}`}
+        className={`absolute hidden cardStepAnimation ${dashLine.name} ${dashLine.position.top} ${dashLine.position.left} ${dashLine.size.width} ${dashLine.size.height}`}
       />
       <div className={`absolute lg:hidden ${stepPosition.top} ${stepPosition.left}`}>
         <MountainStep />
