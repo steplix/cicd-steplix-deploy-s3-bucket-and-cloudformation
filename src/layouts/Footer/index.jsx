@@ -16,10 +16,10 @@ const Footer = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <footer className="footer-gradient h-auto pt-8 pb-[72px] sm:pt-6 sm:pb-8 sm:h-[235px] lg:h-[207px]">
+    <footer className="footer-gradient h-auto pt-8 pb-[72px] sm:pt-6 sm:pb-8">
       <div className="container sm:flex sm:justify-between sm:items-end">
         <div className="flex flex-col gap-y-12 sm:gap-y-4">
-          <div className="flex flex-col gap-8 sm:gap-4 items-center sm:items-start w-full">
+          <div className="flex flex-col gap-6 sm:gap-4 items-center sm:items-start">
             <div>
               <img
                 alt="Steplix logo"
@@ -32,17 +32,15 @@ const Footer = () => {
           <Contact />
           <div className="flex sm:hidden flex-col justify-center items-center gap-4">
             <Certificates text={t('footer.certificateText')} />
-            <div>
-              <a
-                aria-label={t('footer.qualityPolicyAriaLabel')}
-                className="text-white underline text-[11px] leading-4 tracking-[0.01em]"
-                href={t('footer.qualityPolicyUrl')}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {t('footer.qualityPolicyText')}
-              </a>
-            </div>
+            <a
+              aria-label={t('footer.qualityPolicyAriaLabel')}
+              className="text-white underline text-[11px] leading-4 tracking-[0.01em]"
+              href={t('footer.qualityPolicyUrl')}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {t('footer.qualityPolicyText')}
+            </a>
           </div>
           <Policies
             privacyPolicyAriaLabel={t('footer.privacyPolicyAriaLabel')}
