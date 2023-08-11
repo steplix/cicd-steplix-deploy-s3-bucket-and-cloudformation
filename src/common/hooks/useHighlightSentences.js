@@ -11,13 +11,15 @@ const useHighlightSentences = (text, sentences, highlightStyle) => {
 
     sentences.forEach((sentence, index) => {
       const startIndex = text.toLowerCase().indexOf(sentence.toLowerCase(), lastIndex);
+
       if (startIndex !== -1) {
         const endIndex = startIndex + sentence.length;
+
         parts.push(text.substring(lastIndex, startIndex));
         parts.push(
           <span key={index} className={highlightStyle}>
             {text.substring(startIndex, endIndex)}
-          </span>
+          </span>,
         );
         lastIndex = endIndex;
       }

@@ -294,11 +294,6 @@ export const clientsLogos = [
     class: 'w-[72px]',
   },
   {
-    image: 'columbia',
-    alt: 'Columbia Logo',
-    class: 'w-[84px]',
-  },
-  {
     image: 'c5n',
     alt: 'C5N Logo',
     class: 'w-[84px]',
