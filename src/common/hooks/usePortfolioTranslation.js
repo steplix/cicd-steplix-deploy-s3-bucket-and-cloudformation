@@ -139,6 +139,18 @@ export const usePortfolioTranslation = () => {
       text: t('happyClients.clientCeva.text'),
       textColor: 'text-blue',
     },
+    {
+      image: '/assets/img/clients/client-pow.svg',
+      alt: 'Pow',
+      name: 'Giovanna',
+      lastName: 'Maratta',
+      position: 'Product Manager',
+      title: t('happyClients.clientPowTwo.title'),
+      companyName: 'Pow.',
+      borderColor: 'border-blue',
+      text: t('happyClients.clientPowTwo.text'),
+      textColor: 'text-blue',
+    },
   ];
 
   return { clients: ARRAY_CLIENTS, industries: PORTFOLIO_INDUSTRIES };

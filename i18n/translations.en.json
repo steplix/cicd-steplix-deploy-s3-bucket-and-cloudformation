@@ -219,8 +219,12 @@
             "title": "Product Manager"
         },
         "clientCeva": {
-            "text": "The experience with Steplix was very positive. The team showed agility and dedication in the execution of the service, providing value at all times. The service offered by Steplix was very good and we recommend their work. We are interested in working with them again in the future to develop specific upgrades that were detected during the service.",
+            "text": "“The experience with Steplix was very positive. The team showed agility and dedication in the execution of the service, providing value at all times. The service offered by Steplix was very good and we recommend their work. We are interested in working with them again in the future to develop specific upgrades that were detected during the service“.",
             "title": "Marketing"
+        },
+        "clientPowTwo": {
+            "text": "“Their performance and willingness were key in the project, showing a great understanding of our needs at every stage of the process. Their comprehensive assistance has been crucial to successfully carry out the entire project“.",
+            "title": "Product Manager"
         }
     },
     "seeMore": "See more",
