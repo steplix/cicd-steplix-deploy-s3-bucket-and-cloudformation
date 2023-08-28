@@ -56,13 +56,12 @@ const HowDoWeDoIt = () => {
           isDropdownOpen ? 'dropdown-tech--open' : ''
         } font-poppins text-mobile lg:text-custom-base font-normal text-grey-neutro text-center mb-[22px]`}
       >
-        HTML • CSS • SASS • Typescript • JQuery • Angular Js • Angular • ReactJs • NextJs •
-        Bootstrap • Material • Foundation • Tailwind • NodeJs • PHP • Java • Python • Ruby • C • C++
-        • C# • GO • ASP.NET • Express • Ember • Laravel • Symfony • CakePHP • Django • Spring •
-        Struts • Ruby on Rails • MySQL • Mariadb • SQL • Sqlite • DynamoDB • PostgreSQL • DB2 •
-        HSQLDB • Redis • MongoDB • ElastiCache • Elasticsearch • Cordova • Ionic • Flutter • Kotlin
-        • Objective-C • Swift • Git • SVN • Gitlab • Github • Bitbucket • Vagrant • Docker •
-        Kubernetes • Linux • Windows • AWS • Azure • Firebase • WordPress • Ghost • Drupal
+        HTML • CSS • SASS • Typescript • JQuery • Angular • Angular Js • Reacts • NextJs • Bootstrap
+        • Material • Foundation • Tailwind NodeJs • PHP • Java • Swift • NestJS • C • C++ • Express
+        • Laravel • ReactNative • Symfony • MySQL • Mariadb • SQL • Sqlite DynamoDB • PostgreSQL •
+        Redis • MongoDB • ElastiCache • Elasticsearch • Cordova • Ionic • Flutter • React • Kotlin •
+        Swift • Git • Figma • SVN • Gitlab • Github • Bitbucket • Vagrant • Docker • Kubernetes •
+        Linux • Windows • AWS • Azure • Firebase
       </div>
     </section>
   );
