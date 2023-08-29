@@ -10,7 +10,7 @@ const HeadTag = ({ metaContent, children }) => {
     <Head>
       {/* HTML Meta Tags */}
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-      <meta content="noindex" name="robots" />
+      <meta content="index,follow" name="robots" />
       <link href="/favicon.png" rel="icon" />
       <title>{title}</title>
       <meta content={description} name="description" />
