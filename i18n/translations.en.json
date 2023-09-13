@@ -553,7 +553,7 @@
     },
     "certifications": {
         "greatPlaceToWork": {
-          "imageUrl": "/assets/img/certifications/great-place-to-work.png",
+          "imageUrl": "/assets/img/certifications/great-place-to-work.svg",
           "imageAlt": "Great Place To Work Certificate"
         },
         "iram": {
