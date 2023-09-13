@@ -428,6 +428,9 @@
         },
         "partners": {
             "title": "Miembros"
+        },
+        "certifications": {
+            "title": "Certificaciones"
         }
     },
     "portfolio": {
@@ -546,6 +549,20 @@
         "poloIt": {
             "title": "Polo It",
             "description": "Polo de Tecnología Informática de Buenos Aires."
+        }
+    },
+    "certifications": {
+        "greatPlaceToWork": {
+            "imageUrl": "/assets/img/certifications/great-place-to-work.png",
+            "imageAlt": "Certificado Great Place To Work"
+        },
+        "iram": {
+            "imageUrl": "/assets/img/certifications/iram.svg",
+            "imageAlt": "Certificado IRAM-ISO 9001:2015"
+        },
+        "iqnet": {
+            "imageUrl": "/assets/img/certifications/iqnet.svg",
+            "imageAlt": "Certificado IQNet"
         }
     }
 }

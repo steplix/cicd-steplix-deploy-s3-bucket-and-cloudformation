@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
+import Certifications from '@/modules/Home/Certifications';
 import Clients from '@/modules/Home/Clients';
 import HeadTag from '@/common/components/HeadTag';
 import Partners from '@/modules/Home/Partners';
@@ -89,8 +90,13 @@ export default function Home({ locale }) {
         {/* Technology Section */}
         <HowDoWeDoIt />
 
-        {/* Partners  Section */}
-        <Partners />
+        <div className="container block sm:flex lg:gap-14 xl:gap-[4.5rem]">
+          {/* Certifications Section */}
+          <Certifications />
+
+          {/* Partners  Section */}
+          <Partners />
+        </div>
       </TransitionWrapper>
     </>
   );
