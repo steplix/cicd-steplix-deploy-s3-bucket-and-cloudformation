@@ -429,6 +429,9 @@
         },
         "partners": {
             "title": "Members"
+        },
+        "certifications": {
+            "title": "Certifications"
         }
     },
     "portfolio": {
@@ -546,6 +549,20 @@
         "poloIt": {
             "title": "Polo It",
             "description": "Information Technology Hub of Buenos Aires."
+        }
+    },
+    "certifications": {
+        "greatPlaceToWork": {
+          "imageUrl": "/assets/img/certifications/great-place-to-work.png",
+          "imageAlt": "Great Place To Work Certificate"
+        },
+        "iram": {
+            "imageUrl": "/assets/img/certifications/iram.svg",
+            "imageAlt": "IRAM-ISO 9001:2015 Certificate"
+        },
+        "iqnet": {
+            "imageUrl": "/assets/img/certifications/iqnet.svg",
+            "imageAlt": "IQNet Certificate"
         }
     }
 }

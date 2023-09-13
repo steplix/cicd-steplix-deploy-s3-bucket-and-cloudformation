@@ -2,6 +2,7 @@ import { useTranslation } from '@/common/lib/i18n';
 import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
+import Certifications from '@/modules/Home/Certifications';
 import Clients from '@/modules/Home/Clients';
 import Partners from '@/modules/Home/Partners';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
@@ -80,8 +81,13 @@ export default function Home() {
         {/* Technology Section */}
         <HowDoWeDoIt />
 
-        {/* Partners  Section */}
-        <Partners />
+        <div className="container block sm:flex lg:gap-14 xl:gap-[4.5rem]">
+          {/* Certifications Section */}
+          <Certifications />
+
+          {/* Partners  Section */}
+          <Partners />
+        </div>
       </TransitionWrapper>
     </>
   );

@@ -645,12 +645,14 @@ export const PARTNERS_CARDS = [
   {
     name: 'cessi',
     description: 'partners.cessi.description',
+    customStyleDescription: 'w-[9.5rem] lg:w-[9rem] xl:w-[11rem]',
     imageUrl: '/assets/img/partners/cessi.svg',
     imageAlt: 'partners.cessi.description',
   },
   {
     name: 'poloIt',
     description: 'partners.poloIt.description',
+    customStyleDescription: 'w-[11.625rem] lg:w-[9rem] xl:w-[12rem]',
     imageUrl: '/assets/img/partners/polo-it.svg',
     imageAlt: 'partners.poloIt.description',
   },
