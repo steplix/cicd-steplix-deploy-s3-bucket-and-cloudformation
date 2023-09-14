@@ -12,7 +12,7 @@ const NavigationLinks = () => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <div className="text-white text-xs leading-6 tracking-[0.03em] sm:text-sm sm:leading-7 lg:text-base lg:leading-8 font-medium flex flex-wrap justify-center sm:justify-start gap-1 max-w-[213px] lg:w-full lg:max-w-none lg:justify-center">
+    <div className="text-white text-xs leading-6 tracking-[0.03em] sm:text-sm sm:leading-7 lg:text-base lg:leading-8 font-medium flex flex-wrap justify-center sm:justify-start gap-1 max-w-[11.7rem] sm:max-w-[14rem] lg:w-full lg:max-w-none lg:justify-center">
       <CustomNextLink to={`/${i18nQuery?.lang}/about-us`}>
         <a aria-label={t('navbar.item1.ariaLabel')}>{t('footer.links.item0')} </a>
       </CustomNextLink>
