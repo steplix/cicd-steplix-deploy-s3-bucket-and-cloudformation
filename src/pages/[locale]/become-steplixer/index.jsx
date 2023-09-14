@@ -35,6 +35,13 @@ function BecomeSteplixerPage({ locale }) {
           keywords: t('metaTags.becomeSteplixer.keywords'),
         }}
       />
+      <div className="container flex justify-end absolute">
+        <img
+          alt={t('certifications.greatPlaceToWork.imageAlt')}
+          className="h-[6.25rem] sm:h-[6.75rem] lg:h-[8.08rem]"
+          src={t('certifications.greatPlaceToWork.imageUrl')}
+        />
+      </div>
       <TransitionWrapper className="section-container w-full container mx-auto flex-col">
         <Gradient
           borderPosition="left"
