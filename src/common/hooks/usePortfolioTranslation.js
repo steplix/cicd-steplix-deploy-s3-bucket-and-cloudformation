@@ -68,6 +68,18 @@ export const usePortfolioTranslation = () => {
       textColor: 'text-blue',
     },
     {
+      image: '/assets/img/clients/client-valid.svg',
+      alt: 'Valid',
+      name: 'Pierre',
+      lastName: 'Lassus',
+      position: 'VP, Global Director Software & Services',
+      title: t('happyClients.clientValidTwo.title'),
+      companyName: 'Valid',
+      borderColor: 'border-blue',
+      text: t('happyClients.clientValidTwo.text'),
+      textColor: 'text-blue',
+    },
+    {
       image: '/assets/img/clients/client-finket.svg',
       alt: 'CTECH',
       name: 'Lucas',
