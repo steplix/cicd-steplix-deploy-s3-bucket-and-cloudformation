@@ -37,7 +37,7 @@ const Clients = () => {
       >
         {clients.map((client) => (
           <div
-            key={client.companyName}
+            key={client.lastName}
             className={`keen-slider__slide flex justify-center items-center`}
           >
             <TestimonialCard
