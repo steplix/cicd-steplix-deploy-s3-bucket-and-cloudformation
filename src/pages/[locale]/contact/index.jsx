@@ -102,7 +102,7 @@ const Contact = ({ locale }) => {
               <div className="flex gap-2 items-center justify-center mt-5 lg:order-2">
                 <Icon className="w-3 lg:w-5" name="mapPin" />
                 <p className="text-xs lg:text-base">
-                  Viamonte 1181, CABA, Buenos Aires. Argentina.
+                  Viamonte 1181, 2º, CABA, Buenos Aires. Argentina.
                 </p>
               </div>
 
