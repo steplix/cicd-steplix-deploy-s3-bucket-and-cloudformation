@@ -20,8 +20,8 @@ const Policies = ({ locale }) => {
       </a>
       <a
         aria-label={t('footer.qualityPolicyAriaLabel')}
-        className="text-white underline text-[11px] leading-4 tracking-[0.01em]"
-        href={`/assets/files/${t('footer.qualityPolicyFile')}`}
+        className="text-white underline text-[10px] leading-4 tracking-[0.01em]"
+        href={`${t('footer.qualityPolicyUrl')}`}
         rel="noreferrer"
         target="_blank"
       >
