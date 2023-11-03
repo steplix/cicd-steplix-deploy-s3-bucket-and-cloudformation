@@ -72,7 +72,7 @@ export const usePortfolioTranslation = () => {
       alt: 'Valid',
       name: 'Pierre',
       lastName: 'Lassus',
-      position: 'VP, Global Director Software & Services',
+      position: 'VP Global Director Software & Services',
       title: t('happyClients.clientValidTwo.title'),
       companyName: 'Valid',
       borderColor: 'border-blue',
