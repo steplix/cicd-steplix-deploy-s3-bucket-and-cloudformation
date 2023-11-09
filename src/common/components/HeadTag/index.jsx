@@ -5,12 +5,13 @@ import PropTypes from 'prop-types';
 
 const HeadTag = ({ metaContent, children }) => {
   const { title, keywords, description } = metaContent;
+  const robots_index = process.env.ROBOTS;
 
   return (
     <Head>
       {/* HTML Meta Tags */}
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-      <meta content="index,follow" name="robots" />
+      <meta content={robots_index} name="robots" />
       <link href="/favicon.png" rel="icon" />
       <title>{title}</title>
       <meta content={description} name="description" />
