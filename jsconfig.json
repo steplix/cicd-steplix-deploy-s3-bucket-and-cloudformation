@@ -21,7 +21,7 @@
             "@/public/assets/images/*": ["public/assets/images/*"]
         }
     },
-    "include": ["src"],
+    "include": ["src", "next.config.js"],
     "exclude": [
         "node_modules",
         "**/node_modules/*",
