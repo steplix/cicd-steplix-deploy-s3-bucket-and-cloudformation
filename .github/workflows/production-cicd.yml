@@ -25,7 +25,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ vars.NODE_VERSION }}
-      - run: ./update_variables.sh ${{ vars.META_ROBOTS_PRODUCTION }}
+      - name: Update ROBOTS variable
+        run: update_variables.sh ${{ vars.META_ROBOTS_PRODUCTION }};
       - run: npm ci
       - run: npm run release
       #ZIP
