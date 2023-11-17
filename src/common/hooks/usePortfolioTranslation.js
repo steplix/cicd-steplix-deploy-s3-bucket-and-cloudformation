@@ -120,7 +120,7 @@ export const usePortfolioTranslation = () => {
       alt: 'X-28',
       name: 'Mariano',
       lastName: 'Mondani',
-      position: 'Research and Development Manager',
+      position: 'Research and Development',
       title: t('happyClients.clientX-28.title'),
       companyName: 'X-28',
       borderColor: 'border-blue',
