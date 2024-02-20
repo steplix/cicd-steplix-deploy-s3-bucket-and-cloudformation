@@ -87,3 +87,5 @@ export const propTypeIconName = PropTypes.oneOf([
   'serviceConsultancy',
   'peopleSpeak',
 ]);
+
+export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big']);

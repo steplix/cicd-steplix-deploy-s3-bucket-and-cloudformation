@@ -86,7 +86,8 @@ const CardContact = ({
                 ariaLabel={t('contact.scheduleAriaLabel')}
                 clickEvent={handleCalendarClick}
                 customImageClass="w-4"
-                iconName="calendar"
+                iconName="send"
+                iconPosition="right"
                 label={t('ButtonCardContact')}
               />
             </div>

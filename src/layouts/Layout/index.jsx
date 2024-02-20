@@ -10,7 +10,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div className={`${route === '/' ? 'pt-[56px] sm:pt-[62px] ' : 'pt-[130px]'} lg:pt-0`}>
+      <div
+        className={`${
+          route === '/' || route.includes('/portfolio/') ? 'pt-[56px] sm:pt-[62px] ' : 'pt-[130px]'
+        } lg:pt-0`}
+      >
         {children}
       </div>
       <Footer />

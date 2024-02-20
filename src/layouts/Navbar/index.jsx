@@ -17,6 +17,7 @@ const Navbar = () => {
     query: { locale },
     pathname,
     asPath,
+    // route,
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
@@ -34,16 +35,27 @@ const Navbar = () => {
   // eslint-disable-next-line no-unused-vars
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
+  const [colorChange, setColorchange] = React.useState(false);
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
+  //     setColorchange(true);
+  //   } else {
+  //     setColorchange(false);
+  //   }
+  // };
+
+  // window.addEventListener('scroll', changeNavbarColor);
 
   //
   // Effects
   //
   React.useEffect(() => {
     const onScroll = () => {
-      const currentPosition = window.pageYOffset;
+      const currentPosition = window.scrollY;
 
       setTimeout(() => {
         setSticky(currentPosition > 52 ? true : !(currentPosition === 0));
+        setColorchange(currentPosition > 0 ? true : false);
       }, 5);
     };
 
@@ -60,7 +72,9 @@ const Navbar = () => {
     <div className="sticky top-0 w-full text-white z-50">
       {/* navbar mobile */}
       <nav className="flex flex-col lg:hidden">
-        <div className={`flex flex-col w-full header-gradient absolute top-0`}>
+        <div
+          className={`flex flex-col w-full absolute top-0 ${colorChange ? 'header-gradient ' : ''}`}
+        >
           <div className="container flex justify-between items-center w-full h-[56px] sm:h-[62px]">
             {/* logo mobile */}
             <div className="items-center justify-center flex">

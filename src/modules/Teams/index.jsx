@@ -69,16 +69,16 @@ const Teams = ({ locale }) => {
                 />
               </div>
               <Chip
-                customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px] mt-1"
+                customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px]"
                 label={'Front end'}
                 name="frontend"
               />
             </div>
             <div className="flex flex-row space-x-4 lg:space-x-[18px]">
               <Chip
-                customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px]"
+                customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px] text-blue"
                 label={'Scrum'}
-                name="scrum"
+                name="scrummaster"
               />
               <Chip
                 customIconClass="h-[18px] w-[18px] lg:h-[20px] lg:w-[20px] text-white"

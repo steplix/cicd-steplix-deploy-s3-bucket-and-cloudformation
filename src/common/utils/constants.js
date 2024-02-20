@@ -354,7 +354,7 @@ export const technologiesImages = [
   {
     image: '/static/technologies/nodejs.svg',
     alt: 'Node Logo',
-    class: 'w-24',
+    class: 'w-16',
   },
   {
     image: '/static/technologies/reactjs.svg',

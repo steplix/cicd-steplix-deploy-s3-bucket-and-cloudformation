@@ -757,4 +757,50 @@
     }
 
     /* END RAISE BTN EFFECT */
+
+
+    /* INDIVIDUAL PORTFOLIO */
+    .mountain-portfolio {
+        background-image: url("../../public/assets/img/portfolio/mountain.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 36.125rem;
+    }
+    /* END INDIVIDUAL PORTFOLIO */
+
+    /* CHIP COMPONENT */
+    .chip {
+        @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
+    }
+    .chip--slim {
+        @apply px-6 py-1;
+    }
+    .chip--slim > .icon {
+        @apply w-4 h-4;
+    }
+    .chip--slim > span {
+        @apply font-poppins font-semibold text-xs leading-[15.6px] tracking-[0.36px];
+    }
+    .chip--medium {
+        @apply px-2 gap-1 h-10 min-w-[7.5625rem];
+    }
+    .chip--medium > .icon {
+        @apply w-[18px] h-[18px];
+    }
+    .chip--medium > span {
+        @apply font-poppins font-semibold text-[13px];
+    }
+    .chip--big {
+        @apply w-40 p-2;
+    }
+    .chip--big > .icon {
+        @apply w-7 h-7;
+    }
+    .chip--big > span {
+        @apply font-sofia font-normal text-3xl leading-[28.8px];
+    }
+    .chip--outlined {
+        @apply border border-solid px-6 py-1 font-poppins text-base font-medium tracking-[0.48px] leading-[20.8px];
+    }
+    /* END CHIP COMPONENT */
 }

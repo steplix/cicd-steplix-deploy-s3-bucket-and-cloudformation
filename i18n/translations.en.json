@@ -304,7 +304,14 @@
         "portfolio": {
             "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
             "keywords": "Steplix portfolio, Software development, Custom software solutions, Successful projects, Industry solutions, Technology portfolio, Clients: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
-            "description": "View our portfolio of successful digital solutions. From web development to mobile apps, see how we have helped clients improve their productivity and achieve their business goals."
+            "description": "View our portfolio of successful digital solutions. From web development to mobile apps, see how we have helped clients improve their productivity and achieve their business goals.",
+            "clients": {
+                "sura": {
+                    "title":"Portfolio | Clients | SURA",
+                    "keywords": "SURA Insurance,Insurance software development, Insurance platforms, Digital transformation in insurance, Insurance digitization, Insurance service integration, Insurance software, Insurance automation, SURA, User experience in insurance, Fintech insurance, Innovation in insurance, Digital solutions for insurance, Insurance management systems",
+                    "description": "Find out how Steplix has propelled digital transformation at SURA, a leading insurer, through innovative software solutions."
+                }
+            }
         },
         "contact": {
             "title": "Contact us | Digital Sherpas | Steplix Software 🧗",
