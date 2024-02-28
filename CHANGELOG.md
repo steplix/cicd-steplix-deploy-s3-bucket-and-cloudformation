@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **General**:
   - Change customer list to slider component
-  - Adjustment in the alignment of the indioma change component
+  - Adjustment in the alignment of the LanguageSelector
   - Swap partners word for members
 
 ## Release 3.0.7 03/07/2023
