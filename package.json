@@ -7,7 +7,7 @@
     "author": "Steplix",
     "license": "ISC",
     "scripts": {
-        "dev": "NODE_ENV=development next",
+        "dev": "set NODE_ENV=development && next",
         "build": "next build",
         "release": "next build && next export",
         "start": "NODE_ENV=production next start",
