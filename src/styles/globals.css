@@ -761,10 +761,36 @@
 
     /* INDIVIDUAL PORTFOLIO */
     .mountain-portfolio {
-        background-image: url("../../public/assets/img/portfolio/mountain.png");
+        background-image: url("../../public/assets/img/portfolio/montaña.png");
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 36.125rem;
+        background-position: center top 20px;
+        background-size: cover;
+    }
+
+    @media (min-width: 640px) {
+        .mountain-portfolio {
+          background-position: center top 30px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    @media (min-width: 1280px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    .challenge-image-sura {
+        background-image: url("../../public/assets/img/portfolio/sura/challenge.png") ;
+    }
+    .proyect-image {
+        background-image: url("../../public/assets/img/portfolio/sura/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover
     }
     /* END INDIVIDUAL PORTFOLIO */
 
@@ -773,13 +799,13 @@
         @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
     }
     .chip--slim {
-        @apply px-6 py-1;
+        @apply px-3 py-1;
     }
     .chip--slim > .icon {
         @apply w-4 h-4;
     }
     .chip--slim > span {
-        @apply font-poppins font-semibold text-xs leading-[15.6px] tracking-[0.36px];
+        @apply font-poppins font-semibold text-xs leading-[18px] tracking-[0.36px];
     }
     .chip--medium {
         @apply px-2 gap-1 h-10 min-w-[7.5625rem];
@@ -800,7 +826,7 @@
         @apply font-sofia font-normal text-3xl leading-[28.8px];
     }
     .chip--outlined {
-        @apply border border-solid px-6 py-1 font-poppins text-base font-medium tracking-[0.48px] leading-[20.8px];
+        @apply border border-solid font-poppins text-base font-medium tracking-[0.48px] leading-[20.8px];
     }
     /* END CHIP COMPONENT */
 }
