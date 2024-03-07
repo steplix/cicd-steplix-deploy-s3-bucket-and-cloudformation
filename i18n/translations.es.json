@@ -224,6 +224,14 @@
         "clientPowTwo": {
             "text": "“Su desempeño y predisposición fue clave en el proyecto, demostrando una gran comprensión de nuestras necesidades en cada etapa del proceso. Su asistencia integral ha sido fundamental para llevar a cabo con éxito todo el proyecto“.",
             "title": "Product Manager"
+        },
+        "clientValidTwo": {
+            "text": "“A través de los varios proyectos que hemos realizado con Steplix estos últimos meses, hemos destacado el compromiso de sus equipos con cada proyecto, la agilidad que demostraron para las cotizaciones económicas como en los desarrollos, su flexibilidad a la hora de absorber peticiones no planificadas inicialmente, el uso que hicieron de tecnologías de vanguardia, y al final de estos proyectos la buena calidad de los entregables, y la garantía que nos ofrecen. Con certeza, basado sobre esta experiencia, seguiremos colaborando con Steplix en los meses que vienen“.",
+            "title": "VP Global Director Services"
+        },
+        "clientX-28": {
+            "text": "“Steplix nos sorprendió desde un primer momento ya que no solo se preocupó por entender nuestro negocio y las necesidades que teníamos en relación a nuestra app, sino que en varias ocasiones fueron más allá de lo pedido, proponiendo cambios y mejoras que tuvieron un gran impacto tanto en el uso como en el rendimiento del producto“.",            
+            "title": "Investigación y Desarrollo"
         }
     },
     "seeMore": "Ver más",
@@ -399,7 +407,7 @@
         "stepTwoDescription": "Co-creamos soluciones a medida aplicando diseño, innovación e ingeniería.",
         "stepThreeTitle": "Logramos <br/> resultados",
         "stepThreeDescription": "Aceptamos el reto de cada cliente con el compromiso de alcanzar los resultados en el tiempo acordado, con la inversión y el ROI correcto.",
-        "finalTitle": "Juntos llegamos <br/> a la cima",
+        "finalTitle": "Juntos llegamos <br/> a la cima!",
         "finalSubtitle": "#DigitalSherpas",
         "finalTextLink": "Descubrenos",
         "bannerImageAlt": "Imagen de la maqueta de nuestra aplicación Steplix time",
@@ -434,7 +442,7 @@
             "title": "Clientes"
         },
         "partners": {
-            "title": "Miembros"
+            "title": "Membresías"
         },
         "certifications": {
             "title": "Certificaciones"

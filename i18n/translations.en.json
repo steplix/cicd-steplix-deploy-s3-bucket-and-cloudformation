@@ -225,6 +225,14 @@
         "clientPowTwo": {
             "text": "“Their performance and willingness were key in the project, showing a great understanding of our needs at every stage of the process. Their comprehensive assistance has been crucial to successfully carry out the entire project“.",
             "title": "Product Manager"
+        },
+        "clientValidTwo": {
+            "text": "“Through the various projects we've done with Steplix in recent months, we've noticed their team's dedication to each project, the speed they showed in both quotes and developments, their flexibility to take on unplanned requests, their use of the latest technologies, the high quality of the deliverables and the warranty they provide. Based on this experience, we'll surely continue working with Steplix in the coming months“.",
+            "title": "VP Global Director Services"
+        },
+        "clientX-28": {
+            "text": "“Steplix surprised us from the very first moment since they not only cared about understanding our business and the needs we had in relation to our app, but on several occasions they went beyond what was requested, proposing changes and improvements that had a great impact on both the use and performance of the product“.",
+            "title": "Research and Development"
         }
     },
     "seeMore": "See more",
@@ -391,7 +399,7 @@
     },
     "MainHeader": {
         "slogan": "We are your digital ally",
-        "title": "We co-create <br/> the path that <br/> will take your business <br/> to the top.",
+        "title": "We co-create <br/> the path that <br/> will take your business <br/> to the summit.",
         "subtitleMobile": "We design and <br/> develop software <br/> according to your <br/> needs",
         "subtitleBase": "We design and develop <br/> software according to your <br/> needs",
         "stepOneTitle": "We know <br/> the way",
@@ -400,7 +408,7 @@
         "stepTwoDescription": "We co-create custom solutions applying design, innovation and engineering.",
         "stepThreeTitle": "We achieve <br/> results",
         "stepThreeDescription": "We accept the challenge of each client with the commitment to achieve the results in the agreed time, with the correct investment and ROI.",
-        "finalTitle": "Together we reach <br/> the top",
+        "finalTitle": "We will reach the <br/> summit together!",
         "finalSubtitle": "#DigitalSherpas",
         "finalTextLink": "Discover us",
         "bannerImageAlt": "Mockup image of our application Steplix time",
@@ -435,7 +443,7 @@
             "title": "Clients"
         },
         "partners": {
-            "title": "Members"
+            "title": "Memberships"
         },
         "certifications": {
             "title": "Certifications"
