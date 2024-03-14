@@ -7,8 +7,11 @@ import { useTranslation } from '@/common/lib/i18n';
 import { PORTFOLIO_CARDS } from '@/common/utils/constants';
 import PortfolioCard from '@/common/components/PortfolioCard';
 import PortfolioCarousel from '@/common/components/PortfolioCarousel';
+import { PortfolioHeader } from '@/modules/Portfolio/PortfoloHeader';
+import { PortfolioHeading } from '@/modules/Portfolio/PortfolioHeading';
+import { getPathSlugs } from '@/common/utils/getPathSlugs';
 
-export default function Client({ locale }) {
+export default function SuraPage({ locale }) {
   const { t } = useTranslation(locale);
 
   return (
@@ -21,33 +24,18 @@ export default function Client({ locale }) {
         }}
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
-        <div className="flex items-end h-[272px] md:h-[290px] lg:h-[412px] mt-[-56px] md:mt-[-62px] lg:mt-[-100px] header-gradient justify-center">
-          <picture className="rounded-tl-[20px] rounded-tr-[20px] h-[197px] md:h-[230px] lg:h-[321px] mb-[-16px]">
-            <img
-              alt={t(`portfolio.cards.sura.imageAlt`)}
-              className="w-full h-full"
-              src={`/assets/img/portfolio/sura/header.svg`}
-            />
-          </picture>
-        </div>
+        <PortfolioHeader
+          alt={t('portfolio.cards.sura.imageAlt')}
+          src={`/assets/img/portfolio/sura/header.svg`}
+        />
         <div className="container">
           <div>
-            <section
-              className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 pt-6 lg:justify-center"
-              id="heading"
-            >
-              <Icon className="w-[9.86rem] h-14" name="sura" />
-              <div className="flex items-center gap-4">
-                <ChipColorFilled
-                  background="bg-blue-light"
-                  iconColor="text-blue"
-                  iconName="shield"
-                  label="Insurance"
-                  type="slim"
-                />
-                <span className="font-poppins text-mobile font-semibold">Cotizador online</span>
-              </div>
-            </section>
+            <PortfolioHeading
+              chipLabel={t('portfolio.sura.headingIcon')}
+              iconChip="shield"
+              iconName="sura"
+              spanLabel={t('portfolio.sura.headingLabel')}
+            />
             <section className="flex flex-col gap-4 pt-8 pb-6" id="challenge">
               <Title underlineFixed content="¿Cuál fue el desafío?" size="text-[26px]" />
               <p className="font-poppins text-mobile text-black">
@@ -72,7 +60,7 @@ export default function Client({ locale }) {
                   <div className="w-16">
                     <ChipColorFilled
                       background="bg-transparent"
-                      borderWidth="2"
+                      borderWidth={2}
                       label="Scrum"
                       outlineColor="border-purple"
                       type="slim"
@@ -90,7 +78,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="Back end"
                         outlineColor="border-purple"
                         type="slim"
@@ -99,7 +87,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="Front end"
                         outlineColor="border-purple"
                         type="slim"
@@ -108,7 +96,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="Tech Lead"
                         outlineColor="border-purple"
                         type="slim"
@@ -127,7 +115,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="Angular"
                         outlineColor="border-purple"
                         type="slim"
@@ -136,7 +124,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="NodeJS"
                         outlineColor="border-purple"
                         type="slim"
@@ -145,7 +133,7 @@ export default function Client({ locale }) {
                     <div>
                       <ChipColorFilled
                         background="bg-transparent"
-                        borderWidth="2"
+                        borderWidth={2}
                         label="Azure"
                         outlineColor="border-purple"
                         type="slim"
@@ -221,4 +209,22 @@ export default function Client({ locale }) {
       </TransitionWrapper>
     </>
   );
+}
+
+// eslint-disable-next-line no-unused-vars
+export async function getStaticPaths(...args) {
+  const pathsWithLocale = getPathSlugs();
+
+  return {
+    paths: pathsWithLocale,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      ...params,
+    },
+  };
 }

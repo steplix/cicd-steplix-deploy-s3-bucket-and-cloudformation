@@ -55,7 +55,7 @@ const Navbar = () => {
 
       setTimeout(() => {
         setSticky(currentPosition > 52 ? true : !(currentPosition === 0));
-        setColorchange(currentPosition > 0 ? true : false);
+        setColorchange(currentPosition >= 0 ? true : false);
       }, 5);
     };
 

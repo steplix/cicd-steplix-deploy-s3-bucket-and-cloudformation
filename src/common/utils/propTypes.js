@@ -86,6 +86,8 @@ export const propTypeIconName = PropTypes.oneOf([
   'serviceDevelopment',
   'serviceConsultancy',
   'peopleSpeak',
+  'technology',
+  'diversity'
 ]);
 
 export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big']);
