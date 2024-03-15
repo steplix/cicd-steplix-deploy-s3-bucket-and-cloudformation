@@ -120,37 +120,12 @@
             "descriptionTwo": " that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve."
         },
         "stepsToTheTop": {
-            "titleOne": "Steps to",
-            "titleTwo": "the top",
-            "fullTitle": "Steps to the top",
+            "titleOne": "What is your starting",
+            "titleTwo": "point?",
+            "fullTitle": "What is your starting point?",
             "descriptionOne": "We are your digital ally.",
             "descriptionTwo": "Let's walk together",
-            "descriptionThree": "What is your starting point?"
-        },
-        "weExploreTheProyect": {
-            "titleOne": "We explore",
-            "titleTwo": "the proyect",
-            "fullTitle": "We explore the project",
-            "descriptionOne": "As guides in the digital business ecosystem, we know that the first step is focused on",
-            "descriptionTwo": " understanding the opportunity and looking together for a way to add value to the business idea."
-        },
-        "weDesignYourProduct": {
-            "titleOne": "We design",
-            "titleTwo": "you product",
-            "fullTitle": "We design your product",
-            "descriptionOne": "The second scale is focused on the design of an <u><span title=\"Minimum Viable Product\">MVP</span></u> with the aim of continuing to promote the idea. Doing this allows us to ",
-            "descriptionTwo": "test the business model, revealing the effort and detecting optimization opportunities."
-        },
-        "weDevelopTheSolution": {
-            "titleOne": "We develop",
-            "titleTwo": "the solution",
-            "fullTitle": "We develop the solution",
-            "descriptionOne": "We build and deliver the final product, ",
-            "descriptionTwo": "respecting the deadlines and the agreed investment."
-        },
-        "HowDoWeDoIt": {
-            "titleOne": "Technology",
-            "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
+            "descriptionThree": ""
         }
     },
     "aboutUs": {
