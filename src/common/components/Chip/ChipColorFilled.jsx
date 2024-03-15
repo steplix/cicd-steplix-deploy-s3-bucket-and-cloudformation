@@ -10,10 +10,27 @@ const types = {
   big: 'chip--big',
 };
 
-const ChipColorFilled = ({ type, background, iconName, iconColor, label }) => {
+const ChipColorFilled = ({
+  type,
+  background,
+  iconName,
+  iconColor,
+  label,
+  outlineColor,
+  borderWidth,
+}) => {
+  const chipStyle = {
+    borderWidth: borderWidth ? `${borderWidth}px` : '',
+  };
+
   return (
-    <div className={`chip ${types[type]} ${background}`}>
-      <Icon className={`icon ${iconColor}`} name={iconName} />
+    <div
+      className={`chip ${types[type]} ${background} ${
+        outlineColor ? 'chip--outlined ' + outlineColor : ''
+      }`}
+      style={chipStyle}
+    >
+      {iconName && iconColor && <Icon className={`icon ${iconColor}`} name={iconName} />}
       <span>{label}</span>
     </div>
   );
@@ -22,9 +39,11 @@ const ChipColorFilled = ({ type, background, iconName, iconColor, label }) => {
 ChipColorFilled.propTypes = {
   type: chipTypes,
   background: PropTypes.string.isRequired,
-  iconName: PropTypes.string.isRequired,
-  iconColor: PropTypes.string.isRequired,
+  iconName: PropTypes.string,
+  iconColor: PropTypes.string,
   label: PropTypes.string.isRequired,
+  outlineColor: PropTypes.string,
+  borderWidth: PropTypes.number,
 };
 
 export default ChipColorFilled;
