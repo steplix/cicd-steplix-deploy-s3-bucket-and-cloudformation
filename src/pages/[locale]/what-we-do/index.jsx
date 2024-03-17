@@ -4,6 +4,7 @@ import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import Intro from '@/modules/what-we-do/Intro';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import { WhatWeDoCard } from '@/common/components/WhatWeDoCard/indext';
+import { PRODUCTS_CARDS } from '@/common/utils/constants';
 
 export default function WhatWeDo({ locale }) {
   const { t } = useTranslation(locale);
@@ -17,11 +18,13 @@ export default function WhatWeDo({ locale }) {
           keywords: t('metaTags.whatWeDo.keywords'),
         }}
       />
-      <TransitionWrapper className="w-full h-full relative flex flex-col">
+      <TransitionWrapper className="w-full h-full flex flex-col relative">
         <div className="container section-container w-full mx-auto flex-col min-h-[1276px] sm:min-h-[1144px] lg:min-h-[1250px]">
           <Intro locale={locale} />
-          <div className="mt-10">
-            <WhatWeDoCard />
+          <div className="mt-10 flex flex-col lg:flex-row lg:flex-wrap gap-6">
+            {PRODUCTS_CARDS.map((card, index) => {
+              return <WhatWeDoCard key={index} card={card} locale={locale} />;
+            })}
           </div>
         </div>
       </TransitionWrapper>

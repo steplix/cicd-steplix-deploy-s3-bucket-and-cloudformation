@@ -21,7 +21,7 @@
             "@/public/assets/images/*": ["public/assets/images/*"]
         }
     },
-    "include": ["src", "next.config.js"],
+    "include": ["src", "next.config.js", "src/common/components/Icon/icons/phoneChat.jsx"],
     "exclude": [
         "node_modules",
         "**/node_modules/*",
