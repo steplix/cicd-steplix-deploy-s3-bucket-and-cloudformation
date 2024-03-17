@@ -44,11 +44,9 @@ export const WhatWeDoCardDescription = ({ card, locale, onClose }) => {
         })}
       </div>
       <div>
-        <div>
-            
-        </div>
+        <div />
       </div>
-      <ButtonText clickEvent={() => console.log('ir a...')} label={t('what_we_do.buttonCard')} />
+      <ButtonText clickEvent={() => {}} label={t('what_we_do.buttonCard')} />
     </div>
   );
 };
