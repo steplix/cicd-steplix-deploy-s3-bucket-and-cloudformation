@@ -4,7 +4,7 @@ import Icon from '../Icon';
 
 export const ProductItemDescription = ({ iconName, label, description }) => {
   return (
-    <div className="flex flex-col gap-2 mb-6">
+    <div className="flex flex-col gap-2 mb-6 w-full lg:w-1/2">
       <div className="flex items-center gap-2">
         <div className="w-8 h-8">
           <Icon className="fill-none" name={iconName} />
@@ -13,7 +13,7 @@ export const ProductItemDescription = ({ iconName, label, description }) => {
           {label}
         </div>
       </div>
-      <div className="text-zinc-900 text-sm font-normal font-poppins leading-tight tracking-tight">
+      <div className="text-zinc-900 text-sm font-normal font-poppins leading-tight tracking-tight lg:pr-6">
         {description}
       </div>
     </div>

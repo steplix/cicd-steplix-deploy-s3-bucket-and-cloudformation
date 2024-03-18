@@ -2,7 +2,7 @@ import Svg from '../svg';
 
 const phoneChat = ({ className }) => (
   <Svg className={className} originalSize={24}>
-    <g clip-path="url(#clip0_1282_40081)" id="Frame">
+    <g clipPath="url(#clip0_1282_40081)" id="Frame">
       <path
         d="M11 3H21V11H18L14 13V11H11V3Z"
         fill="none"

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import HeadTag from '@/common/components/HeadTag';
 import Gradient from '@/common/components/Title/Gradient';
 import BecomeCard from '@/common/components/BecomeCard';
@@ -12,7 +12,7 @@ import FlipCard from '@/common/components/FlipCard';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import { copyToClipboard, openLink } from '@/common/utils/methods';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import { stagger } from '@/common/lib/animation';
+import { stagger } from '@/pages/lib/animation';
 import HighlightedText from '@/common/components/HighlightedText';
 
 function BecomeSteplixerPage({ locale }) {

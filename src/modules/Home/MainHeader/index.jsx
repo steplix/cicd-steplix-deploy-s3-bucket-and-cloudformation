@@ -6,7 +6,7 @@ import StepEnd from './contentSteps/stepEnd';
 import StepIntermediate from './contentSteps/stepIntermediate';
 import ScrollButton from './contentSteps/scrollButton';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import { MOUNTAIN_STEPS } from '@/common/utils/constants';
 import { useMountainScroll } from '@/common/hooks/useMountainScroll';
 import { getShortBreakpoint } from '@/common/utils/methods';

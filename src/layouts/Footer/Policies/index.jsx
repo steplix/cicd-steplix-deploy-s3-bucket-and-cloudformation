@@ -1,6 +1,6 @@
 import { useLanguageQuery } from 'next-export-i18n';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 
 const Policies = ({ locale }) => {
   const [i18nQuery] = useLanguageQuery(locale);

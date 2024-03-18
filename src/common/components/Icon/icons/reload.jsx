@@ -2,7 +2,7 @@ import Svg from '../svg';
 
 const reload = ({ className }) => (
   <Svg className={className} originalSize={24}>
-    <g clip-path="url(#clip0_1282_40095)" id="Frame">
+    <g clipPath="url(#clip0_1282_40095)" id="Frame">
       <path
         d="M20 11.0002C19.7554 9.24041 18.9391 7.60985 17.6766 6.35969C16.4142 5.10953 14.7758 4.30911 13.0137 4.08175C11.2516 3.85438 9.46362 4.21268 7.9252 5.10144C6.38678 5.9902 5.18325 7.36013 4.5 9.00019M4 5.00019V9.00019H8"
         fill="none"

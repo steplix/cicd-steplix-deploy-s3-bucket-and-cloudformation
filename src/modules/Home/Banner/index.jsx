@@ -1,7 +1,7 @@
 import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import Service from '@/common/components/Service';
 import { SERVICES } from '@/common/utils/constants';
 

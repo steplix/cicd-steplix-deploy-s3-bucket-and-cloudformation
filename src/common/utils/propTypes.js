@@ -96,4 +96,6 @@ export const propTypeIconName = PropTypes.oneOf([
   'vanguard',
   'newPhone',
   'newClose',
+  'idea',
+  'itemList',
 ]);

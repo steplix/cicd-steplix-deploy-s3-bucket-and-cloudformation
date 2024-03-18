@@ -1,7 +1,7 @@
 import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import PartnerCard from '@/common/components/PartnerCard';
 import Title from '@/common/components/Title/Gradient';
 import { PARTNERS_CARDS } from '@/common/utils/constants';

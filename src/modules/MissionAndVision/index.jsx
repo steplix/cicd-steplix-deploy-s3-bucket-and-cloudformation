@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import Title from '@/common/components/Title/Gradient';
 import VisionIcon from '@/common/components/Icon/icons/VisionIcon';
 import MisionIcon from '@/common/components/Icon/icons/MisionIcon';

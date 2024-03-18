@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import CustomNextLink from '@/common/components/CustomNextLink';
 import Icon from '@/components/Icon';
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 
 const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const {

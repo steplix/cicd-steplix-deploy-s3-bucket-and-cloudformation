@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { useLanguageQuery } from 'next-export-i18n';
 
-import { LanguageSwitcher, useTranslation } from '@/common/lib/i18n';
+import { LanguageSwitcher, useTranslation } from '@/pages/lib/i18n';
 import Icon from '@/components/Icon';
 
 const LanguageSelector = ({ sm }) => {

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import TitleIcon from '../Title/TitleIcon';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 
 const BecomeCard = ({ icon, benefit, locale }) => {
   const { t } = useTranslation(locale);

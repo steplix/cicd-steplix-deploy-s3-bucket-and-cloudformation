@@ -1,22 +1,21 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 
-import { ButtonText } from '../ButtonText';
-import ChipColorFilled from '../Chip/ChipColorFilled';
-import { ProductItem } from '../ProductItem';
-import { Modal } from '../Modal';
-import { WhatWeDoCardDescription } from '../WhatWeDoCardDescription';
+import { ButtonText } from '../../../common/components/ButtonText';
+import ChipColorFilled from '../../../common/components/Chip/ChipColorFilled';
+import { ProductItem } from '../../../common/components/ProductItem';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 import Title from '@/common/components/Title/GradientInvert';
 
 export const WhatWeDoCard = ({ card, locale }) => {
   const { t } = useTranslation(locale);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const router = useRouter();
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const handleOpenModal = () => {
+    router.push(`/${locale}/what-we-do?product=${card.shortName}`);
+  };
 
   return (
     <div className="w-full lg:w-[436px] pl-8 pr-4 pt-6 pb-4 bg-white rounded-[20px] shadow-tech-card flex-col justify-start items-end gap-6 inline-flex">
@@ -35,15 +34,13 @@ export const WhatWeDoCard = ({ card, locale }) => {
           })}
         </div>
       </div>
-      <ButtonText clickEvent={openModal} label={t('what_we_do.buttonCard')} />
-      <Modal isModalOpen={isModalOpen} setisModalOpen={setIsModalOpen}>
-        <WhatWeDoCardDescription card={card} locale={locale} onClose={closeModal} />
-      </Modal>
+      <ButtonText clickEvent={handleOpenModal} label={t('what_we_do.buttonCard')} />
     </div>
   );
 };
 
 WhatWeDoCard.prototype = {
+  openModal: PropTypes.func.isRequired,
   card: PropTypes.object.isRequired,
   locale: PropTypes.oneOf(LOCALE_SLUGS),
 };

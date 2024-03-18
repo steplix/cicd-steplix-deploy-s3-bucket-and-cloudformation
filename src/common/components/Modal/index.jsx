@@ -6,9 +6,7 @@ export const Modal = ({ setisModalOpen, isModalOpen, children }) => {
 
   useEffect(() => {
     if (isModalOpen) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
+      window.scrollTo(0, 0);
     }
     const checkIfClickedOutside = (e) => {
       if (isModalOpen && ref.current && !ref.current.contains(e.target)) {
@@ -20,7 +18,6 @@ export const Modal = ({ setisModalOpen, isModalOpen, children }) => {
 
     return () => {
       document.removeEventListener('mousedown', checkIfClickedOutside);
-      document.body.classList.remove('no-scroll');
     };
   }, [isModalOpen, setisModalOpen]);
 
@@ -29,9 +26,9 @@ export const Modal = ({ setisModalOpen, isModalOpen, children }) => {
       {isModalOpen && (
         <div
           ref={ref}
-          className="z-200 fixed top-[120px] left-0 w-full h-full bg-white bg-opacity-40 flex justify-center overflow-y-auto"
+          className="absolute left-0 w-full h-full bg-white bg-opacity-90 flex justify-center overflow-y-auto"
         >
-          <div className="z-300">{children}</div>
+          <div>{children}</div>
         </div>
       )}
     </>

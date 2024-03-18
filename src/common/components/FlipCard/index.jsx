@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 import Icon from '@/components/Icon';
-import { fadeInFromTheSide } from '@/common/lib/animation';
+import { fadeInFromTheSide } from '@/pages/lib/animation';
 import { getShortBreakpoint } from '@/common/utils/methods';
 
 const FlipCard = ({ title, iconName, resize, description }) => {

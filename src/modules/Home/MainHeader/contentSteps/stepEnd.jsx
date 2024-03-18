@@ -2,7 +2,7 @@ import parse from 'html-react-parser';
 import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import CustomNextLink from '@/common/components/CustomNextLink';
 import Icon from '@/components/Icon';
 

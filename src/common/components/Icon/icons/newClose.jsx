@@ -2,7 +2,7 @@ import Svg from '../svg';
 
 const newClose = ({ className }) => (
   <Svg className={className} originalSize={24}>
-    <g clip-path="url(#clip0_1282_40301)" id="icon/24x24/close">
+    <g clipPath="url(#clip0_1282_40301)" id="icon/24x24/close">
       <path
         d="M18 6L6 18"
         fill="none"

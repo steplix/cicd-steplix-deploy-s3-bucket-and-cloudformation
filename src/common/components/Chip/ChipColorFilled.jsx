@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
 
-import { chipTypes } from '@/common/utils/propTypes';
-
 const types = {
   slim: 'chip--slim',
   medium: 'chip--medium',
@@ -37,7 +35,7 @@ const ChipColorFilled = ({
 };
 
 ChipColorFilled.propTypes = {
-  type: chipTypes,
+  type: PropTypes.string,
   background: PropTypes.string.isRequired,
   iconName: PropTypes.string,
   iconColor: PropTypes.string,

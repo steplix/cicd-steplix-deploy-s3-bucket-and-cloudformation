@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import AccordionItemProvider, { useItemAccordion } from './context/AccordionItemContext';
 import AccordionGlobalProvider, { useGlobalAccordion } from './context/AccordionGlobalContext';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import Icon from '@/common/components/Icon';
 
 // eslint-disable-next-line react/display-name

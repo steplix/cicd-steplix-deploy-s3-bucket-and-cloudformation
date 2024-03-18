@@ -4,7 +4,7 @@ import { useLanguageQuery } from 'next-export-i18n';
 
 import CustomNextLink from '@/common/components/CustomNextLink';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 
 const Custom404 = () => {
   const {

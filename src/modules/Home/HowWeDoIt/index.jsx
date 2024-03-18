@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { useLanguageQuery } from 'next-export-i18n';
 
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import { repeatImageLogos } from '@/common/utils/methods';
 import { technologiesImages, LOCALE_SLUGS, SPACE_BETWEEN_CARDS } from '@/common/utils/constants';
 import Title from '@/common/components/Title/Gradient';

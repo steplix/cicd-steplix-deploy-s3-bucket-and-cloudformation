@@ -2,7 +2,7 @@ import Svg from '../svg';
 
 const code = ({ className }) => (
   <Svg className={className} originalSize={24}>
-    <g clip-path="url(#clip0_1282_40416)" id="Frame">
+    <g clipPath="url(#clip0_1282_40416)" id="Frame">
       <path
         d="M7 8L3 12L7 16"
         fill="none"

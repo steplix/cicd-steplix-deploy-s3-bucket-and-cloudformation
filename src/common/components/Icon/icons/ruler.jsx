@@ -2,7 +2,7 @@ import Svg from '../svg';
 
 const ruler = ({ className }) => (
   <Svg className={className} originalSize={24}>
-    <g clip-path="url(#clip0_1397_23484)" id="Frame">
+    <g clipPath="url(#clip0_1397_23484)" id="Frame">
       <path
         d="M19.875 12C20.496 12 21 12.512 21 13.143V18.857C21 19.488 20.496 20 19.875 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V13.143C3 12.512 3.504 12 4.125 12H19.875Z"
         fill="none"

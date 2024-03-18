@@ -8,9 +8,9 @@ import CardIcon from '@/common/components/CardIcon';
 import PortfolioCard from '@/common/components/PortfolioCard';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
-import { stagger } from '@/common/lib/animation';
+import { stagger } from '@/pages/lib/animation';
 import { PORTFOLIO_CARDS } from '@/common/utils/constants';
 import Carousel from '@/common/components/Carousel';
 

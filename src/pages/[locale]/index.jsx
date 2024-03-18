@@ -9,7 +9,7 @@ import Clients from '@/modules/Home/Clients';
 import HeadTag from '@/common/components/HeadTag';
 import Partners from '@/modules/Home/Partners';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import { useTranslation } from '@/common/lib/i18n';
+import { useTranslation } from '@/pages/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 
 export default function Home({ locale }) {
