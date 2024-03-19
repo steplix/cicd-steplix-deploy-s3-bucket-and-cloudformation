@@ -657,3 +657,34 @@ export const PARTNERS_CARDS = [
     imageAlt: 'partners.poloIt.description',
   },
 ];
+
+export const SURA_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+    {
+      imageUrl: '/assets/img/stack/azure.svg',
+      alt: 'Azure image',
+    },
+    {
+      imageUrl: '/assets/img/stack/angular.svg',
+      alt: 'AngularJs image',
+    },
+  ],
+};

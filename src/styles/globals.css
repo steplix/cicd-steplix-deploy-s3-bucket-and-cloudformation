@@ -786,6 +786,24 @@
     }
     .challenge-image-sura {
         background-image: url("../../public/assets/img/portfolio/sura/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    @media (min-width: 640px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
+        }
+    }
+    @media (min-width: 1024px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeLG.png") ;
+        }
+    }
+    @media (min-width: 1240px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeXL.png") ;
+        }
     }
     .proyect-image {
         background-image: url("../../public/assets/img/portfolio/sura/product.svg");

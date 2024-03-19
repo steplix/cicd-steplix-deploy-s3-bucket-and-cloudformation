@@ -1,15 +1,18 @@
+import parse from 'html-react-parser';
+
 import HeadTag from '@/common/components/HeadTag';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import Icon from '@/components/Icon';
 import ChipColorFilled from '@/common/components/Chip/ChipColorFilled';
 import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from '@/common/lib/i18n';
-import { PORTFOLIO_CARDS } from '@/common/utils/constants';
+import { PORTFOLIO_CARDS, SURA_CHIPS } from '@/common/utils/constants';
 import PortfolioCard from '@/common/components/PortfolioCard';
 import PortfolioCarousel from '@/common/components/PortfolioCarousel';
 import { PortfolioHeader } from '@/modules/Portfolio/PortfoloHeader';
 import { PortfolioHeading } from '@/modules/Portfolio/PortfolioHeading';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
+import { ChanllengeSection } from '@/modules/Portfolio/Challenge';
+import { ApproachSection } from '@/modules/Portfolio/Approach';
 
 export default function SuraPage({ locale }) {
   const { t } = useTranslation(locale);
@@ -31,118 +34,17 @@ export default function SuraPage({ locale }) {
         <div className="container">
           <div>
             <PortfolioHeading
-              chipLabel={t('portfolio.sura.headingIcon')}
+              chipLabel={t('portfolio.suraClient.headingIcon')}
               iconChip="shield"
               iconName="sura"
-              spanLabel={t('portfolio.sura.headingLabel')}
+              spanLabel={t('portfolio.suraClient.headingLabel')}
             />
-            <section className="flex flex-col gap-4 pt-8 pb-6" id="challenge">
-              <Title underlineFixed content="¿Cuál fue el desafío?" size="text-[26px]" />
-              <p className="font-poppins text-mobile text-black">
-                Las personas productoras de seguros necesitaban utilizar una herramienta digital que
-                <span className="font-semibold"> facilite y ayude en la tarea de cotización.</span>
-              </p>
-              <div className="w-full h-[275px] challenge-image-sura" />
-            </section>
-            <section
-              className="flex flex-col gap-6 py-4 mountain-portfolio"
-              id="how-we-deal-with-it"
-            >
-              <Title underlineFixed content="¿Cómo lo abordamos?" size="text-[26px]" />
-              <div className="flex flex-col xl:flex-row gap-6 xl:gap-12 pb-10">
-                <div className="flex flex-col gap-2">
-                  <div className="flex items-center gap-3">
-                    <Icon className="icon text-blue w-[16px] h-[16px]" name="backend" />
-                    <span className="font-poppins text-mobile font-normal text-purple">
-                      Marco de trabajo:
-                    </span>
-                  </div>
-                  <div className="w-16">
-                    <ChipColorFilled
-                      background="bg-transparent"
-                      borderWidth={2}
-                      label="Scrum"
-                      outlineColor="border-purple"
-                      type="slim"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <div className="flex items-center gap-3">
-                    <Icon className="icon text-blue w-[16px] h-[16px]" name="diversity" />
-                    <span className="font-poppins text-mobile font-normal text-purple">
-                      Equipo:
-                    </span>
-                  </div>
-                  <div className="flex gap-3">
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="Back end"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="Front end"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="Tech Lead"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <div className="flex items-center gap-3">
-                    <Icon className="text-blue w-[16px] h-[17px]" name="technology" />
-                    <span className="font-poppins text-mobile font-normal text-purple">
-                      Tecnología:
-                    </span>
-                  </div>
-                  <div className="flex gap-3">
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="Angular"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="NodeJS"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                    <div>
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        borderWidth={2}
-                        label="Azure"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <ChanllengeSection
+              imageClassname={'challenge-image-sura'}
+              text={parse(t('portfolio.suraClient.challengeDescription'))}
+              title={t('portfolio.challenge')}
+            />
+            <ApproachSection framework={SURA_CHIPS.frameWork} technology={SURA_CHIPS.technology}/>
             <section className="flex flex-col gap-4 py-4" id="what-do-we-build">
               <Title underlineFixed content="¿Qué construimos?" size="text-[26px]" />
               <div className="flex flex-col gap-6">
