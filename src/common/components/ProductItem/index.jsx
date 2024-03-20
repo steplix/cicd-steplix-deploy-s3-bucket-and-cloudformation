@@ -8,7 +8,7 @@ export const ProductItem = ({ iconName, label }) => {
       <div className="w-6 h-6">
         <Icon className="fill-none" name={iconName} />
       </div>
-      <div class="text-zinc-900 text-sm font-semibold font-['Poppins'] leading-tight tracking-tight max-w-[190px] lg:max-w-[300px]">
+      <div className="text-zinc-900 text-sm font-semibold font-['Poppins'] leading-tight tracking-tight max-w-[190px] lg:max-w-[300px]">
         {label}
       </div>
     </div>
