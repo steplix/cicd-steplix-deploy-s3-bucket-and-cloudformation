@@ -37,7 +37,13 @@ export default function WhatWeDo({ locale }) {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    router.push(`/${locale}/what-we-do`, undefined, { shallow: true });
+    router.replace(
+      {
+        pathname: `/${locale}/what-we-do`,
+      },
+      undefined,
+      { shallow: true },
+    );
   };
 
   return (

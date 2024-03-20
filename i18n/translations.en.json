@@ -129,6 +129,10 @@
             "descriptionOne": "We are your digital ally.",
             "descriptionTwo": "Let's walk together"
         },
+        "HowDoWeDoIt": {
+            "titleOne": "Technology",
+            "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
+        },
          "cards":{
             "cardOne" : {
                 "title": "Development at a",

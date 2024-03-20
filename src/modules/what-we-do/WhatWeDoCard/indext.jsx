@@ -14,7 +14,16 @@ export const WhatWeDoCard = ({ card, locale }) => {
   const router = useRouter();
 
   const handleOpenModal = () => {
-    router.push(`/${locale}/what-we-do?product=${card.shortName}`);
+    router.replace(
+      {
+        pathname: `/${locale}/what-we-do`,
+        query: {
+          product: card.shortName,
+        },
+      },
+      undefined,
+      { shallow: true },
+    );
   };
 
   return (

@@ -129,6 +129,10 @@
             "descriptionOne": "Somos tu aliado digital.",
             "descriptionTwo": " Caminemos juntos."
         },
+        "HowDoWeDoIt": {
+            "titleOne": "Tecnología",
+            "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
+        },
         "cards":{
             "cardOne" : {
                 "title": "Desarrollo a un costo",
