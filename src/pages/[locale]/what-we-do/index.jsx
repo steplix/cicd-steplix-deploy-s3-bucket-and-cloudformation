@@ -6,7 +6,7 @@ import { useTranslation } from '@/common/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import Intro from '@/modules/what-we-do/Intro';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import { WhatWeDoCard } from '@/modules/what-we-do/WhatWeDoCard/indext';
+import { WhatWeDoCard } from '@/modules/what-we-do/WhatWeDoCard';
 import { PRODUCTS_CARDS } from '@/common/utils/constants';
 import { Modal } from '@/common/components/Modal';
 import { WhatWeDoModal } from '@/modules/what-we-do/WhatWeDoModal';
