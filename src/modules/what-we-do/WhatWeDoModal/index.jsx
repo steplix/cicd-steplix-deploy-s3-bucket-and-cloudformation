@@ -5,7 +5,7 @@ import ChipColorFilled from '../../../common/components/Chip/ChipColorFilled';
 import Icon from '../../../common/components/Icon';
 import { ProductItemDescription } from '../../../common/components/ProductItemDescription';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 import Title from '@/common/components/Title/GradientInvert';
 import ButtonCard from '@/common/components/ButtonCard';

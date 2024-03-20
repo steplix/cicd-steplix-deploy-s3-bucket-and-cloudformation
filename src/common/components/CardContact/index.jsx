@@ -4,7 +4,7 @@ import { useLanguageQuery } from 'next-export-i18n';
 
 import Icon from '../Icon';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import Avatar from '@/common/components/Avatar';
 import TextField from '@/common/components/TextField';
 import ButtonCard from '@/common/components/ButtonCard';

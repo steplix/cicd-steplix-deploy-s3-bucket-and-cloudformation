@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
-import { pageTransition } from '@/pages/lib/animation';
+import { pageTransition } from '@/common/lib/animation';
 
 const TransitionWrapper = ({ className, children }) => {
   return (

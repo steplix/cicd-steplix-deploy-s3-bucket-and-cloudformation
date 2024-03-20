@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import LanguageSelector from '@/common/components/LanguageSelector';
 import Submenu from '@/common/components/Submenu';
 import CustomNextLink from '@/common/components/CustomNextLink';
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { routesMap } from '@/common/utils/constants';
 import { getOutlinedTitle } from '@/common/utils/methods';
 

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import LanguageSelector from '../LanguageSelector';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import CustomNextLink from '@/common/components/CustomNextLink';
 
 const Submenu = ({ toggle, setToggle }) => {

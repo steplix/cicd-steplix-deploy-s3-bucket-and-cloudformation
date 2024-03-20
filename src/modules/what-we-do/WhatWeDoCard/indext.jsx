@@ -5,7 +5,7 @@ import { ButtonText } from '../../../common/components/ButtonText';
 import ChipColorFilled from '../../../common/components/Chip/ChipColorFilled';
 import { ProductItem } from '../../../common/components/ProductItem';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 import Title from '@/common/components/Title/GradientInvert';
 

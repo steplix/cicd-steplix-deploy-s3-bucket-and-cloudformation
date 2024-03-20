@@ -1,7 +1,7 @@
 import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import CustomNextLink from '@/common/components/CustomNextLink';
 
 const NavigationLinks = () => {

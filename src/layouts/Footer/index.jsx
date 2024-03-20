@@ -6,7 +6,7 @@ import NavigationLinks from './NavigationLinks';
 import Contact from './Contact';
 import Policies from './Policies';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 
 const Footer = () => {
   const {

@@ -2,7 +2,7 @@ import propTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 import Icon from '@/components/Icon';
-import { fadeInFromTheSide } from '@/pages/lib/animation';
+import { fadeInFromTheSide } from '@/common/lib/animation';
 
 const CardIcon = ({ text, iconName, resize, customClass }) => {
   const textArray = text.split(' ');

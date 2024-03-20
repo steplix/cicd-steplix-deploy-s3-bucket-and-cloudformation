@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 import Icon from '../Icon';
 
-import { useTranslation } from '@/pages/lib/i18n';
-import { imageHoverZoomIn } from '@/pages/lib/animation';
+import { useTranslation } from '@/common/lib/i18n';
+import { imageHoverZoomIn } from '@/common/lib/animation';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 
 const PhotoCarousel = ({ photoArray, locale }) => {

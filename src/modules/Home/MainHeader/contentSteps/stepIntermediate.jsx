@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import CardHero from '@/common/components/CardHero';
 import MountainStep from '@/common/components/MountainStep';
 

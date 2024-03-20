@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { aboutUsPhotoArray, LOCALE_SLUGS } from '@/common/utils/constants';
 import Chip from '@/common/components/TechnologyChip';
 import Title from '@/common/components/Title/Gradient';

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { LOCALE_SLUGS } from '@/common/utils/constants';
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { useResponsive } from '@/common/hooks/useResponsive';
 import Title from '@/common/components/Title/Gradient';
 

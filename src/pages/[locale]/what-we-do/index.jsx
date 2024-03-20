@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 import HeadTag from '@/common/components/HeadTag';
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import Intro from '@/modules/what-we-do/Intro';
 import TransitionWrapper from '@/common/components/TransitionWrapper';

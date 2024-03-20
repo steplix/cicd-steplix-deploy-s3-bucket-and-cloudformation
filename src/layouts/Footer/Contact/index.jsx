@@ -2,7 +2,7 @@ import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import Icon from '@/common/components/Icon';
 
 const Contact = () => {

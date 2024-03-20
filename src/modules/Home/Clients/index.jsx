@@ -1,7 +1,7 @@
 import { useLanguageQuery } from 'next-export-i18n';
 import { useRouter } from 'next/router';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { usePortfolioTranslation } from '@/common/hooks/usePortfolioTranslation';
 import { clientsLogos } from '@/common/utils/constants';
 import ClientsCarousel from '@/common/components/Carousel';

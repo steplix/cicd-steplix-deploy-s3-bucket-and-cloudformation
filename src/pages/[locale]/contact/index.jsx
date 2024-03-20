@@ -3,7 +3,7 @@
 import Icon from '@/common/components/Icon';
 import TextField from '@/common/components/TextField';
 import HeadTag from '@/common/components/HeadTag';
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import Gradient from '@/common/components/Title/Gradient';
 import CardContact from '@/common/components/CardContact';
 import PhotoCarousel from '@/common/components/PhotoCarousel';

@@ -5,7 +5,7 @@ import { useKeenSlider } from 'keen-slider/react';
 
 import Icon from '../Icon';
 
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 
 const adaptiveHeight = (slider, adaptiveHeightValue) => {
   function updateHeight() {

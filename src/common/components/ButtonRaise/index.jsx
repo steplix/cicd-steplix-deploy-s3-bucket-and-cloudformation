@@ -4,7 +4,7 @@ import { useLanguageQuery } from 'next-export-i18n';
 
 import CustomNextLink from '@/common/components/CustomNextLink';
 import Icon from '@/components/Icon';
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
 
 const ButtonRaise = ({ locale, customStyles, i18nKeyText, pathname, ariaLabel }) => {

@@ -1,4 +1,4 @@
-import { useTranslation } from '@/pages/lib/i18n';
+import { useTranslation } from '@/common/lib/i18n';
 import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
