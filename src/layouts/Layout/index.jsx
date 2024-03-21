@@ -8,13 +8,13 @@ const Layout = ({ children }) => {
   const { route } = useRouter();
 
   return (
-    <>
+    <div className="relative">
       <Navbar />
       <div className={`${route === '/' ? 'pt-[56px] sm:pt-[62px] ' : 'pt-[130px]'} lg:pt-0`}>
         {children}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
