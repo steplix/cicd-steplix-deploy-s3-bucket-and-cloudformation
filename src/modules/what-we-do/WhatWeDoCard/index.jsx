@@ -7,7 +7,7 @@ import { ProductItem } from '../../../common/components/ProductItem';
 
 import { useTranslation } from '@/common/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
-import Title from '@/common/components/Title/GradientInvert';
+import Title from '@/common/components/Title/Gradient';
 
 export const WhatWeDoCard = ({ card, locale }) => {
   const { t } = useTranslation(locale);
@@ -36,7 +36,13 @@ export const WhatWeDoCard = ({ card, locale }) => {
           outlineColor="border-purple"
           type="slim"
         />
-        <Title content={t(card.title)} secondContent={t(card.title2)} size="text-2xl" />
+        <Title
+          color="title-gradientInverted"
+          content={t(card.title)}
+          leading="leading-6"
+          secondContent={t(card.title2)}
+          size="text-2xl"
+        />
         <div className="flex flex-wrap w-full">
           {card.items.map((item, index) => {
             return <ProductItem key={index} iconName={t(item.iconName)} label={t(item.title)} />;

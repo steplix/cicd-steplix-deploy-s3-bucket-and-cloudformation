@@ -7,7 +7,7 @@ import { ProductItemDescription } from '../../../common/components/ProductItemDe
 
 import { useTranslation } from '@/common/lib/i18n';
 import { LOCALE_SLUGS } from '@/common/utils/constants';
-import Title from '@/common/components/Title/GradientInvert';
+import Title from '@/common/components/Title/Gradient';
 import ButtonCard from '@/common/components/ButtonCard';
 import { openLink } from '@/common/utils/methods';
 
@@ -28,7 +28,13 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
           <Icon className="" name="newClose" />
         </button>
       </div>
-      <Title content={t(card?.title)} secondContent={t(card?.title2)} size="text-2xl" />
+      <Title
+        color="title-gradientInverted"
+        content={t(card?.title)}
+        leading="leading-6"
+        secondContent={t(card?.title2)}
+        size="text-2xl"
+      />
       <div className="mt-8 mb-12 text-zinc-900 text-base font-normal font-poppins leading-tight tracking-tight">
         {parse(t(card?.description))}
       </div>

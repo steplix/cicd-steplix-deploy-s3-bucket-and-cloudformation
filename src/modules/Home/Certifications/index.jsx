@@ -15,6 +15,7 @@ const Certifications = () => {
     <section className="w-full pb-[50px] sm:pr-0 2xl:pt-14 overflow-hidden space-y-8">
       <Title
         underlineFixed
+        borderPosition="bottom"
         content={t('MainHeader.certifications.title')}
         size="text-[26px] lg:text-[32px]"
       />
