@@ -17,7 +17,7 @@ const icons = {
   mail: <Icon className="w-4" fill="#3C1053" name="mailTextField" />,
   phone: <Icon className="w-4" name="phone" />,
   copy: <Icon className="w-4" name="copy" />,
-  send: <Icon className="w-4" name="send" />,
+  send: <Icon className="w-4" fill="#3C1053" name="send" />,
   whatsapp: <Icon className="w-4" name="whatsapp" />,
 };
 

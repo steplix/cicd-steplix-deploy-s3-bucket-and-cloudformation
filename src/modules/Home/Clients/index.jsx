@@ -23,6 +23,7 @@ const Clients = () => {
     <section className="container pt-[72px] 2xl:pt-14 overflow-hidden">
       <Title
         underlineFixed
+        borderPosition="bottom"
         content={t('MainHeader.clients.title')}
         size="text-[26px] lg:text-[32px]"
       />

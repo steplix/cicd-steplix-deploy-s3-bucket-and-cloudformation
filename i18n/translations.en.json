@@ -115,43 +115,108 @@
         }
     },
     "what_we_do": {
+        "buttonCard": "See more",
+        "buttonModal": "Contact us",
+        "idealFor": "Ideal for",
         "intro": {
             "descriptionOne": "Our culture focuses on agile processes and methodologies",
             "descriptionTwo": " that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve."
         },
         "stepsToTheTop": {
-            "titleOne": "Steps to",
-            "titleTwo": "the top",
-            "fullTitle": "Steps to the top",
+            "titleOne": "What is your starting",
+            "titleTwo": "point?",
+            "fullTitle": "What is your starting point?",
             "descriptionOne": "We are your digital ally.",
-            "descriptionTwo": "Let's walk together",
-            "descriptionThree": "What is your starting point?"
-        },
-        "weExploreTheProyect": {
-            "titleOne": "We explore",
-            "titleTwo": "the proyect",
-            "fullTitle": "We explore the project",
-            "descriptionOne": "As guides in the digital business ecosystem, we know that the first step is focused on",
-            "descriptionTwo": " understanding the opportunity and looking together for a way to add value to the business idea."
-        },
-        "weDesignYourProduct": {
-            "titleOne": "We design",
-            "titleTwo": "you product",
-            "fullTitle": "We design your product",
-            "descriptionOne": "The second scale is focused on the design of an <u><span title=\"Minimum Viable Product\">MVP</span></u> with the aim of continuing to promote the idea. Doing this allows us to ",
-            "descriptionTwo": "test the business model, revealing the effort and detecting optimization opportunities."
-        },
-        "weDevelopTheSolution": {
-            "titleOne": "We develop",
-            "titleTwo": "the solution",
-            "fullTitle": "We develop the solution",
-            "descriptionOne": "We build and deliver the final product, ",
-            "descriptionTwo": "respecting the deadlines and the agreed investment."
+            "descriptionTwo": "Let's walk together"
         },
         "HowDoWeDoIt": {
             "titleOne": "Technology",
             "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
-        }
+        },
+         "cards":{
+            "cardOne" : {
+                "title": "Development at a",
+                "title2":"Predictable Cost",
+                "description": "Turn ideas into a tangible reality. Custom MVP of exceptional quality, with a budget of <b>42,000 USD.</b>",
+                "itemOne": {
+                    "title": "Agile and Efficient Development",
+                    "description": "With an Agile approach using the Scrum framework, we form a highly qualified team committed to transforming your vision into a functional MVP in the shortest possible time."
+                },
+                "itemTwo" : {
+                    "title": "Specialized Consulting",
+                    "description": "We provide expert advice at every stage of the process to optimize the technical and strategic viability of your product."
+                },
+                "itemThree" : {
+                    "title": "Guaranteed Quality",
+                    "description": "We offer not just a solution that meets expectations, but one that exceeds them, ensuring quality in every line of code and every aspect of design."
+                },
+                "itemFour": {
+                    "title": "Absolute Customization",
+                    "description": "Each MVP is custom-designed, tailored specifically to the unique needs and objectives of your project."
+                },
+                "idealFor": {
+                    "descriptionOne": "<b>Incorporating</b> a new service or a new expansion to an already created digital solution.",
+                    "descriptionTwo": "<b>Validating</b> a new concept in the market.",
+                    "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
+                },
+                "underText": {
+                    "firstText": "<b>MVP42K is the first step towards digital success.</b>" ,
+                    "secondText": "The process of developing your application is easier when accompanied."
+                }
+            },
+            "cardTwo" : {
+                "title": "Your Prototype",
+                "title2": "in 60 Days",
+                "description": "The perfect fusion of creativity, UX, and efficiency in the creation process. Our service offers the opportunity to develop impactful prototypes <b>within a maximum period of 60 days.</b>",
+                "itemOne": {
+                    "title": "Agile and Effective Prototyping",
+                    "description": "With Figma as our main tool, our team develops high-fidelity interactive prototypes that capture the essence and functionality of your vision."
+                },
+                "itemTwo" : {
+                    "title": "User-Centered Solutions",
+                    "description": "Inspired by the principles of JJ Garrett, we approach the design process centered on the user, focusing on usability, accessibility, and the effectiveness of the experience."
+                },
+                "itemThree" : {
+                    "title": "Continuous Iteration",
+                    "description": "Based on user feedback, we refine and improve the UX/UI of the prototypes iteratively to ensure perfection before the development stage."
+                },
+                "itemFour": {
+                    "title": "User Testing",
+                    "description": "The developed prototypes are subjected to exhaustive tests with real users to validate the user experience within the solution."
+                },
+                "idealFor": {
+                    "descriptionOne": "<b>Starting</b> a new project with quality prototypes.",
+                    "descriptionTwo": "<b>Validating</b> a new concept in the market.",
+                    "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
+                }
+            },
+            "cardThree" : {
+                "title": "Custom and",
+                "title2": "Agile Development",
+                "description": "Innovation and precision in every line of code. WOW-FULL is the key to custom software solutions that lead digital transformation.",
+                "itemOne": {
+                    "title": "Custom Innovation",
+                    "description": "We design unique solutions that meet the specific challenges of your business with the highest technology and operational flexibility."
+                },
+                "itemTwo" : {
+                    "title": "Security and Performance",
+                    "description": "We guarantee robust and secure systems, with an optimized architecture for the best performance."
+                },
+                "itemThree" : {
+                    "title": "Cutting-Edge Technology",
+                    "description": "We employ the latest technologies to create products perfectly tailored to the needs of the market and users."
+                },
+                "itemFour": {
+                    "title": "User Experience Prioritized",
+                    "description": "Our design focuses on intuitiveness and accessibility, providing an exceptional user experience."
+                },
+                "idealFor": {
+                    "descriptionOne": "<b>Implementing</b> specialized technological solutions.",
+                    "descriptionTwo": "<b>Leading</b> digital transformation in your industry.",
+                    "descriptionThree": "<b>Enhancing</b> your business with technological innovation."
+                }
+            }
+         }
     },
     "aboutUs": {
         "title": "About ",

@@ -3,15 +3,11 @@ import PropTypes from 'prop-types';
 import Heading from '@/components/Heading';
 import { useResponsive } from '@/common/hooks/useResponsive';
 
-/*
-  IT'S A MUST TO PASS DIFFERENT FONT SIZES THROUGH THE DIFFERENT BREAKPOINTS
-*/
-
 const Title = ({
   content,
   secondContent,
   size,
-  borderPosition = 'bottom',
+  borderPosition,
   height = 'h-[50px]',
   leading = 'leading-10',
   color = 'title-gradient',
@@ -23,8 +19,8 @@ const Title = ({
 
   type = width < TITLE_BREAKPOINT_WIDTH ? 'h2' : type;
 
-  return borderPosition === 'bottom' ? (
-    <>
+  if (borderPosition === 'bottom') {
+    return (
       <div
         className={`${
           underlineFixed ? 'underlined-title-fixed' : 'underlined-title'
@@ -42,30 +38,47 @@ const Title = ({
           )}
         </Heading>
       </div>
-    </>
-  ) : (
-    <div className={`flex ${height} items-center`}>
-      <div className="w-[3px] h-full bg-blue" />
-      <div className={`${color} pl-4`}>
-        <Heading className={`${size} ${leading} font-bold`} type={type || 'h2'}>
-          {secondContent ? (
-            <span>
-              {content}
-              <br />
-              {secondContent}
-            </span>
-          ) : (
-            <span>{content}</span>
-          )}
-        </Heading>
+    );
+  } else if (borderPosition === 'left') {
+    return (
+      <div className={`flex ${height} items-center`}>
+        <div className="w-[3px] h-full bg-blue" />
+        <div className={`${color} pl-4`}>
+          <Heading className={`${size} ${leading} font-bold`} type={type || 'h2'}>
+            {secondContent ? (
+              <span>
+                {content}
+                <br />
+                {secondContent}
+              </span>
+            ) : (
+              <span>{content}</span>
+            )}
+          </Heading>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className={`flex items-center`}>
+        <div className={`${color}`}>
+          <Heading className={`${size} ${leading} font-bold font-poppins `} type={type || 'h2'}>
+            {secondContent ? (
+              <span>
+                {content}
+                <br />
+                {secondContent}
+              </span>
+            ) : (
+              <span>{content}</span>
+            )}
+          </Heading>
+        </div>
+      </div>
+    );
+  }
 };
 
-//
-// PropTypes
-//
 Title.propTypes = {
   content: PropTypes.string.isRequired,
   secondContent: PropTypes.string,

@@ -49,7 +49,12 @@ export default function Client({ locale }) {
           </div>
         </section>
         <section className="container flex flex-col gap-4 pt-[32px]" id="challenge">
-          <Title underlineFixed content="¿Cuál fue el desafío?" size="text-[26px]" />
+          <Title
+            underlineFixed
+            borderPosition="bottom"
+            content="¿Cuál fue el desafío?"
+            size="text-[26px]"
+          />
           <p className="font-poppins text-mobile text-black">
             Las personas productoras de seguros necesitaban utilizar una herramienta digital que
             <b> facilite y ayude en la tarea de cotización.</b>

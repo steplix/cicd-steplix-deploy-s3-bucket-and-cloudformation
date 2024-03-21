@@ -22,6 +22,7 @@ const HowDoWeDoIt = () => {
     <section className="container section-container pt-[72px] md:pt-[56px] lg:pt-[72px] rounded-t-[20px] ">
       <Title
         underlineFixed
+        borderPosition="bottom"
         content={t('what_we_do.HowDoWeDoIt.titleOne')}
         size="text-[26px] lg:text-[32px]"
       />

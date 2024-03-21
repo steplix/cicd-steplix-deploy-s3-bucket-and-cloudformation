@@ -239,7 +239,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
+    .title-gradientInverted {
+        background: linear-gradient(180deg,#00a9e0 1%, #3c1053 59%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     .footer-gradient {
         background: linear-gradient(
             180deg,
@@ -757,4 +762,58 @@
     }
 
     /* END RAISE BTN EFFECT */
+    
+    /* CHIP COMPONENT */
+    .chip {
+        @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
+    }
+    .chip--slim {
+        @apply px-3 py-1;
+    }
+    .chip--slim > .icon {
+        @apply w-4 h-4;
+    }
+    .chip--slim > span {
+        @apply font-poppins font-semibold text-xs leading-[18px] tracking-[0.36px];
+    }
+    .chip--medium {
+        @apply px-2 gap-1 h-10 min-w-[7.5625rem];
+    }
+    .chip--medium > .icon {
+        @apply w-[18px] h-[18px];
+    }
+    .chip--medium > span {
+        @apply font-poppins font-semibold text-[13px];
+    }
+    .chip--big {
+        @apply w-40 p-2;
+    }
+    .chip--big > .icon {
+        @apply w-7 h-7;
+    }
+    .chip--big > span {
+        @apply font-sofia font-normal text-3xl leading-[28.8px];
+    }
+    .chip--outlined {
+        @apply border border-solid font-poppins text-base font-medium tracking-[0.48px] leading-[20.8px];
+    }
+    /* END CHIP COMPONENT */
+    .item {
+        width: 100%;
+      }
+      
+      @media (min-width: 640px) {
+        .item {
+          width: 50%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .item {
+          width: 100%; 
+        }
+      }
+
+      .no-scroll {
+        overflow: hidden;
+      }
 }
