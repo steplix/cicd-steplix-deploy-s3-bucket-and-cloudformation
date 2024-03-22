@@ -26,9 +26,9 @@ export const Modal = ({ setisModalOpen, isModalOpen, children }) => {
       {isModalOpen && (
         <div
           ref={ref}
-          className="absolute left-0 w-full h-full bg-white bg-opacity-90 flex justify-center overflow-y-auto"
+          className="absolute left-0 top-0 w-full h-full bg-black bg-opacity-25 flex justify-center overflow-y-auto z-[100]"
         >
-          <div>{children}</div>
+          <div className="z-[150] mt-16">{children}</div>
         </div>
       )}
     </>

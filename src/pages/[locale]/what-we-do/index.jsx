@@ -25,7 +25,9 @@ export default function WhatWeDo({ locale }) {
 
       if (card) {
         setCardSelected(card);
-        setIsModalOpen(true);
+        setTimeout(() => {
+          setIsModalOpen(true);
+        }, 200);
       }
     }
   }, [router.query]);
@@ -55,7 +57,7 @@ export default function WhatWeDo({ locale }) {
           keywords: t('metaTags.whatWeDo.keywords'),
         }}
       />
-      <TransitionWrapper className="w-full h-full flex flex-col relative overflow-y-auto">
+      <TransitionWrapper className="w-full h-full flex flex-col overflow-y-auto">
         <div className="container section-container w-full mx-auto flex-col min-h-[1276px] sm:min-h-[1144px] lg:min-h-[1250px]">
           <Intro locale={locale} />
           <div className="mt-10 flex flex-col lg:flex-row lg:flex-wrap gap-6">
