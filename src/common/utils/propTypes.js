@@ -98,4 +98,5 @@ export const propTypeIconName = PropTypes.oneOf([
   'newClose',
   'idea',
   'itemList',
+  'shieldLock',
 ]);
