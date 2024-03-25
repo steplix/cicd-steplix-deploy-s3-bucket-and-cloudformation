@@ -708,9 +708,9 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardTwo.itemOne.description',
       },
       {
-        iconName: 'newPhone',
-        title: 'what_we_do.cards.cardTwo.itemTwo.title',
-        description: 'what_we_do.cards.cardTwo.itemTwo.description',
+        iconName: 'users',
+        title: 'what_we_do.cards.cardTwo.itemFour.title',
+        description: 'what_we_do.cards.cardTwo.itemFour.description',
       },
       {
         iconName: 'reload',
@@ -718,9 +718,9 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardTwo.itemThree.description',
       },
       {
-        iconName: 'users',
-        title: 'what_we_do.cards.cardTwo.itemFour.title',
-        description: 'what_we_do.cards.cardTwo.itemFour.description',
+        iconName: 'newPhone',
+        title: 'what_we_do.cards.cardTwo.itemTwo.title',
+        description: 'what_we_do.cards.cardTwo.itemTwo.description',
       },
     ],
     idealFor: [

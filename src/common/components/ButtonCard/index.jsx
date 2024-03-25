@@ -11,12 +11,13 @@ const ButtonCard = ({
   customImageClass,
   iconPosition = 'left',
   ariaLabel,
+  fontsize
 }) => {
   return (
     <button
       alt={alt}
       aria-label={ariaLabel}
-      className="w-fit h-fit bg-blue hover:cursor-pointer text-white rounded-[20px] gap-y-2.5"
+      className={`w-fit h-fit bg-blue hover:cursor-pointer text-white rounded-[20px] gap-y-2.5 ${fontsize}`}
       title={title}
       type="button"
       onClick={clickEvent}
@@ -43,6 +44,7 @@ ButtonCard.propTypes = {
   customImageClass: propTypes.string,
   iconPosition: propTypes.oneOf(['left', 'right']),
   ariaLabel: propTypes.string,
+  fontsize: propTypes.string,
 };
 
 export default ButtonCard;

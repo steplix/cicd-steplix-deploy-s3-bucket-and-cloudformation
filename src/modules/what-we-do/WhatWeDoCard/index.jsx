@@ -40,9 +40,9 @@ export const WhatWeDoCard = ({ card, locale }) => {
         <Title
           color="title-gradientInverted"
           content={t(card.title)}
-          leading="leading-6"
+          leading="leading-7"
           secondContent={t(card.title2)}
-          size="text-2xl"
+          size="text-[24px]"
         />
         <div className="flex flex-wrap w-full">
           {card.items.map((item, index) => {

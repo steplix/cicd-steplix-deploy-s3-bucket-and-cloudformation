@@ -21,7 +21,8 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
           background="bg-transparent"
           borderWidth={1.5}
           label={card?.shortName}
-          outlineColor="border-purple"
+          labelColor="text-purple-dark"
+          outlineColor="border-purple-dark"
           type="slim"
         />
         <button className="w-6 h-6" onClick={onClose}>
@@ -31,11 +32,11 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
       <Title
         color="title-gradientInverted"
         content={t(card?.title)}
-        leading="leading-6"
+        leading="leading-6 sm:leading-[61px]"
         secondContent={t(card?.title2)}
-        size="text-2xl"
+        size="modal-title-size"
       />
-      <div className="mt-8 mb-12 text-zinc-900 text-base font-normal font-poppins leading-tight tracking-tight">
+      <div className="mt-8 mb-12 text-black-typography text-base font-normal font-poppins leading-tight tracking-tight">
         {parse(t(card?.description))}
       </div>
       <div className="flex flex-wrap w-full mb-2 sm:mb-8">
@@ -53,7 +54,7 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
       <div className="sm:flex sm:gap-6 mb-8">
         <div className="flex gap-2 items-end sm:flex-col-reverse sm:items-center sm: min-w-[138px] mb-6">
           <Icon className="w-[54px] sm:w-[74px]" name="idea" />
-          <div class="text-zinc-900 text-[26px] font-bold font-poppins">
+          <div class="text-black-typography text-[26px] font-bold font-poppins">
             {t('what_we_do.idealFor')}
           </div>
         </div>
@@ -64,7 +65,7 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
                 <div className="w-6 h-6">
                   <Icon className="w-6 h-6" name="itemList" />
                 </div>
-                <span className="text-sm leading-tight tracking-tight font-poppins">
+                <span className="text-sm leading-tight tracking-tight font-poppins text-black-typography">
                   {parse(t(idea))}
                 </span>
               </div>
@@ -73,7 +74,7 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
         </div>
       </div>
       {card?.underText ? (
-        <div className="w-full flex flex-col items-center mb-6 text-base leading-tight font-poppins">
+        <div className="w-full flex flex-col items-center mb-6 text-base leading-tight font-poppins text-black-typography">
           <span>{parse(t(card?.underText?.firstText))}</span>
           <span>{t(card?.underText?.secondText)}</span>
         </div>
@@ -84,9 +85,10 @@ export const WhatWeDoModal = ({ card, locale, onClose }) => {
             openLink('https://meetings.hubspot.com/jyanez1?embed=true');
           }}
           customImageClass="w-4 h-4 text-white"
+          fontsize="text-[12px]"
           iconName="send"
           iconPosition="right"
-          label={t('what_we_do.buttonCard')}
+          label={t('what_we_do.buttonModal')}
         />
       </div>
     </div>
