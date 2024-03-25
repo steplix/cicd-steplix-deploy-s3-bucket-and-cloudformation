@@ -173,17 +173,17 @@
                     "description": "With Figma as our main tool, our team develops high-fidelity interactive prototypes that capture the essence and functionality of your vision."
                 },
                 "itemTwo" : {
-                    "title": "User-Centered Solutions",
-                    "description": "Inspired by the principles of JJ Garrett, we approach the design process centered on the user, focusing on usability, accessibility, and the effectiveness of the experience."
+                    "title": "User Testing",
+                    "description": "The developed prototypes are subjected to exhaustive tests with real users to validate the user experience within the solution."
                 },
                 "itemThree" : {
                     "title": "Continuous Iteration",
                     "description": "Based on user feedback, we refine and improve the UX/UI of the prototypes iteratively to ensure perfection before the development stage."
                 },
                 "itemFour": {
-                    "title": "User Testing",
-                    "description": "The developed prototypes are subjected to exhaustive tests with real users to validate the user experience within the solution."
-                },
+                    "title": "User-Centered Solutions",
+                    "description": "Inspired by the principles of JJ Garrett, we approach the design process centered on the user, focusing on usability, accessibility, and the effectiveness of the experience."
+                 },
                 "idealFor": {
                     "descriptionOne": "<b>Starting</b> a new project with quality prototypes.",
                     "descriptionTwo": "<b>Validating</b> a new concept in the market.",

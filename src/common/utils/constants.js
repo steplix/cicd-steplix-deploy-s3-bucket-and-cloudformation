@@ -703,12 +703,12 @@ export const PRODUCTS_CARDS = [
     description: 'what_we_do.cards.cardTwo.description',
     items: [
       {
-        iconName: 'newPhone',
+        iconName: 'phoneChat',
         title: 'what_we_do.cards.cardTwo.itemOne.title',
         description: 'what_we_do.cards.cardTwo.itemOne.description',
       },
       {
-        iconName: 'users',
+        iconName: 'newPhone',
         title: 'what_we_do.cards.cardTwo.itemTwo.title',
         description: 'what_we_do.cards.cardTwo.itemTwo.description',
       },
@@ -718,7 +718,7 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardTwo.itemThree.description',
       },
       {
-        iconName: 'phoneChat',
+        iconName: 'users',
         title: 'what_we_do.cards.cardTwo.itemFour.title',
         description: 'what_we_do.cards.cardTwo.itemFour.description',
       },
@@ -746,7 +746,7 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardThree.itemTwo.description',
       },
       {
-        iconName: 'shield',
+        iconName: 'shieldLock',
         title: 'what_we_do.cards.cardThree.itemThree.title',
         description: 'what_we_do.cards.cardThree.itemThree.description',
       },
