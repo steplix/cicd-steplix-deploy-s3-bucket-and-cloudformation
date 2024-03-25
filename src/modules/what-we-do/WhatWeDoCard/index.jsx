@@ -33,7 +33,8 @@ export const WhatWeDoCard = ({ card, locale }) => {
           background="bg-transparent"
           borderWidth={1.5}
           label={card.shortName}
-          outlineColor="border-purple"
+          labelColor="text-purple-dark"
+          outlineColor="border-purple-dark"
           type="slim"
         />
         <Title

@@ -34,10 +34,12 @@ module.exports = {
       black: '#121212',
       'purple-light': '#341748',
       purpleV3: '#3C1053',
+      'purple-dark': '#3D1152',
       'grey-transparent': '#3C10531A',
       'grey-70': '#707070',
       'grey-19': '#191919',
       'grey-neutro': '#616161',
+      'black-typography': '#15151D',
     },
     fontSize: {
       xs: ['12px'],

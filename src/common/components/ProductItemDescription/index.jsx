@@ -13,7 +13,7 @@ export const ProductItemDescription = ({ iconName, label, description }) => {
           {label}
         </div>
       </div>
-      <div className="text-zinc-900 text-sm font-normal font-poppins leading-tight tracking-tight lg:pr-6">
+      <div className="text-black-typography text-sm font-normal font-poppins leading-tight tracking-tight lg:pr-6">
         {description}
       </div>
     </div>
