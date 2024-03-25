@@ -173,8 +173,8 @@
                     "description": "Con Figma como herramienta principal, nuestro equipo desarrolla prototipos interactivos de alta fidelidad que capturan la esencia y la funcionalidad de su visión."
                 },
                 "itemTwo" : {
-                    "title": "Testeos con Usuarios",
-                    "description": "Los prototipos desarrollados se someten a pruebas exhaustivas con usuarios reales para validar la experiencia de usuario dentro de la solución."
+                    "title": "Soluciones centradas en el usuario",
+                    "description": "Inspirados por los principios de JJ Garrett, abordamos el proceso de diseño centrado en el usuario, enfocándonos en la usabilidad, la accesibilidad y la eficacia de la experiencia."
 
                 },
                 "itemThree" : {
@@ -182,8 +182,8 @@
                     "description": "Basados en los comentarios de los usuarios, refinamos y mejoramos el UX/UI de los prototipos de manera iterativa para garantizar su perfección antes de la etapa de desarrollo."
                 },
                 "itemFour": {
-                    "title": "Soluciones centradas en el usuario",
-                    "description": "Inspirados por los principios de JJ Garrett, abordamos el proceso de diseño centrado en el usuario, enfocándonos en la usabilidad, la accesibilidad y la eficacia de la experiencia."
+                    "title": "Testeos con Usuarios",
+                    "description": "Los prototipos desarrollados se someten a pruebas exhaustivas con usuarios reales para validar la experiencia de usuario dentro de la solución."
                 },
                 "idealFor": {
                     "descriptionOne": "<b>Iniciar</b> un nuevo proyecto con prototipos de calidad.",

@@ -16,6 +16,7 @@ const ChipColorFilled = ({
   label,
   outlineColor,
   borderWidth,
+  labelColor,
 }) => {
   const chipStyle = {
     borderWidth: borderWidth ? `${borderWidth}px` : '',
@@ -29,7 +30,7 @@ const ChipColorFilled = ({
       style={chipStyle}
     >
       {iconName && iconColor && <Icon className={`icon ${iconColor}`} name={iconName} />}
-      <span>{label}</span>
+      <span className={`${labelColor}`}>{label}</span>
     </div>
   );
 };
@@ -42,6 +43,7 @@ ChipColorFilled.propTypes = {
   label: PropTypes.string.isRequired,
   outlineColor: PropTypes.string,
   borderWidth: PropTypes.number,
+  labelColor: PropTypes.string,
 };
 
 export default ChipColorFilled;
