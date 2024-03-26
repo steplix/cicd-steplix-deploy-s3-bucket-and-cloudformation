@@ -1,248 +1,248 @@
 {
-    "404": {
-        "subtitle": "Sorry, we can't find that page! Don't worry though, we can take you anywhere else.",
-        "button": "back to home"
+  "404": {
+    "subtitle": "Sorry, we can't find that page! Don't worry though, we can take you anywhere else.",
+    "button": "back to home"
+  },
+  "contact": {
+    "title": "We want to hear your ",
+    "titleEmpty": "ideas ",
+    "subtitle": "Schedule a call with our team",
+    "brochureText": "Download our ",
+    "brochure": "Portfolio",
+    "ourOfficeTitle": "Our",
+    "salesRepresentative": "Sales Representative",
+    "salesRepresentativeAlt": {
+      "Kevin": "Photograpy of Kevin Halbinger, sales representative",
+      "Mariano": "Photograpy of Mariano Weiger, sales representative",
+      "Enrique": "Photograpy of Enrique Serrani, sales representative",
+      "Jorge": "Photograpy of Jorge Yánez, sales representative"
     },
-    "contact": {
-        "title": "We want to hear your ",
-        "titleEmpty": "ideas ",
-        "subtitle": "Schedule a call with our team",
-        "brochureText": "Download our ",
-        "brochure": "Portfolio",
-        "ourOfficeTitle": "Our",
-        "salesRepresentative": "Sales Representative",
-        "salesRepresentativeAlt": {
-            "Kevin": "Photograpy of Kevin Halbinger, sales representative",
-            "Mariano": "Photograpy of Mariano Weiger, sales representative",
-            "Enrique": "Photograpy of Enrique Serrani, sales representative",
-            "Jorge": "Photograpy of Jorge Yánez, sales representative"
+    "scheduleAriaLabel": "Schedule an appointment with one of our sales representative",
+    "socialMediaAriaLabel": "Visit one of our sales representative's LinkedIn",
+    "ourOfficeTitleEmpty": "office",
+    "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
+    "copyButton": "Copied",
+    "imagesAlt": {
+      "imgOne": "Our meeting office is super comfortable with a deadlight and a super monitor.",
+      "imgTwo": "The lobby of our office has a nice armchair that allows us to meet for a chat and is full of our identity as Steplixers.",
+      "imgThree": "Our general room has large tables and comfortable chairs for the daily work of the Steplix teams.",
+      "imgFour": "The office on the outside is an old building on the corner of Uriarte and Costa Rica in Palermo, Buenos Aires.",
+      "imgFive": "Inside the building we have an internal patio that the offices on the second and third floors look out over. The ground floor is a meeting point and we even have a grill for our after parties.",
+      "imgSix": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+    }
+  },
+  "about_us": {
+    "ourValues": {
+      "title": "Values",
+      "description": "Those that define us and on which we focus in each project.",
+      "trust": {
+        "title": "Trust",
+        "description": "Believe in the integrity and abilities of people, while also providing certainty that we will fulfill our commitments.",
+        "highlightedSentences": [
+          "Believe in the integrity and abilities",
+          "commitments"
+        ]
+      },
+      "mutualRespect": {
+        "title": "Mutual Respect",
+        "description": "Value people and their differences, be inclusive and responsible, communicate with honesty and empathy to achieve a collaborative and harmonious environment.",
+        "highlightedSentences": [
+          "be inclusive and responsible",
+          "honesty and empathy",
+          "collaborative and harmonious"
+        ]
+      },
+      "success": {
+        "title": "Success",
+        "description": "Achieving customer and user satisfaction by exceeding expectations requires a positive attitude and professionalism in the face of challenges, generating opportunities for team growth and continuous improvement.",
+        "highlightedSentences": [
+          "customer and user satisfaction",
+          "positive attitude and professionalism",
+          "growth and continuous improvement"
+        ]
+      },
+      "awareness": {
+        "title": "Awareness",
+        "description": "Understand the impact of our actions on the environment and others. Drive responsible innovation. Promote sustainability, the development of empathy, balance, and equity to contribute to the well-being of all.",
+        "highlightedSentences": [
+          "Understand the impact",
+          "Promote sustainability, the development of empathy, balance, and equity"
+        ]
+      },
+      "agility": {
+        "title": "Agility",
+        "description": "Being practical and flexible. Responding to changes effectively. It requires being able to adapt, be transparent, and inspect the results obtained.",
+        "highlightedSentences": [
+          "Being practical and flexible",
+          "being able to adapt, be transparent, and inspect"
+        ]
+      }
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators."
+    },
+    "teams": {
+      "title": "Team",
+      "description": "In the same way that the Sherpas accompany the climbers on their journey to the top, the Digital Sherpas are ",
+      "descriptionBold": "fully committed to the business challenges of our clients, guiding them and elevating their ideas to the maximum.",
+      "button": "Become a Steplixer",
+      "imagesAlt": {
+        "imgOne": "Business team working during a meeting in the office.",
+        "imgTwo": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgThree": "Steplixers after a workshop.",
+        "imgFour": "Relaxed Steplixers celebrating in a bar.",
+        "imgFive": "Different teams working together to promote an idea.",
+        "imgSix": "The Steplix team gathered in the office happily looking straight ahead.",
+        "imgSeven": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+      }
+    },
+    "philosophy": {
+      "titleOne": "Our",
+      "titleTwo": "philosophy",
+      "description": " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks. In the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. We scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. "
+    },
+    "digitalSherpas": {
+      "titleOne": "Your Digital Business",
+      "titleTwo": "Sherpas",
+      "descriptionOne": "  We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment. ",
+      "descriptionTwo": " We make up an interdisciplinary team that combines the knowledge and views of each member to create an experience that ensures each business idea reaches the top. ",
+      "descriptionThree": "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. "
+    }
+  },
+  "what_we_do": {
+    "buttonCard": "See more",
+    "buttonModal": "Contact us",
+    "idealFor": "Ideal for",
+    "intro": {
+      "descriptionOne": "Our culture focuses on agile processes and methodologies",
+      "descriptionTwo": " that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve."
+    },
+    "stepsToTheTop": {
+      "titleOne": "What is your starting",
+      "titleTwo": "point?",
+      "fullTitle": "What is your starting point?",
+      "descriptionOne": "We are your digital ally.",
+      "descriptionTwo": "Let's walk together",
+      "descriptionThree": "What is your starting point?"
+    },
+    "weExploreTheProyect": {
+      "titleOne": "We explore",
+      "titleTwo": "the proyect",
+      "fullTitle": "We explore the project",
+      "descriptionOne": "As guides in the digital business ecosystem, we know that the first step is focused on",
+      "descriptionTwo": " understanding the opportunity and looking together for a way to add value to the business idea."
+    },
+    "weDesignYourProduct": {
+      "titleOne": "We design",
+      "titleTwo": "you product",
+      "fullTitle": "We design your product",
+      "descriptionOne": "The second scale is focused on the design of an <u><span title=\"Minimum Viable Product\">MVP</span></u> with the aim of continuing to promote the idea. Doing this allows us to ",
+      "descriptionTwo": "test the business model, revealing the effort and detecting optimization opportunities."
+    },
+    "weDevelopTheSolution": {
+      "titleOne": "We develop",
+      "titleTwo": "the solution",
+      "fullTitle": "We develop the solution",
+      "descriptionOne": "We build and deliver the final product, ",
+      "descriptionTwo": "respecting the deadlines and the agreed investment."
+    },
+    "HowDoWeDoIt": {
+      "titleOne": "Technology",
+      "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
+    },
+    "cards": {
+      "cardOne": {
+        "title": "Development at a",
+        "title2": "Predictable Cost",
+        "description": "Turn ideas into a tangible reality. Custom MVP of exceptional quality, with a budget of <b>42,000 USD.</b>",
+        "itemOne": {
+          "title": "Agile and Efficient Development",
+          "description": "With an Agile approach using the Scrum framework, we form a highly qualified team committed to transforming your vision into a functional MVP in the shortest possible time."
         },
-        "scheduleAriaLabel": "Schedule an appointment with one of our sales representative",
-        "socialMediaAriaLabel": "Visit one of our sales representative's LinkedIn",
-        "ourOfficeTitleEmpty": "office",
-        "whatsAppMessage": "Name: \nCompany: \nE-mail: \nMessage or brief project information:",
-        "copyButton": "Copied",
-        "imagesAlt": {
-            "imgOne": "Our meeting office is super comfortable with a deadlight and a super monitor.",
-            "imgTwo": "The lobby of our office has a nice armchair that allows us to meet for a chat and is full of our identity as Steplixers.",
-            "imgThree": "Our general room has large tables and comfortable chairs for the daily work of the Steplix teams.",
-            "imgFour": "The office on the outside is an old building on the corner of Uriarte and Costa Rica in Palermo, Buenos Aires.",
-            "imgFive": "Inside the building we have an internal patio that the offices on the second and third floors look out over. The ground floor is a meeting point and we even have a grill for our after parties.",
-            "imgSix": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
+        "itemTwo": {
+          "title": "Specialized Consulting",
+          "description": "We provide expert advice at every stage of the process to optimize the technical and strategic viability of your product."
+        },
+        "itemThree": {
+          "title": "Guaranteed Quality",
+          "description": "We offer not just a solution that meets expectations, but one that exceeds them, ensuring quality in every line of code and every aspect of design."
+        },
+        "itemFour": {
+          "title": "Absolute Customization",
+          "description": "Each MVP is custom-designed, tailored specifically to the unique needs and objectives of your project."
+        },
+        "idealFor": {
+          "descriptionOne": "<b>Incorporating</b> a new service or a new expansion to an already created digital solution.",
+          "descriptionTwo": "<b>Validating</b> a new concept in the market.",
+          "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
+        },
+        "underText": {
+          "firstText": "<b>MVP42K is the first step towards digital success.</b>",
+          "secondText": "The process of developing your application is easier when accompanied."
         }
-    },
-    "about_us": {
-        "ourValues": {
-            "title": "Values",
-            "description": "Those that define us and on which we focus in each project.",
-            "trust": {
-                "title": "Trust",
-                "description": "Believe in the integrity and abilities of people, while also providing certainty that we will fulfill our commitments.",
-                "highlightedSentences": [
-                    "Believe in the integrity and abilities",
-                    "commitments"
-                ]
-            },
-            "mutualRespect": {
-                "title": "Mutual Respect",
-                "description": "Value people and their differences, be inclusive and responsible, communicate with honesty and empathy to achieve a collaborative and harmonious environment.",
-                "highlightedSentences": [
-                    "be inclusive and responsible",
-                    "honesty and empathy",
-                    "collaborative and harmonious"
-                ]
-            },
-            "success": {
-                "title": "Success",
-                "description": "Achieving customer and user satisfaction by exceeding expectations requires a positive attitude and professionalism in the face of challenges, generating opportunities for team growth and continuous improvement.",
-                "highlightedSentences": [
-                    "customer and user satisfaction",
-                    "positive attitude and professionalism",
-                    "growth and continuous improvement"
-                ]
-            },
-            "awareness": {
-                "title": "Awareness",
-                "description": "Understand the impact of our actions on the environment and others. Drive responsible innovation. Promote sustainability, the development of empathy, balance, and equity to contribute to the well-being of all.",
-                "highlightedSentences": [
-                    "Understand the impact",
-                    "Promote sustainability, the development of empathy, balance, and equity"
-                ]
-            },
-            "agility": {
-                "title": "Agility",
-                "description": "Being practical and flexible. Responding to changes effectively. It requires being able to adapt, be transparent, and inspect the results obtained.",
-                "highlightedSentences": [
-                    "Being practical and flexible",
-                    "being able to adapt, be transparent, and inspect"
-                ]
-            }
+      },
+      "cardTwo": {
+        "title": "Your Prototype",
+        "title2": "in 60 Days",
+        "description": "The perfect fusion of creativity, UX, and efficiency in the creation process. Our service offers the opportunity to develop impactful prototypes <b>within a maximum period of 60 days.</b>",
+        "itemOne": {
+          "title": "Agile and Effective Prototyping",
+          "description": "With Figma as our main tool, our team develops high-fidelity interactive prototypes that capture the essence and functionality of your vision."
         },
-        "mission": {
-            "title": "Mission",
-            "description": "Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators."
+        "itemTwo": {
+          "title": "User-Centered Solutions",
+          "description": "Inspired by the principles of JJ Garrett, we approach the design process centered on the user, focusing on usability, accessibility, and the effectiveness of the experience."
         },
-        "vision": {
-            "title": "Vision",
-            "description": "Provide solutions of excellence, on time and at a competitive price, based on the continuous improvement of our internal processes and the talent of our collaborators."
+        "itemThree": {
+          "title": "Continuous Iteration",
+          "description": "Based on user feedback, we refine and improve the UX/UI of the prototypes iteratively to ensure perfection before the development stage."
         },
-        "teams": {
-            "title": "Team",
-            "description": "In the same way that the Sherpas accompany the climbers on their journey to the top, the Digital Sherpas are ",
-            "descriptionBold": "fully committed to the business challenges of our clients, guiding them and elevating their ideas to the maximum.",
-            "button": "Become a Steplixer",
-            "imagesAlt": {
-                "imgOne": "Business team working during a meeting in the office.",
-                "imgTwo": "The Steplix team gathered in the office happily looking straight ahead.",
-                "imgThree": "Steplixers after a workshop.",
-                "imgFour": "Relaxed Steplixers celebrating in a bar.",
-                "imgFive": "Different teams working together to promote an idea.",
-                "imgSix": "The Steplix team gathered in the office happily looking straight ahead.",
-                "imgSeven": "Steplixers gathered on the sidewalk of the office in the Palermo neighborhood."
-            }
+        "itemFour": {
+          "title": "User Testing",
+          "description": "The developed prototypes are subjected to exhaustive tests with real users to validate the user experience within the solution."
         },
-        "philosophy": {
-            "titleOne": "Our",
-            "titleTwo": "philosophy",
-            "description": " Sherpas are famous for helping climbers on their ascents to the summit of Everest and other peaks. In the same way that sherpas accompany climbers on their journey to the top, at Steplix we are fully committed to the business challenges that our Clients trust us to guide and elevate that idea to its maximum power. We scale each project by applying creativity, strategy and innovation, relying on technology and promoting all its power to achieve the goal. "
-        },
-        "digitalSherpas": {
-            "titleOne": "Your Digital Business",
-            "titleTwo": "Sherpas",
-            "descriptionOne": "  We are digital sherpas specialized in different areas of business, with the exact mix of seniority, experience and commitment. ",
-            "descriptionTwo": " We make up an interdisciplinary team that combines the knowledge and views of each member to create an experience that ensures each business idea reaches the top. ",
-            "descriptionThree": "   Our mantra: At Steplix, we believe that creativity, design and innovation are the bet to find new ways to generate value and new business models, with the right investment and ROI. "
+        "idealFor": {
+          "descriptionOne": "<b>Starting</b> a new project with quality prototypes.",
+          "descriptionTwo": "<b>Validating</b> a new concept in the market.",
+          "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
         }
-    },
-    "what_we_do": {
-      "buttonCard": "See more",
-        "buttonModal": "Contact us",
-        "idealFor": "Ideal for",
-        "intro": {
-            "descriptionOne": "Our culture focuses on agile processes and methodologies",
-            "descriptionTwo": " that allow us to help you build your product in an incremental way that enables us to test it, learn quickly and evolve."
+      },
+      "cardThree": {
+        "title": "Custom and",
+        "title2": "Agile Development",
+        "description": "Innovation and precision in every line of code. WOW-FULL is the key to custom software solutions that lead digital transformation.",
+        "itemOne": {
+          "title": "Custom Innovation",
+          "description": "We design unique solutions that meet the specific challenges of your business with the highest technology and operational flexibility."
         },
-        "stepsToTheTop": {
-          "titleOne": "What is your starting",
-          "titleTwo": "point?",
-          "fullTitle": "What is your starting point?",
-            "descriptionOne": "We are your digital ally.",
-            "descriptionTwo": "Let's walk together",
-            "descriptionThree": "What is your starting point?"
+        "itemTwo": {
+          "title": "Security and Performance",
+          "description": "We guarantee robust and secure systems, with an optimized architecture for the best performance."
         },
-        "weExploreTheProyect": {
-            "titleOne": "We explore",
-            "titleTwo": "the proyect",
-            "fullTitle": "We explore the project",
-            "descriptionOne": "As guides in the digital business ecosystem, we know that the first step is focused on",
-            "descriptionTwo": " understanding the opportunity and looking together for a way to add value to the business idea."
+        "itemThree": {
+          "title": "Cutting-Edge Technology",
+          "description": "We employ the latest technologies to create products perfectly tailored to the needs of the market and users."
         },
-        "weDesignYourProduct": {
-            "titleOne": "We design",
-            "titleTwo": "you product",
-            "fullTitle": "We design your product",
-            "descriptionOne": "The second scale is focused on the design of an <u><span title=\"Minimum Viable Product\">MVP</span></u> with the aim of continuing to promote the idea. Doing this allows us to ",
-            "descriptionTwo": "test the business model, revealing the effort and detecting optimization opportunities."
+        "itemFour": {
+          "title": "User Experience Prioritized",
+          "description": "Our design focuses on intuitiveness and accessibility, providing an exceptional user experience."
         },
-        "weDevelopTheSolution": {
-            "titleOne": "We develop",
-            "titleTwo": "the solution",
-            "fullTitle": "We develop the solution",
-            "descriptionOne": "We build and deliver the final product, ",
-            "descriptionTwo": "respecting the deadlines and the agreed investment."
-        },
-        "HowDoWeDoIt": {
-            "titleOne": "Technology",
-            "descriptionOne": "We empower ourselves with the precise technology to make each project a unique experience, focused on the user."
-        },
-        "cards":{
-          "cardOne" : {
-              "title": "Development at a",
-              "title2":"Predictable Cost",
-              "description": "Turn ideas into a tangible reality. Custom MVP of exceptional quality, with a budget of <b>42,000 USD.</b>",
-              "itemOne": {
-                  "title": "Agile and Efficient Development",
-                  "description": "With an Agile approach using the Scrum framework, we form a highly qualified team committed to transforming your vision into a functional MVP in the shortest possible time."
-              },
-              "itemTwo" : {
-                  "title": "Specialized Consulting",
-                  "description": "We provide expert advice at every stage of the process to optimize the technical and strategic viability of your product."
-              },
-              "itemThree" : {
-                  "title": "Guaranteed Quality",
-                  "description": "We offer not just a solution that meets expectations, but one that exceeds them, ensuring quality in every line of code and every aspect of design."
-              },
-              "itemFour": {
-                  "title": "Absolute Customization",
-                  "description": "Each MVP is custom-designed, tailored specifically to the unique needs and objectives of your project."
-              },
-              "idealFor": {
-                  "descriptionOne": "<b>Incorporating</b> a new service or a new expansion to an already created digital solution.",
-                  "descriptionTwo": "<b>Validating</b> a new concept in the market.",
-                  "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
-              },
-              "underText": {
-                  "firstText": "<b>MVP42K is the first step towards digital success.</b>" ,
-                  "secondText": "The process of developing your application is easier when accompanied."
-              }
-          },
-          "cardTwo" : {
-              "title": "Your Prototype",
-              "title2": "in 60 Days",
-              "description": "The perfect fusion of creativity, UX, and efficiency in the creation process. Our service offers the opportunity to develop impactful prototypes <b>within a maximum period of 60 days.</b>",
-              "itemOne": {
-                  "title": "Agile and Effective Prototyping",
-                  "description": "With Figma as our main tool, our team develops high-fidelity interactive prototypes that capture the essence and functionality of your vision."
-              },
-              "itemTwo" : {
-                  "title": "User-Centered Solutions",
-                  "description": "Inspired by the principles of JJ Garrett, we approach the design process centered on the user, focusing on usability, accessibility, and the effectiveness of the experience."
-              },
-              "itemThree" : {
-                  "title": "Continuous Iteration",
-                  "description": "Based on user feedback, we refine and improve the UX/UI of the prototypes iteratively to ensure perfection before the development stage."
-              },
-              "itemFour": {
-                  "title": "User Testing",
-                  "description": "The developed prototypes are subjected to exhaustive tests with real users to validate the user experience within the solution."
-               },
-              "idealFor": {
-                  "descriptionOne": "<b>Starting</b> a new project with quality prototypes.",
-                  "descriptionTwo": "<b>Validating</b> a new concept in the market.",
-                  "descriptionThree": "<b>Testing</b> a value proposition before investing on a large scale."
-              }
-          },
-          "cardThree" : {
-              "title": "Custom and",
-              "title2": "Agile Development",
-              "description": "Innovation and precision in every line of code. WOW-FULL is the key to custom software solutions that lead digital transformation.",
-              "itemOne": {
-                  "title": "Custom Innovation",
-                  "description": "We design unique solutions that meet the specific challenges of your business with the highest technology and operational flexibility."
-              },
-              "itemTwo" : {
-                  "title": "Security and Performance",
-                  "description": "We guarantee robust and secure systems, with an optimized architecture for the best performance."
-              },
-              "itemThree" : {
-                  "title": "Cutting-Edge Technology",
-                  "description": "We employ the latest technologies to create products perfectly tailored to the needs of the market and users."
-              },
-              "itemFour": {
-                  "title": "User Experience Prioritized",
-                  "description": "Our design focuses on intuitiveness and accessibility, providing an exceptional user experience."
-              },
-              "idealFor": {
-                  "descriptionOne": "<b>Implementing</b> specialized technological solutions.",
-                  "descriptionTwo": "<b>Leading</b> digital transformation in your industry.",
-                  "descriptionThree": "<b>Enhancing</b> your business with technological innovation."
-              }
-          }
-       }
-    },
-    "aboutUs": {
-        "title": "About ",
-        "emptyTitle": " Us",
+        "idealFor": {
+          "descriptionOne": "<b>Implementing</b> specialized technological solutions.",
+          "descriptionTwo": "<b>Leading</b> digital transformation in your industry.",
+          "descriptionThree": "<b>Enhancing</b> your business with technological innovation."
+        }
+      }
+    }
+  },
+  "aboutUs": {
+    "title": "About ",
+    "emptyTitle": " Us",
 
     "description": "We are the digital partner that will co-create the best route to scale that business idea to its highest peak and will accompany you in every step of the joruney, minimizing the risk and amplifying the impact, in the agreed time. "
   },
