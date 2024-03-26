@@ -671,14 +671,14 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardOne.itemOne.description',
       },
       {
-        iconName: 'chat',
-        title: 'what_we_do.cards.cardOne.itemTwo.title',
-        description: 'what_we_do.cards.cardOne.itemTwo.description',
-      },
-      {
         iconName: 'star',
         title: 'what_we_do.cards.cardOne.itemThree.title',
         description: 'what_we_do.cards.cardOne.itemThree.description',
+      },
+      {
+        iconName: 'chat',
+        title: 'what_we_do.cards.cardOne.itemTwo.title',
+        description: 'what_we_do.cards.cardOne.itemTwo.description',
       },
       {
         iconName: 'backend',
@@ -703,14 +703,9 @@ export const PRODUCTS_CARDS = [
     description: 'what_we_do.cards.cardTwo.description',
     items: [
       {
-        iconName: 'phoneChat',
+        iconName: 'newPhone',
         title: 'what_we_do.cards.cardTwo.itemOne.title',
         description: 'what_we_do.cards.cardTwo.itemOne.description',
-      },
-      {
-        iconName: 'users',
-        title: 'what_we_do.cards.cardTwo.itemTwo.title',
-        description: 'what_we_do.cards.cardTwo.itemFour.description',
       },
       {
         iconName: 'reload',
@@ -718,7 +713,12 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardTwo.itemThree.description',
       },
       {
-        iconName: 'newPhone',
+        iconName: 'users',
+        title: 'what_we_do.cards.cardTwo.itemTwo.title',
+        description: 'what_we_do.cards.cardTwo.itemFour.description',
+      },
+      {
+        iconName: 'phoneChat',
         title: 'what_we_do.cards.cardTwo.itemFour.title',
         description: 'what_we_do.cards.cardTwo.itemTwo.description',
       },
@@ -741,14 +741,14 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardThree.itemOne.description',
       },
       {
-        iconName: 'vanguard',
-        title: 'what_we_do.cards.cardThree.itemTwo.title',
-        description: 'what_we_do.cards.cardThree.itemTwo.description',
-      },
-      {
         iconName: 'shieldLock',
         title: 'what_we_do.cards.cardThree.itemThree.title',
         description: 'what_we_do.cards.cardThree.itemThree.description',
+      },
+      {
+        iconName: 'vanguard',
+        title: 'what_we_do.cards.cardThree.itemTwo.title',
+        description: 'what_we_do.cards.cardThree.itemTwo.description',
       },
       {
         iconName: 'users',
