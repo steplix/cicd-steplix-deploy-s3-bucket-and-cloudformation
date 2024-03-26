@@ -703,7 +703,7 @@ export const PRODUCTS_CARDS = [
     description: 'what_we_do.cards.cardTwo.description',
     items: [
       {
-        iconName: 'phoneChat',
+        iconName: 'newPhone',
         title: 'what_we_do.cards.cardTwo.itemOne.title',
         description: 'what_we_do.cards.cardTwo.itemOne.description',
       },
@@ -718,7 +718,7 @@ export const PRODUCTS_CARDS = [
         description: 'what_we_do.cards.cardTwo.itemFour.description',
       },
       {
-        iconName: 'newPhone',
+        iconName: 'phoneChat',
         title: 'what_we_do.cards.cardTwo.itemFour.title',
         description: 'what_we_do.cards.cardTwo.itemTwo.description',
       },
