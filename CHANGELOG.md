@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### Added 18/03/2024
+
+- **Components**:
+  - `whatWeDoCard`: A card that shows the products for sale.
+  - `whatWeDoModal`: Custom component that shows the details for products for sale.
+  - `ButtonText`: Custom text button.
+  - `ProductItem`: Component to render an icon and a short title.
+  - `ProductItemDescription`: Component to  render icon, title and descriptions.
+  - `Icons`: new icons added to the list
+
+### Modified 18/03/2024
+
+- `i18n`: Json modified to add new info about products on what we do page.
+
+### Deleted 18/03/2024
+
+- `OurSteps`: All section ourStep for what we do Page removed.
+
 ## Release 3.0.9 25/07/2023
 
 ### Modified 25/07/2023

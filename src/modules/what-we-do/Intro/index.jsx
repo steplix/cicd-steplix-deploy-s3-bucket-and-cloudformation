@@ -8,7 +8,7 @@ import Title from '@/common/components/Title/Gradient';
 const Intro = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { width } = useResponsive();
-  const TITLE_BREAKPOINT_WIDTH = 1024;
+  const TITLE_BREAKPOINT_WIDTH = 640;
 
   return (
     <section className="w-full">
@@ -33,6 +33,14 @@ const Intro = ({ locale }) => {
         <strong>{t('what_we_do.intro.descriptionOne')}</strong>
         {t('what_we_do.intro.descriptionTwo')}
       </p>
+      <div className="mt-6 lg:flex lg:gap-1">
+        <p className="font-poppins text-custom-base font-normal text-black">
+          {t('what_we_do.stepsToTheTop.descriptionOne')}
+        </p>
+        <p className="font-poppins text-custom-base font-normal text-black">
+          {t('what_we_do.stepsToTheTop.descriptionTwo')}
+        </p>
+      </div>
     </section>
   );
 };

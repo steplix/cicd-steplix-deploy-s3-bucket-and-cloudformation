@@ -688,3 +688,108 @@ export const SURA_CHIPS = {
     },
   ],
 };
+export const PRODUCTS_CARDS = [
+  {
+    shortName: 'MVP-42k',
+    title: 'what_we_do.cards.cardOne.title',
+    title2: 'what_we_do.cards.cardOne.title2',
+    description: 'what_we_do.cards.cardOne.description',
+    items: [
+      {
+        iconName: 'code',
+        title: 'what_we_do.cards.cardOne.itemOne.title',
+        description: 'what_we_do.cards.cardOne.itemOne.description',
+      },
+      {
+        iconName: 'chat',
+        title: 'what_we_do.cards.cardOne.itemTwo.title',
+        description: 'what_we_do.cards.cardOne.itemTwo.description',
+      },
+      {
+        iconName: 'star',
+        title: 'what_we_do.cards.cardOne.itemThree.title',
+        description: 'what_we_do.cards.cardOne.itemThree.description',
+      },
+      {
+        iconName: 'backend',
+        title: 'what_we_do.cards.cardOne.itemFour.title',
+        description: 'what_we_do.cards.cardOne.itemFour.description',
+      },
+    ],
+    idealFor: [
+      'what_we_do.cards.cardOne.idealFor.descriptionOne',
+      'what_we_do.cards.cardOne.idealFor.descriptionTwo',
+      'what_we_do.cards.cardOne.idealFor.descriptionThree',
+    ],
+    underText: {
+      firstText: 'what_we_do.cards.cardOne.underText.firstText',
+      secondText: 'what_we_do.cards.cardOne.underText.secondText',
+    },
+  },
+  {
+    shortName: 'T-60',
+    title: 'what_we_do.cards.cardTwo.title',
+    title2: 'what_we_do.cards.cardTwo.title2',
+    description: 'what_we_do.cards.cardTwo.description',
+    items: [
+      {
+        iconName: 'phoneChat',
+        title: 'what_we_do.cards.cardTwo.itemOne.title',
+        description: 'what_we_do.cards.cardTwo.itemOne.description',
+      },
+      {
+        iconName: 'users',
+        title: 'what_we_do.cards.cardTwo.itemTwo.title',
+        description: 'what_we_do.cards.cardTwo.itemFour.description',
+      },
+      {
+        iconName: 'reload',
+        title: 'what_we_do.cards.cardTwo.itemThree.title',
+        description: 'what_we_do.cards.cardTwo.itemThree.description',
+      },
+      {
+        iconName: 'newPhone',
+        title: 'what_we_do.cards.cardTwo.itemFour.title',
+        description: 'what_we_do.cards.cardTwo.itemTwo.description',
+      },
+    ],
+    idealFor: [
+      'what_we_do.cards.cardTwo.idealFor.descriptionOne',
+      'what_we_do.cards.cardTwo.idealFor.descriptionTwo',
+      'what_we_do.cards.cardTwo.idealFor.descriptionThree',
+    ],
+  },
+  {
+    shortName: 'WOW-Full',
+    title: 'what_we_do.cards.cardThree.title',
+    title2: 'what_we_do.cards.cardThree.title2',
+    description: 'what_we_do.cards.cardThree.description',
+    items: [
+      {
+        iconName: 'ruler',
+        title: 'what_we_do.cards.cardThree.itemOne.title',
+        description: 'what_we_do.cards.cardThree.itemOne.description',
+      },
+      {
+        iconName: 'vanguard',
+        title: 'what_we_do.cards.cardThree.itemTwo.title',
+        description: 'what_we_do.cards.cardThree.itemTwo.description',
+      },
+      {
+        iconName: 'shieldLock',
+        title: 'what_we_do.cards.cardThree.itemThree.title',
+        description: 'what_we_do.cards.cardThree.itemThree.description',
+      },
+      {
+        iconName: 'users',
+        title: 'what_we_do.cards.cardThree.itemFour.title',
+        description: 'what_we_do.cards.cardThree.itemFour.description',
+      },
+    ],
+    idealFor: [
+      'what_we_do.cards.cardThree.idealFor.descriptionOne',
+      'what_we_do.cards.cardThree.idealFor.descriptionTwo',
+      'what_we_do.cards.cardThree.idealFor.descriptionThree',
+    ],
+  },
+];

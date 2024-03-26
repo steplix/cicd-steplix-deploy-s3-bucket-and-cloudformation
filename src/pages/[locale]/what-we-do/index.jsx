@@ -1,13 +1,52 @@
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+
 import HeadTag from '@/common/components/HeadTag';
 import { useTranslation } from '@/common/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import Intro from '@/modules/what-we-do/Intro';
-import OurSteps from '@/modules/what-we-do/OurSteps';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import CustomNextLink from '@/common/components/CustomNextLink';
+import { WhatWeDoCard } from '@/modules/what-we-do/WhatWeDoCard';
+import { PRODUCTS_CARDS } from '@/common/utils/constants';
+import { Modal } from '@/common/components/Modal';
+import { WhatWeDoModal } from '@/modules/what-we-do/WhatWeDoModal';
 
 export default function WhatWeDo({ locale }) {
   const { t } = useTranslation(locale);
+  const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [cardSelected, setCardSelected] = useState(undefined);
+
+  useEffect(() => {
+    const { product } = router.query;
+
+    if (product) {
+      const card = PRODUCTS_CARDS.find((card) => card.shortName === product);
+
+      if (card) {
+        setCardSelected(card);
+        setTimeout(() => {
+          setIsModalOpen(true);
+        }, 200);
+      }
+    }
+  }, [router.query]);
+
+  const openModal = (card) => {
+    setCardSelected(card);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    router.replace(
+      {
+        pathname: `/${locale}/what-we-do`,
+      },
+      undefined,
+      { shallow: true },
+    );
+  };
 
   return (
     <>
@@ -18,29 +57,18 @@ export default function WhatWeDo({ locale }) {
           keywords: t('metaTags.whatWeDo.keywords'),
         }}
       />
-      <TransitionWrapper className="w-full h-full relative flex flex-col">
-        <div
-          className={`z-[-1] bg-what-we-do-steps sm:bg-what-we-do-steps-sm lg:bg-what-we-do-steps-lg xl:bg-what-we-do-steps-xl bg-center bg-no-repeat absolute w-full ${
-            locale !== 'en' ? 'top-0' : '-top-2'
-          } sm:top-0 bg-origin-content h-[1287px] sm:h-[1145px] lg:h-[1250px] xl:h-[1249px]`}
-        />
+      <TransitionWrapper className="w-full h-full flex flex-col overflow-y-auto">
         <div className="container section-container w-full mx-auto flex-col min-h-[1276px] sm:min-h-[1144px] lg:min-h-[1250px]">
           <Intro locale={locale} />
-          <OurSteps locale={locale} />
+          <div className="mt-10 flex flex-col lg:flex-row lg:flex-wrap gap-6">
+            {PRODUCTS_CARDS.map((card, index) => {
+              return <WhatWeDoCard key={index} card={card} locale={locale} openModal={openModal} />;
+            })}
+          </div>
         </div>
-        <div className="container section-container w-full flex justify-center">
-          <CustomNextLink to={`/${locale}/about-us`}>
-            <h2 className="text-3xl lg:text-5xl font-black font-sofia leading-6 lg:leading-8 tracking-[0.06em] lg:tracking-[0.12em]">
-              #Digital{' '}
-              <span
-                className="text-outlined--purple tracking-[0.08em] lg:tracking-[0.12em]"
-                data-content="Sherpas"
-              >
-                Sherpas
-              </span>
-            </h2>
-          </CustomNextLink>
-        </div>
+        <Modal isModalOpen={isModalOpen} setisModalOpen={setIsModalOpen}>
+          <WhatWeDoModal card={cardSelected} locale={locale} onClose={closeModal} />
+        </Modal>
       </TransitionWrapper>
     </>
   );

@@ -87,7 +87,20 @@ export const propTypeIconName = PropTypes.oneOf([
   'serviceConsultancy',
   'peopleSpeak',
   'technology',
-  'diversity'
+  'diversity',
+  'code',
+  'chat',
+  'star',
+  'users',
+  'phoneChat',
+  'reload',
+  'ruler',
+  'vanguard',
+  'newPhone',
+  'newClose',
+  'idea',
+  'itemList',
+  'shieldLock',
 ]);
 
 export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big']);

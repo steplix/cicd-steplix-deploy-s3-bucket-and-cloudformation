@@ -115,6 +115,9 @@
     }
   },
   "what_we_do": {
+    "buttonCard": "Ver más",
+    "buttonModal": "Agendar cita",
+    "idealFor": "Ideal para",
     "intro": {
       "descriptionOne": "Nuestra cultura se centra en procesos y metodologías ágiles",
       "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental.\n Esto nos permite probarlo, aprender rápido y evolucionar."
@@ -151,6 +154,90 @@
     "HowDoWeDoIt": {
       "titleOne": "Tecnología",
       "descriptionOne": "Nos potenciamos con la tecnología precisa para hacer de cada proyecto una experiencia única, con foco en el usuario."
+    },
+    "cards": {
+      "cardOne": {
+        "title": "Desarrollo a un costo",
+        "title2": "previsible",
+        "description": "Convierte ideas en una realidad palpable. MVP personalizado, de calidad excepcional, con un presupuesto de <b>42,000 USD.</b>",
+        "itemOne": {
+          "title": "Desarrollo Ágil y Eficiente",
+          "description": "Enfoque Agile del marco Scrum, formamos un equipo altamente calificado comprometido a transformar su visión en un MVP funcional en el menor tiempo posible."
+        },
+        "itemTwo": {
+          "title": "Consultoría Especializada",
+          "description": "Ofrecemos asesoramiento experto en cada etapa del proceso para optimizar la viabilidad técnica y estratégica de su producto."
+        },
+        "itemThree": {
+          "title": "Calidad Garantizada",
+          "description": "Ofrecemos no sólo una solución que cumple, sino que supera sus expectativas, asegurando la calidad en cada línea de código y cada aspecto del diseño."
+        },
+        "itemFour": {
+          "title": "Personalización Absoluta",
+          "description": "Cada MVP se diseña a medida, adaptándose específicamente a las necesidades y objetivos únicos de su proyecto."
+        },
+        "idealFor": {
+          "descriptionOne": "<b>Incorporar</b> un nuevo servicio o una nueva expansión a una solución digital ya creada.",
+          "descriptionTwo": "<b>Validar</b> un nuevo concepto en el mercado.",
+          "descriptionThree": "<b>Testear</b> una propuesta de valor antes de invertir a gran escala."
+        },
+        "underText": {
+          "firstText": "<b>MVP42K es el primer paso hacia el éxito digital. </b>",
+          "secondText": "El proceso de desarrollo de su aplicación es mas fácil acompañado."
+        }
+      },
+      "cardTwo": {
+        "title": "Tu prototipo en",
+        "title2": "60 días",
+        "description": "La fusión perfecta entre creatividad, UX y eficiencia en el proceso de creación. Nuestro servicio ofrece la oportunidad de desarrollar prototipos impactantes <b>en un plazo máximo de 60 días.</b>",
+        "itemOne": {
+          "title": "Prototipado Ágil y Efectivo",
+          "description": "Con Figma como herramienta principal, nuestro equipo desarrolla prototipos interactivos de alta fidelidad que capturan la esencia y la funcionalidad de su visión."
+        },
+        "itemTwo": {
+          "title": "Soluciones centradas en el usuario",
+          "description": "Inspirados por los principios de JJ Garrett, abordamos el proceso de diseño centrado en el usuario, enfocándonos en la usabilidad, la accesibilidad y la eficacia de la experiencia."
+        },
+        "itemThree": {
+          "title": "Iteración Continua",
+          "description": "Basados en los comentarios de los usuarios, refinamos y mejoramos el UX/UI de los prototipos de manera iterativa para garantizar su perfección antes de la etapa de desarrollo."
+        },
+        "itemFour": {
+          "title": "Testeos con Usuarios",
+          "description": "Los prototipos desarrollados se someten a pruebas exhaustivas con usuarios reales para validar la experiencia de usuario dentro de la solución."
+        },
+        "idealFor": {
+          "descriptionOne": "<b>Iniciar</b> un nuevo proyecto con prototipos de calidad.",
+          "descriptionTwo": "<b>Validar</b> un nuevo concepto en el mercado.",
+          "descriptionThree": "<b>Testear</b> una propuesta de valor antes de invertir a gran escala."
+        }
+      },
+      "cardThree": {
+        "title": "Desarrollo",
+        "title2": "Personalizado y Ágil",
+        "description": "Innovación y precisión en cada línea de código. WOW-FULL es la clave para soluciones de software a medida que lideran la transformación digital.",
+        "itemOne": {
+          "title": "Innovación a la Medida",
+          "description": "Diseñamos soluciones únicas que responden a los desafíos específicos de tu negocio con la más alta tecnología y flexibilidad operativa."
+        },
+        "itemTwo": {
+          "title": "Tecnología de Vanguardia",
+          "description": "Empleamos las últimas tecnologías para crear productos ajustados a la perfección a las necesidades del mercado y de los usuarios."
+        },
+        "itemThree": {
+          "title": "Seguridad y Rendimiento",
+          "description": "Garantizamos sistemas robustos y seguros, con una arquitectura optimizada para el mejor rendimiento."
+        },
+        "itemFour": {
+          "title": "Experiencia del Usuario Priorizada",
+          "description": "Nuestro diseño se centra en la intuitividad y accesibilidad, ofreciendo una experiencia de usuario excepcional."
+        },
+        "idealFor": {
+          "descriptionOne": "<b>Implementar</b> soluciones tecnológicas especializadas.",
+          "descriptionTwo": "<b>Liderar</b> la transformación digital en su industria.",
+          "descriptionThree": "<b>Potenciar</b> su negocio con innovación tecnológica."
+        }
+      }
     }
   },
   "aboutUs": {
@@ -311,7 +398,7 @@
     "portfolio": {
       "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
       "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
-      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio.",
+      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio."
       "clients": [
         {
           "title": "Portfolio | Clientes | SURA",

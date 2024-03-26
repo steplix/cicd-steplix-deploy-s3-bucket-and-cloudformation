@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   const { route } = useRouter();
 
   return (
-    <>
+    <div className="relative">
       <Navbar />
       <div
         className={`${
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

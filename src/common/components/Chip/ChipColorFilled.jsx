@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
 
-import { chipTypes } from '@/common/utils/propTypes';
-
 const types = {
   slim: 'chip--slim',
   medium: 'chip--medium',
@@ -18,6 +16,7 @@ const ChipColorFilled = ({
   label,
   outlineColor,
   borderWidth,
+  labelColor,
 }) => {
   const chipStyle = {
     borderWidth: borderWidth ? `${borderWidth}px` : '',
@@ -31,19 +30,20 @@ const ChipColorFilled = ({
       style={chipStyle}
     >
       {iconName && iconColor && <Icon className={`icon ${iconColor}`} name={iconName} />}
-      <span>{label}</span>
+      <span className={`${labelColor}`}>{label}</span>
     </div>
   );
 };
 
 ChipColorFilled.propTypes = {
-  type: chipTypes,
+  type: PropTypes.string,
   background: PropTypes.string.isRequired,
   iconName: PropTypes.string,
   iconColor: PropTypes.string,
   label: PropTypes.string.isRequired,
   outlineColor: PropTypes.string,
   borderWidth: PropTypes.number,
+  labelColor: PropTypes.string,
 };
 
 export default ChipColorFilled;
