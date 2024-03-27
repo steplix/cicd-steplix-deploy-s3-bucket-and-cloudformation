@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Release 3.1.0 27/03/2024
+
 ### Added 18/03/2024
 
 - **Components**:
@@ -22,6 +24,102 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deleted 18/03/2024
 
 - `OurSteps`: All section ourStep for what we do Page removed.
+
+
+## Release 3.0.19 17/11/2023
+
+### Modified 17/11/2023
+
+- Adjustment in the role name of the X-28 review.
+
+
+## Release 3.0.18 17/11/2023
+
+### Modified 17/11/2023
+
+- Enviroment variables configuration for static web.
+
+### Added 17/11/2023
+
+- new review for the client X-28.
+
+
+## Release 3.0.17 03/11/2023
+
+### Modified 03/11/2023
+
+- Applied text adjustments over memberships and clients section in home page.
+
+
+## Release 3.0.16 29/09/2023
+
+### Added 29/09/2023
+
+- New testimony from Valid client has been added.
+
+### Modified 29/09/2023
+
+- Text changes in mountain section in home page.
+- Company address fix.
+- Styles and linking fixes has been applied to the policies section at the footer.
+- Insight tag script has been implemented and changed key prop of testimonials cards to get rid of warnings.
+
+
+## Release 3.0.15 14/09/2023
+
+### Added 15/09/2023
+
+- Added Great Place to Work certification in footer and become steplixer page
+
+## Release 3.0.14 13/09/2023
+
+### Added 13/09/2023
+
+- `Certifications`: Page section for certifications.
+- Added Great Place to Work certification
+
+
+## Release 3.0.13 29/08/2023
+
+### Modified 29/08/2023
+
+- The technologies listed in the home page are sorted alphabetically.
+
+
+### Added 29/08/2023
+
+- Meta tag robotos with index-follow value is added.
+
+
+## Release 3.0.12 28/08/2023
+
+### Modified 28/08/2023
+
+- `TechnologySlider`: updated
+
+### Added 28/08/2023
+
+- New client review: Giovanna Maratta - Product Manager - Pow
+
+
+## Release 3.0.11 11/08/2023
+
+### Modified 11/08/2023
+
+- Changed iqnet logo
+- Lint fixes on `useHighlightSentences` hook
+
+### Deleted 11/08/2023
+
+- Deleted Banco Columbia in client carrousel in home page
+
+
+## Release 3.0.10 10/08/2023
+
+### Modified 10/08/2023
+
+- Step SVG lines are now hidden across all breakpoints in mountain section of the home page
+- Show iran and iqnet logos in footer section
 
 ## Release 3.0.9 25/07/2023
 
@@ -155,7 +253,7 @@ Pipelines:
   - `PostCard`: A card component to show company publicity.
   - `Service`: A component showing services offered.
   - `SubMenu`: Custom menu with links and LanguageSelector.
-  - `TechnologySlider`: A custom slider ti show technology tools.
+  - `TechnologySlider`: A custom slider to show technology tools.
   - `TechnologyChip`: A custom chip.
   - `TestimonialCard`: A custom card with client quotes.
   - `TextField`: A component that shows a text and a copy button.
