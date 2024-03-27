@@ -715,12 +715,12 @@ export const PRODUCTS_CARDS = [
       {
         iconName: 'users',
         title: 'what_we_do.cards.cardTwo.itemTwo.title',
-        description: 'what_we_do.cards.cardTwo.itemFour.description',
+        description: 'what_we_do.cards.cardTwo.itemTwo.description',
       },
       {
         iconName: 'phoneChat',
         title: 'what_we_do.cards.cardTwo.itemFour.title',
-        description: 'what_we_do.cards.cardTwo.itemTwo.description',
+        description: 'what_we_do.cards.cardTwo.itemFour.description',
       },
     ],
     idealFor: [
