@@ -4,14 +4,45 @@ import { PropTypes } from 'prop-types';
 import ChipColorFilled from '@/common/components/Chip/ChipColorFilled';
 import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from '@/common/lib/i18n';
+import { useResponsive } from '@/common/hooks/useResponsive';
 
 export const ApproachSection = ({ children, framework, technology, locale }) => {
   const [isBigScreen, setIsBigScreen] = useState(false);
   const { t } = useTranslation(locale);
+  const { width } = useResponsive();
 
   const updateScreenSize = () => {
     if (typeof window !== 'undefined') {
       setIsBigScreen(window.innerWidth >= 1024);
+    }
+  };
+  const titleReturned = () => {
+    if (locale === 'es') {
+      return width < 640 ? (
+        <Title
+          underlineFixed
+          borderPosition="bottom"
+          content={t('portfolio.approachShort1')}
+          secondContent={t('portfolio.approachShort2')}
+          size="text-[26px] lg:text-[32px]"
+        />
+      ) : (
+        <Title
+          underlineFixed
+          borderPosition="bottom"
+          content={t('portfolio.approach')}
+          size="text-[26px] lg:text-[32px]"
+        />
+      );
+    } else {
+      return (
+        <Title
+          underlineFixed
+          borderPosition="bottom"
+          content={t('portfolio.approach')}
+          size="text-[26px] lg:text-[32px]"
+        />
+      );
     }
   };
 
@@ -31,14 +62,7 @@ export const ApproachSection = ({ children, framework, technology, locale }) => 
 
   return (
     <section className="flex flex-col gap-6 lg:gap-8 mountain-portfolio" id="how-we-deal-with-it">
-      <div className="mt-4">
-        <Title
-          underlineFixed
-          borderPosition="bottom"
-          content={t('portfolio.approach')}
-          size="text-[26px] lg:text-[32px]"
-        />
-      </div>
+      <div className="mt-4">{titleReturned()}</div>
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-4 mb-8">
           <span className="font-poppins text-[13px] lg:text-[20px] font-medium text-purple">

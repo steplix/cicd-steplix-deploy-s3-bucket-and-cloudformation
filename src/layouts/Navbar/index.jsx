@@ -35,7 +35,7 @@ const Navbar = () => {
   // eslint-disable-next-line no-unused-vars
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
-  const [colorChange, setColorchange] = React.useState(false);
+  const [colorChange, setColorchange] = React.useState(true);
   // const changeNavbarColor = () => {
   //   if (window.scrollY >= 80) {
   //     setColorchange(true);
@@ -50,12 +50,20 @@ const Navbar = () => {
   // Effects
   //
   React.useEffect(() => {
+    if (asPath.includes('/portfolio/')) {
+      setColorchange(false);
+    }
+
     const onScroll = () => {
       const currentPosition = window.scrollY;
 
       setTimeout(() => {
         setSticky(currentPosition > 52 ? true : !(currentPosition === 0));
-        setColorchange(currentPosition >= 0 ? true : false);
+
+        if (asPath.includes('/portfolio/')) {
+          setColorchange(false);
+        }
+        setColorchange(true);
       }, 5);
     };
 

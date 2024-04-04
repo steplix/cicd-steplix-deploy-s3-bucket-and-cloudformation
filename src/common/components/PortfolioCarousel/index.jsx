@@ -94,7 +94,7 @@ const PortfolioCarousel = ({
 PortfolioCarousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
-  cardClassName: propTypes.string.isRequired,
+  cardClassName: propTypes.string,
   adaptiveHeight: propTypes.number,
   hasArrows: propTypes.bool,
 };
