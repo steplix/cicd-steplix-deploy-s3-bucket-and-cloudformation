@@ -123,33 +123,11 @@
       "descriptionTwo": " que nos permiten ayudarte a construir tu producto de forma incremental.\n Esto nos permite probarlo, aprender rápido y evolucionar."
     },
     "stepsToTheTop": {
-      "titleOne": "Pasos hacia",
-      "titleTwo": "la cima",
-      "fullTitle": "Pasos hacia la cima",
+      "titleOne": "¿Cuál es tu punto de",
+      "titleTwo": "partida?",
+      "fullTitle": "¿Cuál es tu punto de partida?",
       "descriptionOne": "Somos tu aliado digital.",
-      "descriptionTwo": " Caminemos juntos.",
-      "descriptionThree": "¿Cuál es tu punto de partida?"
-    },
-    "weExploreTheProyect": {
-      "titleOne": "Exploramos",
-      "titleTwo": "el proyecto",
-      "fullTitle": "Exploramos el proyecto",
-      "descriptionOne": "Como guías en el ecosistema de los negocios digitales, sabemos que el primer paso se centra en",
-      "descriptionTwo": " entender la oportunidad y buscar en conjunto la forma de agregar valor a esa idea de negocio."
-    },
-    "weDesignYourProduct": {
-      "titleOne": "Diseñamos",
-      "titleTwo": "tu producto",
-      "fullTitle": "Diseñamos tu producto",
-      "descriptionOne": "La segunda escala se enfoca en el diseño de un <u><span title=\"Minimum Viable Product\">MVP</span></u> con el objetivo de seguir potenciando una idea. Esto nos permite",
-      "descriptionTwo": " someter a pruebas el modelo de negocio, relevando el esfuerzo y detectando oportunidades de optimización."
-    },
-    "weDevelopTheSolution": {
-      "titleOne": "Desarrollamos",
-      "titleTwo": "la solución",
-      "fullTitle": "Desarrollamos la solución",
-      "descriptionOne": "Construimos y entregamos el producto final.",
-      "descriptionTwo": " Respetamos los tiempos y la inversión acordada."
+      "descriptionTwo": " Caminemos juntos."
     },
     "HowDoWeDoIt": {
       "titleOne": "Tecnología",
@@ -418,6 +396,17 @@
       "description": "Únete a nuestro equipo de profesionales talentosos. Conviértete en un Steplixer y ayuda a impulsar la innovación digital mientras desarrollas tu carrera. Aplica ahora."
     }
   },
+  "ButtonCardContact": "Agendar cita",
+  "ButtonBecomeSteplixer": "Conviértete en Steplixer",
+  "ButtonProject": "Cuéntanos tu proyecto",
+  "CardContactSection": {
+    "pronoun": "Nuestro",
+    "title": "Contacto",
+    "title2": "Nuestra oficina",
+    "subtitle": "Cómo nos contactas",
+    "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
+    "phrase": "¡Queremos escuchar tus ideas!"
+  },
   "PortfolioSection": {
     "pronoun": "Nuestro",
     "title": "portfolio",
@@ -437,17 +426,6 @@
     "communications": "Comunicaciones",
     "news": "Medio digital",
     "aeronautics": "Aeronáutica"
-  },
-  "ButtonCardContact": "Agendar cita",
-  "ButtonBecomeSteplixer": "Conviértete en Steplixer",
-  "ButtonProject": "Cuéntanos tu proyecto",
-  "CardContactSection": {
-    "pronoun": "Nuestro",
-    "title": "Contacto",
-    "title2": "Nuestra oficina",
-    "subtitle": "Cómo nos contactas",
-    "description": "Agenda una llamada o comunícate por mail con nuestro equipo comercial.",
-    "phrase": "¡Queremos escuchar tus ideas!"
   },
   "OurPostsSay": {
     "title": "Nuestros posteos dicen",
