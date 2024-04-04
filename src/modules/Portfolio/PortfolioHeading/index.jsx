@@ -6,10 +6,10 @@ import ChipColorFilled from '@/common/components/Chip/ChipColorFilled';
 export const PortfolioHeading = ({ iconName, chipLabel, iconChip, spanLabel }) => {
   return (
     <section
-      className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 pt-6 lg:justify-center"
+      className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 lg:justify-center"
       id="heading"
     >
-      <Icon className="w-[9.86rem] h-14" name={iconName} />
+      <Icon className="h-14 lg:h-20" name={iconName} />
       <div className="flex items-center gap-4">
         <ChipColorFilled
           background="bg-blue-light"
@@ -18,7 +18,7 @@ export const PortfolioHeading = ({ iconName, chipLabel, iconChip, spanLabel }) =
           label={chipLabel}
           type="slim"
         />
-        <span className="font-poppins text-mobile font-semibold">{spanLabel}</span>
+        <span className="font-poppins text-[13px] lg:text-base font-semibold">{spanLabel}</span>
       </div>
     </section>
   );

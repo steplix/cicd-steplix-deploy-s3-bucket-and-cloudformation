@@ -3,18 +3,18 @@ import parse from 'html-react-parser';
 import HeadTag from '@/common/components/HeadTag';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import ChipColorFilled from '@/common/components/Chip/ChipColorFilled';
-import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from '@/common/lib/i18n';
-import { PORTFOLIO_CARDS, SURA_CHIPS } from '@/common/utils/constants';
-import PortfolioCard from '@/common/components/PortfolioCard';
-import PortfolioCarousel from '@/common/components/PortfolioCarousel';
+import { SURA_CHIPS } from '@/common/utils/constants';
 import { PortfolioHeader } from '@/modules/Portfolio/PortfoloHeader';
 import { PortfolioHeading } from '@/modules/Portfolio/PortfolioHeading';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
 import { ChanllengeSection } from '@/modules/Portfolio/Challenge';
 import { ApproachSection } from '@/modules/Portfolio/Approach';
+import Icon from '@/common/components/Icon';
+import { WhatWeBuildSection } from '@/modules/Portfolio/WhatWeBuild';
+import { MoreProjectsSection } from '@/modules/Portfolio/MoreProjects';
 
-export default function SuraPage({ locale }) {
+const SuraPage = ({ locale }) => {
   const { t } = useTranslation(locale);
 
   return (
@@ -31,7 +31,7 @@ export default function SuraPage({ locale }) {
           alt={t('portfolio.cards.sura.imageAlt')}
           src={`/assets/img/portfolio/sura/header.svg`}
         />
-        <div className="container">
+        <div className="container py-6 lg:py-10 xl:py-14">
           <div>
             <PortfolioHeading
               chipLabel={t('portfolio.suraClient.headingIcon')}
@@ -41,71 +41,49 @@ export default function SuraPage({ locale }) {
             />
             <ChanllengeSection
               imageClassname={'challenge-image-sura'}
+              locale={locale}
               text={parse(t('portfolio.suraClient.challengeDescription'))}
-              title={t('portfolio.challenge')}
             />
-            <ApproachSection framework={SURA_CHIPS.frameWork} technology={SURA_CHIPS.technology}/>
-            <section className="flex flex-col gap-4 py-4" id="what-do-we-build">
-              <Title underlineFixed content="¿Qué construimos?" size="text-[26px]" />
-              <div className="flex flex-col gap-6">
-                <p className="font-poppins text-mobile text-black">
-                  Junto al cliente diseñamos y desarrollamos una herramienta que le permite a muchos
-                  productores de seguro tener{' '}
-                  <span className="font-semibold">mayor agilidad y dinamismo</span> al cotizar las
-                  cuotas para sus clientes.
-                </p>
-                <div className="flex flex-col gap-6 lg:flex-row justify-center">
-                  <p className="font-poppins text-black">
-                    Creamos un <span className="text-blue font-semibold">cotizador online.</span>
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-[184px]">
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        label="Web responsive"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                    <p>+</p>
-                    <div className="w-[74px]">
-                      <ChipColorFilled
-                        background="bg-transparent"
-                        label="API"
-                        outlineColor="border-purple"
-                        type="slim"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <p className="font-poppins text-mobile text-black">
-                  La interfaz web y la API permiten acercar a los productores de seguros llevando a
-                  sus dispositivos móviles la información que necesitan y{' '}
-                  <b>reduciendo la complejidad y los tiempos requeridos</b> para realizar
-                  cotizaciones.
-                </p>
-                <div className="h-[240px] sm:h-[240px] proyect-image" />
+            <ApproachSection
+              framework={SURA_CHIPS.frameWork}
+              locale={locale}
+              technology={SURA_CHIPS.technology}
+            >
+              <div className="flex gap-2 lg:gap-3 items-center">
+                <Icon className="h-6 lg:h-8 text-blue" name="scrum" />
+                <span className="text-purple text-[20px] sm:text-[24px] lg:text-[30.72px] font-semibold">
+                  Scrum
+                </span>
               </div>
-            </section>
-            <section className="flex flex-col pt-12 gap-4" id="what-do-we-build">
-              <Title underlineFixed content="Más proyectos" size="text-[26px]" />
-              <PortfolioCarousel hasArrows carouselClassName={' sm:h-[500px]'}>
-                {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
-                  return (
-                    <div
-                      key={name}
-                      className="keen-slider__slide rounded-[20px] flex justify-center items-center"
-                    >
-                      <PortfolioCard
-                        iconBrandClass={iconBrandClass}
-                        industryIconName={industryIconName}
-                        name={name}
-                      />
-                    </div>
-                  );
-                })}
-              </PortfolioCarousel>
-            </section>
+            </ApproachSection>
+            <WhatWeBuildSection
+              imageClassname="what-we-build-image-sura"
+              locale={locale}
+              weCreateDescription={parse(t('portfolio.suraClient.weCreateDescription'))}
+              whatWeBuildDescription={parse(t('portfolio.suraClient.whatWeBuildDescription'))}
+              whatWeBuildProduct={t('portfolio.suraClient.weCreateProduct')}
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-[184px]">
+                  <ChipColorFilled
+                    background="bg-transparent"
+                    label="Web responsive"
+                    outlineColor="border-purple"
+                    type="slim"
+                  />
+                </div>
+                <p>+</p>
+                <div className="w-[74px]">
+                  <ChipColorFilled
+                    background="bg-transparent"
+                    label="API"
+                    outlineColor="border-purple"
+                    type="slim"
+                  />
+                </div>
+              </div>
+            </WhatWeBuildSection>
+            <MoreProjectsSection locale={locale} />
           </div>
         </div>
       </TransitionWrapper>
@@ -130,3 +108,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+export default SuraPage;

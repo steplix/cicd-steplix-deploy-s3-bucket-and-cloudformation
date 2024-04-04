@@ -398,14 +398,14 @@
     "portfolio": {
       "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
       "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
-      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio."
-      "clients": [
-        {
+      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio.",
+      "clients":{
+        "sura": {
           "title": "Portfolio | Clientes | SURA",
           "keywords": "Seguros SURA, Desarrollo de software de seguros, Plataformas de seguros, Transformación digital en seguros, Digitalización de seguros, Integración de servicios de seguros, Software de seguros, Automatización de seguros, SURA, Experiencia de usuario en seguros, Fintech seguros, Innovación en seguros, Soluciones digitales para seguros, Sistemas de gestión de seguros",
           "description": "Descubre cómo Steplix ha impulsado la transformación digital en SURA, una de las principales aseguradoras, a través de soluciones de software innovadoras."
         }
-      ]
+      }
     },
     "contact": {
       "title": "Contáctanos | Digital Sherpas | Steplix Software 🧗",
@@ -418,7 +418,6 @@
       "description": "Únete a nuestro equipo de profesionales talentosos. Conviértete en un Steplixer y ayuda a impulsar la innovación digital mientras desarrollas tu carrera. Aplica ahora."
     }
   },
-
   "PortfolioSection": {
     "pronoun": "Nuestro",
     "title": "portfolio",
@@ -426,7 +425,6 @@
     "subtitle2": "Nuestros clientes dicen",
     "parraf1": "Escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
   },
-
   "IconsLabel": {
     "agro": "Agropecuario",
     "insurance": "Seguros",
@@ -440,7 +438,6 @@
     "news": "Medio digital",
     "aeronautics": "Aeronáutica"
   },
-
   "ButtonCardContact": "Agendar cita",
   "ButtonBecomeSteplixer": "Conviértete en Steplixer",
   "ButtonProject": "Cuéntanos tu proyecto",
@@ -567,16 +564,16 @@
     "approachTechnology": "Tecnología",
     "whatWeBuild": "¿Qué construimos?",
     "moreProjects": "Más proyectos",
+    "weCreate": "Creamos un ",
     "suraClient": {
       "headingIcon": "Seguros",
       "headingLabel": "Cotizador online",
       "challengeDescription": "Las personas productoras de seguros necesitaban utilizar una herramienta digital que <b>facilite y ayude en la tarea de cotización.</b>",
-      "whatWeBuildDescription": "Junto al cliente diseñamos y desarrollamos una herramienta que le permite a muchos productores de seguro tener mayor agilidad y dinamismo al cotizar las cuotas para sus clientes.",
-      "weCreate": "Creamos un cotizador online. ",
-      "weCreateDescription": "The web interface and the API make life easier for insurance producers by delivering crucial information to their mobile devices and decreasing the complexity and time required to generate quotes."
+      "whatWeBuildDescription": "Junto al cliente diseñamos y desarrollamos una herramienta que le permite a muchos productores de seguro tener <b>mayor agilidad y dinamismo</b> al cotizar las cuotas para sus clientes.",
+      "weCreateProduct": "cotizador online. ",
+      "weCreateDescription": "La interfaz web y la API permiten acercar a los productores de seguros llevando a sus dispositivos móviles la información que necesitan y <b>reduciendo la complejidad y los tiempos requeridos</b> para realizar cotizaciones."
     }
   },
-
   "BecomeSteplixerSection": {
     "title": "Nuestros beneficios",
     "title2": "Nuestros valores",
@@ -592,7 +589,6 @@
     "socialMediaAriaLabel": "Visita Head of People LinkedIn",
     "imageAlt": "Fotografía de Josefina Salimei, Steplix's Head of People"
   },
-
   "SteplixBenefits": {
     "benefit1": {
       "title": "Trabajo híbrido",
@@ -627,7 +623,6 @@
       "description": "Ofrecemos compensaciones alineadas al mercado."
     }
   },
-
   "SteplixInternalValues": {
     "value1": {
       "title": "Confianza",

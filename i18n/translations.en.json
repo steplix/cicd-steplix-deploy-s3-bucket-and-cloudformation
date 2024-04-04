@@ -568,13 +568,14 @@
     "approachTechnology": "Technology",
     "whatWeBuild": "What we built",
     "moreProjects": "More projects",
+    "weCreate": "We created an ",
     "suraClient": {
       "headingIcon": "Insurance",
       "headingLabel": "Quote generator",
       "challengeDescription": "Insurance providers needed a digital tool to <b>simplify and assist in the quoting process.</b>",
-      "whatWeBuildDescription": "Working closely with the client, we designed and developed a tool that enables many insurance producers to be more efficient and dynamic when providing quotes for their clients.",
-      "weCreate": "We created an online quote generator.",
-      "weCreateDescription": "La interfaz web y la API permiten acercar a los productores de seguros llevando a sus dispositivos móviles la información que necesitan   y reduciendo la complejidad y los tiempos requeridos para realizar cotizaciones."
+      "whatWeBuildDescription": "Working closely with the client, we designed and developed a tool that enables many insurance producers to be <b>more efficient and dynamic</b> when providing quotes for their clients.",
+      "weCreateProduct": "online quote generator. ",
+      "weCreateDescription": "The web interface and the API make life easier for insurance producers by delivering crucial information to their mobile devices and <b>decreasing the complexity and time required</b> to generate quotes."
     }
   },
   "BecomeSteplixerSection": {
