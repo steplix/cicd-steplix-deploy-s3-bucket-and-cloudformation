@@ -32,7 +32,7 @@ export const WhatWeBuildSection = ({
           {children}
         </div>
         <p className="font-poppins text-[13px] lg:text-base text-black">{weCreateDescription}</p>
-        <div className={`h-[240px] sm:h-[240px] ${imageClassname}`} />
+        <div className={`h-[240px] lg:h-[281px] xl:h-[336px] ${imageClassname}`} />
         <div className="w-full flex items-center justify-center mt-4">
           <ButtonCard
             clickEvent={() => {
