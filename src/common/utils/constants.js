@@ -679,11 +679,11 @@ export const SURA_CHIPS = {
       alt: 'Node image',
     },
     {
-      imageUrl: '/assets/img/stack/azure.svg',
+      imageUrl: '/static/technologies/azure.svg',
       alt: 'Azure image',
     },
     {
-      imageUrl: '/assets/img/stack/angular.svg',
+      imageUrl: '/static/technologies/angularjs.svg',
       alt: 'AngularJs image',
     },
   ],

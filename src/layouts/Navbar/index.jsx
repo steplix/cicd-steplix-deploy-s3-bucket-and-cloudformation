@@ -17,7 +17,6 @@ const Navbar = () => {
     query: { locale },
     pathname,
     asPath,
-    // route,
   } = useRouter();
   const [i18nQuery] = useLanguageQuery(locale);
   const { t } = useTranslation(i18nQuery?.locale);
@@ -28,7 +27,6 @@ const Navbar = () => {
 
     return pathnameToTest.test(asPath) ? 'nav--link--active' : '';
   };
-
   //
   // State
   //
@@ -36,16 +34,6 @@ const Navbar = () => {
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
   const [colorChange, setColorchange] = React.useState(true);
-  // const changeNavbarColor = () => {
-  //   if (window.scrollY >= 80) {
-  //     setColorchange(true);
-  //   } else {
-  //     setColorchange(false);
-  //   }
-  // };
-
-  // window.addEventListener('scroll', changeNavbarColor);
-
   //
   // Effects
   //
