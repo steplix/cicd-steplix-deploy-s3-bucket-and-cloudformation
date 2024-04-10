@@ -793,3 +793,62 @@ export const PRODUCTS_CARDS = [
     ],
   },
 ];
+
+export const POW_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'star',
+      label: 'Product Owner',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+    {
+      imageUrl: '/static/technologies/nextjs.svg',
+      alt: 'Nextjs image',
+    },
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/static/technologies/figma.svg',
+      alt: 'Figma image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+  ],
+};

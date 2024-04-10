@@ -382,6 +382,11 @@
           "title": "Portfolio | Clientes | SURA",
           "keywords": "Seguros SURA, Desarrollo de software de seguros, Plataformas de seguros, Transformación digital en seguros, Digitalización de seguros, Integración de servicios de seguros, Software de seguros, Automatización de seguros, SURA, Experiencia de usuario en seguros, Fintech seguros, Innovación en seguros, Soluciones digitales para seguros, Sistemas de gestión de seguros",
           "description": "Descubre cómo Steplix ha impulsado la transformación digital en SURA, una de las principales aseguradoras, a través de soluciones de software innovadoras."
+        },
+        "pow": {
+          "title": "Portfolio | Clientes | POW",
+          "keywords": "POW, Desarrollo de software de e-commerce, Plataformas de e-commerce, Transformación digital en e-commerce, Digitalización de e-commerce, Integración de servicios de e-commerce, Software de e-commerce, Automatización de e-commerce, Experiencia de usuario en e-commerce, Innovación en e-commerce, Soluciones digitales para e-commerce, Sistemas de gestión de e-commerce",
+          "description": "Descubre cómo Steplix ha impulsado la transformación digital en POW, una de las principales plataformas de e-commerce, a través de soluciones de software innovadoras."
         }
       }
     },
@@ -552,6 +557,14 @@
       "whatWeBuildDescription": "Junto al cliente diseñamos y desarrollamos una herramienta que le permite a muchos productores de seguro tener <b>mayor agilidad y dinamismo</b> al cotizar las cuotas para sus clientes.",
       "weCreateProduct": "cotizador online. ",
       "weCreateDescription": "La interfaz web y la API permiten acercar a los productores de seguros llevando a sus dispositivos móviles la información que necesitan y <b>reduciendo la complejidad y los tiempos requeridos</b> para realizar cotizaciones."
+    },
+    "powClient": {
+      "headingIcon": "E-commerce",
+      "headingLabel": "Dashboard",
+      "challengeDescription": "<b>Tiendas alojadas en las plataformas</b> de Shopify, VTEX o Hermes generan datos de negocio que se encuentran en diferentes formatos y fuentes.<br>Los indicadores valiosos están en datos de <b>difíciles acceso y requieren de intervención manual o especializada.</b>",
+      "whatWeBuildDescription": "Construimos un <b>sistema de recolección de datos de diferentes fuentes.</b> Combina información de órdenes, facturación, visitas y envíos para 3 proveedores de servicio e-commerce: <b>Shopify, VTEX y Hermes.</b>",
+      "weCreateProduct": "dashboard web.",
+      "weCreateDescription": "Potenciamos las operaciones de los clientes de Pow, agrupando la información y mostrándola en un tablero junto a valiosas métricas e indicadores."
     }
   },
   "BecomeSteplixerSection": {

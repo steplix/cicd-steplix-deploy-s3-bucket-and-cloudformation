@@ -383,6 +383,11 @@
           "title": "Portfolio | Clients | SURA",
           "keywords": "SURA Insurance,Insurance software development, Insurance platforms, Digital transformation in insurance, Insurance digitization, Insurance service integration, Insurance software, Insurance automation, SURA, User experience in insurance, Fintech insurance, Innovation in insurance, Digital solutions for insurance, Insurance management systems",
           "description": "Find out how Steplix has propelled digital transformation at SURA, a leading insurer, through innovative software solutions."
+        },
+        "pow": {
+          "title": "Portfolio | Clients | POW",
+          "keywords": "POW, E-commerce software development ,E-commerce platforms, Digital transformation in e-commerce, E-commerce digitization, E-commerce service integration, E-commerce software, E-commerce automation, User experience in e-commerce, Innovation in e-commerce, Digital solutions for e-commerce, E-commerce management systems, E-commerce data collection, E-commerce data analysis, E-commerce data visualization",
+          "description": "Find out how Steplix has propelled digital transformation at POW, a leading e-commerce platform, through innovative software solutions."
         }
       }
     },
@@ -554,6 +559,14 @@
       "whatWeBuildDescription": "Working closely with the client, we designed and developed a tool that enables many insurance producers to be <b>more efficient and dynamic</b> when providing quotes for their clients.",
       "weCreateProduct": "online quote generator. ",
       "weCreateDescription": "The web interface and the API make life easier for insurance producers by delivering crucial information to their mobile devices and <b>decreasing the complexity and time required</b> to generate quotes."
+    },
+    "powClient": {
+      "headingIcon": "E-commerce",
+      "headingLabel": "Dashboard",
+      "challengeDescription": "<b>Stores hosted</b> on Shopify, VTEX, or Hermes <b>platforms</b> generate business data that is in different formats and sources.<br> Valuable indicators are in <b>hard-to-access data and require manual intervention.</b>",
+      "whatWeBuildDescription": "We developed a <b>data collection system</b> from different sources, merging information about orders, billing, traffic, and deliveries across three <b>key e-commerce platforms</b>: Shopify, VTEX, and Hermes.",
+      "weCreateProduct": "web dashboard.",
+      "weCreateDescription": "We <b>amplified Pow's client operations</b> by consolidating data and showcasing it on a panel with invaluable metrics and KPI´s."
     }
   },
   "BecomeSteplixerSection": {

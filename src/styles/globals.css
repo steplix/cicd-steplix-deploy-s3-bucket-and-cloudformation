@@ -808,25 +808,50 @@
         background-size: contain;
         background-position: center;
     }
+
+    .challenge-image-pow {
+        background-image: url("../../public/assets/img/portfolio/pow/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
     @media (min-width: 640px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
+        }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeM.png") ;
         }
     }
     @media (min-width: 1024px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeLG.png") ;
         }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeLG.png") ;
+        }
     }
     @media (min-width: 1240px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeXL.png") ;
         }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeXL.png") ;
+        }
     }
     .what-we-build-image-sura {
         background-image: url("../../public/assets/img/portfolio/sura/product.svg");
         background-repeat: no-repeat;
-        background-size: cover
+        background-size: cover;
+        background-position: center;
+    }
+
+    .what-we-build-image-pow {
+        background-image: url("../../public/assets/img/portfolio/pow/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     /* END INDIVIDUAL PORTFOLIO */
 
