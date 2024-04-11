@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### Added 11/04/2024
+
+- **Pages**
+  - `PowPage`: Custom page for client protfolio.
+
 ### Added 04/04/2024
 
 - **Components**:
@@ -14,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `PortfolioHeadingSection`: Custom module for client protfolio.
   - `PortfolioHeaderSection`: Custom module for client protfolio.
   - `WhatWeBuildSection`: Custom module for client protfolio.
+
+- **Pages**
+  - `SuraPage`: Custom page for client protfolio.
 
 ## Release 3.1.0 27/03/2024
 
