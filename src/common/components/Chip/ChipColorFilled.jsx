@@ -5,6 +5,7 @@ import Icon from '../Icon';
 const types = {
   slim: 'chip--slim',
   medium: 'chip--medium',
+  mediumBigText: 'chip--medium-big-text',
   big: 'chip--big',
 };
 
