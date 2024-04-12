@@ -388,6 +388,11 @@
           "title": "Portfolio | Clients | POW",
           "keywords": "POW, E-commerce software development ,E-commerce platforms, Digital transformation in e-commerce, E-commerce digitization, E-commerce service integration, E-commerce software, E-commerce automation, User experience in e-commerce, Innovation in e-commerce, Digital solutions for e-commerce, E-commerce management systems, E-commerce data collection, E-commerce data analysis, E-commerce data visualization",
           "description": "Find out how Steplix has propelled digital transformation at POW, a leading e-commerce platform, through innovative software solutions."
+        },
+        "x28": {
+          "title": "Portfolio | Clients | X28",
+          "keywords": "X-28, Security software development, Alarm control application, Digital transformation in security, Security service digitization, Security software, Security automation, User experience in security apps, Innovation in security, Digital solutions for security, Security management systems, Security data collection, Security data analysis, Security data visualization",
+          "description": "Find out how Steplix has propelled digital transformation at X-28, a leading security company, through innovative software solutions."
         }
       }
     },
@@ -567,6 +572,17 @@
       "whatWeBuildDescription": "We developed a <b>data collection system</b> from different sources, merging information about orders, billing, traffic, and deliveries across three <b>key e-commerce platforms</b>: Shopify, VTEX, and Hermes.",
       "weCreateProduct": "web dashboard.",
       "weCreateDescription": "We <b>amplified Pow's client operations</b> by consolidating data and showcasing it on a panel with invaluable metrics and KPI´s."
+    },
+    "x28Client": {
+      "headingIcon": "Security",
+      "headingLabel": "Alarm management",
+      "challengeDescription": "Be the <b>tech partner</b> that X-28 needs for giving support and maintenance to their product, keep on with the development and the improvement process.<br><br><b>Mi alarma</b> is the app that allows control and management of alarms to X-28 customers. It was needed:<ul><li> • <b>Boost the security and user experience</b> for the app on iOS and Android.</li><li> • Show the technical info of each account through a <b>backoffice.</b></li></ul>",
+      "whatWeBuildDescription": "Firstly, we set up a <b>multidisciplinary technical squad to assist the client</b> in taking control of the product, by checking and analyzing: documentation, environment, code.",
+      "weCreateProduct": "We complete the missing information and deliver improvement recommendations identified during this first stage.",
+      "weCreateDescription": "Based on the findings and the list of pending tasks, we continue the development by <b>eliminating risks and system vulnerabilities, improving performance, usability and accessibility.</b>",
+      "hybridApp": "Hybrid app",
+      "restAPI": "Rest API",
+      "backoffice": "Backoffice"
     }
   },
   "BecomeSteplixerSection": {

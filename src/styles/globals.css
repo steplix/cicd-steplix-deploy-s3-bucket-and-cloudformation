@@ -816,12 +816,22 @@
         background-position: center;
     }
 
+    .challenge-image-x28 {
+        background-image: url("../../public/assets/img/portfolio/x28/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
     @media (min-width: 640px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
         }
         .challenge-image-pow {
             background-image: url("../../public/assets/img/portfolio/pow/challengeM.png") ;
+        }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeM.png") ;
         }
     }
     @media (min-width: 1024px) {
@@ -831,6 +841,9 @@
         .challenge-image-pow {
             background-image: url("../../public/assets/img/portfolio/pow/challengeLG.png") ;
         }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeLG.png") ;
+        }
     }
     @media (min-width: 1240px) {
         .challenge-image-sura {
@@ -838,6 +851,9 @@
         }
         .challenge-image-pow {
             background-image: url("../../public/assets/img/portfolio/pow/challengeXL.png") ;
+        }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeXL.png") ;
         }
     }
     .what-we-build-image-sura {
@@ -852,6 +868,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    .what-we-build-image-x28 {
+        background-image: url("../../public/assets/img/portfolio/x28/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
     }
     /* END INDIVIDUAL PORTFOLIO */
 
@@ -882,6 +904,14 @@
 
     .chip--medium>span {
         @apply font-poppins font-semibold text-[13px];
+    }
+
+    .chip--medium-big-text {
+        @apply px-3 gap-1 h-10 min-w-[7.5625rem];
+    }
+
+    .chip--medium-big-text>span {
+        @apply font-poppins font-semibold text-[16px];
     }
 
     .chip--big {

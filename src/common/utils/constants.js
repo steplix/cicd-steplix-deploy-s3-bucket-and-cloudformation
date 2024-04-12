@@ -852,3 +852,50 @@ export const POW_CHIPS = {
     },
   ],
 };
+
+export const X28_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+  ],
+};
