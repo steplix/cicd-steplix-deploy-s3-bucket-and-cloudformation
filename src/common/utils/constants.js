@@ -899,3 +899,95 @@ export const X28_CHIPS = {
     },
   ],
 };
+
+export const FINKET_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'newPhone',
+      label: 'Mobile',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'star',
+      label: 'Product Owner',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/static/technologies/kotlin.svg',
+      alt: 'Kotlin image',
+    },
+    {
+      imageUrl: '/static/technologies/nextjs.svg',
+      alt: 'Nextjs image',
+    },
+    {
+      imageUrl: '/static/technologies/docker.svg',
+      alt: 'Docker image',
+    },
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/static/technologies/figma.svg',
+      alt: 'Figma image',
+    },
+    {
+      imageUrl: '/static/technologies/java.svg',
+      alt: 'Java image',
+    },
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+  ],
+  products: [
+    {
+      label: 'portfolio.finketClient.chips.web',
+    },
+    {
+      label: 'portfolio.finketClient.chips.app',
+    },
+    {
+      label: 'portfolio.finketClient.chips.core',
+    },
+    {
+      label: 'portfolio.finketClient.chips.landing',
+    },
+    {
+      label: 'portfolio.finketClient.chips.web',
+    },
+  ]
+};

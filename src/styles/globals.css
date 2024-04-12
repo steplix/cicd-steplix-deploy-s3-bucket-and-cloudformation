@@ -823,6 +823,13 @@
         background-position: center;
     }
 
+    .challenge-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
     @media (min-width: 640px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
@@ -832,6 +839,9 @@
         }
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeM.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeM.png") ;
         }
     }
     @media (min-width: 1024px) {
@@ -844,6 +854,9 @@
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeLG.png") ;
         }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeLG.png") ;
+        }
     }
     @media (min-width: 1240px) {
         .challenge-image-sura {
@@ -854,6 +867,9 @@
         }
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeXL.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeXL.png") ;
         }
     }
     .what-we-build-image-sura {
@@ -873,6 +889,13 @@
         background-image: url("../../public/assets/img/portfolio/x28/product.svg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center top;
+    }
+
+    .what-we-build-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/product.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
         background-position: center top;
     }
     /* END INDIVIDUAL PORTFOLIO */

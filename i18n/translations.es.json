@@ -392,6 +392,11 @@
           "title": "Portfolio | Clientes | X28",
           "keywords": "X-28, Security software development, Alarm control application, Digital transformation in security, Security service digitization, Security software, Security automation, User experience in security apps, Innovation in security, Digital solutions for security, Security management systems, Security data collection, Security data analysis, Security data visualization",
           "description": "Find out how Steplix has propelled digital transformation at X-28, a leading security company, through innovative software solutions."
+        },
+        "finket": {
+          "title": "Portfolio | Clientes | Finket",
+          "keywords": "Fintech, Servicios financieros digitales, Aplicación financiera, Finanzas inclusivas, Servicios para no bancarizados, Mobile banking, Banca digital, Plataforma de servicios financieros, Préstamos en línea, Microservicios, Pagos con QR, Pago de servicios en línea, Recargas móviles, Integración de servicios financieros, Marketplace de productos financieros, Finket, Desarrollo de software fintech, Soluciones fintech, Banca móvil para no bancarizados, Acceso financiero para todos, Core bancario digital, Seguros digitales, Préstamos digitales, Finanzas personales en línea, Finanzas accesibles",
+          "description": "Descubre cómo Steplix ayudó a Finket a ofrecer servicios financieros inclusivos y accesibles a través de una app financiera innovadora"
         }
       }
     },
@@ -555,6 +560,10 @@
     "whatWeBuild": "¿Qué construimos?",
     "moreProjects": "Más proyectos",
     "weCreate": "Creamos un ",
+    "features": "funcionalidades",
+    "microservices": "microservicios",
+    "someFunctionalities": "Algunas de sus funcionalidades",
+    "independentProducts": "Productos independientes",
     "suraClient": {
       "headingIcon": "Seguros",
       "headingLabel": "Cotizador online",
@@ -581,6 +590,32 @@
       "hybridApp": "App híbrida",
       "restAPI": "API Rest",
       "backoffice": "Backoffice"
+    },
+    "finketClient": {
+      "headingIcon": "Fintech",
+      "headingLabel": "Marketplace",
+      "challengeDescription": "<b>Ofrecer productos financieros de calidad</b> a un público no bancarizado",
+      "whatWeBuildDescription": "Creamos un producto al que <b>cualquier persona</b> con un DNI y teléfono móvil pueda acceder de forma 100% online.<br> Ofrece a las personas usuarias una aplicación <b>intuitiva y ligera</b>, con un core moderno y flexible basado en microservicios y con herramientas de administración web claras.",
+      "weCreateProduct": "marketplace de productos financieros.",
+      "qrPayment": "Pagos con QR",
+      "topUp": "Recargas",
+      "billPayments": "Pago de servicios",
+      "identity": "Identity",
+      "loans": "Préstamos",
+      "insurance": "Seguros",
+      "clientQuote": "“Sin duda un key partner a tener en cuenta a la hora de emprender proyectos que requieran soluciones simples frente desafíos de gran complejidad.”",
+      "autor": {
+        "name": "Lucas Bianchi",
+        "position": "CEO & Founder",
+        "company": "CTECH"
+      },
+      "chips":{
+        "web": "Web backoffice",
+        "app": "App Android nativa",
+        "core": "Construcción de core",
+        "landing": "Landing responsive",
+        "integration": "Integración a + de 10 servicios"
+      }
     }
   },
   "BecomeSteplixerSection": {
