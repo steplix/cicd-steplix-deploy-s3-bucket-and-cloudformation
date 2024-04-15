@@ -11,6 +11,7 @@ import { FINKET_CHIPS } from '@/common/utils/constants';
 import { ApproachSection } from '@/modules/Portfolio/Approach';
 import { WhatWeBuildSectionB } from '@/modules/Portfolio/WhatWeBuildB';
 import { MoreProjectsSection } from '@/modules/Portfolio/MoreProjects';
+import { NumericalLabelComponent } from '@/common/components/NumericalLabel';
 const FinketPage = ({ locale }) => {
   const { t } = useTranslation(locale);
 
@@ -57,12 +58,18 @@ const FinketPage = ({ locale }) => {
             whatWeBuildDescription={parse(t('portfolio.finketClient.whatWeBuildDescription'))}
             whatWeBuildProduct={t('portfolio.finketClient.weCreateProduct')}
           >
-            <p className="font-poppins text-black">
-              {t('portfolio.weCreate')}
-              <span className="text-blue font-semibold">
-                {t('portfolio.finketClient.weCreateProduct')}
-              </span>
-            </p>
+            <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
+              <p className="font-poppins text-black">
+                {t('portfolio.weCreateA')}
+                <span className="text-blue font-semibold">
+                  {t('portfolio.finketClient.weCreateProduct')}
+                </span>
+              </p>
+              <div className="flex justify-center gap-3">
+                <NumericalLabelComponent label={t('portfolio.feature')} number="+ 125" />
+                <NumericalLabelComponent label={t('portfolio.microservices')} number="+ 90" />
+              </div>
+            </div>
           </WhatWeBuildSectionB>
           <MoreProjectsSection />
         </div>

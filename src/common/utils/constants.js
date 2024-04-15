@@ -973,7 +973,35 @@ export const FINKET_CHIPS = {
       alt: 'Node image',
     },
   ],
+  functionalities: [
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.qrPayment',
+    },
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.topUp',
+    },
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.billPayments',
+    },
+  ],
   products: [
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.identity',
+    },
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.loans',
+    },
+    {
+      iconName: '',
+      label: 'portfolio.finketClient.Insurance',
+    },
+  ],
+  productsChips: [
     {
       label: 'portfolio.finketClient.chips.web',
     },

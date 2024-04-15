@@ -63,7 +63,7 @@ const SuraPage = ({ locale }) => {
           >
             <>
               <p className="font-poppins text-black">
-                {t('portfolio.weCreate')}
+                {t('portfolio.weCreateAn')}
                 <span className="text-blue font-semibold">{t('portfolio.suraClient.weCreateProduct')}</span>
               </p>
               <div className="flex items-center gap-3">
