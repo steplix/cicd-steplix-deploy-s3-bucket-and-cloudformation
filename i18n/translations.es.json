@@ -377,7 +377,7 @@
       "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
       "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
       "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio.",
-      "clients":{
+      "clients": {
         "sura": {
           "title": "Portfolio | Clientes | SURA",
           "keywords": "Seguros SURA, Desarrollo de software de seguros, Plataformas de seguros, Transformación digital en seguros, Digitalización de seguros, Integración de servicios de seguros, Software de seguros, Automatización de seguros, SURA, Experiencia de usuario en seguros, Fintech seguros, Innovación en seguros, Soluciones digitales para seguros, Sistemas de gestión de seguros",
@@ -598,19 +598,37 @@
       "challengeDescription": "<b>Ofrecer productos financieros de calidad</b> a un público no bancarizado",
       "whatWeBuildDescription": "Creamos un producto al que <b>cualquier persona</b> con un DNI y teléfono móvil pueda acceder de forma 100% online.<br> Ofrece a las personas usuarias una aplicación <b>intuitiva y ligera</b>, con un core moderno y flexible basado en microservicios y con herramientas de administración web claras.",
       "weCreateProduct": "marketplace de productos financieros.",
-      "qrPayment": "Pagos con QR",
-      "topUp": "Recargas",
-      "billPayments": "Pago de servicios",
-      "identity": "Identity",
-      "loans": "Préstamos",
-      "insurance": "Seguros",
+      "qrPayment": {
+        "title": "Pagos con QR",
+        "description": "Creamos una <b>app de pagos con QR</b>. Logramos la homologación de la API para ofrecer <b>servicios interoperables en Argentina.</b>,"
+      },
+      "topUp": {
+        "title": "Recargas",
+        "description": "Funcionalidad mobile que <b>permite realizar recargas</b> de SUBE, Movistar, Personal, Tuenti, DirecTV rápidamente desde el teléfono"
+      },
+      "billPayments": {
+        "title": "Pago de servicios",
+        "description": "Implementación de pago de servicios usando API de RapiPago."
+      },
+      "identity": {
+        "title": "Identity",
+        "description": "Plataforma digital de “firma electrónica” para <b>verificar identidad por reconocimiento biométrico.</b><br>Permite completar operaciones administrativas y legales."
+      },
+      "loans": {
+        "title": "Préstamos",
+        "description": "Plataforma que permite a los usuarios <b>acceder a préstamos de manera digital.<b> Acompañamos la solución con un <b>backoffice que agiliza el proceso de aprobación.</b>"
+      },
+      "insurance": {
+        "title": "Seguros",
+        "description": "Proceso de solicitud de seguros (firma, validación de identidad, alta, baja y pago de póliza online). <b>Simple, intuitivo e integrable</b> con variedad de proveedores, productos y servicios. "
+      },
       "clientQuote": "“Sin duda un key partner a tener en cuenta a la hora de emprender proyectos que requieran soluciones simples frente desafíos de gran complejidad.”",
       "autor": {
         "name": "Lucas Bianchi",
         "position": "CEO & Founder",
         "company": "CTECH"
       },
-      "chips":{
+      "chips": {
         "web": "Web backoffice",
         "app": "App Android nativa",
         "core": "Construcción de core",

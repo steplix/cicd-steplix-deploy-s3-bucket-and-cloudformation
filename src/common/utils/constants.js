@@ -975,30 +975,36 @@ export const FINKET_CHIPS = {
   ],
   functionalities: [
     {
-      iconName: '',
-      label: 'portfolio.finketClient.qrPayment',
+      iconName: 'qr',
+      label: 'portfolio.finketClient.qrPayment.title',
+      description: 'portfolio.finketClient.qrPayment.description',
     },
     {
-      iconName: '',
-      label: 'portfolio.finketClient.topUp',
+      iconName: 'topUp',
+      label: 'portfolio.finketClient.topUp.title',
+      description: 'portfolio.finketClient.topUp.description',
     },
     {
-      iconName: '',
-      label: 'portfolio.finketClient.billPayments',
+      iconName: 'bill',
+      label: 'portfolio.finketClient.billPayments.title',
+      description: 'portfolio.finketClient.billPayments.description',
     },
   ],
   products: [
     {
-      iconName: '',
-      label: 'portfolio.finketClient.identity',
+      iconName: 'faceId',
+      label: 'portfolio.finketClient.identity.title',
+      description: 'portfolio.finketClient.identity.description',
     },
     {
-      iconName: '',
-      label: 'portfolio.finketClient.loans',
+      iconName: 'loan',
+      label: 'portfolio.finketClient.loans.title',
+      description: 'portfolio.finketClient.loans.description',
     },
     {
-      iconName: '',
-      label: 'portfolio.finketClient.Insurance',
+      iconName: 'insurance',
+      label: 'portfolio.finketClient.insurance.title',
+      description: 'portfolio.finketClient.insurance.description',
     },
   ],
   productsChips: [

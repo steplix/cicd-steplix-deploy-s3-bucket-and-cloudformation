@@ -98,3 +98,7 @@ export * from './itemList';
 export * from './shieldLock';
 export * from './lock';
 export * from './fintechB';
+export * from './faceId';
+export * from './loan';
+export * from './qr';
+export * from './topUp';

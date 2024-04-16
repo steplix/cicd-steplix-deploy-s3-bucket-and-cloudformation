@@ -600,12 +600,30 @@
       "challengeDescription": "<b>Providing quality financial products</b> to an unbanked audience.",
       "whatWeBuildDescription": "We developed a solution that is 100% online and accessible to <b>anyone</b> with an ID and a mobile phone.<br> This platform provides an <b>intuitive, light-weight application</b> with a modern, flexible microservice-based core and user-friendly web-based administration tools.",
       "weCreateProduct": "marketplace for financial products.",
-      "qrPayment": "QR code payments",
-      "topUp": "Top-ups",
-      "billPayments": "Bill payments",
-      "identity": "Identity",
-      "loans": "Loans",
-      "insurance": "Insurance",
+      "qrPayment": {
+        "title": "QR code payments",
+        "description":"We created a QR payment app. We achieved API standardization to offer interoperable services in Argentina."
+      },
+      "topUp": {
+        "title": "Top-ups",
+        "description":"Mobile functionality that allows for quick recharges of SUBE, Movistar, Personal, Tuenti, DirecTV from the phone."
+      },
+      "billPayments": {
+        "title": "Bill payments",
+        "description": "Implementation of service payments using RapiPago API."
+      },
+      "identity": {
+        "title": "Identity",
+        "description": "Digital platform for “felectronic signature” to verify identity through biometric recognition."
+      },
+      "loans": {
+        "title": "Loans",
+        "description":"Platform that allows users to access loans digitally."
+      },
+      "insurance": {
+        "title": "Insurance",
+        "description":"Insurance application process (signature, identity validation, registration, cancellation, and online policy payment)."
+      },
       "clientQuote": "“Undoubtedly a key partner to take into account when undertaking projects that require simple solutions to highly complex challenges.”",
       "autor": {
         "name": "Lucas Bianchi",
