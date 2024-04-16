@@ -602,27 +602,27 @@
       "weCreateProduct": "marketplace for financial products.",
       "qrPayment": {
         "title": "QR code payments",
-        "description":"We created a QR payment app. We achieved API standardization to offer interoperable services in Argentina."
+        "description":"We created a <b>payment app with QR.</b> We achieved the approval of the API to offer <b>interoperable services in Argentina.</b>"
       },
       "topUp": {
         "title": "Top-ups",
-        "description":"Mobile functionality that allows for quick recharges of SUBE, Movistar, Personal, Tuenti, DirecTV from the phone."
+        "description":"Mobile functionality that <b>allows you to recharge</b> SUBE, Movistar, Personal, Tuenti, DirecTV quickly from your phone."
       },
       "billPayments": {
         "title": "Bill payments",
-        "description": "Implementation of service payments using RapiPago API."
+        "description": "Implementation of payment for services using RapiPago API."
       },
       "identity": {
         "title": "Identity",
-        "description": "Digital platform for “felectronic signature” to verify identity through biometric recognition."
+        "description": "Digital “electronic signature” platform <b>to verify identity through biometric recognition.<b/><br>Allows to complete administrative and legal operations."
       },
       "loans": {
         "title": "Loans",
-        "description":"Platform that allows users to access loans digitally."
+        "description":"Platform that allows users <b>to access loans digitally.</b> We accompany the solution with a <b>backoffice that speeds up the approval process.</b>"
       },
       "insurance": {
         "title": "Insurance",
-        "description":"Insurance application process (signature, identity validation, registration, cancellation, and online policy payment)."
+        "description":"Insurance application process (signature, identity validation, registration, cancellation and online policy payment). <b>Simple, intuitive and integrable</b> with a variety of suppliers, products and services."
       },
       "clientQuote": "“Undoubtedly a key partner to take into account when undertaking projects that require simple solutions to highly complex challenges.”",
       "autor": {
