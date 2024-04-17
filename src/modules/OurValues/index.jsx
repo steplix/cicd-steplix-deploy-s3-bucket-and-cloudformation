@@ -39,66 +39,81 @@ const OurValues = ({ locale }) => {
       </p>
       <motion.div ref={ref} animate={controls} initial="initial" variants={stagger}>
         <div className="flex flex-col gap-4 mb-8 sm:mb-6 lg:mb-10 sm:flex-row sm:justify-center sm:flex-wrap items-center">
-          <FlipCard
-            resize
-            description={
-              <HighlightedText
-                highlightStyle="text--custom-primary"
-                sentencesToHighlight={t('about_us.ourValues.trust.highlightedSentences')}
-                text={t('about_us.ourValues.trust.description')}
-              />
-            }
-            iconName="trust"
-            title={t('about_us.ourValues.trust.title')}
-          />
-          <FlipCard
-            resize
-            description={
-              <HighlightedText
-                highlightStyle="text--custom-primary"
-                sentencesToHighlight={t('about_us.ourValues.mutualRespect.highlightedSentences')}
-                text={t('about_us.ourValues.mutualRespect.description')}
-              />
-            }
-            iconName="mutualRespect"
-            title={t('about_us.ourValues.mutualRespect.title')}
-          />
-          <FlipCard
-            resize
-            description={
-              <HighlightedText
-                highlightStyle="text--custom-primary"
-                sentencesToHighlight={t('about_us.ourValues.success.highlightedSentences')}
-                text={t('about_us.ourValues.success.description')}
-              />
-            }
-            iconName="success"
-            title={t('about_us.ourValues.success.title')}
-          />
-          <FlipCard
-            resize
-            description={
-              <HighlightedText
-                highlightStyle="text--custom-primary"
-                sentencesToHighlight={t('about_us.ourValues.awareness.highlightedSentences')}
-                text={t('about_us.ourValues.awareness.description')}
-              />
-            }
-            iconName="awareness"
-            title={t('about_us.ourValues.awareness.title')}
-          />
-          <FlipCard
-            resize
-            description={
-              <HighlightedText
-                highlightStyle="text--custom-primary"
-                sentencesToHighlight={t('about_us.ourValues.agility.highlightedSentences')}
-                text={t('about_us.ourValues.agility.description')}
-              />
-            }
-            iconName="agility"
-            title={t('about_us.ourValues.agility.title')}
-          />
+          <div className="flip-card">
+            <FlipCard
+              resize
+              cardHeight="h-[134px] sm:h-[149px]"
+              description={
+                <HighlightedText
+                  highlightStyle="text--custom-primary"
+                  sentencesToHighlight={t('about_us.ourValues.trust.highlightedSentences')}
+                  text={t('about_us.ourValues.trust.description')}
+                />
+              }
+              iconName="trust"
+              title={t('about_us.ourValues.trust.title')}
+            />
+          </div>
+          <div className="flip-card">
+            <FlipCard
+              resize
+              cardHeight="h-[134px] sm:h-[149px]"
+              description={
+                <HighlightedText
+                  highlightStyle="text--custom-primary"
+                  sentencesToHighlight={t('about_us.ourValues.mutualRespect.highlightedSentences')}
+                  text={t('about_us.ourValues.mutualRespect.description')}
+                />
+              }
+              iconName="mutualRespect"
+              title={t('about_us.ourValues.mutualRespect.title')}
+            />
+          </div>
+          <div className="flip-card">
+            <FlipCard
+              resize
+              cardHeight="h-[134px] sm:h-[149px]"
+              description={
+                <HighlightedText
+                  highlightStyle="text--custom-primary"
+                  sentencesToHighlight={t('about_us.ourValues.success.highlightedSentences')}
+                  text={t('about_us.ourValues.success.description')}
+                />
+              }
+              iconName="success"
+              title={t('about_us.ourValues.success.title')}
+            />
+          </div>
+          <div className="flip-card">
+            <FlipCard
+              resize
+              cardHeight="h-[134px] sm:h-[149px]"
+              description={
+                <HighlightedText
+                  highlightStyle="text--custom-primary"
+                  sentencesToHighlight={t('about_us.ourValues.awareness.highlightedSentences')}
+                  text={t('about_us.ourValues.awareness.description')}
+                />
+              }
+              iconName="awareness"
+              title={t('about_us.ourValues.awareness.title')}
+            />
+          </div>
+          <div className="flip-card">
+            <FlipCard
+              resize
+              cardHeight="h-[134px] sm:h-[149px]"
+              description={
+                <HighlightedText
+                  highlightStyle="text--custom-primary"
+                  sentencesToHighlight={t('about_us.ourValues.agility.highlightedSentences')}
+                  text={t('about_us.ourValues.agility.description')}
+                />
+              }
+              iconName="agility"
+              title={t('about_us.ourValues.agility.title')}
+            />
+          </div>
         </div>
       </motion.div>
       <ButtonBecomeSteplixer

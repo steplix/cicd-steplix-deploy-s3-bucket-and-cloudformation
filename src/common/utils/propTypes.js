@@ -106,6 +106,8 @@ export const propTypeIconName = PropTypes.oneOf([
   'faceId',
   'topUp',
   'qr',
+  'bill',
+  'loan',
 ]);
 
 export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big', 'mediumBigText']);

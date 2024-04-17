@@ -11,5 +11,5 @@ export const NumericalLabelComponent = ({ label, number }) => {
 
 NumericalLabelComponent.propTypes = {
   label: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
+  number: PropTypes.string.isRequired,
 };

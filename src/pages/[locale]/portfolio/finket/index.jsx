@@ -53,6 +53,7 @@ const FinketPage = ({ locale }) => {
             </div>
           </ApproachSection>
           <WhatWeBuildSectionB
+            functionalities={FINKET_CHIPS.functionalities}
             imageClassname="what-we-build-image-finket"
             locale={locale}
             whatWeBuildDescription={parse(t('portfolio.finketClient.whatWeBuildDescription'))}
@@ -71,7 +72,7 @@ const FinketPage = ({ locale }) => {
               </div>
             </div>
           </WhatWeBuildSectionB>
-          <MoreProjectsSection />
+          <MoreProjectsSection locale={locale} />
         </div>
       </TransitionWrapper>
     </>
