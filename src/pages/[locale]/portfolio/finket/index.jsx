@@ -55,7 +55,10 @@ const FinketPage = ({ locale }) => {
           <WhatWeBuildSectionB
             functionalities={FINKET_CHIPS.functionalities}
             imageClassname="what-we-build-image-finket"
+            imageFunctionalityClassname="what-we-build-functionalities-finket"
             locale={locale}
+            productChips={FINKET_CHIPS.productsChips}
+            products={FINKET_CHIPS.products}
             whatWeBuildDescription={parse(t('portfolio.finketClient.whatWeBuildDescription'))}
             whatWeBuildProduct={t('portfolio.finketClient.weCreateProduct')}
           >
@@ -67,7 +70,7 @@ const FinketPage = ({ locale }) => {
                 </span>
               </p>
               <div className="flex justify-center gap-3">
-                <NumericalLabelComponent label={t('portfolio.feature')} number="+ 125" />
+                <NumericalLabelComponent label={t('portfolio.features')} number="+ 125" />
                 <NumericalLabelComponent label={t('portfolio.microservices')} number="+ 90" />
               </div>
             </div>

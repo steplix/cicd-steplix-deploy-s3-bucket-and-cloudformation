@@ -1,11 +1,13 @@
 import { PropTypes } from 'prop-types';
+import parse from 'html-react-parser';
 
 import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from '@/common/lib/i18n';
 import ButtonCard from '@/common/components/ButtonCard';
 import FlipCard from '@/common/components/FlipCard';
-import HighlightedText from '@/common/components/HighlightedText';
 import Icon from '@/common/components/Icon';
+import { FlipCardDescriptions } from '@/common/components/FlipCardDescription';
+import ChipColorFilled from '@/common/components/Chip/ChipColorFilled';
 
 export const WhatWeBuildSectionB = ({
   locale,
@@ -13,6 +15,9 @@ export const WhatWeBuildSectionB = ({
   children,
   whatWeBuildDescription,
   functionalities,
+  imageFunctionalityClassname,
+  productChips,
+  products,
 }) => {
   const { t } = useTranslation(locale);
 
@@ -33,28 +38,83 @@ export const WhatWeBuildSectionB = ({
             {t('portfolio.someFunctionalities')}
           </p>
         </div>
-        <div className="flex flex-col gap-4">
-          {functionalities &&
-            functionalities.map(() => {
-              return (
-                <FlipCard
-                  key={t('about_us.ourValues.trust.description')}
-                  resize
-                  withButton
-                  cardHeight="h-[184px] sm:h-[217px] lg:h-[184px]"
-                  description={
-                    <HighlightedText
-                      highlightStyle="text--custom-primary"
-                      sentencesToHighlight={t('about_us.ourValues.trust.highlightedSentences')}
-                      text={t('about_us.ourValues.trust.description')}
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            {functionalities &&
+              functionalities.map((functionality, i) => {
+                return (
+                  <div key={i} className="card-container">
+                    <FlipCard
+                      resize
+                      withButton
+                      cardHeight="h-[184px] sm:h-[217px] lg:h-[184px]"
+                      description={
+                        <FlipCardDescriptions
+                          chips={functionality.description.chips}
+                          description={parse(t(functionality.description.content))}
+                        />
+                      }
+                      iconName={functionality.iconName}
+                      locale={locale}
+                      textClass="font-semibold text-[20px]"
+                      title={t(functionality.label)}
                     />
-                  }
-                  iconName="pig"
-                  locale={locale}
-                  title="sdasd"
-                />
-              );
-            })}
+                  </div>
+                );
+              })}
+            <div
+              className={`hidden sm:block card-container lg:hidden ${imageFunctionalityClassname}`}
+            />
+          </div>
+          <div
+            className={`h-[212px] sm:hidden lg:block lg:h-[247px] lg:w-full ${imageFunctionalityClassname}`}
+          />
+        </div>
+        <div className="flex flex-col gap-4 xl:gap-6">
+          <div className="flex gap-2 items-center">
+            <Icon className="h-4 w-4 lg:w-6 lg:h-6" name="star" />
+            <p className=" font-poppins font-semibold text-base lg:text-lg">
+              {t('portfolio.independentProducts')}
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <div className="flex flex-wrap gap-2 items-center justify-center sm:flex-col sm:card-container lg:w-full lg:flex-row xl:mb-4">
+              {productChips &&
+                productChips.map((chip, i) => {
+                  return (
+                    <ChipColorFilled
+                      key={i}
+                      label={t(chip.label)}
+                      labelColor="text-purple-dark"
+                      outlineColor="border-purple-dark"
+                      type="slim"
+                    />
+                  );
+                })}
+            </div>
+            {products &&
+              products.map((product, i) => {
+                return (
+                  <div key={i} className="card-container">
+                    <FlipCard
+                      resize
+                      withButton
+                      cardHeight="h-[184px] sm:h-[217px] lg:h-[184px]"
+                      description={
+                        <FlipCardDescriptions
+                          chips={product.description.chips}
+                          description={parse(t(product.description.content))}
+                        />
+                      }
+                      iconName={product.iconName}
+                      locale={locale}
+                      textClass="font-semibold text-[20px]"
+                      title={t(product.label)}
+                    />
+                  </div>
+                );
+              })}
+          </div>
         </div>
         <div className={`h-[197px] sm:h-[360px] lg:h-[629px] xl:h-[678px] ${imageClassname}`} />
         <div className="w-full flex items-center justify-center mt-4">
@@ -80,4 +140,7 @@ WhatWeBuildSectionB.propTypes = {
   children: PropTypes.node.isRequired,
   whatWeBuildDescription: PropTypes.array.isRequired,
   functionalities: PropTypes.array.isRequired,
+  imageFunctionalityClassname: PropTypes.string.isRequired,
+  productChips: PropTypes.array.isRequired,
+  products: PropTypes.array.isRequired,
 };

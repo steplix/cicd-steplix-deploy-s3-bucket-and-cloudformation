@@ -51,6 +51,7 @@ const OurValues = ({ locale }) => {
                 />
               }
               iconName="trust"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.trust.title')}
             />
           </div>
@@ -66,6 +67,7 @@ const OurValues = ({ locale }) => {
                 />
               }
               iconName="mutualRespect"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.mutualRespect.title')}
             />
           </div>
@@ -81,6 +83,7 @@ const OurValues = ({ locale }) => {
                 />
               }
               iconName="success"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.success.title')}
             />
           </div>
@@ -96,6 +99,7 @@ const OurValues = ({ locale }) => {
                 />
               }
               iconName="awareness"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.awareness.title')}
             />
           </div>
@@ -111,6 +115,7 @@ const OurValues = ({ locale }) => {
                 />
               }
               iconName="agility"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.agility.title')}
             />
           </div>

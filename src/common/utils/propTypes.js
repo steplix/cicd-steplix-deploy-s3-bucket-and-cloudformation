@@ -110,4 +110,4 @@ export const propTypeIconName = PropTypes.oneOf([
   'loan',
 ]);
 
-export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big', 'mediumBigText']);
+export const chipTypes = PropTypes.oneOf(['slim', 'medium', 'big', 'mediumBigText', 'tiny']);

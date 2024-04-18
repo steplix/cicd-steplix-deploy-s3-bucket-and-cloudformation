@@ -102,3 +102,4 @@ export * from './faceId';
 export * from './loan';
 export * from './qr';
 export * from './topUp';
+export * from './bill';

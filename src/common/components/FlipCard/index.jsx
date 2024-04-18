@@ -9,7 +9,16 @@ import Icon from '@/components/Icon';
 import { fadeInFromTheSide } from '@/common/lib/animation';
 import { getShortBreakpoint } from '@/common/utils/methods';
 
-const FlipCard = ({ title, iconName, resize, description, withButton, cardHeight, locale }) => {
+const FlipCard = ({
+  title,
+  iconName,
+  resize,
+  description,
+  withButton,
+  cardHeight,
+  locale,
+  textClass,
+}) => {
   const [isActive, setIsActive] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState('');
   const { t } = useTranslation(locale);
@@ -62,9 +71,9 @@ const FlipCard = ({ title, iconName, resize, description, withButton, cardHeight
       >
         <div className="flex flex-col absolute w-full h-full justify-center items-center backface-hidden space-y-[10px] border border-blue bg-white rounded-[20px] shadow-tech-card">
           <Icon className={`h-[40px] w-[40px]`} name={iconName} />
-          <p className={`title-[20px] text-center font-medium text-purple lg:text-base`}>{title}</p>
+          <p className={`text-center text-purple lg:text-base ${textClass}`}>{title}</p>
           {withButton && (
-            <div className="absolute bottom-1 right-2">
+            <div className="absolute bottom-2 right-3">
               <ButtonText
                 clickEvent={handleOnClick}
                 customImageClass="w-4 h-4"
@@ -74,7 +83,7 @@ const FlipCard = ({ title, iconName, resize, description, withButton, cardHeight
             </div>
           )}
         </div>
-        <div className="absolute w-full h-full rotate-y-180 flex items-center  backface-hidden border border-blue bg-white rounded-[20px] shadow-tech-card">
+        <div className="absolute w-full h-full rotate-y-180 flex items-center backface-hidden border border-blue bg-white rounded-[20px] shadow-tech-card">
           <p className="text-mobile text-center text-black p-4">{description}</p>
         </div>
       </div>
@@ -90,6 +99,7 @@ FlipCard.propTypes = {
   withButton: propTypes.bool,
   cardHeight: propTypes.string.isRequired,
   locales: propTypes.any,
+  textClass: propTypes.string.isRequired,
 };
 
 export default FlipCard;

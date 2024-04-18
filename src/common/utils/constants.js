@@ -977,34 +977,52 @@ export const FINKET_CHIPS = {
     {
       iconName: 'qr',
       label: 'portfolio.finketClient.qrPayment.title',
-      description: 'portfolio.finketClient.qrPayment.description',
+      description: {
+        content: 'portfolio.finketClient.qrPayment.description',
+        chips: ['App'],
+      },
     },
     {
       iconName: 'topUp',
       label: 'portfolio.finketClient.topUp.title',
-      description: 'portfolio.finketClient.topUp.description',
+      description: {
+        content: 'portfolio.finketClient.topUp.description',
+        chips: ['App'],
+      },
     },
     {
       iconName: 'bill',
       label: 'portfolio.finketClient.billPayments.title',
-      description: 'portfolio.finketClient.billPayments.description',
+      description: {
+        content: 'portfolio.finketClient.billPayments.description',
+        chips: ['App'],
+      },
     },
   ],
   products: [
     {
       iconName: 'faceId',
       label: 'portfolio.finketClient.identity.title',
-      description: 'portfolio.finketClient.identity.description',
+      description: {
+        content: 'portfolio.finketClient.identity.description',
+        chips: ['Web app'],
+      },
     },
     {
       iconName: 'loan',
       label: 'portfolio.finketClient.loans.title',
-      description: 'portfolio.finketClient.loans.description',
+      description: {
+        content: 'portfolio.finketClient.loans.description',
+        chips: ['Web app', 'Backoffice'],
+      },
     },
     {
       iconName: 'insurance',
       label: 'portfolio.finketClient.insurance.title',
-      description: 'portfolio.finketClient.insurance.description',
+      description: {
+        content: 'portfolio.finketClient.insurance.description',
+        chips: ['Web', 'App'],
+      },
     },
   ],
   productsChips: [
@@ -1015,13 +1033,13 @@ export const FINKET_CHIPS = {
       label: 'portfolio.finketClient.chips.app',
     },
     {
-      label: 'portfolio.finketClient.chips.core',
-    },
-    {
       label: 'portfolio.finketClient.chips.landing',
     },
     {
-      label: 'portfolio.finketClient.chips.web',
+      label: 'portfolio.finketClient.chips.core',
     },
-  ]
+    {
+      label: 'portfolio.finketClient.chips.integration',
+    },
+  ],
 };

@@ -600,7 +600,7 @@
       "weCreateProduct": "marketplace de productos financieros.",
       "qrPayment": {
         "title": "Pagos con QR",
-        "description": "Creamos una <b>app de pagos con QR</b>. Logramos la homologación de la API para ofrecer <b>servicios interoperables en Argentina.</b>,"
+        "description": "Creamos una <b>app de pagos con QR</b>. Logramos la homologación de la API para ofrecer <b>servicios interoperables en Argentina.</b>"
       },
       "topUp": {
         "title": "Recargas",
