@@ -1042,4 +1042,10 @@ export const FINKET_CHIPS = {
       label: 'portfolio.finketClient.chips.integration',
     },
   ],
+  quote: {
+    text: 'portfolio.finketClient.clientQuote',
+    autor: 'portfolio.finketClient.autor.name',
+    position: 'portfolio.finketClient.autor.position',
+    companyName: 'portfolio.finketClient.autor.company',
+  }
 };

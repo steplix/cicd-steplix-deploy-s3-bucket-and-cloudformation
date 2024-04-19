@@ -551,7 +551,7 @@
       }
     },
     "message": "Do you want to know more?",
-    "button": "Contact us",
+    "button": "Find out more",
     "challenge": "Challenge",
     "approach": "Approach",
     "approachShort1": "",
@@ -566,7 +566,7 @@
     "features": "features",
     "microservices": "microservices",
     "someFunctionalities": "Some of its functionalities",
-    "independentProducts": "Independent roducts",
+    "independentProducts": "Independent products",
     "suraClient": {
       "headingIcon": "Insurance",
       "headingLabel": "Quote generator",

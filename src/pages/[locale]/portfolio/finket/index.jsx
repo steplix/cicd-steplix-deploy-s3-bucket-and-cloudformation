@@ -59,6 +59,7 @@ const FinketPage = ({ locale }) => {
             locale={locale}
             productChips={FINKET_CHIPS.productsChips}
             products={FINKET_CHIPS.products}
+            quote={FINKET_CHIPS.quote}
             whatWeBuildDescription={parse(t('portfolio.finketClient.whatWeBuildDescription'))}
             whatWeBuildProduct={t('portfolio.finketClient.weCreateProduct')}
           >
