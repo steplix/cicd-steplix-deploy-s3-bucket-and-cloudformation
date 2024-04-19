@@ -78,6 +78,9 @@
                 ]
             }
         },
+        "certificates": {
+            "title": "Certificaciones"
+        },
         "mission": {
             "title": "Misión",
             "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
@@ -500,11 +503,11 @@
         "clients": {
             "title": "Clientes"
         },
-        "partners": {
+        "memberships": {
             "title": "Membresías"
         },
-        "certifications": {
-            "title": "Certificaciones"
+        "alliances": {
+            "title": "Alianzas"
         }
     },
     "portfolio": {
@@ -615,7 +618,7 @@
         "backward": "Botón que mueve el carrusel hacia atrás",
         "forward": "Botón que mueve el carrusel hacia adelante"
     },
-    "partners": {
+    "memberships": {
         "cessi": {
             "title": "Cessi",
             "description": "Cámara de la industria Argentina del Software."
@@ -623,6 +626,10 @@
         "poloIt": {
             "title": "Polo It",
             "description": "Polo de Tecnología Informática de Buenos Aires."
+        },
+        "britcham": {
+            "title": "Britcham Argentina",
+            "description": "Cámara de comercio argentino británica."
         }
     },
     "certifications": {
@@ -637,6 +644,12 @@
         "iqnet": {
             "imageUrl": "/assets/img/certifications/iqnet.svg",
             "imageAlt": "Certificado IQNet"
+        }
+    },
+    "alliances": {
+        "aws": {
+            "imageUrl": "/assets/img/alliances/aws-alliance.svg",
+            "imageAlt": "Aliado de Amazon."
         }
     }
 }

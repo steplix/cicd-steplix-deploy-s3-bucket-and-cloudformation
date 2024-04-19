@@ -78,6 +78,9 @@
                 ]
             }
         },
+        "certificates": {
+            "title": "Certifications"
+        },
         "mission": {
             "title": "Mission",
             "description": "Develop innovative solutions to improve the productivity of companies, the lives of our clients and contribute to the development of our collaborators."
@@ -500,11 +503,11 @@
         "clients": {
             "title": "Clients"
         },
-        "partners": {
+        "memberships": {
             "title": "Memberships"
         },
-        "certifications": {
-            "title": "Certifications"
+        "alliances": {
+            "title": "Alliances"
         }
     },
     "portfolio": {
@@ -614,7 +617,7 @@
         "backward": "Button that moves the carousel backward",
         "forward": "Button that moves the carousel forward"
     },
-    "partners": {
+    "memberships": {
         "cessi": {
             "title": "Cessi",
             "description": "Chamber of the Argentine Software Industry."
@@ -622,6 +625,10 @@
         "poloIt": {
             "title": "Polo It",
             "description": "Information Technology Hub of Buenos Aires."
+        },
+        "britcham": {
+            "title": "Britcham Argentina",
+            "description": "British Argentine Chamber of Commerce."
         }
     },
     "certifications": {
@@ -636,6 +643,12 @@
         "iqnet": {
             "imageUrl": "/assets/img/certifications/iqnet.svg",
             "imageAlt": "IQNet Certificate"
+        }
+    },
+    "alliances": {
+        "aws": {
+            "imageUrl": "/assets/img/alliances/aws-alliance.svg",
+            "imageAlt": "Amazon Alliance."
         }
     }
 }
