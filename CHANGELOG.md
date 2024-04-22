@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Modules**:
   - `Alliances`: Module modified to adapt to requirements.
   - `Memberships`: Module modified to adapt to requirements.
+  - `Banner`: Module modified to show the great place to work certification on homepage.
 
 - Enrique Serrani role modified to Comercial Manager.
 
