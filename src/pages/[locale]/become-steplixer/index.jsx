@@ -77,6 +77,7 @@ function BecomeSteplixerPage({ locale }) {
                 />
               }
               iconName="trust"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.trust.title')}
             />
             <FlipCard
@@ -89,6 +90,7 @@ function BecomeSteplixerPage({ locale }) {
                 />
               }
               iconName="mutualRespect"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.mutualRespect.title')}
             />
             <FlipCard
@@ -101,6 +103,7 @@ function BecomeSteplixerPage({ locale }) {
                 />
               }
               iconName="success"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.success.title')}
             />
             <FlipCard
@@ -113,6 +116,7 @@ function BecomeSteplixerPage({ locale }) {
                 />
               }
               iconName="awareness"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.awareness.title')}
             />
             <FlipCard
@@ -125,6 +129,7 @@ function BecomeSteplixerPage({ locale }) {
                 />
               }
               iconName="agility"
+              textClass="font-medium text-[20px]"
               title={t('about_us.ourValues.agility.title')}
             />
           </div>

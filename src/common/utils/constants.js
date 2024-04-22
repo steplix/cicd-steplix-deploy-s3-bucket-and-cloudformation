@@ -899,3 +899,153 @@ export const X28_CHIPS = {
     },
   ],
 };
+
+export const FINKET_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'newPhone',
+      label: 'Mobile',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'star',
+      label: 'Product Owner',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/static/technologies/kotlin.svg',
+      alt: 'Kotlin image',
+    },
+    {
+      imageUrl: '/static/technologies/nextjs.svg',
+      alt: 'Nextjs image',
+    },
+    {
+      imageUrl: '/static/technologies/docker.svg',
+      alt: 'Docker image',
+    },
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/static/technologies/figma.svg',
+      alt: 'Figma image',
+    },
+    {
+      imageUrl: '/static/technologies/java.svg',
+      alt: 'Java image',
+    },
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+  ],
+  functionalities: [
+    {
+      iconName: 'qr',
+      label: 'portfolio.finketClient.qrPayment.title',
+      description: {
+        content: 'portfolio.finketClient.qrPayment.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'topUp',
+      label: 'portfolio.finketClient.topUp.title',
+      description: {
+        content: 'portfolio.finketClient.topUp.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'bill',
+      label: 'portfolio.finketClient.billPayments.title',
+      description: {
+        content: 'portfolio.finketClient.billPayments.description',
+        chips: ['App'],
+      },
+    },
+  ],
+  products: [
+    {
+      iconName: 'faceId',
+      label: 'portfolio.finketClient.identity.title',
+      description: {
+        content: 'portfolio.finketClient.identity.description',
+        chips: ['Web app'],
+      },
+    },
+    {
+      iconName: 'loan',
+      label: 'portfolio.finketClient.loans.title',
+      description: {
+        content: 'portfolio.finketClient.loans.description',
+        chips: ['Web app', 'Backoffice'],
+      },
+    },
+    {
+      iconName: 'insurance',
+      label: 'portfolio.finketClient.insurance.title',
+      description: {
+        content: 'portfolio.finketClient.insurance.description',
+        chips: ['Web', 'App'],
+      },
+    },
+  ],
+  productsChips: [
+    {
+      label: 'portfolio.finketClient.chips.web',
+    },
+    {
+      label: 'portfolio.finketClient.chips.app',
+    },
+    {
+      label: 'portfolio.finketClient.chips.landing',
+    },
+    {
+      label: 'portfolio.finketClient.chips.core',
+    },
+    {
+      label: 'portfolio.finketClient.chips.integration',
+    },
+  ],
+  quote: {
+    text: 'portfolio.finketClient.clientQuote',
+    autor: 'portfolio.finketClient.autor.name',
+    position: 'portfolio.finketClient.autor.position',
+    companyName: 'portfolio.finketClient.autor.company',
+  }
+};

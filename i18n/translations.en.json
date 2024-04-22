@@ -393,6 +393,11 @@
           "title": "Portfolio | Clients | X28",
           "keywords": "X-28, Security software development, Alarm control application, Digital transformation in security, Security service digitization, Security software, Security automation, User experience in security apps, Innovation in security, Digital solutions for security, Security management systems, Security data collection, Security data analysis, Security data visualization",
           "description": "Find out how Steplix has propelled digital transformation at X-28, a leading security company, through innovative software solutions."
+        },
+        "finket": {
+          "title": "Portfolio | Clients | Finket",
+          "keywords": "Fintech, Digital financial services, Financial app, Inclusive finance, Services for unbanked, Mobile banking, Digital banking, Financial services platform, Online loans, Microservices, QR payments, Online service payments, Mobile top-ups, Integration of financial services, Financial products marketplace, Finket, Fintech software development, Fintech solutions, Mobile banking for unbanked, Financial access for all, Digital banking core, Digital insurance, Digital loans, Online personal finance, Accessible finance",
+          "description": "Discover how Steplix assisted Finket in providing inclusive and accessible financial services through an innovative financial app."
         }
       }
     },
@@ -546,7 +551,7 @@
       }
     },
     "message": "Do you want to know more?",
-    "button": "Contact us",
+    "button": "Find out more",
     "challenge": "Challenge",
     "approach": "Approach",
     "approachShort1": "",
@@ -556,7 +561,12 @@
     "approachTechnology": "Technology",
     "whatWeBuild": "What we built",
     "moreProjects": "More projects",
-    "weCreate": "We created an ",
+    "weCreateAn": "We created an ",
+    "weCreateA": "We created a ",
+    "features": "features",
+    "microservices": "microservices",
+    "someFunctionalities": "Some of its functionalities",
+    "independentProducts": "Independent products",
     "suraClient": {
       "headingIcon": "Insurance",
       "headingLabel": "Quote generator",
@@ -583,6 +593,51 @@
       "hybridApp": "Hybrid app",
       "restAPI": "Rest API",
       "backoffice": "Backoffice"
+    },
+    "finketClient": {
+      "headingIcon": "Fintech",
+      "headingLabel": "Marketplace",
+      "challengeDescription": "<b>Providing quality financial products</b> to an unbanked audience.",
+      "whatWeBuildDescription": "We developed a solution that is 100% online and accessible to <b>anyone</b> with an ID and a mobile phone.<br> This platform provides an <b>intuitive, light-weight application</b> with a modern, flexible microservice-based core and user-friendly web-based administration tools.",
+      "weCreateProduct": "marketplace for financial products.",
+      "qrPayment": {
+        "title": "QR code payments",
+        "description":"We created a <b>payment app with QR.</b> We achieved the approval of the API to offer <b>interoperable services in Argentina.</b>"
+      },
+      "topUp": {
+        "title": "Top-ups",
+        "description":"Mobile functionality that <b>allows you to recharge</b> SUBE, Movistar, Personal, Tuenti, DirecTV quickly from your phone."
+      },
+      "billPayments": {
+        "title": "Bill payments",
+        "description": "Implementation of payment for services using RapiPago API."
+      },
+      "identity": {
+        "title": "Identity",
+        "description": "Digital “electronic signature” platform <b>to verify identity through biometric recognition.<b/><br>Allows to complete administrative and legal operations."
+      },
+      "loans": {
+        "title": "Loans",
+        "description":"Platform that allows users <b>to access loans digitally.</b> We accompany the solution with a <b>backoffice that speeds up the approval process.</b>"
+      },
+      "insurance": {
+        "title": "Insurance",
+        "description":"Insurance application process (signature, identity validation, registration, cancellation and online policy payment). <b>Simple, intuitive and integrable</b> with a variety of suppliers, products and services."
+      },
+      "clientQuote": "“Undoubtedly a key partner to take into account when undertaking projects that require simple solutions to highly complex challenges.”",
+      "autor": {
+        "name": "Lucas Bianchi",
+        "position": "CEO & Founder",
+        "company": "CTECH"
+      },
+      "chips":{
+        "web": "Web backoffice",
+        "app": "Native Android App",
+        "core": "Core construction",
+        "landing": "Adaptative landing page",
+        "integration": "Integration to over 10 services"
+      }
+
     }
   },
   "BecomeSteplixerSection": {

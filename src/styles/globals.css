@@ -823,6 +823,13 @@
         background-position: center;
     }
 
+    .challenge-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
     @media (min-width: 640px) {
         .challenge-image-sura {
             background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
@@ -832,6 +839,9 @@
         }
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeM.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeM.png") ;
         }
     }
     @media (min-width: 1024px) {
@@ -844,6 +854,9 @@
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeLG.png") ;
         }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeLG.png") ;
+        }
     }
     @media (min-width: 1240px) {
         .challenge-image-sura {
@@ -854,6 +867,9 @@
         }
         .challenge-image-x28 {
             background-image: url("../../public/assets/img/portfolio/x28/challengeXL.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeXL.png") ;
         }
     }
     .what-we-build-image-sura {
@@ -875,6 +891,52 @@
         background-size: cover;
         background-position: center top;
     }
+
+    .what-we-build-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/product.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center top;
+    }
+
+    .what-we-build-functionalities-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/clientCard.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (min-width: 640px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardM.png") ;
+        }
+    }
+    @media (min-width: 1024px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardLG.png") ;
+        }
+    }
+    @media (min-width: 1240px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardXL.png") ;
+        }
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    @media(min-width: 640px) {
+        .card-container {
+            width: 48%;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .card-container {
+            width: 32%;
+        }
+    }
     /* END INDIVIDUAL PORTFOLIO */
 
     /* CHIP COMPONENT */
@@ -882,8 +944,20 @@
         @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
     }
 
-    .chip--slim {
+    .chip--tiny {
         @apply px-3 py-1;
+    }
+
+    .chip--tiny>.icon {
+        @apply w-3 h-3;
+    }
+
+    .chip--tiny>span {
+        @apply font-poppins font-semibold text-[10px] leading-[15px] tracking-[0.36px];
+    }
+    
+    .chip--slim {
+        @apply px-[10px] py-1;
     }
 
     .chip--slim>.icon {
@@ -891,7 +965,7 @@
     }
 
     .chip--slim>span {
-        @apply font-poppins font-semibold text-xs leading-[18px] tracking-[0.36px];
+        @apply font-poppins font-semibold text-[14px] leading-[18.2px] tracking-[0.36px];
     }
 
     .chip--medium {
@@ -937,12 +1011,6 @@
         }
     }
 
-    @media (min-width: 1024px) {
-        .chip--slim>span {
-            @apply text-base;
-        }
-    }
-
     /* END CHIP COMPONENT */
     .item {
         width: 100%;
@@ -980,4 +1048,8 @@
         }
     }
 
+    /* Flip card */
+    .flip-card {
+        @apply w-[329px] sm:w-[272px] lg:w-[288px] xl:w-[362px] sm:max-w-none
+    }
 }

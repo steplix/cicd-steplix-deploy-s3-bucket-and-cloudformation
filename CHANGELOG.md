@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+### Modified 19/04/2024
+
+- **Components**
+  - `PortfolioCard`: Component modified to redirect to client individual portfolio.
+
+### Added 19/04/2024
+
+- **Components**
+  - `FlipCardDescription`: A custom component to show de flipCard description with a text and shows an array of chips and a back button.
+
+- **Pages**
+  - `FinketPage`: Custom page for client protfolio.
+
+### Modified 12/04/2024
+
+- **Components**
+  - `FlipCard`: Component modified to recieve a TextButton.
+  - `TextButton`: Component modified to receive an Icon.
+
 ### Added 12/04/2024
 
 - **Pages**

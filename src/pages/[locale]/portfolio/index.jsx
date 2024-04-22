@@ -14,8 +14,6 @@ import { stagger } from '@/common/lib/animation';
 import { PORTFOLIO_CARDS } from '@/common/utils/constants';
 import Carousel from '@/common/components/Carousel';
 
-//TODO: ADD NO INDEX PROP TO META TAG BEFORE DEPLOYING
-
 const PortfolioView = ({ locale }) => {
   const { t } = useTranslation(locale);
   const { industries } = usePortfolioTranslation();

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Icon from '../Icon';
 
 const types = {
+  tiny: 'chip--tiny',
   slim: 'chip--slim',
   medium: 'chip--medium',
   mediumBigText: 'chip--medium-big-text',
