@@ -1,10 +1,11 @@
 import HeadTag from '@/common/components/HeadTag';
 import { useTranslation } from '@/common/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
-import MissionAndVision from '@/modules/MissionAndVision';
+import MissionAndVision from '@/modules/aboutUs/MissionAndVision';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
-import Teams from '@/modules/Teams';
-import OurValues from '@/modules/OurValues';
+import Teams from '@/modules/aboutUs/Teams';
+import OurValues from '@/modules/aboutUs/OurValues';
+import Certifications from '@/modules/aboutUs/Certifications';
 
 export default function AboutUs({ locale }) {
   const { t } = useTranslation(locale);
@@ -20,6 +21,7 @@ export default function AboutUs({ locale }) {
       />
       <TransitionWrapper className="section-container w-full container mx-auto flex-col space-y-[72px]">
         <Teams locale={locale} />
+        <Certifications locale={locale} />
         <MissionAndVision locale={locale} />
         <OurValues locale={locale} />
       </TransitionWrapper>
