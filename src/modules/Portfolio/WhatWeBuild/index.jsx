@@ -9,7 +9,6 @@ export const WhatWeBuildSection = ({
   imageClassname,
   children,
   whatWeBuildDescription,
-  whatWeBuildProduct,
   weCreateDescription,
 }) => {
   const { t } = useTranslation(locale);
@@ -24,13 +23,7 @@ export const WhatWeBuildSection = ({
       />
       <div className="flex flex-col gap-6">
         <p className="font-poppins text-[13px] lg:text-base text-black">{whatWeBuildDescription}</p>
-        <div className="flex flex-col gap-6 lg:flex-row justify-center text-base">
-          <p className="font-poppins text-black">
-            {t('portfolio.weCreate')}
-            <span className="text-blue font-semibold">{whatWeBuildProduct}</span>
-          </p>
-          {children}
-        </div>
+        <div className="flex flex-col gap-6 lg:flex-row justify-center text-base">{children}</div>
         <p className="font-poppins text-[13px] lg:text-base text-black">{weCreateDescription}</p>
         <div className={`h-[240px] lg:h-[281px] xl:h-[336px] ${imageClassname}`} />
         <div className="w-full flex items-center justify-center mt-4">
@@ -53,8 +46,7 @@ export const WhatWeBuildSection = ({
 WhatWeBuildSection.propTypes = {
   locale: PropTypes.string.isRequired,
   imageClassname: PropTypes.string.isRequired,
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   whatWeBuildDescription: PropTypes.array.isRequired,
-  whatWeBuildProduct: PropTypes.string.isRequired,
   weCreateDescription: PropTypes.array.isRequired,
 };

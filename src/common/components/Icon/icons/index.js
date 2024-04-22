@@ -96,3 +96,4 @@ export * from './newClose';
 export * from './idea';
 export * from './itemList';
 export * from './shieldLock';
+export * from './lock';
