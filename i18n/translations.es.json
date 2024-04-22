@@ -522,9 +522,10 @@
       "title": "Clientes"
     },
     "partners": {
-      "title": "Membresias"
+      "title": "Membresías"
     },
     "memberships": {
+      "title": "Membresías",
         "cessi": {
             "title": "Cessi",
             "description": "Cámara de la industria Argentina del Software."
@@ -554,6 +555,7 @@
         }
     },
     "alliances": {
+      "title": "Alianzas",
         "aws": {
             "imageUrl": "/assets/img/alliances/aws-alliance.svg",
             "imageAlt": "Aliado de Amazon."

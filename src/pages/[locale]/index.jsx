@@ -77,7 +77,7 @@ export default function Home({ locale }) {
           type="application/ld+json"
         />
       </HeadTag>
-      <TransitionWrapper className="flex flex-col">
+      <TransitionWrapper className="flex flex-col ">
         {/* MainHeader Section */}
         <MainHeader />
 
@@ -90,7 +90,7 @@ export default function Home({ locale }) {
         {/* Technology Section */}
         <HowDoWeDoIt />
 
-        <div className="container block lg:flex lg:gap-6">
+        <div className="container block lg:flex lg:gap-6 lg:items-start">
           {/* Alliances Section */}
           <Alliances />
 

@@ -13,7 +13,7 @@ const Alliances = () => {
   const { t } = useTranslation(i18nQuery?.lang);
 
   return (
-    <section className="w-full lg:w-1/3 pb-[50px] sm:pr-0 2xl:pt-14 overflow-hidden space-y-8 mr-10">
+    <section className="w-full lg:w-1/3 pb-[50px] lg:pb-[72px] sm:pr-0 space-y-8 mr-10">
       <Title
         underlineFixed
         borderPosition="bottom"
@@ -22,9 +22,9 @@ const Alliances = () => {
       />
       <PartnerCard
         cardHeight="h-[148px] lg:h-[270px]"
-        imageAlt={t('alliances.aws.imageAlt')}
+        imageAlt={t('MainHeader.alliances.aws.imageAlt')}
         imageHeight="h-[100px]"
-        imageUrl={t('alliances.aws.imageUrl')}
+        imageUrl={t('MainHeader.alliances.aws.imageUrl')}
       />
     </section>
   );

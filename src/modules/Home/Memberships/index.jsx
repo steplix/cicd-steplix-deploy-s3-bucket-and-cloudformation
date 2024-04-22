@@ -14,7 +14,7 @@ const Memberships = () => {
   const { t } = useTranslation(i18nQuery?.lang);
 
   return (
-    <section className="w-full lg:w-2/3 pb-[50px] sm:pl-0 overflow-hidden">
+    <section className="w-full lg:w-2/3 pb-[50px] lg:pb-[72px] sm:pl-0">
       <Title
         underlineFixed
         borderPosition="bottom"
