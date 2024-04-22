@@ -354,7 +354,7 @@ export const technologiesImages = [
   {
     image: '/static/technologies/nodejs.svg',
     alt: 'Node Logo',
-    class: 'w-24',
+    class: 'w-16',
   },
   {
     image: '/static/technologies/reactjs.svg',
@@ -658,6 +658,36 @@ export const PARTNERS_CARDS = [
   },
 ];
 
+export const SURA_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+    {
+      imageUrl: '/static/technologies/azure.svg',
+      alt: 'Azure image',
+    },
+    {
+      imageUrl: '/static/technologies/angularjs.svg',
+      alt: 'AngularJs image',
+    },
+  ],
+};
 export const PRODUCTS_CARDS = [
   {
     shortName: 'MVP-42k',

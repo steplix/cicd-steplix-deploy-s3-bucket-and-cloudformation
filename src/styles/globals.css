@@ -776,6 +776,60 @@
 
     /* END RAISE BTN EFFECT */
 
+
+    /* INDIVIDUAL PORTFOLIO */
+    .mountain-portfolio {
+        background-image: url("../../public/assets/img/portfolio/montaña.png");
+        background-repeat: no-repeat;
+        background-position: center top 20px;
+        background-size: cover;
+    }
+
+    @media (min-width: 640px) {
+        .mountain-portfolio {
+          background-position: center top 30px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    @media (min-width: 1280px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    .challenge-image-sura {
+        background-image: url("../../public/assets/img/portfolio/sura/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    @media (min-width: 640px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
+        }
+    }
+    @media (min-width: 1024px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeLG.png") ;
+        }
+    }
+    @media (min-width: 1240px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeXL.png") ;
+        }
+    }
+    .what-we-build-image-sura {
+        background-image: url("../../public/assets/img/portfolio/sura/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    /* END INDIVIDUAL PORTFOLIO */
+
     /* CHIP COMPONENT */
     .chip {
         @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
@@ -806,15 +860,15 @@
     }
 
     .chip--big {
-        @apply w-40 p-2;
+        @apply min-w-[160px] py-3 px-6;
     }
 
     .chip--big>.icon {
-        @apply w-7 h-7;
+        @apply w-8 h-8;
     }
 
     .chip--big>span {
-        @apply font-sofia font-normal text-3xl leading-[28.8px];
+        @apply font-sofia font-semibold text-base leading-[28.8px];
     }
 
     .chip--outlined {

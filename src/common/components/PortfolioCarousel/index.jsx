@@ -15,11 +15,7 @@ const adaptiveHeight = (slider, adaptiveHeightValue) => {
   slider.on('created', updateHeight);
 };
 
-// carouselClassName: set the responsive height of the cards
-// cardClassName: set the active card attributes. For this carousel to work with the scale effect,
-// an active classname for the cards needs to be created in styles.css, along with an inactive class. See clients section in home for example
-
-const Carousel = ({
+const PortfolioCarousel = ({
   children,
   carouselClassName,
   adaptiveHeightValue,
@@ -35,10 +31,17 @@ const Carousel = ({
       initial: 1,
       slides: {
         origin: 'center',
-        perView: 1.01,
+        perView: 1.3,
+        spacing: 8,
       },
       breakpoints: {
+        '(min-width: 640px)': {
+          slides: { perView: 2.2 },
+        },
         '(min-width: 1024px)': {
+          slides: { perView: 2.3 },
+        },
+        '(min-width: 1280px)': {
           slides: { perView: 2 },
         },
       },
@@ -61,7 +64,7 @@ const Carousel = ({
   );
 
   return (
-    <div className="relative w-full flex flex-col mx-auto items-center">
+    <div className="relative w-full flex flex-col items-center">
       <div ref={sliderRef} className={`keen-slider ${carouselClassName}`}>
         {children}
       </div>
@@ -88,12 +91,12 @@ const Carousel = ({
   );
 };
 
-Carousel.propTypes = {
+PortfolioCarousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
-  cardClassName: propTypes.string.isRequired,
+  cardClassName: propTypes.string,
   adaptiveHeight: propTypes.number,
   hasArrows: propTypes.bool,
 };
 
-export default Carousel;
+export default PortfolioCarousel;

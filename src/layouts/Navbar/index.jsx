@@ -27,23 +27,31 @@ const Navbar = () => {
 
     return pathnameToTest.test(asPath) ? 'nav--link--active' : '';
   };
-
   //
   // State
   //
   // eslint-disable-next-line no-unused-vars
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
-
+  const [colorChange, setColorchange] = React.useState(true);
   //
   // Effects
   //
   React.useEffect(() => {
+    if (asPath.includes('/portfolio/')) {
+      setColorchange(false);
+    }
+
     const onScroll = () => {
-      const currentPosition = window.pageYOffset;
+      const currentPosition = window.scrollY;
 
       setTimeout(() => {
         setSticky(currentPosition > 52 ? true : !(currentPosition === 0));
+
+        if (asPath.includes('/portfolio/')) {
+          setColorchange(false);
+        }
+        setColorchange(true);
       }, 5);
     };
 
@@ -60,7 +68,11 @@ const Navbar = () => {
     <div className="sticky top-0 w-full text-white z-50">
       {/* navbar mobile */}
       <nav className="flex flex-col lg:hidden">
-        <div className={`flex flex-col w-full header-gradient absolute top-0`}>
+        <div
+          className={`flex flex-col w-full absolute top-0  ${
+            colorChange ? 'header-gradient ' : ''
+          }`}
+        >
           <div className="container flex justify-between items-center w-full h-[56px] sm:h-[62px]">
             {/* logo mobile */}
             <div className="items-center justify-center flex">
@@ -124,7 +136,11 @@ const Navbar = () => {
       </nav>
 
       {/* navbar desktop */}
-      <nav className={`hidden lg:flex lg:flex-col lg:justify-center w-full header-gradient`}>
+      <nav
+        className={`hidden lg:flex lg:flex-col lg:justify-center w-full ${
+          colorChange ? 'header-gradient ' : ''
+        }`}
+      >
         <div className="container flex justify-between items-center h-[100px]">
           {/* logo desktop */}
           <CustomNextLink to="/">
