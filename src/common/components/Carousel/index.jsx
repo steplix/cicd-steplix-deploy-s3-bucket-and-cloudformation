@@ -35,7 +35,6 @@ const Carousel = ({
       initial: 1,
       slides: {
         origin: 'center',
-        // perView set to 1.01 to force rendering cards to the sides of the active one
         perView: 1.01,
       },
       breakpoints: {

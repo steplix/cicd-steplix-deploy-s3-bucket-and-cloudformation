@@ -354,7 +354,7 @@ export const technologiesImages = [
   {
     image: '/static/technologies/nodejs.svg',
     alt: 'Node Logo',
-    class: 'w-24',
+    class: 'w-16',
   },
   {
     image: '/static/technologies/reactjs.svg',
@@ -662,6 +662,36 @@ export const MEMBERSHIPS_CARDS = [
   },
 ];
 
+export const SURA_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+    {
+      imageUrl: '/static/technologies/azure.svg',
+      alt: 'Azure image',
+    },
+    {
+      imageUrl: '/static/technologies/angularjs.svg',
+      alt: 'AngularJs image',
+    },
+  ],
+};
 export const PRODUCTS_CARDS = [
   {
     shortName: 'MVP-42k',
@@ -818,3 +848,258 @@ export const CERTIFICATIONS_LIST = [
       'h-[80.542px] w-[80.542px] mr-[2px] sm:h-[100.004px] sm:w-[100.004px] lg:h-[111.371px] lg:w-[111.371px] xl:w-[138px] xl:h-[138px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px]',
   },
 ];
+export const POW_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'star',
+      label: 'Product Owner',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+    {
+      imageUrl: '/static/technologies/nextjs.svg',
+      alt: 'Nextjs image',
+    },
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/static/technologies/figma.svg',
+      alt: 'Figma image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+  ],
+};
+
+export const X28_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+  ],
+};
+
+export const FINKET_CHIPS = {
+  frameWork: [
+    {
+      iconName: 'backend',
+      label: 'Back end',
+    },
+    {
+      iconName: 'frontend',
+      label: 'Front end',
+    },
+    {
+      iconName: 'newPhone',
+      label: 'Mobile',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
+    },
+    {
+      iconName: 'uiux',
+      label: 'UX/UI',
+    },
+    {
+      iconName: 'techlead',
+      label: 'Tech Lead',
+    },
+    {
+      iconName: 'scrummaster',
+      label: 'Scrum Master',
+    },
+    {
+      iconName: 'star',
+      label: 'Product Owner',
+    },
+  ],
+  technology: [
+    {
+      imageUrl: '/static/technologies/kotlin.svg',
+      alt: 'Kotlin image',
+    },
+    {
+      imageUrl: '/static/technologies/nextjs.svg',
+      alt: 'Nextjs image',
+    },
+    {
+      imageUrl: '/static/technologies/docker.svg',
+      alt: 'Docker image',
+    },
+    {
+      imageUrl: '/static/technologies/aws.svg',
+      alt: 'AWS image',
+    },
+    {
+      imageUrl: '/static/technologies/reactjs.svg',
+      alt: 'React image',
+    },
+    {
+      imageUrl: '/assets/img/stack/mysql.svg',
+      alt: 'MySQL image',
+    },
+    {
+      imageUrl: '/static/technologies/figma.svg',
+      alt: 'Figma image',
+    },
+    {
+      imageUrl: '/static/technologies/java.svg',
+      alt: 'Java image',
+    },
+    {
+      imageUrl: '/assets/img/stack/nodeGreen.svg',
+      alt: 'Node image',
+    },
+  ],
+  functionalities: [
+    {
+      iconName: 'qr',
+      label: 'portfolio.finketClient.qrPayment.title',
+      description: {
+        content: 'portfolio.finketClient.qrPayment.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'topUp',
+      label: 'portfolio.finketClient.topUp.title',
+      description: {
+        content: 'portfolio.finketClient.topUp.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'bill',
+      label: 'portfolio.finketClient.billPayments.title',
+      description: {
+        content: 'portfolio.finketClient.billPayments.description',
+        chips: ['App'],
+      },
+    },
+  ],
+  products: [
+    {
+      iconName: 'faceId',
+      label: 'portfolio.finketClient.identity.title',
+      description: {
+        content: 'portfolio.finketClient.identity.description',
+        chips: ['Web app'],
+      },
+    },
+    {
+      iconName: 'loan',
+      label: 'portfolio.finketClient.loans.title',
+      description: {
+        content: 'portfolio.finketClient.loans.description',
+        chips: ['Web app', 'Backoffice'],
+      },
+    },
+    {
+      iconName: 'insurance',
+      label: 'portfolio.finketClient.insurance.title',
+      description: {
+        content: 'portfolio.finketClient.insurance.description',
+        chips: ['Web', 'App'],
+      },
+    },
+  ],
+  productsChips: [
+    {
+      label: 'portfolio.finketClient.chips.web',
+    },
+    {
+      label: 'portfolio.finketClient.chips.app',
+    },
+    {
+      label: 'portfolio.finketClient.chips.landing',
+    },
+    {
+      label: 'portfolio.finketClient.chips.core',
+    },
+    {
+      label: 'portfolio.finketClient.chips.integration',
+    },
+  ],
+  quote: {
+    text: 'portfolio.finketClient.clientQuote',
+    autor: 'portfolio.finketClient.autor.name',
+    position: 'portfolio.finketClient.autor.position',
+    companyName: 'portfolio.finketClient.autor.company',
+  }
+};

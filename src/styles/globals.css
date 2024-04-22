@@ -776,13 +776,188 @@
 
     /* END RAISE BTN EFFECT */
 
+
+    /* INDIVIDUAL PORTFOLIO */
+    .mountain-portfolio {
+        background-image: url("../../public/assets/img/portfolio/montaña.png");
+        background-repeat: no-repeat;
+        background-position: center top 20px;
+        background-size: cover;
+    }
+
+    @media (min-width: 640px) {
+        .mountain-portfolio {
+          background-position: center top 30px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    @media (min-width: 1280px) {
+        .mountain-portfolio{
+            background-size: contain;
+            background-position: right center;
+        }
+    }
+    .challenge-image-sura {
+        background-image: url("../../public/assets/img/portfolio/sura/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .challenge-image-pow {
+        background-image: url("../../public/assets/img/portfolio/pow/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .challenge-image-x28 {
+        background-image: url("../../public/assets/img/portfolio/x28/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .challenge-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/challenge.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    @media (min-width: 640px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeM.png") ;
+        }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeM.png") ;
+        }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeM.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeM.png") ;
+        }
+    }
+    @media (min-width: 1024px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeLG.png") ;
+        }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeLG.png") ;
+        }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeLG.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeLG.png") ;
+        }
+    }
+    @media (min-width: 1240px) {
+        .challenge-image-sura {
+            background-image: url("../../public/assets/img/portfolio/sura/challengeXL.png") ;
+        }
+        .challenge-image-pow {
+            background-image: url("../../public/assets/img/portfolio/pow/challengeXL.png") ;
+        }
+        .challenge-image-x28 {
+            background-image: url("../../public/assets/img/portfolio/x28/challengeXL.png") ;
+        }
+        .challenge-image-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/challengeXL.png") ;
+        }
+    }
+    .what-we-build-image-sura {
+        background-image: url("../../public/assets/img/portfolio/sura/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .what-we-build-image-pow {
+        background-image: url("../../public/assets/img/portfolio/pow/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .what-we-build-image-x28 {
+        background-image: url("../../public/assets/img/portfolio/x28/product.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .what-we-build-image-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/product.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center top;
+    }
+
+    .what-we-build-functionalities-finket {
+        background-image: url("../../public/assets/img/portfolio/finket/clientCard.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (min-width: 640px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardM.png") ;
+        }
+    }
+    @media (min-width: 1024px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardLG.png") ;
+        }
+    }
+    @media (min-width: 1240px) {
+        .what-we-build-functionalities-finket {
+            background-image: url("../../public/assets/img/portfolio/finket/clientCardXL.png") ;
+        }
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    @media(min-width: 640px) {
+        .card-container {
+            width: 48%;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .card-container {
+            width: 32%;
+        }
+    }
+    /* END INDIVIDUAL PORTFOLIO */
+
     /* CHIP COMPONENT */
     .chip {
         @apply rounded-[1.25rem] flex gap-2 justify-center items-center;
     }
 
-    .chip--slim {
+    .chip--tiny {
         @apply px-3 py-1;
+    }
+
+    .chip--tiny>.icon {
+        @apply w-3 h-3;
+    }
+
+    .chip--tiny>span {
+        @apply font-poppins font-semibold text-[10px] leading-[15px] tracking-[0.36px];
+    }
+    
+    .chip--slim {
+        @apply px-[10px] py-1;
     }
 
     .chip--slim>.icon {
@@ -790,7 +965,7 @@
     }
 
     .chip--slim>span {
-        @apply font-poppins font-semibold text-xs leading-[18px] tracking-[0.36px];
+        @apply font-poppins font-semibold text-[14px] leading-[18.2px] tracking-[0.36px];
     }
 
     .chip--medium {
@@ -805,16 +980,24 @@
         @apply font-poppins font-semibold text-[13px];
     }
 
+    .chip--medium-big-text {
+        @apply px-3 gap-1 h-10 min-w-[7.5625rem];
+    }
+
+    .chip--medium-big-text>span {
+        @apply font-poppins font-semibold text-[16px];
+    }
+
     .chip--big {
-        @apply w-40 p-2;
+        @apply min-w-[160px] py-3 px-6;
     }
 
     .chip--big>.icon {
-        @apply w-7 h-7;
+        @apply w-8 h-8;
     }
 
     .chip--big>span {
-        @apply font-sofia font-normal text-3xl leading-[28.8px];
+        @apply font-sofia font-semibold text-base leading-[28.8px];
     }
 
     .chip--outlined {
@@ -825,12 +1008,6 @@
     @media (min-width: 640px) {
         .chip--slim>span {
             @apply text-sm;
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .chip--slim>span {
-            @apply text-base;
         }
     }
 
@@ -871,4 +1048,8 @@
         }
     }
 
+    /* Flip card */
+    .flip-card {
+        @apply w-[329px] sm:w-[272px] lg:w-[288px] xl:w-[362px] sm:max-w-none
+    }
 }
