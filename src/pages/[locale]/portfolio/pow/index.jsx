@@ -62,7 +62,7 @@ const PowPage = ({ locale }) => {
             whatWeBuildProduct={t('portfolio.powClient.weCreateProduct')}
           >
             <div className="w-full text-left">
-              <p className="font-poppins text-text-black">
+              <p className="font-poppins text-black">
                 {t('portfolio.weCreateA')}
                 <span className="text-blue font-semibold">
                   {t('portfolio.powClient.weCreateProduct')}
