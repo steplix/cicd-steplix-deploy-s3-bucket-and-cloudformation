@@ -65,7 +65,7 @@ export const ApproachSection = ({ children, framework, technology, locale }) => 
       <div className="mt-4">{titleReturned()}</div>
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-4 mb-8">
-          <span className="font-poppins text-[13px] lg:text-[20px] font-medium text-purple">
+          <span className="font-poppins text-[13px] lg:text-[20px] font-medium text-purple pt-[5px]">
             {t('portfolio.approachFramework')}
           </span>
           {children}

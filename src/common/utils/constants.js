@@ -809,12 +809,12 @@ export const POW_CHIPS = {
       label: 'Tech Lead',
     },
     {
-      iconName: 'qa',
-      label: 'QA',
-    },
-    {
       iconName: 'uiux',
       label: 'UX/UI',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
     },
     {
       iconName: 'scrummaster',
@@ -915,12 +915,12 @@ export const FINKET_CHIPS = {
       label: 'Mobile',
     },
     {
-      iconName: 'qa',
-      label: 'QA',
-    },
-    {
       iconName: 'uiux',
       label: 'UX/UI',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
     },
     {
       iconName: 'techlead',
