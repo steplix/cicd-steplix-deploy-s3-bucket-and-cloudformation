@@ -983,18 +983,18 @@ export const FINKET_CHIPS = {
       },
     },
     {
-      iconName: 'bill',
-      label: 'portfolio.finketClient.billPayments.title',
-      description: {
-        content: 'portfolio.finketClient.billPayments.description',
-        chips: ['App'],
-      },
-    },
-    {
       iconName: 'topUp',
       label: 'portfolio.finketClient.topUp.title',
       description: {
         content: 'portfolio.finketClient.topUp.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'bill',
+      label: 'portfolio.finketClient.billPayments.title',
+      description: {
+        content: 'portfolio.finketClient.billPayments.description',
         chips: ['App'],
       },
     },
