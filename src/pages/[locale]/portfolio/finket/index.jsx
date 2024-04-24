@@ -64,7 +64,7 @@ const FinketPage = ({ locale }) => {
             whatWeBuildProduct={t('portfolio.finketClient.weCreateProduct')}
           >
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row lg:text-lg">
-              <p className="font-poppins text-text-black">
+              <p className="font-poppins text-black">
                 {t('portfolio.weCreateA')}
                 <span className="text-blue font-semibold">
                   {t('portfolio.finketClient.weCreateProduct')}
