@@ -62,7 +62,7 @@ const SuraPage = ({ locale }) => {
             whatWeBuildDescription={parse(t('portfolio.suraClient.whatWeBuildDescription'))}
           >
             <>
-              <p className="font-poppins text-black">
+              <p className="font-poppins text-text-black">
                 {t('portfolio.weCreateAn')}
                 <span className="text-blue font-semibold">{t('portfolio.suraClient.weCreateProduct')}</span>
               </p>

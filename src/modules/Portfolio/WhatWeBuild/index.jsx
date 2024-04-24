@@ -22,9 +22,9 @@ export const WhatWeBuildSection = ({
         size="text-[26px] lg:text-[32px]"
       />
       <div className="flex flex-col gap-6">
-        <p className="font-poppins text-[13px] lg:text-base text-text-black">{whatWeBuildDescription}</p>
+        <p className="font-poppins text-[13px] lg:text-base text-black">{whatWeBuildDescription}</p>
         <div className="flex flex-col gap-6 lg:flex-row justify-center text-base">{children}</div>
-        <p className="font-poppins text-[13px] lg:text-base text-text-black">{weCreateDescription}</p>
+        <p className="font-poppins text-[13px] lg:text-base text-black">{weCreateDescription}</p>
         <div className={`h-[240px] lg:h-[281px] xl:h-[336px] ${imageClassname}`} />
         <div className="w-full flex items-center justify-center mt-4">
           <ButtonCard

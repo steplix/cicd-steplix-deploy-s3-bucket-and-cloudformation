@@ -31,7 +31,7 @@ export const WhatWeBuildSectionB = ({
         size="text-[26px] lg:text-[32px]"
       />
       <div className="flex flex-col gap-6">
-        <p className="font-poppins text-[13px] lg:text-base text-black">{whatWeBuildDescription}</p>
+        <p className="font-poppins text-[13px] lg:text-base text-text-black">{whatWeBuildDescription}</p>
         <div className="flex flex-col gap-6 lg:flex-row justify-center text-base">{children}</div>
         <div className="flex gap-2 items-center">
           <Icon className="h-4 w-4 lg:w-6 lg:h-6" name="star" />
@@ -120,8 +120,8 @@ export const WhatWeBuildSectionB = ({
             {t(quote.text)}
           </p>
           <div className="font-poppins w-full sm:text-center">
-            <span className="font-semibold text-base text-black mr-2"> {t(quote.autor)}</span>
-            <span className="font-normal text-[13px] leading-[16.9px] text-black mr-1">
+            <span className="font-semibold text-base text-text-black mr-2"> {t(quote.autor)}</span>
+            <span className="font-normal text-[13px] leading-[16.9px] text-text-black mr-1">
               {t(quote.position)} -
             </span>
             <span className="font-normal text-[13px] leading-[16.9px] text-blue">
