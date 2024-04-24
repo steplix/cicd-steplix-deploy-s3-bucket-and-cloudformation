@@ -14,7 +14,7 @@ export const ChanllengeSection = ({ locale, text, imageClassname }) => {
         content={t('portfolio.challenge')}
         size="text-[26px] lg:text-[32px]"
       />
-      <p className="font-poppins text-[13px] lg:text-base text-black">{text}</p>
+      <p className="font-poppins text-[13px] lg:text-base text-text-black">{text}</p>
       <div className={`w-full h-[275px] ${imageClassname}`} />
     </section>
   );

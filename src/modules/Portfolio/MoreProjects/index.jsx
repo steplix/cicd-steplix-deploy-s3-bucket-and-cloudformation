@@ -1,4 +1,5 @@
 import { PropTypes } from 'prop-types';
+import { useRouter } from 'next/router';
 
 import PortfolioCard from '@/common/components/PortfolioCard';
 import PortfolioCarousel from '@/common/components/PortfolioCarousel';
@@ -8,6 +9,13 @@ import { useTranslation } from '@/common/lib/i18n';
 
 export const MoreProjectsSection = ({ locale }) => {
   const { t } = useTranslation(locale);
+  const router = useRouter();
+
+  const currentPortfolioUrl = router.asPath.split('/').pop();
+
+  const filteredPortfolioCards = PORTFOLIO_CARDS.filter(
+    (card) => card.name !== currentPortfolioUrl,
+  );
 
   return (
     <section className="flex flex-col pt-12 gap-4" id="what-do-we-build">
@@ -15,10 +23,10 @@ export const MoreProjectsSection = ({ locale }) => {
         underlineFixed
         borderPosition="bottom"
         content={t('portfolio.moreProjects')}
-        size="text-[26px] lg:text-[32px]"
+        size="text-[20px] lg:text-[26px]"
       />
       <PortfolioCarousel carouselClassName={' sm:h-[500px]'}>
-        {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
+        {filteredPortfolioCards.map(({ name, industryIconName, iconBrandClass }) => {
           return (
             <div
               key={name}
