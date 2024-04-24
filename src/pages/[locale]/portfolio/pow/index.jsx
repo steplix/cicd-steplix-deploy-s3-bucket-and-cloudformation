@@ -61,12 +61,14 @@ const PowPage = ({ locale }) => {
             whatWeBuildDescription={parse(t('portfolio.powClient.whatWeBuildDescription'))}
             whatWeBuildProduct={t('portfolio.powClient.weCreateProduct')}
           >
-            <p className="font-poppins text-black">
-              {t('portfolio.weCreateA')}
-              <span className="text-blue font-semibold">
-                {t('portfolio.powClient.weCreateProduct')}
-              </span>
-            </p>
+            <div className="w-full text-left">
+              <p className="font-poppins text-black">
+                {t('portfolio.weCreateA')}
+                <span className="text-blue font-semibold">
+                  {t('portfolio.powClient.weCreateProduct')}
+                </span>
+              </p>
+            </div>
           </WhatWeBuildSection>
           <MoreProjectsSection locale={locale} />
         </div>

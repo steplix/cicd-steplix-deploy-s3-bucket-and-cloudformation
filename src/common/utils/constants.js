@@ -809,12 +809,12 @@ export const POW_CHIPS = {
       label: 'Tech Lead',
     },
     {
-      iconName: 'qa',
-      label: 'QA',
-    },
-    {
       iconName: 'uiux',
       label: 'UX/UI',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
     },
     {
       iconName: 'scrummaster',
@@ -915,12 +915,12 @@ export const FINKET_CHIPS = {
       label: 'Mobile',
     },
     {
-      iconName: 'qa',
-      label: 'QA',
-    },
-    {
       iconName: 'uiux',
       label: 'UX/UI',
+    },
+    {
+      iconName: 'qa',
+      label: 'QA',
     },
     {
       iconName: 'techlead',
@@ -983,18 +983,18 @@ export const FINKET_CHIPS = {
       },
     },
     {
-      iconName: 'topUp',
-      label: 'portfolio.finketClient.topUp.title',
-      description: {
-        content: 'portfolio.finketClient.topUp.description',
-        chips: ['App'],
-      },
-    },
-    {
       iconName: 'bill',
       label: 'portfolio.finketClient.billPayments.title',
       description: {
         content: 'portfolio.finketClient.billPayments.description',
+        chips: ['App'],
+      },
+    },
+    {
+      iconName: 'topUp',
+      label: 'portfolio.finketClient.topUp.title',
+      description: {
+        content: 'portfolio.finketClient.topUp.description',
         chips: ['App'],
       },
     },
