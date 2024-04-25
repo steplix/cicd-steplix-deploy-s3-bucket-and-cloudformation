@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Modified 25/04/2024
 
+- **Components**
+  - `PartnerCard`: Component modified to show the component with a same height in description section.
+
 - **Utils**
   - `constants`: PORTFOLIO_CARDS modified to hide smartium and valid cards to avoid 404 not found page and add x28 data.
 
