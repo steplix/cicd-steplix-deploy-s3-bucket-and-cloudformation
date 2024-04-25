@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Release 3.2.0 24/04/2024
+## Release 3.2.0
 
 ### Modified 22/04/2024
 
@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `Alliances`: Module modified to adapt to requirements.
   - `Memberships`: Module modified to adapt to requirements.
   - `Banner`: Module modified to show the great place to work certification on homepage.
+
 
 - Enrique Serrani role modified to Comercial Manager.
 
