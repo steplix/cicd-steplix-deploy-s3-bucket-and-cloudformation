@@ -17,16 +17,16 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   return (
     <div className="w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col portfolio-card--inactive transition-all duration-500 ease-in-out ">
       <picture className="w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]">
-        <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.webp`} />
-        <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
-        <source media="(min-width: 640px)" srcSet={`/assets/img/portfolio/${name}-md.webp`} />
+        <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.png`} />
+        <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-lg.png`} />
+        <source media="(min-width: 640px)" srcSet={`/assets/img/portfolio/${name}-md.png`} />
         <img
           alt={t(`portfolio.cards.${name}.imageAlt`)}
           className="w-full"
-          src={`/assets/img/portfolio/${name}.svg`}
+          src={`/assets/img/portfolio/${name}.png`}
         />
       </picture>
-      <div className="px-6 w-full pt-4 pb-10 flex flex-col justify-center bg-white rounded-bl-[20px] rounded-br-[20px]">
+      <div className="px-6 w-full pt-4 pb-10 flex flex-col justify-center bg-white rounded-bl-[20px] rounded-br-[20px] h-[221px] md:h-[172.5px] lg:h-[230px] xl:h-[235px]">
         <div className="flex items-center justify-between">
           <Icon className={iconBrandClass} name={name} />
           <Icon className="h-[28px] text-white" name={industryIconName} />

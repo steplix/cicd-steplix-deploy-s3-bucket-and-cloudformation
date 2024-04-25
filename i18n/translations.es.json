@@ -583,6 +583,10 @@
       "smartium": {
         "text": "Diseñamos y desarrollamos un dashboard para la detección temprana de incidentes.",
         "imageAlt": "Imagen maqueta de la aplicación de Smartium"
+      },
+      "x28": {
+        "text": "Desarrollamos un backoffice que permite a técnicos y administradores de la empresa controlar información de usuarios de la app Mi alarma.",
+        "imageAlt": "Imagen maqueta de la aplicación de X28"
       }
     },
     "message": "¿Quieres conocer más?",

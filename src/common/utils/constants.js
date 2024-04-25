@@ -243,7 +243,7 @@ export const PORTFOLIO_CARDS = [
   {
     name: 'valid',
     industryIconName: 'communications',
-    iconBrandClass: 'w-[166px] h-[30px]',
+    iconBrandClass: 'w-[166px] h-[35px]',
   },
   {
     name: 'finket',
@@ -264,6 +264,11 @@ export const PORTFOLIO_CARDS = [
     name: 'smartium',
     industryIconName: 'eccomerce',
     iconBrandClass: 'w-[136px] h-[35px]',
+  },
+  {
+    name: 'x28',
+    industryIconName: 'lock',
+    iconBrandClass: 'w-[75px] h-[43px]',
   },
 ];
 
