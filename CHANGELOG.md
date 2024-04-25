@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release 3.2.0
 
+### Modified 25/04/2024
+
+- **Utils**
+  - `constants`: PORTFOLIO_CARDS modified to hide smartium and valid cards to avoid 404 not found page and add x28 data.
+
+- **i18n**:
+  - `translations`: Add x28 data for static translations.
+
+- **Assets**:
+  - All images in portfolio folder changed to png format to use in PORTFOLIO_CARDS.
+
 ### Modified 22/04/2024
 
 - **Components**
