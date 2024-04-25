@@ -4,10 +4,10 @@ import { useRouter } from 'next/router';
 import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
-import Certifications from '@/modules/Home/Certifications';
+import Alliances from '@/modules/Home/Alliances';
 import Clients from '@/modules/Home/Clients';
 import HeadTag from '@/common/components/HeadTag';
-import Partners from '@/modules/Home/Partners';
+import Memberships from '@/modules/Home/Memberships';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import { useTranslation } from '@/common/lib/i18n';
 import { getPathSlugs } from '@/common/utils/getPathSlugs';
@@ -77,7 +77,7 @@ export default function Home({ locale }) {
           type="application/ld+json"
         />
       </HeadTag>
-      <TransitionWrapper className="flex flex-col">
+      <TransitionWrapper className="flex flex-col ">
         {/* MainHeader Section */}
         <MainHeader />
 
@@ -90,12 +90,12 @@ export default function Home({ locale }) {
         {/* Technology Section */}
         <HowDoWeDoIt />
 
-        <div className="container block sm:flex lg:gap-14 xl:gap-[4.5rem]">
-          {/* Certifications Section */}
-          <Certifications />
+        <div className="container block lg:flex lg:gap-6 lg:items-start">
+          {/* Alliances Section */}
+          <Alliances />
 
-          {/* Partners  Section */}
-          <Partners />
+          {/* Memberships  Section */}
+          <Memberships />
         </div>
       </TransitionWrapper>
     </>

@@ -78,6 +78,9 @@
         ]
       }
     },
+    "certificates": {
+      "title": "Certificaciones"
+    },
     "mission": {
       "title": "Misión",
       "description": "Desarrollar soluciones innovadoras para mejorar la productividad de las empresas, la vida de nuestros clientes y aportar al desarrollo de nuestros colaboradores."
@@ -172,7 +175,7 @@
           "title": "Prototipado Ágil y Efectivo",
           "description": "Con Figma como herramienta principal, nuestro equipo desarrolla prototipos interactivos de alta fidelidad que capturan la esencia y la funcionalidad de su visión."
         },
-        "itemTwo": {
+       "itemTwo": {
           "title": "Soluciones centradas en el usuario",
           "description": "Inspirados por los principios de JJ Garrett, abordamos el proceso de diseño centrado en el usuario, enfocándonos en la usabilidad, la accesibilidad y la eficacia de la experiencia."
         },
@@ -521,8 +524,42 @@
     "partners": {
       "title": "Membresías"
     },
+    "memberships": {
+      "title": "Membresías",
+        "cessi": {
+            "title": "Cessi",
+            "description": "Cámara de la industria Argentina del Software."
+        },
+        "poloIt": {
+            "title": "Polo It",
+            "description": "Polo de Tecnología Informática de Buenos Aires."
+        },
+        "britcham": {
+            "title": "Britcham Argentina",
+            "description": "Cámara de comercio argentino británica."
+        }
+    },
     "certifications": {
-      "title": "Certificaciones"
+      "title": "Certificaciones",
+        "greatPlaceToWork": {
+            "imageUrl": "/assets/img/certifications/great-place-to-work.svg",
+            "imageAlt": "Certificado Great Place To Work"
+        },
+        "iram": {
+            "imageUrl": "/assets/img/certifications/iram.svg",
+            "imageAlt": "Certificado IRAM-ISO 9001:2015"
+        },
+        "iqnet": {
+            "imageUrl": "/assets/img/certifications/iqnet.svg",
+            "imageAlt": "Certificado IQNet"
+        }
+    },
+    "alliances": {
+      "title": "Alianzas",
+        "aws": {
+            "imageUrl": "/assets/img/alliances/aws-alliance.svg",
+            "imageAlt": "Aliado de Amazon."
+        }
     }
   },
   "portfolio": {

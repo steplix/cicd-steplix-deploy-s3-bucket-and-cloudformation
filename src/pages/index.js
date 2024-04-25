@@ -2,9 +2,9 @@ import { useTranslation } from '@/common/lib/i18n';
 import MainHeader from '@/modules/Home/MainHeader';
 import Banner from '@/modules/Home/Banner';
 import HowDoWeDoIt from '@/modules/Home/HowWeDoIt';
-import Certifications from '@/modules/Home/Certifications';
+import Alliances from '@/modules/Home/Alliances';
 import Clients from '@/modules/Home/Clients';
-import Partners from '@/modules/Home/Partners';
+import Memberships from '@/modules/Home/Memberships';
 import TransitionWrapper from '@/common/components/TransitionWrapper';
 import HeadTag from '@/common/components/HeadTag';
 
@@ -81,12 +81,12 @@ export default function Home() {
         {/* Technology Section */}
         <HowDoWeDoIt />
 
-        <div className="container block sm:flex lg:gap-14 xl:gap-[4.5rem]">
-          {/* Certifications Section */}
-          <Certifications />
+        <div className="container block lg:flex">
+          {/* Alliances Section */}
+          <Alliances />
 
-          {/* Partners  Section */}
-          <Partners />
+          {/* Memberships  Section */}
+          <Memberships />
         </div>
       </TransitionWrapper>
     </>

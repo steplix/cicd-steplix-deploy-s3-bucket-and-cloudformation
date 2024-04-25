@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### Modified 22/04/2024
+
+- **Components**
+  - `PartnerCard`: Component modified show only a image.
+
+- **Layout**:
+  - `Footer`: Component modified without show the great place to work certification.
+
+- **Modules**:
+  - `Alliances`: Module modified to adapt to requirements.
+  - `Memberships`: Module modified to adapt to requirements.
+
+- Enrique Serrani role modified to Comercial Manager.
+
+### Added 22/04/2024
+
+- **Modules**
+  - `Certifications`: Custom module to shows all certifications images.
+
+- **assets**
+  - Include all assets to certification module on `Certifications` module in AboutUs page.
 
 ### Modified 19/04/2024
 
