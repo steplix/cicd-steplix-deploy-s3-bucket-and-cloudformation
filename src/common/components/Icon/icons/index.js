@@ -103,3 +103,4 @@ export * from './loan';
 export * from './qr';
 export * from './topUp';
 export * from './bill';
+export * from './validWithLegend';
