@@ -805,52 +805,36 @@ export const PRODUCTS_CARDS = [
 
 export const CERTIFICATIONS_LIST = [
   {
-    imageUrl: '/assets/img/certifications/a-csm.svg',
-    imageAlt: 'A-CSM certification',
-    imageHeight:
-      'h-[74.657px] w-[74.657px] sm:h-[92.697px] sm:w-[92.697px] lg:h-[103.233px] lg:w-[103.233px] xl:w-[127.92px] xl:h-[127.92px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
-  },
-  {
-    imageUrl: '/assets/img/certifications/okrcp.svg',
-    imageAlt: 'OKR CertiProf',
-    imageHeight:
-      'h-[74.657px] w-[74.657px] mr-[2px] sm:h-[92.697px] sm:w-[92.697px] lg:h-[103.233px] lg:w-[103.233px] xl:w-[127.92px] xl:h-[127.92px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
-  },
-  {
-    imageUrl: '/assets/img/certifications/icf.svg',
-    imageAlt: 'ICF certification',
-    imageHeight:
-      'h-[68px] w-[68.519px] mr-[2px] sm:h-[84.349px] sm:w-[84.993px] lg:h-[94.203px] lg:w-[93.489px] xl:w-[111.59px] xl:h-[110.74px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
-  },
-  {
-    imageUrl: '/assets/img/certifications/csm.svg',
+    imageUrl: '/assets/img/certifications/csm.png',
     imageAlt: 'CSM certification',
-    imageHeight:
-      'h-[64.343px] w-[71.683px] mr-[2px] sm:h-[92.697px] sm:w-[89.005px] lg:h-[99.121px] lg:w-[88.971px] xl:w-[122.82px] xl:h-[110.24px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
   },
   {
-    imageUrl: '/assets/img/certifications/cloud-practitioner.svg',
+    imageUrl: '/assets/img/certifications/okrcp.png',
+    imageAlt: 'OKR CertiProf',
+  },
+  {
+    imageUrl: '/assets/img/certifications/icf.png',
+    imageAlt: 'ICF certification',
+  },
+  {
+    imageUrl: '/assets/img/certifications/a-csm.png',
+    imageAlt: 'A-CSM certification',
+  },
+  {
+    imageUrl: '/assets/img/certifications/cloud-practitioner.png',
     imageAlt: 'AWS Cloud Practitioner certification',
-    imageHeight:
-      'h-[80.542px] w-[80.542px] mr-[2px] sm:h-[100.004px] sm:w-[100.004px] lg:h-[111.371px] lg:w-[111.371px] xl:w-[138px] xl:h-[138px] mr-[9px]sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
   },
   {
-    imageUrl: '/assets/img/certifications/project-managment.svg',
+    imageUrl: '/assets/img/certifications/project-management.png',
     imageAlt: 'Certified Project Management Associate',
-    imageHeight:
-      'h-[69.912px] w-[69.912px] mr-[2px] sm:h-[86.806px] sm:w-[86.806px] lg:h-[96.672px] lg:w-[96.672px] xl:w-[119.79px] xl:h-[119.79px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
   },
   {
-    imageUrl: '/assets/img/certifications/interaction-design.svg',
+    imageUrl: '/assets/img/certifications/interaction-design.png',
     imageAlt: 'Interaction Design Foundation certification',
-    imageHeight:
-      'h-[69.912px] w-[69.912px] mr-[2px] sm:h-[92.697px] sm:w-[92.697px] lg:h-[96.672px] lg:w-[96.672px] xl:w-[119.79px] xl:h-[119.79px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px] xl:mr-[14px]',
   },
   {
-    imageUrl: '/assets/img/certifications/solutions-architect.svg',
+    imageUrl: '/assets/img/certifications/solutions-architect.png',
     imageAlt: 'AWS Solutions Architect certification',
-    imageHeight:
-      'h-[80.542px] w-[80.542px] mr-[2px] sm:h-[100.004px] sm:w-[100.004px] lg:h-[111.371px] lg:w-[111.371px] xl:w-[138px] xl:h-[138px] mr-[9px] sm:mr-[12px] lg:mr-[12.9px]',
   },
 ];
 export const POW_CHIPS = {

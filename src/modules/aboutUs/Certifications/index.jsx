@@ -16,10 +16,11 @@ const Certifications = ({ locale }) => {
         size="text-[26px] lg:text-[32px]"
         type="h1"
       />
-      <div className="w-full flex flex-wrap items-center sm:justify-center">
+      <div className="w-full flex items-center justify-center gap-4 ">
+        <div className='w-[330px] sm:w-[450px] lg:w-full flex flex-wrap items-center justify-center'>
         {CERTIFICATIONS_LIST.map((certification) => {
           return (
-            <div key={certification.imageAlt} className={certification.imageHeight}>
+            <div key={certification.imageAlt} className="certification-image">
               <img
                 alt={certification.imageAlt}
                 className="h-full w-full"
@@ -28,6 +29,7 @@ const Certifications = ({ locale }) => {
             </div>
           );
         })}
+        </div>
       </div>
     </section>
   );
