@@ -1052,4 +1052,9 @@
     .flip-card {
         @apply w-[329px] sm:w-[272px] lg:w-[288px] xl:w-[362px] sm:max-w-none
     }
+
+    /* Certification images */
+    .certification-image {
+        @apply w-[70px] sm:w-[98px]  xl:w-[124px]
+    }
 }
