@@ -58,7 +58,6 @@ const PortfolioView = ({ locale }) => {
               );
             })}
           </Carousel>
-
           <div className="mt-[14px] flex flex-col gap-6">
             <Gradient
               borderPosition="left"
@@ -68,9 +67,8 @@ const PortfolioView = ({ locale }) => {
               size="text-4xl"
               type="h1"
             />
-            <p>{t('PortfolioSection.parraf1')}</p>
+            <p className="text-[13px] lg:text-base text-black leading-[16.9px] lg:leading-[20.8px] ">{t('PortfolioSection.parraf1')}</p>
           </div>
-
           <motion.div
             ref={ref}
             animate={controls}

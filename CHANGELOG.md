@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release 3.2.0
 
+### Modified 03/05/2024
+
+- **i18n**:
+  - `translations`: The word portfolio was unified.
+
+- **Pages**:
+  - `PortfolioView`: Font color in description modified from #3C1053 to #121212.
+
 ### Modified 25/04/2024
 
 - **Components**

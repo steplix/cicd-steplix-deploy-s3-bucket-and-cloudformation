@@ -323,7 +323,7 @@
     },
     "item3": {
       "route": "Portfolio",
-      "title": "Our Portfolio",
+      "title": "Portfolio",
       "ariaLabel": "Navigate to the portfolio page"
     },
     "item4": {
@@ -351,7 +351,7 @@
     "links": {
       "item0": "About us",
       "item1": "What we do",
-      "item2": "Our portfolio",
+      "item2": "Portfolio",
       "item3": "Contact Us"
     },
     "instagramAriaLabel": "Visit Steplix Instagram",
