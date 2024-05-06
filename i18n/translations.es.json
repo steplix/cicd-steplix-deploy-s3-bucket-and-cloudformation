@@ -8,7 +8,7 @@
     "titleEmpty": "ideas ",
     "subtitle": "Agendá una llamada con nuestros comerciales",
     "brochureText": "Descargá nuestro ",
-    "brochure": "Portfolio",
+    "brochure": "Porfolio",
     "ourOfficeTitle": "Nuestra",
     "ourOfficeTitleEmpty": "oficina",
     "salesRepresentative": "Comercial",
@@ -323,7 +323,7 @@
     "item3": {
       "route": "Porfolio",
       "title": "Nuestro porfolio",
-      "ariaLabel": "Navegar hacia la página portfolio"
+      "ariaLabel": "Navegar hacia la página porfolio"
     },
     "item4": {
       "route": "Contáctanos",
@@ -350,7 +350,7 @@
     "links": {
       "item0": "Quienes somos",
       "item1": "Qué hacemos",
-      "item2": "Nuestro portfolio",
+      "item2": "Porfolio",
       "item3": "Contáctanos"
     },
     "instagramAriaLabel": "Visita Steplix Instagram",
@@ -377,9 +377,9 @@
       "description": "Nuestra cultura se centra en procesos y metodologías ágiles que nos permiten ayudarte a construir tu producto de forma incremental. Esto nos permite probarlo, aprender rápido y evolucionar."
     },
     "portfolio": {
-      "title": "Portfolio | Digital Sherpas | Steplix Software 🧗",
-      "keywords": "Portafolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Portafolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
-      "description": "Echa un vistazo a nuestro portafolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio.",
+      "title": "Porfolio | Digital Sherpas | Steplix Software 🧗",
+      "keywords": "Porfolio de Steplix, Desarrollo de software, Soluciones de software personalizadas, Proyectos exitosos, Soluciones por industria, Porfolio de tecnología, Clientes: Finket, Banco Columbia, Valid, Sura, Vacay Green, CEVA, POW, Smartium, C5N",
+      "description": "Echa un vistazo a nuestro porfolio de soluciones digitales exitosas. Desde el desarrollo web hasta aplicaciones móviles, ve cómo hemos ayudado a nuestros clientes a mejorar su productividad y alcanzar sus objetivos de negocio.",
       "clients": {
         "sura": {
           "title": "SURA | Sherpas Digitales | Steplix Software 🧗",
@@ -427,7 +427,7 @@
   },
   "PortfolioSection": {
     "pronoun": "Nuestro",
-    "title": "portfolio",
+    "title": "porfolio",
     "subtitle": "Industrias",
     "subtitle2": "Nuestros clientes dicen",
     "parraf1": "Escalamos cada proyecto aplicando creatividad, estrategia e innovación, apoyándonos en la tecnología y promoviendo todo su poder para alcanzar la meta."
