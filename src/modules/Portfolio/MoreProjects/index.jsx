@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 import { useRouter } from 'next/router';
 
 import PortfolioCard from '@/common/components/PortfolioCard';
-import PortfolioCarousel from '@/common/components/PortfolioCarousel';
+import Carousel from '@/common/components/Carousel';
 import { PORTFOLIO_CARDS } from '@/common/utils/constants';
 import Title from '@/common/components/Title/Gradient';
 import { useTranslation } from '@/common/lib/i18n';
@@ -25,8 +25,13 @@ export const MoreProjectsSection = ({ locale }) => {
         content={t('portfolio.moreProjects')}
         size="text-[20px] lg:text-[26px]"
       />
-      <PortfolioCarousel carouselClassName={' sm:h-[500px]'}>
-        {filteredPortfolioCards.map(({ name, industryIconName, iconBrandClass }) => {
+      <Carousel
+            hasArrows
+            adaptiveHeightValue={96}
+            cardClassName="portfolio-card--active"
+            carouselClassName={'portfolioCarousel sm:h-[500px]'}
+          >
+            {filteredPortfolioCards.map(({ name, industryIconName, iconBrandClass }) => {
           return (
             <div
               key={name}
@@ -40,7 +45,7 @@ export const MoreProjectsSection = ({ locale }) => {
             </div>
           );
         })}
-      </PortfolioCarousel>
+          </Carousel>
     </section>
   );
 };

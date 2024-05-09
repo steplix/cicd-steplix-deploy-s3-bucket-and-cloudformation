@@ -531,7 +531,7 @@
     }
 
 
-    @media (min-width: 640px) and (max-width: 1023px) {
+    @media (min-width: 340px) and (max-width: 1023px) {
 
         .portfolio-card--inactive {
             transform: scale(0.8);
@@ -546,7 +546,7 @@
 
 
     .portfolioCarousel {
-        @apply max-w-[312px] sm:max-w-[408px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px] lg:min-h-[418px];
+        @apply max-w-[408px] lg:max-w-[792px] xl:max-w-[1016px] rounded-[20px] lg:min-h-[418px];
     }
 
     .clientsCarousel {
@@ -569,7 +569,7 @@
         }
     }
 
-    @media (min-width: 640px) and (max-width: 1023px) {
+    @media (min-width: 340px) and (max-width: 1023px) {
         .portfolioCarousel {
             overflow: visible !important;
         }

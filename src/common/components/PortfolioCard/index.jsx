@@ -15,7 +15,8 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
   const { t } = useTranslation(i18nQuery?.locale);
 
   return (
-    <div className="w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col portfolio-card--inactive transition-all duration-500 ease-in-out ">
+    <CustomNextLink to={`/${locale}/portfolio/${name}`}>
+    <div className="w-[280px] sm:w-[376px] h-[501px] xl:w-[488px] sm:h-[489px] xl:h-[489px] card-shadow rounded-[20px] flex flex-col portfolio-card--inactive transition-all duration-500 ease-in-out cursor-pointer ">
       <picture className="w-full rounded-tl-[20px] rounded-tr-[20px] max-h-[259px]">
         <source media="(min-width: 1280px)" srcSet={`/assets/img/portfolio/${name}-xl.png`} />
         <source media="(min-width: 1024px)" srcSet={`/assets/img/portfolio/${name}-lg.png`} />
@@ -35,7 +36,6 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
           {t(`portfolio.cards.${name}.text`)}
         </p>
         <div className="mt-[24px] flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-4 items-center justify-center">
-          <CustomNextLink to={`/${locale}/portfolio/${name}`}>
             <button
               aria-label={t('navbar.item4.ariaLabel')}
               className="flex space-x-2 items-center justify-center text-xs font-bold text-blue sm:text-white bg-white sm:bg-blue w-fit sm:px-4 sm:py-[6px] rounded-[20px]"
@@ -43,10 +43,10 @@ const PortfolioCard = ({ name, iconBrandClass, industryIconName }) => {
               <p>{t(`portfolio.button`)}</p>
               <Icon className="transform rotate-[270deg] w-4" name="chevronDown" />
             </button>
-          </CustomNextLink>
         </div>
       </div>
     </div>
+    </CustomNextLink>
   );
 };
 

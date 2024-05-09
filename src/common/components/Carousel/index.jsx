@@ -35,7 +35,7 @@ const Carousel = ({
       initial: 1,
       slides: {
         origin: 'center',
-        perView: 1.01,
+        perView: 1.4,
       },
       breakpoints: {
         '(min-width: 1024px)': {
@@ -92,7 +92,7 @@ Carousel.propTypes = {
   children: propTypes.node.isRequired,
   carouselClassName: propTypes.string.isRequired,
   cardClassName: propTypes.string.isRequired,
-  adaptiveHeight: propTypes.number,
+  adaptiveHeightValue: propTypes.number,
   hasArrows: propTypes.bool,
 };
 
