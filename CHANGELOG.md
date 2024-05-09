@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release 3.2.1
 
+### Deleted 09/05/2024
+
+- **Components**:
+  - `PortfolioCarousel`: Component deleted.
+
+### Modified 09/05/2024
+
+- **Components**:
+  - `Carousel`: Adjustments in mobile screen to show more cards.
+
+
 ### Modified 03/05/2024
 
 - **i18n**:
