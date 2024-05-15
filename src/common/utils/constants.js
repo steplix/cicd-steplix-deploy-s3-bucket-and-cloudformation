@@ -263,7 +263,7 @@ export const PORTFOLIO_CARDS = [
   {
     name: 'x28',
     industryIconName: 'lock',
-    iconBrandClass: 'w-[75px] h-[43px]',
+    iconBrandClass: 'w-[75px] h-[34px]',
   },
   /* {
     name: 'smartium',
@@ -1090,5 +1090,5 @@ export const FINKET_CHIPS = {
     autor: 'portfolio.finketClient.autor.name',
     position: 'portfolio.finketClient.autor.position',
     companyName: 'portfolio.finketClient.autor.company',
-  }
+  },
 };

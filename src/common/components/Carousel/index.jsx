@@ -25,13 +25,15 @@ const Carousel = ({
   adaptiveHeightValue,
   cardClassName,
   hasArrows,
+  isInfinite = true,
 }) => {
   const { t } = useTranslation();
   const [loaded, setLoaded] = React.useState(false);
-
+  const [disabledBackArrow, setDisabledBackArrow] = React.useState(false);
+  const [disabledForwardArrow, setDisabledForwardArrow] = React.useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      loop: true,
+      loop: isInfinite,
       initial: 1,
       slides: {
         origin: 'center',
@@ -45,6 +47,13 @@ const Carousel = ({
 
       slideChanged(slider) {
         slider.slides.map((slide, index) => {
+          const currentIndex = instanceRef?.current?.track?.details?.rel;
+
+          if (currentIndex === 0 && hasArrows) setDisabledBackArrow(true);
+          else setDisabledBackArrow(false);
+          if (currentIndex === index - 1) setDisabledForwardArrow(true);
+          else setDisabledForwardArrow(false);
+
           if (index === slider.track.details.rel) {
             slide.children[0].classList.add(cardClassName);
           } else {
@@ -68,20 +77,28 @@ const Carousel = ({
 
       {hasArrows && loaded && instanceRef.current && (
         <>
-          <button
-            aria-label={t('carouselButtonAriaLabel.backward')}
-            className="h-[48px] hidden lg:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full"
-            onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}
-          >
-            <Icon className="h-[48px] w-[48px]" name="back" />
-          </button>
-          <button
-            aria-label={t('carouselButtonAriaLabel.forward')}
-            className="h-[48px] hidden lg:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]"
-            onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}
-          >
-            <Icon className="h-[48px] w-[48px]" name="forward" />
-          </button>
+          {disabledBackArrow && !isInfinite ? (
+            <></>
+          ) : (
+            <button
+              aria-label={t('carouselButtonAriaLabel.backward')}
+              className="h-[48px] hidden lg:block w-[48px] absolute left-0 top-[50%] transform translate-y-[-50%] bg-none rounded-full"
+              onClick={(e) => e.stopPropagation() || instanceRef?.current.prev()}
+            >
+              <Icon className="h-[48px] w-[48px]" name={'back'} />
+            </button>
+          )}
+          {disabledForwardArrow && !isInfinite ? (
+            <></>
+          ) : (
+            <button
+              aria-label={t('carouselButtonAriaLabel.forward')}
+              className="h-[48px] hidden lg:block w-[48px] absolute right-0 top-[50%] transform translate-y-[-50%]"
+              onClick={(e) => e.stopPropagation() || instanceRef?.current.next()}
+            >
+              <Icon className="h-[48px] w-[48px]" name={'forward'} />
+            </button>
+          )}
         </>
       )}
     </div>
