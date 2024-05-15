@@ -19,12 +19,31 @@ const PortfolioView = ({ locale }) => {
   const { industries } = usePortfolioTranslation();
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const [isTabletOrMobile, setIsTabletOrMobile] = React.useState(false);
 
   React.useEffect(() => {
     if (inView) {
       controls.start('animate');
     }
   }, [controls, inView]);
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const mediaQuery = window.matchMedia('(max-width: 1023px)');
+
+      setIsTabletOrMobile(mediaQuery.matches);
+
+      const listener = (event) => {
+        setIsTabletOrMobile(event.matches);
+      };
+
+      mediaQuery.addListener(listener);
+
+      return () => {
+        mediaQuery.removeListener(listener);
+      };
+    }
+  }, []);
 
   return (
     <>
@@ -36,12 +55,13 @@ const PortfolioView = ({ locale }) => {
         }}
       />
       <TransitionWrapper className="flex flex-col relative w-full mx-auto">
-        <section className="container pb-[72px]">
+        <section className="container pb-[72px] overflow-hidden">
           <Carousel
             hasArrows
             adaptiveHeightValue={96}
             cardClassName="portfolio-card--active"
             carouselClassName={'portfolioCarousel sm:h-[500px]'}
+            isInfinite={isTabletOrMobile}
           >
             {PORTFOLIO_CARDS.map(({ name, industryIconName, iconBrandClass }) => {
               return (
@@ -67,7 +87,9 @@ const PortfolioView = ({ locale }) => {
               size="text-4xl"
               type="h1"
             />
-            <p className="text-[13px] lg:text-base text-black leading-[16.9px] lg:leading-[20.8px] ">{t('PortfolioSection.parraf1')}</p>
+            <p className="text-[13px] lg:text-base text-black leading-[16.9px] lg:leading-[20.8px] ">
+              {t('PortfolioSection.parraf1')}
+            </p>
           </div>
           <motion.div
             ref={ref}

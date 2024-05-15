@@ -262,6 +262,10 @@
         background: linear-gradient(180deg, #3c1053 43.71%, #00a9e0 126.87%);
     }
 
+    .carousel-img-gradient {
+        background: var(--Gradient-Header, linear-gradient(109deg, #3C1053 7.11%, #00A9E0 194.14%));
+    }
+
     /* END GRADIENTS */
 
     /* ICON */

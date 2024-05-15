@@ -26,12 +26,12 @@ export const MoreProjectsSection = ({ locale }) => {
         size="text-[20px] lg:text-[26px]"
       />
       <Carousel
-            hasArrows
-            adaptiveHeightValue={96}
-            cardClassName="portfolio-card--active"
-            carouselClassName={'portfolioCarousel sm:h-[500px]'}
-          >
-            {filteredPortfolioCards.map(({ name, industryIconName, iconBrandClass }) => {
+        hasArrows
+        adaptiveHeightValue={96}
+        cardClassName="portfolio-card--active"
+        carouselClassName={'portfolioCarousel sm:h-[500px]'}
+      >
+        {filteredPortfolioCards.map(({ name, industryIconName, iconBrandClass }) => {
           return (
             <div
               key={name}
@@ -45,7 +45,7 @@ export const MoreProjectsSection = ({ locale }) => {
             </div>
           );
         })}
-          </Carousel>
+      </Carousel>
     </section>
   );
 };

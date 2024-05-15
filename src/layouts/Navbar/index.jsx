@@ -34,6 +34,7 @@ const Navbar = () => {
   const [sticky, setSticky] = React.useState(false);
   const [toggle, setToggle] = React.useState(false);
   const [colorChange, setColorchange] = React.useState(true);
+
   //
   // Effects
   //
@@ -81,7 +82,7 @@ const Navbar = () => {
                 className=""
                 onClick={() => (toggle ? setToggle(!toggle) : null)}
               >
-                <CustomNextLink to="/">
+                <CustomNextLink to={`/${i18nQuery?.lang}`}>
                   <a>
                     <img
                       alt="Steplix logo"
@@ -143,7 +144,7 @@ const Navbar = () => {
       >
         <div className="container flex justify-between items-center h-[100px]">
           {/* logo desktop */}
-          <CustomNextLink to="/">
+          <CustomNextLink to={`/${i18nQuery?.lang}`}>
             <a>
               <img
                 alt="Steplix logo"
