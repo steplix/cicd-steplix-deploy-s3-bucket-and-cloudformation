@@ -15,7 +15,8 @@ const FlipCard = ({
   resize,
   description,
   withButton,
-  cardHeight,
+  cardHeight = 'h-[134px] sm:h-[149px]',
+  width = 'w-[329px] sm:w-[272px] lg:w-[288px] xl:w-[362px] sm:max-w-none',
   locale,
   textClass,
 }) => {
@@ -55,7 +56,7 @@ const FlipCard = ({
     <motion.div
       className={`flex cursor-pointer ${
         resize ? 'flex-col lg:flex-row' : 'flex-col'
-      } items-center justify-center space-y-1 lg:space-y-2 group relative ${cardHeight}`}
+      } items-center justify-center space-y-1 lg:space-y-2 group relative ${cardHeight} ${width}`}
       variants={fadeInFromTheSide}
     >
       <div
@@ -98,6 +99,7 @@ FlipCard.propTypes = {
   description: propTypes.element,
   withButton: propTypes.bool,
   cardHeight: propTypes.string.isRequired,
+  width: propTypes.string,
   locales: propTypes.any,
   textClass: propTypes.string.isRequired,
 };
