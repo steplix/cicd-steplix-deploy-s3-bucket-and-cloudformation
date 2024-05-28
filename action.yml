@@ -1,0 +1,93 @@
+name: S3 Bucket & Cloud-formation deployment
+
+inputs:
+    # Required inputs
+    ENVIRONMENT:
+        type: string
+        description: "Name of the environment to deploy"
+        required: true
+    AWS_CF_STACK_NAME:
+        type: string
+        description: "AWS cloud-formation stack name"
+        required: true
+    PROJECT_NAME:
+        type: string
+        description: "AWS S3 bucket project name"
+        required: true
+    AWS_ACCESS_KEY_ID:
+        type: string
+        description: "AWS Access key id"
+        required: true
+    AWS_SECRET_ACCESS_KEY:
+        type: string
+        description: "AWS Secret access key"
+        required: true
+    AWS_REGION:
+        type: string
+        description: "AWS Region"
+        required: true
+    DOMAIN: 
+        type: string
+        description: "Domain name"
+        required: true
+    SUB_DOMAIN:
+      type: string
+      description: "Sub-domain name"
+      required: true    
+    ACM_CERTIFICATE_ARN:
+      type: string
+      description: "AWS Certificate ARN"
+      required: true
+    
+    # NOT required inputs
+    CACHE_POLICY:
+     type: string
+     default: CachingOptimized
+     description: "Cache policy"
+     required: false
+    CONCAT_ENV_CF_STACK_NAME:
+      type: boolean
+      default: true
+      description: Concatenate the environment in the cloudformation stack name at the end
+      required: false
+
+
+runs:
+    using: composite
+    steps:
+        - uses: aws-actions/configure-aws-credentials@v4.0.2
+          id: AWS
+          with:
+              aws-access-key-id: ${{ inputs.AWS_ACCESS_KEY_ID }}
+              aws-secret-access-key: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+              aws-region: ${{ inputs.AWS_REGION }}
+
+        - name: Capitalize environment
+          id: CAPITALIZED_ENV
+          uses: ASzc/change-string-case-action@v5
+          with:
+              string: ${{ inputs.ENVIRONMENT }}
+
+        - name: Build cloudformation stack name
+          shell: bash
+          env:
+              ENVIRONMENT: ${{ inputs.ENVIRONMENT }}
+              STACK_NAME: ${{ inputs.AWS_CF_STACK_NAME }}
+              CONCAT_ENV: ${{ inputs.CONCAT_ENV_CF_STACK_NAME }}
+          run: >-
+              echo "CF_STACK_NAME=$(if [ $CONCAT_ENV == true ]; then echo ${STACK_NAME}-${ENVIRONMENT}; else echo ${STACK_NAME}; fi)" >> $GITHUB_ENV
+
+        - name: Deploy to AWS CloudFormation
+          uses: aws-actions/aws-cloudformation-github-deploy@v1
+          env:
+              ENV_CAPITALIZED: ${{ steps.CAPITALIZED_ENV.outputs.capitalized }}
+          with:
+              name: ${{ env.CF_STACK_NAME }}
+              template: ./cloudformation/cloudformation.yml
+              capabilities: ${{ inputs.CAPABILITIES }}
+              parameter-overrides: >-
+                  Environment=${{ inputs.ENVIRONMENT }},
+                  Project=${{ env.PROJECT }},
+                  DomainName=${{ inputs.DOMAIN }}
+                  SubDomain=${{ inputs.SUB_DOMAIN }}
+                  AcmCertificateArn=${{ inputs.ACM_CERTIFICATE_ARN }}
