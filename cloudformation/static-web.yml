@@ -1,0 +1,148 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Prerequisites
+    It assumes you already have a Hosted Zone registered with Amazon Route 53 and a Certificate.
+
+  This template creates an S3 bucket with Origin Access Control (OAC) and a CloudFront distribution.
+
+Parameters:
+  Environment:
+    Description: Name for environment to be deployed on.
+    Type: String
+    Default: testing
+    AllowedValues:
+    - development
+    - testing
+    - staging
+    - production
+
+  Project:
+    Description: Project name. Only lowercase.
+    ConstraintDescription: Only lowercase.
+    Type: String
+    Default: mi-alarma
+
+  DomainName:
+    Type: String
+
+  SubDomain:
+    Type: String
+
+  AcmCertificateArn:
+    Type: String
+
+  CachePolicy:
+    Description: Change this if you want to specify a cache policy.
+    Type: String
+    Default: CachingOptimized
+    AllowedValues:
+      - CachingOptimized
+      - CachingDisabled
+      - CachingOptimizedForUncompressedObjects
+      - Elemental-MediaPackage
+      - Amplify
+
+Mappings: 
+  CachePolicyIds:
+    CachingOptimized:
+      Id: 658327ea-f89d-4fab-a63d-7e88639e58f6
+    CachingDisabled:
+      Id: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
+    CachingOptimizedForUncompressedObjects:
+      Id: b2884449-e4de-46a7-ac36-70bc7f1ddd6d
+    Elemental-MediaPackage:
+      Id: 08627262-05a9-4f76-9ded-b50ca2e3a84f
+    Amplify:
+      Id: 2e54312d-136d-493c-8eb9-b001f22f67d2
+
+Resources:
+  S3BucketForWebsiteContent:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub '${SubDomain}.${DomainName}'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Name
+          Value: !Sub '${Project}-${Environment}-s3-bucket-${SubDomain}.${DomainName}'
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Project
+          Value: !Ref Project
+
+  CloudFrontOriginAccessControl:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties: 
+      OriginAccessControlConfig: 
+          Description: Origin Access Control (OAC) for allowing cloudfront to access S3 bucket
+          Name: !Sub '${Project}-${Environment}-oac-${SubDomain}.${DomainName}'
+          OriginAccessControlOriginType: s3
+          SigningBehavior: always
+          SigningProtocol: sigv4
+
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+      - S3BucketForWebsiteContent
+    Properties:
+      DistributionConfig:
+        Origins:
+          - Id: !Sub '${SubDomain}.${DomainName}'
+            DomainName: !GetAtt S3BucketForWebsiteContent.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+            OriginAccessControlId: !GetAtt CloudFrontOriginAccessControl.Id
+        Enabled: true
+        DefaultRootObject: index.html
+        DefaultCacheBehavior:
+          CachePolicyId: !FindInMap [ CachePolicyIds, !Ref CachePolicy , Id ]
+          TargetOriginId: !Sub '${SubDomain}.${DomainName}'
+          ViewerProtocolPolicy: redirect-to-https
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 404
+            ResponsePagePath: /error.html
+        HttpVersion: http2
+        Aliases:
+          - !Sub '${SubDomain}.${DomainName}'
+        Comment: CloudFront distribution for the static website with Origin Access Control (OAC)
+        ViewerCertificate:
+          AcmCertificateArn: !Ref AcmCertificateArn
+          MinimumProtocolVersion: TLSv1.2_2021
+          SslSupportMethod: sni-only
+      Tags:
+        - Key: Name
+          Value: !Sub '${Project}-${Environment}-cdn-${SubDomain}.${DomainName}'
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Project
+          Value: !Ref Project
+
+  # S3 bucket policy to allow access only from CloudFront.
+  StaticSiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3BucketForWebsiteContent
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref S3BucketForWebsiteContent
+                - '/*'
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}'
+
+Outputs:
+  WebsiteURL:
+    Description: Static website URL
+    Value: !Sub 'http://${CloudFrontDistribution.DomainName}'
